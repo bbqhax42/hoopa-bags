@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-13T11:15:30.784437",
+ "generatedAt": "2026-09-13T11:17:37.940884",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake6",
-  "mode": "combat_daily",
-  "since": "11:11:44"
+  "mode": "victory_road",
+  "since": "11:17:20"
  },
  "grid": {
   "tasks": [
@@ -174,8 +174,8 @@
      "-",
      "✓",
      "⊘",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "-",
@@ -265,8 +265,8 @@
   ]
  },
  "counts": {
-  "done": 80,
-  "todo": 52,
+  "done": 82,
+  "todo": 50,
   "gaveUp": 1,
   "unavailable": 2,
   "windowed": 15
@@ -373,6 +373,52 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-13T11:17:34",
+   "script": "victory_road",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_111721_victory_road_fake6"
+  },
+  {
+   "ts": "2026-09-13T11:17:10",
+   "script": "combat_daily",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 26,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_111644_combat_daily_fake6"
+  },
+  {
+   "ts": "2026-09-13T11:16:33",
+   "script": "combat_daily",
+   "account": "fake6",
+   "rc": 1,
+   "secs": 287,
+   "stats": {
+    "near_miss_afk_rewards": 1,
+    "refused_quick_bar": 1,
+    "adv_energy_spent": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "pokemon_upgraded": 1,
+    "refused_daily_rail": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260913_111146_combat_daily_fake6"
+  },
   {
    "ts": "2026-09-13T11:11:35",
    "script": "pokemon_home",
@@ -2604,7 +2650,7 @@
   "since": "2026-09-13T08:00",
   "switches": 10,
   "relogMinutes": 6.5,
-  "retries": 5,
+  "retries": 6,
   "tasks": {
    "dailyclaim": {
     "runs": 11,
@@ -2627,13 +2673,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 11,
-    "minutes": 40.9,
-    "failed": 3
+    "runs": 13,
+    "minutes": 46.1,
+    "failed": 4
    },
    "victory_road": {
-    "runs": 9,
-    "minutes": 2.1,
+    "runs": 10,
+    "minutes": 2.3,
     "failed": 0
    },
    "paradise": {
