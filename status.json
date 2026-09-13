@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-13T11:09:09.439246",
+ "generatedAt": "2026-09-13T11:11:16.836736",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake6",
-  "mode": "dailyclaim",
-  "since": "11:08:15"
+  "mode": "pokemon_home",
+  "since": "11:10:38"
  },
  "grid": {
   "tasks": [
@@ -169,10 +169,10 @@
    {
     "account": "fake6",
     "cells": [
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -265,8 +265,8 @@
   ]
  },
  "counts": {
-  "done": 78,
-  "todo": 55,
+  "done": 80,
+  "todo": 53,
   "gaveUp": 1,
   "unavailable": 1,
   "windowed": 15
@@ -373,6 +373,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-13T11:11:18",
+   "script": "pokemon_home",
+   "account": "fake6",
+   "rc": 2,
+   "secs": 36,
+   "stats": {
+    "board_stuck": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_111042_pokemon_home_fake6"
+  },
+  {
+   "ts": "2026-09-13T11:10:29",
+   "script": "daily_dungeon",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 42,
+   "stats": {
+    "marginal_dungeon_list": 12,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_110946_daily_dungeon_fake6"
+  },
+  {
+   "ts": "2026-09-13T11:09:33",
+   "script": "dailyclaim",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 35,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_110857_dailyclaim_fake6"
+  },
   {
    "ts": "2026-09-13T11:08:05",
    "script": "collect_hoopa_keys",
@@ -2552,8 +2596,8 @@
   "retries": 5,
   "tasks": {
    "dailyclaim": {
-    "runs": 10,
-    "minutes": 8.0,
+    "runs": 11,
+    "minutes": 8.6,
     "failed": 2
    },
    "joint_team_daily_quest": {
@@ -2562,13 +2606,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 9,
-    "minutes": 4.0,
+    "runs": 10,
+    "minutes": 4.7,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 9,
-    "minutes": 16.6,
+    "runs": 10,
+    "minutes": 17.2,
     "failed": 0
    },
    "combat_daily": {
@@ -2599,6 +2643,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "fake6",
+   "task": "pokemon_home",
+   "why": "board_stuck",
+   "at": "2026-09-13T11:11:18"
+  },
   {
    "account": "smurf",
    "task": "joint_battle",
