@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-13T10:18:05.182411",
+ "generatedAt": "2026-09-13T10:20:12.995347",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "daily_dungeon",
-  "since": "10:17:01"
+  "mode": "combat_daily",
+  "since": "10:18:57"
  },
  "grid": {
   "tasks": [
@@ -125,8 +125,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -265,9 +265,9 @@
   ]
  },
  "counts": {
-  "done": 55,
-  "todo": 78,
-  "gaveUp": 1,
+  "done": 56,
+  "todo": 76,
+  "gaveUp": 2,
   "unavailable": 1,
   "windowed": 15
  },
@@ -373,6 +373,35 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-13T10:20:00",
+   "script": "combat_daily",
+   "account": "fake3",
+   "rc": 1,
+   "secs": 56,
+   "stats": {
+    "near_miss_afk_rewards": 1,
+    "refused_claim_pill": 7,
+    "refused_chest": 6,
+    "left_outstanding": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_101904_combat_daily_fake3"
+  },
+  {
+   "ts": "2026-09-13T10:18:45",
+   "script": "pokemon_home",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 34,
+   "stats": {
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_101810_pokemon_home_fake3"
+  },
   {
    "ts": "2026-09-13T10:17:55",
    "script": "daily_dungeon",
@@ -2193,7 +2222,7 @@
   "since": "2026-09-13T08:00",
   "switches": 7,
   "relogMinutes": 4.6,
-  "retries": 3,
+  "retries": 4,
   "tasks": {
    "dailyclaim": {
     "runs": 8,
@@ -2211,14 +2240,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 6,
-    "minutes": 14.9,
+    "runs": 7,
+    "minutes": 15.5,
     "failed": 0
    },
    "combat_daily": {
-    "runs": 7,
-    "minutes": 26.2,
-    "failed": 1
+    "runs": 8,
+    "minutes": 27.1,
+    "failed": 2
    },
    "victory_road": {
     "runs": 6,
