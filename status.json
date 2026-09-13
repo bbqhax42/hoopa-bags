@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-13T09:39:26.025469",
+ "generatedAt": "2026-09-13T09:41:35.472329",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake1",
+  "mode": "dailyclaim",
+  "since": "09:40:17"
  },
  "grid": {
   "tasks": [
@@ -80,16 +80,16 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·"
+     "✓"
     ]
    },
    {
     "account": "fake1",
     "cells": [
-     "·",
+     "✓",
      "-",
      "-",
      "·",
@@ -265,8 +265,8 @@
   ]
  },
  "counts": {
-  "done": 33,
-  "todo": 100,
+  "done": 36,
+  "todo": 97,
   "gaveUp": 1,
   "unavailable": 1,
   "windowed": 15
@@ -368,11 +368,65 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-13T09:19:16.840250",
+  "label": "fake1",
+  "at": "2026-09-13T09:40:41.621128",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-13T09:41:31",
+   "script": "dailyclaim",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_094055_dailyclaim_fake1"
+  },
+  {
+   "ts": "2026-09-13T09:40:03",
+   "script": "collect_hoopa_keys",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 9,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_093954_collect_hoopa_keys_smurf"
+  },
+  {
+   "ts": "2026-09-13T09:39:38",
+   "script": "paradise",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 309,
+   "stats": {
+    "explore_clicks": 95,
+    "pass_claims": 4,
+    "upgraded_sports_gloves": 1,
+    "upgraded_energy_drink": 1,
+    "upgraded_small_radar": 1,
+    "marginal_paradise_hub": 1,
+    "dex_milestones": 2,
+    "dex_activated": 3,
+    "shop_sold_out_skipped": 1,
+    "shop_buys": 1,
+    "shop_spend_confirmed": 800
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "16/16"
+   },
+   "dir": "debug_runs/20260913_093429_paradise_smurf"
+  },
   {
    "ts": "2026-09-13T09:34:09",
    "script": "victory_road",
@@ -1854,13 +1908,13 @@
  ],
  "day": {
   "since": "2026-09-13T08:00",
-  "switches": 4,
-  "relogMinutes": 2.8,
+  "switches": 5,
+  "relogMinutes": 3.4,
   "retries": 2,
   "tasks": {
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 5.0,
+    "runs": 6,
+    "minutes": 5.6,
     "failed": 2
    },
    "joint_team_daily_quest": {
@@ -1889,13 +1943,13 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 3,
-    "minutes": 17.1,
+    "runs": 4,
+    "minutes": 22.2,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 3,
-    "minutes": 0.5,
+    "runs": 4,
+    "minutes": 0.7,
     "failed": 0
    },
    "run_pvp_ranked": {
