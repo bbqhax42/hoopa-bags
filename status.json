@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-13T09:54:29.886780",
+ "generatedAt": "2026-09-13T09:56:39.230093",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake2",
+  "mode": "dailyclaim",
+  "since": "09:55:27"
  },
  "grid": {
   "tasks": [
@@ -96,10 +96,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·"
+     "✓"
     ]
    },
    {
@@ -265,8 +265,8 @@
   ]
  },
  "counts": {
-  "done": 40,
-  "todo": 93,
+  "done": 42,
+  "todo": 91,
   "gaveUp": 1,
   "unavailable": 1,
   "windowed": 15
@@ -368,11 +368,64 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-13T09:40:41.621128",
+  "label": "fake2",
+  "at": "2026-09-13T09:55:51.883617",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-13T09:56:42",
+   "script": "dailyclaim",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_095606_dailyclaim_fake2"
+  },
+  {
+   "ts": "2026-09-13T09:55:14",
+   "script": "collect_hoopa_keys",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_095502_collect_hoopa_keys_fake1"
+  },
+  {
+   "ts": "2026-09-13T09:54:47",
+   "script": "paradise",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 348,
+   "stats": {
+    "explore_clicks": 111,
+    "pass_claims": 3,
+    "gear_energy_unreadable": 5,
+    "upgraded_small_radar": 3,
+    "upgraded_sports_gloves": 2,
+    "dex_milestones": 4,
+    "dex_activated": 8,
+    "shop_sold_out_skipped": 3,
+    "shop_buys": 2,
+    "shop_spend_confirmed": 1150
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "20/20"
+   },
+   "dir": "debug_runs/20260913_094859_paradise_fake1"
+  },
   {
    "ts": "2026-09-13T09:48:40",
    "script": "victory_road",
@@ -1968,13 +2021,13 @@
  ],
  "day": {
   "since": "2026-09-13T08:00",
-  "switches": 5,
-  "relogMinutes": 3.4,
+  "switches": 6,
+  "relogMinutes": 4.0,
   "retries": 2,
   "tasks": {
    "dailyclaim": {
-    "runs": 6,
-    "minutes": 5.6,
+    "runs": 7,
+    "minutes": 6.2,
     "failed": 2
    },
    "joint_team_daily_quest": {
@@ -2003,13 +2056,13 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 4,
-    "minutes": 22.2,
+    "runs": 5,
+    "minutes": 28.0,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 4,
-    "minutes": 0.7,
+    "runs": 5,
+    "minutes": 0.8,
     "failed": 0
    },
    "run_pvp_ranked": {
