@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-13T09:22:09.375118",
+ "generatedAt": "2026-09-13T09:24:19.040078",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "dailyclaim",
-  "since": "09:21:17"
+  "mode": "joint_team_daily_quest",
+  "since": "09:23:05"
  },
  "grid": {
   "tasks": [
@@ -74,7 +74,7 @@
     "account": "smurf",
     "cells": [
      "✗2",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -265,8 +265,8 @@
   ]
  },
  "counts": {
-  "done": 28,
-  "todo": 106,
+  "done": 29,
+  "todo": 105,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -373,6 +373,40 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-13T09:24:04",
+   "script": "joint_team_daily_quest",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 57,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260913_092306_joint_team_daily_quest_smurf"
+  },
+  {
+   "ts": "2026-09-13T09:22:49",
+   "script": "dailyclaim",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 91,
+   "stats": {
+    "sign_in_already": 1,
+    "milestone_claimed": 1,
+    "privpack_paid_only": 1,
+    "forbidden_first_topup": 2,
+    "mythic_no_open": 1,
+    "incomplete": 1,
+    "claims": 1
+   },
+   "incomplete": [
+    "dailyclaim: Mythic Incoming would not open"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260913_092118_dailyclaim_smurf"
+  },
   {
    "ts": "2026-09-13T09:21:01",
    "script": "dailyclaim",
@@ -1762,16 +1796,16 @@
   "since": "2026-09-13T08:00",
   "switches": 4,
   "relogMinutes": 2.8,
-  "retries": 1,
+  "retries": 2,
   "tasks": {
    "dailyclaim": {
-    "runs": 4,
-    "minutes": 3.5,
-    "failed": 1
+    "runs": 5,
+    "minutes": 5.0,
+    "failed": 2
    },
    "joint_team_daily_quest": {
-    "runs": 3,
-    "minutes": 3.4,
+    "runs": 4,
+    "minutes": 4.4,
     "failed": 0
    },
    "daily_dungeon": {
