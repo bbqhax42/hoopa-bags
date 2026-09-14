@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T08:25:02.843665",
+ "generatedAt": "2026-09-14T08:27:05.840035",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "dailyclaim",
-  "since": "08:24:17"
+  "mode": "daily_dungeon",
+  "since": "08:27:02"
  },
  "grid": {
   "tasks": [
@@ -27,9 +27,9 @@
    {
     "account": "nova",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "⊘",
      "·",
      "·",
      "·",
@@ -297,10 +297,10 @@
   ]
  },
  "counts": {
-  "done": 9,
-  "todo": 134,
+  "done": 11,
+  "todo": 131,
   "gaveUp": 0,
-  "unavailable": 1,
+  "unavailable": 2,
   "windowed": 21
  },
  "disabled": [
@@ -429,6 +429,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T08:26:34",
+   "script": "joint_team_daily_quest",
+   "account": "nova",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "panel_swipes": 2,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_082540_joint_team_daily_quest_nova"
+  },
+  {
+   "ts": "2026-09-14T08:25:37",
+   "script": "dailyclaim",
+   "account": "nova",
+   "rc": 0,
+   "secs": 39,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_082457_dailyclaim_nova"
+  },
   {
    "ts": "2026-09-14T08:24:15",
    "script": "sky_pillar",
@@ -5315,13 +5346,13 @@
   "retries": 0,
   "tasks": {
    "dailyclaim": {
-    "runs": 1,
-    "minutes": 0.7,
+    "runs": 2,
+    "minutes": 1.3,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 1,
-    "minutes": 0.9,
+    "runs": 2,
+    "minutes": 1.8,
     "failed": 0
    },
    "daily_dungeon": {
@@ -5364,6 +5395,12 @@
  "unavailable": [
   {
    "account": "jeff",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
+  },
+  {
+   "account": "nova",
    "task": "joint_battle",
    "why": null,
    "at": null
