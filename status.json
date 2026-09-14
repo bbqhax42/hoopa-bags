@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T11:54:01.451666",
+ "generatedAt": "2026-09-14T11:56:04.440572",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "combat_daily",
-  "since": "11:50:30"
+  "mode": "paradise",
+  "since": "11:55:46"
  },
  "grid": {
   "tasks": [
@@ -216,27 +216,27 @@
      "✓",
      "✓",
      "⏰",
-     "⇢",
-     "⇢",
-     "⇢",
+     "·",
+     "·",
+     "·",
      "-"
     ]
    },
    {
     "account": "lucifer2",
     "cells": [
-     "⇢",
-     "⇢",
-     "⇢",
-     "⇢",
-     "⇢",
-     "⇢",
-     "⇢",
-     "⇢",
+     "·",
+     "·",
+     "·",
+     "·",
+     "·",
+     "·",
+     "·",
+     "·",
      "⏰",
-     "⇢",
-     "⇢",
-     "⇢",
+     "·",
+     "·",
+     "·",
      "-"
     ]
    },
@@ -248,8 +248,8 @@
      "-",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "-",
@@ -297,8 +297,8 @@
   ]
  },
  "counts": {
-  "done": 96,
-  "todo": 28,
+  "done": 98,
+  "todo": 40,
   "gaveUp": 2,
   "unavailable": 10,
   "windowed": 15
@@ -405,14 +405,14 @@
   {
    "account": "lucifer1",
    "since": "2026-09-14T11:44:13",
-   "held": true,
+   "held": false,
    "heldUntil": "2026-09-14T11:54:13",
    "deferredUntil": "2026-09-14T14:44:13"
   },
   {
    "account": "lucifer2",
    "since": "2026-09-14T11:44:13",
-   "held": true,
+   "held": false,
    "heldUntil": "2026-09-14T11:54:13",
    "deferredUntil": "2026-09-14T14:44:13"
   }
@@ -445,6 +445,40 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T11:55:44",
+   "script": "victory_road",
+   "account": "test1",
+   "rc": 0,
+   "secs": 17,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_115527_victory_road_test1"
+  },
+  {
+   "ts": "2026-09-14T11:55:25",
+   "script": "combat_daily",
+   "account": "test1",
+   "rc": 0,
+   "secs": 285,
+   "stats": {
+    "adv_overflow": 1,
+    "marginal_adventure_event": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "pokemon_upgraded": 1,
+    "refused_daily_rail": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 os a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260914_115039_combat_daily_test1"
+  },
   {
    "ts": "2026-09-14T11:50:28",
    "script": "pokemon_home",
@@ -6808,45 +6842,6 @@
     "stamina": "1/20"
    },
    "dir": "debug_runs/20260912_215426_paradise_fake2"
-  },
-  {
-   "ts": "2026-09-12T21:31:59",
-   "script": "story",
-   "account": "fake1",
-   "rc": 1,
-   "secs": 152,
-   "stats": {
-    "battle_timeout": 1,
-    "incomplete": 1,
-    "story_disabled": 1,
-    "stages_cleared": 0
-   },
-   "incomplete": [
-    "story: stage 1 never produced a result"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260912_212926_story_fake1"
-  },
-  {
-   "ts": "2026-09-12T21:28:08",
-   "script": "paradise",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 87,
-   "stats": {
-    "explore_clicks": 4,
-    "pass_claims": 1,
-    "dex_milestones": 1,
-    "dex_activated": 0,
-    "shop_sold_out_skipped": 3,
-    "shop_buy_no_effect": 1,
-    "shop_buys": 0
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "9/20"
-   },
-   "dir": "debug_runs/20260912_212641_paradise_fake1"
   }
  ],
  "day": {
@@ -6876,13 +6871,13 @@
     "failed": 2
    },
    "combat_daily": {
-    "runs": 15,
-    "minutes": 57.1,
+    "runs": 16,
+    "minutes": 61.9,
     "failed": 7
    },
    "victory_road": {
-    "runs": 11,
-    "minutes": 3.1,
+    "runs": 12,
+    "minutes": 3.4,
     "failed": 0
    },
    "paradise": {
@@ -7104,7 +7099,7 @@
  },
  "phase": {
   "kind": "day",
-  "since": "11:44:21",
+  "since": "11:55:25",
   "until": "18:00"
  }
 }
