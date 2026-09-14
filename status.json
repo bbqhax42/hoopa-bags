@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T08:22:59.611363",
+ "generatedAt": "2026-09-14T08:25:02.843665",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "nova",
+  "mode": "dailyclaim",
+  "since": "08:24:17"
  },
  "grid": {
   "tasks": [
@@ -52,11 +52,11 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "⏰",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-"
     ]
    },
@@ -297,8 +297,8 @@
   ]
  },
  "counts": {
-  "done": 6,
-  "todo": 137,
+  "done": 9,
+  "todo": 134,
   "gaveUp": 0,
   "unavailable": 1,
   "windowed": 21
@@ -424,11 +424,68 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-14T06:01:47.148163",
+  "label": "nova",
+  "at": "2026-09-14T08:24:44.034862",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T08:24:15",
+   "script": "sky_pillar",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 38,
+   "stats": {
+    "stages_cleared": 2,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 145,
+    "stage": 10
+   },
+   "dir": "debug_runs/20260914_082336_sky_pillar_jeff"
+  },
+  {
+   "ts": "2026-09-14T08:23:33",
+   "script": "collect_hoopa_keys",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "marginal_world_boss": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_082320_collect_hoopa_keys_jeff"
+  },
+  {
+   "ts": "2026-09-14T08:23:18",
+   "script": "paradise",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 382,
+   "stats": {
+    "explore_clicks": 136,
+    "pass_claims": 4,
+    "gear_energy_unreadable": 6,
+    "upgraded_small_radar": 3,
+    "upgraded_sports_gloves": 3,
+    "marginal_paradise_hub": 1,
+    "dex_milestones": 4,
+    "dex_activated": 7,
+    "shop_sold_out_skipped": 5,
+    "shop_buys": 1,
+    "shop_spend_confirmed": 1500
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "20/20"
+   },
+   "dir": "debug_runs/20260914_081656_paradise_jeff"
+  },
   {
    "ts": "2026-09-14T08:16:31",
    "script": "victory_road",
@@ -5253,8 +5310,8 @@
  ],
  "day": {
   "since": "2026-09-14T08:00",
-  "switches": 0,
-  "relogMinutes": 0.0,
+  "switches": 1,
+  "relogMinutes": 0.7,
   "retries": 0,
   "tasks": {
    "dailyclaim": {
@@ -5285,6 +5342,21 @@
    "victory_road": {
     "runs": 1,
     "minutes": 0.3,
+    "failed": 0
+   },
+   "paradise": {
+    "runs": 1,
+    "minutes": 6.4,
+    "failed": 0
+   },
+   "collect_hoopa_keys": {
+    "runs": 1,
+    "minutes": 0.2,
+    "failed": 0
+   },
+   "sky_pillar": {
+    "runs": 1,
+    "minutes": 0.7,
     "failed": 0
    }
   }
@@ -5425,5 +5497,9 @@
    "dre"
   ]
  },
- "phase": null
+ "phase": {
+  "kind": "day",
+  "since": "08:23:18",
+  "until": "18:00"
+ }
 }
