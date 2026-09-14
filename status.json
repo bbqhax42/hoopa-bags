@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T20:30:39.021874",
+ "generatedAt": "2026-09-14T20:32:42.104874",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "run_pvp_ranked",
-  "since": "20:29:54"
+  "mode": "hoopa",
+  "since": "20:30:54"
  },
  "grid": {
   "tasks": [
@@ -487,8 +487,8 @@
    "at": "2026-09-08T05:52:34"
   },
   "nova": {
-   "keys": 122,
-   "at": "2026-09-14T02:34:35"
+   "keys": 126,
+   "at": "2026-09-14T20:31:00"
   }
  },
  "session": {
@@ -497,6 +497,27 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T20:30:53",
+   "script": "run_pvp_ranked",
+   "account": "nova",
+   "rc": 1,
+   "secs": 22,
+   "stats": {
+    "ranked_fought": 1,
+    "picker_never_opened": 1,
+    "incomplete": 1,
+    "rank_places_gained": -484,
+    "rank_went_backwards": 1
+   },
+   "incomplete": [
+    "run_pvp_ranked: attempt 2 did not complete"
+   ],
+   "values": {
+    "rank": 487
+   },
+   "dir": "debug_runs/20260914_203031_run_pvp_ranked_nova"
+  },
   {
    "ts": "2026-09-14T20:29:54",
    "script": "worldboss",
@@ -6707,25 +6728,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260913_111135_pokemon_home_fake6"
-  },
-  {
-   "ts": "2026-09-13T11:11:18",
-   "script": "pokemon_home",
-   "account": "fake6",
-   "rc": 2,
-   "secs": 36,
-   "stats": {
-    "board_stuck": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_111042_pokemon_home_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-14T00:00",
   "since": 28800.0,
-  "now": 73839,
+  "now": 73962,
   "segments": [
    {
     "b": 28885,
@@ -10113,12 +10121,21 @@
     ],
     "handoff": 64413,
     "rc": null,
-    "e": 73839
+    "e": 73962
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-14T20:30:53",
+   "account": "nova",
+   "task": "run_pvp_ranked",
+   "rc": 1,
+   "secs": 22,
+   "why": "run_pvp_ranked: attempt 2 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260914_203031_run_pvp_ranked_nova__KEEP_0002_203049_picker_never_opened_2.png"
+  },
   {
    "ts": "2026-09-14T20:23:36",
    "account": "fake5",
@@ -10430,7 +10447,7 @@
   "since": "2026-09-14T08:00",
   "switches": 95,
   "relogMinutes": 51.6,
-  "retries": 67,
+  "retries": 68,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -10478,9 +10495,9 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 43,
-    "minutes": 20.6,
-    "failed": 36
+    "runs": 44,
+    "minutes": 21.0,
+    "failed": 37
    },
    "faction": {
     "runs": 1,
