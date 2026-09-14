@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T10:50:30.634939",
+ "generatedAt": "2026-09-14T10:52:33.756863",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "dailyclaim",
-  "since": "10:50:04"
+  "mode": "joint_battle",
+  "since": "10:52:30"
  },
  "grid": {
   "tasks": [
@@ -171,9 +171,9 @@
    {
     "account": "fake5",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "⊘",
      "·",
      "·",
      "·",
@@ -297,10 +297,10 @@
   ]
  },
  "counts": {
-  "done": 70,
-  "todo": 70,
+  "done": 72,
+  "todo": 67,
   "gaveUp": 3,
-  "unavailable": 7,
+  "unavailable": 8,
   "windowed": 15
  },
  "disabled": [
@@ -424,11 +424,41 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-09-14T10:32:25.828373",
+  "label": "fake5",
+  "at": "2026-09-14T10:50:31.239913",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T10:52:17",
+   "script": "joint_team_daily_quest",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "panel_swipes": 2,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_105124_joint_team_daily_quest_fake5"
+  },
+  {
+   "ts": "2026-09-14T10:51:20",
+   "script": "dailyclaim",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_105044_dailyclaim_fake5"
+  },
   {
    "ts": "2026-09-14T10:50:02",
    "script": "sky_pillar",
@@ -6499,17 +6529,17 @@
  "day": {
   "since": "2026-09-14T08:00",
   "switches": 9,
-  "relogMinutes": 4.2,
+  "relogMinutes": 4.8,
   "retries": 11,
   "tasks": {
    "dailyclaim": {
-    "runs": 9,
-    "minutes": 7.3,
+    "runs": 10,
+    "minutes": 8.0,
     "failed": 2
    },
    "joint_team_daily_quest": {
-    "runs": 7,
-    "minutes": 6.0,
+    "runs": 8,
+    "minutes": 6.9,
     "failed": 0
    },
    "daily_dungeon": {
@@ -6580,6 +6610,12 @@
   },
   {
    "account": "fake4",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
+  },
+  {
+   "account": "fake5",
    "task": "joint_battle",
    "why": null,
    "at": null
