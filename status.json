@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T09:55:12.171153",
+ "generatedAt": "2026-09-14T09:57:15.157214",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "sky_pillar",
-  "since": "09:55:07"
+  "account": "fake2",
+  "mode": "joint_team_daily_quest",
+  "since": "09:57:00"
  },
  "grid": {
   "tasks": [
@@ -110,14 +110,14 @@
      "⏰",
      "-",
      "✓",
-     "·",
+     "✓",
      "-"
     ]
    },
    {
     "account": "fake2",
     "cells": [
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -297,8 +297,8 @@
   ]
  },
  "counts": {
-  "done": 42,
-  "todo": 101,
+  "done": 44,
+  "todo": 99,
   "gaveUp": 3,
   "unavailable": 4,
   "windowed": 15
@@ -424,11 +424,44 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-14T09:41:39.947051",
+  "label": "fake2",
+  "at": "2026-09-14T09:56:10.060183",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T09:56:58",
+   "script": "dailyclaim",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_095621_dailyclaim_fake2"
+  },
+  {
+   "ts": "2026-09-14T09:55:44",
+   "script": "sky_pillar",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "stages_cleared": 2,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 1,
+    "stage": 9
+   },
+   "dir": "debug_runs/20260914_095508_sky_pillar_fake1"
+  },
   {
    "ts": "2026-09-14T09:55:04",
    "script": "collect_hoopa_keys",
@@ -6018,13 +6051,13 @@
  ],
  "day": {
   "since": "2026-09-14T08:00",
-  "switches": 4,
-  "relogMinutes": 2.5,
+  "switches": 5,
+  "relogMinutes": 3.0,
   "retries": 9,
   "tasks": {
    "dailyclaim": {
-    "runs": 6,
-    "minutes": 5.5,
+    "runs": 7,
+    "minutes": 6.2,
     "failed": 2
    },
    "joint_team_daily_quest": {
@@ -6063,8 +6096,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 4,
-    "minutes": 4.3,
+    "runs": 5,
+    "minutes": 4.9,
     "failed": 0
    },
    "run_pvp_ranked": {
