@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T11:43:47.099216",
+ "generatedAt": "2026-09-14T11:45:49.843445",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "run_pvp_ranked",
-  "since": "11:43:37"
+  "account": "test1",
+  "mode": "daily_dungeon",
+  "since": "11:45:33"
  },
  "grid": {
   "tasks": [
@@ -216,34 +216,34 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "✗2",
+     "⇢",
+     "⇢",
      "-"
     ]
    },
    {
     "account": "lucifer2",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
-     "·",
-     "·",
-     "·",
-     "·",
+     "⇢",
+     "⇢",
+     "⇢",
+     "⇢",
+     "⇢",
+     "⇢",
+     "⇢",
+     "⇢",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "⇢",
+     "⇢",
+     "⇢",
      "-"
     ]
    },
    {
     "account": "test1",
     "cells": [
-     "·",
+     "✓",
      "-",
      "-",
      "·",
@@ -297,9 +297,9 @@
   ]
  },
  "counts": {
-  "done": 93,
-  "todo": 44,
-  "gaveUp": 3,
+  "done": 94,
+  "todo": 29,
+  "gaveUp": 4,
   "unavailable": 10,
   "windowed": 15
  },
@@ -401,7 +401,22 @@
    "why": "nothing opened at stage 1 — the story is complete here, or its entry has moved"
   }
  ],
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "lucifer1",
+   "since": "2026-09-14T11:44:13",
+   "held": true,
+   "heldUntil": "2026-09-14T12:29:13",
+   "deferredUntil": "2026-09-14T14:44:13"
+  },
+  {
+   "account": "lucifer2",
+   "since": "2026-09-14T11:44:13",
+   "held": true,
+   "heldUntil": "2026-09-14T12:29:13",
+   "deferredUntil": "2026-09-14T14:44:13"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 79,
@@ -425,11 +440,65 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-14T11:24:36.600307",
+  "label": "test1",
+  "at": "2026-09-14T11:44:44.626359",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T11:45:31",
+   "script": "dailyclaim",
+   "account": "test1",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_114454_dailyclaim_test1"
+  },
+  {
+   "ts": "2026-09-14T11:44:20",
+   "script": "run_pvp_ranked",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 19,
+   "stats": {
+    "picker_never_opened": 1,
+    "incomplete": 1,
+    "rank_places_gained": 0
+   },
+   "incomplete": [
+    "run_pvp_ranked: attempt 1 did not complete"
+   ],
+   "values": {
+    "rank": 3
+   },
+   "dir": "debug_runs/20260914_114401_run_pvp_ranked_lucifer1"
+  },
+  {
+   "ts": "2026-09-14T11:43:57",
+   "script": "run_pvp_ranked",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 18,
+   "stats": {
+    "picker_never_opened": 1,
+    "incomplete": 1,
+    "rank_places_gained": 0
+   },
+   "incomplete": [
+    "run_pvp_ranked: attempt 1 did not complete"
+   ],
+   "values": {
+    "rank": 3
+   },
+   "dir": "debug_runs/20260914_114338_run_pvp_ranked_lucifer1"
+  },
   {
    "ts": "2026-09-14T11:43:35",
    "script": "paradise",
@@ -6771,54 +6840,17 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260912_202207_worldboss_deno"
-  },
-  {
-   "ts": "2026-09-12T20:22:07",
-   "script": "worldboss",
-   "account": "test1",
-   "rc": 2,
-   "secs": 70,
-   "stats": {
-    "wb_not_unlocked": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260912_202057_worldboss_test1"
-  },
-  {
-   "ts": "2026-09-12T20:20:56",
-   "script": "worldboss",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 46,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260912_202010_worldboss_lucifer2"
-  },
-  {
-   "ts": "2026-09-12T20:20:10",
-   "script": "worldboss",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 68,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260912_201901_worldboss_lucifer1"
   }
  ],
  "day": {
   "since": "2026-09-14T08:00",
-  "switches": 11,
-  "relogMinutes": 6.0,
-  "retries": 14,
+  "switches": 12,
+  "relogMinutes": 6.6,
+  "retries": 16,
   "tasks": {
    "dailyclaim": {
-    "runs": 12,
-    "minutes": 9.2,
+    "runs": 13,
+    "minutes": 9.8,
     "failed": 2
    },
    "joint_team_daily_quest": {
@@ -6862,9 +6894,9 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 2,
-    "minutes": 0.6,
-    "failed": 2
+    "runs": 4,
+    "minutes": 1.3,
+    "failed": 4
    },
    "faction": {
     "runs": 1,
@@ -7063,5 +7095,9 @@
    "dre"
   ]
  },
- "phase": null
+ "phase": {
+  "kind": "day",
+  "since": "11:44:21",
+  "until": "18:00"
+ }
 }
