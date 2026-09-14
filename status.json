@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-14T20:18:21.006608",
+ "generatedAt": "2026-09-14T20:20:23.872534",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -492,11 +492,33 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-14T20:17:11.464773",
-  "why": "login accepted"
+  "label": null,
+  "at": "2026-09-14T20:20:02.047860",
+  "why": "switch failed"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T20:20:02",
+   "script": "worldboss",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 56,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_201905_worldboss_fake2"
+  },
+  {
+   "ts": "2026-09-14T20:19:05",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 1,
+   "secs": 78,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_201747_worldboss_fake1"
+  },
   {
    "ts": "2026-09-14T20:17:46",
    "script": "worldboss",
@@ -6726,41 +6748,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260913_105131_joint_team_daily_quest_fake5"
-  },
-  {
-   "ts": "2026-09-13T10:51:19",
-   "script": "dailyclaim",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_105043_dailyclaim_fake5"
-  },
-  {
-   "ts": "2026-09-13T10:49:55",
-   "script": "collect_hoopa_keys",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_104943_collect_hoopa_keys_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-14T00:00",
   "since": 28800.0,
-  "now": 73101,
+  "now": 73224,
   "segments": [
    {
     "b": 28885,
@@ -10148,12 +10141,30 @@
     ],
     "handoff": 64413,
     "rc": null,
-    "e": 73101
+    "e": 73224
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-14T20:20:02",
+   "account": "fake2",
+   "task": "worldboss",
+   "rc": 1,
+   "secs": 56,
+   "why": "",
+   "frame": null
+  },
+  {
+   "ts": "2026-09-14T20:19:05",
+   "account": "fake1",
+   "task": "worldboss",
+   "rc": 1,
+   "secs": 78,
+   "why": "",
+   "frame": null
+  },
   {
    "ts": "2026-09-14T17:44:25",
    "account": "lucifer2",
@@ -10427,9 +10438,9 @@
  ],
  "day": {
   "since": "2026-09-14T08:00",
-  "switches": 84,
+  "switches": 86,
   "relogMinutes": 51.0,
-  "retries": 63,
+  "retries": 65,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -10502,9 +10513,9 @@
     "failed": 8
    },
    "worldboss": {
-    "runs": 4,
-    "minutes": 4.2,
-    "failed": 0
+    "runs": 6,
+    "minutes": 6.5,
+    "failed": 2
    }
   }
  },
@@ -10705,7 +10716,9 @@
    "chris",
    "jeff",
    "nova",
-   "smurf"
+   "smurf",
+   "fake1",
+   "fake2"
   ]
  },
  "phase": {
