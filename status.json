@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-14T09:40:50.865154",
+ "generatedAt": "2026-09-14T09:42:54.177191",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "faction",
-  "since": "09:38:41"
+  "account": "fake1",
+  "mode": "daily_dungeon",
+  "since": "09:42:29"
  },
  "grid": {
   "tasks": [
@@ -93,13 +93,13 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "✓"
     ]
    },
    {
     "account": "fake1",
     "cells": [
-     "·",
+     "✓",
      "-",
      "-",
      "·",
@@ -297,8 +297,8 @@
   ]
  },
  "counts": {
-  "done": 34,
-  "todo": 109,
+  "done": 36,
+  "todo": 107,
   "gaveUp": 3,
   "unavailable": 4,
   "windowed": 15
@@ -424,11 +424,42 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-14T09:14:00.512869",
+  "label": "fake1",
+  "at": "2026-09-14T09:41:39.947051",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-14T09:42:27",
+   "script": "dailyclaim",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_094150_dailyclaim_fake1"
+  },
+  {
+   "ts": "2026-09-14T09:41:11",
+   "script": "faction",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 142,
+   "stats": {
+    "auto_formation": 20,
+    "floors_water": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260914_093849_faction_smurf"
+  },
   {
    "ts": "2026-09-14T09:38:39",
    "script": "sky_pillar",
@@ -5887,13 +5918,13 @@
  ],
  "day": {
   "since": "2026-09-14T08:00",
-  "switches": 3,
-  "relogMinutes": 1.9,
+  "switches": 4,
+  "relogMinutes": 2.5,
   "retries": 9,
   "tasks": {
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 5.0,
+    "runs": 6,
+    "minutes": 5.5,
     "failed": 2
    },
    "joint_team_daily_quest": {
@@ -5940,6 +5971,11 @@
     "runs": 2,
     "minutes": 0.6,
     "failed": 2
+   },
+   "faction": {
+    "runs": 1,
+    "minutes": 2.4,
+    "failed": 0
    }
   }
  },
