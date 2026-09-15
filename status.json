@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-15T15:00:34.736236",
+ "generatedAt": "2026-09-15T15:11:22.362384",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -137,7 +137,7 @@
      "✓",
      "✓",
      "✓",
-     "✗2",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 177,
+  "done": 178,
   "todo": 10,
-  "gaveUp": 7,
+  "gaveUp": 6,
   "unavailable": 1,
   "windowed": 12
  },
@@ -560,6 +560,45 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T15:11:04",
+   "script": "rank_match",
+   "account": null,
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "leftover_match": 1,
+    "near_miss_go_button": 2,
+    "skip_tapped": 5,
+    "matches": 5,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "matches": 5,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260915_151007_rank_match_na"
+  },
+  {
+   "ts": "2026-09-15T15:08:50",
+   "script": "rank_match",
+   "account": null,
+   "rc": 1,
+   "secs": 321,
+   "stats": {
+    "near_miss_escape_confirm": 2,
+    "vr_not_open": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_150329_rank_match_na"
+  },
   {
    "ts": "2026-09-15T15:00:33",
    "script": "rank_match",
@@ -6731,46 +6770,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260914_121048_combat_daily_deno"
-  },
-  {
-   "ts": "2026-09-14T12:10:44",
-   "script": "combat_daily",
-   "account": "deno",
-   "rc": 1,
-   "secs": 18,
-   "stats": {
-    "near_miss_afk_rewards": 6,
-    "marginal_afk_rewards": 2,
-    "refused_chest": 5,
-    "left_outstanding": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_121026_combat_daily_deno"
-  },
-  {
-   "ts": "2026-09-14T12:10:17",
-   "script": "pokemon_home",
-   "account": "deno",
-   "rc": 0,
-   "secs": 169,
-   "stats": {
-    "reached_via_trial": 1,
-    "merge_moved_instead": 3,
-    "balls_unsettled_opened": 2,
-    "ball_tiles_not_merged": 1,
-    "phantom_creations": 4,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_120728_pokemon_home_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 54035,
+  "now": 54682,
   "segments": [
    {
     "b": 28919,
@@ -9234,7 +9239,7 @@
     "login": null,
     "handoff": 54034,
     "rc": 1,
-    "e": 54035,
+    "e": 54682,
     "secs": 81,
     "why": "rank_match: match 1 did not complete"
    }
@@ -9242,6 +9247,15 @@
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T15:08:50",
+   "account": null,
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 321,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_150329_rank_match_na__KEEP_0005_150850_no_victory_road.png"
+  },
   {
    "ts": "2026-09-15T15:00:33",
    "account": "fake1",
@@ -9773,7 +9787,7 @@
  },
  "phase": {
   "kind": "day",
-  "since": "14:54:24",
+  "since": "15:11:22",
   "until": "18:00"
  }
 }
