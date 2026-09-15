@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T10:38:33.302102",
+ "generatedAt": "2026-09-15T10:40:36.309438",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
-  "mode": "sky_pillar",
-  "since": "10:38:16"
+  "account": "deno",
+  "mode": "dailyclaim",
+  "since": "10:39:45"
  },
  "grid": {
   "tasks": [
@@ -293,7 +293,7 @@
      "⏰",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 121,
-  "todo": 23,
+  "done": 122,
+  "todo": 22,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 27
@@ -506,11 +506,28 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-15T10:27:06.029820",
+  "label": "deno",
+  "at": "2026-09-15T10:40:07.979510",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T10:39:44",
+   "script": "sky_pillar",
+   "account": "test1",
+   "rc": 0,
+   "secs": 87,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 2,
+    "stage": 2
+   },
+   "dir": "debug_runs/20260915_103817_sky_pillar_test1"
+  },
   {
    "ts": "2026-09-15T10:38:16",
    "script": "collect_hoopa_keys",
@@ -6658,25 +6675,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_094301_pokemon_home_fake1"
-  },
-  {
-   "ts": "2026-09-14T09:42:55",
-   "script": "daily_dungeon",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 21,
-   "stats": {
-    "marginal_dungeon_list": 8
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_094233_daily_dungeon_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 38313,
+  "now": 38436,
   "segments": [
    {
     "b": 28919,
@@ -8326,8 +8330,22 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 38297,
+    "rc": 0,
+    "e": 38385,
+    "secs": 87,
+    "why": ""
+   },
+   {
+    "b": 38385,
+    "a": "deno",
+    "s": "dailyclaim",
+    "login": [
+     38385,
+     38407
+    ],
+    "handoff": 38419,
     "rc": null,
-    "e": 38313
+    "e": 38436
    }
   ],
   "idle": []
@@ -8561,8 +8579,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 12,
-  "relogMinutes": 7.1,
+  "switches": 13,
+  "relogMinutes": 7.7,
   "retries": 25,
   "tasks": {
    "dailyclaim": {
@@ -8611,8 +8629,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 12,
-    "minutes": 12.3,
+    "runs": 13,
+    "minutes": 13.7,
     "failed": 0
    },
    "weekend_bash": {
