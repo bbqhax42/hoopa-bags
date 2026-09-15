@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T15:17:44.995409",
+ "generatedAt": "2026-09-15T15:19:48.907267",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
+  "account": "test1",
   "mode": "rank_match",
-  "since": "15:17:34"
+  "since": "15:19:43"
  },
  "grid": {
   "tasks": [
@@ -281,7 +281,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -305,7 +305,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -329,7 +329,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "-",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 180,
-  "todo": 5,
-  "gaveUp": 9,
+  "done": 182,
+  "todo": 2,
+  "gaveUp": 10,
   "unavailable": 1,
   "windowed": 12
  },
@@ -555,11 +555,64 @@
   }
  },
  "session": {
-  "label": "fake6",
-  "at": "2026-09-15T15:16:21.669135",
+  "label": "test1",
+  "at": "2026-09-15T15:19:24.278067",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T15:19:43",
+   "script": "rank_match",
+   "account": "test1",
+   "rc": 1,
+   "secs": 10,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_151932_rank_match_test1"
+  },
+  {
+   "ts": "2026-09-15T15:19:01",
+   "script": "rank_match",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "near_miss_go_button": 2,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 0,
+    "matches": 0,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260915_151854_rank_match_lucifer2"
+  },
+  {
+   "ts": "2026-09-15T15:18:18",
+   "script": "rank_match",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 9,
+   "stats": {
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 0,
+    "matches": 0,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260915_151809_rank_match_lucifer1"
+  },
   {
    "ts": "2026-09-15T15:17:34",
    "script": "rank_match",
@@ -6732,57 +6785,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_122509_combat_daily_dre"
-  },
-  {
-   "ts": "2026-09-14T12:25:00",
-   "script": "pokemon_home",
-   "account": "dre",
-   "rc": 0,
-   "secs": 118,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_shrank_rejected": 1,
-    "merge_refused": 4,
-    "charges_left_unspent": 36
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_122301_pokemon_home_dre"
-  },
-  {
-   "ts": "2026-09-14T12:22:57",
-   "script": "daily_dungeon",
-   "account": "dre",
-   "rc": 0,
-   "secs": 18,
-   "stats": {
-    "marginal_dungeon_list": 8
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_122238_daily_dungeon_dre"
-  },
-  {
-   "ts": "2026-09-14T12:22:09",
-   "script": "joint_team_daily_quest",
-   "account": "dre",
-   "rc": 0,
-   "secs": 43,
-   "stats": {
-    "panel_swipes": 2,
-    "artifact_row_found_by_scrolling": 1,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_122126_joint_team_daily_quest_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 55065,
+  "now": 55189,
   "segments": [
    {
     "b": 28919,
@@ -9359,16 +9367,66 @@
     "s": "rank_match",
     "login": [
      55055,
-     null
+     55078
     ],
-    "handoff": null,
-    "rc": null,
-    "e": 55065
+    "handoff": 55089,
+    "rc": 0,
+    "e": 55099,
+    "secs": 9,
+    "why": ""
+   },
+   {
+    "b": 55099,
+    "a": "lucifer2",
+    "s": "rank_match",
+    "login": [
+     55099,
+     55122
+    ],
+    "handoff": 55134,
+    "rc": 0,
+    "e": 55142,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 55142,
+    "a": "test1",
+    "s": "rank_match",
+    "login": [
+     55142,
+     55164
+    ],
+    "handoff": 55172,
+    "rc": 1,
+    "e": 55183,
+    "secs": 10,
+    "why": "rank_match: the Rank screen never opened"
+   },
+   {
+    "b": 55183,
+    "a": "test1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 55186,
+    "rc": 1,
+    "e": 55189,
+    "secs": 10,
+    "why": "rank_match: the Rank screen never opened"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T15:19:43",
+   "account": "test1",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 10,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_151932_rank_match_test1__KEEP_0004_151943_no_rank_screen.png"
+  },
   {
    "ts": "2026-09-15T15:15:59",
    "account": "fake5",
@@ -9723,9 +9781,9 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 41,
-  "relogMinutes": 22.6,
-  "retries": 37,
+  "switches": 43,
+  "relogMinutes": 24.3,
+  "retries": 38,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9813,9 +9871,9 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 11,
-    "minutes": 6.9,
-    "failed": 7
+    "runs": 14,
+    "minutes": 7.4,
+    "failed": 8
    }
   }
  },
