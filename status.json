@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T13:47:48.552656",
+ "generatedAt": "2026-09-15T13:49:51.548331",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "mail",
-  "since": "13:47:29"
+  "mode": "guild_war",
+  "since": "13:49:27"
  },
  "grid": {
   "tasks": [
@@ -286,7 +286,7 @@
     "account": "lucifer2",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "✓",
      "⏰",
      "✓",
@@ -294,7 +294,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "✓",
@@ -377,9 +377,9 @@
   ]
  },
  "counts": {
-  "done": 164,
-  "todo": 11,
-  "gaveUp": 4,
+  "done": 165,
+  "todo": 9,
+  "gaveUp": 5,
   "unavailable": 1,
   "windowed": 12
  },
@@ -539,11 +539,44 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-15T13:45:54.165383",
+  "label": "lucifer2",
+  "at": "2026-09-15T13:47:53.444636",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T13:49:27",
+   "script": "guild_war",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 74,
+   "stats": {
+    "near_miss_last_hit": 1,
+    "refused_result_confirm": 1,
+    "gw_no_return": 1,
+    "assist_skipped_off_screen": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_134812_guild_war_lucifer2"
+  },
+  {
+   "ts": "2026-09-15T13:48:11",
+   "script": "mail",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 5,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260915_134807_mail_lucifer2"
+  },
   {
    "ts": "2026-09-15T13:47:29",
    "script": "guild_war",
@@ -6685,46 +6718,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_112449_joint_team_daily_quest_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T11:23:59",
-   "script": "joint_team_daily_quest",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 47,
-   "stats": {
-    "panel_swipes": 4,
-    "incomplete": 2,
-    "chat_panel_unreachable": 1
-   },
-   "incomplete": [
-    "joint_team_daily_quest: artifact quest",
-    "joint_team_daily_quest: chat quest — could not get back to the guild base"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260914_112311_joint_team_daily_quest_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T11:23:08",
-   "script": "dailyclaim",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_112231_dailyclaim_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 49668,
+  "now": 49791,
   "segments": [
    {
     "b": 28919,
@@ -8953,11 +8952,35 @@
     "s": "mail",
     "login": [
      49650,
-     null
+     49673
     ],
-    "handoff": null,
-    "rc": null,
-    "e": 49668
+    "handoff": 49687,
+    "rc": 0,
+    "e": 49692,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49692,
+    "a": "lucifer2",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49692,
+    "rc": 0,
+    "e": 49767,
+    "secs": 74,
+    "why": ""
+   },
+   {
+    "b": 49767,
+    "a": "lucifer2",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49775,
+    "rc": 0,
+    "e": 49791,
+    "secs": 74,
+    "why": ""
    }
   ],
   "idle": []
@@ -9237,7 +9260,7 @@
  "day": {
   "since": "2026-09-15T08:00",
   "switches": 27,
-  "relogMinutes": 14.9,
+  "relogMinutes": 15.5,
   "retries": 29,
   "tasks": {
    "dailyclaim": {
@@ -9311,13 +9334,13 @@
     "failed": 2
    },
    "mail": {
-    "runs": 10,
-    "minutes": 0.8,
+    "runs": 11,
+    "minutes": 0.9,
     "failed": 0
    },
    "guild_war": {
-    "runs": 12,
-    "minutes": 14.1,
+    "runs": 13,
+    "minutes": 15.3,
     "failed": 0
    }
   }
