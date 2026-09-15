@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T10:32:24.608223",
+ "generatedAt": "2026-09-15T10:34:27.553711",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "combat_daily",
-  "since": "10:31:35"
+  "mode": "victory_road",
+  "since": "10:34:25"
  },
  "grid": {
   "tasks": [
@@ -287,7 +287,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 117,
-  "todo": 27,
+  "done": 118,
+  "todo": 26,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 27
@@ -511,6 +511,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T10:34:24",
+   "script": "combat_daily",
+   "account": "test1",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "arena_slot_unavailable": 1,
+    "title_reread_named": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_103348_combat_daily_test1"
+  },
+  {
+   "ts": "2026-09-15T10:33:46",
+   "script": "combat_daily",
+   "account": "test1",
+   "rc": 1,
+   "secs": 126,
+   "stats": {
+    "title_reread_named": 5,
+    "near_miss_go_button": 1,
+    "arena_slot_unavailable": 1,
+    "adv_energy_spent": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 2
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260915_103140_combat_daily_test1"
+  },
   {
    "ts": "2026-09-15T10:31:34",
    "script": "pokemon_home",
@@ -6634,50 +6670,12 @@
     "stage": 8
    },
    "dir": "debug_runs/20260914_093624_sky_pillar_smurf"
-  },
-  {
-   "ts": "2026-09-14T09:36:21",
-   "script": "collect_hoopa_keys",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_093608_collect_hoopa_keys_smurf"
-  },
-  {
-   "ts": "2026-09-14T09:36:04",
-   "script": "paradise",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 336,
-   "stats": {
-    "explore_clicks": 95,
-    "pass_claims": 5,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 1,
-    "upgraded_sports_gloves": 1,
-    "marginal_paradise_hub": 2,
-    "dex_milestones": 3,
-    "dex_activated": 6,
-    "shop_sold_out_skipped": 2,
-    "shop_buys": 1,
-    "shop_spend_confirmed": 1200
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "16/16"
-   },
-   "dir": "debug_runs/20260914_093028_paradise_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 37944,
+  "now": 38067,
   "segments": [
    {
     "b": 28919,
@@ -8272,13 +8270,44 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 37900,
+    "rc": 1,
+    "e": 38027,
+    "secs": 126,
+    "why": ""
+   },
+   {
+    "b": 38027,
+    "a": "test1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 38028,
+    "rc": 1,
+    "e": 38065,
+    "secs": 126,
+    "why": ""
+   },
+   {
+    "b": 38065,
+    "a": "test1",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 38066,
     "rc": null,
-    "e": 37944
+    "e": 38067
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T10:33:46",
+   "account": "test1",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 126,
+   "why": "title_reread_named, near_miss_go_button, arena_slot_unavailable, adv_energy_spent, upgrade_blocked_by_first_topup, pokemon_upgraded, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_103140_combat_daily_test1__KEEP_0074_103245_arena_slot_unavailable.png"
+  },
   {
    "ts": "2026-09-15T10:26:42",
    "account": "lucifer2",
@@ -8500,7 +8529,7 @@
   "since": "2026-09-15T08:00",
   "switches": 12,
   "relogMinutes": 7.1,
-  "retries": 24,
+  "retries": 25,
   "tasks": {
    "dailyclaim": {
     "runs": 14,
@@ -8523,9 +8552,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 23,
-    "minutes": 26.4,
-    "failed": 13
+    "runs": 25,
+    "minutes": 29.1,
+    "failed": 14
    },
    "victory_road": {
     "runs": 12,
