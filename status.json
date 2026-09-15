@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T09:20:38.650269",
+ "generatedAt": "2026-09-15T09:22:41.481298",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "dailyclaim",
-  "since": "09:19:43"
+  "mode": "pokemon_home",
+  "since": "09:22:26"
  },
  "grid": {
   "tasks": [
@@ -156,10 +156,10 @@
    {
     "account": "fake3",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 59,
-  "todo": 86,
+  "done": 62,
+  "todo": 83,
   "gaveUp": 3,
   "unavailable": 0,
   "windowed": 27
@@ -512,6 +512,51 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T09:22:25",
+   "script": "daily_dungeon",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 51,
+   "stats": {
+    "marginal_dungeon_list": 17,
+    "sweep_dead_after_clear": 2,
+    "dungeon_unrankable": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_092134_daily_dungeon_fake3"
+  },
+  {
+   "ts": "2026-09-15T09:21:30",
+   "script": "joint_team_daily_quest",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 39,
+   "stats": {
+    "panel_swipes": 2,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_092050_joint_team_daily_quest_fake3"
+  },
+  {
+   "ts": "2026-09-15T09:20:49",
+   "script": "dailyclaim",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_092015_dailyclaim_fake3"
+  },
   {
    "ts": "2026-09-15T09:19:42",
    "script": "sky_pillar",
@@ -6614,55 +6659,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_002418_story_deno"
-  },
-  {
-   "ts": "2026-09-14T00:24:16",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 86,
-   "stats": {
-    "skip_retry": 18,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_002250_story_deno"
-  },
-  {
-   "ts": "2026-09-14T00:22:48",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 93,
-   "stats": {
-    "skip_retry": 14,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_002115_story_deno"
-  },
-  {
-   "ts": "2026-09-14T00:21:13",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 84,
-   "stats": {
-    "skip_retry": 17,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_001949_story_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 33639,
+  "now": 33761,
   "segments": [
    {
     "b": 28919,
@@ -7491,8 +7493,41 @@
      33607
     ],
     "handoff": 33615,
+    "rc": 0,
+    "e": 33649,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 33649,
+    "a": "fake3",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 33650,
+    "rc": 0,
+    "e": 33690,
+    "secs": 39,
+    "why": ""
+   },
+   {
+    "b": 33690,
+    "a": "fake3",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 33693,
+    "rc": 0,
+    "e": 33746,
+    "secs": 51,
+    "why": ""
+   },
+   {
+    "b": 33746,
+    "a": "fake3",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 33747,
     "rc": null,
-    "e": 33639
+    "e": 33761
    }
   ],
   "idle": []
@@ -7641,18 +7676,18 @@
   "retries": 15,
   "tasks": {
    "dailyclaim": {
-    "runs": 7,
-    "minutes": 5.6,
+    "runs": 8,
+    "minutes": 6.2,
     "failed": 2
    },
    "joint_team_daily_quest": {
-    "runs": 5,
-    "minutes": 3.3,
+    "runs": 6,
+    "minutes": 4.0,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 6,
-    "minutes": 2.2,
+    "runs": 7,
+    "minutes": 3.1,
     "failed": 0
    },
    "pokemon_home": {
