@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T09:24:44.428036",
+ "generatedAt": "2026-09-15T09:26:47.496632",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "combat_daily",
-  "since": "09:22:51"
+  "mode": "paradise",
+  "since": "09:25:26"
  },
  "grid": {
   "tasks": [
@@ -161,8 +161,8 @@
      "⏰",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "-",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 63,
-  "todo": 82,
+  "done": 65,
+  "todo": 80,
   "gaveUp": 3,
   "unavailable": 0,
   "windowed": 27
@@ -512,6 +512,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T09:25:25",
+   "script": "victory_road",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 11,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_092514_victory_road_fake3"
+  },
+  {
+   "ts": "2026-09-15T09:25:13",
+   "script": "combat_daily",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 9,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_092503_combat_daily_fake3"
+  },
+  {
+   "ts": "2026-09-15T09:25:02",
+   "script": "combat_daily",
+   "account": "fake3",
+   "rc": 1,
+   "secs": 125,
+   "stats": {
+    "title_reread_named": 5,
+    "near_miss_afk_rewards": 4,
+    "marginal_afk_rewards": 2,
+    "refused_quick_bar": 1,
+    "adv_overflow": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 os a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260915_092256_combat_daily_fake3"
+  },
   {
    "ts": "2026-09-15T09:22:50",
    "script": "pokemon_home",
@@ -6618,53 +6666,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260914_020227_worldboss_nova"
-  },
-  {
-   "ts": "2026-09-14T02:02:27",
-   "script": "worldboss",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 72,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_020115_worldboss_jeff"
-  },
-  {
-   "ts": "2026-09-14T02:01:14",
-   "script": "worldboss",
-   "account": "chris",
-   "rc": 0,
-   "secs": 74,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_020000_worldboss_chris"
-  },
-  {
-   "ts": "2026-09-14T01:25:05",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 93,
-   "stats": {
-    "skip_retry": 15,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_012332_story_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 33884,
+  "now": 34007,
   "segments": [
    {
     "b": 28919,
@@ -7537,13 +7544,55 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 33776,
+    "rc": 1,
+    "e": 33902,
+    "secs": 125,
+    "why": ""
+   },
+   {
+    "b": 33902,
+    "a": "fake3",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33903,
+    "rc": 1,
+    "e": 33913,
+    "secs": 125,
+    "why": ""
+   },
+   {
+    "b": 33913,
+    "a": "fake3",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 33914,
+    "rc": 0,
+    "e": 33926,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 33926,
+    "a": "fake3",
+    "s": "paradise",
+    "login": null,
+    "handoff": 33927,
     "rc": null,
-    "e": 33884
+    "e": 34007
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T09:25:02",
+   "account": "fake3",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 125,
+   "why": "title_reread_named, near_miss_afk_rewards, marginal_afk_rewards, refused_quick_bar, adv_overflow, upgrade_blocked_by_first_topup, pokemon_upgraded, left_outstan",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_092256_combat_daily_fake3__0175_092502_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-15T09:14:59",
    "account": "fake2",
@@ -7684,7 +7733,7 @@
   "since": "2026-09-15T08:00",
   "switches": 6,
   "relogMinutes": 3.8,
-  "retries": 15,
+  "retries": 16,
   "tasks": {
    "dailyclaim": {
     "runs": 8,
@@ -7707,13 +7756,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 11,
-    "minutes": 12.5,
-    "failed": 6
+    "runs": 13,
+    "minutes": 14.8,
+    "failed": 7
    },
    "victory_road": {
-    "runs": 6,
-    "minutes": 1.1,
+    "runs": 7,
+    "minutes": 1.2,
     "failed": 0
    },
    "paradise": {
