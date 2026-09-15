@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T13:56:00.375922",
+ "generatedAt": "2026-09-15T13:58:03.480345",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "dre",
+  "account": "jeff",
   "mode": "guild_war",
-  "since": "13:55:39"
+  "since": "13:57:39"
  },
  "grid": {
   "tasks": [
@@ -64,7 +64,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "✓",
@@ -378,8 +378,8 @@
  },
  "counts": {
   "done": 171,
-  "todo": 3,
-  "gaveUp": 5,
+  "todo": 2,
+  "gaveUp": 6,
   "unavailable": 1,
   "windowed": 12
  },
@@ -539,11 +539,45 @@
   }
  },
  "session": {
-  "label": "dre",
-  "at": "2026-09-15T13:55:04.935203",
+  "label": "jeff",
+  "at": "2026-09-15T13:57:21.369898",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T13:57:38",
+   "script": "guild_war",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "refused_auto_formation": 1,
+    "refused_setform_confirm": 1,
+    "gw_never_entered": 1,
+    "assist_already_set": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_135732_guild_war_jeff"
+  },
+  {
+   "ts": "2026-09-15T13:56:56",
+   "script": "guild_war",
+   "account": "dre",
+   "rc": 0,
+   "secs": 73,
+   "stats": {
+    "near_miss_set_form_title": 2,
+    "near_miss_last_hit": 2,
+    "marginal_last_hit": 1,
+    "refused_result_confirm": 1,
+    "gw_no_return": 1,
+    "assist_skipped_off_screen": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_135543_guild_war_dre"
+  },
   {
    "ts": "2026-09-15T13:55:38",
    "script": "guild_war",
@@ -6689,47 +6723,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_114537_daily_dungeon_test1"
-  },
-  {
-   "ts": "2026-09-14T11:45:31",
-   "script": "dailyclaim",
-   "account": "test1",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_114454_dailyclaim_test1"
-  },
-  {
-   "ts": "2026-09-14T11:44:20",
-   "script": "run_pvp_ranked",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 19,
-   "stats": {
-    "picker_never_opened": 1,
-    "incomplete": 1,
-    "rank_places_gained": 0
-   },
-   "incomplete": [
-    "run_pvp_ranked: attempt 1 did not complete"
-   ],
-   "values": {
-    "rank": 3
-   },
-   "dir": "debug_runs/20260914_114401_run_pvp_ranked_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 50160,
+  "now": 50283,
   "segments": [
    {
     "b": 28919,
@@ -9070,8 +9069,33 @@
     "login": null,
     "handoff": 50142,
     "rc": 0,
-    "e": 50160,
+    "e": 50217,
     "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 50217,
+    "a": "jeff",
+    "s": "guild_war",
+    "login": [
+     50217,
+     50241
+    ],
+    "handoff": 50252,
+    "rc": 0,
+    "e": 50259,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 50259,
+    "a": "jeff",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 50263,
+    "rc": 0,
+    "e": 50283,
+    "secs": 6,
     "why": ""
    }
   ],
@@ -9351,8 +9375,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 30,
-  "relogMinutes": 17.1,
+  "switches": 31,
+  "relogMinutes": 17.7,
   "retries": 29,
   "tasks": {
    "dailyclaim": {
@@ -9431,8 +9455,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 17,
-    "minutes": 19.4,
+    "runs": 19,
+    "minutes": 20.8,
     "failed": 0
    }
   }
