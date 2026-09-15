@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T09:12:26.038949",
+ "generatedAt": "2026-09-15T09:14:29.047690",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "pokemon_home",
-  "since": "09:12:24"
+  "mode": "combat_daily",
+  "since": "09:12:48"
  },
  "grid": {
   "tasks": [
@@ -139,7 +139,7 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 53,
-  "todo": 92,
+  "done": 54,
+  "todo": 91,
   "gaveUp": 3,
   "unavailable": 0,
   "windowed": 27
@@ -512,6 +512,20 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T09:12:47",
+   "script": "pokemon_home",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 21,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_091225_pokemon_home_fake2"
+  },
   {
    "ts": "2026-09-15T09:12:23",
    "script": "daily_dungeon",
@@ -6636,37 +6650,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260913_213724_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-13T21:36:47",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 82,
-   "stats": {
-    "portal_fork": 1,
-    "portals": 1,
-    "infernal_confirmed": 1,
-    "fountain_taken": 1,
-    "runes_claimed": 4,
-    "battles_won": 4,
-    "battles_unconfirmed": 2,
-    "incomplete": 1,
-    "wins": 4
-   },
-   "incomplete": [
-    "misty_woods: two battles in a row without a win at step 8 after 4 win(s)"
-   ],
-   "values": {
-    "stage": 4
-   },
-   "dir": "debug_runs/20260913_213525_misty_woods_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 33146,
+  "now": 33269,
   "segments": [
    {
     "b": 28919,
@@ -7415,8 +7404,19 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 33145,
+    "rc": 0,
+    "e": 33168,
+    "secs": 21,
+    "why": ""
+   },
+   {
+    "b": 33168,
+    "a": "fake2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33173,
     "rc": null,
-    "e": 33146
+    "e": 33269
    }
   ],
   "idle": []
@@ -7571,8 +7571,8 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 5,
-    "minutes": 10.5,
+    "runs": 6,
+    "minutes": 10.8,
     "failed": 0
    },
    "combat_daily": {
