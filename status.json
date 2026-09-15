@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T08:45:40.978229",
+ "generatedAt": "2026-09-15T08:47:45.198686",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "dailyclaim",
-  "since": "08:43:21"
+  "mode": "daily_dungeon",
+  "since": "08:47:42"
  },
  "grid": {
   "tasks": [
@@ -93,8 +93,8 @@
    {
     "account": "smurf",
     "cells": [
-     "·",
-     "·",
+     "✗2",
+     "✓",
      "⏰",
      "·",
      "·",
@@ -345,9 +345,9 @@
   ]
  },
  "counts": {
-  "done": 32,
-  "todo": 116,
-  "gaveUp": 1,
+  "done": 33,
+  "todo": 114,
+  "gaveUp": 2,
   "unavailable": 0,
   "windowed": 27
  },
@@ -506,6 +506,40 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:47:41",
+   "script": "joint_team_daily_quest",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 37,
+   "stats": {
+    "panel_swipes": 3,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_084704_joint_team_daily_quest_smurf"
+  },
+  {
+   "ts": "2026-09-15T08:47:03",
+   "script": "dailyclaim",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 80,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_paid_only": 1,
+    "forbidden_first_topup": 2,
+    "mythic_no_open": 1,
+    "incomplete": 1,
+    "claims": 0
+   },
+   "incomplete": [
+    "dailyclaim: Mythic Incoming would not open"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_084542_dailyclaim_smurf"
+  },
   {
    "ts": "2026-09-15T08:45:41",
    "script": "dailyclaim",
@@ -6589,47 +6623,12 @@
     "stage": 4
    },
    "dir": "debug_runs/20260913_153636_sky_pillar_dre"
-  },
-  {
-   "ts": "2026-09-13T15:35:50",
-   "script": "sky_pillar",
-   "account": "deno",
-   "rc": 0,
-   "secs": 90,
-   "stats": {
-    "stages_cleared": 5,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 25,
-    "stage": 5
-   },
-   "dir": "debug_runs/20260913_153419_sky_pillar_deno"
-  },
-  {
-   "ts": "2026-09-13T15:33:32",
-   "script": "sky_pillar",
-   "account": "test1",
-   "rc": 0,
-   "secs": 103,
-   "stats": {
-    "auto_formation": 1,
-    "stages_cleared": 6,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 1,
-    "stage": 7
-   },
-   "dir": "debug_runs/20260913_153148_sky_pillar_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 31541,
+  "now": 31665,
   "segments": [
    {
     "b": 28919,
@@ -7079,11 +7078,51 @@
     "e": 31541,
     "secs": 80,
     "why": "dailyclaim: Mythic Incoming would not open"
+   },
+   {
+    "b": 31541,
+    "a": "smurf",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 31542,
+    "rc": 1,
+    "e": 31623,
+    "secs": 80,
+    "why": "dailyclaim: Mythic Incoming would not open"
+   },
+   {
+    "b": 31623,
+    "a": "smurf",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 31624,
+    "rc": 0,
+    "e": 31662,
+    "secs": 37,
+    "why": ""
+   },
+   {
+    "b": 31662,
+    "a": "smurf",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 31665,
+    "rc": null,
+    "e": 31665
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T08:47:03",
+   "account": "smurf",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 80,
+   "why": "dailyclaim: Mythic Incoming would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_084542_dailyclaim_smurf__KEEP_0003_084701_mythic_no_open.png"
+  },
   {
    "ts": "2026-09-15T08:45:41",
    "account": "smurf",
@@ -7161,16 +7200,16 @@
   "since": "2026-09-15T08:00",
   "switches": 3,
   "relogMinutes": 2.2,
-  "retries": 8,
+  "retries": 9,
   "tasks": {
    "dailyclaim": {
-    "runs": 4,
-    "minutes": 3.1,
-    "failed": 1
+    "runs": 5,
+    "minutes": 4.5,
+    "failed": 2
    },
    "joint_team_daily_quest": {
-    "runs": 3,
-    "minutes": 2.2,
+    "runs": 4,
+    "minutes": 2.8,
     "failed": 0
    },
    "daily_dungeon": {
