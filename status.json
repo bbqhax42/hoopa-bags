@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-15T08:43:37.955350",
+ "generatedAt": "2026-09-15T08:45:40.978229",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -501,11 +501,31 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-15T08:29:28.965176",
+  "label": "smurf",
+  "at": "2026-09-15T08:43:42.357042",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:45:41",
+   "script": "dailyclaim",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 80,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_paid_only": 1,
+    "forbidden_first_topup": 2,
+    "mythic_no_open": 1,
+    "incomplete": 1,
+    "claims": 0
+   },
+   "incomplete": [
+    "dailyclaim: Mythic Incoming would not open"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_084420_dailyclaim_smurf"
+  },
   {
    "ts": "2026-09-15T08:43:20",
    "script": "island_challenge",
@@ -6604,28 +6624,12 @@
     "stage": 7
    },
    "dir": "debug_runs/20260913_153148_sky_pillar_test1"
-  },
-  {
-   "ts": "2026-09-13T15:31:08",
-   "script": "sky_pillar",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 141,
-   "stats": {
-    "stages_cleared": 8
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 80,
-    "stage": 4
-   },
-   "dir": "debug_runs/20260913_152846_sky_pillar_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 31418,
+  "now": 31541,
   "segments": [
    {
     "b": 28919,
@@ -7068,16 +7072,27 @@
     "s": "dailyclaim",
     "login": [
      31402,
-     null
+     31422
     ],
-    "handoff": null,
-    "rc": null,
-    "e": 31418
+    "handoff": 31460,
+    "rc": 1,
+    "e": 31541,
+    "secs": 80,
+    "why": "dailyclaim: Mythic Incoming would not open"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T08:45:41",
+   "account": "smurf",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 80,
+   "why": "dailyclaim: Mythic Incoming would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_084420_dailyclaim_smurf__KEEP_0003_084539_mythic_no_open.png"
+  },
   {
    "ts": "2026-09-15T08:36:09",
    "account": "chris",
@@ -7145,13 +7160,13 @@
  "day": {
   "since": "2026-09-15T08:00",
   "switches": 3,
-  "relogMinutes": 1.2,
-  "retries": 7,
+  "relogMinutes": 2.2,
+  "retries": 8,
   "tasks": {
    "dailyclaim": {
-    "runs": 3,
-    "minutes": 1.8,
-    "failed": 0
+    "runs": 4,
+    "minutes": 3.1,
+    "failed": 1
    },
    "joint_team_daily_quest": {
     "runs": 3,
