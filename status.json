@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T10:11:53.516151",
+ "generatedAt": "2026-09-15T10:13:56.581675",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "sky_pillar",
-  "since": "10:11:47"
+  "account": "lucifer2",
+  "mode": "dailyclaim",
+  "since": "10:13:02"
  },
  "grid": {
   "tasks": [
@@ -251,10 +251,10 @@
      "⏰",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-"
     ]
    },
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 102,
-  "todo": 42,
+  "done": 104,
+  "todo": 40,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 27
@@ -507,11 +507,41 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-15T09:59:56.421379",
+  "label": "lucifer2",
+  "at": "2026-09-15T10:13:24.065347",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T10:13:01",
+   "script": "weekend_bash",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 6,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "tickets": 0
+   },
+   "dir": "debug_runs/20260915_101255_weekend_bash_lucifer1"
+  },
+  {
+   "ts": "2026-09-15T10:12:50",
+   "script": "sky_pillar",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "stages_cleared": 4,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 87,
+    "stage": 6
+   },
+   "dir": "debug_runs/20260915_101147_sky_pillar_lucifer1"
+  },
   {
    "ts": "2026-09-15T10:11:46",
    "script": "collect_hoopa_keys",
@@ -6659,53 +6689,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260914_085851_combat_daily_chris"
-  },
-  {
-   "ts": "2026-09-14T08:58:39",
-   "script": "pokemon_home",
-   "account": "chris",
-   "rc": 0,
-   "secs": 104,
-   "stats": {
-    "craft_pill_gone": 1,
-    "reached_via_trial": 1,
-    "grid_shrank_rejected": 1,
-    "merge_refused": 12,
-    "merge_no_progress": 1,
-    "merge_moved_instead": 2,
-    "charges_spent": 6
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_085655_pokemon_home_chris"
-  },
-  {
-   "ts": "2026-09-14T08:56:42",
-   "script": "pokemon_home",
-   "account": "chris",
-   "rc": 1,
-   "secs": 462,
-   "stats": {
-    "reached_via_trial": 1,
-    "merge_moved_instead": 2,
-    "merge_refused": 91,
-    "merge_no_progress": 8,
-    "grid_refit": 1,
-    "phantom_creations": 0,
-    "charges_left_unspent": 6,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "pokemon_home: 6 charge(s) unspent after 8 merge(s) that moved nothing — the board was not really saturated"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260914_084900_pokemon_home_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 36713,
+  "now": 36836,
   "segments": [
    {
     "b": 28919,
@@ -8096,8 +8085,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 36707,
+    "rc": 0,
+    "e": 36771,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 36771,
+    "a": "lucifer1",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 36775,
+    "rc": 0,
+    "e": 36782,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 36782,
+    "a": "lucifer2",
+    "s": "dailyclaim",
+    "login": [
+     36782,
+     36804
+    ],
+    "handoff": 36814,
     "rc": null,
-    "e": 36713
+    "e": 36836
    }
   ],
   "idle": []
@@ -8295,8 +8309,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 10,
-  "relogMinutes": 6.0,
+  "switches": 11,
+  "relogMinutes": 6.6,
   "retries": 21,
   "tasks": {
    "dailyclaim": {
@@ -8345,13 +8359,13 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 10,
-    "minutes": 9.8,
+    "runs": 11,
+    "minutes": 10.9,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 5,
-    "minutes": 0.1,
+    "runs": 6,
+    "minutes": 0.2,
     "failed": 2
    },
    "island_challenge": {
