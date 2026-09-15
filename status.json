@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T13:45:45.529761",
+ "generatedAt": "2026-09-15T13:47:48.552656",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
+  "account": "lucifer2",
   "mode": "mail",
-  "since": "13:45:32"
+  "since": "13:47:29"
  },
  "grid": {
   "tasks": [
@@ -263,7 +263,7 @@
     "account": "lucifer1",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "✓",
      "⏰",
      "✓",
@@ -271,7 +271,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -377,8 +377,8 @@
   ]
  },
  "counts": {
-  "done": 162,
-  "todo": 13,
+  "done": 164,
+  "todo": 11,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 12
@@ -539,11 +539,46 @@
   }
  },
  "session": {
-  "label": "fake6",
-  "at": "2026-09-15T13:42:46.417557",
+  "label": "lucifer1",
+  "at": "2026-09-15T13:45:54.165383",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T13:47:29",
+   "script": "guild_war",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 78,
+   "stats": {
+    "near_miss_last_hit": 4,
+    "marginal_last_hit": 3,
+    "near_miss_tips_header": 66,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_134611_guild_war_lucifer1"
+  },
+  {
+   "ts": "2026-09-15T13:46:09",
+   "script": "mail",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 3,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260915_134604_mail_lucifer1"
+  },
   {
    "ts": "2026-09-15T13:45:32",
    "script": "guild_war",
@@ -6684,42 +6719,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_112231_dailyclaim_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T11:21:51",
-   "script": "sky_pillar",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 40,
-   "stats": {
-    "stages_cleared": 2,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 1,
-    "stage": 9
-   },
-   "dir": "debug_runs/20260914_112110_sky_pillar_fake6"
-  },
-  {
-   "ts": "2026-09-14T11:21:07",
-   "script": "collect_hoopa_keys",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_112055_collect_hoopa_keys_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 49545,
+  "now": 49668,
   "segments": [
    {
     "b": 28919,
@@ -8923,11 +8928,36 @@
     "s": "mail",
     "login": [
      49533,
+     49554
+    ],
+    "handoff": 49564,
+    "rc": 0,
+    "e": 49570,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49570,
+    "a": "lucifer1",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49570,
+    "rc": 0,
+    "e": 49649,
+    "secs": 78,
+    "why": ""
+   },
+   {
+    "b": 49649,
+    "a": "lucifer2",
+    "s": "mail",
+    "login": [
+     49650,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 49545
+    "e": 49668
    }
   ],
   "idle": []
@@ -9206,8 +9236,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 26,
-  "relogMinutes": 14.3,
+  "switches": 27,
+  "relogMinutes": 14.9,
   "retries": 29,
   "tasks": {
    "dailyclaim": {
@@ -9281,13 +9311,13 @@
     "failed": 2
    },
    "mail": {
-    "runs": 9,
-    "minutes": 0.7,
+    "runs": 10,
+    "minutes": 0.8,
     "failed": 0
    },
    "guild_war": {
-    "runs": 11,
-    "minutes": 12.8,
+    "runs": 12,
+    "minutes": 14.1,
     "failed": 0
    }
   }
