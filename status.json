@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T08:04:36.904478",
+ "generatedAt": "2026-09-15T08:06:39.682154",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "pokemon_home",
-  "since": "08:03:52"
+  "mode": "combat_daily",
+  "since": "08:06:10"
  },
  "grid": {
   "tasks": [
@@ -55,7 +55,7 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 3,
-  "todo": 148,
+  "done": 4,
+  "todo": 147,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 27
@@ -486,6 +486,23 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:06:10",
+   "script": "pokemon_home",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 136,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_shrank_rejected": 1,
+    "merge_moved_instead": 6,
+    "counter_misread": 2,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_080354_pokemon_home_jeff"
+  },
   {
    "ts": "2026-09-15T08:03:51",
    "script": "daily_dungeon",
@@ -6599,26 +6616,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260913_132938_guild_war_jeff"
-  },
-  {
-   "ts": "2026-09-13T13:29:28",
-   "script": "victory_road",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "nothing_pending": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_132906_victory_road_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 29077,
+  "now": 29200,
   "segments": [
    {
     "b": 28919,
@@ -6659,8 +6662,19 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 29033,
+    "rc": 0,
+    "e": 29170,
+    "secs": 136,
+    "why": ""
+   },
+   {
+    "b": 29170,
+    "a": "jeff",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29176,
     "rc": null,
-    "e": 29077
+    "e": 29200
    }
   ],
   "idle": []
@@ -6704,6 +6718,11 @@
    "daily_dungeon": {
     "runs": 1,
     "minutes": 0.3,
+    "failed": 0
+   },
+   "pokemon_home": {
+    "runs": 1,
+    "minutes": 2.3,
     "failed": 0
    }
   }
