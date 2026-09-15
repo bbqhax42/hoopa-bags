@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T10:05:44.447260",
+ "generatedAt": "2026-09-15T10:07:47.379133",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "combat_daily",
-  "since": "10:03:58"
+  "mode": "paradise",
+  "since": "10:06:30"
  },
  "grid": {
   "tasks": [
@@ -245,8 +245,8 @@
      "⏰",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 97,
-  "todo": 47,
+  "done": 99,
+  "todo": 45,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 27
@@ -512,6 +512,55 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T10:06:30",
+   "script": "victory_road",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_100621_victory_road_lucifer1"
+  },
+  {
+   "ts": "2026-09-15T10:06:19",
+   "script": "combat_daily",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "title_reread_named": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_100610_combat_daily_lucifer1"
+  },
+  {
+   "ts": "2026-09-15T10:06:08",
+   "script": "combat_daily",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 124,
+   "stats": {
+    "title_reread_named": 5,
+    "marginal_afk_rewards": 2,
+    "upgrade_no_change": 1,
+    "incomplete": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [
+    "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260915_100403_combat_daily_lucifer1"
+  },
   {
    "ts": "2026-09-15T10:03:57",
    "script": "pokemon_home",
@@ -6641,65 +6690,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_084617_dailyclaim_chris"
-  },
-  {
-   "ts": "2026-09-14T08:45:35",
-   "script": "sky_pillar",
-   "account": "nova",
-   "rc": 0,
-   "secs": 35,
-   "stats": {
-    "stages_cleared": 2,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 96,
-    "stage": 4
-   },
-   "dir": "debug_runs/20260914_084500_sky_pillar_nova"
-  },
-  {
-   "ts": "2026-09-14T08:44:56",
-   "script": "collect_hoopa_keys",
-   "account": "nova",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_084444_collect_hoopa_keys_nova"
-  },
-  {
-   "ts": "2026-09-14T08:44:40",
-   "script": "paradise",
-   "account": "nova",
-   "rc": 0,
-   "secs": 341,
-   "stats": {
-    "explore_clicks": 125,
-    "pass_claims": 3,
-    "marginal_paradise_hub": 4,
-    "dex_milestones": 3,
-    "dex_collection": 1,
-    "dex_activated": 5,
-    "shop_sold_out_skipped": 5,
-    "shop_buys": 2,
-    "shop_spend_confirmed": 1500
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "20/20"
-   },
-   "dir": "debug_runs/20260914_083859_paradise_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 36344,
+  "now": 36467,
   "segments": [
    {
     "b": 28919,
@@ -8024,13 +8020,55 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 36243,
+    "rc": 1,
+    "e": 36369,
+    "secs": 124,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   },
+   {
+    "b": 36369,
+    "a": "lucifer1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 36370,
+    "rc": 1,
+    "e": 36379,
+    "secs": 124,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   },
+   {
+    "b": 36379,
+    "a": "lucifer1",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 36381,
+    "rc": 0,
+    "e": 36390,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 36390,
+    "a": "lucifer1",
+    "s": "paradise",
+    "login": null,
+    "handoff": 36392,
     "rc": null,
-    "e": 36344
+    "e": 36467
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T10:06:08",
+   "account": "lucifer1",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 124,
+   "why": "combat_daily: upgrade a Pokemon: Level Up did nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_100403_combat_daily_lucifer1__KEEP_0134_100544_upgrade_no_change.png"
+  },
   {
    "ts": "2026-09-15T09:54:14",
    "account": "fake6",
@@ -8216,7 +8254,7 @@
   "since": "2026-09-15T08:00",
   "switches": 10,
   "relogMinutes": 6.0,
-  "retries": 20,
+  "retries": 21,
   "tasks": {
    "dailyclaim": {
     "runs": 12,
@@ -8239,13 +8277,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 19,
-    "minutes": 21.9,
-    "failed": 11
+    "runs": 21,
+    "minutes": 24.1,
+    "failed": 12
    },
    "victory_road": {
-    "runs": 10,
-    "minutes": 1.7,
+    "runs": 11,
+    "minutes": 1.9,
     "failed": 0
    },
    "paradise": {
