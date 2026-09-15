@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T15:11:22.362384",
+ "generatedAt": "2026-09-15T15:13:38.694444",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
+  "account": "fake3",
   "mode": "rank_match",
-  "since": "15:00:34"
+  "since": "15:13:03"
  },
  "grid": {
   "tasks": [
@@ -161,7 +161,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 178,
-  "todo": 10,
+  "done": 179,
+  "todo": 9,
   "gaveUp": 6,
   "unavailable": 1,
   "windowed": 12
@@ -555,11 +555,34 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-15T14:59:03.003033",
+  "label": "fake3",
+  "at": "2026-09-15T15:13:30.780332",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T15:13:03",
+   "script": "rank_match",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 67,
+   "stats": {
+    "near_miss_go_button": 2,
+    "formation_set": 1,
+    "skip_tapped": 8,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260915_151156_rank_match_fake2"
+  },
   {
    "ts": "2026-09-15T15:11:04",
    "script": "rank_match",
@@ -6751,31 +6774,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_121253_victory_road_deno"
-  },
-  {
-   "ts": "2026-09-14T12:12:50",
-   "script": "combat_daily",
-   "account": "deno",
-   "rc": 1,
-   "secs": 122,
-   "stats": {
-    "adv_overflow": 1,
-    "marginal_pokemon_upgrade": 1,
-    "pokemon_upgraded": 1,
-    "left_outstanding": 3
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 10/10 +)",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260914_121048_combat_daily_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 54682,
+  "now": 54819,
   "segments": [
    {
     "b": 28919,
@@ -9242,6 +9246,32 @@
     "e": 54682,
     "secs": 81,
     "why": "rank_match: match 1 did not complete"
+   },
+   {
+    "b": 54682,
+    "a": "fake2",
+    "s": "rank_match",
+    "login": [
+     54683,
+     54706
+    ],
+    "handoff": 54716,
+    "rc": 0,
+    "e": 54783,
+    "secs": 67,
+    "why": ""
+   },
+   {
+    "b": 54783,
+    "a": "fake3",
+    "s": "rank_match",
+    "login": [
+     54784,
+     54810
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 54819
    }
   ],
   "idle": []
@@ -9547,8 +9577,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 35,
-  "relogMinutes": 20.0,
+  "switches": 37,
+  "relogMinutes": 21.2,
   "retries": 31,
   "tasks": {
    "dailyclaim": {
@@ -9637,8 +9667,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 3,
-    "minutes": 3.6,
+    "runs": 4,
+    "minutes": 4.7,
     "failed": 1
    }
   }
