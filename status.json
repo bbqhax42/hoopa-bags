@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T13:00:30.894686",
+ "generatedAt": "2026-09-15T13:02:34.099638",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "mail",
-  "since": "13:00:28"
+  "mode": "guild_war",
+  "since": "13:01:03"
  },
  "grid": {
   "tasks": [
@@ -217,7 +217,7 @@
     "account": "fake5",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "✓",
      "⏰",
      "✓",
@@ -377,8 +377,8 @@
   ]
  },
  "counts": {
-  "done": 158,
-  "todo": 18,
+  "done": 159,
+  "todo": 17,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 12
@@ -538,11 +538,30 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-09-15T12:58:45.625371",
+  "label": "fake5",
+  "at": "2026-09-15T13:00:49.586554",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T13:01:02",
+   "script": "mail",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "claim_all_tapped": 1,
+    "reward_card_closed": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 13,
+    "reward_cards": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260915_130058_mail_fake5"
+  },
   {
    "ts": "2026-09-15T13:00:27",
    "script": "guild_war",
@@ -6691,25 +6710,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_110846_pokemon_home_fake6"
-  },
-  {
-   "ts": "2026-09-14T11:08:40",
-   "script": "daily_dungeon",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 21,
-   "stats": {
-    "marginal_dungeon_list": 8
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_110818_daily_dungeon_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 46831,
+  "now": 46954,
   "segments": [
    {
     "b": 28919,
@@ -8838,11 +8844,22 @@
     "s": "mail",
     "login": [
      46828,
-     null
+     46849
     ],
-    "handoff": null,
+    "handoff": 46857,
+    "rc": 0,
+    "e": 46863,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 46863,
+    "a": "fake5",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 46863,
     "rc": null,
-    "e": 46831
+    "e": 46954
    }
   ],
   "idle": []
@@ -9122,7 +9139,7 @@
  "day": {
   "since": "2026-09-15T08:00",
   "switches": 23,
-  "relogMinutes": 12.7,
+  "relogMinutes": 13.2,
   "retries": 28,
   "tasks": {
    "dailyclaim": {
@@ -9196,8 +9213,8 @@
     "failed": 2
    },
    "mail": {
-    "runs": 7,
-    "minutes": 0.6,
+    "runs": 8,
+    "minutes": 0.7,
     "failed": 0
    },
    "guild_war": {
