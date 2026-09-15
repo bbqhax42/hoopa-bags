@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T14:56:28.875993",
+ "generatedAt": "2026-09-15T14:58:31.872219",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "smurf",
   "mode": "rank_match",
-  "since": "14:55:14"
+  "since": "14:57:07"
  },
  "grid": {
   "tasks": [
@@ -41,7 +41,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 175,
-  "todo": 13,
+  "done": 176,
+  "todo": 12,
   "gaveUp": 6,
   "unavailable": 1,
   "windowed": 12
@@ -555,11 +555,32 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-15T14:55:42.491918",
+  "label": "smurf",
+  "at": "2026-09-15T14:57:31.287527",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T14:57:07",
+   "script": "rank_match",
+   "account": "nova",
+   "rc": 0,
+   "secs": 73,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260915_145553_rank_match_nova"
+  },
   {
    "ts": "2026-09-15T14:55:14",
    "script": "island_challenge",
@@ -6731,28 +6752,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_120555_joint_team_daily_quest_deno"
-  },
-  {
-   "ts": "2026-09-14T12:05:52",
-   "script": "dailyclaim",
-   "account": "deno",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_120515_dailyclaim_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 53789,
+  "now": 53912,
   "segments": [
    {
     "b": 28919,
@@ -9176,8 +9181,22 @@
      53742
     ],
     "handoff": 53753,
+    "rc": 0,
+    "e": 53827,
+    "secs": 73,
+    "why": ""
+   },
+   {
+    "b": 53827,
+    "a": "smurf",
+    "s": "rank_match",
+    "login": [
+     53828,
+     53851
+    ],
+    "handoff": 53860,
     "rc": null,
-    "e": 53789
+    "e": 53912
    }
   ],
   "idle": []
@@ -9465,8 +9484,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 33,
-  "relogMinutes": 19.0,
+  "switches": 34,
+  "relogMinutes": 19.5,
   "retries": 30,
   "tasks": {
    "dailyclaim": {
@@ -9552,6 +9571,11 @@
    "championship": {
     "runs": 1,
     "minutes": 0.1,
+    "failed": 0
+   },
+   "rank_match": {
+    "runs": 1,
+    "minutes": 1.2,
     "failed": 0
    }
   }
