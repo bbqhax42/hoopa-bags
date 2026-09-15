@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T13:51:54.412950",
+ "generatedAt": "2026-09-15T13:53:57.456507",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
+  "account": "deno",
   "mode": "guild_war",
-  "since": "13:51:21"
+  "since": "13:53:23"
  },
  "grid": {
   "tasks": [
@@ -317,7 +317,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -332,7 +332,7 @@
     "account": "deno",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "✓",
      "⏰",
      "✓",
@@ -377,8 +377,8 @@
   ]
  },
  "counts": {
-  "done": 167,
-  "todo": 8,
+  "done": 169,
+  "todo": 6,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 12
@@ -539,11 +539,49 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-15T13:51:07.119287",
+  "label": "deno",
+  "at": "2026-09-15T13:53:04.910820",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T13:53:23",
+   "script": "mail",
+   "account": "deno",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "claim_all_tapped": 1,
+    "reward_card_closed": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 17,
+    "reward_cards": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260915_135318_mail_deno"
+  },
+  {
+   "ts": "2026-09-15T13:52:42",
+   "script": "guild_war",
+   "account": "test1",
+   "rc": 0,
+   "secs": 79,
+   "stats": {
+    "marginal_last_hit": 3,
+    "refused_battle_skip": 1,
+    "near_miss_last_hit": 1,
+    "near_miss_tips_header": 66,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_135122_guild_war_test1"
+  },
   {
    "ts": "2026-09-15T13:51:21",
    "script": "mail",
@@ -6691,48 +6729,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_113654_victory_road_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T11:36:51",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 255,
-   "stats": {
-    "pokemon_upgraded": 1,
-    "refused_daily_rail": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 8/8 + ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260914_113236_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T11:32:24",
-   "script": "pokemon_home",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 340,
-   "stats": {
-    "reached_via_trial": 1,
-    "merge_moved_instead": 7,
-    "merge_refused": 48,
-    "merge_no_progress": 3,
-    "counter_misread": 3,
-    "phantom_creations": 0,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_112643_pokemon_home_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 49914,
+  "now": 50037,
   "segments": [
    {
     "b": 28919,
@@ -9011,8 +9013,33 @@
     "s": "guild_war",
     "login": null,
     "handoff": 49882,
+    "rc": 0,
+    "e": 49962,
+    "secs": 79,
+    "why": ""
+   },
+   {
+    "b": 49962,
+    "a": "deno",
+    "s": "mail",
+    "login": [
+     49963,
+     49984
+    ],
+    "handoff": 49997,
+    "rc": 0,
+    "e": 50003,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 50003,
+    "a": "deno",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 50004,
     "rc": null,
-    "e": 49914
+    "e": 50037
    }
   ],
   "idle": []
@@ -9291,8 +9318,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 28,
-  "relogMinutes": 16.0,
+  "switches": 29,
+  "relogMinutes": 16.6,
   "retries": 29,
   "tasks": {
    "dailyclaim": {
@@ -9366,13 +9393,13 @@
     "failed": 2
    },
    "mail": {
-    "runs": 12,
-    "minutes": 1.0,
+    "runs": 13,
+    "minutes": 1.1,
     "failed": 0
    },
    "guild_war": {
-    "runs": 14,
-    "minutes": 16.5,
+    "runs": 15,
+    "minutes": 17.9,
     "failed": 0
    }
   }
