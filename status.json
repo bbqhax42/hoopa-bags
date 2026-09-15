@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T08:29:14.196935",
+ "generatedAt": "2026-09-15T08:31:18.341475",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "dailyclaim",
-  "since": "08:29:02"
+  "mode": "daily_dungeon",
+  "since": "08:31:02"
  },
  "grid": {
   "tasks": [
@@ -72,8 +72,8 @@
    {
     "account": "chris",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "·",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 21,
-  "todo": 128,
+  "done": 23,
+  "todo": 126,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 27
@@ -492,11 +492,42 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-15T08:15:43.940596",
+  "label": "chris",
+  "at": "2026-09-15T08:29:28.965176",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:31:01",
+   "script": "joint_team_daily_quest",
+   "account": "chris",
+   "rc": 0,
+   "secs": 42,
+   "stats": {
+    "panel_swipes": 2,
+    "artifact_row_found_by_scrolling": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_083019_joint_team_daily_quest_chris"
+  },
+  {
+   "ts": "2026-09-15T08:30:17",
+   "script": "dailyclaim",
+   "account": "chris",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_082941_dailyclaim_chris"
+  },
   {
    "ts": "2026-09-15T08:29:01",
    "script": "weekend_bash",
@@ -6594,50 +6625,12 @@
     "stage": 8
    },
    "dir": "debug_runs/20260913_145516_sky_pillar_jeff"
-  },
-  {
-   "ts": "2026-09-13T14:44:01",
-   "script": "sky_pillar",
-   "account": "chris",
-   "rc": 0,
-   "secs": 19,
-   "stats": {
-    "stages_cleared": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 134,
-    "stage": 8
-   },
-   "dir": "debug_runs/20260913_144341_sky_pillar_chris"
-  },
-  {
-   "ts": "2026-09-13T14:12:58",
-   "script": "faction",
-   "account": "chris",
-   "rc": 1,
-   "secs": 309,
-   "stats": {
-    "floors_water": 20,
-    "setform_refused": 1,
-    "incomplete": 1,
-    "refused_fire": 1,
-    "faction_disabled": 1,
-    "floors_fire": 0,
-    "floors_grass": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [
-    "faction: fire tower: the game would not accept the formation after 0 win(s) — the team needs adjusting"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260913_140748_faction_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 30554,
+  "now": 30678,
   "segments": [
    {
     "b": 28919,
@@ -6934,11 +6927,33 @@
     "s": "dailyclaim",
     "login": [
      30542,
-     null
+     30568
     ],
-    "handoff": null,
+    "handoff": 30581,
+    "rc": 0,
+    "e": 30618,
+    "secs": 36,
+    "why": ""
+   },
+   {
+    "b": 30618,
+    "a": "chris",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 30618,
+    "rc": 0,
+    "e": 30662,
+    "secs": 42,
+    "why": ""
+   },
+   {
+    "b": 30662,
+    "a": "chris",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 30665,
     "rc": null,
-    "e": 30554
+    "e": 30678
    }
   ],
   "idle": []
@@ -7002,17 +7017,17 @@
  "day": {
   "since": "2026-09-15T08:00",
   "switches": 2,
-  "relogMinutes": 0.6,
+  "relogMinutes": 1.2,
   "retries": 5,
   "tasks": {
    "dailyclaim": {
-    "runs": 2,
-    "minutes": 1.2,
+    "runs": 3,
+    "minutes": 1.8,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 2,
-    "minutes": 1.5,
+    "runs": 3,
+    "minutes": 2.2,
     "failed": 0
    },
    "daily_dungeon": {
