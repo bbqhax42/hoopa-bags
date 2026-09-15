@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T14:58:31.872219",
+ "generatedAt": "2026-09-15T15:00:34.736236",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "fake1",
   "mode": "rank_match",
-  "since": "14:57:07"
+  "since": "15:00:34"
  },
  "grid": {
   "tasks": [
@@ -113,7 +113,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -137,7 +137,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "-",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 176,
-  "todo": 12,
-  "gaveUp": 6,
+  "done": 177,
+  "todo": 10,
+  "gaveUp": 7,
   "unavailable": 1,
   "windowed": 12
  },
@@ -555,11 +555,52 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-15T14:57:31.287527",
+  "label": "fake1",
+  "at": "2026-09-15T14:59:03.003033",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T15:00:33",
+   "script": "rank_match",
+   "account": "fake1",
+   "rc": 1,
+   "secs": 81,
+   "stats": {
+    "near_miss_go_button": 2,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: match 1 did not complete"
+   ],
+   "values": {
+    "attempts_before": 8,
+    "matches": 0
+   },
+   "dir": "debug_runs/20260915_145911_rank_match_fake1"
+  },
+  {
+   "ts": "2026-09-15T14:58:41",
+   "script": "rank_match",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "near_miss_go_button": 2,
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260915_145740_rank_match_smurf"
+  },
   {
    "ts": "2026-09-15T14:57:07",
    "script": "rank_match",
@@ -6724,40 +6765,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_120728_pokemon_home_deno"
-  },
-  {
-   "ts": "2026-09-14T12:07:24",
-   "script": "daily_dungeon",
-   "account": "deno",
-   "rc": 0,
-   "secs": 17,
-   "stats": {
-    "marginal_dungeon_list": 8
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_120706_daily_dungeon_deno"
-  },
-  {
-   "ts": "2026-09-14T12:06:37",
-   "script": "joint_team_daily_quest",
-   "account": "deno",
-   "rc": 0,
-   "secs": 41,
-   "stats": {
-    "panel_swipes": 2,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_120555_joint_team_daily_quest_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 53912,
+  "now": 54035,
   "segments": [
    {
     "b": 28919,
@@ -9195,13 +9208,49 @@
      53851
     ],
     "handoff": 53860,
-    "rc": null,
-    "e": 53912
+    "rc": 0,
+    "e": 53921,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 53921,
+    "a": "fake1",
+    "s": "rank_match",
+    "login": [
+     53922,
+     53943
+    ],
+    "handoff": 53951,
+    "rc": 1,
+    "e": 54034,
+    "secs": 81,
+    "why": "rank_match: match 1 did not complete"
+   },
+   {
+    "b": 54034,
+    "a": "fake1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 54034,
+    "rc": 1,
+    "e": 54035,
+    "secs": 81,
+    "why": "rank_match: match 1 did not complete"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T15:00:33",
+   "account": "fake1",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 81,
+   "why": "rank_match: match 1 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_145911_rank_match_fake1__KEEP_0004_150031_no_pk_1.png"
+  },
   {
    "ts": "2026-09-15T14:24:54",
    "account": null,
@@ -9484,9 +9533,9 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 34,
-  "relogMinutes": 19.5,
-  "retries": 30,
+  "switches": 35,
+  "relogMinutes": 20.0,
+  "retries": 31,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9574,9 +9623,9 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 1,
-    "minutes": 1.2,
-    "failed": 0
+    "runs": 3,
+    "minutes": 3.6,
+    "failed": 1
    }
   }
  },
