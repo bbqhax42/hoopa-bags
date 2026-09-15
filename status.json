@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T10:52:54.861182",
+ "generatedAt": "2026-09-15T10:54:57.756096",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "run_pvp_ranked",
-  "since": "10:51:37"
+  "account": "dre",
+  "mode": "dailyclaim",
+  "since": "10:54:05"
  },
  "grid": {
   "tasks": [
@@ -312,12 +312,12 @@
      "✓",
      "✓",
      "⏰",
-     "⇢",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-"
     ]
    },
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 129,
-  "todo": 14,
+  "done": 133,
+  "todo": 11,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 27
@@ -506,11 +506,54 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-15T10:40:07.979510",
+  "label": "dre",
+  "at": "2026-09-15T10:54:30.593269",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T10:54:05",
+   "script": "weekend_bash",
+   "account": "deno",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_105405_weekend_bash_deno"
+  },
+  {
+   "ts": "2026-09-15T10:54:00",
+   "script": "sky_pillar",
+   "account": "deno",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "stages_cleared": 3,
+    "confirm_refused_with_proofs": 1,
+    "auto_formation": 1,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 25,
+    "stage": 10
+   },
+   "dir": "debug_runs/20260915_105306_sky_pillar_deno"
+  },
+  {
+   "ts": "2026-09-15T10:53:04",
+   "script": "collect_hoopa_keys",
+   "account": "deno",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_105256_collect_hoopa_keys_deno"
+  },
   {
    "ts": "2026-09-15T10:52:55",
    "script": "run_pvp_ranked",
@@ -6630,64 +6673,12 @@
     "stamina": "20/20"
    },
    "dir": "debug_runs/20260914_100440_paradise_fake2"
-  },
-  {
-   "ts": "2026-09-14T10:04:34",
-   "script": "victory_road",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 17,
-   "stats": {
-    "near_miss_go_button": 8,
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_100417_victory_road_fake2"
-  },
-  {
-   "ts": "2026-09-14T10:04:13",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 1,
-   "secs": 289,
-   "stats": {
-    "refused_quick_bar": 1,
-    "adv_overflow": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "refused_daily_rail": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260914_095924_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-14T09:59:12",
-   "script": "pokemon_home",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 26,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_095845_pokemon_home_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 39175,
+  "now": 39298,
   "segments": [
    {
     "b": 28919,
@@ -8443,6 +8434,51 @@
     "e": 39175,
     "secs": 76,
     "why": ""
+   },
+   {
+    "b": 39175,
+    "a": "deno",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 39175,
+    "rc": 0,
+    "e": 39185,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 39185,
+    "a": "deno",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 39185,
+    "rc": 0,
+    "e": 39241,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 39241,
+    "a": "deno",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 39244,
+    "rc": 0,
+    "e": 39245,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 39245,
+    "a": "dre",
+    "s": "dailyclaim",
+    "login": [
+     39246,
+     39270
+    ],
+    "handoff": 39281,
+    "rc": null,
+    "e": 39298
    }
   ],
   "idle": []
@@ -8685,8 +8721,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 13,
-  "relogMinutes": 7.7,
+  "switches": 14,
+  "relogMinutes": 8.3,
   "retries": 26,
   "tasks": {
    "dailyclaim": {
@@ -8730,17 +8766,17 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 13,
-    "minutes": 1.9,
+    "runs": 14,
+    "minutes": 2.0,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 13,
-    "minutes": 13.7,
+    "runs": 14,
+    "minutes": 14.6,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 8,
+    "runs": 9,
     "minutes": 0.3,
     "failed": 4
    },
