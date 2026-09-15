@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T13:40:58.994228",
+ "generatedAt": "2026-09-15T13:43:42.659130",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
+  "account": "fake6",
   "mode": "guild_war",
-  "since": "13:01:03"
+  "since": "13:43:01"
  },
  "grid": {
   "tasks": [
@@ -95,7 +95,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "💤"
     ]
    },
    {
@@ -240,7 +240,7 @@
     "account": "fake6",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "✓",
@@ -377,8 +377,8 @@
   ]
  },
  "counts": {
-  "done": 160,
-  "todo": 16,
+  "done": 161,
+  "todo": 14,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 12
@@ -496,11 +496,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 3,
-   "stamina": 2,
-   "staminaMax": 2,
-   "staminaAt": "2026-09-15T08:43:15",
-   "nextAt": "2026-09-15T12:31:20"
+   "fights": 6,
+   "stamina": 12,
+   "staminaMax": 12,
+   "staminaAt": "2026-09-15T13:42:15",
+   "nextAt": "2026-09-15T16:30:21"
   },
   {
    "account": "jeff",
@@ -512,6 +512,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-15T16:30",
   "jeff|island_challenge": "2026-09-15T14:18"
  },
  "ownerOnline": [],
@@ -538,11 +539,47 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-15T13:00:49.586554",
+  "label": "fake6",
+  "at": "2026-09-15T13:42:46.417557",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T13:43:00",
+   "script": "mail",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "claim_all_tapped": 1,
+    "reward_card_closed": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 12,
+    "reward_cards": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260915_134256_mail_fake6"
+  },
+  {
+   "ts": "2026-09-15T13:42:21",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 46,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 12,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260915_134135_island_challenge_chris"
+  },
   {
    "ts": "2026-09-15T13:02:39",
    "script": "guild_war",
@@ -6679,45 +6716,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_111410_victory_road_fake6"
-  },
-  {
-   "ts": "2026-09-14T11:14:06",
-   "script": "combat_daily",
-   "account": "fake6",
-   "rc": 1,
-   "secs": 271,
-   "stats": {
-    "refused_quick_bar": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "refused_daily_rail": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 + ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260914_110934_combat_daily_fake6"
-  },
-  {
-   "ts": "2026-09-14T11:09:31",
-   "script": "pokemon_home",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_110931_pokemon_home_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 49259,
+  "now": 49423,
   "segments": [
    {
     "b": 28919,
@@ -8864,6 +8868,43 @@
     "e": 49259,
     "secs": 95,
     "why": ""
+   },
+   {
+    "b": 49259,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     49259,
+     49282
+    ],
+    "handoff": 49295,
+    "rc": 5,
+    "e": 49342,
+    "secs": 46,
+    "why": ""
+   },
+   {
+    "b": 49342,
+    "a": "fake6",
+    "s": "mail",
+    "login": [
+     49342,
+     49366
+    ],
+    "handoff": 49375,
+    "rc": 0,
+    "e": 49381,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49381,
+    "a": "fake6",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49381,
+    "rc": null,
+    "e": 49423
    }
   ],
   "idle": []
@@ -9142,9 +9183,9 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 23,
-  "relogMinutes": 13.2,
-  "retries": 28,
+  "switches": 25,
+  "relogMinutes": 14.3,
+  "retries": 29,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9202,9 +9243,9 @@
     "failed": 4
    },
    "island_challenge": {
-    "runs": 3,
-    "minutes": 2.2,
-    "failed": 3
+    "runs": 4,
+    "minutes": 3.0,
+    "failed": 4
    },
    "faction": {
     "runs": 1,
@@ -9217,7 +9258,7 @@
     "failed": 2
    },
    "mail": {
-    "runs": 8,
+    "runs": 9,
     "minutes": 0.7,
     "failed": 0
    },
