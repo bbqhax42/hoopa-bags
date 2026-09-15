@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T15:13:38.694444",
+ "generatedAt": "2026-09-15T15:15:41.493993",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
+  "account": "fake5",
   "mode": "rank_match",
-  "since": "15:13:03"
+  "since": "15:15:02"
  },
  "grid": {
   "tasks": [
@@ -185,7 +185,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "-",
@@ -209,7 +209,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "-",
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 179,
-  "todo": 9,
-  "gaveUp": 6,
+  "todo": 7,
+  "gaveUp": 8,
   "unavailable": 1,
   "windowed": 12
  },
@@ -555,11 +555,71 @@
   }
  },
  "session": {
-  "label": "fake3",
-  "at": "2026-09-15T15:13:30.780332",
+  "label": "fake5",
+  "at": "2026-09-15T15:15:24.786084",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T15:15:02",
+   "script": "rank_match",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 10,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_151451_rank_match_fake4"
+  },
+  {
+   "ts": "2026-09-15T15:14:47",
+   "script": "rank_match",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 11,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_151436_rank_match_fake4"
+  },
+  {
+   "ts": "2026-09-15T15:14:04",
+   "script": "rank_match",
+   "account": "fake3",
+   "rc": 1,
+   "secs": 10,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_151354_rank_match_fake3"
+  },
+  {
+   "ts": "2026-09-15T15:13:50",
+   "script": "rank_match",
+   "account": "fake3",
+   "rc": 1,
+   "secs": 10,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_151339_rank_match_fake3"
+  },
   {
    "ts": "2026-09-15T15:13:03",
    "script": "rank_match",
@@ -6711,75 +6771,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_121904_collect_hoopa_keys_deno"
-  },
-  {
-   "ts": "2026-09-14T12:18:56",
-   "script": "run_pvp_ranked",
-   "account": "deno",
-   "rc": 5,
-   "secs": 5,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_121850_run_pvp_ranked_deno"
-  },
-  {
-   "ts": "2026-09-14T12:18:47",
-   "script": "guild_war",
-   "account": "deno",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_121847_guild_war_deno"
-  },
-  {
-   "ts": "2026-09-14T12:18:44",
-   "script": "paradise",
-   "account": "deno",
-   "rc": 0,
-   "secs": 336,
-   "stats": {
-    "explore_clicks": 114,
-    "pass_claims": 4,
-    "gear_energy_unreadable": 5,
-    "upgraded_small_radar": 3,
-    "upgraded_sports_gloves": 2,
-    "marginal_paradise_hub": 1,
-    "dex_milestones": 4,
-    "dex_activated": 8,
-    "shop_sold_out_skipped": 5,
-    "shop_buys": 1,
-    "shop_spend_confirmed": 750
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "20/20"
-   },
-   "dir": "debug_runs/20260914_121308_paradise_deno"
-  },
-  {
-   "ts": "2026-09-14T12:13:03",
-   "script": "victory_road",
-   "account": "deno",
-   "rc": 0,
-   "secs": 10,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_121253_victory_road_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 54819,
+  "now": 54941,
   "segments": [
    {
     "b": 28919,
@@ -9269,14 +9266,100 @@
      54784,
      54810
     ],
-    "handoff": null,
+    "handoff": 54819,
+    "rc": 1,
+    "e": 54830,
+    "secs": 10,
+    "why": "rank_match: the Rank screen never opened"
+   },
+   {
+    "b": 54830,
+    "a": "fake3",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 54833,
+    "rc": 1,
+    "e": 54845,
+    "secs": 10,
+    "why": "rank_match: the Rank screen never opened"
+   },
+   {
+    "b": 54845,
+    "a": "fake4",
+    "s": "rank_match",
+    "login": [
+     54846,
+     54866
+    ],
+    "handoff": 54875,
+    "rc": 1,
+    "e": 54888,
+    "secs": 11,
+    "why": "rank_match: the Rank screen never opened"
+   },
+   {
+    "b": 54888,
+    "a": "fake4",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 54891,
+    "rc": 1,
+    "e": 54902,
+    "secs": 11,
+    "why": "rank_match: the Rank screen never opened"
+   },
+   {
+    "b": 54902,
+    "a": "fake5",
+    "s": "rank_match",
+    "login": [
+     54903,
+     54924
+    ],
+    "handoff": 54933,
     "rc": null,
-    "e": 54819
+    "e": 54941
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T15:15:02",
+   "account": "fake4",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 10,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_151451_rank_match_fake4__KEEP_0004_151502_no_rank_screen.png"
+  },
+  {
+   "ts": "2026-09-15T15:14:47",
+   "account": "fake4",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 11,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_151436_rank_match_fake4__KEEP_0004_151447_no_rank_screen.png"
+  },
+  {
+   "ts": "2026-09-15T15:14:04",
+   "account": "fake3",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 10,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_151354_rank_match_fake3__KEEP_0004_151404_no_rank_screen.png"
+  },
+  {
+   "ts": "2026-09-15T15:13:50",
+   "account": "fake3",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 10,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_151339_rank_match_fake3__KEEP_0004_151350_no_rank_screen.png"
+  },
   {
    "ts": "2026-09-15T15:08:50",
    "account": null,
@@ -9577,9 +9660,9 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 37,
-  "relogMinutes": 21.2,
-  "retries": 31,
+  "switches": 39,
+  "relogMinutes": 22.2,
+  "retries": 35,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9667,9 +9750,9 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 4,
-    "minutes": 4.7,
-    "failed": 1
+    "runs": 8,
+    "minutes": 5.5,
+    "failed": 5
    }
   }
  },
