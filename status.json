@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T08:16:55.108744",
+ "generatedAt": "2026-09-15T08:18:58.599433",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "joint_team_daily_quest",
-  "since": "08:16:31"
+  "mode": "pokemon_home",
+  "since": "08:17:33"
  },
  "grid": {
   "tasks": [
@@ -31,9 +31,9 @@
     "account": "nova",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "⏰",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 12,
-  "todo": 138,
+  "done": 14,
+  "todo": 136,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 27
@@ -497,6 +497,34 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:17:32",
+   "script": "daily_dungeon",
+   "account": "nova",
+   "rc": 0,
+   "secs": 16,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_081716_daily_dungeon_nova"
+  },
+  {
+   "ts": "2026-09-15T08:17:12",
+   "script": "joint_team_daily_quest",
+   "account": "nova",
+   "rc": 0,
+   "secs": 40,
+   "stats": {
+    "panel_swipes": 2,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_081632_joint_team_daily_quest_nova"
+  },
   {
    "ts": "2026-09-15T08:16:30",
    "script": "dailyclaim",
@@ -6601,41 +6629,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260913_135307_guild_war_fake4"
-  },
-  {
-   "ts": "2026-09-13T13:52:59",
-   "script": "victory_road",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 21,
-   "stats": {
-    "nothing_pending": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_135238_victory_road_fake4"
-  },
-  {
-   "ts": "2026-09-13T13:51:56",
-   "script": "guild_war",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 96,
-   "stats": {
-    "refused_result_confirm": 1,
-    "gw_no_return": 1,
-    "assist_skipped_off_screen": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_135020_guild_war_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 29815,
+  "now": 29939,
   "segments": [
    {
     "b": 28919,
@@ -6800,8 +6799,30 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 29792,
+    "rc": 0,
+    "e": 29833,
+    "secs": 40,
+    "why": ""
+   },
+   {
+    "b": 29833,
+    "a": "nova",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 29836,
+    "rc": 0,
+    "e": 29853,
+    "secs": 16,
+    "why": ""
+   },
+   {
+    "b": 29853,
+    "a": "nova",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 29854,
     "rc": null,
-    "e": 29815
+    "e": 29939
    }
   ],
   "idle": []
@@ -6847,13 +6868,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 1,
-    "minutes": 0.8,
+    "runs": 2,
+    "minutes": 1.5,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 1,
-    "minutes": 0.3,
+    "runs": 2,
+    "minutes": 0.6,
     "failed": 0
    },
    "pokemon_home": {
