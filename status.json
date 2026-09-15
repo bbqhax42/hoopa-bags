@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T12:54:21.925977",
+ "generatedAt": "2026-09-15T12:56:24.987370",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
+  "account": "fake3",
   "mode": "guild_war",
-  "since": "12:54:11"
+  "since": "12:56:06"
  },
  "grid": {
   "tasks": [
@@ -156,7 +156,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -171,7 +171,7 @@
     "account": "fake3",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "✓",
      "⏰",
      "✓",
@@ -377,8 +377,8 @@
   ]
  },
  "counts": {
-  "done": 153,
-  "todo": 23,
+  "done": 155,
+  "todo": 21,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 12
@@ -538,11 +538,45 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-15T12:53:57.272593",
+  "label": "fake3",
+  "at": "2026-09-15T12:55:52.916068",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T12:56:06",
+   "script": "mail",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260915_125601_mail_fake3"
+  },
+  {
+   "ts": "2026-09-15T12:55:30",
+   "script": "guild_war",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 78,
+   "stats": {
+    "near_miss_last_hit": 2,
+    "near_miss_tips_header": 66,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_125412_guild_war_fake2"
+  },
   {
    "ts": "2026-09-15T12:54:11",
    "script": "mail",
@@ -6674,47 +6708,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_105933_victory_road_fake5"
-  },
-  {
-   "ts": "2026-09-14T10:59:30",
-   "script": "combat_daily",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 263,
-   "stats": {
-    "adv_overflow": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "pokemon_upgraded": 1,
-    "refused_daily_rail": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260914_105506_combat_daily_fake5"
-  },
-  {
-   "ts": "2026-09-14T10:55:02",
-   "script": "combat_daily",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 54,
-   "stats": {
-    "near_miss_afk_rewards": 2,
-    "refused_claim_pill": 8,
-    "refused_chest": 6,
-    "left_outstanding": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_105408_combat_daily_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 46462,
+  "now": 46585,
   "segments": [
    {
     "b": 28919,
@@ -8760,8 +8759,33 @@
     "s": "guild_war",
     "login": null,
     "handoff": 46452,
+    "rc": 0,
+    "e": 46531,
+    "secs": 78,
+    "why": ""
+   },
+   {
+    "b": 46531,
+    "a": "fake3",
+    "s": "mail",
+    "login": [
+     46531,
+     46552
+    ],
+    "handoff": 46561,
+    "rc": 0,
+    "e": 46566,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 46566,
+    "a": "fake3",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 46567,
     "rc": null,
-    "e": 46462
+    "e": 46585
    }
   ],
   "idle": []
@@ -9040,8 +9064,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 20,
-  "relogMinutes": 11.7,
+  "switches": 21,
+  "relogMinutes": 12.2,
   "retries": 28,
   "tasks": {
    "dailyclaim": {
@@ -9115,13 +9139,13 @@
     "failed": 2
    },
    "mail": {
-    "runs": 5,
-    "minutes": 0.4,
+    "runs": 6,
+    "minutes": 0.5,
     "failed": 0
    },
    "guild_war": {
-    "runs": 3,
-    "minutes": 4.0,
+    "runs": 4,
+    "minutes": 5.3,
     "failed": 0
    }
   }
