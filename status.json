@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T08:39:31.822795",
+ "generatedAt": "2026-09-15T08:41:35.015251",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "chris",
+  "mode": "collect_hoopa_keys",
+  "since": "08:41:30"
  },
  "grid": {
   "tasks": [
@@ -79,9 +79,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "⏰",
-     "·",
+     "✓",
      "·",
      "·",
      "⏸",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 27,
-  "todo": 122,
+  "done": 29,
+  "todo": 120,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 27
@@ -497,6 +497,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:41:30",
+   "script": "run_pvp_ranked",
+   "account": "chris",
+   "rc": 0,
+   "secs": 78,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 160
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 185
+   },
+   "dir": "debug_runs/20260915_084011_run_pvp_ranked_chris"
+  },
+  {
+   "ts": "2026-09-15T08:40:10",
+   "script": "paradise",
+   "account": "chris",
+   "rc": 0,
+   "secs": 216,
+   "stats": {
+    "marginal_paradise_hub": 3,
+    "explore_clicks": 77,
+    "pass_claims": 12,
+    "upgraded_energy_drink": 4,
+    "upgraded_small_radar": 1,
+    "dex_milestones": 4,
+    "dex_activated": 11,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "0/10"
+   },
+   "dir": "debug_runs/20260915_083633_paradise_chris"
+  },
   {
    "ts": "2026-09-15T08:36:31",
    "script": "victory_road",
@@ -6584,46 +6624,12 @@
     "stage": 7
    },
    "dir": "debug_runs/20260913_151912_sky_pillar_fake4"
-  },
-  {
-   "ts": "2026-09-13T15:18:30",
-   "script": "sky_pillar",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 96,
-   "stats": {
-    "auto_formation": 1,
-    "stages_cleared": 6,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 1,
-    "stage": 7
-   },
-   "dir": "debug_runs/20260913_151654_sky_pillar_fake3"
-  },
-  {
-   "ts": "2026-09-13T15:15:29",
-   "script": "sky_pillar",
-   "account": "fake2",
-   "rc": 1,
-   "secs": 156,
-   "stats": {
-    "no_result": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "sky_pillar: stage 1 did not complete"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260913_151253_sky_pillar_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 31172,
+  "now": 31295,
   "segments": [
    {
     "b": 28919,
@@ -7000,8 +7006,30 @@
     "s": "paradise",
     "login": null,
     "handoff": 30993,
+    "rc": 0,
+    "e": 31210,
+    "secs": 216,
+    "why": ""
+   },
+   {
+    "b": 31210,
+    "a": "chris",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 31211,
+    "rc": 0,
+    "e": 31290,
+    "secs": 78,
+    "why": ""
+   },
+   {
+    "b": 31290,
+    "a": "chris",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 31291,
     "rc": null,
-    "e": 31172
+    "e": 31295
    }
   ],
   "idle": []
@@ -7108,13 +7136,13 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 2,
-    "minutes": 7.2,
+    "runs": 3,
+    "minutes": 10.8,
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 2,
-    "minutes": 2.5,
+    "runs": 3,
+    "minutes": 3.8,
     "failed": 0
    },
    "collect_hoopa_keys": {
