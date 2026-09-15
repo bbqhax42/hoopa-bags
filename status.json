@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T09:08:19.984596",
+ "generatedAt": "2026-09-15T09:10:23.283443",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "paradise",
-  "since": "09:05:26"
+  "account": "fake2",
+  "mode": "dailyclaim",
+  "since": "09:10:07"
  },
  "grid": {
   "tasks": [
@@ -121,11 +121,11 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "-",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 47,
-  "todo": 98,
+  "done": 50,
+  "todo": 95,
   "gaveUp": 3,
   "unavailable": 0,
   "windowed": 27
@@ -512,6 +512,58 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T09:10:06",
+   "script": "sky_pillar",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 52,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 2,
+    "stage": 2
+   },
+   "dir": "debug_runs/20260915_090913_sky_pillar_fake1"
+  },
+  {
+   "ts": "2026-09-15T09:09:12",
+   "script": "collect_hoopa_keys",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_090903_collect_hoopa_keys_fake1"
+  },
+  {
+   "ts": "2026-09-15T09:09:02",
+   "script": "paradise",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 214,
+   "stats": {
+    "marginal_paradise_hub": 3,
+    "explore_clicks": 69,
+    "pass_claims": 12,
+    "upgraded_energy_drink": 4,
+    "upgraded_small_radar": 1,
+    "dex_milestones": 4,
+    "dex_activated": 12,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "1/12"
+   },
+   "dir": "debug_runs/20260915_090528_paradise_fake1"
+  },
   {
    "ts": "2026-09-15T09:05:25",
    "script": "victory_road",
@@ -6620,64 +6672,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260913_212829_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-13T21:27:50",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 36,
-   "stats": {
-    "runes_claimed": 3,
-    "battles_won": 2,
-    "fountain_taken": 1,
-    "no_challenge": 1,
-    "incomplete": 1,
-    "wins": 2
-   },
-   "incomplete": [
-    "misty_woods: step 4 did not complete"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260913_212713_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-13T21:25:22",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 23,
-   "stats": {
-    "runes_claimed": 2,
-    "battles_won": 1,
-    "battles_lost": 1,
-    "incomplete": 1,
-    "wins": 1
-   },
-   "incomplete": [
-    "misty_woods: lost the battle at step 2 after 1 win(s)"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260913_212458_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-13T21:24:03",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 19,
-   "stats": {
-    "near_miss_popup_close": 4
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_212343_misty_woods_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 32900,
+  "now": 33023,
   "segments": [
    {
     "b": 28919,
@@ -7357,8 +7357,44 @@
     "s": "paradise",
     "login": null,
     "handoff": 32727,
+    "rc": 0,
+    "e": 32943,
+    "secs": 214,
+    "why": ""
+   },
+   {
+    "b": 32943,
+    "a": "fake1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 32943,
+    "rc": 0,
+    "e": 32953,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 32953,
+    "a": "fake1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 32953,
+    "rc": 0,
+    "e": 33007,
+    "secs": 52,
+    "why": ""
+   },
+   {
+    "b": 33007,
+    "a": "fake2",
+    "s": "dailyclaim",
+    "login": [
+     33007,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 32900
+    "e": 33023
    }
   ],
   "idle": []
@@ -7493,7 +7529,7 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 4,
+  "switches": 5,
   "relogMinutes": 2.8,
   "retries": 14,
   "tasks": {
@@ -7528,8 +7564,8 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 4,
-    "minutes": 11.5,
+    "runs": 5,
+    "minutes": 15.1,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -7538,13 +7574,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 4,
-    "minutes": 0.6,
+    "runs": 5,
+    "minutes": 0.7,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 4,
-    "minutes": 4.5,
+    "runs": 5,
+    "minutes": 5.4,
     "failed": 0
    },
    "weekend_bash": {
