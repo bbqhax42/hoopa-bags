@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T08:14:52.086654",
+ "generatedAt": "2026-09-15T08:16:55.108744",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "island_challenge",
-  "since": "08:14:31"
+  "account": "nova",
+  "mode": "joint_team_daily_quest",
+  "since": "08:16:31"
  },
  "grid": {
   "tasks": [
@@ -30,7 +30,7 @@
    {
     "account": "nova",
     "cells": [
-     "·",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -66,7 +66,7 @@
      "-",
      "-",
      "✓",
-     "·"
+     "💤"
     ]
    },
    {
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 11,
-  "todo": 140,
+  "done": 12,
+  "todo": 138,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 27
@@ -458,14 +458,16 @@
  "islandChallenge": [
   {
    "account": "jeff",
-   "fights": 0,
-   "stamina": 60,
-   "staminaMax": 60,
-   "staminaAt": "2026-09-15T08:14:41",
-   "nextAt": null
+   "fights": 3,
+   "stamina": 20,
+   "staminaMax": 20,
+   "staminaAt": "2026-09-15T08:15:12",
+   "nextAt": "2026-09-15T10:15:17"
   }
  ],
- "snoozed": {},
+ "snoozed": {
+  "jeff|island_challenge": "2026-09-15T10:15"
+ },
  "ownerOnline": [],
  "keys": {
   "jeff": {
@@ -490,11 +492,45 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-15T07:58:15.538263",
+  "label": "nova",
+  "at": "2026-09-15T08:15:43.940596",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:16:30",
+   "script": "dailyclaim",
+   "account": "nova",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "sign_in_already": 1,
+    "milestone_claimed": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_081554_dailyclaim_nova"
+  },
+  {
+   "ts": "2026-09-15T08:15:17",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 45,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 20,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260915_081432_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-15T08:14:31",
    "script": "weekend_bash",
@@ -6594,43 +6630,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260913_135020_guild_war_fake3"
-  },
-  {
-   "ts": "2026-09-13T13:50:11",
-   "script": "victory_road",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 21,
-   "stats": {
-    "nothing_pending": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_134950_victory_road_fake3"
-  },
-  {
-   "ts": "2026-09-13T13:49:09",
-   "script": "guild_war",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 82,
-   "stats": {
-    "marginal_battle_over": 2,
-    "near_miss_tips_header": 34,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260913_134746_guild_war_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 29692,
+  "now": 29815,
   "segments": [
    {
     "b": 28919,
@@ -6770,8 +6775,33 @@
     "s": "island_challenge",
     "login": null,
     "handoff": 29672,
+    "rc": 5,
+    "e": 29718,
+    "secs": 45,
+    "why": ""
+   },
+   {
+    "b": 29718,
+    "a": "nova",
+    "s": "dailyclaim",
+    "login": [
+     29719,
+     29743
+    ],
+    "handoff": 29754,
+    "rc": 0,
+    "e": 29791,
+    "secs": 36,
+    "why": ""
+   },
+   {
+    "b": 29791,
+    "a": "nova",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 29792,
     "rc": null,
-    "e": 29692
+    "e": 29815
    }
   ],
   "idle": []
@@ -6807,13 +6837,13 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 0,
-  "relogMinutes": 0.0,
-  "retries": 1,
+  "switches": 1,
+  "relogMinutes": 0.6,
+  "retries": 2,
   "tasks": {
    "dailyclaim": {
-    "runs": 1,
-    "minutes": 0.6,
+    "runs": 2,
+    "minutes": 1.2,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -6865,6 +6895,11 @@
     "runs": 1,
     "minutes": 0.0,
     "failed": 0
+   },
+   "island_challenge": {
+    "runs": 1,
+    "minutes": 0.8,
+    "failed": 1
    }
   }
  },
