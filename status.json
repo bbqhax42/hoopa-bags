@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T10:24:11.750145",
+ "generatedAt": "2026-09-15T10:26:14.574827",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "run_pvp_ranked",
-  "since": "10:23:45"
+  "mode": "sky_pillar",
+  "since": "10:25:11"
  },
  "grid": {
   "tasks": [
@@ -270,8 +270,8 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "-",
      "-",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 111,
-  "todo": 34,
+  "done": 113,
+  "todo": 32,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 27
@@ -511,6 +511,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T10:25:11",
+   "script": "collect_hoopa_keys",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_102502_collect_hoopa_keys_lucifer2"
+  },
+  {
+   "ts": "2026-09-15T10:25:01",
+   "script": "run_pvp_ranked",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 75,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 348
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 18
+   },
+   "dir": "debug_runs/20260915_102346_run_pvp_ranked_lucifer2"
+  },
   {
    "ts": "2026-09-15T10:23:44",
    "script": "paradise",
@@ -6648,52 +6679,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_091718_joint_team_daily_quest_smurf"
-  },
-  {
-   "ts": "2026-09-14T09:17:14",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 89,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_paid_only": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 0
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260914_091545_dailyclaim_smurf"
-  },
-  {
-   "ts": "2026-09-14T09:15:40",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 88,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_paid_only": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 0
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260914_091412_dailyclaim_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 37452,
+  "now": 37574,
   "segments": [
    {
     "b": 28919,
@@ -8197,8 +8188,30 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 37425,
+    "rc": 0,
+    "e": 37501,
+    "secs": 75,
+    "why": ""
+   },
+   {
+    "b": 37501,
+    "a": "lucifer2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 37502,
+    "rc": 0,
+    "e": 37511,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 37511,
+    "a": "lucifer2",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 37512,
     "rc": null,
-    "e": 37452
+    "e": 37574
    }
   ],
   "idle": []
@@ -8445,13 +8458,13 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 5,
-    "minutes": 6.3,
+    "runs": 6,
+    "minutes": 7.6,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 11,
-    "minutes": 1.6,
+    "runs": 12,
+    "minutes": 1.8,
     "failed": 0
    },
    "sky_pillar": {
