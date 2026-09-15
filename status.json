@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T10:18:02.537265",
+ "generatedAt": "2026-09-15T10:20:05.702000",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "combat_daily",
-  "since": "10:17:34"
+  "mode": "victory_road",
+  "since": "10:19:59"
  },
  "grid": {
   "tasks": [
@@ -266,7 +266,7 @@
      "⏰",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 108,
-  "todo": 37,
+  "done": 109,
+  "todo": 36,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 27
@@ -511,6 +511,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T10:19:58",
+   "script": "combat_daily",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 9,
+   "stats": {
+    "title_reread_named": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_101949_combat_daily_lucifer2"
+  },
+  {
+   "ts": "2026-09-15T10:19:47",
+   "script": "combat_daily",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 127,
+   "stats": {
+    "title_reread_named": 3,
+    "near_miss_afk_rewards": 8,
+    "marginal_afk_rewards": 2,
+    "refused_afk_rewards_confirm": 2,
+    "marginal_battle_victory_confirm": 1,
+    "near_miss_adventure_event": 1,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 6/6 os a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260915_101740_combat_daily_lucifer2"
+  },
   {
    "ts": "2026-09-15T10:17:34",
    "script": "pokemon_home",
@@ -6645,50 +6681,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_091227_collect_hoopa_keys_chris"
-  },
-  {
-   "ts": "2026-09-14T09:12:23",
-   "script": "run_pvp_ranked",
-   "account": "chris",
-   "rc": 1,
-   "secs": 18,
-   "stats": {
-    "picker_never_opened": 1,
-    "incomplete": 1,
-    "rank_places_gained": 0
-   },
-   "incomplete": [
-    "run_pvp_ranked: attempt 1 did not complete"
-   ],
-   "values": {
-    "rank": 1
-   },
-   "dir": "debug_runs/20260914_091204_run_pvp_ranked_chris"
-  },
-  {
-   "ts": "2026-09-14T09:12:00",
-   "script": "run_pvp_ranked",
-   "account": "chris",
-   "rc": 1,
-   "secs": 18,
-   "stats": {
-    "picker_never_opened": 1,
-    "incomplete": 1,
-    "rank_places_gained": 0
-   },
-   "incomplete": [
-    "run_pvp_ranked: attempt 1 did not complete"
-   ],
-   "values": {
-    "rank": 1
-   },
-   "dir": "debug_runs/20260914_091141_run_pvp_ranked_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 37082,
+  "now": 37206,
   "segments": [
    {
     "b": 28919,
@@ -8148,13 +8146,44 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 37059,
+    "rc": 1,
+    "e": 37188,
+    "secs": 127,
+    "why": ""
+   },
+   {
+    "b": 37188,
+    "a": "lucifer2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 37188,
+    "rc": 1,
+    "e": 37199,
+    "secs": 127,
+    "why": ""
+   },
+   {
+    "b": 37199,
+    "a": "lucifer2",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 37199,
     "rc": null,
-    "e": 37082
+    "e": 37206
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T10:19:47",
+   "account": "lucifer2",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 127,
+   "why": "title_reread_named, near_miss_afk_rewards, marginal_afk_rewards, refused_afk_rewards_confirm, marginal_battle_victory_confirm, near_miss_adventure_event, pokemo",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_101740_combat_daily_lucifer2__0154_101947_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-15T10:06:08",
    "account": "lucifer1",
@@ -8349,7 +8378,7 @@
   "since": "2026-09-15T08:00",
   "switches": 11,
   "relogMinutes": 6.6,
-  "retries": 21,
+  "retries": 22,
   "tasks": {
    "dailyclaim": {
     "runs": 13,
@@ -8372,9 +8401,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 21,
-    "minutes": 24.1,
-    "failed": 12
+    "runs": 23,
+    "minutes": 26.4,
+    "failed": 13
    },
    "victory_road": {
     "runs": 11,
