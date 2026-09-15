@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T13:49:51.548331",
+ "generatedAt": "2026-09-15T13:51:54.412950",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
+  "account": "test1",
   "mode": "guild_war",
-  "since": "13:49:27"
+  "since": "13:51:21"
  },
  "grid": {
   "tasks": [
@@ -294,7 +294,7 @@
      "✓",
      "✓",
      "✓",
-     "✗2",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -309,7 +309,7 @@
     "account": "test1",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "✓",
@@ -377,9 +377,9 @@
   ]
  },
  "counts": {
-  "done": 165,
-  "todo": 9,
-  "gaveUp": 5,
+  "done": 167,
+  "todo": 8,
+  "gaveUp": 4,
   "unavailable": 1,
   "windowed": 12
  },
@@ -539,11 +539,46 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-09-15T13:47:53.444636",
+  "label": "test1",
+  "at": "2026-09-15T13:51:07.119287",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T13:51:21",
+   "script": "mail",
+   "account": "test1",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 10,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260915_135116_mail_test1"
+  },
+  {
+   "ts": "2026-09-15T13:50:45",
+   "script": "guild_war",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 69,
+   "stats": {
+    "marginal_last_hit": 3,
+    "near_miss_last_hit": 2,
+    "near_miss_tips_header": 66,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_134935_guild_war_lucifer2"
+  },
   {
    "ts": "2026-09-15T13:49:27",
    "script": "guild_war",
@@ -6692,38 +6727,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_112643_pokemon_home_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T11:26:37",
-   "script": "daily_dungeon",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "marginal_dungeon_list": 8
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_112615_daily_dungeon_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T11:25:38",
-   "script": "joint_team_daily_quest",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 49,
-   "stats": {
-    "panel_swipes": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_112449_joint_team_daily_quest_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 49791,
+  "now": 49914,
   "segments": [
    {
     "b": 28919,
@@ -8978,9 +8987,32 @@
     "login": null,
     "handoff": 49775,
     "rc": 0,
-    "e": 49791,
+    "e": 49845,
     "secs": 74,
     "why": ""
+   },
+   {
+    "b": 49845,
+    "a": "test1",
+    "s": "mail",
+    "login": [
+     49846,
+     49867
+    ],
+    "handoff": 49876,
+    "rc": 0,
+    "e": 49881,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49881,
+    "a": "test1",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49882,
+    "rc": null,
+    "e": 49914
    }
   ],
   "idle": []
@@ -9259,8 +9291,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 27,
-  "relogMinutes": 15.5,
+  "switches": 28,
+  "relogMinutes": 16.0,
   "retries": 29,
   "tasks": {
    "dailyclaim": {
@@ -9334,13 +9366,13 @@
     "failed": 2
    },
    "mail": {
-    "runs": 11,
-    "minutes": 0.9,
+    "runs": 12,
+    "minutes": 1.0,
     "failed": 0
    },
    "guild_war": {
-    "runs": 13,
-    "minutes": 15.3,
+    "runs": 14,
+    "minutes": 16.5,
     "failed": 0
    }
   }
