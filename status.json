@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T08:58:03.312722",
+ "generatedAt": "2026-09-15T09:00:06.292463",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "faction",
-  "since": "08:56:58"
+  "mode": "misty_woods",
+  "since": "08:59:07"
  },
  "grid": {
   "tasks": [
@@ -105,7 +105,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "⏸",
      "·",
      "·",
      "-"
@@ -346,7 +346,7 @@
  },
  "counts": {
   "done": 41,
-  "todo": 106,
+  "todo": 105,
   "gaveUp": 2,
   "unavailable": 0,
   "windowed": 27
@@ -444,6 +444,12 @@
   },
   {
    "account": "smurf",
+   "task": "faction",
+   "since": "2026-09-15T08:58:56",
+   "why": "fire tower: lost the battle after 16 win(s) — the team needs adjusting"
+  },
+  {
+   "account": "smurf",
    "task": "story",
    "since": "2026-09-10T20:47:30",
    "why": "lost at stage 1 after 0 clear(s) — the next stage needs a stronger team"
@@ -506,6 +512,26 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T08:59:06",
+   "script": "faction",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 124,
+   "stats": {
+    "auto_formation": 17,
+    "incomplete": 1,
+    "lost_fire": 1,
+    "faction_disabled": 1,
+    "floors_fire": 16,
+    "sweeps_used": 2
+   },
+   "incomplete": [
+    "faction: fire tower: lost the battle after 16 win(s) — the team needs adjusting"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_085702_faction_smurf"
+  },
   {
    "ts": "2026-09-15T08:56:58",
    "script": "sky_pillar",
@@ -6621,25 +6647,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260913_201221_worldboss_fake4"
-  },
-  {
-   "ts": "2026-09-13T20:12:21",
-   "script": "worldboss",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 64,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260913_201117_worldboss_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 32283,
+  "now": 32406,
   "segments": [
    {
     "b": 28919,
@@ -7206,13 +7219,33 @@
     "s": "faction",
     "login": null,
     "handoff": 32222,
+    "rc": 1,
+    "e": 32347,
+    "secs": 124,
+    "why": "faction: fire tower: lost the battle after 16 win(s) — the team needs adjusting"
+   },
+   {
+    "b": 32347,
+    "a": "smurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": null,
     "rc": null,
-    "e": 32283
+    "e": 32406
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T08:59:06",
+   "account": "smurf",
+   "task": "faction",
+   "rc": 1,
+   "secs": 124,
+   "why": "faction: fire tower: lost the battle after 16 win(s) — the team needs adjusting",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_085702_faction_smurf__KEEP_0174_085855_faction_lost_fire.png"
+  },
   {
    "ts": "2026-09-15T08:52:28",
    "account": "smurf",
@@ -7308,7 +7341,7 @@
   "since": "2026-09-15T08:00",
   "switches": 3,
   "relogMinutes": 2.2,
-  "retries": 10,
+  "retries": 11,
   "tasks": {
    "dailyclaim": {
     "runs": 5,
@@ -7369,6 +7402,11 @@
     "runs": 2,
     "minutes": 1.5,
     "failed": 2
+   },
+   "faction": {
+    "runs": 1,
+    "minutes": 2.1,
+    "failed": 1
    }
   }
  },
