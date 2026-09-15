@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T09:32:56.650431",
+ "generatedAt": "2026-09-15T09:34:59.425000",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake4",
-  "mode": "combat_daily",
-  "since": "09:32:17"
+  "mode": "paradise",
+  "since": "09:34:54"
  },
  "grid": {
   "tasks": [
@@ -182,8 +182,8 @@
      "⏰",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "-",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 72,
-  "todo": 73,
+  "done": 74,
+  "todo": 71,
   "gaveUp": 3,
   "unavailable": 0,
   "windowed": 27
@@ -512,6 +512,51 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T09:34:53",
+   "script": "victory_road",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 11,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_093442_victory_road_fake4"
+  },
+  {
+   "ts": "2026-09-15T09:34:41",
+   "script": "combat_daily",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 9,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_093431_combat_daily_fake4"
+  },
+  {
+   "ts": "2026-09-15T09:34:30",
+   "script": "combat_daily",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 127,
+   "stats": {
+    "title_reread_named": 3,
+    "marginal_afk_rewards": 2,
+    "near_miss_pokemon_upgrade": 2,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260915_093222_combat_daily_fake4"
+  },
   {
    "ts": "2026-09-15T09:32:16",
    "script": "pokemon_home",
@@ -6638,51 +6683,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_021412_worldboss_test1"
-  },
-  {
-   "ts": "2026-09-14T02:14:11",
-   "script": "worldboss",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 71,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_021300_worldboss_lucifer2"
-  },
-  {
-   "ts": "2026-09-14T02:13:00",
-   "script": "worldboss",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 70,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_021149_worldboss_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T02:11:49",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 64,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_021044_worldboss_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 34377,
+  "now": 34499,
   "segments": [
    {
     "b": 28919,
@@ -7668,13 +7674,55 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 34342,
+    "rc": 1,
+    "e": 34470,
+    "secs": 127,
+    "why": ""
+   },
+   {
+    "b": 34470,
+    "a": "fake4",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34471,
+    "rc": 1,
+    "e": 34481,
+    "secs": 127,
+    "why": ""
+   },
+   {
+    "b": 34481,
+    "a": "fake4",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 34482,
+    "rc": 0,
+    "e": 34494,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 34494,
+    "a": "fake4",
+    "s": "paradise",
+    "login": null,
+    "handoff": 34495,
     "rc": null,
-    "e": 34377
+    "e": 34499
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T09:34:30",
+   "account": "fake4",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 127,
+   "why": "title_reread_named, marginal_afk_rewards, near_miss_pokemon_upgrade, pokemon_upgraded, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_093222_combat_daily_fake4__0154_093430_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-15T09:25:02",
    "account": "fake3",
@@ -7824,7 +7872,7 @@
   "since": "2026-09-15T08:00",
   "switches": 7,
   "relogMinutes": 4.3,
-  "retries": 16,
+  "retries": 17,
   "tasks": {
    "dailyclaim": {
     "runs": 9,
@@ -7847,13 +7895,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 13,
-    "minutes": 14.8,
-    "failed": 7
+    "runs": 15,
+    "minutes": 17.1,
+    "failed": 8
    },
    "victory_road": {
-    "runs": 7,
-    "minutes": 1.2,
+    "runs": 8,
+    "minutes": 1.4,
     "failed": 0
    },
    "paradise": {
