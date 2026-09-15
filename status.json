@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T09:22:41.481298",
+ "generatedAt": "2026-09-15T09:24:44.428036",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "pokemon_home",
-  "since": "09:22:26"
+  "mode": "combat_daily",
+  "since": "09:22:51"
  },
  "grid": {
   "tasks": [
@@ -160,7 +160,7 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 62,
-  "todo": 83,
+  "done": 63,
+  "todo": 82,
   "gaveUp": 3,
   "unavailable": 0,
   "windowed": 27
@@ -512,6 +512,20 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T09:22:50",
+   "script": "pokemon_home",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 22,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_092227_pokemon_home_fake3"
+  },
   {
    "ts": "2026-09-15T09:22:25",
    "script": "daily_dungeon",
@@ -6645,26 +6659,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_012332_story_deno"
-  },
-  {
-   "ts": "2026-09-14T00:25:45",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 87,
-   "stats": {
-    "skip_retry": 22,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_002418_story_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 33761,
+  "now": 33884,
   "segments": [
    {
     "b": 28919,
@@ -7526,8 +7526,19 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 33747,
+    "rc": 0,
+    "e": 33771,
+    "secs": 22,
+    "why": ""
+   },
+   {
+    "b": 33771,
+    "a": "fake3",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33776,
     "rc": null,
-    "e": 33761
+    "e": 33884
    }
   ],
   "idle": []
@@ -7691,8 +7702,8 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 6,
-    "minutes": 10.8,
+    "runs": 7,
+    "minutes": 11.2,
     "failed": 0
    },
    "combat_daily": {
