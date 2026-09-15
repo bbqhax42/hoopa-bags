@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T09:18:35.620667",
+ "generatedAt": "2026-09-15T09:20:38.650269",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake3",
+  "mode": "dailyclaim",
+  "since": "09:19:43"
  },
  "grid": {
   "tasks": [
@@ -142,11 +142,11 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "-",
@@ -345,8 +345,8 @@
   ]
  },
  "counts": {
-  "done": 56,
-  "todo": 89,
+  "done": 59,
+  "todo": 86,
   "gaveUp": 3,
   "unavailable": 0,
   "windowed": 27
@@ -507,11 +507,63 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-15T09:10:31.604822",
+  "label": "fake3",
+  "at": "2026-09-15T09:20:07.396857",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T09:19:42",
+   "script": "sky_pillar",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 41,
+   "stats": {
+    "stages_cleared": 2,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 1,
+    "stage": 9
+   },
+   "dir": "debug_runs/20260915_091900_sky_pillar_fake2"
+  },
+  {
+   "ts": "2026-09-15T09:18:59",
+   "script": "collect_hoopa_keys",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_091850_collect_hoopa_keys_fake2"
+  },
+  {
+   "ts": "2026-09-15T09:18:49",
+   "script": "paradise",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 207,
+   "stats": {
+    "marginal_paradise_hub": 2,
+    "explore_clicks": 74,
+    "pass_claims": 13,
+    "upgraded_energy_drink": 4,
+    "upgraded_small_radar": 1,
+    "dex_milestones": 4,
+    "dex_activated": 10,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "0/10"
+   },
+   "dir": "debug_runs/20260915_091522_paradise_fake2"
+  },
   {
    "ts": "2026-09-15T09:15:20",
    "script": "victory_road",
@@ -6605,55 +6657,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_001949_story_deno"
-  },
-  {
-   "ts": "2026-09-14T00:19:47",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 90,
-   "stats": {
-    "skip_retry": 16,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_001816_story_deno"
-  },
-  {
-   "ts": "2026-09-14T00:18:15",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 85,
-   "stats": {
-    "skip_retry": 17,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_001650_story_deno"
-  },
-  {
-   "ts": "2026-09-14T00:16:48",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 83,
-   "stats": {
-    "skip_retry": 17,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_001524_story_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 33515,
+  "now": 33639,
   "segments": [
    {
     "b": 28919,
@@ -7446,8 +7455,44 @@
     "s": "paradise",
     "login": null,
     "handoff": 33322,
+    "rc": 0,
+    "e": 33530,
+    "secs": 207,
+    "why": ""
+   },
+   {
+    "b": 33530,
+    "a": "fake2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 33530,
+    "rc": 0,
+    "e": 33540,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 33540,
+    "a": "fake2",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33540,
+    "rc": 0,
+    "e": 33583,
+    "secs": 41,
+    "why": ""
+   },
+   {
+    "b": 33583,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": [
+     33583,
+     33607
+    ],
+    "handoff": 33615,
     "rc": null,
-    "e": 33515
+    "e": 33639
    }
   ],
   "idle": []
@@ -7591,8 +7636,8 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 5,
-  "relogMinutes": 3.3,
+  "switches": 6,
+  "relogMinutes": 3.8,
   "retries": 15,
   "tasks": {
    "dailyclaim": {
@@ -7626,8 +7671,8 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 5,
-    "minutes": 15.1,
+    "runs": 6,
+    "minutes": 18.5,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -7636,13 +7681,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 5,
-    "minutes": 0.7,
+    "runs": 6,
+    "minutes": 0.8,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 5,
-    "minutes": 5.4,
+    "runs": 6,
+    "minutes": 6.1,
     "failed": 0
    },
    "weekend_bash": {
