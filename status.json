@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T12:56:24.987370",
+ "generatedAt": "2026-09-15T12:58:28.060012",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
-  "mode": "guild_war",
-  "since": "12:56:06"
+  "account": "fake4",
+  "mode": "mail",
+  "since": "12:58:22"
  },
  "grid": {
   "tasks": [
@@ -179,7 +179,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -377,8 +377,8 @@
   ]
  },
  "counts": {
-  "done": 155,
-  "todo": 21,
+  "done": 156,
+  "todo": 20,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 12
@@ -543,6 +543,39 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T12:58:22",
+   "script": "guild_war",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 109,
+   "stats": {
+    "marginal_last_hit": 3,
+    "near_miss_last_hit": 1,
+    "refused_result_confirm": 1,
+    "gw_no_return": 1,
+    "assist_skipped_off_screen": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_125632_guild_war_fake3"
+  },
+  {
+   "ts": "2026-09-15T12:56:28",
+   "script": "guild_war",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 20,
+   "stats": {
+    "refused_auto_formation": 1,
+    "refused_setform_confirm": 1,
+    "gw_never_entered": 1,
+    "assist_refill": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260915_125607_guild_war_fake3"
+  },
   {
    "ts": "2026-09-15T12:56:06",
    "script": "mail",
@@ -6669,51 +6702,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_110605_collect_hoopa_keys_fake5"
-  },
-  {
-   "ts": "2026-09-14T11:06:02",
-   "script": "paradise",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 366,
-   "stats": {
-    "explore_clicks": 139,
-    "pass_claims": 3,
-    "gear_energy_unreadable": 5,
-    "upgraded_small_radar": 3,
-    "upgraded_sports_gloves": 2,
-    "marginal_paradise_hub": 1,
-    "dex_milestones": 4,
-    "dex_activated": 5,
-    "shop_sold_out_skipped": 4,
-    "shop_buys": 1,
-    "shop_spend_confirmed": 750
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "20/20"
-   },
-   "dir": "debug_runs/20260914_105956_paradise_fake5"
-  },
-  {
-   "ts": "2026-09-14T10:59:50",
-   "script": "victory_road",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 16,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_105933_victory_road_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 46585,
+  "now": 46708,
   "segments": [
    {
     "b": 28919,
@@ -8784,8 +8778,33 @@
     "s": "guild_war",
     "login": null,
     "handoff": 46567,
+    "rc": 0,
+    "e": 46588,
+    "secs": 20,
+    "why": ""
+   },
+   {
+    "b": 46588,
+    "a": "fake3",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 46592,
+    "rc": 0,
+    "e": 46702,
+    "secs": 20,
+    "why": ""
+   },
+   {
+    "b": 46702,
+    "a": "fake4",
+    "s": "mail",
+    "login": [
+     46703,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 46585
+    "e": 46708
    }
   ],
   "idle": []
@@ -9064,7 +9083,7 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 21,
+  "switches": 22,
   "relogMinutes": 12.2,
   "retries": 28,
   "tasks": {
@@ -9144,8 +9163,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 4,
-    "minutes": 5.3,
+    "runs": 6,
+    "minutes": 7.5,
     "failed": 0
    }
   }
