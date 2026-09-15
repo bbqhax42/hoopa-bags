@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-15T15:19:48.907267",
+ "generatedAt": "2026-09-15T15:21:51.999235",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
+  "account": "dre",
   "mode": "rank_match",
-  "since": "15:19:43"
+  "since": "15:21:42"
  },
  "grid": {
   "tasks": [
@@ -353,7 +353,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 182,
-  "todo": 2,
+  "done": 183,
+  "todo": 1,
   "gaveUp": 10,
   "unavailable": 1,
   "windowed": 12
@@ -555,11 +555,47 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-15T15:19:24.278067",
+  "label": "deno",
+  "at": "2026-09-15T15:20:22.681387",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-15T15:21:41",
+   "script": "rank_match",
+   "account": "deno",
+   "rc": 0,
+   "secs": 67,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260915_152034_rank_match_deno"
+  },
+  {
+   "ts": "2026-09-15T15:19:57",
+   "script": "rank_match",
+   "account": "test1",
+   "rc": 1,
+   "secs": 10,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260915_151947_rank_match_test1"
+  },
   {
    "ts": "2026-09-15T15:19:43",
    "script": "rank_match",
@@ -6752,45 +6788,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_122816_victory_road_dre"
-  },
-  {
-   "ts": "2026-09-14T12:28:13",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 1,
-   "secs": 164,
-   "stats": {
-    "arena_no_result": 2,
-    "marginal_adventure_event": 1,
-    "left_outstanding": 2
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 + ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260914_122528_combat_daily_dre"
-  },
-  {
-   "ts": "2026-09-14T12:25:25",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 1,
-   "secs": 16,
-   "stats": {
-    "near_miss_afk_rewards": 2,
-    "refused_chest": 5,
-    "left_outstanding": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_122509_combat_daily_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-15T00:00",
   "since": 28800.0,
-  "now": 55189,
+  "now": 55312,
   "segments": [
    {
     "b": 28919,
@@ -9410,14 +9413,49 @@
     "login": null,
     "handoff": 55186,
     "rc": 1,
-    "e": 55189,
+    "e": 55198,
     "secs": 10,
     "why": "rank_match: the Rank screen never opened"
+   },
+   {
+    "b": 55198,
+    "a": "deno",
+    "s": "rank_match",
+    "login": [
+     55199,
+     55222
+    ],
+    "handoff": 55234,
+    "rc": 0,
+    "e": 55302,
+    "secs": 67,
+    "why": ""
+   },
+   {
+    "b": 55302,
+    "a": "dre",
+    "s": "rank_match",
+    "login": [
+     55302,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 55312
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-15T15:19:57",
+   "account": "test1",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 10,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260915_151947_rank_match_test1__KEEP_0004_151957_no_rank_screen.png"
+  },
   {
    "ts": "2026-09-15T15:19:43",
    "account": "test1",
@@ -9781,9 +9819,9 @@
  ],
  "day": {
   "since": "2026-09-15T08:00",
-  "switches": 43,
-  "relogMinutes": 24.3,
-  "retries": 38,
+  "switches": 45,
+  "relogMinutes": 24.9,
+  "retries": 39,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9871,9 +9909,9 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 14,
-    "minutes": 7.4,
-    "failed": 8
+    "runs": 16,
+    "minutes": 8.7,
+    "failed": 9
    }
   }
  },
