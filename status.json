@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T10:05:52.874750",
+ "generatedAt": "2026-09-16T10:07:55.852685",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "dailyclaim",
-  "since": "10:05:40"
+  "mode": "joint_battle",
+  "since": "10:07:24"
  },
  "grid": {
   "tasks": [
@@ -297,9 +297,9 @@
    {
     "account": "lucifer2",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 127,
-  "todo": 57,
+  "done": 130,
+  "todo": 54,
   "gaveUp": 4,
   "unavailable": 4,
   "windowed": 15
@@ -547,11 +547,58 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-16T09:53:23.370070",
+  "label": "lucifer2",
+  "at": "2026-09-16T10:06:00.674447",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T10:07:24",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "guild_base_by_back": 1,
+    "marginal_joint_team_daily_panel": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_100651_joint_team_daily_quest_lucifer2"
+  },
+  {
+   "ts": "2026-09-16T10:06:50",
+   "script": "mail",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 5,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260916_100647_mail_lucifer2"
+  },
+  {
+   "ts": "2026-09-16T10:06:46",
+   "script": "dailyclaim",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_100613_dailyclaim_lucifer2"
+  },
   {
    "ts": "2026-09-16T10:05:39",
    "script": "weekend_bash",
@@ -6986,54 +7033,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_083019_joint_team_daily_quest_chris"
-  },
-  {
-   "ts": "2026-09-15T08:30:17",
-   "script": "dailyclaim",
-   "account": "chris",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_082941_dailyclaim_chris"
-  },
-  {
-   "ts": "2026-09-15T08:29:01",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 0,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_082901_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-15T08:28:59",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 1,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_082857_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 36353,
+  "now": 36476,
   "segments": [
    {
     "b": 28844,
@@ -8781,11 +8786,44 @@
     "s": "dailyclaim",
     "login": [
      36340,
-     null
+     36360
     ],
-    "handoff": null,
+    "handoff": 36372,
+    "rc": 0,
+    "e": 36407,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 36407,
+    "a": "lucifer2",
+    "s": "mail",
+    "login": null,
+    "handoff": 36407,
+    "rc": 0,
+    "e": 36411,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 36411,
+    "a": "lucifer2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 36411,
+    "rc": 0,
+    "e": 36444,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 36444,
+    "a": "lucifer2",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 36447,
     "rc": null,
-    "e": 36353
+    "e": 36476
    }
   ],
   "idle": []
@@ -8975,22 +9013,22 @@
  "day": {
   "since": "2026-09-16T08:00",
   "switches": 12,
-  "relogMinutes": 5.7,
+  "relogMinutes": 6.3,
   "retries": 22,
   "tasks": {
    "dailyclaim": {
-    "runs": 12,
-    "minutes": 7.7,
+    "runs": 13,
+    "minutes": 8.2,
     "failed": 2
    },
    "mail": {
-    "runs": 11,
+    "runs": 12,
     "minutes": 0.6,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 9,
-    "minutes": 4.7,
+    "runs": 10,
+    "minutes": 5.2,
     "failed": 0
    },
    "daily_dungeon": {
