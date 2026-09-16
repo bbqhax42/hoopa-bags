@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T20:34:04.562067",
+ "generatedAt": "2026-09-16T20:36:07.377179",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "20:32:51"
+  "since": "20:35:53"
  },
  "grid": {
   "tasks": [
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "✗2",
-     "·"
+     "✗2"
     ]
    },
    {
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 186,
-  "todo": 1,
-  "gaveUp": 15,
+  "todo": 0,
+  "gaveUp": 16,
   "unavailable": 6,
   "windowed": 2
  },
@@ -501,10 +501,10 @@
   {
    "account": "chris",
    "fights": 9,
-   "stamina": 0,
-   "staminaMax": 0,
-   "staminaAt": "2026-09-16T16:33:36",
-   "nextAt": "2026-09-16T20:33:43"
+   "stamina": 1,
+   "staminaMax": 1,
+   "staminaAt": "2026-09-16T20:35:13",
+   "nextAt": null
   },
   {
    "account": "jeff",
@@ -542,11 +542,47 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-16T20:23:35.973847",
+  "label": "chris",
+  "at": "2026-09-16T20:34:14.441129",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T20:35:36",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 31,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "island_challenge: fight 10 did not complete"
+   ],
+   "values": {
+    "stamina": 1,
+    "fights_today": 9
+   },
+   "dir": "debug_runs/20260916_203504_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-16T20:34:56",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 31,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "island_challenge: fight 10 did not complete"
+   ],
+   "values": {
+    "stamina": 41,
+    "fights_today": 9
+   },
+   "dir": "debug_runs/20260916_203425_island_challenge_chris"
+  },
   {
    "ts": "2026-09-16T20:16:58",
    "script": "worldboss",
@@ -6961,43 +6997,12 @@
     "stage": 6
    },
    "dir": "debug_runs/20260915_102512_sky_pillar_lucifer2"
-  },
-  {
-   "ts": "2026-09-15T10:25:11",
-   "script": "collect_hoopa_keys",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_102502_collect_hoopa_keys_lucifer2"
-  },
-  {
-   "ts": "2026-09-15T10:25:01",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 75,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 3,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 348
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 18
-   },
-   "dir": "debug_runs/20260915_102346_run_pvp_ranked_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 74044,
+  "now": 74167,
   "segments": [
    {
     "b": 28844,
@@ -11263,7 +11268,7 @@
     ],
     "handoff": 60828,
     "rc": null,
-    "e": 74044
+    "e": 74167
    }
   ],
   "idle": [
@@ -11271,6 +11276,24 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-16T20:35:36",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 31,
+   "why": "island_challenge: fight 10 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_203504_island_challenge_chris__KEEP_0003_203532_no_map_after_10.png"
+  },
+  {
+   "ts": "2026-09-16T20:34:56",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 31,
+   "why": "island_challenge: fight 10 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_203425_island_challenge_chris__KEEP_0003_203453_no_map_after_10.png"
+  },
   {
    "ts": "2026-09-16T10:52:31",
    "account": "dre",
@@ -11508,9 +11531,9 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 78,
-  "relogMinutes": 43.4,
-  "retries": 36,
+  "switches": 79,
+  "relogMinutes": 43.9,
+  "retries": 38,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -11583,9 +11606,9 @@
     "failed": 4
    },
    "island_challenge": {
-    "runs": 10,
-    "minutes": 5.0,
-    "failed": 10
+    "runs": 12,
+    "minutes": 6.1,
+    "failed": 12
    },
    "misty_woods": {
     "runs": 1,
@@ -11685,11 +11708,11 @@
    "energy": 1,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-16T20:23:12.210968",
-   "runs": 344,
+   "observed_at": "2026-09-16T20:35:50.359210",
+   "runs": 345,
    "cooldown_until": null,
    "kicks": 0,
-   "last_run_actions": 15
+   "last_run_actions": 1
   },
   "smurf": {
    "energy": 0,
