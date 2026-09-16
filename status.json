@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:10:59.107861",
+ "generatedAt": "2026-09-16T08:13:01.873991",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "run_pvp_ranked",
-  "since": "08:10:54"
+  "mode": "sky_pillar",
+  "since": "08:12:13"
  },
  "grid": {
   "tasks": [
@@ -68,9 +68,9 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 10,
-  "todo": 182,
+  "done": 13,
+  "todo": 179,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 15
@@ -543,6 +543,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:13:01",
+   "script": "sky_pillar",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 46,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 146,
+    "stage": 6
+   },
+   "dir": "debug_runs/20260916_081214_sky_pillar_jeff"
+  },
+  {
+   "ts": "2026-09-16T08:12:13",
+   "script": "collect_hoopa_keys",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_081205_collect_hoopa_keys_jeff"
+  },
+  {
+   "ts": "2026-09-16T08:12:04",
+   "script": "run_pvp_ranked",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 69,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 2,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 141
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 93
+   },
+   "dir": "debug_runs/20260916_081054_run_pvp_ranked_jeff"
+  },
   {
    "ts": "2026-09-16T08:10:53",
    "script": "paradise",
@@ -6790,54 +6838,12 @@
     "fights_today": 0
    },
    "dir": "debug_runs/20260914_154521_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-14T15:24:07",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 109,
-   "stats": {
-    "near_miss_arena_screen": 12,
-    "near_miss_world_boss": 1,
-    "path_exhausted": 1,
-    "wins": 0
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_152218_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-14T15:08:17",
-   "script": "run_pvp_ranked",
-   "account": "dre",
-   "rc": 5,
-   "secs": 23,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_150754_run_pvp_ranked_dre"
-  },
-  {
-   "ts": "2026-09-14T15:07:15",
-   "script": "run_pvp_ranked",
-   "account": "deno",
-   "rc": 5,
-   "secs": 22,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_150652_run_pvp_ranked_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 29459,
+  "now": 29582,
   "segments": [
    {
     "b": 28844,
@@ -6964,8 +6970,41 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 29454,
+    "rc": 0,
+    "e": 29524,
+    "secs": 69,
+    "why": ""
+   },
+   {
+    "b": 29524,
+    "a": "jeff",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 29525,
+    "rc": 0,
+    "e": 29533,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 29533,
+    "a": "jeff",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 29534,
+    "rc": 0,
+    "e": 29581,
+    "secs": 46,
+    "why": ""
+   },
+   {
+    "b": 29581,
+    "a": "jeff",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": null,
     "rc": null,
-    "e": 29459
+    "e": 29582
    }
   ],
   "idle": []
@@ -7030,6 +7069,21 @@
    "paradise": {
     "runs": 1,
     "minutes": 3.6,
+    "failed": 0
+   },
+   "run_pvp_ranked": {
+    "runs": 1,
+    "minutes": 1.2,
+    "failed": 0
+   },
+   "collect_hoopa_keys": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   },
+   "sky_pillar": {
+    "runs": 1,
+    "minutes": 0.8,
     "failed": 0
    }
   }
