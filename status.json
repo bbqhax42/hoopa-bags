@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T10:44:50.984360",
+ "generatedAt": "2026-09-16T10:46:53.739503",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "dailyclaim",
-  "since": "10:44:32"
+  "mode": "mail",
+  "since": "10:46:52"
  },
  "grid": {
   "tasks": [
@@ -369,7 +369,7 @@
    {
     "account": "dre",
     "cells": [
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 162,
-  "todo": 19,
+  "done": 163,
+  "todo": 18,
   "gaveUp": 6,
   "unavailable": 5,
   "windowed": 15
@@ -517,11 +517,19 @@
    "staminaMax": 6,
    "staminaAt": "2026-09-16T09:04:14",
    "nextAt": "2026-09-16T12:28:19"
+  },
+  {
+   "account": "jeff",
+   "fights": 3,
+   "stamina": 1,
+   "staminaMax": 1,
+   "staminaAt": "2026-09-16T10:46:44",
+   "nextAt": "2026-09-16T14:40:52"
   }
  ],
  "snoozed": {
   "chris|island_challenge": "2026-09-16T12:28",
-  "jeff|island_challenge": "2026-09-16T10:45"
+  "jeff|island_challenge": "2026-09-16T14:40"
  },
  "ownerOnline": [],
  "keys": {
@@ -547,11 +555,44 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-16T10:31:34.411170",
+  "label": "jeff",
+  "at": "2026-09-16T10:46:00.858165",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T10:46:52",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 40,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 1,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260916_104612_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-16T10:45:38",
+   "script": "dailyclaim",
+   "account": "dre",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_104504_dailyclaim_dre"
+  },
   {
    "ts": "2026-09-16T10:44:31",
    "script": "weekend_bash",
@@ -7004,40 +7045,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_091225_pokemon_home_fake2"
-  },
-  {
-   "ts": "2026-09-15T09:12:23",
-   "script": "daily_dungeon",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "marginal_dungeon_list": 9,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_091149_daily_dungeon_fake2"
-  },
-  {
-   "ts": "2026-09-15T09:11:45",
-   "script": "joint_team_daily_quest",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "artifact_row_found_by_scrolling": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_091115_joint_team_daily_quest_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 38691,
+  "now": 38814,
   "segments": [
    {
     "b": 28844,
@@ -9270,11 +9283,39 @@
     "s": "dailyclaim",
     "login": [
      38672,
+     38692
+    ],
+    "handoff": 38704,
+    "rc": 0,
+    "e": 38738,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 38738,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     38738,
+     38760
+    ],
+    "handoff": 38771,
+    "rc": 5,
+    "e": 38812,
+    "secs": 40,
+    "why": ""
+   },
+   {
+    "b": 38812,
+    "a": "dre",
+    "s": "mail",
+    "login": [
+     38813,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 38691
+    "e": 38814
    }
   ],
   "idle": []
@@ -9508,13 +9549,13 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 15,
-  "relogMinutes": 7.3,
-  "retries": 27,
+  "switches": 17,
+  "relogMinutes": 8.4,
+  "retries": 28,
   "tasks": {
    "dailyclaim": {
-    "runs": 15,
-    "minutes": 9.3,
+    "runs": 16,
+    "minutes": 9.8,
     "failed": 2
    },
    "mail": {
@@ -9583,9 +9624,9 @@
     "failed": 4
    },
    "island_challenge": {
-    "runs": 2,
-    "minutes": 0.9,
-    "failed": 2
+    "runs": 3,
+    "minutes": 1.6,
+    "failed": 3
    },
    "misty_woods": {
     "runs": 1,
