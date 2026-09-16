@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T09:26:55.244382",
+ "generatedAt": "2026-09-16T09:28:58.224283",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake4",
-  "mode": "daily_dungeon",
-  "since": "09:26:48"
+  "mode": "combat_daily",
+  "since": "09:27:43"
  },
  "grid": {
   "tasks": [
@@ -205,8 +205,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 85,
-  "todo": 101,
+  "done": 87,
+  "todo": 99,
   "gaveUp": 4,
   "unavailable": 2,
   "windowed": 15
@@ -552,6 +552,33 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T09:27:43",
+   "script": "pokemon_home",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 47
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_092710_pokemon_home_fake4"
+  },
+  {
+   "ts": "2026-09-16T09:27:08",
+   "script": "daily_dungeon",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_092654_daily_dungeon_fake4"
+  },
   {
    "ts": "2026-09-16T09:26:11",
    "script": "joint_team_daily_quest",
@@ -6951,41 +6978,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_005432_story_deno"
-  },
-  {
-   "ts": "2026-09-15T00:54:31",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 99,
-   "stats": {
-    "skip_retry": 15,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_005251_story_deno"
-  },
-  {
-   "ts": "2026-09-15T00:52:50",
-   "script": "story",
-   "account": "deno",
-   "rc": 0,
-   "secs": 103,
-   "stats": {
-    "skip_retry": 21,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_005107_story_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 34015,
+  "now": 34138,
   "segments": [
    {
     "b": 28844,
@@ -8167,8 +8165,30 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 34013,
+    "rc": 0,
+    "e": 34029,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 34029,
+    "a": "fake4",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 34030,
+    "rc": 0,
+    "e": 34063,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 34063,
+    "a": "fake4",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34068,
     "rc": null,
-    "e": 34015
+    "e": 34138
    }
   ],
   "idle": []
@@ -8332,13 +8352,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 7,
-    "minutes": 3.2,
+    "runs": 8,
+    "minutes": 3.4,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 7,
-    "minutes": 8.5,
+    "runs": 8,
+    "minutes": 9.0,
     "failed": 0
    },
    "combat_daily": {
