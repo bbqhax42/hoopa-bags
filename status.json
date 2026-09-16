@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:52:02.778272",
+ "generatedAt": "2026-09-16T08:54:05.661021",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "run_pvp_ranked",
-  "since": "08:51:38"
+  "mode": "sky_pillar",
+  "since": "08:52:58"
  },
  "grid": {
   "tasks": [
@@ -116,8 +116,8 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "⏸",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 49,
-  "todo": 138,
+  "done": 51,
+  "todo": 136,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 15
@@ -552,6 +552,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:52:58",
+   "script": "collect_hoopa_keys",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_085250_collect_hoopa_keys_smurf"
+  },
+  {
+   "ts": "2026-09-16T08:52:49",
+   "script": "run_pvp_ranked",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 70,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 4,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 89
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 1
+   },
+   "dir": "debug_runs/20260916_085138_run_pvp_ranked_smurf"
+  },
   {
    "ts": "2026-09-16T08:51:37",
    "script": "paradise",
@@ -6895,38 +6926,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260914_202748_worldboss_deno"
-  },
-  {
-   "ts": "2026-09-14T20:27:48",
-   "script": "worldboss",
-   "account": "test1",
-   "rc": 2,
-   "secs": 63,
-   "stats": {
-    "wb_not_unlocked": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_202644_worldboss_test1"
-  },
-  {
-   "ts": "2026-09-14T20:26:43",
-   "script": "worldboss",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 64,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_202539_worldboss_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 31923,
+  "now": 32046,
   "segments": [
    {
     "b": 28844,
@@ -7637,8 +7642,30 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 31898,
+    "rc": 0,
+    "e": 31969,
+    "secs": 70,
+    "why": ""
+   },
+   {
+    "b": 31969,
+    "a": "smurf",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 31970,
+    "rc": 0,
+    "e": 31978,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 31978,
+    "a": "smurf",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 31979,
     "rc": null,
-    "e": 31923
+    "e": 32046
    }
   ],
   "idle": []
@@ -7805,13 +7832,13 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 3,
-    "minutes": 3.5,
+    "runs": 4,
+    "minutes": 4.7,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 3,
-    "minutes": 0.4,
+    "runs": 4,
+    "minutes": 0.5,
     "failed": 0
    },
    "sky_pillar": {
