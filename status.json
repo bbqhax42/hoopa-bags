@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T10:50:59.124525",
+ "generatedAt": "2026-09-16T10:53:02.092025",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "combat_daily",
-  "since": "10:49:46"
+  "mode": "paradise",
+  "since": "10:52:46"
  },
  "grid": {
   "tasks": [
@@ -375,9 +375,9 @@
      "✓",
      "✓",
      "⊘",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 167,
-  "todo": 13,
+  "done": 170,
+  "todo": 10,
   "gaveUp": 6,
   "unavailable": 6,
   "windowed": 15
@@ -560,6 +560,59 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T10:52:46",
+   "script": "rank_match",
+   "account": "dre",
+   "rc": 0,
+   "secs": 4,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "attempts_before": 0,
+    "matches": 0,
+    "gifts": 0,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260916_105241_rank_match_dre"
+  },
+  {
+   "ts": "2026-09-16T10:52:40",
+   "script": "victory_road",
+   "account": "dre",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_105232_victory_road_dre"
+  },
+  {
+   "ts": "2026-09-16T10:52:31",
+   "script": "combat_daily",
+   "account": "dre",
+   "rc": 1,
+   "secs": 164,
+   "stats": {
+    "near_miss_afk_rewards": 7,
+    "marginal_afk_rewards": 2,
+    "title_reread_named": 2,
+    "near_miss_vr_rank": 4,
+    "incomplete": 1,
+    "gacha_no_result": 1
+   },
+   "incomplete": [
+    "combat_daily: premium gacha free spin — no result"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 6/6 +) a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260916_104946_combat_daily_dre"
+  },
   {
    "ts": "2026-09-16T10:49:45",
    "script": "pokemon_home",
@@ -6980,58 +7033,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_092050_joint_team_daily_quest_fake3"
-  },
-  {
-   "ts": "2026-09-15T09:20:49",
-   "script": "dailyclaim",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_092015_dailyclaim_fake3"
-  },
-  {
-   "ts": "2026-09-15T09:19:42",
-   "script": "sky_pillar",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 41,
-   "stats": {
-    "stages_cleared": 2,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 1,
-    "stage": 9
-   },
-   "dir": "debug_runs/20260915_091900_sky_pillar_fake2"
-  },
-  {
-   "ts": "2026-09-15T09:18:59",
-   "script": "collect_hoopa_keys",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_091850_collect_hoopa_keys_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 39059,
+  "now": 39182,
   "segments": [
    {
     "b": 28844,
@@ -9359,13 +9366,55 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 38986,
+    "rc": 1,
+    "e": 39152,
+    "secs": 164,
+    "why": "combat_daily: premium gacha free spin — no result"
+   },
+   {
+    "b": 39152,
+    "a": "dre",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 39152,
+    "rc": 0,
+    "e": 39160,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 39160,
+    "a": "dre",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 39161,
+    "rc": 0,
+    "e": 39166,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 39166,
+    "a": "dre",
+    "s": "paradise",
+    "login": null,
+    "handoff": 39167,
     "rc": null,
-    "e": 39059
+    "e": 39182
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-16T10:52:31",
+   "account": "dre",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 164,
+   "why": "combat_daily: premium gacha free spin — no result",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_104946_combat_daily_dre__KEEP_0140_105140_gacha_no_result.png"
+  },
   {
    "ts": "2026-09-16T10:38:15",
    "account": "deno",
@@ -9596,7 +9645,7 @@
   "since": "2026-09-16T08:00",
   "switches": 17,
   "relogMinutes": 8.9,
-  "retries": 28,
+  "retries": 29,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9624,18 +9673,18 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 26,
-    "minutes": 28.5,
-    "failed": 13
+    "runs": 27,
+    "minutes": 31.3,
+    "failed": 14
    },
    "victory_road": {
-    "runs": 13,
-    "minutes": 1.7,
+    "runs": 14,
+    "minutes": 1.9,
     "failed": 0
    },
    "rank_match": {
-    "runs": 17,
-    "minutes": 1.5,
+    "runs": 18,
+    "minutes": 1.6,
     "failed": 0
    },
    "paradise": {
