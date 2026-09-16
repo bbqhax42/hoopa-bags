@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:41:47.473199",
+ "generatedAt": "2026-09-16T08:43:51.023057",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "joint_team_daily_quest",
-  "since": "08:41:22"
+  "mode": "pokemon_home",
+  "since": "08:42:51"
  },
  "grid": {
   "tasks": [
@@ -107,9 +107,9 @@
     "cells": [
      "✗2",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "⊘",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,10 +393,10 @@
   ]
  },
  "counts": {
-  "done": 42,
-  "todo": 146,
+  "done": 44,
+  "todo": 143,
   "gaveUp": 4,
-  "unavailable": 0,
+  "unavailable": 1,
   "windowed": 15
  },
  "disabled": [
@@ -552,6 +552,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:42:50",
+   "script": "daily_dungeon",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_084218_daily_dungeon_smurf"
+  },
+  {
+   "ts": "2026-09-16T08:41:55",
+   "script": "joint_team_daily_quest",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "panel_swipes": 3,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_084123_joint_team_daily_quest_smurf"
+  },
   {
    "ts": "2026-09-16T08:41:21",
    "script": "mail",
@@ -6858,36 +6888,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_201905_worldboss_fake2"
-  },
-  {
-   "ts": "2026-09-14T20:19:05",
-   "script": "worldboss",
-   "account": "fake1",
-   "rc": 1,
-   "secs": 78,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_201747_worldboss_fake1"
-  },
-  {
-   "ts": "2026-09-14T20:17:46",
-   "script": "worldboss",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 59,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_201647_worldboss_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 31307,
+  "now": 31431,
   "segments": [
    {
     "b": 28844,
@@ -7492,8 +7498,48 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 31282,
+    "rc": 0,
+    "e": 31316,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 31316,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 31318,
     "rc": null,
-    "e": 31307
+    "e": 31325
+   },
+   {
+    "b": 31325,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 31328,
+    "rc": null,
+    "e": 31335
+   },
+   {
+    "b": 31335,
+    "a": "smurf",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 31337,
+    "rc": 0,
+    "e": 31371,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 31371,
+    "a": "smurf",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 31372,
+    "rc": null,
+    "e": 31431
    }
   ],
   "idle": []
@@ -7616,13 +7662,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 3,
-    "minutes": 1.6,
+    "runs": 4,
+    "minutes": 2.1,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 3,
-    "minutes": 0.8,
+    "runs": 4,
+    "minutes": 1.3,
     "failed": 0
    },
    "pokemon_home": {
@@ -7682,7 +7728,14 @@
    }
   }
  },
- "unavailable": [],
+ "unavailable": [
+  {
+   "account": "smurf",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
+  }
+ ],
  "windows": {
   "dailyclaim": "06:00-19:00",
   "mail": null,
