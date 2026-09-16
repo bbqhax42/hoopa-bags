@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T09:02:18.083304",
+ "generatedAt": "2026-09-16T09:04:21.243276",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "combat_daily",
-  "since": "09:00:47"
+  "account": "fake2",
+  "mode": "dailyclaim",
+  "since": "09:04:20"
  },
  "grid": {
   "tasks": [
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "✗2",
-     "·"
+     "💤"
     ]
    },
    {
@@ -394,7 +394,7 @@
  },
  "counts": {
   "done": 58,
-  "todo": 130,
+  "todo": 129,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 15
@@ -512,14 +512,15 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 0,
-   "stamina": 39,
-   "staminaMax": 39,
-   "staminaAt": "2026-09-16T08:31:14",
-   "nextAt": "2026-09-16T08:46:19"
+   "fights": 3,
+   "stamina": 6,
+   "staminaMax": 6,
+   "staminaAt": "2026-09-16T09:04:14",
+   "nextAt": "2026-09-16T12:28:19"
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-16T12:28",
   "jeff|island_challenge": "2026-09-16T10:45"
  },
  "ownerOnline": [],
@@ -546,11 +547,51 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-16T08:58:58.856511",
+  "label": "chris",
+  "at": "2026-09-16T09:03:24.795824",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T09:04:19",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 40,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 6,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260916_090339_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-16T09:03:02",
+   "script": "combat_daily",
+   "account": "fake1",
+   "rc": 1,
+   "secs": 130,
+   "stats": {
+    "title_reread_named": 3,
+    "near_miss_afk_rewards": 1,
+    "marginal_afk_rewards": 3,
+    "near_miss_vr_rank": 4,
+    "adv_energy_spent": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 o ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260916_090052_combat_daily_fake1"
+  },
   {
    "ts": "2026-09-16T09:00:47",
    "script": "pokemon_home",
@@ -6897,51 +6938,12 @@
     "fights_today": 2
    },
    "dir": "debug_runs/20260914_232107_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-14T20:52:01",
-   "script": "run_pvp_ranked",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 87,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 2,
-    "free_attempts_spent": 1,
-    "rank_places_gained": -339,
-    "rank_went_backwards": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 340
-   },
-   "dir": "debug_runs/20260914_205034_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-09-14T20:47:04",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 1,
-   "secs": 21,
-   "stats": {
-    "ranked_fought": 1,
-    "picker_never_opened": 1,
-    "incomplete": 1,
-    "rank_places_gained": 11
-   },
-   "incomplete": [
-    "run_pvp_ranked: attempt 2 did not complete"
-   ],
-   "values": {
-    "rank": 476
-   },
-   "dir": "debug_runs/20260914_204642_run_pvp_ranked_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 32538,
+  "now": 32661,
   "segments": [
    {
     "b": 28844,
@@ -7754,13 +7756,50 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 32452,
+    "rc": 1,
+    "e": 32583,
+    "secs": 130,
+    "why": ""
+   },
+   {
+    "b": 32583,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     32583,
+     32604
+    ],
+    "handoff": 32619,
+    "rc": 5,
+    "e": 32660,
+    "secs": 40,
+    "why": ""
+   },
+   {
+    "b": 32660,
+    "a": "fake2",
+    "s": "dailyclaim",
+    "login": [
+     32660,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 32538
+    "e": 32661
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-16T09:03:02",
+   "account": "fake1",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 130,
+   "why": "title_reread_named, near_miss_afk_rewards, marginal_afk_rewards, near_miss_vr_rank, adv_energy_spent, upgrade_blocked_by_first_topup, pokemon_upgraded, left_out",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_090052_combat_daily_fake1__0180_090302_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-16T08:47:00",
    "account": "smurf",
@@ -7872,9 +7911,9 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 4,
-  "relogMinutes": 2.1,
-  "retries": 13,
+  "switches": 6,
+  "relogMinutes": 2.7,
+  "retries": 15,
   "tasks": {
    "dailyclaim": {
     "runs": 6,
@@ -7902,9 +7941,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 7,
-    "minutes": 7.2,
-    "failed": 3
+    "runs": 8,
+    "minutes": 9.3,
+    "failed": 4
    },
    "victory_road": {
     "runs": 4,
@@ -7947,9 +7986,9 @@
     "failed": 4
    },
    "island_challenge": {
-    "runs": 1,
-    "minutes": 0.2,
-    "failed": 1
+    "runs": 2,
+    "minutes": 0.9,
+    "failed": 2
    },
    "misty_woods": {
     "runs": 1,
