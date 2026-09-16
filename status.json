@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:15:04.760882",
+ "generatedAt": "2026-09-16T08:17:08.481974",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "joint_team_daily_quest",
-  "since": "08:14:27"
+  "mode": "combat_daily",
+  "since": "08:16:26"
  },
  "grid": {
   "tasks": [
@@ -35,10 +35,10 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 16,
-  "todo": 175,
+  "done": 20,
+  "todo": 171,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -543,6 +543,48 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:16:25",
+   "script": "pokemon_home",
+   "account": "nova",
+   "rc": 0,
+   "secs": 16,
+   "stats": {
+    "title_reread_named": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_081608_pokemon_home_nova"
+  },
+  {
+   "ts": "2026-09-16T08:16:07",
+   "script": "daily_dungeon",
+   "account": "nova",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_081552_daily_dungeon_nova"
+  },
+  {
+   "ts": "2026-09-16T08:15:06",
+   "script": "joint_team_daily_quest",
+   "account": "nova",
+   "rc": 0,
+   "secs": 38,
+   "stats": {
+    "panel_swipes": 2,
+    "artifact_row_found_by_scrolling": 1,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_081428_joint_team_daily_quest_nova"
+  },
   {
    "ts": "2026-09-16T08:14:26",
    "script": "mail",
@@ -6791,51 +6833,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_161617_run_pvp_ranked_deno"
-  },
-  {
-   "ts": "2026-09-14T16:15:38",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 5,
-   "secs": 22,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_161515_run_pvp_ranked_lucifer2"
-  },
-  {
-   "ts": "2026-09-14T16:14:35",
-   "script": "run_pvp_ranked",
-   "account": "lucifer1",
-   "rc": 5,
-   "secs": 22,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_161412_run_pvp_ranked_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T16:13:31",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 22,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_161308_run_pvp_ranked_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 29705,
+  "now": 29828,
   "segments": [
    {
     "b": 28844,
@@ -7053,8 +7056,50 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 29667,
+    "rc": 0,
+    "e": 29707,
+    "secs": 38,
+    "why": ""
+   },
+   {
+    "b": 29707,
+    "a": "nova",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 29709,
     "rc": null,
-    "e": 29705
+    "e": 29746
+   },
+   {
+    "b": 29746,
+    "a": "nova",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 29752,
+    "rc": 0,
+    "e": 29767,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 29767,
+    "a": "nova",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 29768,
+    "rc": 0,
+    "e": 29786,
+    "secs": 16,
+    "why": ""
+   },
+   {
+    "b": 29786,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29786,
+    "rc": null,
+    "e": 29828
    }
   ],
   "idle": []
@@ -7105,18 +7150,18 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 1,
-    "minutes": 0.4,
+    "runs": 2,
+    "minutes": 1.0,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 1,
-    "minutes": 0.2,
+    "runs": 2,
+    "minutes": 0.5,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 1,
-    "minutes": 2.2,
+    "runs": 2,
+    "minutes": 2.5,
     "failed": 0
    },
    "combat_daily": {
