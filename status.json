@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T09:51:32.011470",
+ "generatedAt": "2026-09-16T09:53:35.599607",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake6",
-  "mode": "collect_hoopa_keys",
-  "since": "09:51:30"
+  "account": "lucifer1",
+  "mode": "dailyclaim",
+  "since": "09:52:58"
  },
  "grid": {
   "tasks": [
@@ -261,8 +261,8 @@
      "✓",
      "⏰",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "-",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 111,
-  "todo": 73,
+  "done": 113,
+  "todo": 71,
   "gaveUp": 4,
   "unavailable": 4,
   "windowed": 15
@@ -547,11 +547,41 @@
   }
  },
  "session": {
-  "label": "fake6",
-  "at": "2026-09-16T09:44:45.708605",
+  "label": "lucifer1",
+  "at": "2026-09-16T09:53:23.370070",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T09:52:57",
+   "script": "sky_pillar",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 77,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 2,
+    "stage": 5
+   },
+   "dir": "debug_runs/20260916_095139_sky_pillar_fake6"
+  },
+  {
+   "ts": "2026-09-16T09:51:38",
+   "script": "collect_hoopa_keys",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_095130_collect_hoopa_keys_fake6"
+  },
   {
    "ts": "2026-09-16T09:51:29",
    "script": "paradise",
@@ -6993,52 +7023,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_081326_collect_hoopa_keys_jeff"
-  },
-  {
-   "ts": "2026-09-15T08:13:25",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 77,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 2,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 148
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 215
-   },
-   "dir": "debug_runs/20260915_081207_run_pvp_ranked_jeff"
-  },
-  {
-   "ts": "2026-09-15T08:12:06",
-   "script": "paradise",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 206,
-   "stats": {
-    "marginal_paradise_hub": 10,
-    "explore_clicks": 73,
-    "pass_claims": 8,
-    "upgraded_energy_drink": 4,
-    "upgraded_small_radar": 1,
-    "dex_milestones": 4,
-    "dex_activated": 12,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "0/10"
-   },
-   "dir": "debug_runs/20260915_080839_paradise_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 35492,
+  "now": 35615,
   "segments": [
    {
     "b": 28844,
@@ -8587,8 +8577,33 @@
     "s": "collect_hoopa_keys",
     "login": null,
     "handoff": 35490,
+    "rc": 0,
+    "e": 35499,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 35499,
+    "a": "fake6",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 35499,
+    "rc": 0,
+    "e": 35578,
+    "secs": 77,
+    "why": ""
+   },
+   {
+    "b": 35578,
+    "a": "lucifer1",
+    "s": "dailyclaim",
+    "login": [
+     35578,
+     35603
+    ],
+    "handoff": 35613,
     "rc": null,
-    "e": 35492
+    "e": 35615
    }
   ],
   "idle": []
@@ -8759,8 +8774,8 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 10,
-  "relogMinutes": 5.2,
+  "switches": 11,
+  "relogMinutes": 5.7,
   "retries": 20,
   "tasks": {
    "dailyclaim": {
@@ -8814,13 +8829,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 8,
-    "minutes": 1.1,
+    "runs": 9,
+    "minutes": 1.2,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 9,
-    "minutes": 8.0,
+    "runs": 10,
+    "minutes": 9.3,
     "failed": 1
    },
    "weekend_bash": {
