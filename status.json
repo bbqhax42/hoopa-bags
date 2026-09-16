@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:58:11.500348",
+ "generatedAt": "2026-09-16T09:00:14.992775",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "misty_woods",
-  "since": "08:54:24"
+  "account": "fake1",
+  "mode": "daily_dungeon",
+  "since": "08:59:42"
  },
  "grid": {
   "tasks": [
@@ -120,8 +120,8 @@
      "✓",
      "✓",
      "⏸",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-"
     ]
@@ -129,8 +129,8 @@
    {
     "account": "fake1",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 52,
-  "todo": 135,
+  "done": 56,
+  "todo": 131,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 15
@@ -547,11 +547,77 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-16T08:38:34.058259",
+  "label": "fake1",
+  "at": "2026-09-16T08:58:58.856511",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:59:41",
+   "script": "mail",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 4,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260916_085938_mail_fake1"
+  },
+  {
+   "ts": "2026-09-16T08:59:37",
+   "script": "dailyclaim",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_085907_dailyclaim_fake1"
+  },
+  {
+   "ts": "2026-09-16T08:58:37",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_085837_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-09-16T08:58:33",
+   "script": "misty_woods",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 246,
+   "stats": {
+    "runes_claimed": 20,
+    "battles_won": 20,
+    "fountain_taken": 7,
+    "portals": 3,
+    "near_miss_popup_close": 1,
+    "infernal_confirmed": 1,
+    "path_exhausted": 1,
+    "wins": 20
+   },
+   "incomplete": [],
+   "values": {
+    "stage": 1
+   },
+   "dir": "debug_runs/20260916_085427_misty_woods_smurf"
+  },
   {
    "ts": "2026-09-16T08:54:23",
    "script": "sky_pillar",
@@ -6868,72 +6934,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260914_204415_worldboss_fake4"
-  },
-  {
-   "ts": "2026-09-14T20:44:14",
-   "script": "worldboss",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 59,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_204315_worldboss_fake2"
-  },
-  {
-   "ts": "2026-09-14T20:43:14",
-   "script": "worldboss",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 56,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_204218_worldboss_fake1"
-  },
-  {
-   "ts": "2026-09-14T20:30:53",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 1,
-   "secs": 22,
-   "stats": {
-    "ranked_fought": 1,
-    "picker_never_opened": 1,
-    "incomplete": 1,
-    "rank_places_gained": -484,
-    "rank_went_backwards": 1
-   },
-   "incomplete": [
-    "run_pvp_ranked: attempt 2 did not complete"
-   ],
-   "values": {
-    "rank": 487
-   },
-   "dir": "debug_runs/20260914_203031_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-09-14T20:29:54",
-   "script": "worldboss",
-   "account": "dre",
-   "rc": 0,
-   "secs": 62,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260914_202851_worldboss_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 32291,
+  "now": 32415,
   "segments": [
    {
     "b": 28844,
@@ -7677,8 +7683,55 @@
     "s": "misty_woods",
     "login": null,
     "handoff": 32067,
+    "rc": 0,
+    "e": 32314,
+    "secs": 246,
+    "why": ""
+   },
+   {
+    "b": 32314,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 32317,
+    "rc": 0,
+    "e": 32318,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 32318,
+    "a": "fake1",
+    "s": "dailyclaim",
+    "login": [
+     32318,
+     32338
+    ],
+    "handoff": 32346,
+    "rc": 0,
+    "e": 32378,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 32378,
+    "a": "fake1",
+    "s": "mail",
+    "login": null,
+    "handoff": 32378,
+    "rc": 0,
+    "e": 32382,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 32382,
+    "a": "fake1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 32386,
     "rc": null,
-    "e": 32291
+    "e": 32415
    }
   ],
   "idle": []
@@ -7795,17 +7848,17 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 3,
-  "relogMinutes": 1.6,
+  "switches": 4,
+  "relogMinutes": 2.1,
   "retries": 13,
   "tasks": {
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 4.2,
+    "runs": 6,
+    "minutes": 4.7,
     "failed": 2
    },
    "mail": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 0.2,
     "failed": 0
    },
@@ -7860,7 +7913,7 @@
     "failed": 1
    },
    "weekend_bash": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 0.0,
     "failed": 2
    },
@@ -7873,6 +7926,11 @@
     "runs": 1,
     "minutes": 0.2,
     "failed": 1
+   },
+   "misty_woods": {
+    "runs": 1,
+    "minutes": 4.1,
+    "failed": 0
    }
   }
  },
