@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:29:27.739576",
+ "generatedAt": "2026-09-16T08:31:30.554218",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
   "mode": "combat_daily",
-  "since": "08:29:12"
+  "since": "08:31:19"
  },
  "grid": {
   "tasks": [
@@ -87,7 +87,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 33,
-  "todo": 157,
-  "gaveUp": 2,
+  "todo": 156,
+  "gaveUp": 3,
   "unavailable": 0,
   "windowed": 15
  },
@@ -509,9 +509,18 @@
    "why": "nothing opened at stage 1 — the story is complete here, or its entry has moved"
   }
  ],
- "islandChallenge": [],
+ "islandChallenge": [
+  {
+   "account": "chris",
+   "fights": 0,
+   "stamina": 39,
+   "staminaMax": 39,
+   "staminaAt": "2026-09-16T08:31:14",
+   "nextAt": "2026-09-16T08:46:19"
+  }
+ ],
  "snoozed": {
-  "chris|island_challenge": "2026-09-16T08:30",
+  "chris|island_challenge": "2026-09-16T09:01",
   "jeff|island_challenge": "2026-09-16T10:45"
  },
  "ownerOnline": [],
@@ -543,6 +552,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:31:19",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 12,
+   "stats": {
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 39,
+    "fights_today": 0
+   },
+   "dir": "debug_runs/20260916_083106_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-16T08:31:05",
+   "script": "combat_daily",
+   "account": "chris",
+   "rc": 1,
+   "secs": 108,
+   "stats": {
+    "title_reread_named": 7,
+    "near_miss_rift_exit_guardian": 3,
+    "near_miss_vr_rank": 5,
+    "near_miss_adventure_event": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 +) a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260916_082917_combat_daily_chris"
+  },
   {
    "ts": "2026-09-16T08:29:11",
    "script": "pokemon_home",
@@ -6813,38 +6858,12 @@
     "tickets": 0
    },
    "dir": "debug_runs/20260914_174148_weekend_bash_jeff"
-  },
-  {
-   "ts": "2026-09-14T17:41:08",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 0,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_174108_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-14T17:41:05",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 7,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_174058_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 30568,
+  "now": 30690,
   "segments": [
    {
     "b": 28844,
@@ -7281,13 +7300,44 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 30556,
+    "rc": 1,
+    "e": 30665,
+    "secs": 108,
+    "why": ""
+   },
+   {
+    "b": 30665,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": null,
+    "handoff": 30666,
+    "rc": 5,
+    "e": 30679,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 30679,
+    "a": "chris",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30685,
     "rc": null,
-    "e": 30568
+    "e": 30690
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-16T08:31:05",
+   "account": "chris",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 108,
+   "why": "title_reread_named, near_miss_rift_exit_guardian, near_miss_vr_rank, near_miss_adventure_event, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_082917_combat_daily_chris__0156_083105_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-16T08:24:16",
    "account": "nova",
@@ -7347,7 +7397,7 @@
   "since": "2026-09-16T08:00",
   "switches": 2,
   "relogMinutes": 1.1,
-  "retries": 6,
+  "retries": 8,
   "tasks": {
    "dailyclaim": {
     "runs": 3,
@@ -7375,9 +7425,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 3,
-    "minutes": 3.9,
-    "failed": 1
+    "runs": 4,
+    "minutes": 5.7,
+    "failed": 2
    },
    "victory_road": {
     "runs": 2,
@@ -7418,6 +7468,11 @@
     "runs": 2,
     "minutes": 0.1,
     "failed": 2
+   },
+   "island_challenge": {
+    "runs": 1,
+    "minutes": 0.2,
+    "failed": 1
    }
   }
  },
