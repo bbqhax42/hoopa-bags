@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T10:30:28.963851",
+ "generatedAt": "2026-09-16T10:32:31.965610",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
-  "mode": "sky_pillar",
-  "since": "10:29:52"
+  "account": "deno",
+  "mode": "joint_team_daily_quest",
+  "since": "10:32:24"
  },
  "grid": {
   "tasks": [
@@ -334,7 +334,7 @@
      "⏰",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -345,8 +345,8 @@
    {
     "account": "deno",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 147,
-  "todo": 34,
+  "done": 150,
+  "todo": 31,
   "gaveUp": 6,
   "unavailable": 5,
   "windowed": 15
@@ -547,11 +547,61 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-16T10:18:09.417762",
+  "label": "deno",
+  "at": "2026-09-16T10:31:34.411170",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T10:32:23",
+   "script": "mail",
+   "account": "deno",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260916_103220_mail_deno"
+  },
+  {
+   "ts": "2026-09-16T10:32:19",
+   "script": "dailyclaim",
+   "account": "deno",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_103146_dailyclaim_deno"
+  },
+  {
+   "ts": "2026-09-16T10:31:12",
+   "script": "sky_pillar",
+   "account": "test1",
+   "rc": 0,
+   "secs": 79,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 2,
+    "stage": 5
+   },
+   "dir": "debug_runs/20260916_102952_sky_pillar_test1"
+  },
   {
    "ts": "2026-09-16T10:29:51",
    "script": "collect_hoopa_keys",
@@ -6986,68 +7036,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260915_090037_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-15T09:00:32",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 23,
-   "stats": {
-    "runes_claimed": 2,
-    "battles_won": 2,
-    "no_allowed_tile": 1,
-    "incomplete": 1,
-    "wins": 2
-   },
-   "incomplete": [
-    "misty_woods: step 3 did not complete"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_090008_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-15T08:59:06",
-   "script": "faction",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 124,
-   "stats": {
-    "auto_formation": 17,
-    "incomplete": 1,
-    "lost_fire": 1,
-    "faction_disabled": 1,
-    "floors_fire": 16,
-    "sweeps_used": 2
-   },
-   "incomplete": [
-    "faction: fire tower: lost the battle after 16 win(s) — the team needs adjusting"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_085702_faction_smurf"
-  },
-  {
-   "ts": "2026-09-15T08:56:58",
-   "script": "sky_pillar",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 123,
-   "stats": {
-    "stages_cleared": 5,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 15,
-    "stage": 5
-   },
-   "dir": "debug_runs/20260915_085454_sky_pillar_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 37829,
+  "now": 37952,
   "segments": [
    {
     "b": 28844,
@@ -9103,8 +9097,44 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 37792,
+    "rc": 0,
+    "e": 37872,
+    "secs": 79,
+    "why": ""
+   },
+   {
+    "b": 37872,
+    "a": "deno",
+    "s": "dailyclaim",
+    "login": [
+     37872,
+     37894
+    ],
+    "handoff": 37905,
+    "rc": 0,
+    "e": 37939,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 37939,
+    "a": "deno",
+    "s": "mail",
+    "login": null,
+    "handoff": 37940,
+    "rc": 0,
+    "e": 37944,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 37944,
+    "a": "deno",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 37944,
     "rc": null,
-    "e": 37829
+    "e": 37952
    }
   ],
   "idle": []
@@ -9329,17 +9359,17 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 13,
-  "relogMinutes": 6.7,
+  "switches": 14,
+  "relogMinutes": 7.3,
   "retries": 26,
   "tasks": {
    "dailyclaim": {
-    "runs": 14,
-    "minutes": 8.8,
+    "runs": 15,
+    "minutes": 9.3,
     "failed": 2
    },
    "mail": {
-    "runs": 13,
+    "runs": 14,
     "minutes": 0.7,
     "failed": 0
    },
@@ -9389,8 +9419,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 13,
-    "minutes": 10.6,
+    "runs": 14,
+    "minutes": 11.9,
     "failed": 2
    },
    "weekend_bash": {
