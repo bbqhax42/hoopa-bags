@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T12:00:40.519799",
+ "generatedAt": "2026-09-16T12:02:43.478614",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "hoopa",
-  "since": "11:57:27"
+  "account": "nova",
+  "mode": "guild_war",
+  "since": "12:01:32"
  },
  "grid": {
   "tasks": [
@@ -67,7 +67,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "✓",
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 180,
-  "todo": 15,
-  "gaveUp": 6,
+  "todo": 14,
+  "gaveUp": 7,
   "unavailable": 6,
   "windowed": 0
  },
@@ -555,11 +555,42 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-16T11:57:48.462369",
+  "label": "nova",
+  "at": "2026-09-16T12:01:55.177415",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T12:01:32",
+   "script": "guild_war",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "refused_auto_formation": 1,
+    "refused_setform_confirm": 1,
+    "gw_never_entered": 1,
+    "assist_already_set": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_120127_guild_war_jeff"
+  },
+  {
+   "ts": "2026-09-16T12:01:23",
+   "script": "guild_war",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "refused_auto_formation": 1,
+    "refused_setform_confirm": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_120110_guild_war_jeff"
+  },
   {
    "ts": "2026-09-16T11:57:23",
    "script": "hoopa",
@@ -7014,39 +7045,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260915_093222_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-15T09:32:16",
-   "script": "pokemon_home",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_093154_pokemon_home_fake4"
-  },
-  {
-   "ts": "2026-09-15T09:31:51",
-   "script": "daily_dungeon",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 15,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_093135_daily_dungeon_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 43240,
+  "now": 43363,
   "segments": [
    {
     "b": 28844,
@@ -9772,7 +9776,41 @@
     ],
     "handoff": 43082,
     "rc": null,
-    "e": 43240
+    "e": 43267
+   },
+   {
+    "b": 43267,
+    "a": "jeff",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 43269,
+    "rc": 0,
+    "e": 43283,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 43283,
+    "a": "jeff",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 43287,
+    "rc": 0,
+    "e": 43292,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 43292,
+    "a": "nova",
+    "s": "guild_war",
+    "login": [
+     43293,
+     43315
+    ],
+    "handoff": 43325,
+    "rc": null,
+    "e": 43363
    }
   ],
   "idle": []
@@ -10015,8 +10053,8 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 20,
-  "relogMinutes": 10.6,
+  "switches": 21,
+  "relogMinutes": 11.1,
   "retries": 29,
   "tasks": {
    "dailyclaim": {
@@ -10097,6 +10135,11 @@
    "misty_woods": {
     "runs": 1,
     "minutes": 4.1,
+    "failed": 0
+   },
+   "guild_war": {
+    "runs": 2,
+    "minutes": 0.3,
     "failed": 0
    }
   }
