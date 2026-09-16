@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:23:17.539177",
+ "generatedAt": "2026-09-16T08:25:20.346018",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "sky_pillar",
-  "since": "08:22:38"
+  "account": "chris",
+  "mode": "dailyclaim",
+  "since": "08:24:17"
  },
  "grid": {
   "tasks": [
@@ -46,10 +46,10 @@
      "⏰",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✗2",
      "-",
      "-"
     ]
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 26,
-  "todo": 165,
-  "gaveUp": 1,
+  "done": 27,
+  "todo": 163,
+  "gaveUp": 2,
   "unavailable": 0,
   "windowed": 15
  },
@@ -538,11 +538,74 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-16T08:13:40.390548",
+  "label": "chris",
+  "at": "2026-09-16T08:24:38.656348",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:24:16",
+   "script": "weekend_bash",
+   "account": "nova",
+   "rc": 1,
+   "secs": 0,
+   "stats": {
+    "no_weekend_bash": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_082416_weekend_bash_nova"
+  },
+  {
+   "ts": "2026-09-16T08:24:15",
+   "script": "weekend_bash",
+   "account": "nova",
+   "rc": 1,
+   "secs": 0,
+   "stats": {
+    "no_weekend_bash": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_082414_weekend_bash_nova"
+  },
+  {
+   "ts": "2026-09-16T08:24:10",
+   "script": "sky_pillar",
+   "account": "nova",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "stages_cleared": 2,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 97,
+    "stage": 3
+   },
+   "dir": "debug_runs/20260916_082338_sky_pillar_nova"
+  },
+  {
+   "ts": "2026-09-16T08:23:34",
+   "script": "sky_pillar",
+   "account": "nova",
+   "rc": 1,
+   "secs": 55,
+   "stats": {
+    "stages_cleared": 4,
+    "no_setform": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "sky_pillar: stage 5 did not complete"
+   ],
+   "values": {
+    "floor": 97,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260916_082239_sky_pillar_nova"
+  },
   {
    "ts": "2026-09-16T08:22:37",
    "script": "collect_hoopa_keys",
@@ -6789,79 +6852,12 @@
     "rank": 354
    },
    "dir": "debug_runs/20260914_172315_run_pvp_ranked_deno"
-  },
-  {
-   "ts": "2026-09-14T17:22:36",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 88,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 136
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 366
-   },
-   "dir": "debug_runs/20260914_172108_run_pvp_ranked_lucifer2"
-  },
-  {
-   "ts": "2026-09-14T17:20:29",
-   "script": "run_pvp_ranked",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 87,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 152
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 349
-   },
-   "dir": "debug_runs/20260914_171902_run_pvp_ranked_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T17:18:20",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 138
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 363
-   },
-   "dir": "debug_runs/20260914_171710_run_pvp_ranked_jeff"
-  },
-  {
-   "ts": "2026-09-14T16:50:19",
-   "script": "run_pvp_ranked",
-   "account": "dre",
-   "rc": 5,
-   "secs": 22,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_164956_run_pvp_ranked_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 30197,
+  "now": 30320,
   "segments": [
    {
     "b": 28844,
@@ -7187,13 +7183,87 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 30158,
+    "rc": 1,
+    "e": 30215,
+    "secs": 55,
+    "why": "sky_pillar: stage 5 did not complete"
+   },
+   {
+    "b": 30215,
+    "a": "nova",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 30218,
+    "rc": 1,
+    "e": 30251,
+    "secs": 55,
+    "why": "sky_pillar: stage 5 did not complete"
+   },
+   {
+    "b": 30251,
+    "a": "nova",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 30254,
+    "rc": 1,
+    "e": 30256,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 30256,
+    "a": "nova",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 30256,
+    "rc": 1,
+    "e": 30257,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 30257,
+    "a": "chris",
+    "s": "dailyclaim",
+    "login": [
+     30258,
+     30278
+    ],
+    "handoff": 30290,
     "rc": null,
-    "e": 30197
+    "e": 30320
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-16T08:24:16",
+   "account": "nova",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 0,
+   "why": "no_weekend_bash",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_082416_weekend_bash_nova__KEEP_0000_082416_no_weekend_bash.png"
+  },
+  {
+   "ts": "2026-09-16T08:24:15",
+   "account": "nova",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 0,
+   "why": "no_weekend_bash",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_082414_weekend_bash_nova__KEEP_0002_082415_no_weekend_bash.png"
+  },
+  {
+   "ts": "2026-09-16T08:23:34",
+   "account": "nova",
+   "task": "sky_pillar",
+   "rc": 1,
+   "secs": 55,
+   "why": "sky_pillar: stage 5 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_082239_sky_pillar_nova__KEEP_0006_082334_no_setform_5.png"
+  },
   {
    "ts": "2026-09-16T08:13:16",
    "account": "jeff",
@@ -7224,9 +7294,9 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 1,
-  "relogMinutes": 0.6,
-  "retries": 3,
+  "switches": 2,
+  "relogMinutes": 1.1,
+  "retries": 6,
   "tasks": {
    "dailyclaim": {
     "runs": 2,
@@ -7284,14 +7354,14 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 1,
-    "minutes": 0.8,
-    "failed": 0
+    "runs": 3,
+    "minutes": 2.2,
+    "failed": 1
    },
    "weekend_bash": {
-    "runs": 1,
+    "runs": 3,
     "minutes": 0.0,
-    "failed": 0
+    "failed": 2
    },
    "championship": {
     "runs": 2,
