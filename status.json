@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T10:48:56.419477",
+ "generatedAt": "2026-09-16T10:50:59.124525",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "daily_dungeon",
-  "since": "10:48:36"
+  "mode": "combat_daily",
+  "since": "10:49:46"
  },
  "grid": {
   "tasks": [
@@ -373,8 +373,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "·",
      "·",
      "·",
@@ -393,10 +393,10 @@
   ]
  },
  "counts": {
-  "done": 166,
-  "todo": 15,
+  "done": 167,
+  "todo": 13,
   "gaveUp": 6,
-  "unavailable": 5,
+  "unavailable": 6,
   "windowed": 15
  },
  "disabled": [
@@ -560,6 +560,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T10:49:45",
+   "script": "pokemon_home",
+   "account": "dre",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_104945_pokemon_home_dre"
+  },
+  {
+   "ts": "2026-09-16T10:49:40",
+   "script": "pokemon_home",
+   "account": "dre",
+   "rc": 2,
+   "secs": 42,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_refused": 3,
+    "merge_no_progress": 2,
+    "board_stuck": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_104858_pokemon_home_dre"
+  },
+  {
+   "ts": "2026-09-16T10:48:56",
+   "script": "daily_dungeon",
+   "account": "dre",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_104842_daily_dungeon_dre"
+  },
   {
    "ts": "2026-09-16T10:47:51",
    "script": "joint_team_daily_quest",
@@ -6986,60 +7026,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_091850_collect_hoopa_keys_fake2"
-  },
-  {
-   "ts": "2026-09-15T09:18:49",
-   "script": "paradise",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 207,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 74,
-    "pass_claims": 13,
-    "upgraded_energy_drink": 4,
-    "upgraded_small_radar": 1,
-    "dex_milestones": 4,
-    "dex_activated": 10,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "0/10"
-   },
-   "dir": "debug_runs/20260915_091522_paradise_fake2"
-  },
-  {
-   "ts": "2026-09-15T09:15:20",
-   "script": "victory_road",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 9,
-   "stats": {
-    "near_miss_go_button": 8,
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_091511_victory_road_fake2"
-  },
-  {
-   "ts": "2026-09-15T09:15:09",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 9,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_091500_combat_daily_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 38936,
+  "now": 39059,
   "segments": [
    {
     "b": 28844,
@@ -9334,8 +9326,41 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 38921,
+    "rc": 0,
+    "e": 38937,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 38937,
+    "a": "dre",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38938,
+    "rc": 2,
+    "e": 38981,
+    "secs": 42,
+    "why": ""
+   },
+   {
+    "b": 38981,
+    "a": "dre",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38985,
+    "rc": 2,
+    "e": 38986,
+    "secs": 42,
+    "why": ""
+   },
+   {
+    "b": 38986,
+    "a": "dre",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 38986,
     "rc": null,
-    "e": 38936
+    "e": 39059
    }
   ],
   "idle": []
@@ -9589,13 +9614,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 13,
-    "minutes": 5.0,
+    "runs": 14,
+    "minutes": 5.2,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 14,
-    "minutes": 19.6,
+    "runs": 16,
+    "minutes": 20.2,
     "failed": 0
    },
    "combat_daily": {
@@ -9656,6 +9681,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "dre",
+   "task": "pokemon_home",
+   "why": "reached_via_trial, merge_refused, merge_no_progress, board_stuck",
+   "at": "2026-09-16T10:49:40"
+  },
   {
    "account": "fake3",
    "task": "rank_match",
