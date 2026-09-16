@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T10:18:10.482020",
+ "generatedAt": "2026-09-16T10:20:14.406524",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "dailyclaim",
-  "since": "10:17:48"
+  "mode": "pokemon_home",
+  "since": "10:19:28"
  },
  "grid": {
   "tasks": [
@@ -321,11 +321,11 @@
    {
     "account": "test1",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 139,
-  "todo": 43,
+  "done": 142,
+  "todo": 40,
   "gaveUp": 6,
   "unavailable": 4,
   "windowed": 15
@@ -552,6 +552,55 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T10:19:28",
+   "script": "daily_dungeon",
+   "account": "test1",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_101856_daily_dungeon_test1"
+  },
+  {
+   "ts": "2026-09-16T10:18:51",
+   "script": "mail",
+   "account": "test1",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260916_101848_mail_test1"
+  },
+  {
+   "ts": "2026-09-16T10:18:47",
+   "script": "dailyclaim",
+   "account": "test1",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_101817_dailyclaim_test1"
+  },
   {
    "ts": "2026-09-16T10:17:48",
    "script": "weekend_bash",
@@ -6984,69 +7033,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_084704_joint_team_daily_quest_smurf"
-  },
-  {
-   "ts": "2026-09-15T08:47:03",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 80,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_paid_only": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 0
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_084542_dailyclaim_smurf"
-  },
-  {
-   "ts": "2026-09-15T08:45:41",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 80,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_paid_only": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 0
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_084420_dailyclaim_smurf"
-  },
-  {
-   "ts": "2026-09-15T08:43:20",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 44,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 2,
-    "fights_today": 3
-   },
-   "dir": "debug_runs/20260915_084236_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 37090,
+  "now": 37214,
   "segments": [
    {
     "b": 28844,
@@ -8980,9 +8972,42 @@
      37069,
      37089
     ],
-    "handoff": null,
+    "handoff": 37096,
+    "rc": 0,
+    "e": 37127,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 37127,
+    "a": "test1",
+    "s": "mail",
+    "login": null,
+    "handoff": 37128,
+    "rc": 0,
+    "e": 37132,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 37132,
+    "a": "test1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 37136,
+    "rc": 0,
+    "e": 37168,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 37168,
+    "a": "test1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 37169,
     "rc": null,
-    "e": 37090
+    "e": 37214
    }
   ],
   "idle": []
@@ -9199,17 +9224,17 @@
  "day": {
   "since": "2026-09-16T08:00",
   "switches": 13,
-  "relogMinutes": 6.3,
+  "relogMinutes": 6.7,
   "retries": 25,
   "tasks": {
    "dailyclaim": {
-    "runs": 13,
-    "minutes": 8.2,
+    "runs": 14,
+    "minutes": 8.8,
     "failed": 2
    },
    "mail": {
-    "runs": 12,
-    "minutes": 0.6,
+    "runs": 13,
+    "minutes": 0.7,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -9218,8 +9243,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 11,
-    "minutes": 4.2,
+    "runs": 12,
+    "minutes": 4.7,
     "failed": 0
    },
    "pokemon_home": {
