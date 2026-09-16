@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T06:00:00.883399",
+ "generatedAt": "2026-09-17T06:02:04.452572",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "chris",
+  "mode": "faction",
+  "since": "06:01:14"
  },
  "grid": {
   "tasks": [
@@ -95,7 +95,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "-",
      "✓",
      "✗2",
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 186,
-  "todo": 2,
-  "gaveUp": 16,
+  "todo": 1,
+  "gaveUp": 17,
   "unavailable": 6,
   "windowed": 0
  },
@@ -542,11 +542,29 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-17T05:59:35.303951",
+  "label": "chris",
+  "at": "2026-09-17T06:00:44.648316",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T06:01:14",
+   "script": "faction",
+   "account": "chris",
+   "rc": 1,
+   "secs": 16,
+   "stats": {
+    "popup_never_opened": 1,
+    "incomplete": 1,
+    "floors_water": 0,
+    "sweeps_used": 0
+   },
+   "incomplete": [
+    "faction: water tower: Start opened nothing"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_060057_faction_chris"
+  },
   {
    "ts": "2026-09-17T02:55:14",
    "script": "island_challenge",
@@ -6941,23 +6959,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_104759_victory_road_deno"
-  },
-  {
-   "ts": "2026-09-15T10:47:58",
-   "script": "combat_daily",
-   "account": "deno",
-   "rc": 0,
-   "secs": 9,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_104748_combat_daily_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 108001,
+  "now": 108124,
   "segments": [
    {
     "b": 28844,
@@ -11223,7 +11230,32 @@
     ],
     "handoff": 60828,
     "rc": null,
-    "e": 108001
+    "e": 108024
+   },
+   {
+    "b": 108024,
+    "a": "chris",
+    "s": "faction",
+    "login": [
+     108024,
+     108044
+    ],
+    "handoff": 108057,
+    "rc": 1,
+    "e": 108074,
+    "secs": 16,
+    "why": "faction: water tower: Start opened nothing"
+   },
+   {
+    "b": 108074,
+    "a": "chris",
+    "s": "faction",
+    "login": null,
+    "handoff": 108109,
+    "rc": 1,
+    "e": 108124,
+    "secs": 16,
+    "why": "faction: water tower: Start opened nothing"
    }
   ],
   "idle": [
@@ -11486,9 +11518,9 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 180,
-  "relogMinutes": 79.8,
-  "retries": 40,
+  "switches": 181,
+  "relogMinutes": 80.3,
+  "retries": 41,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -11579,6 +11611,11 @@
     "runs": 30,
     "minutes": 30.9,
     "failed": 0
+   },
+   "faction": {
+    "runs": 1,
+    "minutes": 0.3,
+    "failed": 1
    }
   }
  },
@@ -11650,44 +11687,44 @@
  "maxHandouts": 2,
  "energy": {
   "jeff": {
-   "energy": 0,
+   "energy": null,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-17T05:56:02.242440",
+   "observed_at": null,
    "runs": 404,
    "cooldown_until": null,
    "kicks": 0,
    "last_run_actions": 1
   },
   "chris": {
-   "energy": 1,
+   "energy": null,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-17T05:53:42.477285",
+   "observed_at": null,
    "runs": 364,
    "cooldown_until": "2026-09-17T02:49:00.639163",
    "kicks": 1,
    "last_run_actions": 6
   },
   "smurf": {
-   "energy": 33,
+   "energy": null,
    "needs": 45,
    "cost": 2,
-   "observed_at": "2026-09-17T05:57:40.251479",
+   "observed_at": null,
    "runs": 236,
    "cooldown_until": null,
    "kicks": 0,
    "last_run_actions": 0
   },
   "nova": {
-   "energy": 5,
+   "energy": null,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-17T05:59:52.826171",
-   "runs": 406,
+   "observed_at": null,
+   "runs": 407,
    "cooldown_until": "2026-09-17T03:21:56.107756",
    "kicks": 1,
-   "last_run_actions": 5
+   "last_run_actions": 1
   }
  },
  "worldBoss": {
@@ -11760,5 +11797,9 @@
    "dre"
   ]
  },
- "phase": null
+ "phase": {
+  "kind": "day",
+  "since": "06:00:24",
+  "until": "18:00"
+ }
 }
