@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:04:49.732234",
+ "generatedAt": "2026-09-16T08:06:52.858967",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "pokemon_home",
-  "since": "08:02:46"
+  "mode": "combat_daily",
+  "since": "08:06:51"
  },
  "grid": {
   "tasks": [
@@ -62,8 +62,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "·",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 5,
-  "todo": 187,
-  "gaveUp": 0,
+  "done": 6,
+  "todo": 185,
+  "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
  },
@@ -543,6 +543,51 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:06:51",
+   "script": "combat_daily",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 107,
+   "stats": {
+    "title_reread_named": 5,
+    "marginal_afk_rewards": 3,
+    "refused_afk_rewards_confirm": 1,
+    "near_miss_afk_rewards": 3,
+    "near_miss_rift_exit_guardian": 3,
+    "marginal_battle_victory_confirm": 1,
+    "refused_quick_bar": 1,
+    "near_miss_vr_rank": 6,
+    "adv_energy_spent": 1,
+    "near_miss_premium_gacha": 2,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 o ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260916_080503_combat_daily_jeff"
+  },
+  {
+   "ts": "2026-09-16T08:04:58",
+   "script": "pokemon_home",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 130,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_refit": 1,
+    "merge_moved_instead": 5,
+    "counter_misread": 2,
+    "balls_unsettled_opened": 2,
+    "pair_went_stale": 3,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_080247_pokemon_home_jeff"
+  },
   {
    "ts": "2026-09-16T08:02:45",
    "script": "daily_dungeon",
@@ -6778,40 +6823,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_150219_run_pvp_ranked_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T15:02:16",
-   "script": "guild_war",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_150216_guild_war_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T15:01:39",
-   "script": "sky_pillar",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 93,
-   "stats": {
-    "stages_cleared": 5,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 80,
-    "stage": 10
-   },
-   "dir": "debug_runs/20260914_150005_sky_pillar_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 29090,
+  "now": 29213,
   "segments": [
    {
     "b": 28844,
@@ -6872,18 +6889,52 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 28967,
-    "rc": null,
-    "e": 29090
+    "rc": 0,
+    "e": 29098,
+    "secs": 130,
+    "why": ""
+   },
+   {
+    "b": 29098,
+    "a": "jeff",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29103,
+    "rc": 1,
+    "e": 29211,
+    "secs": 107,
+    "why": ""
+   },
+   {
+    "b": 29211,
+    "a": "jeff",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29212,
+    "rc": 1,
+    "e": 29213,
+    "secs": 107,
+    "why": ""
    }
   ],
   "idle": []
  },
- "failures": [],
+ "failures": [
+  {
+   "ts": "2026-09-16T08:06:51",
+   "account": "jeff",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 107,
+   "why": "title_reread_named, marginal_afk_rewards, refused_afk_rewards_confirm, near_miss_afk_rewards, near_miss_rift_exit_guardian, marginal_battle_victory_confirm, ref",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260916_080503_combat_daily_jeff__0154_080651_panel_back__AFTER__town.png"
+  }
+ ],
  "day": {
   "since": "2026-09-16T08:00",
   "switches": 0,
   "relogMinutes": 0.0,
-  "retries": 0,
+  "retries": 1,
   "tasks": {
    "dailyclaim": {
     "runs": 1,
@@ -6904,6 +6955,16 @@
     "runs": 1,
     "minutes": 0.2,
     "failed": 0
+   },
+   "pokemon_home": {
+    "runs": 1,
+    "minutes": 2.2,
+    "failed": 0
+   },
+   "combat_daily": {
+    "runs": 1,
+    "minutes": 1.8,
+    "failed": 1
    }
   }
  },
