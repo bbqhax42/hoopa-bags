@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:06:52.858967",
+ "generatedAt": "2026-09-16T08:08:56.143048",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "combat_daily",
-  "since": "08:06:51"
+  "mode": "paradise",
+  "since": "08:07:16"
  },
  "grid": {
   "tasks": [
@@ -63,9 +63,9 @@
      "✓",
      "✓",
      "✓",
-     "✗2",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 6,
-  "todo": 185,
-  "gaveUp": 1,
+  "done": 9,
+  "todo": 183,
+  "gaveUp": 0,
   "unavailable": 0,
   "windowed": 15
  },
@@ -543,6 +543,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:07:15",
+   "script": "rank_match",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 4,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "attempts_before": 0,
+    "matches": 0,
+    "gifts": 0,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260916_080710_rank_match_jeff"
+  },
+  {
+   "ts": "2026-09-16T08:07:09",
+   "script": "victory_road",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_080701_victory_road_jeff"
+  },
+  {
+   "ts": "2026-09-16T08:06:59",
+   "script": "combat_daily",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 7,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_080652_combat_daily_jeff"
+  },
   {
    "ts": "2026-09-16T08:06:51",
    "script": "combat_daily",
@@ -6780,55 +6821,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_150537_run_pvp_ranked_chris"
-  },
-  {
-   "ts": "2026-09-14T15:04:55",
-   "script": "sky_pillar",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 114,
-   "stats": {
-    "stages_cleared": 5,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 86,
-    "stage": 10
-   },
-   "dir": "debug_runs/20260914_150301_sky_pillar_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T15:02:58",
-   "script": "collect_hoopa_keys",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_150249_collect_hoopa_keys_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T15:02:43",
-   "script": "run_pvp_ranked",
-   "account": "lucifer1",
-   "rc": 5,
-   "secs": 23,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_150219_run_pvp_ranked_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 29213,
+  "now": 29336,
   "segments": [
    {
     "b": 28844,
@@ -6912,9 +6910,40 @@
     "login": null,
     "handoff": 29212,
     "rc": 1,
-    "e": 29213,
+    "e": 29220,
     "secs": 107,
     "why": ""
+   },
+   {
+    "b": 29220,
+    "a": "jeff",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 29220,
+    "rc": 0,
+    "e": 29229,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 29229,
+    "a": "jeff",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 29230,
+    "rc": 0,
+    "e": 29236,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 29236,
+    "a": "jeff",
+    "s": "paradise",
+    "login": null,
+    "handoff": 29236,
+    "rc": null,
+    "e": 29336
    }
   ],
   "idle": []
@@ -6962,9 +6991,19 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 1,
-    "minutes": 1.8,
+    "runs": 2,
+    "minutes": 1.9,
     "failed": 1
+   },
+   "victory_road": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   },
+   "rank_match": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
    }
   }
  },
@@ -7103,9 +7142,5 @@
    "dre"
   ]
  },
- "phase": {
-  "kind": "day",
-  "since": "07:25:49",
-  "until": "18:00"
- }
+ "phase": null
 }
