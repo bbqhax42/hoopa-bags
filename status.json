@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T11:56:34.809274",
+ "generatedAt": "2026-09-16T11:58:37.596766",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "jeff",
   "mode": "hoopa",
-  "since": "11:54:27"
+  "since": "11:57:27"
  },
  "grid": {
   "tasks": [
@@ -534,12 +534,12 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 68,
-   "at": "2026-09-16T04:18:54"
+   "keys": 70,
+   "at": "2026-09-16T11:58:04"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-16T11:03:53"
+   "keys": 0,
+   "at": "2026-09-16T11:57:21"
   },
   "lucifer1": {
    "keys": 277,
@@ -555,11 +555,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-16T11:03:35.128018",
+  "label": "jeff",
+  "at": "2026-09-16T11:57:48.462369",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T11:57:23",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 6,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-16T11:03:11",
    "script": "sky_pillar",
@@ -7025,23 +7041,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_093135_daily_dungeon_fake4"
-  },
-  {
-   "ts": "2026-09-15T09:31:32",
-   "script": "joint_team_daily_quest",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 24,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_093107_joint_team_daily_quest_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 42995,
+  "now": 43117,
   "segments": [
    {
     "b": 28844,
@@ -9744,7 +9749,30 @@
     "login": null,
     "handoff": 42867,
     "rc": null,
-    "e": 42995
+    "e": 43035
+   },
+   {
+    "b": 43035,
+    "a": "chris",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 43036,
+    "rc": 2,
+    "e": 43047,
+    "secs": 6,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 43047,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": [
+     43048,
+     43068
+    ],
+    "handoff": 43082,
+    "rc": null,
+    "e": 43117
    }
   ],
   "idle": []
@@ -9987,8 +10015,8 @@
  ],
  "day": {
   "since": "2026-09-16T08:00",
-  "switches": 19,
-  "relogMinutes": 10.0,
+  "switches": 20,
+  "relogMinutes": 10.6,
   "retries": 29,
   "tasks": {
    "dailyclaim": {
@@ -10074,6 +10102,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-16T11:57:23"
+  },
   {
    "account": "dre",
    "task": "pokemon_home",
