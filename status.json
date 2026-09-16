@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-16T08:17:08.481974",
+ "generatedAt": "2026-09-16T08:19:11.264267",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "combat_daily",
-  "since": "08:16:26"
+  "mode": "paradise",
+  "since": "08:18:38"
  },
  "grid": {
   "tasks": [
@@ -39,9 +39,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 20,
-  "todo": 171,
+  "done": 23,
+  "todo": 168,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -543,6 +543,55 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-16T08:18:37",
+   "script": "rank_match",
+   "account": "nova",
+   "rc": 0,
+   "secs": 4,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "attempts_before": 0,
+    "matches": 0,
+    "gifts": 0,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260916_081833_rank_match_nova"
+  },
+  {
+   "ts": "2026-09-16T08:18:31",
+   "script": "victory_road",
+   "account": "nova",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260916_081823_victory_road_nova"
+  },
+  {
+   "ts": "2026-09-16T08:18:22",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 0,
+   "secs": 115,
+   "stats": {
+    "marginal_afk_rewards": 1,
+    "title_reread_named": 6,
+    "near_miss_vr_rank": 6,
+    "marginal_premium_gacha": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 10/10 +)",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260916_081626_combat_daily_nova"
+  },
   {
    "ts": "2026-09-16T08:16:25",
    "script": "pokemon_home",
@@ -6794,51 +6843,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260914_164650_run_pvp_ranked_lucifer1"
-  },
-  {
-   "ts": "2026-09-14T16:46:12",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 5,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_164606_run_pvp_ranked_jeff"
-  },
-  {
-   "ts": "2026-09-14T16:17:41",
-   "script": "run_pvp_ranked",
-   "account": "dre",
-   "rc": 5,
-   "secs": 23,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_161718_run_pvp_ranked_dre"
-  },
-  {
-   "ts": "2026-09-14T16:16:40",
-   "script": "run_pvp_ranked",
-   "account": "deno",
-   "rc": 5,
-   "secs": 23,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260914_161617_run_pvp_ranked_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-16T00:00",
   "since": 28800.0,
-  "now": 29828,
+  "now": 29951,
   "segments": [
    {
     "b": 28844,
@@ -7098,8 +7108,41 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 29786,
+    "rc": 0,
+    "e": 29902,
+    "secs": 115,
+    "why": ""
+   },
+   {
+    "b": 29902,
+    "a": "nova",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 29903,
+    "rc": 0,
+    "e": 29912,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 29912,
+    "a": "nova",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 29912,
+    "rc": 0,
+    "e": 29918,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 29918,
+    "a": "nova",
+    "s": "paradise",
+    "login": null,
+    "handoff": 29918,
     "rc": null,
-    "e": 29828
+    "e": 29951
    }
   ],
   "idle": []
@@ -7165,18 +7208,18 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 2,
-    "minutes": 1.9,
+    "runs": 3,
+    "minutes": 3.9,
     "failed": 1
    },
    "victory_road": {
-    "runs": 1,
-    "minutes": 0.1,
+    "runs": 2,
+    "minutes": 0.3,
     "failed": 0
    },
    "rank_match": {
-    "runs": 1,
-    "minutes": 0.1,
+    "runs": 2,
+    "minutes": 0.2,
     "failed": 0
    },
    "paradise": {
