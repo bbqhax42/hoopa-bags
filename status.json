@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:17:10.419783",
+ "generatedAt": "2026-09-17T09:19:13.415535",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "joint_team_daily_quest",
-  "since": "09:16:54"
+  "mode": "combat_daily",
+  "since": "09:19:08"
  },
  "grid": {
   "tasks": [
@@ -155,10 +155,10 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 65,
-  "todo": 125,
+  "done": 69,
+  "todo": 121,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -548,6 +548,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:19:07",
+   "script": "pokemon_home",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 23,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_091844_pokemon_home_fake2"
+  },
+  {
+   "ts": "2026-09-17T09:18:42",
+   "script": "daily_dungeon",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_091810_daily_dungeon_fake2"
+  },
+  {
+   "ts": "2026-09-17T09:17:31",
+   "script": "joint_team_daily_quest",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "panel_swipes": 2,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_091655_joint_team_daily_quest_fake2"
+  },
   {
    "ts": "2026-09-17T09:16:54",
    "script": "mail",
@@ -6857,69 +6901,12 @@
     "fights_today": 9
    },
    "dir": "debug_runs/20260915_163443_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-15T15:23:24",
-   "script": "rank_match",
-   "account": "dre",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260915_152217_rank_match_dre"
-  },
-  {
-   "ts": "2026-09-15T15:21:41",
-   "script": "rank_match",
-   "account": "deno",
-   "rc": 0,
-   "secs": 67,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 8,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260915_152034_rank_match_deno"
-  },
-  {
-   "ts": "2026-09-15T15:19:57",
-   "script": "rank_match",
-   "account": "test1",
-   "rc": 1,
-   "secs": 10,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151947_rank_match_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 33430,
+  "now": 33553,
   "segments": [
    {
     "b": 28956,
@@ -7847,8 +7834,50 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 33415,
+    "rc": 0,
+    "e": 33452,
+    "secs": 36,
+    "why": ""
+   },
+   {
+    "b": 33452,
+    "a": "fake2",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 33454,
     "rc": null,
-    "e": 33430
+    "e": 33484
+   },
+   {
+    "b": 33484,
+    "a": "fake2",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 33490,
+    "rc": 0,
+    "e": 33523,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 33523,
+    "a": "fake2",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 33523,
+    "rc": 0,
+    "e": 33548,
+    "secs": 23,
+    "why": ""
+   },
+   {
+    "b": 33548,
+    "a": "fake2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33552,
+    "rc": null,
+    "e": 33553
    }
   ],
   "idle": []
@@ -8021,18 +8050,18 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 4,
-    "minutes": 2.1,
+    "runs": 5,
+    "minutes": 2.7,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 5,
-    "minutes": 1.5,
+    "runs": 6,
+    "minutes": 2.1,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 5,
-    "minutes": 7.7,
+    "runs": 6,
+    "minutes": 8.1,
     "failed": 0
    },
    "combat_daily": {
