@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T15:35:15.023403",
+ "generatedAt": "2026-09-17T15:37:18.117912",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "island_challenge",
-  "since": "15:34:28"
+  "account": "nova",
+  "mode": "rank_match",
+  "since": "15:36:48"
  },
  "grid": {
   "tasks": [
@@ -89,7 +89,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "·",
      "✓",
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "·",
-     "⏳"
+     "💤"
     ]
    },
    {
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 192,
-  "todo": 27,
+  "done": 193,
+  "todo": 26,
   "gaveUp": 7,
   "unavailable": 5,
   "windowed": 0
@@ -458,11 +458,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 3,
-   "stamina": 60,
-   "staminaMax": 60,
-   "staminaAt": "2026-09-17T15:35:10",
-   "nextAt": null
+   "fights": 6,
+   "stamina": 20,
+   "staminaMax": 26,
+   "staminaAt": "2026-09-17T15:35:41",
+   "nextAt": "2026-09-17T16:59:48"
   },
   {
    "account": "jeff",
@@ -474,6 +474,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-17T16:59",
   "jeff|island_challenge": "2026-09-17T18:46"
  },
  "ownerOnline": [],
@@ -500,11 +501,48 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-17T15:34:49.772149",
+  "label": "nova",
+  "at": "2026-09-17T15:37:10.333704",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T15:36:48",
+   "script": "rank_match",
+   "account": "chris",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260917_153550_rank_match_chris"
+  },
+  {
+   "ts": "2026-09-17T15:35:48",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 45,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 20,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260917_153503_island_challenge_chris"
+  },
   {
    "ts": "2026-09-17T15:34:27",
    "script": "island_challenge",
@@ -6884,42 +6922,12 @@
     "stamina": "12/12"
    },
    "dir": "debug_runs/20260916_094836_paradise_fake6"
-  },
-  {
-   "ts": "2026-09-16T09:48:35",
-   "script": "rank_match",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 4,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_before": 0,
-    "matches": 0,
-    "gifts": 0,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260916_094831_rank_match_fake6"
-  },
-  {
-   "ts": "2026-09-16T09:48:29",
-   "script": "victory_road",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_094821_victory_road_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 56115,
+  "now": 56238,
   "segments": [
    {
     "b": 28956,
@@ -10132,8 +10140,33 @@
      56089
     ],
     "handoff": 56102,
+    "rc": 5,
+    "e": 56149,
+    "secs": 45,
+    "why": ""
+   },
+   {
+    "b": 56149,
+    "a": "chris",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 56149,
+    "rc": 0,
+    "e": 56208,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 56208,
+    "a": "nova",
+    "s": "rank_match",
+    "login": [
+     56209,
+     56230
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 56115
+    "e": 56238
    }
   ],
   "idle": []
@@ -10448,14 +10481,14 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 40,
+  "switches": 41,
   "relogMinutes": 20.7,
-  "retries": 36,
+  "retries": 37,
   "tasks": {
    "island_challenge": {
-    "runs": 6,
-    "minutes": 3.2,
-    "failed": 6
+    "runs": 7,
+    "minutes": 4.0,
+    "failed": 7
    },
    "dailyclaim": {
     "runs": 17,
@@ -10493,8 +10526,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 19,
-    "minutes": 10.2,
+    "runs": 20,
+    "minutes": 11.2,
     "failed": 0
    },
    "paradise": {
