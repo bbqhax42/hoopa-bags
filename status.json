@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T10:20:47.406996",
+ "generatedAt": "2026-09-17T10:22:50.339291",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "weekend_bash",
-  "since": "10:20:45"
+  "account": "lucifer2",
+  "mode": "joint_battle",
+  "since": "10:22:26"
  },
  "grid": {
   "tasks": [
@@ -289,7 +289,7 @@
      "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -297,9 +297,9 @@
    {
     "account": "lucifer2",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 129,
-  "todo": 58,
+  "done": 133,
+  "todo": 54,
   "gaveUp": 3,
   "unavailable": 4,
   "windowed": 15
@@ -543,11 +543,66 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-17T10:09:51.734609",
+  "label": "lucifer2",
+  "at": "2026-09-17T10:21:14.371879",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T10:22:25",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 22,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_102203_joint_team_daily_quest_lucifer2"
+  },
+  {
+   "ts": "2026-09-17T10:22:02",
+   "script": "mail",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260917_102159_mail_lucifer2"
+  },
+  {
+   "ts": "2026-09-17T10:21:58",
+   "script": "dailyclaim",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_102124_dailyclaim_lucifer2"
+  },
+  {
+   "ts": "2026-09-17T10:20:49",
+   "script": "weekend_bash",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_102049_weekend_bash_lucifer1"
+  },
   {
    "ts": "2026-09-17T10:20:45",
    "script": "sky_pillar",
@@ -6927,72 +6982,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_082649_daily_dungeon_chris"
-  },
-  {
-   "ts": "2026-09-16T08:26:04",
-   "script": "joint_team_daily_quest",
-   "account": "chris",
-   "rc": 0,
-   "secs": 34,
-   "stats": {
-    "near_miss_squad_panel": 1,
-    "near_miss_rift_exit_guardian": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_082529_joint_team_daily_quest_chris"
-  },
-  {
-   "ts": "2026-09-16T08:25:28",
-   "script": "mail",
-   "account": "chris",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 0,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260916_082525_mail_chris"
-  },
-  {
-   "ts": "2026-09-16T08:25:24",
-   "script": "dailyclaim",
-   "account": "chris",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_082451_dailyclaim_chris"
-  },
-  {
-   "ts": "2026-09-16T08:24:16",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 0,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_082416_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 37247,
+  "now": 37370,
   "segments": [
    {
     "b": 28956,
@@ -8774,9 +8769,56 @@
     "a": "lucifer1",
     "s": "weekend_bash",
     "login": null,
-    "handoff": null,
+    "handoff": 37248,
+    "rc": 0,
+    "e": 37249,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 37249,
+    "a": "lucifer2",
+    "s": "dailyclaim",
+    "login": [
+     37250,
+     37274
+    ],
+    "handoff": 37284,
+    "rc": 0,
+    "e": 37318,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 37318,
+    "a": "lucifer2",
+    "s": "mail",
+    "login": null,
+    "handoff": 37318,
+    "rc": 0,
+    "e": 37322,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 37322,
+    "a": "lucifer2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 37323,
+    "rc": 0,
+    "e": 37346,
+    "secs": 22,
+    "why": ""
+   },
+   {
+    "b": 37346,
+    "a": "lucifer2",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 37348,
     "rc": null,
-    "e": 37247
+    "e": 37370
    }
   ],
   "idle": []
@@ -8983,8 +9025,8 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 13,
-  "relogMinutes": 6.5,
+  "switches": 14,
+  "relogMinutes": 7.1,
   "retries": 22,
   "tasks": {
    "island_challenge": {
@@ -8993,18 +9035,18 @@
     "failed": 4
    },
    "dailyclaim": {
-    "runs": 12,
-    "minutes": 7.8,
+    "runs": 13,
+    "minutes": 8.3,
     "failed": 2
    },
    "mail": {
-    "runs": 11,
+    "runs": 12,
     "minutes": 0.6,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 9,
-    "minutes": 4.8,
+    "runs": 10,
+    "minutes": 5.1,
     "failed": 0
    },
    "daily_dungeon": {
@@ -9058,7 +9100,7 @@
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 2,
+    "runs": 3,
     "minutes": 0.0,
     "failed": 0
    },
