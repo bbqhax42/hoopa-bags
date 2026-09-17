@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:11:01.048930",
+ "generatedAt": "2026-09-17T09:13:04.176259",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake1",
-  "mode": "rank_match",
-  "since": "09:10:45"
+  "mode": "paradise",
+  "since": "09:11:44"
  },
  "grid": {
   "tasks": [
@@ -137,7 +137,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "⏰",
      "-",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 59,
-  "todo": 131,
+  "done": 60,
+  "todo": 130,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -548,6 +548,28 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:11:43",
+   "script": "rank_match",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "near_miss_go_button": 2,
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260917_091047_rank_match_fake1"
+  },
   {
    "ts": "2026-09-17T09:10:45",
    "script": "victory_road",
@@ -6896,27 +6918,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260915_151548_rank_match_fake5"
-  },
-  {
-   "ts": "2026-09-15T15:15:44",
-   "script": "rank_match",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 10,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151533_rank_match_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 33061,
+  "now": 33184,
   "segments": [
    {
     "b": 28956,
@@ -7775,8 +7782,19 @@
     "s": "rank_match",
     "login": null,
     "handoff": 33046,
+    "rc": 0,
+    "e": 33104,
+    "secs": 56,
+    "why": ""
+   },
+   {
+    "b": 33104,
+    "a": "fake1",
+    "s": "paradise",
+    "login": null,
+    "handoff": 33104,
     "rc": null,
-    "e": 33061
+    "e": 33184
    }
   ],
   "idle": []
@@ -7974,8 +7992,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 4,
-    "minutes": 4.1,
+    "runs": 5,
+    "minutes": 5.0,
     "failed": 0
    },
    "paradise": {
