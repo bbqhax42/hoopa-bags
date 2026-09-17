@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:00:44.795248",
+ "generatedAt": "2026-09-17T09:02:48.604126",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "victory_road",
-  "since": "09:00:40"
+  "mode": "run_pvp_ranked",
+  "since": "09:02:22"
  },
  "grid": {
   "tasks": [
@@ -112,9 +112,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 47,
-  "todo": 143,
+  "done": 50,
+  "todo": 140,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -548,6 +548,61 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:02:21",
+   "script": "paradise",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 29,
+   "stats": {
+    "marginal_paradise_hub": 2,
+    "explore_clicks": 4,
+    "pass_claims": 1,
+    "dex_milestones": 1,
+    "dex_activated": 0,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "0/20"
+   },
+   "dir": "debug_runs/20260917_090152_paradise_smurf"
+  },
+  {
+   "ts": "2026-09-17T09:01:51",
+   "script": "rank_match",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260917_090051_rank_match_smurf"
+  },
+  {
+   "ts": "2026-09-17T09:00:49",
+   "script": "victory_road",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_090041_victory_road_smurf"
+  },
   {
    "ts": "2026-09-17T09:00:40",
    "script": "combat_daily",
@@ -6884,65 +6939,12 @@
     "rank_rewards": 2
    },
    "dir": "debug_runs/20260915_143145_rank_match_jeff"
-  },
-  {
-   "ts": "2026-09-15T14:28:34",
-   "script": "rank_match",
-   "account": null,
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 0,
-    "matches": 0,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260915_142827_rank_match_na"
-  },
-  {
-   "ts": "2026-09-15T14:26:44",
-   "script": "rank_match",
-   "account": null,
-   "rc": 0,
-   "secs": 76,
-   "stats": {
-    "leftover_match": 1,
-    "skip_tapped": 2,
-    "matches": 2,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "matches": 2,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260915_142528_rank_match_na"
-  },
-  {
-   "ts": "2026-09-15T14:24:54",
-   "script": "rank_match",
-   "account": null,
-   "rc": 1,
-   "secs": 21,
-   "stats": {
-    "vr_not_open": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_142433_rank_match_na"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 32445,
+  "now": 32568,
   "segments": [
    {
     "b": 28956,
@@ -7630,8 +7632,41 @@
     "s": "victory_road",
     "login": null,
     "handoff": 32441,
+    "rc": 0,
+    "e": 32450,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 32450,
+    "a": "smurf",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 32450,
+    "rc": 0,
+    "e": 32512,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 32512,
+    "a": "smurf",
+    "s": "paradise",
+    "login": null,
+    "handoff": 32512,
+    "rc": 0,
+    "e": 32542,
+    "secs": 29,
+    "why": ""
+   },
+   {
+    "b": 32542,
+    "a": "smurf",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 32542,
     "rc": null,
-    "e": 32445
+    "e": 32568
    }
   ],
   "idle": []
@@ -7806,18 +7841,18 @@
     "failed": 3
    },
    "victory_road": {
-    "runs": 3,
-    "minutes": 0.4,
+    "runs": 4,
+    "minutes": 0.5,
     "failed": 0
    },
    "rank_match": {
-    "runs": 3,
-    "minutes": 3.1,
+    "runs": 4,
+    "minutes": 4.1,
     "failed": 0
    },
    "paradise": {
-    "runs": 3,
-    "minutes": 10.0,
+    "runs": 4,
+    "minutes": 10.5,
     "failed": 0
    },
    "run_pvp_ranked": {
