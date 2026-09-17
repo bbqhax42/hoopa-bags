@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T10:49:37.972301",
+ "generatedAt": "2026-09-17T10:51:40.903290",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "island_challenge",
-  "since": "10:48:55"
+  "account": "deno",
+  "mode": "dailyclaim",
+  "since": "10:51:17"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "✗2",
-     "·"
+     "💤"
     ]
    },
    {
@@ -345,7 +345,7 @@
    {
     "account": "deno",
     "cells": [
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 152,
-  "todo": 34,
-  "gaveUp": 4,
+  "todo": 32,
+  "gaveUp": 5,
   "unavailable": 5,
   "windowed": 15
  },
@@ -508,15 +508,16 @@
   },
   {
    "account": "jeff",
-   "fights": 3,
-   "stamina": 41,
-   "staminaMax": 41,
-   "staminaAt": "2026-09-17T10:49:37",
-   "nextAt": null
+   "fights": 6,
+   "stamina": 1,
+   "staminaMax": 1,
+   "staminaAt": "2026-09-17T10:50:03",
+   "nextAt": "2026-09-17T14:44:11"
   }
  ],
  "snoozed": {
-  "chris|island_challenge": "2026-09-17T13:32"
+  "chris|island_challenge": "2026-09-17T13:32",
+  "jeff|island_challenge": "2026-09-17T14:44"
  },
  "ownerOnline": [],
  "keys": {
@@ -542,11 +543,47 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-17T10:49:17.695206",
+  "label": "deno",
+  "at": "2026-09-17T10:50:32.257190",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T10:51:16",
+   "script": "dailyclaim",
+   "account": "deno",
+   "rc": 1,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_already": 1,
+    "logingifts_no_open": 1,
+    "incomplete": 1,
+    "claims": 1
+   },
+   "incomplete": [
+    "dailyclaim: the Login Gifts list would not open"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_105043_dailyclaim_deno"
+  },
+  {
+   "ts": "2026-09-17T10:50:11",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 41,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 1,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260917_104929_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-17T10:48:55",
    "script": "sky_pillar",
@@ -6932,53 +6969,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_085250_collect_hoopa_keys_smurf"
-  },
-  {
-   "ts": "2026-09-16T08:52:49",
-   "script": "run_pvp_ranked",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 4,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 89
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 1
-   },
-   "dir": "debug_runs/20260916_085138_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-09-16T08:51:37",
-   "script": "paradise",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 253,
-   "stats": {
-    "marginal_paradise_hub": 4,
-    "explore_clicks": 128,
-    "pass_claims": 5,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 1,
-    "dex_milestones": 2,
-    "dex_activated": 3,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "1/19"
-   },
-   "dir": "debug_runs/20260916_084724_paradise_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 38978,
+  "now": 39101,
   "segments": [
    {
     "b": 28956,
@@ -9087,13 +9083,49 @@
      38957
     ],
     "handoff": 38969,
-    "rc": null,
-    "e": 38978
+    "rc": 5,
+    "e": 39011,
+    "secs": 41,
+    "why": ""
+   },
+   {
+    "b": 39011,
+    "a": "deno",
+    "s": "dailyclaim",
+    "login": [
+     39011,
+     39032
+    ],
+    "handoff": 39042,
+    "rc": 1,
+    "e": 39077,
+    "secs": 33,
+    "why": "dailyclaim: the Login Gifts list would not open"
+   },
+   {
+    "b": 39077,
+    "a": "deno",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 39077,
+    "rc": 1,
+    "e": 39101,
+    "secs": 33,
+    "why": "dailyclaim: the Login Gifts list would not open"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T10:51:16",
+   "account": "deno",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 33,
+   "why": "dailyclaim: the Login Gifts list would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_105043_dailyclaim_deno__KEEP_0004_105114_logingifts_no_open.png"
+  },
   {
    "ts": "2026-09-17T10:42:11",
    "account": "test1",
@@ -9331,19 +9363,19 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 16,
-  "relogMinutes": 8.2,
-  "retries": 26,
+  "switches": 17,
+  "relogMinutes": 8.7,
+  "retries": 28,
   "tasks": {
    "island_challenge": {
-    "runs": 4,
-    "minutes": 1.9,
-    "failed": 4
+    "runs": 5,
+    "minutes": 2.5,
+    "failed": 5
    },
    "dailyclaim": {
-    "runs": 14,
-    "minutes": 8.8,
-    "failed": 2
+    "runs": 15,
+    "minutes": 9.4,
+    "failed": 3
    },
    "mail": {
     "runs": 13,
