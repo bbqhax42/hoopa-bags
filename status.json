@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:23:49.097000",
+ "generatedAt": "2026-09-17T08:25:52.205321",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "pokemon_home",
-  "since": "08:22:56"
+  "mode": "combat_daily",
+  "since": "08:24:59"
  },
  "grid": {
   "tasks": [
@@ -38,7 +38,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 20,
-  "todo": 173,
+  "done": 21,
+  "todo": 172,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -540,6 +540,23 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:24:59",
+   "script": "pokemon_home",
+   "account": "nova",
+   "rc": 0,
+   "secs": 121,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_moved_instead": 7,
+    "pair_went_stale": 1,
+    "counter_misread": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_082257_pokemon_home_nova"
+  },
   {
    "ts": "2026-09-17T08:22:55",
    "script": "daily_dungeon",
@@ -6923,30 +6940,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260915_125210_mail_fake1"
-  },
-  {
-   "ts": "2026-09-15T12:51:39",
-   "script": "guild_war",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 79,
-   "stats": {
-    "marginal_last_hit": 3,
-    "near_miss_last_hit": 2,
-    "near_miss_tips_header": 66,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_125019_guild_war_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 30229,
+  "now": 30352,
   "segments": [
    {
     "b": 28956,
@@ -7220,8 +7219,19 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 30177,
+    "rc": 0,
+    "e": 30299,
+    "secs": 121,
+    "why": ""
+   },
+   {
+    "b": 30299,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30304,
     "rc": null,
-    "e": 30229
+    "e": 30352
    }
   ],
   "idle": []
@@ -7323,8 +7333,8 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 1,
-    "minutes": 2.1,
+    "runs": 2,
+    "minutes": 4.2,
     "failed": 0
    },
    "combat_daily": {
