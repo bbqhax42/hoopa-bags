@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T16:13:43.667260",
+ "generatedAt": "2026-09-17T16:15:46.716164",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "hoopa",
-  "since": "16:10:19"
+  "account": "fake4",
+  "mode": "guild_war",
+  "since": "16:15:29"
  },
  "grid": {
   "tasks": [
@@ -139,7 +139,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -211,7 +211,7 @@
      "✓",
      "⊘",
      "✓",
-     "·",
+     "✗2",
      "-",
      "✓",
      "✓",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 212,
-  "todo": 4,
-  "gaveUp": 8,
+  "done": 213,
+  "todo": 2,
+  "gaveUp": 9,
   "unavailable": 5,
   "windowed": 0
  },
@@ -503,11 +503,34 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-17T16:10:41.688548",
+  "label": "fake1",
+  "at": "2026-09-17T16:14:04.846055",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T16:15:28",
+   "script": "guild_war",
+   "account": "fake1",
+   "rc": 1,
+   "secs": 72,
+   "stats": {
+    "marginal_last_hit": 2,
+    "near_miss_last_hit": 2,
+    "near_miss_vr_rank": 2,
+    "near_miss_tips_header": 168,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1,
+    "assist_never_opened": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "guild_war: guild assist not deployed — picker would not open"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_161416_guild_war_fake1"
+  },
   {
    "ts": "2026-09-17T16:10:19",
    "script": "championship",
@@ -6969,25 +6992,12 @@
     "stage": 2
    },
    "dir": "debug_runs/20260916_101718_sky_pillar_lucifer2"
-  },
-  {
-   "ts": "2026-09-16T10:17:17",
-   "script": "collect_hoopa_keys",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_101710_collect_hoopa_keys_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 58423,
+  "now": 58547,
   "segments": [
    {
     "b": 28956,
@@ -10580,11 +10590,46 @@
     "handoff": 58257,
     "rc": null,
     "e": 58423
+   },
+   {
+    "b": 58423,
+    "a": "fake1",
+    "s": "guild_war",
+    "login": [
+     58424,
+     58444
+    ],
+    "handoff": 58456,
+    "rc": 1,
+    "e": 58529,
+    "secs": 72,
+    "why": "guild_war: guild assist not deployed — picker would not open"
+   },
+   {
+    "b": 58529,
+    "a": "fake4",
+    "s": "guild_war",
+    "login": [
+     58529,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 58547
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T16:15:28",
+   "account": "fake1",
+   "task": "guild_war",
+   "rc": 1,
+   "secs": 72,
+   "why": "guild_war: guild assist not deployed — picker would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_161416_guild_war_fake1__KEEP_0079_161528_assist_never_opened.png"
+  },
   {
    "ts": "2026-09-17T11:25:18",
    "account": "nova",
@@ -10894,9 +10939,9 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 56,
-  "relogMinutes": 29.2,
-  "retries": 39,
+  "switches": 58,
+  "relogMinutes": 29.8,
+  "retries": 40,
   "tasks": {
    "island_challenge": {
     "runs": 7,
@@ -10984,9 +11029,9 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 45,
-    "minutes": 20.2,
-    "failed": 0
+    "runs": 46,
+    "minutes": 21.4,
+    "failed": 1
    }
   }
  },
