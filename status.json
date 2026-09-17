@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T15:33:11.727653",
+ "generatedAt": "2026-09-17T15:35:15.023403",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "hoopa",
-  "since": "12:43:21"
+  "account": "chris",
+  "mode": "island_challenge",
+  "since": "15:34:28"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "·",
-     "·"
+     "💤"
     ]
    },
    {
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "·",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -442,7 +442,7 @@
  },
  "counts": {
   "done": 192,
-  "todo": 29,
+  "todo": 27,
   "gaveUp": 7,
   "unavailable": 5,
   "windowed": 0
@@ -459,21 +459,23 @@
   {
    "account": "chris",
    "fights": 3,
-   "stamina": 1,
-   "staminaMax": 1,
-   "staminaAt": "2026-09-17T09:38:38",
-   "nextAt": "2026-09-17T13:32:46"
+   "stamina": 60,
+   "staminaMax": 60,
+   "staminaAt": "2026-09-17T15:35:10",
+   "nextAt": null
   },
   {
    "account": "jeff",
-   "fights": 6,
-   "stamina": 1,
-   "staminaMax": 1,
-   "staminaAt": "2026-09-17T10:50:03",
-   "nextAt": "2026-09-17T14:44:11"
+   "fights": 9,
+   "stamina": 8,
+   "staminaMax": 8,
+   "staminaAt": "2026-09-17T15:34:22",
+   "nextAt": "2026-09-17T18:46:27"
   }
  ],
- "snoozed": {},
+ "snoozed": {
+  "jeff|island_challenge": "2026-09-17T18:46"
+ },
  "ownerOnline": [],
  "keys": {
   "jeff": {
@@ -498,11 +500,28 @@
   }
  },
  "session": {
-  "label": "fake3",
-  "at": "2026-09-17T14:51:58.367214",
+  "label": "chris",
+  "at": "2026-09-17T15:34:49.772149",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T15:34:27",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 39,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 8,
+    "fights_today": 9
+   },
+   "dir": "debug_runs/20260917_153348_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-17T14:52:15",
    "script": "team_pass_test",
@@ -6895,23 +6914,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_094821_victory_road_fake6"
-  },
-  {
-   "ts": "2026-09-16T09:48:20",
-   "script": "combat_daily",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_094813_combat_daily_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 55992,
+  "now": 56115,
   "segments": [
    {
     "b": 28956,
@@ -10100,6 +10108,32 @@
     "handoff": 45820,
     "rc": null,
     "e": 55992
+   },
+   {
+    "b": 55992,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     55992,
+     56017
+    ],
+    "handoff": 56028,
+    "rc": 5,
+    "e": 56068,
+    "secs": 39,
+    "why": ""
+   },
+   {
+    "b": 56068,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     56068,
+     56089
+    ],
+    "handoff": 56102,
+    "rc": null,
+    "e": 56115
    }
   ],
   "idle": []
@@ -10414,14 +10448,14 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 38,
-  "relogMinutes": 19.5,
-  "retries": 35,
+  "switches": 40,
+  "relogMinutes": 20.7,
+  "retries": 36,
   "tasks": {
    "island_challenge": {
-    "runs": 5,
-    "minutes": 2.5,
-    "failed": 5
+    "runs": 6,
+    "minutes": 3.2,
+    "failed": 6
    },
    "dailyclaim": {
     "runs": 17,
