@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:08:58.101614",
+ "generatedAt": "2026-09-17T09:11:01.048930",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake1",
-  "mode": "combat_daily",
-  "since": "09:08:28"
+  "mode": "rank_match",
+  "since": "09:10:45"
  },
  "grid": {
   "tasks": [
@@ -135,8 +135,8 @@
      "-",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 57,
-  "todo": 133,
+  "done": 59,
+  "todo": 131,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -548,6 +548,56 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:10:45",
+   "script": "victory_road",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "near_miss_go_button": 8,
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_091037_victory_road_fake1"
+  },
+  {
+   "ts": "2026-09-17T09:10:36",
+   "script": "combat_daily",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 7,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_091029_combat_daily_fake1"
+  },
+  {
+   "ts": "2026-09-17T09:10:27",
+   "script": "combat_daily",
+   "account": "fake1",
+   "rc": 1,
+   "secs": 114,
+   "stats": {
+    "title_reread_named": 3,
+    "near_miss_afk_rewards": 3,
+    "marginal_afk_rewards": 1,
+    "near_miss_vr_rank": 4,
+    "near_miss_battle_victory_confirm": 1,
+    "adv_energy_spent": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260917_090833_combat_daily_fake1"
+  },
   {
    "ts": "2026-09-17T09:08:27",
    "script": "pokemon_home",
@@ -6861,57 +6911,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260915_151533_rank_match_fake5"
-  },
-  {
-   "ts": "2026-09-15T15:15:02",
-   "script": "rank_match",
-   "account": "fake4",
-   "rc": 1,
-   "secs": 10,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151451_rank_match_fake4"
-  },
-  {
-   "ts": "2026-09-15T15:14:47",
-   "script": "rank_match",
-   "account": "fake4",
-   "rc": 1,
-   "secs": 11,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151436_rank_match_fake4"
-  },
-  {
-   "ts": "2026-09-15T15:14:04",
-   "script": "rank_match",
-   "account": "fake3",
-   "rc": 1,
-   "secs": 10,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151354_rank_match_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 32938,
+  "now": 33061,
   "segments": [
    {
     "b": 28956,
@@ -7737,13 +7742,55 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 32912,
+    "rc": 1,
+    "e": 33028,
+    "secs": 114,
+    "why": ""
+   },
+   {
+    "b": 33028,
+    "a": "fake1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33028,
+    "rc": 1,
+    "e": 33036,
+    "secs": 114,
+    "why": ""
+   },
+   {
+    "b": 33036,
+    "a": "fake1",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 33037,
+    "rc": 0,
+    "e": 33045,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 33045,
+    "a": "fake1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 33046,
     "rc": null,
-    "e": 32938
+    "e": 33061
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T09:10:27",
+   "account": "fake1",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 114,
+   "why": "title_reread_named, near_miss_afk_rewards, marginal_afk_rewards, near_miss_vr_rank, near_miss_battle_victory_confirm, adv_energy_spent, upgrade_blocked_by_first",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_090833_combat_daily_fake1__0158_091027_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-17T09:04:18",
    "account": "smurf",
@@ -7884,7 +7931,7 @@
   "since": "2026-09-17T08:00",
   "switches": 6,
   "relogMinutes": 3.0,
-  "retries": 14,
+  "retries": 15,
   "tasks": {
    "island_challenge": {
     "runs": 3,
@@ -7917,13 +7964,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 6,
-    "minutes": 6.8,
-    "failed": 3
+    "runs": 8,
+    "minutes": 8.9,
+    "failed": 4
    },
    "victory_road": {
-    "runs": 4,
-    "minutes": 0.5,
+    "runs": 5,
+    "minutes": 0.7,
     "failed": 0
    },
    "rank_match": {
