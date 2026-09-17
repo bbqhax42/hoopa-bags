@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:21:16.283992",
+ "generatedAt": "2026-09-17T09:23:19.583094",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "combat_daily",
-  "since": "09:21:10"
+  "mode": "paradise",
+  "since": "09:22:28"
  },
  "grid": {
   "tasks": [
@@ -159,9 +159,9 @@
      "✓",
      "✓",
      "✓",
-     "✗2",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "-",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 69,
-  "todo": 120,
-  "gaveUp": 4,
+  "done": 72,
+  "todo": 118,
+  "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
  },
@@ -548,6 +548,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:22:27",
+   "script": "rank_match",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 57,
+   "stats": {
+    "near_miss_go_button": 2,
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260917_092129_rank_match_fake2"
+  },
+  {
+   "ts": "2026-09-17T09:21:28",
+   "script": "victory_road",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "near_miss_go_button": 8,
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_092120_victory_road_fake2"
+  },
+  {
+   "ts": "2026-09-17T09:21:18",
+   "script": "combat_daily",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 7,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_092111_combat_daily_fake2"
+  },
   {
    "ts": "2026-09-17T09:21:10",
    "script": "combat_daily",
@@ -6864,58 +6912,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260915_200828_worldboss_jeff"
-  },
-  {
-   "ts": "2026-09-15T20:08:27",
-   "script": "worldboss",
-   "account": "chris",
-   "rc": 0,
-   "secs": 73,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260915_200714_worldboss_chris"
-  },
-  {
-   "ts": "2026-09-15T18:44:37",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 44,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 0,
-    "fights_today": 12
-   },
-   "dir": "debug_runs/20260915_184353_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-15T17:32:21",
-   "script": "hoopa",
-   "account": "chris",
-   "rc": 2,
-   "secs": 93,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 33676,
+  "now": 33799,
   "segments": [
    {
     "b": 28956,
@@ -7897,9 +7899,40 @@
     "login": null,
     "handoff": 33671,
     "rc": 1,
-    "e": 33676,
+    "e": 33679,
     "secs": 117,
     "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   },
+   {
+    "b": 33679,
+    "a": "fake2",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 33679,
+    "rc": 0,
+    "e": 33688,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 33688,
+    "a": "fake2",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 33689,
+    "rc": 0,
+    "e": 33748,
+    "secs": 57,
+    "why": ""
+   },
+   {
+    "b": 33748,
+    "a": "fake2",
+    "s": "paradise",
+    "login": null,
+    "handoff": 33748,
+    "rc": null,
+    "e": 33799
    }
   ],
   "idle": []
@@ -8096,18 +8129,18 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 9,
-    "minutes": 10.8,
+    "runs": 10,
+    "minutes": 10.9,
     "failed": 5
    },
    "victory_road": {
-    "runs": 5,
-    "minutes": 0.7,
+    "runs": 6,
+    "minutes": 0.8,
     "failed": 0
    },
    "rank_match": {
-    "runs": 5,
-    "minutes": 5.0,
+    "runs": 6,
+    "minutes": 6.0,
     "failed": 0
    },
    "paradise": {
