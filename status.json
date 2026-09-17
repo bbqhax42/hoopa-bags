@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:36:07.044794",
+ "generatedAt": "2026-09-17T08:38:09.916428",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "dailyclaim",
-  "since": "08:35:51"
+  "mode": "daily_dungeon",
+  "since": "08:37:54"
  },
  "grid": {
   "tasks": [
@@ -57,10 +57,10 @@
    {
     "account": "jeff",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 28,
-  "todo": 165,
+  "done": 32,
+  "todo": 161,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -548,6 +548,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:37:13",
+   "script": "joint_team_daily_quest",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 39,
+   "stats": {
+    "panel_swipes": 3,
+    "artifact_row_found_by_scrolling": 1,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_083633_joint_team_daily_quest_jeff"
+  },
+  {
+   "ts": "2026-09-17T08:36:32",
+   "script": "mail",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 0,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260917_083629_mail_jeff"
+  },
+  {
+   "ts": "2026-09-17T08:36:28",
+   "script": "dailyclaim",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_083554_dailyclaim_jeff"
+  },
   {
    "ts": "2026-09-17T08:35:51",
    "script": "island_challenge",
@@ -6901,63 +6949,12 @@
     "fights_today": 6
    },
    "dir": "debug_runs/20260915_134135_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-15T13:02:39",
-   "script": "guild_war",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 95,
-   "stats": {
-    "refused_battle_skip": 1,
-    "marginal_battle_victory": 1,
-    "near_miss_last_hit": 5,
-    "assist_refill": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_130103_guild_war_fake5"
-  },
-  {
-   "ts": "2026-09-15T13:01:02",
-   "script": "mail",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "claim_all_tapped": 1,
-    "reward_card_closed": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 13,
-    "reward_cards": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260915_130058_mail_fake5"
-  },
-  {
-   "ts": "2026-09-15T13:00:27",
-   "script": "guild_war",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 67,
-   "stats": {
-    "near_miss_last_hit": 1,
-    "refused_result_confirm": 1,
-    "gw_no_return": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_125920_guild_war_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 30967,
+  "now": 31090,
   "segments": [
    {
     "b": 28956,
@@ -7344,8 +7341,50 @@
     "s": "dailyclaim",
     "login": null,
     "handoff": 30954,
+    "rc": 0,
+    "e": 30988,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 30988,
+    "a": "jeff",
+    "s": "mail",
+    "login": null,
+    "handoff": 30989,
+    "rc": 0,
+    "e": 30993,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 30993,
+    "a": "jeff",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 30993,
+    "rc": 0,
+    "e": 31034,
+    "secs": 39,
+    "why": ""
+   },
+   {
+    "b": 31034,
+    "a": "jeff",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 31036,
     "rc": null,
-    "e": 30967
+    "e": 31074
+   },
+   {
+    "b": 31074,
+    "a": "jeff",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 31080,
+    "rc": null,
+    "e": 31090
    }
   ],
   "idle": []
@@ -7436,18 +7475,18 @@
     "failed": 2
    },
    "dailyclaim": {
-    "runs": 2,
-    "minutes": 1.1,
+    "runs": 3,
+    "minutes": 1.6,
     "failed": 0
    },
    "mail": {
-    "runs": 2,
+    "runs": 3,
     "minutes": 0.1,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 2,
-    "minutes": 0.9,
+    "runs": 3,
+    "minutes": 1.6,
     "failed": 0
    },
    "daily_dungeon": {
