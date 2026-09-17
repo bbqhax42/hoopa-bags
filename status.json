@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:25:52.205321",
+ "generatedAt": "2026-09-17T08:27:55.238457",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "combat_daily",
-  "since": "08:24:59"
+  "mode": "rank_match",
+  "since": "08:27:01"
  },
  "grid": {
   "tasks": [
@@ -39,8 +39,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 21,
-  "todo": 172,
+  "done": 23,
+  "todo": 170,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -540,6 +540,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:27:00",
+   "script": "victory_road",
+   "account": "nova",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_082652_victory_road_nova"
+  },
+  {
+   "ts": "2026-09-17T08:26:51",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 0,
+   "secs": 106,
+   "stats": {
+    "near_miss_vr_rank": 5,
+    "title_reread_named": 3
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 10/10 +)",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260917_082504_combat_daily_nova"
+  },
   {
    "ts": "2026-09-17T08:24:59",
    "script": "pokemon_home",
@@ -6907,45 +6938,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260915_125406_mail_fake2"
-  },
-  {
-   "ts": "2026-09-15T12:53:35",
-   "script": "guild_war",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 78,
-   "stats": {
-    "near_miss_tips_header": 66,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_125216_guild_war_fake1"
-  },
-  {
-   "ts": "2026-09-15T12:52:15",
-   "script": "mail",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 12,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260915_125210_mail_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 30352,
+  "now": 30475,
   "segments": [
    {
     "b": 28956,
@@ -7230,8 +7228,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 30304,
+    "rc": 0,
+    "e": 30412,
+    "secs": 106,
+    "why": ""
+   },
+   {
+    "b": 30412,
+    "a": "nova",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 30412,
+    "rc": 0,
+    "e": 30421,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 30421,
+    "a": "nova",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 30422,
     "rc": null,
-    "e": 30352
+    "e": 30475
    }
   ],
   "idle": []
@@ -7338,13 +7358,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 2,
-    "minutes": 1.9,
+    "runs": 3,
+    "minutes": 3.7,
     "failed": 1
    },
    "victory_road": {
-    "runs": 1,
-    "minutes": 0.1,
+    "runs": 2,
+    "minutes": 0.3,
     "failed": 0
    },
    "rank_match": {
