@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:13:04.176259",
+ "generatedAt": "2026-09-17T09:15:07.467939",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake1",
-  "mode": "paradise",
-  "since": "09:11:44"
+  "mode": "sky_pillar",
+  "since": "09:14:57"
  },
  "grid": {
   "tasks": [
@@ -138,10 +138,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 60,
-  "todo": 130,
+  "done": 62,
+  "todo": 128,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -548,6 +548,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:14:57",
+   "script": "collect_hoopa_keys",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_091449_collect_hoopa_keys_fake1"
+  },
+  {
+   "ts": "2026-09-17T09:14:48",
+   "script": "paradise",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 183,
+   "stats": {
+    "marginal_paradise_hub": 4,
+    "explore_clicks": 78,
+    "pass_claims": 7,
+    "upgraded_sports_gloves": 2,
+    "upgraded_energy_drink": 1,
+    "upgraded_small_radar": 1,
+    "dex_milestones": 2,
+    "dex_activated": 6,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "19/13"
+   },
+   "dir": "debug_runs/20260917_091145_paradise_fake1"
+  },
   {
    "ts": "2026-09-17T09:11:43",
    "script": "rank_match",
@@ -6881,49 +6917,12 @@
     "rank_rewards": 1
    },
    "dir": "debug_runs/20260915_151809_rank_match_lucifer1"
-  },
-  {
-   "ts": "2026-09-15T15:17:34",
-   "script": "rank_match",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 64,
-   "stats": {
-    "formation_set": 1,
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260915_151630_rank_match_fake6"
-  },
-  {
-   "ts": "2026-09-15T15:15:59",
-   "script": "rank_match",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 11,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151548_rank_match_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 33184,
+  "now": 33307,
   "segments": [
    {
     "b": 28956,
@@ -7793,8 +7792,30 @@
     "s": "paradise",
     "login": null,
     "handoff": 33104,
+    "rc": 0,
+    "e": 33289,
+    "secs": 183,
+    "why": ""
+   },
+   {
+    "b": 33289,
+    "a": "fake1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 33289,
+    "rc": 0,
+    "e": 33297,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 33297,
+    "a": "fake1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33298,
     "rc": null,
-    "e": 33184
+    "e": 33307
    }
   ],
   "idle": []
@@ -7997,8 +8018,8 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 4,
-    "minutes": 10.5,
+    "runs": 5,
+    "minutes": 13.6,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -8007,8 +8028,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 5,
-    "minutes": 0.9,
+    "runs": 6,
+    "minutes": 1.1,
     "failed": 1
    },
    "sky_pillar": {
