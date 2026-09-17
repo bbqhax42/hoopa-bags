@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T16:59:46.142312",
+ "generatedAt": "2026-09-17T17:01:49.118970",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
+  "account": "test1",
   "mode": "story",
-  "since": "16:57:35"
+  "since": "17:00:43"
  },
  "grid": {
   "tasks": [
@@ -483,10 +483,10 @@
   {
    "account": "chris",
    "fights": 6,
-   "stamina": 20,
-   "staminaMax": 26,
-   "staminaAt": "2026-09-17T15:35:41",
-   "nextAt": "2026-09-17T16:59:48"
+   "stamina": 34,
+   "staminaMax": 34,
+   "staminaAt": "2026-09-17T17:00:36",
+   "nextAt": "2026-09-17T17:36:43"
   },
   {
    "account": "jeff",
@@ -499,7 +499,7 @@
  ],
  "snoozed": {
   "chris|championship": "2026-09-17T18:10",
-  "chris|island_challenge": "2026-09-17T16:59",
+  "chris|island_challenge": "2026-09-17T17:36",
   "jeff|championship": "2026-09-17T17:42",
   "jeff|island_challenge": "2026-09-17T18:46"
  },
@@ -527,11 +527,42 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-09-17T16:57:55.728205",
+  "label": "test1",
+  "at": "2026-09-17T17:01:04.509358",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T17:00:43",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 15,
+   "stats": {
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 34,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260917_170027_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-17T16:59:50",
+   "script": "story",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 102,
+   "stats": {
+    "skip_retry": 12,
+    "afk_card": 1,
+    "stages_cleared": 12
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_165807_story_lucifer2"
+  },
   {
    "ts": "2026-09-17T16:57:35",
    "script": "story",
@@ -6986,44 +7017,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_103344_daily_dungeon_deno"
-  },
-  {
-   "ts": "2026-09-16T10:33:01",
-   "script": "joint_team_daily_quest",
-   "account": "deno",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "panel_swipes": 2,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_103224_joint_team_daily_quest_deno"
-  },
-  {
-   "ts": "2026-09-16T10:32:23",
-   "script": "mail",
-   "account": "deno",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260916_103220_mail_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 61186,
+  "now": 61309,
   "segments": [
    {
     "b": 28956,
@@ -10845,8 +10844,36 @@
      61075
     ],
     "handoff": 61087,
+    "rc": 0,
+    "e": 61190,
+    "secs": 102,
+    "why": ""
+   },
+   {
+    "b": 61190,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     61191,
+     61212
+    ],
+    "handoff": 61227,
+    "rc": 5,
+    "e": 61243,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 61243,
+    "a": "test1",
+    "s": "story",
+    "login": [
+     61244,
+     61264
+    ],
+    "handoff": 61273,
     "rc": null,
-    "e": 61186
+    "e": 61309
    }
   ],
   "idle": []
@@ -11224,14 +11251,14 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 72,
-  "relogMinutes": 37.1,
-  "retries": 46,
+  "switches": 74,
+  "relogMinutes": 38.2,
+  "retries": 47,
   "tasks": {
    "island_challenge": {
-    "runs": 7,
-    "minutes": 4.0,
-    "failed": 7
+    "runs": 8,
+    "minutes": 4.2,
+    "failed": 8
    },
    "dailyclaim": {
     "runs": 17,
@@ -11319,8 +11346,8 @@
     "failed": 2
    },
    "story": {
-    "runs": 10,
-    "minutes": 17.8,
+    "runs": 11,
+    "minutes": 19.5,
     "failed": 5
    }
   }
