@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T16:43:19.999750",
+ "generatedAt": "2026-09-17T16:45:23.064597",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
+  "account": "fake1",
   "mode": "story",
-  "since": "16:41:05"
+  "since": "16:45:18"
  },
  "grid": {
   "tasks": [
@@ -453,6 +453,18 @@
    "task": "sky_pillar",
    "since": "2026-09-13T15:38:01",
    "why": "lost floor/stage after 3 clear(s) — the team cannot take the next stage"
+  },
+  {
+   "account": "fake7",
+   "task": "story",
+   "since": "2026-09-17T16:43:37",
+   "why": "stage 1 never produced a result in 150s — the battle ran long or ended on a screen story.py does not know (frame kept)"
+  },
+  {
+   "account": "smurf",
+   "task": "story",
+   "since": "2026-09-17T16:45:18",
+   "why": "lost at stage 8 after 7 clear(s) — the next stage needs a stronger team"
   }
  ],
  "islandChallenge": [
@@ -503,11 +515,48 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-17T16:37:21.040129",
+  "label": "smurf",
+  "at": "2026-09-17T16:43:58.934320",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T16:45:18",
+   "script": "story",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 69,
+   "stats": {
+    "skip_retry": 11,
+    "afk_card": 2,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 7
+   },
+   "incomplete": [
+    "story: lost at stage 8 after 7 clear(s) — the next stage needs a stronger team"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_164409_story_smurf"
+  },
+  {
+   "ts": "2026-09-17T16:43:37",
+   "script": "story",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 151,
+   "stats": {
+    "battle_timeout": 1,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [
+    "story: stage 1 never produced a result"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_164106_story_fake7"
+  },
   {
    "ts": "2026-09-17T16:41:05",
    "script": "story",
@@ -6956,39 +7005,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_102603_rank_match_test1"
-  },
-  {
-   "ts": "2026-09-16T10:26:01",
-   "script": "victory_road",
-   "account": "test1",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_102553_victory_road_test1"
-  },
-  {
-   "ts": "2026-09-16T10:25:53",
-   "script": "combat_daily",
-   "account": "test1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "title_reread_named": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_102545_combat_daily_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 60200,
+  "now": 60323,
   "segments": [
    {
     "b": 28956,
@@ -10699,14 +10721,58 @@
     "login": null,
     "handoff": 60066,
     "rc": 1,
-    "e": 60200,
+    "e": 60218,
     "secs": 215,
     "why": "story: stage 5 never produced a result"
+   },
+   {
+    "b": 60218,
+    "a": "smurf",
+    "s": "story",
+    "login": [
+     60218,
+     60238
+    ],
+    "handoff": 60248,
+    "rc": 1,
+    "e": 60318,
+    "secs": 69,
+    "why": "story: lost at stage 8 after 7 clear(s) — the next stage needs a stronger team"
+   },
+   {
+    "b": 60318,
+    "a": "fake1",
+    "s": "story",
+    "login": [
+     60319,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 60323
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T16:45:18",
+   "account": "smurf",
+   "task": "story",
+   "rc": 1,
+   "secs": 69,
+   "why": "story: lost at stage 8 after 7 clear(s) — the next stage needs a stronger team",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_164409_story_smurf__KEEP_0050_164518_story_lost_8.png"
+  },
+  {
+   "ts": "2026-09-17T16:43:37",
+   "account": "fake7",
+   "task": "story",
+   "rc": 1,
+   "secs": 151,
+   "why": "story: stage 1 never produced a result",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_164106_story_fake7__KEEP_0004_164337_story_timeout_1.png"
+  },
   {
    "ts": "2026-09-17T16:41:05",
    "account": "fake7",
@@ -11043,9 +11109,9 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 64,
-  "relogMinutes": 32.9,
-  "retries": 42,
+  "switches": 66,
+  "relogMinutes": 33.4,
+  "retries": 44,
   "tasks": {
    "island_challenge": {
     "runs": 7,
@@ -11138,9 +11204,9 @@
     "failed": 2
    },
    "story": {
-    "runs": 2,
-    "minutes": 5.1,
-    "failed": 1
+    "runs": 4,
+    "minutes": 8.8,
+    "failed": 3
    }
   }
  },
