@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T10:18:44.532830",
+ "generatedAt": "2026-09-17T10:20:47.406996",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "run_pvp_ranked",
-  "since": "10:18:39"
+  "mode": "weekend_bash",
+  "since": "10:20:45"
  },
  "grid": {
   "tasks": [
@@ -284,9 +284,9 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 126,
-  "todo": 61,
+  "done": 129,
+  "todo": 58,
   "gaveUp": 3,
   "unavailable": 4,
   "windowed": 15
@@ -548,6 +548,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T10:20:45",
+   "script": "sky_pillar",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 35,
+   "stats": {
+    "stages_cleared": 2,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 88,
+    "stage": 8
+   },
+   "dir": "debug_runs/20260917_102009_sky_pillar_lucifer1"
+  },
+  {
+   "ts": "2026-09-17T10:20:08",
+   "script": "collect_hoopa_keys",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_102001_collect_hoopa_keys_lucifer1"
+  },
+  {
+   "ts": "2026-09-17T10:20:00",
+   "script": "run_pvp_ranked",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 79,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 66
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 4
+   },
+   "dir": "debug_runs/20260917_101840_run_pvp_ranked_lucifer1"
+  },
   {
    "ts": "2026-09-17T10:18:39",
    "script": "paradise",
@@ -6939,62 +6987,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_082416_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-16T08:24:15",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 0,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_082414_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-16T08:24:10",
-   "script": "sky_pillar",
-   "account": "nova",
-   "rc": 0,
-   "secs": 32,
-   "stats": {
-    "stages_cleared": 2,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 97,
-    "stage": 3
-   },
-   "dir": "debug_runs/20260916_082338_sky_pillar_nova"
-  },
-  {
-   "ts": "2026-09-16T08:23:34",
-   "script": "sky_pillar",
-   "account": "nova",
-   "rc": 1,
-   "secs": 55,
-   "stats": {
-    "stages_cleared": 4,
-    "no_setform": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "sky_pillar: stage 5 did not complete"
-   ],
-   "values": {
-    "floor": 97,
-    "stage": 1
-   },
-   "dir": "debug_runs/20260916_082239_sky_pillar_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 37124,
+  "now": 37247,
   "segments": [
    {
     "b": 28956,
@@ -8744,8 +8742,41 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 37120,
+    "rc": 0,
+    "e": 37200,
+    "secs": 79,
+    "why": ""
+   },
+   {
+    "b": 37200,
+    "a": "lucifer1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 37200,
+    "rc": 0,
+    "e": 37209,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 37209,
+    "a": "lucifer1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 37209,
+    "rc": 0,
+    "e": 37245,
+    "secs": 35,
+    "why": ""
+   },
+   {
+    "b": 37245,
+    "a": "lucifer1",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": null,
     "rc": null,
-    "e": 37124
+    "e": 37247
    }
   ],
   "idle": []
@@ -9007,18 +9038,18 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 4,
-    "minutes": 4.9,
+    "runs": 5,
+    "minutes": 6.3,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 10,
-    "minutes": 1.6,
+    "runs": 11,
+    "minutes": 1.8,
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 10,
-    "minutes": 10.8,
+    "runs": 11,
+    "minutes": 11.4,
     "failed": 1
    },
    "faction": {
