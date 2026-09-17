@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:34:03.675621",
+ "generatedAt": "2026-09-17T08:36:07.044794",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "sky_pillar",
-  "since": "08:33:20"
+  "account": "jeff",
+  "mode": "dailyclaim",
+  "since": "08:35:51"
  },
  "grid": {
   "tasks": [
@@ -46,7 +46,7 @@
      "⏰",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "·",
@@ -75,7 +75,7 @@
      "-",
      "·",
      "·",
-     "·"
+     "💤"
     ]
    },
    {
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 27,
-  "todo": 167,
+  "done": 28,
+  "todo": 165,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -505,10 +505,19 @@
    "staminaMax": 25,
    "staminaAt": "2026-09-17T08:03:17",
    "nextAt": "2026-09-17T09:33:22"
+  },
+  {
+   "account": "jeff",
+   "fights": 3,
+   "stamina": 18,
+   "staminaMax": 48,
+   "staminaAt": "2026-09-17T08:35:43",
+   "nextAt": "2026-09-17T08:50:51"
   }
  ],
  "snoozed": {
-  "chris|island_challenge": "2026-09-17T09:33"
+  "chris|island_challenge": "2026-09-17T09:33",
+  "jeff|island_challenge": "2026-09-17T09:05"
  },
  "ownerOnline": [],
  "keys": {
@@ -534,11 +543,45 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-17T08:20:52.479876",
+  "label": "jeff",
+  "at": "2026-09-17T08:34:58.825162",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:35:51",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 41,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 18,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260917_083509_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-17T08:34:37",
+   "script": "sky_pillar",
+   "account": "nova",
+   "rc": 0,
+   "secs": 76,
+   "stats": {
+    "stages_cleared": 6,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 97,
+    "stage": 9
+   },
+   "dir": "debug_runs/20260917_083320_sky_pillar_nova"
+  },
   {
    "ts": "2026-09-17T08:33:19",
    "script": "collect_hoopa_keys",
@@ -6909,44 +6952,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_125920_guild_war_fake4"
-  },
-  {
-   "ts": "2026-09-15T12:59:16",
-   "script": "guild_war",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 16,
-   "stats": {
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_never_entered": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_125859_guild_war_fake4"
-  },
-  {
-   "ts": "2026-09-15T12:58:58",
-   "script": "mail",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 14,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260915_125854_mail_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 30844,
+  "now": 30967,
   "segments": [
    {
     "b": 28956,
@@ -7308,8 +7319,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 30800,
+    "rc": 0,
+    "e": 30877,
+    "secs": 76,
+    "why": ""
+   },
+   {
+    "b": 30877,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     30878,
+     30898
+    ],
+    "handoff": 30909,
+    "rc": 5,
+    "e": 30951,
+    "secs": 41,
+    "why": ""
+   },
+   {
+    "b": 30951,
+    "a": "jeff",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 30954,
     "rc": null,
-    "e": 30844
+    "e": 30967
    }
   ],
   "idle": []
@@ -7390,14 +7426,14 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 2,
-  "relogMinutes": 1.1,
-  "retries": 5,
+  "switches": 3,
+  "relogMinutes": 1.6,
+  "retries": 6,
   "tasks": {
    "island_challenge": {
-    "runs": 1,
-    "minutes": 0.2,
-    "failed": 1
+    "runs": 2,
+    "minutes": 0.9,
+    "failed": 2
    },
    "dailyclaim": {
     "runs": 2,
@@ -7455,8 +7491,8 @@
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 1,
-    "minutes": 1.0,
+    "runs": 2,
+    "minutes": 2.3,
     "failed": 0
    },
    "faction": {
