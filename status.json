@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:07:23.336275",
+ "generatedAt": "2026-09-17T08:09:26.520758",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "pokemon_home",
-  "since": "08:05:52"
+  "mode": "combat_daily",
+  "since": "08:08:03"
  },
  "grid": {
   "tasks": [
@@ -86,7 +86,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 5,
-  "todo": 189,
+  "done": 6,
+  "todo": 188,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 15
@@ -540,6 +540,27 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:08:03",
+   "script": "pokemon_home",
+   "account": "chris",
+   "rc": 0,
+   "secs": 129,
+   "stats": {
+    "title_reread_named": 1,
+    "reached_via_trial": 1,
+    "merge_refused": 1,
+    "grid_refit": 2,
+    "merge_moved_instead": 2,
+    "balls_unsettled_opened": 1,
+    "counter_misread": 2,
+    "pair_went_stale": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_080553_pokemon_home_chris"
+  },
   {
    "ts": "2026-09-17T08:05:52",
    "script": "daily_dungeon",
@@ -6942,25 +6963,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_105949_victory_road_dre"
-  },
-  {
-   "ts": "2026-09-15T10:59:48",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 0,
-   "secs": 9,
-   "stats": {
-    "title_reread_named": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_105938_combat_daily_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 29243,
+  "now": 29366,
   "segments": [
    {
     "b": 28956,
@@ -7035,8 +7043,19 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 29153,
+    "rc": 0,
+    "e": 29283,
+    "secs": 129,
+    "why": ""
+   },
+   {
+    "b": 29283,
+    "a": "chris",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29288,
     "rc": null,
-    "e": 29243
+    "e": 29366
    }
   ],
   "idle": []
@@ -7108,6 +7127,11 @@
    "daily_dungeon": {
     "runs": 1,
     "minutes": 0.2,
+    "failed": 0
+   },
+   "pokemon_home": {
+    "runs": 1,
+    "minutes": 2.1,
     "failed": 0
    }
   }
