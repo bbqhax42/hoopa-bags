@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:19:13.415535",
+ "generatedAt": "2026-09-17T09:21:16.283992",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
   "mode": "combat_daily",
-  "since": "09:19:08"
+  "since": "09:21:10"
  },
  "grid": {
   "tasks": [
@@ -159,7 +159,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 69,
-  "todo": 121,
-  "gaveUp": 3,
+  "todo": 120,
+  "gaveUp": 4,
   "unavailable": 1,
   "windowed": 15
  },
@@ -548,6 +548,32 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:21:10",
+   "script": "combat_daily",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 117,
+   "stats": {
+    "title_reread_named": 5,
+    "marginal_afk_rewards": 2,
+    "refused_quick_bar": 1,
+    "near_miss_vr_rank": 3,
+    "adv_energy_spent": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "upgrade_no_change": 1,
+    "incomplete": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [
+    "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 o ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260917_091913_combat_daily_fake2"
+  },
   {
    "ts": "2026-09-17T09:19:07",
    "script": "pokemon_home",
@@ -6884,29 +6910,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-15T16:35:28",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 44,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 1,
-    "fights_today": 9
-   },
-   "dir": "debug_runs/20260915_163443_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 33553,
+  "now": 33676,
   "segments": [
    {
     "b": 28956,
@@ -7876,13 +7885,35 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 33552,
-    "rc": null,
-    "e": 33553
+    "rc": 1,
+    "e": 33670,
+    "secs": 117,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   },
+   {
+    "b": 33670,
+    "a": "fake2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33671,
+    "rc": 1,
+    "e": 33676,
+    "secs": 117,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T09:21:10",
+   "account": "fake2",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 117,
+   "why": "combat_daily: upgrade a Pokemon: Level Up did nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_091913_combat_daily_fake2__KEEP_0143_092046_upgrade_no_change.png"
+  },
   {
    "ts": "2026-09-17T09:10:27",
    "account": "fake1",
@@ -8032,7 +8063,7 @@
   "since": "2026-09-17T08:00",
   "switches": 7,
   "relogMinutes": 3.5,
-  "retries": 15,
+  "retries": 16,
   "tasks": {
    "island_challenge": {
     "runs": 3,
@@ -8065,9 +8096,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 8,
-    "minutes": 8.9,
-    "failed": 4
+    "runs": 9,
+    "minutes": 10.8,
+    "failed": 5
    },
    "victory_road": {
     "runs": 5,
