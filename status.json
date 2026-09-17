@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T16:39:13.280916",
+ "generatedAt": "2026-09-17T16:41:16.218030",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
   "mode": "story",
-  "since": "16:37:00"
+  "since": "16:41:05"
  },
  "grid": {
   "tasks": [
@@ -508,6 +508,24 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T16:41:05",
+   "script": "story",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 215,
+   "stats": {
+    "skip_retry": 12,
+    "battle_timeout": 1,
+    "incomplete": 1,
+    "stages_cleared": 4
+   },
+   "incomplete": [
+    "story: stage 5 never produced a result"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_163730_story_fake7"
+  },
   {
    "ts": "2026-09-17T16:37:00",
    "script": "story",
@@ -6965,39 +6983,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_102545_combat_daily_test1"
-  },
-  {
-   "ts": "2026-09-16T10:25:44",
-   "script": "combat_daily",
-   "account": "test1",
-   "rc": 1,
-   "secs": 166,
-   "stats": {
-    "title_reread_named": 1,
-    "near_miss_vr_rank": 1,
-    "near_miss_battle_victory_confirm": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_confirm_dialog": 1,
-    "pokemon_upgraded": 1,
-    "refused_reward_banner_close": 4,
-    "near_miss_adventure_event": 1,
-    "reward_banner_stuck": 1,
-    "adv_energy_spent": 1,
-    "gacha_rare_reveal": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260916_102258_combat_daily_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 59953,
+  "now": 60076,
   "segments": [
    {
     "b": 28956,
@@ -10696,13 +10687,35 @@
      59841
     ],
     "handoff": 59849,
-    "rc": null,
-    "e": 59953
+    "rc": 1,
+    "e": 60065,
+    "secs": 215,
+    "why": "story: stage 5 never produced a result"
+   },
+   {
+    "b": 60065,
+    "a": "fake7",
+    "s": "story",
+    "login": null,
+    "handoff": 60066,
+    "rc": 1,
+    "e": 60076,
+    "secs": 215,
+    "why": "story: stage 5 never produced a result"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T16:41:05",
+   "account": "fake7",
+   "task": "story",
+   "rc": 1,
+   "secs": 215,
+   "why": "story: stage 5 never produced a result",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_163730_story_fake7__KEEP_0028_164105_story_timeout_5.png"
+  },
   {
    "ts": "2026-09-17T16:17:21",
    "account": "test1",
@@ -11032,7 +11045,7 @@
   "since": "2026-09-17T08:00",
   "switches": 64,
   "relogMinutes": 32.9,
-  "retries": 41,
+  "retries": 42,
   "tasks": {
    "island_challenge": {
     "runs": 7,
@@ -11125,9 +11138,9 @@
     "failed": 2
    },
    "story": {
-    "runs": 1,
-    "minutes": 1.5,
-    "failed": 0
+    "runs": 2,
+    "minutes": 5.1,
+    "failed": 1
    }
   }
  },
