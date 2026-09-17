@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:05:20.372980",
+ "generatedAt": "2026-09-17T08:07:23.336275",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "joint_battle",
-  "since": "08:04:43"
+  "mode": "pokemon_home",
+  "since": "08:05:52"
  },
  "grid": {
   "tasks": [
@@ -84,8 +84,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 3,
-  "todo": 191,
+  "done": 5,
+  "todo": 189,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 15
@@ -540,6 +540,19 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:05:52",
+   "script": "daily_dungeon",
+   "account": "chris",
+   "rc": 0,
+   "secs": 15,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_080536_daily_dungeon_chris"
+  },
   {
    "ts": "2026-09-17T08:04:42",
    "script": "joint_team_daily_quest",
@@ -6942,30 +6955,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_105938_combat_daily_dre"
-  },
-  {
-   "ts": "2026-09-15T10:59:37",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 1,
-   "secs": 121,
-   "stats": {
-    "marginal_afk_rewards": 1,
-    "title_reread_named": 3,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 +) a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260915_105735_combat_daily_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 29120,
+  "now": 29243,
   "segments": [
    {
     "b": 28956,
@@ -7021,7 +7016,27 @@
     "login": null,
     "handoff": 29085,
     "rc": null,
-    "e": 29120
+    "e": 29131
+   },
+   {
+    "b": 29131,
+    "a": "chris",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 29136,
+    "rc": 0,
+    "e": 29152,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 29152,
+    "a": "chris",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 29153,
+    "rc": null,
+    "e": 29243
    }
   ],
   "idle": []
@@ -7088,6 +7103,11 @@
    "joint_team_daily_quest": {
     "runs": 1,
     "minutes": 0.6,
+    "failed": 0
+   },
+   "daily_dungeon": {
+    "runs": 1,
+    "minutes": 0.2,
     "failed": 0
    }
   }
