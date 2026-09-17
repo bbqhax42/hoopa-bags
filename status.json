@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T16:55:39.257549",
+ "generatedAt": "2026-09-17T16:57:42.864171",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
+  "account": "lucifer2",
   "mode": "story",
-  "since": "16:54:50"
+  "since": "16:57:35"
  },
  "grid": {
   "tasks": [
@@ -461,6 +461,12 @@
    "why": "stage 1 never produced a result in 150s — the battle ran long or ended on a screen story.py does not know (frame kept)"
   },
   {
+   "account": "fake6",
+   "task": "story",
+   "since": "2026-09-17T16:57:35",
+   "why": "lost at stage 1 after 0 clear(s) — the next stage needs a stronger team"
+  },
+  {
    "account": "fake7",
    "task": "story",
    "since": "2026-09-17T16:43:37",
@@ -521,11 +527,44 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-17T16:55:11.105370",
+  "label": "fake6",
+  "at": "2026-09-17T16:57:10.072062",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T16:57:35",
+   "script": "story",
+   "account": "fake6",
+   "rc": 1,
+   "secs": 15,
+   "stats": {
+    "skip_retry": 2,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [
+    "story: lost at stage 1 after 0 clear(s) — the next stage needs a stronger team"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_165719_story_fake6"
+  },
+  {
+   "ts": "2026-09-17T16:56:47",
+   "script": "story",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 86,
+   "stats": {
+    "skip_retry": 14,
+    "afk_card": 2,
+    "stages_cleared": 12
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_165521_story_fake5"
+  },
   {
    "ts": "2026-09-17T16:54:50",
    "script": "story",
@@ -6979,45 +7018,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260916_103220_mail_deno"
-  },
-  {
-   "ts": "2026-09-16T10:32:19",
-   "script": "dailyclaim",
-   "account": "deno",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_103146_dailyclaim_deno"
-  },
-  {
-   "ts": "2026-09-16T10:31:12",
-   "script": "sky_pillar",
-   "account": "test1",
-   "rc": 0,
-   "secs": 79,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 2,
-    "stage": 5
-   },
-   "dir": "debug_runs/20260916_102952_sky_pillar_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 60939,
+  "now": 61063,
   "segments": [
    {
     "b": 28956,
@@ -10811,13 +10817,50 @@
      60911
     ],
     "handoff": 60921,
+    "rc": 0,
+    "e": 61008,
+    "secs": 86,
+    "why": ""
+   },
+   {
+    "b": 61008,
+    "a": "fake6",
+    "s": "story",
+    "login": [
+     61008,
+     61030
+    ],
+    "handoff": 61039,
+    "rc": 1,
+    "e": 61055,
+    "secs": 15,
+    "why": "story: lost at stage 1 after 0 clear(s) — the next stage needs a stronger team"
+   },
+   {
+    "b": 61055,
+    "a": "lucifer2",
+    "s": "story",
+    "login": [
+     61056,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 60939
+    "e": 61063
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T16:57:35",
+   "account": "fake6",
+   "task": "story",
+   "rc": 1,
+   "secs": 15,
+   "why": "story: lost at stage 1 after 0 clear(s) — the next stage needs a stronger team",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_165719_story_fake6__KEEP_0004_165728_story_lost_1.png"
+  },
   {
    "ts": "2026-09-17T16:54:50",
    "account": "fake4",
@@ -11181,9 +11224,9 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 70,
-  "relogMinutes": 36.0,
-  "retries": 45,
+  "switches": 72,
+  "relogMinutes": 36.5,
+  "retries": 46,
   "tasks": {
    "island_challenge": {
     "runs": 7,
@@ -11276,9 +11319,9 @@
     "failed": 2
    },
    "story": {
-    "runs": 8,
-    "minutes": 16.1,
-    "failed": 4
+    "runs": 10,
+    "minutes": 17.8,
+    "failed": 5
    }
   }
  },
