@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T10:14:38.160316",
+ "generatedAt": "2026-09-17T10:16:41.567498",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "combat_daily",
-  "since": "10:14:03"
+  "mode": "paradise",
+  "since": "10:15:29"
  },
  "grid": {
   "tasks": [
@@ -279,9 +279,9 @@
      "✓",
      "✓",
      "✓",
-     "✗2",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 122,
-  "todo": 64,
-  "gaveUp": 4,
+  "done": 125,
+  "todo": 62,
+  "gaveUp": 3,
   "unavailable": 4,
   "windowed": 15
  },
@@ -548,6 +548,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T10:15:29",
+   "script": "rank_match",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 4,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "attempts_before": 0,
+    "matches": 0,
+    "gifts": 0,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260917_101524_rank_match_lucifer1"
+  },
+  {
+   "ts": "2026-09-17T10:15:23",
+   "script": "victory_road",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_101515_victory_road_lucifer1"
+  },
+  {
+   "ts": "2026-09-17T10:15:14",
+   "script": "combat_daily",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 70,
+   "stats": {
+    "title_reread_named": 2,
+    "near_miss_vr_rank": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_101403_combat_daily_lucifer1"
+  },
   {
    "ts": "2026-09-17T10:14:02",
    "script": "combat_daily",
@@ -6935,67 +6979,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_082230_collect_hoopa_keys_nova"
-  },
-  {
-   "ts": "2026-09-16T08:22:28",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 0,
-   "secs": 68,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 2,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 164
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 155
-   },
-   "dir": "debug_runs/20260916_082120_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-09-16T08:21:19",
-   "script": "paradise",
-   "account": "nova",
-   "rc": 0,
-   "secs": 160,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 83,
-    "pass_claims": 4,
-    "upgraded_sports_gloves": 1,
-    "dex_milestones": 4,
-    "dex_activated": 8,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "12/12"
-   },
-   "dir": "debug_runs/20260916_081838_paradise_nova"
-  },
-  {
-   "ts": "2026-09-16T08:18:37",
-   "script": "rank_match",
-   "account": "nova",
-   "rc": 0,
-   "secs": 4,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_before": 0,
-    "matches": 0,
-    "gifts": 0,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260916_081833_rank_match_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 36878,
+  "now": 37001,
   "segments": [
    {
     "b": 28956,
@@ -8702,9 +8691,40 @@
     "login": null,
     "handoff": 36843,
     "rc": 1,
-    "e": 36878,
+    "e": 36914,
     "secs": 93,
     "why": ""
+   },
+   {
+    "b": 36914,
+    "a": "lucifer1",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 36915,
+    "rc": 0,
+    "e": 36923,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 36923,
+    "a": "lucifer1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 36924,
+    "rc": 0,
+    "e": 36929,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 36929,
+    "a": "lucifer1",
+    "s": "paradise",
+    "login": null,
+    "handoff": 36930,
+    "rc": null,
+    "e": 37001
    }
   ],
   "idle": []
@@ -8946,17 +8966,17 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 19,
-    "minutes": 21.5,
+    "runs": 20,
+    "minutes": 22.6,
     "failed": 10
    },
    "victory_road": {
-    "runs": 10,
-    "minutes": 1.3,
+    "runs": 11,
+    "minutes": 1.5,
     "failed": 0
    },
    "rank_match": {
-    "runs": 13,
+    "runs": 14,
     "minutes": 7.5,
     "failed": 0
    },
