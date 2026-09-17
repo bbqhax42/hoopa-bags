@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:06:55.203793",
+ "generatedAt": "2026-09-17T09:08:58.101614",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake1",
-  "mode": "dailyclaim",
-  "since": "09:06:40"
+  "mode": "combat_daily",
+  "since": "09:08:28"
  },
  "grid": {
   "tasks": [
@@ -129,12 +129,12 @@
    {
     "account": "fake1",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 53,
-  "todo": 137,
+  "done": 57,
+  "todo": 133,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -543,11 +543,72 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-17T09:06:17.100998",
+  "label": "fake1",
+  "at": "2026-09-17T09:07:01.050404",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:08:27",
+   "script": "pokemon_home",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 22,
+   "stats": {
+    "reached_via_trial": 1,
+    "balls_unsettled_opened": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_090804_pokemon_home_fake1"
+  },
+  {
+   "ts": "2026-09-17T09:08:03",
+   "script": "daily_dungeon",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_090748_daily_dungeon_fake1"
+  },
+  {
+   "ts": "2026-09-17T09:07:43",
+   "script": "mail",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260917_090740_mail_fake1"
+  },
+  {
+   "ts": "2026-09-17T09:07:39",
+   "script": "dailyclaim",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_090708_dailyclaim_fake1"
+  },
   {
    "ts": "2026-09-17T09:06:40",
    "script": "island_challenge",
@@ -6845,89 +6906,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260915_151354_rank_match_fake3"
-  },
-  {
-   "ts": "2026-09-15T15:13:50",
-   "script": "rank_match",
-   "account": "fake3",
-   "rc": 1,
-   "secs": 10,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151339_rank_match_fake3"
-  },
-  {
-   "ts": "2026-09-15T15:13:03",
-   "script": "rank_match",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 67,
-   "stats": {
-    "near_miss_go_button": 2,
-    "formation_set": 1,
-    "skip_tapped": 8,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260915_151156_rank_match_fake2"
-  },
-  {
-   "ts": "2026-09-15T15:11:04",
-   "script": "rank_match",
-   "account": null,
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "leftover_match": 1,
-    "near_miss_go_button": 2,
-    "skip_tapped": 5,
-    "matches": 5,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "matches": 5,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260915_151007_rank_match_na"
-  },
-  {
-   "ts": "2026-09-15T15:08:50",
-   "script": "rank_match",
-   "account": null,
-   "rc": 1,
-   "secs": 321,
-   "stats": {
-    "near_miss_escape_confirm": 2,
-    "vr_not_open": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_150329_rank_match_na"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 32815,
+  "now": 32938,
   "segments": [
    {
     "b": 28956,
@@ -7706,11 +7690,55 @@
     "s": "dailyclaim",
     "login": [
      32801,
-     null
+     32821
     ],
-    "handoff": null,
+    "handoff": 32828,
+    "rc": 0,
+    "e": 32859,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 32859,
+    "a": "fake1",
+    "s": "mail",
+    "login": null,
+    "handoff": 32860,
+    "rc": 0,
+    "e": 32864,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 32864,
+    "a": "fake1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 32868,
+    "rc": 0,
+    "e": 32883,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 32883,
+    "a": "fake1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 32884,
+    "rc": 0,
+    "e": 32908,
+    "secs": 22,
+    "why": ""
+   },
+   {
+    "b": 32908,
+    "a": "fake1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 32912,
     "rc": null,
-    "e": 32815
+    "e": 32938
    }
   ],
   "idle": []
@@ -7855,7 +7883,7 @@
  "day": {
   "since": "2026-09-17T08:00",
   "switches": 6,
-  "relogMinutes": 2.6,
+  "relogMinutes": 3.0,
   "retries": 14,
   "tasks": {
    "island_challenge": {
@@ -7864,12 +7892,12 @@
     "failed": 3
    },
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 4.2,
+    "runs": 6,
+    "minutes": 4.7,
     "failed": 2
    },
    "mail": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 0.2,
     "failed": 0
    },
@@ -7879,13 +7907,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 4,
-    "minutes": 1.3,
+    "runs": 5,
+    "minutes": 1.5,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 4,
-    "minutes": 7.3,
+    "runs": 5,
+    "minutes": 7.7,
     "failed": 0
    },
    "combat_daily": {
