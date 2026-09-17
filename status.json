@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T15:45:30.338981",
+ "generatedAt": "2026-09-17T15:47:33.303643",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
+  "account": "fake2",
   "mode": "rank_match",
-  "since": "15:44:20"
+  "since": "15:46:42"
  },
  "grid": {
   "tasks": [
@@ -137,9 +137,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 197,
-  "todo": 20,
+  "done": 199,
+  "todo": 18,
   "gaveUp": 8,
   "unavailable": 5,
   "windowed": 0
@@ -502,11 +502,49 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-17T15:44:43.342387",
+  "label": "fake2",
+  "at": "2026-09-17T15:47:02.983125",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T15:46:41",
+   "script": "guild_war",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 41,
+   "stats": {
+    "near_miss_vr_rank": 2,
+    "near_miss_last_hit": 2,
+    "marginal_last_hit": 2,
+    "gw_no_return": 1,
+    "assist_already_set": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_154600_guild_war_fake1"
+  },
+  {
+   "ts": "2026-09-17T15:45:59",
+   "script": "rank_match",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "near_miss_go_button": 2,
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260917_154455_rank_match_fake1"
+  },
   {
    "ts": "2026-09-17T15:44:20",
    "script": "rank_match",
@@ -6895,54 +6933,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_095948_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-16T09:59:47",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 120,
-   "stats": {
-    "title_reread_named": 4,
-    "near_miss_afk_rewards": 3,
-    "marginal_afk_rewards": 2,
-    "near_miss_vr_rank": 6,
-    "marginal_adventure_event": 1,
-    "near_miss_pokemon_upgrade": 1,
-    "pokemon_upgraded": 1,
-    "near_miss_premium_gacha": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 8/8 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260916_095746_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-16T09:57:41",
-   "script": "pokemon_home",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 131,
-   "stats": {
-    "reached_via_trial": 1,
-    "merge_moved_instead": 1,
-    "counter_misread": 2,
-    "balls_unsettled_opened": 1,
-    "phantom_creations": 0,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_095530_pokemon_home_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 56730,
+  "now": 56853,
   "segments": [
    {
     "b": 28956,
@@ -10266,8 +10262,33 @@
      56683
     ],
     "handoff": 56695,
+    "rc": 0,
+    "e": 56759,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 56759,
+    "a": "fake1",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 56759,
+    "rc": 0,
+    "e": 56802,
+    "secs": 41,
+    "why": ""
+   },
+   {
+    "b": 56802,
+    "a": "fake2",
+    "s": "rank_match",
+    "login": [
+     56802,
+     56822
+    ],
+    "handoff": 56830,
     "rc": null,
-    "e": 56730
+    "e": 56853
    }
   ],
   "idle": []
@@ -10582,8 +10603,8 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 44,
-  "relogMinutes": 22.9,
+  "switches": 45,
+  "relogMinutes": 23.3,
   "retries": 38,
   "tasks": {
    "island_challenge": {
@@ -10627,8 +10648,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 23,
-    "minutes": 14.3,
+    "runs": 24,
+    "minutes": 15.3,
     "failed": 0
    },
    "paradise": {
@@ -10672,8 +10693,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 32,
-    "minutes": 8.0,
+    "runs": 33,
+    "minutes": 8.7,
     "failed": 0
    }
   }
