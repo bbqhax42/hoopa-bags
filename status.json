@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:15:36.471825",
+ "generatedAt": "2026-09-17T08:17:39.419163",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "run_pvp_ranked",
-  "since": "08:14:39"
+  "mode": "faction",
+  "since": "08:17:13"
  },
  "grid": {
   "tasks": [
@@ -92,9 +92,9 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "-",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 10,
-  "todo": 184,
+  "done": 13,
+  "todo": 181,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 15
@@ -540,6 +540,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:17:12",
+   "script": "sky_pillar",
+   "account": "chris",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 135,
+    "stage": 9
+   },
+   "dir": "debug_runs/20260917_081611_sky_pillar_chris"
+  },
+  {
+   "ts": "2026-09-17T08:16:10",
+   "script": "collect_hoopa_keys",
+   "account": "chris",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_081602_collect_hoopa_keys_chris"
+  },
+  {
+   "ts": "2026-09-17T08:16:01",
+   "script": "run_pvp_ranked",
+   "account": "chris",
+   "rc": 0,
+   "secs": 81,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 4,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 32
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 1
+   },
+   "dir": "debug_runs/20260917_081440_run_pvp_ranked_chris"
+  },
   {
    "ts": "2026-09-17T08:14:39",
    "script": "paradise",
@@ -6923,65 +6971,12 @@
     "tiers": 1
    },
    "dir": "debug_runs/20260915_122349_championship_chris"
-  },
-  {
-   "ts": "2026-09-15T12:22:20",
-   "script": "championship",
-   "account": "chris",
-   "rc": 1,
-   "secs": 52,
-   "stats": {
-    "skip_tapped": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "championship: fight 1 did not complete"
-   ],
-   "values": {
-    "fights": 0,
-    "tiers": 1
-   },
-   "dir": "debug_runs/20260915_122128_championship_chris"
-  },
-  {
-   "ts": "2026-09-15T11:27:25",
-   "script": "mail",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260915_112720_mail_jeff"
-  },
-  {
-   "ts": "2026-09-15T11:06:07",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 44,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 8,
-    "fights_today": 6
-   },
-   "dir": "debug_runs/20260915_110522_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 29736,
+  "now": 29859,
   "segments": [
    {
     "b": 28956,
@@ -7122,8 +7117,41 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 29680,
+    "rc": 0,
+    "e": 29762,
+    "secs": 81,
+    "why": ""
+   },
+   {
+    "b": 29762,
+    "a": "chris",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 29762,
+    "rc": 0,
+    "e": 29771,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 29771,
+    "a": "chris",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 29771,
+    "rc": 0,
+    "e": 29833,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 29833,
+    "a": "chris",
+    "s": "faction",
+    "login": null,
+    "handoff": 29836,
     "rc": null,
-    "e": 29736
+    "e": 29859
    }
   ],
   "idle": []
@@ -7229,6 +7257,21 @@
    "paradise": {
     "runs": 1,
     "minutes": 3.4,
+    "failed": 0
+   },
+   "run_pvp_ranked": {
+    "runs": 1,
+    "minutes": 1.4,
+    "failed": 0
+   },
+   "collect_hoopa_keys": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   },
+   "sky_pillar": {
+    "runs": 1,
+    "minutes": 1.0,
     "failed": 0
    }
   }
