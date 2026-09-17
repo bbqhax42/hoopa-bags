@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:40:12.665681",
+ "generatedAt": "2026-09-17T08:42:15.563268",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "pokemon_home",
-  "since": "08:38:15"
+  "mode": "combat_daily",
+  "since": "08:40:51"
  },
  "grid": {
   "tasks": [
@@ -62,7 +62,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 33,
-  "todo": 160,
+  "done": 34,
+  "todo": 159,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -548,6 +548,21 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:40:51",
+   "script": "pokemon_home",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 15,
+   "stats": {
+    "craft_pill_gone": 1,
+    "reached_via_trial": 1,
+    "charges_spent": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_084035_pokemon_home_jeff"
+  },
   {
    "ts": "2026-09-17T08:38:15",
    "script": "daily_dungeon",
@@ -6926,31 +6941,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260915_134302_guild_war_fake6"
-  },
-  {
-   "ts": "2026-09-15T13:43:00",
-   "script": "mail",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "claim_all_tapped": 1,
-    "reward_card_closed": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 12,
-    "reward_cards": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260915_134256_mail_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 31213,
+  "now": 31335,
   "segments": [
    {
     "b": 28956,
@@ -7391,7 +7387,27 @@
     "login": null,
     "handoff": 31096,
     "rc": null,
-    "e": 31213
+    "e": 31227
+   },
+   {
+    "b": 31227,
+    "a": "jeff",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 31235,
+    "rc": 0,
+    "e": 31251,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 31251,
+    "a": "jeff",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 31256,
+    "rc": null,
+    "e": 31335
    }
   ],
   "idle": []
@@ -7502,8 +7518,8 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 2,
-    "minutes": 4.2,
+    "runs": 3,
+    "minutes": 4.5,
     "failed": 0
    },
    "combat_daily": {
