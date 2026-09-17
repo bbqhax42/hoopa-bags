@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T10:35:12.114630",
+ "generatedAt": "2026-09-17T10:37:17.865740",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "mail",
-  "since": "10:35:08"
+  "mode": "pokemon_home",
+  "since": "10:35:31"
  },
  "grid": {
   "tasks": [
@@ -322,10 +322,10 @@
     "account": "test1",
     "cells": [
      "✓",
-     "⇢",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 144,
-  "todo": 41,
+  "done": 146,
+  "todo": 40,
   "gaveUp": 4,
   "unavailable": 4,
   "windowed": 15
@@ -548,6 +548,19 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T10:35:31",
+   "script": "daily_dungeon",
+   "account": "test1",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_103516_daily_dungeon_test1"
+  },
   {
    "ts": "2026-09-17T10:35:12",
    "script": "mail",
@@ -6967,32 +6980,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260916_084000_dailyclaim_smurf"
-  },
-  {
-   "ts": "2026-09-16T08:39:59",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 76,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 1
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260916_083843_dailyclaim_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 38112,
+  "now": 38238,
   "segments": [
    {
     "b": 28956,
@@ -8981,6 +8974,26 @@
     "e": 38112,
     "secs": 3,
     "why": ""
+   },
+   {
+    "b": 38112,
+    "a": "test1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 38116,
+    "rc": 0,
+    "e": 38131,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 38131,
+    "a": "test1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38132,
+    "rc": null,
+    "e": 38238
    }
   ],
   "idle": []
@@ -9239,8 +9252,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 12,
-    "minutes": 4.7,
+    "runs": 13,
+    "minutes": 4.9,
     "failed": 0
    },
    "pokemon_home": {
