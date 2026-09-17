@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T08:32:00.778738",
+ "generatedAt": "2026-09-17T08:34:03.675621",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "run_pvp_ranked",
-  "since": "08:31:26"
+  "mode": "sky_pillar",
+  "since": "08:33:20"
  },
  "grid": {
   "tasks": [
@@ -44,8 +44,8 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "-",
      "-",
@@ -75,7 +75,7 @@
      "-",
      "·",
      "·",
-     "💤"
+     "·"
     ]
    },
    {
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 25,
-  "todo": 168,
+  "done": 27,
+  "todo": 167,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 15
@@ -508,8 +508,7 @@
   }
  ],
  "snoozed": {
-  "chris|island_challenge": "2026-09-17T09:33",
-  "jeff|island_challenge": "2026-09-17T08:33"
+  "chris|island_challenge": "2026-09-17T09:33"
  },
  "ownerOnline": [],
  "keys": {
@@ -540,6 +539,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T08:33:19",
+   "script": "collect_hoopa_keys",
+   "account": "nova",
+   "rc": 0,
+   "secs": 18,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_083301_collect_hoopa_keys_nova"
+  },
+  {
+   "ts": "2026-09-17T08:32:54",
+   "script": "collect_hoopa_keys",
+   "account": "nova",
+   "rc": 1,
+   "secs": 15,
+   "stats": {
+    "vault_never_opened": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_083239_collect_hoopa_keys_nova"
+  },
+  {
+   "ts": "2026-09-17T08:32:38",
+   "script": "run_pvp_ranked",
+   "account": "nova",
+   "rc": 0,
+   "secs": 71,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 4,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 145
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 10
+   },
+   "dir": "debug_runs/20260917_083126_run_pvp_ranked_nova"
+  },
   {
    "ts": "2026-09-17T08:31:25",
    "script": "paradise",
@@ -6898,62 +6941,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260915_125854_mail_fake4"
-  },
-  {
-   "ts": "2026-09-15T12:58:22",
-   "script": "guild_war",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 109,
-   "stats": {
-    "marginal_last_hit": 3,
-    "near_miss_last_hit": 1,
-    "refused_result_confirm": 1,
-    "gw_no_return": 1,
-    "assist_skipped_off_screen": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_125632_guild_war_fake3"
-  },
-  {
-   "ts": "2026-09-15T12:56:28",
-   "script": "guild_war",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 20,
-   "stats": {
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_never_entered": 1,
-    "assist_refill": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260915_125607_guild_war_fake3"
-  },
-  {
-   "ts": "2026-09-15T12:56:06",
-   "script": "mail",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260915_125601_mail_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 30721,
+  "now": 30844,
   "segments": [
    {
     "b": 28956,
@@ -7282,13 +7275,55 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 30686,
+    "rc": 0,
+    "e": 30758,
+    "secs": 71,
+    "why": ""
+   },
+   {
+    "b": 30758,
+    "a": "nova",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 30758,
+    "rc": 1,
+    "e": 30774,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 30774,
+    "a": "nova",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 30781,
+    "rc": 1,
+    "e": 30800,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 30800,
+    "a": "nova",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 30800,
     "rc": null,
-    "e": 30721
+    "e": 30844
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T08:32:54",
+   "account": "nova",
+   "task": "collect_hoopa_keys",
+   "rc": 1,
+   "secs": 15,
+   "why": "vault_never_opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_083239_collect_hoopa_keys_nova__KEEP_0002_083254_vault_never_opened.png"
+  },
   {
    "ts": "2026-09-17T08:20:28",
    "account": "chris",
@@ -7357,7 +7392,7 @@
   "since": "2026-09-17T08:00",
   "switches": 2,
   "relogMinutes": 1.1,
-  "retries": 4,
+  "retries": 5,
   "tasks": {
    "island_challenge": {
     "runs": 1,
@@ -7410,14 +7445,14 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 1,
-    "minutes": 1.4,
+    "runs": 2,
+    "minutes": 2.5,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 1,
-    "minutes": 0.1,
-    "failed": 0
+    "runs": 3,
+    "minutes": 0.7,
+    "failed": 1
    },
    "sky_pillar": {
     "runs": 1,
