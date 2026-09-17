@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T10:12:35.157037",
+ "generatedAt": "2026-09-17T10:14:38.160316",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
   "mode": "combat_daily",
-  "since": "10:12:28"
+  "since": "10:14:03"
  },
  "grid": {
   "tasks": [
@@ -279,7 +279,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -394,8 +394,8 @@
  },
  "counts": {
   "done": 122,
-  "todo": 65,
-  "gaveUp": 3,
+  "todo": 64,
+  "gaveUp": 4,
   "unavailable": 4,
   "windowed": 15
  },
@@ -548,6 +548,23 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T10:14:02",
+   "script": "combat_daily",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 93,
+   "stats": {
+    "title_reread_named": 3,
+    "arena_slot_unavailable": 1,
+    "near_miss_pokemon_upgrade": 1,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_101229_combat_daily_lucifer1"
+  },
   {
    "ts": "2026-09-17T10:12:28",
    "script": "pokemon_home",
@@ -6973,26 +6990,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260916_081833_rank_match_nova"
-  },
-  {
-   "ts": "2026-09-16T08:18:31",
-   "script": "victory_road",
-   "account": "nova",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_081823_victory_road_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 36755,
+  "now": 36878,
   "segments": [
    {
     "b": 28956,
@@ -8687,13 +8690,35 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 36748,
-    "rc": null,
-    "e": 36755
+    "rc": 1,
+    "e": 36843,
+    "secs": 93,
+    "why": ""
+   },
+   {
+    "b": 36843,
+    "a": "lucifer1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 36843,
+    "rc": 1,
+    "e": 36878,
+    "secs": 93,
+    "why": ""
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T10:14:02",
+   "account": "lucifer1",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 93,
+   "why": "title_reread_named, arena_slot_unavailable, near_miss_pokemon_upgrade, pokemon_upgraded, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_101229_combat_daily_lucifer1__KEEP_0058_101308_arena_slot_unavailable.png"
+  },
   {
    "ts": "2026-09-17T10:03:25",
    "account": "fake6",
@@ -8888,7 +8913,7 @@
   "since": "2026-09-17T08:00",
   "switches": 13,
   "relogMinutes": 6.5,
-  "retries": 21,
+  "retries": 22,
   "tasks": {
    "island_challenge": {
     "runs": 4,
@@ -8921,9 +8946,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 18,
-    "minutes": 19.9,
-    "failed": 9
+    "runs": 19,
+    "minutes": 21.5,
+    "failed": 10
    },
    "victory_road": {
     "runs": 10,
