@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T12:03:31.437157",
+ "generatedAt": "2026-09-17T12:05:34.338703",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "fake1",
   "mode": "guild_war",
-  "since": "12:03:30"
+  "since": "12:05:21"
  },
  "grid": {
   "tasks": [
@@ -115,7 +115,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 180,
-  "todo": 13,
+  "done": 181,
+  "todo": 12,
   "gaveUp": 11,
   "unavailable": 5,
   "windowed": 0
@@ -543,11 +543,46 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-17T12:03:13.008737",
+  "label": "smurf",
+  "at": "2026-09-17T12:03:59.510254",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T12:05:20",
+   "script": "guild_war",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 72,
+   "stats": {
+    "near_miss_vr_rank": 9,
+    "near_miss_last_hit": 7,
+    "marginal_last_hit": 1,
+    "near_miss_tips_header": 66,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_120408_guild_war_smurf"
+  },
+  {
+   "ts": "2026-09-17T12:03:38",
+   "script": "guild_war",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "refused_auto_formation": 1,
+    "refused_setform_confirm": 1,
+    "gw_never_entered": 1,
+    "assist_already_set": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_120333_guild_war_jeff"
+  },
   {
    "ts": "2026-09-17T12:03:29",
    "script": "guild_war",
@@ -6933,44 +6968,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_092654_daily_dungeon_fake4"
-  },
-  {
-   "ts": "2026-09-16T09:26:11",
-   "script": "joint_team_daily_quest",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 38,
-   "stats": {
-    "panel_swipes": 2,
-    "artifact_row_found_by_scrolling": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_092533_joint_team_daily_quest_fake4"
-  },
-  {
-   "ts": "2026-09-16T09:25:32",
-   "script": "mail",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 4,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260916_092529_mail_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 43411,
+  "now": 43534,
   "segments": [
    {
     "b": 28956,
@@ -9709,11 +9712,37 @@
     "a": "jeff",
     "s": "guild_war",
     "login": null,
-    "handoff": null,
+    "handoff": 43413,
     "rc": 0,
-    "e": 43411,
+    "e": 43419,
     "secs": 5,
     "why": ""
+   },
+   {
+    "b": 43419,
+    "a": "smurf",
+    "s": "guild_war",
+    "login": [
+     43419,
+     43439
+    ],
+    "handoff": 43447,
+    "rc": 0,
+    "e": 43521,
+    "secs": 72,
+    "why": ""
+   },
+   {
+    "b": 43521,
+    "a": "fake1",
+    "s": "guild_war",
+    "login": [
+     43521,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 43534
    }
   ],
   "idle": []
@@ -10028,8 +10057,8 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 24,
-  "relogMinutes": 12.5,
+  "switches": 26,
+  "relogMinutes": 13.0,
   "retries": 35,
   "tasks": {
    "island_challenge": {
@@ -10118,8 +10147,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 3,
-    "minutes": 0.4,
+    "runs": 5,
+    "minutes": 1.7,
     "failed": 0
    }
   }
