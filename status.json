@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T15:47:33.303643",
+ "generatedAt": "2026-09-17T15:49:36.411534",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
+  "account": "fake6",
   "mode": "rank_match",
-  "since": "15:46:42"
+  "since": "15:49:13"
  },
  "grid": {
   "tasks": [
@@ -161,9 +161,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 199,
-  "todo": 18,
+  "done": 201,
+  "todo": 16,
   "gaveUp": 8,
   "unavailable": 5,
   "windowed": 0
@@ -502,11 +502,53 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-17T15:47:02.983125",
+  "label": "fake6",
+  "at": "2026-09-17T15:49:35.449359",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T15:49:13",
+   "script": "guild_war",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 65,
+   "stats": {
+    "near_miss_vr_rank": 3,
+    "near_miss_last_hit": 9,
+    "refused_battle_skip": 1,
+    "marginal_last_hit": 1,
+    "near_miss_tips_header": 70,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1,
+    "assist_already_set": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_154807_guild_war_fake2"
+  },
+  {
+   "ts": "2026-09-17T15:48:06",
+   "script": "rank_match",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "near_miss_go_button": 2,
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260917_154710_rank_match_fake2"
+  },
   {
    "ts": "2026-09-17T15:46:41",
    "script": "guild_war",
@@ -6908,37 +6950,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260916_100006_rank_match_lucifer1"
-  },
-  {
-   "ts": "2026-09-16T10:00:04",
-   "script": "victory_road",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_095956_victory_road_lucifer1"
-  },
-  {
-   "ts": "2026-09-16T09:59:55",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_095948_combat_daily_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 56853,
+  "now": 56976,
   "segments": [
    {
     "b": 28956,
@@ -10287,8 +10304,33 @@
      56822
     ],
     "handoff": 56830,
+    "rc": 0,
+    "e": 56886,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 56886,
+    "a": "fake2",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 56887,
+    "rc": 0,
+    "e": 56953,
+    "secs": 65,
+    "why": ""
+   },
+   {
+    "b": 56953,
+    "a": "fake6",
+    "s": "rank_match",
+    "login": [
+     56953,
+     56975
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 56853
+    "e": 56976
    }
   ],
   "idle": []
@@ -10603,7 +10645,7 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 45,
+  "switches": 46,
   "relogMinutes": 23.3,
   "retries": 38,
   "tasks": {
@@ -10648,8 +10690,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 24,
-    "minutes": 15.3,
+    "runs": 25,
+    "minutes": 16.3,
     "failed": 0
    },
    "paradise": {
@@ -10693,8 +10735,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 33,
-    "minutes": 8.7,
+    "runs": 34,
+    "minutes": 9.8,
     "failed": 0
    }
   }
