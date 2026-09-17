@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:04:51.787036",
+ "generatedAt": "2026-09-17T09:06:55.203793",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "sky_pillar",
-  "since": "09:04:18"
+  "account": "fake1",
+  "mode": "dailyclaim",
+  "since": "09:06:40"
  },
  "grid": {
   "tasks": [
@@ -118,7 +118,7 @@
      "⏰",
      "✓",
      "✓",
-     "✗2",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 52,
+  "done": 53,
   "todo": 137,
-  "gaveUp": 4,
+  "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
  },
@@ -509,15 +509,15 @@
   {
    "account": "jeff",
    "fights": 3,
-   "stamina": 18,
-   "staminaMax": 48,
-   "staminaAt": "2026-09-17T08:35:43",
-   "nextAt": "2026-09-17T08:50:51"
+   "stamina": 23,
+   "staminaMax": 23,
+   "staminaAt": "2026-09-17T09:06:34",
+   "nextAt": "2026-09-17T10:48:40"
   }
  ],
  "snoozed": {
   "chris|island_challenge": "2026-09-17T09:33",
-  "jeff|island_challenge": "2026-09-17T09:05"
+  "jeff|island_challenge": "2026-09-17T10:48"
  },
  "ownerOnline": [],
  "keys": {
@@ -543,11 +543,44 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-17T08:52:05.895827",
+  "label": "jeff",
+  "at": "2026-09-17T09:06:17.100998",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:06:40",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 13,
+   "stats": {
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 23,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260917_090626_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-17T09:05:56",
+   "script": "sky_pillar",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 93,
+   "stats": {
+    "stages_cleared": 4,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 16,
+    "stage": 5
+   },
+   "dir": "debug_runs/20260917_090422_sky_pillar_smurf"
+  },
   {
    "ts": "2026-09-17T09:04:18",
    "script": "sky_pillar",
@@ -6889,53 +6922,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260915_150329_rank_match_na"
-  },
-  {
-   "ts": "2026-09-15T15:00:33",
-   "script": "rank_match",
-   "account": "fake1",
-   "rc": 1,
-   "secs": 81,
-   "stats": {
-    "near_miss_go_button": 2,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: match 1 did not complete"
-   ],
-   "values": {
-    "attempts_before": 8,
-    "matches": 0
-   },
-   "dir": "debug_runs/20260915_145911_rank_match_fake1"
-  },
-  {
-   "ts": "2026-09-15T14:58:41",
-   "script": "rank_match",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 60,
-   "stats": {
-    "near_miss_go_button": 2,
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260915_145740_rank_match_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 32692,
+  "now": 32815,
   "segments": [
    {
     "b": 28956,
@@ -7690,9 +7682,35 @@
     "login": null,
     "handoff": 32662,
     "rc": 1,
-    "e": 32692,
+    "e": 32756,
     "secs": 38,
     "why": "sky_pillar: stage 2 did not complete"
+   },
+   {
+    "b": 32756,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     32757,
+     32777
+    ],
+    "handoff": 32786,
+    "rc": 5,
+    "e": 32800,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 32800,
+    "a": "fake1",
+    "s": "dailyclaim",
+    "login": [
+     32801,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 32815
    }
   ],
   "idle": []
@@ -7836,14 +7854,14 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 4,
-  "relogMinutes": 2.1,
-  "retries": 13,
+  "switches": 6,
+  "relogMinutes": 2.6,
+  "retries": 14,
   "tasks": {
    "island_challenge": {
-    "runs": 2,
-    "minutes": 0.9,
-    "failed": 2
+    "runs": 3,
+    "minutes": 1.1,
+    "failed": 3
    },
    "dailyclaim": {
     "runs": 5,
@@ -7901,8 +7919,8 @@
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 4,
-    "minutes": 3.7,
+    "runs": 5,
+    "minutes": 5.3,
     "failed": 1
    },
    "faction": {
