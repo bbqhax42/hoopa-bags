@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:15:07.467939",
+ "generatedAt": "2026-09-17T09:17:10.419783",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "sky_pillar",
-  "since": "09:14:57"
+  "account": "fake2",
+  "mode": "joint_team_daily_quest",
+  "since": "09:16:54"
  },
  "grid": {
   "tasks": [
@@ -142,7 +142,7 @@
      "⏰",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -153,8 +153,8 @@
    {
     "account": "fake2",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 62,
-  "todo": 128,
+  "done": 65,
+  "todo": 125,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -543,11 +543,61 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-17T09:07:01.050404",
+  "label": "fake2",
+  "at": "2026-09-17T09:16:11.222282",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:16:54",
+   "script": "mail",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260917_091650_mail_fake2"
+  },
+  {
+   "ts": "2026-09-17T09:16:49",
+   "script": "dailyclaim",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_091619_dailyclaim_fake2"
+  },
+  {
+   "ts": "2026-09-17T09:15:48",
+   "script": "sky_pillar",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 49,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 2,
+    "stage": 8
+   },
+   "dir": "debug_runs/20260917_091458_sky_pillar_fake1"
+  },
   {
    "ts": "2026-09-17T09:14:57",
    "script": "collect_hoopa_keys",
@@ -6864,65 +6914,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260915_151947_rank_match_test1"
-  },
-  {
-   "ts": "2026-09-15T15:19:43",
-   "script": "rank_match",
-   "account": "test1",
-   "rc": 1,
-   "secs": 10,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "rank_match: the Rank screen never opened"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260915_151932_rank_match_test1"
-  },
-  {
-   "ts": "2026-09-15T15:19:01",
-   "script": "rank_match",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "near_miss_go_button": 2,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 0,
-    "matches": 0,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260915_151854_rank_match_lucifer2"
-  },
-  {
-   "ts": "2026-09-15T15:18:18",
-   "script": "rank_match",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 9,
-   "stats": {
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 0,
-    "matches": 0,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260915_151809_rank_match_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 33307,
+  "now": 33430,
   "segments": [
    {
     "b": 28956,
@@ -7814,8 +7811,44 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 33298,
+    "rc": 0,
+    "e": 33348,
+    "secs": 49,
+    "why": ""
+   },
+   {
+    "b": 33348,
+    "a": "fake2",
+    "s": "dailyclaim",
+    "login": [
+     33349,
+     33371
+    ],
+    "handoff": 33379,
+    "rc": 0,
+    "e": 33410,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 33410,
+    "a": "fake2",
+    "s": "mail",
+    "login": null,
+    "handoff": 33410,
+    "rc": 0,
+    "e": 33414,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 33414,
+    "a": "fake2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 33415,
     "rc": null,
-    "e": 33307
+    "e": 33430
    }
   ],
   "idle": []
@@ -7968,8 +8001,8 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 6,
-  "relogMinutes": 3.0,
+  "switches": 7,
+  "relogMinutes": 3.5,
   "retries": 15,
   "tasks": {
    "island_challenge": {
@@ -7978,13 +8011,13 @@
     "failed": 3
    },
    "dailyclaim": {
-    "runs": 6,
-    "minutes": 4.7,
+    "runs": 7,
+    "minutes": 5.2,
     "failed": 2
    },
    "mail": {
-    "runs": 5,
-    "minutes": 0.2,
+    "runs": 6,
+    "minutes": 0.3,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -8033,8 +8066,8 @@
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 5,
-    "minutes": 5.3,
+    "runs": 6,
+    "minutes": 6.1,
     "failed": 1
    },
    "faction": {
