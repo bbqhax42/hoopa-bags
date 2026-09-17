@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T11:08:07.442239",
+ "generatedAt": "2026-09-17T11:10:10.750192",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "combat_daily",
-  "since": "11:07:16"
+  "mode": "rank_match",
+  "since": "11:09:14"
  },
  "grid": {
   "tasks": [
@@ -375,8 +375,8 @@
      "✓",
      "✓",
      "✗2",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 169,
-  "todo": 13,
+  "done": 171,
+  "todo": 11,
   "gaveUp": 7,
   "unavailable": 5,
   "windowed": 15
@@ -548,6 +548,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T11:09:14",
+   "script": "victory_road",
+   "account": "dre",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_110906_victory_road_dre"
+  },
+  {
+   "ts": "2026-09-17T11:09:05",
+   "script": "combat_daily",
+   "account": "dre",
+   "rc": 0,
+   "secs": 103,
+   "stats": {
+    "title_reread_named": 3,
+    "marginal_afk_rewards": 4,
+    "near_miss_afk_rewards": 4,
+    "refused_afk_rewards_confirm": 1,
+    "adv_overflow": 1,
+    "near_miss_vr_rank": 4,
+    "marginal_adventure_event": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 6/6 o ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260917_110721_combat_daily_dre"
+  },
   {
    "ts": "2026-09-17T11:07:16",
    "script": "pokemon_home",
@@ -6925,42 +6961,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_091444_dailyclaim_fake3"
-  },
-  {
-   "ts": "2026-09-16T09:14:14",
-   "script": "sky_pillar",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 59,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 2,
-    "stage": 2
-   },
-   "dir": "debug_runs/20260916_091314_sky_pillar_fake2"
-  },
-  {
-   "ts": "2026-09-16T09:13:13",
-   "script": "collect_hoopa_keys",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_091305_collect_hoopa_keys_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 40087,
+  "now": 40211,
   "segments": [
    {
     "b": 28956,
@@ -9344,8 +9350,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 40041,
+    "rc": 0,
+    "e": 40145,
+    "secs": 103,
+    "why": ""
+   },
+   {
+    "b": 40145,
+    "a": "dre",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 40146,
+    "rc": 0,
+    "e": 40154,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 40154,
+    "a": "dre",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 40155,
     "rc": null,
-    "e": 40087
+    "e": 40211
    }
   ],
   "idle": []
@@ -9677,13 +9705,13 @@
     "failed": 2
    },
    "combat_daily": {
-    "runs": 25,
-    "minutes": 28.6,
+    "runs": 26,
+    "minutes": 30.3,
     "failed": 12
    },
    "victory_road": {
-    "runs": 14,
-    "minutes": 1.9,
+    "runs": 15,
+    "minutes": 2.1,
     "failed": 0
    },
    "rank_match": {
