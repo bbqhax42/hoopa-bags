@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:25:22.469443",
+ "generatedAt": "2026-09-17T09:27:25.306993",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
-  "mode": "collect_hoopa_keys",
-  "since": "09:25:19"
+  "account": "fake3",
+  "mode": "dailyclaim",
+  "since": "09:26:33"
  },
  "grid": {
   "tasks": [
@@ -165,8 +165,8 @@
      "✓",
      "⏰",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "-",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 73,
-  "todo": 117,
+  "done": 75,
+  "todo": 115,
   "gaveUp": 3,
   "unavailable": 1,
   "windowed": 15
@@ -543,11 +543,41 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-17T09:16:11.222282",
+  "label": "fake3",
+  "at": "2026-09-17T09:26:54.631847",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:26:33",
+   "script": "sky_pillar",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 64,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 2,
+    "stage": 5
+   },
+   "dir": "debug_runs/20260917_092528_sky_pillar_fake2"
+  },
+  {
+   "ts": "2026-09-17T09:25:27",
+   "script": "collect_hoopa_keys",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_092519_collect_hoopa_keys_fake2"
+  },
   {
    "ts": "2026-09-17T09:25:18",
    "script": "paradise",
@@ -6894,40 +6924,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260915_201128_worldboss_fake1"
-  },
-  {
-   "ts": "2026-09-15T20:11:28",
-   "script": "worldboss",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 63,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260915_201025_worldboss_smurf"
-  },
-  {
-   "ts": "2026-09-15T20:10:25",
-   "script": "worldboss",
-   "account": "nova",
-   "rc": 0,
-   "secs": 47,
-   "stats": {
-    "wb_no_attempts": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 0
-   },
-   "dir": "debug_runs/20260915_200937_worldboss_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 33922,
+  "now": 34045,
   "segments": [
    {
     "b": 28956,
@@ -7952,8 +7954,33 @@
     "s": "collect_hoopa_keys",
     "login": null,
     "handoff": 33919,
+    "rc": 0,
+    "e": 33928,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 33928,
+    "a": "fake2",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33928,
+    "rc": 0,
+    "e": 33993,
+    "secs": 64,
+    "why": ""
+   },
+   {
+    "b": 33993,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": [
+     33994,
+     34014
+    ],
+    "handoff": 34022,
     "rc": null,
-    "e": 33922
+    "e": 34045
    }
   ],
   "idle": []
@@ -8115,8 +8142,8 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 7,
-  "relogMinutes": 3.5,
+  "switches": 8,
+  "relogMinutes": 4.0,
   "retries": 16,
   "tasks": {
    "island_challenge": {
@@ -8175,13 +8202,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 6,
-    "minutes": 1.1,
+    "runs": 7,
+    "minutes": 1.2,
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 6,
-    "minutes": 6.1,
+    "runs": 7,
+    "minutes": 7.2,
     "failed": 1
    },
    "faction": {
