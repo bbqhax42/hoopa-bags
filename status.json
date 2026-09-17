@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:37:40.902728",
+ "generatedAt": "2026-09-17T09:39:44.001291",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "island_challenge",
-  "since": "09:37:29"
+  "account": "fake4",
+  "mode": "dailyclaim",
+  "since": "09:38:46"
  },
  "grid": {
   "tasks": [
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "✗2",
-     "·"
+     "💤"
     ]
    },
    {
@@ -394,7 +394,7 @@
  },
  "counts": {
   "done": 84,
-  "todo": 106,
+  "todo": 105,
   "gaveUp": 3,
   "unavailable": 2,
   "windowed": 15
@@ -500,11 +500,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 0,
-   "stamina": 25,
-   "staminaMax": 25,
-   "staminaAt": "2026-09-17T08:03:17",
-   "nextAt": "2026-09-17T09:33:22"
+   "fights": 3,
+   "stamina": 1,
+   "staminaMax": 1,
+   "staminaAt": "2026-09-17T09:38:38",
+   "nextAt": "2026-09-17T13:32:46"
   },
   {
    "account": "jeff",
@@ -516,6 +516,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-17T13:32",
   "jeff|island_challenge": "2026-09-17T10:48"
  },
  "ownerOnline": [],
@@ -542,11 +543,28 @@
   }
  },
  "session": {
-  "label": "fake3",
-  "at": "2026-09-17T09:26:54.631847",
+  "label": "fake4",
+  "at": "2026-09-17T09:39:07.035804",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:38:46",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 42,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 1,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260917_093803_island_challenge_chris"
+  },
   {
    "ts": "2026-09-17T09:37:28",
    "script": "paradise",
@@ -6933,29 +6951,12 @@
     "fights_today": 15
    },
    "dir": "debug_runs/20260915_224535_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-15T20:41:46",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 44,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 2,
-    "fights_today": 12
-   },
-   "dir": "debug_runs/20260915_204101_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 34661,
+  "now": 34784,
   "segments": [
    {
     "b": 28956,
@@ -8135,11 +8136,25 @@
     "s": "island_challenge",
     "login": [
      34649,
-     null
+     34670
     ],
-    "handoff": null,
+    "handoff": 34683,
+    "rc": 5,
+    "e": 34726,
+    "secs": 42,
+    "why": ""
+   },
+   {
+    "b": 34726,
+    "a": "fake4",
+    "s": "dailyclaim",
+    "login": [
+     34727,
+     34747
+    ],
+    "handoff": 34754,
     "rc": null,
-    "e": 34661
+    "e": 34784
    }
   ],
   "idle": []
@@ -8310,14 +8325,14 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 9,
-  "relogMinutes": 4.0,
-  "retries": 17,
+  "switches": 10,
+  "relogMinutes": 5.0,
+  "retries": 18,
   "tasks": {
    "island_challenge": {
-    "runs": 3,
-    "minutes": 1.1,
-    "failed": 3
+    "runs": 4,
+    "minutes": 1.9,
+    "failed": 4
    },
    "dailyclaim": {
     "runs": 8,
