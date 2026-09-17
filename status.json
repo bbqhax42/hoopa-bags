@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T16:53:36.270942",
+ "generatedAt": "2026-09-17T16:55:39.257549",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake4",
+  "account": "fake5",
   "mode": "story",
-  "since": "16:51:47"
+  "since": "16:54:50"
  },
  "grid": {
   "tasks": [
@@ -455,6 +455,12 @@
    "why": "lost floor/stage after 3 clear(s) — the team cannot take the next stage"
   },
   {
+   "account": "fake4",
+   "task": "story",
+   "since": "2026-09-17T16:54:50",
+   "why": "stage 1 never produced a result in 150s — the battle ran long or ended on a screen story.py does not know (frame kept)"
+  },
+  {
    "account": "fake7",
    "task": "story",
    "since": "2026-09-17T16:43:37",
@@ -515,11 +521,29 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-09-17T16:52:08.825203",
+  "label": "fake5",
+  "at": "2026-09-17T16:55:11.105370",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T16:54:50",
+   "script": "story",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 151,
+   "stats": {
+    "battle_timeout": 1,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [
+    "story: stage 1 never produced a result"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260917_165219_story_fake4"
+  },
   {
    "ts": "2026-09-17T16:51:46",
    "script": "story",
@@ -6988,27 +7012,12 @@
     "stage": 5
    },
    "dir": "debug_runs/20260916_102952_sky_pillar_test1"
-  },
-  {
-   "ts": "2026-09-16T10:29:51",
-   "script": "collect_hoopa_keys",
-   "account": "test1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "near_miss_hoopa_vault": 1,
-    "marginal_hoopa_vault": 1,
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_102944_collect_hoopa_keys_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 60816,
+  "now": 60939,
   "segments": [
    {
     "b": 28956,
@@ -10788,13 +10797,36 @@
      60728
     ],
     "handoff": 60738,
+    "rc": 1,
+    "e": 60890,
+    "secs": 151,
+    "why": "story: stage 1 never produced a result"
+   },
+   {
+    "b": 60890,
+    "a": "fake5",
+    "s": "story",
+    "login": [
+     60891,
+     60911
+    ],
+    "handoff": 60921,
     "rc": null,
-    "e": 60816
+    "e": 60939
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T16:54:50",
+   "account": "fake4",
+   "task": "story",
+   "rc": 1,
+   "secs": 151,
+   "why": "story: stage 1 never produced a result",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_165219_story_fake4__KEEP_0004_165450_story_timeout_1.png"
+  },
   {
    "ts": "2026-09-17T16:45:18",
    "account": "smurf",
@@ -11149,9 +11181,9 @@
  ],
  "day": {
   "since": "2026-09-17T08:00",
-  "switches": 69,
-  "relogMinutes": 35.5,
-  "retries": 44,
+  "switches": 70,
+  "relogMinutes": 36.0,
+  "retries": 45,
   "tasks": {
    "island_challenge": {
     "runs": 7,
@@ -11244,9 +11276,9 @@
     "failed": 2
    },
    "story": {
-    "runs": 7,
-    "minutes": 13.6,
-    "failed": 3
+    "runs": 8,
+    "minutes": 16.1,
+    "failed": 4
    }
   }
  },
