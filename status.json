@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:02:48.604126",
+ "generatedAt": "2026-09-17T09:04:51.787036",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "run_pvp_ranked",
-  "since": "09:02:22"
+  "mode": "sky_pillar",
+  "since": "09:04:18"
  },
  "grid": {
   "tasks": [
@@ -116,9 +116,9 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✗2",
      "·",
      "·",
      "·",
@@ -393,9 +393,9 @@
   ]
  },
  "counts": {
-  "done": 50,
-  "todo": 140,
-  "gaveUp": 3,
+  "done": 52,
+  "todo": 137,
+  "gaveUp": 4,
   "unavailable": 1,
   "windowed": 15
  },
@@ -548,6 +548,56 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:04:18",
+   "script": "sky_pillar",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 38,
+   "stats": {
+    "stages_cleared": 1,
+    "no_setform": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "sky_pillar: stage 2 did not complete"
+   ],
+   "values": {
+    "floor": 16,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260917_090340_sky_pillar_smurf"
+  },
+  {
+   "ts": "2026-09-17T09:03:38",
+   "script": "collect_hoopa_keys",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_090331_collect_hoopa_keys_smurf"
+  },
+  {
+   "ts": "2026-09-17T09:03:29",
+   "script": "run_pvp_ranked",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 66,
+   "stats": {
+    "ranked_fought": 10,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 0
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 1
+   },
+   "dir": "debug_runs/20260917_090223_run_pvp_ranked_smurf"
+  },
   {
    "ts": "2026-09-17T09:02:21",
    "script": "paradise",
@@ -6880,71 +6930,12 @@
     "rank_rewards": 1
    },
    "dir": "debug_runs/20260915_145740_rank_match_smurf"
-  },
-  {
-   "ts": "2026-09-15T14:57:07",
-   "script": "rank_match",
-   "account": "nova",
-   "rc": 0,
-   "secs": 73,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260915_145553_rank_match_nova"
-  },
-  {
-   "ts": "2026-09-15T14:55:14",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 45,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 2,
-    "fights_today": 9
-   },
-   "dir": "debug_runs/20260915_145428_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-15T14:32:51",
-   "script": "rank_match",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 8,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260915_143145_rank_match_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 32568,
+  "now": 32692,
   "segments": [
    {
     "b": 28956,
@@ -7665,13 +7656,57 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 32542,
-    "rc": null,
-    "e": 32568
+    "rc": 0,
+    "e": 32610,
+    "secs": 66,
+    "why": ""
+   },
+   {
+    "b": 32610,
+    "a": "smurf",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 32610,
+    "rc": 0,
+    "e": 32619,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 32619,
+    "a": "smurf",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 32619,
+    "rc": 1,
+    "e": 32658,
+    "secs": 38,
+    "why": "sky_pillar: stage 2 did not complete"
+   },
+   {
+    "b": 32658,
+    "a": "smurf",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 32662,
+    "rc": 1,
+    "e": 32692,
+    "secs": 38,
+    "why": "sky_pillar: stage 2 did not complete"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-17T09:04:18",
+   "account": "smurf",
+   "task": "sky_pillar",
+   "rc": 1,
+   "secs": 38,
+   "why": "sky_pillar: stage 2 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260917_090340_sky_pillar_smurf__KEEP_0003_090418_no_setform_2.png"
+  },
   {
    "ts": "2026-09-17T09:00:40",
    "account": "smurf",
@@ -7803,7 +7838,7 @@
   "since": "2026-09-17T08:00",
   "switches": 4,
   "relogMinutes": 2.1,
-  "retries": 12,
+  "retries": 13,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -7856,19 +7891,19 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 3,
-    "minutes": 3.8,
+    "runs": 4,
+    "minutes": 4.9,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 4,
-    "minutes": 0.8,
+    "runs": 5,
+    "minutes": 0.9,
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 3,
-    "minutes": 3.1,
-    "failed": 0
+    "runs": 4,
+    "minutes": 3.7,
+    "failed": 1
    },
    "faction": {
     "runs": 1,
