@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T09:50:00.227408",
+ "generatedAt": "2026-09-17T09:52:03.698989",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "dailyclaim",
-  "since": "09:48:59"
+  "mode": "pokemon_home",
+  "since": "09:52:02"
  },
  "grid": {
   "tasks": [
@@ -225,11 +225,11 @@
    {
     "account": "fake5",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 95,
-  "todo": 93,
+  "done": 100,
+  "todo": 88,
   "gaveUp": 3,
   "unavailable": 3,
   "windowed": 15
@@ -548,6 +548,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T09:52:02",
+   "script": "daily_dungeon",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "marginal_dungeon_list": 13,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_095130_daily_dungeon_fake5"
+  },
+  {
+   "ts": "2026-09-17T09:50:47",
+   "script": "joint_team_daily_quest",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 41,
+   "stats": {
+    "panel_swipes": 2,
+    "artifact_row_found_by_scrolling": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_095005_joint_team_daily_quest_fake5"
+  },
+  {
+   "ts": "2026-09-17T09:50:04",
+   "script": "mail",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260917_095001_mail_fake5"
+  },
   {
    "ts": "2026-09-17T09:50:00",
    "script": "dailyclaim",
@@ -6945,51 +6993,12 @@
     "fights_today": 18
    },
    "dir": "debug_runs/20260916_024133_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-16T02:16:03",
-   "script": "worldboss",
-   "account": "dre",
-   "rc": 0,
-   "secs": 62,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260916_021500_worldboss_dre"
-  },
-  {
-   "ts": "2026-09-16T02:15:00",
-   "script": "worldboss",
-   "account": "deno",
-   "rc": 0,
-   "secs": 61,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260916_021358_worldboss_deno"
-  },
-  {
-   "ts": "2026-09-16T02:13:58",
-   "script": "worldboss",
-   "account": "test1",
-   "rc": 2,
-   "secs": 61,
-   "stats": {
-    "wb_not_unlocked": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_021257_worldboss_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 35400,
+  "now": 35524,
   "segments": [
    {
     "b": 28956,
@@ -8345,6 +8354,57 @@
     "e": 35400,
     "secs": 30,
     "why": ""
+   },
+   {
+    "b": 35400,
+    "a": "fake5",
+    "s": "mail",
+    "login": null,
+    "handoff": 35401,
+    "rc": 0,
+    "e": 35405,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 35405,
+    "a": "fake5",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 35405,
+    "rc": 0,
+    "e": 35447,
+    "secs": 41,
+    "why": ""
+   },
+   {
+    "b": 35447,
+    "a": "fake5",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 35450,
+    "rc": null,
+    "e": 35484
+   },
+   {
+    "b": 35484,
+    "a": "fake5",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 35490,
+    "rc": 0,
+    "e": 35522,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 35522,
+    "a": "fake5",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 35523,
+    "rc": null,
+    "e": 35524
    }
   ],
   "idle": []
@@ -8539,18 +8599,18 @@
     "failed": 2
    },
    "mail": {
-    "runs": 8,
-    "minutes": 0.4,
+    "runs": 9,
+    "minutes": 0.5,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 7,
-    "minutes": 3.7,
+    "runs": 8,
+    "minutes": 4.4,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 8,
-    "minutes": 3.4,
+    "runs": 9,
+    "minutes": 4.0,
     "failed": 0
    },
    "pokemon_home": {
