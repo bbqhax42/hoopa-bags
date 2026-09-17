@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-17T11:04:01.397622",
+ "generatedAt": "2026-09-17T11:06:04.591538",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "dailyclaim",
-  "since": "11:03:50"
+  "mode": "daily_dungeon",
+  "since": "11:06:02"
  },
  "grid": {
   "tasks": [
@@ -369,10 +369,10 @@
    {
     "account": "dre",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -393,8 +393,8 @@
   ]
  },
  "counts": {
-  "done": 164,
-  "todo": 19,
+  "done": 168,
+  "todo": 15,
   "gaveUp": 6,
   "unavailable": 5,
   "windowed": 15
@@ -543,11 +543,55 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-17T10:50:32.257190",
+  "label": "dre",
+  "at": "2026-09-17T11:04:11.014334",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-17T11:05:23",
+   "script": "joint_team_daily_quest",
+   "account": "dre",
+   "rc": 0,
+   "secs": 23,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_110500_joint_team_daily_quest_dre"
+  },
+  {
+   "ts": "2026-09-17T11:04:59",
+   "script": "mail",
+   "account": "dre",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260917_110456_mail_dre"
+  },
+  {
+   "ts": "2026-09-17T11:04:55",
+   "script": "dailyclaim",
+   "account": "dre",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260917_110422_dailyclaim_dre"
+  },
   {
    "ts": "2026-09-17T11:03:50",
    "script": "weekend_bash",
@@ -6926,62 +6970,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260916_090931_victory_road_fake2"
-  },
-  {
-   "ts": "2026-09-16T09:09:30",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_090923_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-16T09:09:22",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 1,
-   "secs": 110,
-   "stats": {
-    "title_reread_named": 2,
-    "near_miss_afk_rewards": 2,
-    "refused_quick_bar": 1,
-    "near_miss_vr_rank": 2,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 + ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260916_090731_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-16T09:07:25",
-   "script": "pokemon_home",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 21,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260916_090704_pokemon_home_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-17T00:00",
   "since": 28800.0,
-  "now": 39841,
+  "now": 39964,
   "segments": [
    {
     "b": 28956,
@@ -9278,11 +9272,53 @@
     "s": "dailyclaim",
     "login": [
      39830,
-     null
+     39851
     ],
+    "handoff": 39861,
+    "rc": 0,
+    "e": 39895,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 39895,
+    "a": "dre",
+    "s": "mail",
+    "login": null,
+    "handoff": 39896,
+    "rc": 0,
+    "e": 39899,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 39899,
+    "a": "dre",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 39900,
+    "rc": 0,
+    "e": 39923,
+    "secs": 23,
+    "why": ""
+   },
+   {
+    "b": 39923,
+    "a": "dre",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 39926,
+    "rc": null,
+    "e": 39962
+   },
+   {
+    "b": 39962,
+    "a": "dre",
+    "s": "daily_dungeon",
+    "login": null,
     "handoff": null,
     "rc": null,
-    "e": 39841
+    "e": 39964
    }
   ],
   "idle": []
@@ -9562,7 +9598,7 @@
  "day": {
   "since": "2026-09-17T08:00",
   "switches": 18,
-  "relogMinutes": 8.7,
+  "relogMinutes": 9.2,
   "retries": 31,
   "tasks": {
    "island_challenge": {
@@ -9571,18 +9607,18 @@
     "failed": 5
    },
    "dailyclaim": {
-    "runs": 16,
-    "minutes": 9.9,
+    "runs": 17,
+    "minutes": 10.5,
     "failed": 4
    },
    "mail": {
-    "runs": 14,
-    "minutes": 0.7,
+    "runs": 15,
+    "minutes": 0.8,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 12,
-    "minutes": 6.2,
+    "runs": 13,
+    "minutes": 6.6,
     "failed": 2
    },
    "daily_dungeon": {
