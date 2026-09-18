@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T12:34:19.229220",
+ "generatedAt": "2026-09-18T12:36:22.121504",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
-  "mode": "story",
-  "since": "12:32:12"
+  "account": "smurf",
+  "mode": "hoopa",
+  "since": "12:35:30"
  },
  "grid": {
   "tasks": [
@@ -635,11 +635,30 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-18T12:32:32.487510",
+  "label": "smurf",
+  "at": "2026-09-18T12:35:50.831486",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T12:35:29",
+   "script": "story",
+   "account": "fake5",
+   "rc": 1,
+   "secs": 167,
+   "stats": {
+    "skip_retry": 1,
+    "setform_door": 1,
+    "battle_timeout": 1,
+    "incomplete": 1,
+    "stages_cleared": 1
+   },
+   "incomplete": [
+    "story: stage 2 never produced a result"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260918_123242_story_fake5"
+  },
   {
    "ts": "2026-09-18T12:32:11",
    "script": "guild_war",
@@ -6863,32 +6882,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_163530_story_sprite"
-  },
-  {
-   "ts": "2026-09-17T16:34:55",
-   "script": "guild_war",
-   "account": "chris",
-   "rc": 0,
-   "secs": 42,
-   "stats": {
-    "near_miss_last_hit": 1,
-    "marginal_last_hit": 1,
-    "near_miss_vr_rank": 1,
-    "near_miss_tips_header": 66,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_163412_guild_war_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 45259,
+  "now": 45382,
   "segments": [
    {
     "b": 28932,
@@ -9756,13 +9755,36 @@
      45152
     ],
     "handoff": 45161,
+    "rc": 1,
+    "e": 45330,
+    "secs": 167,
+    "why": "story: stage 2 never produced a result"
+   },
+   {
+    "b": 45330,
+    "a": "smurf",
+    "s": "hoopa",
+    "login": [
+     45330,
+     45350
+    ],
+    "handoff": 45362,
     "rc": null,
-    "e": 45259
+    "e": 45382
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T12:35:29",
+   "account": "fake5",
+   "task": "story",
+   "rc": 1,
+   "secs": 167,
+   "why": "story: stage 2 never produced a result",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_123242_story_fake5__KEEP_0010_123529_story_timeout_2.png"
+  },
   {
    "ts": "2026-09-18T11:40:59",
    "account": "lucifer2",
@@ -10126,9 +10148,9 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 43,
-  "relogMinutes": 21.9,
-  "retries": 44,
+  "switches": 44,
+  "relogMinutes": 22.4,
+  "retries": 45,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -10214,6 +10236,11 @@
     "runs": 17,
     "minutes": 21.1,
     "failed": 0
+   },
+   "story": {
+    "runs": 1,
+    "minutes": 2.8,
+    "failed": 1
    }
   }
  },
