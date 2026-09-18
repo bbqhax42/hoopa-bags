@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:29:35.453242",
+ "generatedAt": "2026-09-18T09:31:38.419627",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "joint_battle",
-  "since": "09:28:03"
+  "mode": "combat_daily",
+  "since": "09:30:50"
  },
  "grid": {
   "tasks": [
@@ -157,8 +157,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 72,
-  "todo": 121,
+  "done": 74,
+  "todo": 119,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -610,6 +610,39 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:30:50",
+   "script": "pokemon_home",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 25,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_refused": 1,
+    "pair_went_stale": 1,
+    "merge_no_progress": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093024_pokemon_home_fake2"
+  },
+  {
+   "ts": "2026-09-18T09:30:22",
+   "script": "daily_dungeon",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_092950_daily_dungeon_fake2"
+  },
   {
    "ts": "2026-09-18T09:28:02",
    "script": "joint_team_daily_quest",
@@ -6815,50 +6848,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_100334_victory_road_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:03:33",
-   "script": "combat_daily",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_100326_combat_daily_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:03:25",
-   "script": "combat_daily",
-   "account": "fake6",
-   "rc": 1,
-   "secs": 112,
-   "stats": {
-    "title_reread_named": 4,
-    "near_miss_afk_rewards": 1,
-    "marginal_afk_rewards": 2,
-    "refused_quick_bar": 1,
-    "adv_overflow": 1,
-    "near_miss_vr_rank": 3,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260917_100132_combat_daily_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 34175,
+  "now": 34298,
   "segments": [
    {
     "b": 28932,
@@ -7852,7 +7847,38 @@
     "login": null,
     "handoff": 34085,
     "rc": null,
-    "e": 34175
+    "e": 34185
+   },
+   {
+    "b": 34185,
+    "a": "fake2",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 34190,
+    "rc": 0,
+    "e": 34223,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 34223,
+    "a": "fake2",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 34224,
+    "rc": 0,
+    "e": 34250,
+    "secs": 25,
+    "why": ""
+   },
+   {
+    "b": 34250,
+    "a": "fake2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34256,
+    "rc": null,
+    "e": 34298
    }
   ],
   "idle": []
@@ -8043,13 +8069,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 6,
-    "minutes": 1.5,
+    "runs": 7,
+    "minutes": 2.0,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 7,
-    "minutes": 13.1,
+    "runs": 8,
+    "minutes": 13.6,
     "failed": 1
    },
    "combat_daily": {
