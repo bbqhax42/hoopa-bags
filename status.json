@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T13:46:06.812498",
+ "generatedAt": "2026-09-18T13:48:09.981916",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
+  "account": "fake4",
   "mode": "rank_match",
-  "since": "13:45:10"
+  "since": "13:46:57"
  },
  "grid": {
   "tasks": [
@@ -185,13 +185,13 @@
      "✓",
      "✗2",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "-",
      "-",
      "-",
@@ -441,10 +441,10 @@
   ]
  },
  "counts": {
-  "done": 209,
-  "todo": 18,
+  "done": 210,
+  "todo": 16,
   "gaveUp": 7,
-  "unavailable": 3,
+  "unavailable": 4,
   "windowed": 0
  },
  "disabled": [
@@ -646,11 +646,59 @@
   }
  },
  "session": {
-  "label": "fake3",
-  "at": "2026-09-18T13:45:33.052473",
+  "label": "fake4",
+  "at": "2026-09-18T13:47:20.137857",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T13:46:56",
+   "script": "faction",
+   "account": "fake3",
+   "rc": 2,
+   "secs": 4,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_134652_faction_fake3"
+  },
+  {
+   "ts": "2026-09-18T13:46:51",
+   "script": "faction",
+   "account": "fake3",
+   "rc": 2,
+   "secs": 4,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_134646_faction_fake3"
+  },
+  {
+   "ts": "2026-09-18T13:46:45",
+   "script": "rank_match",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "formation_set": 1,
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260918_134542_rank_match_fake3"
+  },
   {
    "ts": "2026-09-18T13:45:10",
    "script": "faction",
@@ -6863,54 +6911,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_170831_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:08:26",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 105,
-   "stats": {
-    "rift_levels": 20,
-    "rift_rerolls": 7
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_170640_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:06:35",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 94,
-   "stats": {
-    "rift_levels": 18,
-    "rift_rerolls": 7
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_170501_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:04:56",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 84,
-   "stats": {
-    "rift_levels": 16,
-    "rift_rerolls": 7
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_170331_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 49567,
+  "now": 49690,
   "segments": [
    {
     "b": 28932,
@@ -10112,8 +10118,44 @@
      49533
     ],
     "handoff": 49541,
+    "rc": 0,
+    "e": 49606,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 49606,
+    "a": "fake3",
+    "s": "faction",
+    "login": null,
+    "handoff": 49606,
+    "rc": 2,
+    "e": 49611,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49611,
+    "a": "fake3",
+    "s": "faction",
+    "login": null,
+    "handoff": 49612,
+    "rc": 2,
+    "e": 49617,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49617,
+    "a": "fake4",
+    "s": "rank_match",
+    "login": [
+     49617,
+     49640
+    ],
+    "handoff": 49648,
     "rc": null,
-    "e": 49567
+    "e": 49690
    }
   ],
   "idle": []
@@ -10500,8 +10542,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 64,
-  "relogMinutes": 33.2,
+  "switches": 65,
+  "relogMinutes": 33.8,
   "retries": 48,
   "tasks": {
    "dailyclaim": {
@@ -10565,8 +10607,8 @@
     "failed": 4
    },
    "faction": {
-    "runs": 5,
-    "minutes": 8.4,
+    "runs": 7,
+    "minutes": 8.5,
     "failed": 0
    },
    "championship": {
@@ -10595,8 +10637,8 @@
     "failed": 2
    },
    "rank_match": {
-    "runs": 6,
-    "minutes": 5.8,
+    "runs": 7,
+    "minutes": 6.9,
     "failed": 0
    }
   }
@@ -10607,6 +10649,12 @@
    "task": "faction",
    "why": "tower_locked",
    "at": "2026-09-18T13:40:04"
+  },
+  {
+   "account": "fake3",
+   "task": "faction",
+   "why": "tower_locked",
+   "at": "2026-09-18T13:46:56"
   },
   {
    "account": "fake6",
