@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:35:45.522753",
+ "generatedAt": "2026-09-18T09:37:48.488041",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "paradise",
-  "since": "09:33:21"
+  "mode": "sky_pillar",
+  "since": "09:36:59"
  },
  "grid": {
   "tasks": [
@@ -162,10 +162,10 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 76,
-  "todo": 117,
+  "done": 78,
+  "todo": 115,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -610,6 +610,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:36:59",
+   "script": "collect_hoopa_keys",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093653_collect_hoopa_keys_fake2"
+  },
+  {
+   "ts": "2026-09-18T09:36:45",
+   "script": "collect_hoopa_keys",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 15,
+   "stats": {
+    "marginal_pokemon_tower": 24,
+    "vault_never_opened": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093630_collect_hoopa_keys_fake2"
+  },
+  {
+   "ts": "2026-09-18T09:36:28",
+   "script": "paradise",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 185,
+   "stats": {
+    "marginal_paradise_hub": 2,
+    "explore_clicks": 74,
+    "pass_claims": 5,
+    "upgraded_sports_gloves": 2,
+    "upgraded_energy_drink": 2,
+    "upgraded_small_radar": 2,
+    "dex_milestones": 1,
+    "dex_activated": 5,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093323_paradise_fake2"
+  },
   {
    "ts": "2026-09-18T09:33:21",
    "script": "victory_road",
@@ -6797,58 +6845,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260917_101036_mail_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:10:35",
-   "script": "dailyclaim",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_101002_dailyclaim_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:09:30",
-   "script": "sky_pillar",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 69,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 2,
-    "stage": 8
-   },
-   "dir": "debug_runs/20260917_100821_sky_pillar_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:08:20",
-   "script": "collect_hoopa_keys",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_100812_collect_hoopa_keys_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 34545,
+  "now": 34668,
   "segments": [
    {
     "b": 28932,
@@ -7905,13 +7907,55 @@
     "s": "paradise",
     "login": null,
     "handoff": 34402,
+    "rc": 0,
+    "e": 34589,
+    "secs": 185,
+    "why": ""
+   },
+   {
+    "b": 34589,
+    "a": "fake2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 34589,
+    "rc": 1,
+    "e": 34606,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 34606,
+    "a": "fake2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 34613,
+    "rc": 1,
+    "e": 34619,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 34619,
+    "a": "fake2",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 34620,
     "rc": null,
-    "e": 34545
+    "e": 34668
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T09:36:45",
+   "account": "fake2",
+   "task": "collect_hoopa_keys",
+   "rc": 1,
+   "secs": 15,
+   "why": "marginal_pokemon_tower, vault_never_opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_093630_collect_hoopa_keys_fake2__KEEP_0002_093645_vault_never_opened.png"
+  },
   {
    "ts": "2026-09-18T09:32:57",
    "account": "fake2",
@@ -8088,7 +8132,7 @@
   "since": "2026-09-18T08:00",
   "switches": 6,
   "relogMinutes": 3.2,
-  "retries": 18,
+  "retries": 19,
   "tasks": {
    "dailyclaim": {
     "runs": 8,
@@ -8126,14 +8170,14 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 6,
-    "minutes": 19.2,
+    "runs": 7,
+    "minutes": 22.3,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 7,
-    "minutes": 1.1,
-    "failed": 2
+    "runs": 9,
+    "minutes": 1.4,
+    "failed": 3
    },
    "sky_pillar": {
     "runs": 7,
