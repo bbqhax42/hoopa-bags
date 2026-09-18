@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T08:58:44.534459",
+ "generatedAt": "2026-09-18T09:00:48.232601",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "dailyclaim",
-  "since": "08:58:23"
+  "mode": "joint_battle",
+  "since": "09:00:34"
  },
  "grid": {
   "tasks": [
@@ -106,9 +106,9 @@
     "account": "smurf",
     "cells": [
      "✗2",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "⊘",
      "·",
      "·",
      "·",
@@ -441,10 +441,10 @@
   ]
  },
  "counts": {
-  "done": 46,
-  "todo": 148,
+  "done": 48,
+  "todo": 145,
   "gaveUp": 2,
-  "unavailable": 0,
+  "unavailable": 1,
   "windowed": 34
  },
  "disabled": [
@@ -610,6 +610,56 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:00:17",
+   "script": "joint_team_daily_quest",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_085946_joint_team_daily_quest_smurf"
+  },
+  {
+   "ts": "2026-09-18T08:59:45",
+   "script": "mail",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 0,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_085941_mail_smurf"
+  },
+  {
+   "ts": "2026-09-18T08:59:40",
+   "script": "dailyclaim",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 75,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_paid_only": 1,
+    "forbidden_first_topup": 2,
+    "mythic_no_open": 1,
+    "incomplete": 1,
+    "claims": 0
+   },
+   "incomplete": [
+    "dailyclaim: Mythic Incoming would not open"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260918_085824_dailyclaim_smurf"
+  },
   {
    "ts": "2026-09-18T08:58:22",
    "script": "dailyclaim",
@@ -6785,59 +6835,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_094107_daily_dungeon_fake4"
-  },
-  {
-   "ts": "2026-09-17T09:40:27",
-   "script": "joint_team_daily_quest",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "panel_swipes": 2,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_093951_joint_team_daily_quest_fake4"
-  },
-  {
-   "ts": "2026-09-17T09:39:49",
-   "script": "mail",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_093946_mail_fake4"
-  },
-  {
-   "ts": "2026-09-17T09:39:45",
-   "script": "dailyclaim",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_093915_dailyclaim_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 32324,
+  "now": 32448,
   "segments": [
    {
     "b": 28932,
@@ -7477,14 +7480,63 @@
     "login": null,
     "handoff": 32303,
     "rc": 1,
-    "e": 32324,
+    "e": 32380,
     "secs": 78,
     "why": "dailyclaim: Mythic Incoming would not open"
+   },
+   {
+    "b": 32380,
+    "a": "smurf",
+    "s": "mail",
+    "login": null,
+    "handoff": 32381,
+    "rc": 0,
+    "e": 32385,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 32385,
+    "a": "smurf",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 32386,
+    "rc": 0,
+    "e": 32417,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 32417,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 32420,
+    "rc": null,
+    "e": 32434
+   },
+   {
+    "b": 32434,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 32436,
+    "rc": null,
+    "e": 32448
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T08:59:40",
+   "account": "smurf",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 75,
+   "why": "dailyclaim: Mythic Incoming would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_085824_dailyclaim_smurf__KEEP_0003_085938_mythic_no_open.png"
+  },
   {
    "ts": "2026-09-18T08:58:22",
    "account": "smurf",
@@ -7598,21 +7650,21 @@
   "since": "2026-09-18T08:00",
   "switches": 4,
   "relogMinutes": 2.2,
-  "retries": 11,
+  "retries": 12,
   "tasks": {
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 3.5,
-    "failed": 1
+    "runs": 6,
+    "minutes": 4.7,
+    "failed": 2
    },
    "mail": {
-    "runs": 4,
-    "minutes": 0.2,
+    "runs": 5,
+    "minutes": 0.3,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 4,
-    "minutes": 2.3,
+    "runs": 5,
+    "minutes": 2.8,
     "failed": 0
    },
    "daily_dungeon": {
@@ -7672,7 +7724,14 @@
    }
   }
  },
- "unavailable": [],
+ "unavailable": [
+  {
+   "account": "smurf",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
+  }
+ ],
  "windows": {
   "dailyclaim": "06:00-19:00",
   "mail": null,
