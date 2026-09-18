@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T08:19:41.959410",
+ "generatedAt": "2026-09-18T08:21:45.053647",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "pokemon_home",
-  "since": "08:15:53"
+  "mode": "combat_daily",
+  "since": "08:21:27"
  },
  "grid": {
   "tasks": [
@@ -38,7 +38,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 16,
-  "todo": 181,
+  "done": 17,
+  "todo": 180,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 34
@@ -609,6 +609,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T08:21:26",
+   "script": "pokemon_home",
+   "account": "nova",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "craft_pill_gone": 1,
+    "reached_via_trial": 1,
+    "merge_moved_instead": 2,
+    "grid_refit": 1,
+    "burst_balls_unseen": 1,
+    "phantom_creations": 10,
+    "charges_spent": 10
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_082031_pokemon_home_nova"
+  },
+  {
+   "ts": "2026-09-18T08:20:26",
+   "script": "pokemon_home",
+   "account": "nova",
+   "rc": 1,
+   "secs": 271,
+   "stats": {
+    "reached_via_trial": 1,
+    "balls_unsettled_opened": 2,
+    "grid_refit": 1,
+    "merge_refused": 34,
+    "merge_no_progress": 10,
+    "charges_left_unspent": 10,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: 10 charge(s) unspent after 10 merge(s) that moved nothing — the board was not really saturated"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260918_081554_pokemon_home_nova"
+  },
   {
    "ts": "2026-09-18T08:15:52",
    "script": "daily_dungeon",
@@ -6827,45 +6867,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_090708_dailyclaim_fake1"
-  },
-  {
-   "ts": "2026-09-17T09:06:40",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 13,
-   "stats": {
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 23,
-    "fights_today": 3
-   },
-   "dir": "debug_runs/20260917_090626_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-17T09:05:56",
-   "script": "sky_pillar",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 93,
-   "stats": {
-    "stages_cleared": 4,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 16,
-    "stage": 5
-   },
-   "dir": "debug_runs/20260917_090422_sky_pillar_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 29982,
+  "now": 30105,
   "segments": [
    {
     "b": 28932,
@@ -7070,13 +7077,44 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 29754,
+    "rc": 1,
+    "e": 30026,
+    "secs": 271,
+    "why": "pokemon_home: 10 charge(s) unspent after 10 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 30026,
+    "a": "nova",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 30031,
+    "rc": 1,
+    "e": 30087,
+    "secs": 271,
+    "why": "pokemon_home: 10 charge(s) unspent after 10 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 30087,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30092,
     "rc": null,
-    "e": 29982
+    "e": 30105
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T08:20:26",
+   "account": "nova",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 271,
+   "why": "pokemon_home: 10 charge(s) unspent after 10 merge(s) that moved nothing — the board was not really saturated",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_081554_pokemon_home_nova__KEEP_0170_082025_board_saturated.png"
+  },
   {
    "ts": "2026-09-18T08:12:48",
    "account": "fake4",
@@ -7118,7 +7156,7 @@
   "since": "2026-09-18T08:00",
   "switches": 1,
   "relogMinutes": 0.6,
-  "retries": 2,
+  "retries": 3,
   "tasks": {
    "dailyclaim": {
     "runs": 2,
@@ -7141,9 +7179,9 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 1,
-    "minutes": 0.3,
-    "failed": 0
+    "runs": 3,
+    "minutes": 5.8,
+    "failed": 1
    },
    "combat_daily": {
     "runs": 2,
