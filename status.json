@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:02:51.927891",
+ "generatedAt": "2026-09-18T09:04:55.093241",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "pokemon_home",
-  "since": "09:01:09"
+  "mode": "combat_daily",
+  "since": "09:04:12"
  },
  "grid": {
   "tasks": [
@@ -110,8 +110,8 @@
      "✓",
      "⊘",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "⏰",
      "·",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 49,
-  "todo": 144,
-  "gaveUp": 2,
+  "done": 50,
+  "todo": 142,
+  "gaveUp": 3,
   "unavailable": 1,
   "windowed": 34
  },
@@ -610,6 +610,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:04:11",
+   "script": "combat_daily",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 15,
+   "stats": {
+    "left_outstanding": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_090356_combat_daily_smurf"
+  },
+  {
+   "ts": "2026-09-18T09:03:51",
+   "script": "pokemon_home",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 160,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_refused": 1,
+    "merge_no_progress": 1,
+    "grid_refit": 5,
+    "phantom_creations": 5,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_090110_pokemon_home_smurf"
+  },
   {
    "ts": "2026-09-18T09:01:08",
    "script": "daily_dungeon",
@@ -6791,53 +6822,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_094412_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-17T09:44:11",
-   "script": "combat_daily",
-   "account": "fake4",
-   "rc": 1,
-   "secs": 120,
-   "stats": {
-    "title_reread_named": 5,
-    "near_miss_afk_rewards": 4,
-    "marginal_afk_rewards": 3,
-    "refused_afk_rewards_confirm": 1,
-    "near_miss_vr_rank": 6,
-    "adv_energy_spent": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260917_094210_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-17T09:42:01",
-   "script": "pokemon_home",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 19,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_094141_pokemon_home_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 32572,
+  "now": 32695,
   "segments": [
    {
     "b": 28932,
@@ -7538,13 +7528,46 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 32470,
-    "rc": null,
-    "e": 32572
+    "rc": 0,
+    "e": 32631,
+    "secs": 160,
+    "why": ""
+   },
+   {
+    "b": 32631,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 32636,
+    "rc": 1,
+    "e": 32652,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 32652,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 32652,
+    "rc": 1,
+    "e": 32695,
+    "secs": 15,
+    "why": ""
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T09:04:11",
+   "account": "smurf",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 15,
+   "why": "left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_090356_combat_daily_smurf__0022_090411_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-18T08:59:40",
    "account": "smurf",
@@ -7667,7 +7690,7 @@
   "since": "2026-09-18T08:00",
   "switches": 4,
   "relogMinutes": 2.2,
-  "retries": 12,
+  "retries": 13,
   "tasks": {
    "dailyclaim": {
     "runs": 6,
@@ -7690,14 +7713,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 5,
-    "minutes": 10.1,
+    "runs": 6,
+    "minutes": 12.8,
     "failed": 1
    },
    "combat_daily": {
-    "runs": 8,
-    "minutes": 8.8,
-    "failed": 4
+    "runs": 9,
+    "minutes": 9.1,
+    "failed": 5
    },
    "victory_road": {
     "runs": 4,
