@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:25:28.479072",
+ "generatedAt": "2026-09-18T09:27:31.647897",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "sky_pillar",
-  "since": "09:24:48"
+  "account": "fake2",
+  "mode": "joint_team_daily_quest",
+  "since": "09:27:13"
  },
  "grid": {
   "tasks": [
@@ -142,7 +142,7 @@
      "⏰",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -153,8 +153,8 @@
    {
     "account": "fake2",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 67,
-  "todo": 126,
+  "done": 70,
+  "todo": 123,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -605,11 +605,76 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-18T09:16:44.437208",
+  "label": "fake2",
+  "at": "2026-09-18T09:26:27.444925",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:27:12",
+   "script": "mail",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 0,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_092708_mail_fake2"
+  },
+  {
+   "ts": "2026-09-18T09:27:07",
+   "script": "dailyclaim",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_092637_dailyclaim_fake2"
+  },
+  {
+   "ts": "2026-09-18T09:26:03",
+   "script": "sky_pillar",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 10,
+   "stats": {
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_092552_sky_pillar_fake1"
+  },
+  {
+   "ts": "2026-09-18T09:25:48",
+   "script": "sky_pillar",
+   "account": "fake1",
+   "rc": 1,
+   "secs": 59,
+   "stats": {
+    "stages_cleared": 3,
+    "no_setform": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "sky_pillar: stage 4 did not complete"
+   ],
+   "values": {
+    "floor": 3,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260918_092448_sky_pillar_fake1"
+  },
   {
    "ts": "2026-09-18T09:24:47",
    "script": "collect_hoopa_keys",
@@ -6786,74 +6851,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_100105_pokemon_home_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:01:03",
-   "script": "daily_dungeon",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 15,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_100048_daily_dungeon_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:00:44",
-   "script": "mail",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_100040_mail_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:00:39",
-   "script": "dailyclaim",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_100009_dailyclaim_fake6"
-  },
-  {
-   "ts": "2026-09-17T09:59:38",
-   "script": "sky_pillar",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 94,
-   "stats": {
-    "stages_cleared": 8
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 3,
-    "stage": 3
-   },
-   "dir": "debug_runs/20260917_095803_sky_pillar_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 33928,
+  "now": 34052,
   "segments": [
    {
     "b": 28932,
@@ -7788,13 +7791,69 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 33888,
+    "rc": 1,
+    "e": 33949,
+    "secs": 59,
+    "why": "sky_pillar: stage 4 did not complete"
+   },
+   {
+    "b": 33949,
+    "a": "fake1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33952,
+    "rc": 1,
+    "e": 33964,
+    "secs": 59,
+    "why": "sky_pillar: stage 4 did not complete"
+   },
+   {
+    "b": 33964,
+    "a": "fake2",
+    "s": "dailyclaim",
+    "login": [
+     33964,
+     33987
+    ],
+    "handoff": 33996,
+    "rc": 0,
+    "e": 34028,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 34028,
+    "a": "fake2",
+    "s": "mail",
+    "login": null,
+    "handoff": 34028,
+    "rc": 0,
+    "e": 34033,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 34033,
+    "a": "fake2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 34033,
     "rc": null,
-    "e": 33928
+    "e": 34052
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T09:25:48",
+   "account": "fake1",
+   "task": "sky_pillar",
+   "rc": 1,
+   "secs": 59,
+   "why": "sky_pillar: stage 4 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_092448_sky_pillar_fake1__KEEP_0005_092548_no_setform_4.png"
+  },
   {
    "ts": "2026-09-18T09:24:33",
    "account": "fake1",
@@ -7951,18 +8010,18 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 5,
-  "relogMinutes": 2.7,
-  "retries": 16,
+  "switches": 6,
+  "relogMinutes": 3.2,
+  "retries": 17,
   "tasks": {
    "dailyclaim": {
-    "runs": 7,
-    "minutes": 5.2,
+    "runs": 8,
+    "minutes": 5.8,
     "failed": 2
    },
    "mail": {
-    "runs": 6,
-    "minutes": 0.3,
+    "runs": 7,
+    "minutes": 0.4,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -8001,9 +8060,9 @@
     "failed": 2
    },
    "sky_pillar": {
-    "runs": 5,
-    "minutes": 3.9,
-    "failed": 1
+    "runs": 7,
+    "minutes": 5.1,
+    "failed": 2
    },
    "run_pvp_ranked": {
     "runs": 3,
