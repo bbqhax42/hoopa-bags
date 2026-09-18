@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:52:10.946658",
+ "generatedAt": "2026-09-18T09:54:14.089610",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake6",
-  "mode": "mail",
-  "since": "09:52:09"
+  "mode": "combat_daily",
+  "since": "09:52:58"
  },
  "grid": {
   "tasks": [
@@ -250,11 +250,11 @@
     "account": "fake6",
     "cells": [
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 94,
-  "todo": 98,
+  "done": 97,
+  "todo": 95,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -625,6 +625,51 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:52:58",
+   "script": "pokemon_home",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 23,
+   "stats": {
+    "title_reread_named": 1,
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_095235_pokemon_home_fake6"
+  },
+  {
+   "ts": "2026-09-18T09:52:33",
+   "script": "daily_dungeon",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 15,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_095218_daily_dungeon_fake6"
+  },
+  {
+   "ts": "2026-09-18T09:52:13",
+   "script": "mail",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 3,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_095209_mail_fake6"
+  },
   {
    "ts": "2026-09-18T09:52:08",
    "script": "dailyclaim",
@@ -6828,65 +6873,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_102736_victory_road_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T10:27:35",
-   "script": "combat_daily",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_102728_combat_daily_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T10:27:27",
-   "script": "combat_daily",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 107,
-   "stats": {
-    "title_reread_named": 6,
-    "near_miss_afk_rewards": 2,
-    "marginal_afk_rewards": 3,
-    "refused_battle_skip": 1,
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 1,
-    "marginal_adventure_event": 1,
-    "pokemon_upgraded": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260917_102539_combat_daily_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T10:25:34",
-   "script": "pokemon_home",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 129,
-   "stats": {
-    "title_reread_named": 1,
-    "reached_via_trial": 1,
-    "balls_unsettled_opened": 2,
-    "merge_moved_instead": 1,
-    "counter_misread": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_102325_pokemon_home_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 35531,
+  "now": 35654,
   "segments": [
    {
     "b": 28932,
@@ -8193,8 +8185,41 @@
     "s": "mail",
     "login": null,
     "handoff": 35529,
+    "rc": 0,
+    "e": 35533,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 35533,
+    "a": "fake6",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 35537,
+    "rc": 0,
+    "e": 35554,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 35554,
+    "a": "fake6",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 35555,
+    "rc": 0,
+    "e": 35578,
+    "secs": 23,
+    "why": ""
+   },
+   {
+    "b": 35578,
+    "a": "fake6",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 35584,
     "rc": null,
-    "e": 35531
+    "e": 35654
    }
   ],
   "idle": []
@@ -8411,7 +8436,7 @@
     "failed": 2
    },
    "mail": {
-    "runs": 9,
+    "runs": 10,
     "minutes": 0.5,
     "failed": 0
    },
@@ -8421,13 +8446,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 8,
-    "minutes": 2.3,
+    "runs": 9,
+    "minutes": 2.5,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 9,
-    "minutes": 13.9,
+    "runs": 10,
+    "minutes": 14.3,
     "failed": 1
    },
    "combat_daily": {
