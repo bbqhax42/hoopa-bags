@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T12:07:37.362350",
+ "generatedAt": "2026-09-18T12:09:40.237298",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "fake2",
   "mode": "guild_war",
-  "since": "12:06:01"
+  "since": "12:09:35"
  },
  "grid": {
   "tasks": [
@@ -115,7 +115,7 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -139,7 +139,7 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 187,
-  "todo": 15,
+  "done": 189,
+  "todo": 13,
   "gaveUp": 7,
   "unavailable": 2,
   "windowed": 17
@@ -635,11 +635,50 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-18T12:06:22.246018",
+  "label": "fake1",
+  "at": "2026-09-18T12:08:10.610504",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T12:09:34",
+   "script": "guild_war",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 75,
+   "stats": {
+    "near_miss_last_hit": 5,
+    "marginal_last_hit": 5,
+    "near_miss_vr_rank": 3,
+    "near_miss_tips_header": 62,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_120819_guild_war_fake1"
+  },
+  {
+   "ts": "2026-09-18T12:07:49",
+   "script": "guild_war",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 77,
+   "stats": {
+    "near_miss_last_hit": 3,
+    "marginal_battle_victory": 1,
+    "marginal_last_hit": 2,
+    "near_miss_vr_rank": 1,
+    "near_miss_tips_header": 66,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_never_entered": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_120631_guild_war_smurf"
+  },
   {
    "ts": "2026-09-18T12:06:01",
    "script": "guild_war",
@@ -6818,55 +6857,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_160256_guild_war_fake3"
-  },
-  {
-   "ts": "2026-09-17T16:02:24",
-   "script": "guild_war",
-   "account": "dre",
-   "rc": 0,
-   "secs": 51,
-   "stats": {
-    "near_miss_set_form_title": 2,
-    "marginal_set_form_title": 4,
-    "near_miss_vr_rank": 6,
-    "near_miss_last_hit": 6,
-    "marginal_last_hit": 1,
-    "near_miss_tips_header": 70,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_160132_guild_war_dre"
-  },
-  {
-   "ts": "2026-09-17T16:01:32",
-   "script": "rank_match",
-   "account": "dre",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260917_160035_rank_match_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 43657,
+  "now": 43780,
   "segments": [
    {
     "b": 28932,
@@ -9524,8 +9520,36 @@
      43582
     ],
     "handoff": 43591,
+    "rc": 0,
+    "e": 43669,
+    "secs": 77,
+    "why": ""
+   },
+   {
+    "b": 43669,
+    "a": "fake1",
+    "s": "guild_war",
+    "login": [
+     43670,
+     43690
+    ],
+    "handoff": 43699,
+    "rc": 0,
+    "e": 43775,
+    "secs": 75,
+    "why": ""
+   },
+   {
+    "b": 43775,
+    "a": "fake2",
+    "s": "guild_war",
+    "login": [
+     43775,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 43657
+    "e": 43780
    }
   ],
   "idle": []
@@ -9894,8 +9918,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 28,
-  "relogMinutes": 14.5,
+  "switches": 30,
+  "relogMinutes": 14.9,
   "retries": 44,
   "tasks": {
    "dailyclaim": {
@@ -9979,8 +10003,8 @@
     "failed": 3
    },
    "guild_war": {
-    "runs": 2,
-    "minutes": 2.6,
+    "runs": 4,
+    "minutes": 5.2,
     "failed": 0
    }
   }
