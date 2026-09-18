@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T11:57:21.822292",
+ "generatedAt": "2026-09-18T11:59:24.772037",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
-  "mode": "hoopa",
-  "since": "11:50:53"
+  "account": "smurf",
+  "mode": "rift",
+  "since": "11:59:23"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "💤",
-     "·"
+     "💤"
     ]
    },
    {
@@ -442,7 +442,7 @@
  },
  "counts": {
   "done": 185,
-  "todo": 1,
+  "todo": 0,
   "gaveUp": 7,
   "unavailable": 2,
   "windowed": 34
@@ -540,6 +540,12 @@
   },
   {
    "account": "test1",
+   "task": "hoopa",
+   "since": "2026-09-18T11:58:18",
+   "why": "lost a fight while climbing — the result card says the fight was lost"
+  },
+  {
+   "account": "test1",
    "task": "story",
    "since": "2026-09-17T18:33:03",
    "why": "Unlocked after clearing Victory Road -  Fuchsia Gym — clear that by hand, then re-enable"
@@ -556,17 +562,18 @@
   },
   {
    "account": "jeff",
-   "fights": 2,
-   "stamina": 29,
-   "staminaMax": 29,
-   "staminaAt": "2026-09-18T10:49:21",
-   "nextAt": "2026-09-18T11:55:26"
+   "fights": 3,
+   "stamina": 0,
+   "staminaMax": 0,
+   "staminaAt": "2026-09-18T11:59:15",
+   "nextAt": "2026-09-18T15:59:22"
   }
  ],
  "snoozed": {
   "chris|championship": "2026-09-18T13:41",
   "chris|island_challenge": "2026-09-18T13:11",
-  "jeff|championship": "2026-09-18T12:52"
+  "jeff|championship": "2026-09-18T12:52",
+  "jeff|island_challenge": "2026-09-18T15:59"
  },
  "ownerOnline": [],
  "keys": {
@@ -628,11 +635,41 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-18T11:51:14.051169",
+  "label": "jeff",
+  "at": "2026-09-18T11:58:44.639748",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T11:59:22",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 27,
+   "stats": {
+    "fights": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 0,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260918_115855_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-18T11:58:18",
+   "script": "hoopa",
+   "account": "test1",
+   "rc": 2,
+   "secs": 413,
+   "stats": {},
+   "incomplete": [
+    "lost a fight while climbing — the result card says the fight was lost"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-18T11:41:37",
    "script": "championship",
@@ -6831,52 +6868,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_155602_guild_war_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T15:56:01",
-   "script": "rank_match",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 8,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260917_155505_rank_match_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T15:54:35",
-   "script": "guild_war",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "near_miss_vr_rank": 5,
-    "near_miss_last_hit": 8,
-    "marginal_last_hit": 4,
-    "near_miss_tips_header": 70,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_155329_guild_war_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 43042,
+  "now": 43165,
   "segments": [
    {
     "b": 28932,
@@ -9455,8 +9452,36 @@
      42674
     ],
     "handoff": 42685,
+    "rc": 2,
+    "e": 43103,
+    "secs": 413,
+    "why": "lost a fight while climbing — the result card says the fight was lost"
+   },
+   {
+    "b": 43103,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     43104,
+     43124
+    ],
+    "handoff": 43135,
+    "rc": 5,
+    "e": 43163,
+    "secs": 27,
+    "why": ""
+   },
+   {
+    "b": 43163,
+    "a": "smurf",
+    "s": "rift",
+    "login": [
+     43163,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 43042
+    "e": 43165
    }
   ],
   "idle": []
@@ -9825,9 +9850,9 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 23,
-  "relogMinutes": 11.9,
-  "retries": 43,
+  "switches": 25,
+  "relogMinutes": 12.4,
+  "retries": 44,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -9905,9 +9930,9 @@
     "failed": 0
    },
    "island_challenge": {
-    "runs": 2,
-    "minutes": 1.3,
-    "failed": 2
+    "runs": 3,
+    "minutes": 1.8,
+    "failed": 3
    }
   }
  },
@@ -9923,6 +9948,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "test1",
+   "task": "hoopa",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "at": "2026-09-18T11:58:18"
   }
  ],
  "windows": {
