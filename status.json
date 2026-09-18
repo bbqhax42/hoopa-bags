@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T08:44:22.221725",
+ "generatedAt": "2026-09-18T08:46:25.516398",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
   "mode": "combat_daily",
-  "since": "08:43:42"
+  "since": "08:45:21"
  },
  "grid": {
   "tasks": [
@@ -87,7 +87,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "⏰",
      "·",
@@ -442,8 +442,8 @@
  },
  "counts": {
   "done": 38,
-  "todo": 153,
-  "gaveUp": 1,
+  "todo": 152,
+  "gaveUp": 2,
   "unavailable": 0,
   "windowed": 34
  },
@@ -617,6 +617,26 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T08:45:21",
+   "script": "combat_daily",
+   "account": "chris",
+   "rc": 1,
+   "secs": 93,
+   "stats": {
+    "near_miss_rift_exit_guardian": 3,
+    "near_miss_vr_rank": 1,
+    "arena_slot_unavailable": 1,
+    "title_reread_named": 3,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 os a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260918_084347_combat_daily_chris"
+  },
   {
    "ts": "2026-09-18T08:43:42",
    "script": "pokemon_home",
@@ -6823,29 +6843,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_092738_joint_team_daily_quest_fake3"
-  },
-  {
-   "ts": "2026-09-17T09:27:37",
-   "script": "mail",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 4,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_092734_mail_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 31462,
+  "now": 31585,
   "segments": [
    {
     "b": 28932,
@@ -7360,13 +7363,35 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 31427,
-    "rc": null,
-    "e": 31462
+    "rc": 1,
+    "e": 31521,
+    "secs": 93,
+    "why": ""
+   },
+   {
+    "b": 31521,
+    "a": "chris",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 31522,
+    "rc": 1,
+    "e": 31585,
+    "secs": 93,
+    "why": ""
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T08:45:21",
+   "account": "chris",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 93,
+   "why": "near_miss_rift_exit_guardian, near_miss_vr_rank, arena_slot_unavailable, title_reread_named, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_084347_combat_daily_chris__KEEP_0046_084430_arena_slot_unavailable.png"
+  },
   {
    "ts": "2026-09-18T08:36:07",
    "account": "jeff",
@@ -7462,7 +7487,7 @@
   "since": "2026-09-18T08:00",
   "switches": 3,
   "relogMinutes": 1.7,
-  "retries": 8,
+  "retries": 9,
   "tasks": {
    "dailyclaim": {
     "runs": 4,
@@ -7490,9 +7515,9 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 6,
-    "minutes": 6.1,
-    "failed": 3
+    "runs": 7,
+    "minutes": 7.6,
+    "failed": 4
    },
    "victory_road": {
     "runs": 3,
