@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T17:44:23.396986",
+ "generatedAt": "2026-09-18T17:46:26.522685",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "island_challenge",
-  "since": "17:44:15"
+  "account": "smurf",
+  "mode": "hoopa",
+  "since": "17:45:20"
  },
  "grid": {
   "tasks": [
@@ -561,10 +561,10 @@
   {
    "account": "chris",
    "fights": 6,
-   "stamina": 2,
-   "staminaMax": 2,
-   "staminaAt": "2026-09-18T13:49:35",
-   "nextAt": "2026-09-18T17:37:43"
+   "stamina": 41,
+   "staminaMax": 41,
+   "staminaAt": "2026-09-18T17:44:55",
+   "nextAt": null
   },
   {
    "account": "jeff",
@@ -640,11 +640,29 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-18T17:35:40.479308",
+  "label": "smurf",
+  "at": "2026-09-18T17:45:40.781284",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T17:45:19",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 32,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "island_challenge: fight 7 did not complete"
+   ],
+   "values": {
+    "stamina": 41,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260918_174447_island_challenge_chris"
+  },
   {
    "ts": "2026-09-18T17:35:12",
    "script": "hoopa",
@@ -6979,27 +6997,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_183145_story_test1"
-  },
-  {
-   "ts": "2026-09-17T18:31:44",
-   "script": "story",
-   "account": "test1",
-   "rc": 0,
-   "secs": 87,
-   "stats": {
-    "skip_retry": 14,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_183017_story_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 63863,
+  "now": 63986,
   "segments": [
    {
     "b": 28932,
@@ -11417,16 +11420,39 @@
     "s": "island_challenge",
     "login": [
      63855,
-     null
+     63876
     ],
-    "handoff": null,
+    "handoff": 63887,
+    "rc": 1,
+    "e": 63920,
+    "secs": 32,
+    "why": "island_challenge: fight 7 did not complete"
+   },
+   {
+    "b": 63920,
+    "a": "smurf",
+    "s": "hoopa",
+    "login": [
+     63920,
+     63940
+    ],
+    "handoff": 63951,
     "rc": null,
-    "e": 63863
+    "e": 63986
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T17:45:19",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 32,
+   "why": "island_challenge: fight 7 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_174447_island_challenge_chris__KEEP_0003_174516_no_map_after_7.png"
+  },
   {
    "ts": "2026-09-18T13:54:59",
    "account": "fake5",
@@ -11826,9 +11852,9 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 142,
-  "relogMinutes": 60.6,
-  "retries": 56,
+  "switches": 143,
+  "relogMinutes": 61.6,
+  "retries": 57,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -11906,9 +11932,9 @@
     "failed": 0
    },
    "island_challenge": {
-    "runs": 6,
-    "minutes": 3.4,
-    "failed": 6
+    "runs": 7,
+    "minutes": 4.0,
+    "failed": 7
    },
    "guild_war": {
     "runs": 17,
