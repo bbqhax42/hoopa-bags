@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T13:54:18.992001",
+ "generatedAt": "2026-09-18T13:56:22.799311",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
+  "account": "fake6",
   "mode": "faction",
-  "since": "13:53:48"
+  "since": "13:56:22"
  },
  "grid": {
   "tasks": [
@@ -257,7 +257,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 212,
-  "todo": 12,
+  "done": 213,
+  "todo": 11,
   "gaveUp": 8,
   "unavailable": 4,
   "windowed": 0
@@ -647,11 +647,49 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-18T13:50:10.565184",
+  "label": "fake6",
+  "at": "2026-09-18T13:55:20.174081",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T13:56:22",
+   "script": "rank_match",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260918_135528_rank_match_fake6"
+  },
+  {
+   "ts": "2026-09-18T13:54:59",
+   "script": "faction",
+   "account": "fake5",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "popup_never_opened": 1,
+    "incomplete": 1,
+    "floors_fire": 0,
+    "sweeps_used": 0
+   },
+   "incomplete": [
+    "faction: fire tower: Start opened nothing"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260918_135446_faction_fake5"
+  },
   {
    "ts": "2026-09-18T13:53:47",
    "script": "faction",
@@ -6913,34 +6951,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_172408_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:24:02",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_172401_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:23:55",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_172354_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 50059,
+  "now": 50183,
   "segments": [
    {
     "b": 28932,
@@ -10238,16 +10254,48 @@
     "a": "fake5",
     "s": "faction",
     "login": null,
-    "handoff": null,
+    "handoff": 50085,
     "rc": 1,
-    "e": 50059,
+    "e": 50099,
     "secs": 147,
     "why": "faction: fire tower: Start opened nothing"
+   },
+   {
+    "b": 50099,
+    "a": "fake6",
+    "s": "rank_match",
+    "login": [
+     50100,
+     50120
+    ],
+    "handoff": 50128,
+    "rc": 0,
+    "e": 50182,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 50182,
+    "a": "fake6",
+    "s": "faction",
+    "login": null,
+    "handoff": 50183,
+    "rc": null,
+    "e": 50183
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T13:54:59",
+   "account": "fake5",
+   "task": "faction",
+   "rc": 1,
+   "secs": 13,
+   "why": "faction: fire tower: Start opened nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_135446_faction_fake5__KEEP_0008_135459_faction_no_popup_fire.png"
+  },
   {
    "ts": "2026-09-18T13:53:47",
    "account": "fake5",
@@ -10638,9 +10686,9 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 67,
-  "relogMinutes": 34.8,
-  "retries": 51,
+  "switches": 68,
+  "relogMinutes": 35.2,
+  "retries": 52,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -10703,9 +10751,9 @@
     "failed": 4
    },
    "faction": {
-    "runs": 8,
-    "minutes": 11.0,
-    "failed": 1
+    "runs": 9,
+    "minutes": 11.2,
+    "failed": 2
    },
    "championship": {
     "runs": 5,
@@ -10733,8 +10781,8 @@
     "failed": 2
    },
    "rank_match": {
-    "runs": 9,
-    "minutes": 8.9,
+    "runs": 10,
+    "minutes": 9.8,
     "failed": 0
    }
   }
