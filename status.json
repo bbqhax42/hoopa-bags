@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T14:02:32.195868",
+ "generatedAt": "2026-09-18T14:04:35.229686",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
+  "account": "deno",
   "mode": "rank_match",
-  "since": "14:02:09"
+  "since": "14:03:02"
  },
  "grid": {
   "tasks": [
@@ -377,13 +377,13 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "✓",
      "✓",
      "-",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "-",
      "-",
      "-",
@@ -442,9 +442,9 @@
  },
  "counts": {
   "done": 216,
-  "todo": 5,
+  "todo": 3,
   "gaveUp": 8,
-  "unavailable": 7,
+  "unavailable": 9,
   "windowed": 0
  },
  "disabled": [
@@ -647,11 +647,62 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-18T14:02:29.817614",
+  "label": "deno",
+  "at": "2026-09-18T14:03:22.971139",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T14:03:01",
+   "script": "faction",
+   "account": "test1",
+   "rc": 2,
+   "secs": 4,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_140257_faction_test1"
+  },
+  {
+   "ts": "2026-09-18T14:02:55",
+   "script": "faction",
+   "account": "test1",
+   "rc": 2,
+   "secs": 4,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_140251_faction_test1"
+  },
+  {
+   "ts": "2026-09-18T14:02:50",
+   "script": "rank_match",
+   "account": "test1",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_140250_rank_match_test1"
+  },
+  {
+   "ts": "2026-09-18T14:02:49",
+   "script": "rank_match",
+   "account": "test1",
+   "rc": 2,
+   "secs": 11,
+   "stats": {
+    "near_miss_go_button": 3,
+    "rank_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_140238_rank_match_test1"
+  },
   {
    "ts": "2026-09-18T14:02:08",
    "script": "rank_match",
@@ -6945,56 +6996,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_173041_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:29:36",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 2,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_172933_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:29:28",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_172926_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:29:21",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_172919_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:28:14",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 2,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_172812_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 50552,
+  "now": 50675,
   "segments": [
    {
     "b": 28932,
@@ -10431,9 +10438,56 @@
      50529,
      50549
     ],
-    "handoff": null,
+    "handoff": 50557,
+    "rc": 2,
+    "e": 50570,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 50570,
+    "a": "test1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 50570,
+    "rc": 2,
+    "e": 50570,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 50570,
+    "a": "test1",
+    "s": "faction",
+    "login": null,
+    "handoff": 50571,
+    "rc": 2,
+    "e": 50576,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 50576,
+    "a": "test1",
+    "s": "faction",
+    "login": null,
+    "handoff": 50577,
+    "rc": 2,
+    "e": 50582,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 50582,
+    "a": "deno",
+    "s": "rank_match",
+    "login": [
+     50582,
+     50602
+    ],
+    "handoff": 50614,
     "rc": null,
-    "e": 50552
+    "e": 50675
    }
   ],
   "idle": []
@@ -10838,8 +10892,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 73,
-  "relogMinutes": 37.2,
+  "switches": 74,
+  "relogMinutes": 38.2,
   "retries": 52,
   "tasks": {
    "dailyclaim": {
@@ -10903,8 +10957,8 @@
     "failed": 4
    },
    "faction": {
-    "runs": 13,
-    "minutes": 11.5,
+    "runs": 15,
+    "minutes": 11.6,
     "failed": 2
    },
    "championship": {
@@ -10933,8 +10987,8 @@
     "failed": 2
    },
    "rank_match": {
-    "runs": 15,
-    "minutes": 13.2,
+    "runs": 17,
+    "minutes": 13.3,
     "failed": 0
    }
   }
@@ -10996,9 +11050,21 @@
   },
   {
    "account": "test1",
+   "task": "faction",
+   "why": "tower_locked",
+   "at": "2026-09-18T14:03:01"
+  },
+  {
+   "account": "test1",
    "task": "hoopa",
    "why": "lost a fight while climbing — the result card says the fight was lost",
    "at": "2026-09-18T11:58:18"
+  },
+  {
+   "account": "test1",
+   "task": "rank_match",
+   "why": "near_miss_go_button, rank_locked",
+   "at": "2026-09-18T14:02:49"
   }
  ],
  "windows": {
