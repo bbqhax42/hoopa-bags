@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T11:22:28.327229",
+ "generatedAt": "2026-09-18T11:24:32.252990",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "pokemon_home",
-  "since": "11:22:21"
+  "mode": "combat_daily",
+  "since": "11:22:40"
  },
  "grid": {
   "tasks": [
@@ -633,6 +633,20 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T11:22:39",
+   "script": "pokemon_home",
+   "account": "dre",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "reached_via_trial": 1,
+    "no_trusted_grid": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_112226_pokemon_home_dre"
+  },
   {
    "ts": "2026-09-18T11:22:21",
    "script": "pokemon_home",
@@ -6894,28 +6908,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_140432_ltd_reward_na"
-  },
-  {
-   "ts": "2026-09-17T12:38:27",
-   "script": "hoopa",
-   "account": "chris",
-   "rc": 2,
-   "secs": 6,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 40948,
+  "now": 41072,
   "segments": [
    {
     "b": 28932,
@@ -9240,14 +9238,32 @@
     "login": null,
     "handoff": 40946,
     "rc": 1,
-    "e": 40948,
+    "e": 40960,
     "secs": 13,
     "why": ""
+   },
+   {
+    "b": 40960,
+    "a": "dre",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 40965,
+    "rc": null,
+    "e": 41072
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T11:22:39",
+   "account": "dre",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 13,
+   "why": "reached_via_trial, no_trusted_grid",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_112226_pokemon_home_dre__0012_112239_no_trusted_grid.png"
+  },
   {
    "ts": "2026-09-18T11:22:21",
    "account": "dre",
@@ -9568,7 +9584,7 @@
   "since": "2026-09-18T08:00",
   "switches": 18,
   "relogMinutes": 9.2,
-  "retries": 37,
+  "retries": 38,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -9591,9 +9607,9 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 19,
-    "minutes": 32.5,
-    "failed": 4
+    "runs": 20,
+    "minutes": 32.7,
+    "failed": 5
    },
    "combat_daily": {
     "runs": 29,
