@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:15:12.205535",
+ "generatedAt": "2026-09-18T09:17:15.302636",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "faction",
-  "since": "09:13:18"
+  "account": "fake1",
+  "mode": "dailyclaim",
+  "since": "09:16:20"
  },
  "grid": {
   "tasks": [
@@ -119,9 +119,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "-",
      "-"
     ]
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 56,
-  "todo": 137,
+  "done": 59,
+  "todo": 134,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -605,11 +605,51 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-18T08:56:56.255073",
+  "label": "fake1",
+  "at": "2026-09-18T09:16:44.437208",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:16:20",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_091620_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-09-18T09:16:15",
+   "script": "misty_woods",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "path_exhausted": 1,
+    "wins": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_091610_misty_woods_smurf"
+  },
+  {
+   "ts": "2026-09-18T09:15:35",
+   "script": "faction",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 133,
+   "stats": {
+    "auto_formation": 20,
+    "floors_fire": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_091322_faction_smurf"
+  },
   {
    "ts": "2026-09-18T09:13:18",
    "script": "sky_pillar",
@@ -6798,62 +6838,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_095005_joint_team_daily_quest_fake5"
-  },
-  {
-   "ts": "2026-09-17T09:50:04",
-   "script": "mail",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_095001_mail_fake5"
-  },
-  {
-   "ts": "2026-09-17T09:50:00",
-   "script": "dailyclaim",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_094930_dailyclaim_fake5"
-  },
-  {
-   "ts": "2026-09-17T09:48:58",
-   "script": "sky_pillar",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 2,
-    "stage": 8
-   },
-   "dir": "debug_runs/20260917_094802_sky_pillar_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 33312,
+  "now": 33435,
   "segments": [
    {
     "b": 28932,
@@ -7642,8 +7632,44 @@
     "s": "faction",
     "login": null,
     "handoff": 33202,
+    "rc": 0,
+    "e": 33336,
+    "secs": 133,
+    "why": ""
+   },
+   {
+    "b": 33336,
+    "a": "smurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": 33370,
+    "rc": 0,
+    "e": 33376,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 33376,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 33380,
+    "rc": 0,
+    "e": 33380,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 33380,
+    "a": "fake1",
+    "s": "dailyclaim",
+    "login": [
+     33381,
+     33404
+    ],
+    "handoff": 33412,
     "rc": null,
-    "e": 33312
+    "e": 33435
    }
   ],
   "idle": []
@@ -7787,8 +7813,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 4,
-  "relogMinutes": 2.2,
+  "switches": 5,
+  "relogMinutes": 2.7,
   "retries": 14,
   "tasks": {
    "dailyclaim": {
@@ -7847,19 +7873,24 @@
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 3,
+    "runs": 4,
     "minutes": 0.0,
     "failed": 2
    },
    "faction": {
-    "runs": 1,
-    "minutes": 2.4,
+    "runs": 2,
+    "minutes": 4.7,
     "failed": 0
    },
    "championship": {
     "runs": 1,
     "minutes": 0.1,
     "failed": 1
+   },
+   "misty_woods": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
    }
   }
  },
