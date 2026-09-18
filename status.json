@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:04:55.093241",
+ "generatedAt": "2026-09-18T09:06:58.964088",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "combat_daily",
-  "since": "09:04:12"
+  "mode": "paradise",
+  "since": "09:06:03"
  },
  "grid": {
   "tasks": [
@@ -111,8 +111,8 @@
      "⊘",
      "✓",
      "✓",
-     "✗2",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 50,
-  "todo": 142,
-  "gaveUp": 3,
+  "done": 52,
+  "todo": 141,
+  "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
  },
@@ -610,6 +610,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:06:02",
+   "script": "victory_road",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_090554_victory_road_smurf"
+  },
+  {
+   "ts": "2026-09-18T09:05:53",
+   "script": "combat_daily",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 99,
+   "stats": {
+    "marginal_afk_rewards": 3,
+    "near_miss_afk_rewards": 3,
+    "refused_afk_rewards_confirm": 1,
+    "near_miss_vr_rank": 4,
+    "adv_energy_spent": 1,
+    "title_reread_named": 2,
+    "near_miss_pokemon_upgrade": 1,
+    "upgrade_no_change": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 o ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260918_090413_combat_daily_smurf"
+  },
   {
    "ts": "2026-09-18T09:04:11",
    "script": "combat_daily",
@@ -6795,39 +6835,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_094430_rank_match_fake4"
-  },
-  {
-   "ts": "2026-09-17T09:44:29",
-   "script": "victory_road",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_094420_victory_road_fake4"
-  },
-  {
-   "ts": "2026-09-17T09:44:19",
-   "script": "combat_daily",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "title_reread_named": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_094412_combat_daily_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 32695,
+  "now": 32819,
   "segments": [
    {
     "b": 28932,
@@ -7551,14 +7564,43 @@
     "login": null,
     "handoff": 32652,
     "rc": 1,
-    "e": 32695,
+    "e": 32753,
     "secs": 15,
     "why": ""
+   },
+   {
+    "b": 32753,
+    "a": "smurf",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 32754,
+    "rc": 0,
+    "e": 32763,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 32763,
+    "a": "smurf",
+    "s": "paradise",
+    "login": null,
+    "handoff": 32764,
+    "rc": null,
+    "e": 32819
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T09:05:53",
+   "account": "smurf",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 99,
+   "why": "combat_daily: upgrade a Pokemon: Level Up did nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_090413_combat_daily_smurf__KEEP_0119_090539_upgrade_no_change.png"
+  },
   {
    "ts": "2026-09-18T09:04:11",
    "account": "smurf",
@@ -7690,7 +7732,7 @@
   "since": "2026-09-18T08:00",
   "switches": 4,
   "relogMinutes": 2.2,
-  "retries": 13,
+  "retries": 14,
   "tasks": {
    "dailyclaim": {
     "runs": 6,
@@ -7718,13 +7760,13 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 9,
-    "minutes": 9.1,
-    "failed": 5
+    "runs": 10,
+    "minutes": 10.8,
+    "failed": 6
    },
    "victory_road": {
-    "runs": 4,
-    "minutes": 0.6,
+    "runs": 5,
+    "minutes": 0.7,
     "failed": 0
    },
    "paradise": {
