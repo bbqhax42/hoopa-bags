@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:06:32.765116",
+ "generatedAt": "2026-09-18T10:08:36.452667",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
-  "mode": "combat_daily",
-  "since": "10:06:14"
+  "mode": "paradise",
+  "since": "10:08:30"
  },
  "grid": {
   "tasks": [
@@ -279,8 +279,8 @@
      "-",
      "✓",
      "⊘",
-     "·",
-     "·",
+     "✗2",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 105,
-  "todo": 86,
-  "gaveUp": 2,
+  "done": 106,
+  "todo": 84,
+  "gaveUp": 3,
   "unavailable": 2,
   "windowed": 34
  },
@@ -625,6 +625,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:08:30",
+   "script": "victory_road",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_100822_victory_road_fake7"
+  },
+  {
+   "ts": "2026-09-18T10:08:20",
+   "script": "combat_daily",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 107,
+   "stats": {
+    "near_miss_vr_rank": 7,
+    "adv_overflow": 1,
+    "title_reread_named": 3,
+    "near_miss_go_button": 1,
+    "near_miss_battle_victory_confirm": 1,
+    "near_miss_pokemon_upgrade": 1,
+    "upgrade_no_change": 1,
+    "incomplete": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [
+    "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 1/1 o ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260918_100633_combat_daily_fake7"
+  },
   {
    "ts": "2026-09-18T10:06:32",
    "script": "combat_daily",
@@ -6848,45 +6888,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_104220_victory_road_test1"
-  },
-  {
-   "ts": "2026-09-17T10:42:19",
-   "script": "combat_daily",
-   "account": "test1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_104212_combat_daily_test1"
-  },
-  {
-   "ts": "2026-09-17T10:42:11",
-   "script": "combat_daily",
-   "account": "test1",
-   "rc": 1,
-   "secs": 116,
-   "stats": {
-    "title_reread_named": 4,
-    "marginal_afk_rewards": 2,
-    "near_miss_vr_rank": 5,
-    "adv_energy_spent": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "pokemon_upgraded": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 so a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260917_104015_combat_daily_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 36393,
+  "now": 36516,
   "segments": [
    {
     "b": 28932,
@@ -8360,16 +8367,45 @@
     "a": "fake7",
     "s": "combat_daily",
     "login": null,
-    "handoff": null,
+    "handoff": 36393,
     "rc": 1,
-    "e": 36393,
+    "e": 36501,
     "secs": 13,
     "why": ""
+   },
+   {
+    "b": 36501,
+    "a": "fake7",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 36501,
+    "rc": 0,
+    "e": 36510,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 36510,
+    "a": "fake7",
+    "s": "paradise",
+    "login": null,
+    "handoff": 36511,
+    "rc": null,
+    "e": 36516
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T10:08:20",
+   "account": "fake7",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 107,
+   "why": "combat_daily: upgrade a Pokemon: Level Up did nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_100633_combat_daily_fake7__KEEP_0136_100756_upgrade_no_change.png"
+  },
   {
    "ts": "2026-09-18T10:06:32",
    "account": "fake7",
@@ -8600,7 +8636,7 @@
   "since": "2026-09-18T08:00",
   "switches": 11,
   "relogMinutes": 5.7,
-  "retries": 25,
+  "retries": 26,
   "tasks": {
    "dailyclaim": {
     "runs": 12,
@@ -8628,13 +8664,13 @@
     "failed": 2
    },
    "combat_daily": {
-    "runs": 19,
-    "minutes": 19.8,
-    "failed": 11
+    "runs": 20,
+    "minutes": 21.5,
+    "failed": 12
    },
    "victory_road": {
-    "runs": 9,
-    "minutes": 1.4,
+    "runs": 10,
+    "minutes": 1.5,
     "failed": 0
    },
    "paradise": {
