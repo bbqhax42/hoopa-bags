@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T11:06:03.324063",
+ "generatedAt": "2026-09-18T11:08:06.711983",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "paradise",
-  "since": "11:04:22"
+  "mode": "sky_pillar",
+  "since": "11:07:29"
  },
  "grid": {
   "tasks": [
@@ -378,10 +378,10 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 149,
-  "todo": 40,
+  "done": 151,
+  "todo": 38,
   "gaveUp": 4,
   "unavailable": 2,
   "windowed": 34
@@ -633,6 +633,39 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T11:07:28",
+   "script": "collect_hoopa_keys",
+   "account": "test1",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_110720_collect_hoopa_keys_test1"
+  },
+  {
+   "ts": "2026-09-18T11:07:19",
+   "script": "paradise",
+   "account": "test1",
+   "rc": 0,
+   "secs": 175,
+   "stats": {
+    "marginal_paradise_hub": 1,
+    "explore_clicks": 73,
+    "pass_claims": 5,
+    "upgraded_energy_drink": 2,
+    "upgraded_sports_gloves": 1,
+    "upgraded_small_radar": 1,
+    "dex_activated": 4,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_110424_paradise_test1"
+  },
   {
    "ts": "2026-09-18T11:04:21",
    "script": "victory_road",
@@ -6881,44 +6914,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_120755_guild_war_fake3"
-  },
-  {
-   "ts": "2026-09-17T12:07:51",
-   "script": "guild_war",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 17,
-   "stats": {
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_never_entered": 1,
-    "assist_refill": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_120734_guild_war_fake3"
-  },
-  {
-   "ts": "2026-09-17T12:07:05",
-   "script": "guild_war",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_never_entered": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_120700_guild_war_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 39963,
+  "now": 40087,
   "segments": [
    {
     "b": 28932,
@@ -8987,8 +8988,30 @@
     "s": "paradise",
     "login": null,
     "handoff": 39863,
+    "rc": 0,
+    "e": 40040,
+    "secs": 175,
+    "why": ""
+   },
+   {
+    "b": 40040,
+    "a": "test1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 40040,
+    "rc": 0,
+    "e": 40049,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 40049,
+    "a": "test1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 40049,
     "rc": null,
-    "e": 39963
+    "e": 40087
    }
   ],
   "idle": []
@@ -9334,13 +9357,13 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 13,
-    "minutes": 42.2,
+    "runs": 14,
+    "minutes": 45.2,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 15,
-    "minutes": 2.2,
+    "runs": 16,
+    "minutes": 2.4,
     "failed": 3
    },
    "sky_pillar": {
