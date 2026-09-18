@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T13:44:03.917656",
+ "generatedAt": "2026-09-18T13:46:06.812498",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
-  "mode": "faction",
-  "since": "13:41:33"
+  "account": "fake3",
+  "mode": "rank_match",
+  "since": "13:45:10"
  },
  "grid": {
   "tasks": [
@@ -167,7 +167,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 208,
-  "todo": 19,
+  "done": 209,
+  "todo": 18,
   "gaveUp": 7,
   "unavailable": 3,
   "windowed": 0
@@ -646,11 +646,26 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-18T13:40:25.882534",
+  "label": "fake3",
+  "at": "2026-09-18T13:45:33.052473",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T13:45:10",
+   "script": "faction",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 216,
+   "stats": {
+    "auto_formation": 20,
+    "floors_fire": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_134133_faction_fake2"
+  },
   {
    "ts": "2026-09-18T13:41:32",
    "script": "rank_match",
@@ -6890,27 +6905,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_170331_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:02:59",
-   "script": "story",
-   "account": "test1",
-   "rc": 0,
-   "secs": 105,
-   "stats": {
-    "skip_retry": 16,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_170113_story_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 49444,
+  "now": 49567,
   "segments": [
    {
     "b": 28932,
@@ -10098,8 +10098,22 @@
     "s": "faction",
     "login": null,
     "handoff": 49293,
+    "rc": 0,
+    "e": 49510,
+    "secs": 216,
+    "why": ""
+   },
+   {
+    "b": 49510,
+    "a": "fake3",
+    "s": "rank_match",
+    "login": [
+     49511,
+     49533
+    ],
+    "handoff": 49541,
     "rc": null,
-    "e": 49444
+    "e": 49567
    }
   ],
   "idle": []
@@ -10486,8 +10500,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 63,
-  "relogMinutes": 32.7,
+  "switches": 64,
+  "relogMinutes": 33.2,
   "retries": 48,
   "tasks": {
    "dailyclaim": {
@@ -10551,8 +10565,8 @@
     "failed": 4
    },
    "faction": {
-    "runs": 4,
-    "minutes": 4.8,
+    "runs": 5,
+    "minutes": 8.4,
     "failed": 0
    },
    "championship": {
