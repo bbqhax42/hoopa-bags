@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:23:25.387657",
+ "generatedAt": "2026-09-18T09:25:28.479072",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake1",
+  "mode": "sky_pillar",
+  "since": "09:24:48"
  },
  "grid": {
   "tasks": [
@@ -138,10 +138,10 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 65,
-  "todo": 128,
+  "done": 67,
+  "todo": 126,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -610,6 +610,56 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:24:47",
+   "script": "collect_hoopa_keys",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_092441_collect_hoopa_keys_fake1"
+  },
+  {
+   "ts": "2026-09-18T09:24:33",
+   "script": "collect_hoopa_keys",
+   "account": "fake1",
+   "rc": 1,
+   "secs": 15,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "marginal_pokemon_tower": 24,
+    "vault_never_opened": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_092418_collect_hoopa_keys_fake1"
+  },
+  {
+   "ts": "2026-09-18T09:24:17",
+   "script": "paradise",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 194,
+   "stats": {
+    "marginal_paradise_hub": 4,
+    "explore_clicks": 84,
+    "pass_claims": 4,
+    "upgraded_energy_drink": 1,
+    "upgraded_small_radar": 2,
+    "upgraded_sports_gloves": 1,
+    "dex_milestones": 1,
+    "dex_activated": 3,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_092102_paradise_fake1"
+  },
   {
    "ts": "2026-09-18T09:21:00",
    "script": "victory_road",
@@ -6798,59 +6848,12 @@
     "stage": 3
    },
    "dir": "debug_runs/20260917_095803_sky_pillar_fake5"
-  },
-  {
-   "ts": "2026-09-17T09:58:02",
-   "script": "collect_hoopa_keys",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_095754_collect_hoopa_keys_fake5"
-  },
-  {
-   "ts": "2026-09-17T09:57:53",
-   "script": "paradise",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 173,
-   "stats": {
-    "marginal_paradise_hub": 4,
-    "explore_clicks": 74,
-    "pass_claims": 5,
-    "upgraded_sports_gloves": 1,
-    "upgraded_energy_drink": 1,
-    "upgraded_small_radar": 1,
-    "dex_milestones": 2,
-    "dex_activated": 6,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "19/13"
-   },
-   "dir": "debug_runs/20260917_095459_paradise_fake5"
-  },
-  {
-   "ts": "2026-09-17T09:54:58",
-   "script": "rank_match",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_095458_rank_match_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 33805,
+  "now": 33928,
   "segments": [
    {
     "b": 28932,
@@ -7752,13 +7755,55 @@
     "s": "paradise",
     "login": null,
     "handoff": 33661,
+    "rc": 0,
+    "e": 33857,
+    "secs": 194,
+    "why": ""
+   },
+   {
+    "b": 33857,
+    "a": "fake1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 33858,
+    "rc": 1,
+    "e": 33874,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 33874,
+    "a": "fake1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 33881,
+    "rc": 1,
+    "e": 33888,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 33888,
+    "a": "fake1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33888,
     "rc": null,
-    "e": 33805
+    "e": 33928
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T09:24:33",
+   "account": "fake1",
+   "task": "collect_hoopa_keys",
+   "rc": 1,
+   "secs": 15,
+   "why": "near_miss_hoopa_vault, marginal_hoopa_vault, marginal_pokemon_tower, vault_never_opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_092418_collect_hoopa_keys_fake1__KEEP_0002_092433_vault_never_opened.png"
+  },
   {
    "ts": "2026-09-18T09:20:41",
    "account": "fake1",
@@ -7908,7 +7953,7 @@
   "since": "2026-09-18T08:00",
   "switches": 5,
   "relogMinutes": 2.7,
-  "retries": 15,
+  "retries": 16,
   "tasks": {
    "dailyclaim": {
     "runs": 7,
@@ -7946,14 +7991,14 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 5,
-    "minutes": 15.9,
+    "runs": 6,
+    "minutes": 19.2,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 5,
-    "minutes": 0.7,
-    "failed": 1
+    "runs": 7,
+    "minutes": 1.1,
+    "failed": 2
    },
    "sky_pillar": {
     "runs": 5,
