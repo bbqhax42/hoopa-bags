@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T17:34:07.780396",
+ "generatedAt": "2026-09-18T17:36:10.581857",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "17:23:17"
+  "since": "17:35:17"
  },
  "grid": {
   "tasks": [
@@ -588,8 +588,8 @@
    "at": "2026-09-18T13:21:38"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-18T12:48:55"
+   "keys": 0,
+   "at": "2026-09-18T17:35:10"
   },
   "lucifer1": {
    "keys": 277,
@@ -641,11 +641,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-18T17:23:39.883581",
+  "label": "nova",
+  "at": "2026-09-18T17:35:40.479308",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T17:35:12",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 678,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-18T17:23:12",
    "script": "hoopa",
@@ -6979,27 +6995,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_183017_story_test1"
-  },
-  {
-   "ts": "2026-09-17T18:30:17",
-   "script": "story",
-   "account": "test1",
-   "rc": 0,
-   "secs": 96,
-   "stats": {
-    "afk_card": 3,
-    "skip_retry": 17,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_182840_story_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 63248,
+  "now": 63370,
   "segments": [
    {
     "b": 28932,
@@ -11394,8 +11395,22 @@
      62619
     ],
     "handoff": 62633,
+    "rc": 2,
+    "e": 63317,
+    "secs": 678,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 63317,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     63317,
+     63340
+    ],
+    "handoff": 63353,
     "rc": null,
-    "e": 63248
+    "e": 63370
    }
   ],
   "idle": []
@@ -11800,8 +11815,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 140,
-  "relogMinutes": 60.0,
+  "switches": 141,
+  "relogMinutes": 60.6,
   "retries": 56,
   "tasks": {
    "dailyclaim": {
@@ -11902,6 +11917,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-18T17:35:12"
+  },
   {
    "account": "fake1",
    "task": "faction",
