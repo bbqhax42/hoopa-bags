@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:37:48.488041",
+ "generatedAt": "2026-09-18T09:39:51.717250",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
-  "mode": "sky_pillar",
-  "since": "09:36:59"
+  "account": "fake3",
+  "mode": "joint_battle",
+  "since": "09:39:27"
  },
  "grid": {
   "tasks": [
@@ -166,7 +166,7 @@
      "⏰",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -177,9 +177,9 @@
    {
     "account": "fake3",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 78,
-  "todo": 115,
+  "done": 82,
+  "todo": 111,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -605,11 +605,71 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-18T09:26:27.444925",
+  "label": "fake3",
+  "at": "2026-09-18T09:38:19.548319",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:39:26",
+   "script": "joint_team_daily_quest",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 22,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093904_joint_team_daily_quest_fake3"
+  },
+  {
+   "ts": "2026-09-18T09:39:02",
+   "script": "mail",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 0,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_093859_mail_fake3"
+  },
+  {
+   "ts": "2026-09-18T09:38:58",
+   "script": "dailyclaim",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093827_dailyclaim_fake3"
+  },
+  {
+   "ts": "2026-09-18T09:37:59",
+   "script": "sky_pillar",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 2,
+    "stage": 8
+   },
+   "dir": "debug_runs/20260918_093700_sky_pillar_fake2"
+  },
   {
    "ts": "2026-09-18T09:36:59",
    "script": "collect_hoopa_keys",
@@ -6793,64 +6853,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_101229_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:12:28",
-   "script": "pokemon_home",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 17,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_101211_pokemon_home_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:12:09",
-   "script": "daily_dungeon",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_101154_daily_dungeon_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:11:03",
-   "script": "joint_team_daily_quest",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 22,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_101041_joint_team_daily_quest_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:10:40",
-   "script": "mail",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_101036_mail_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 34668,
+  "now": 34792,
   "segments": [
    {
     "b": 28932,
@@ -7940,8 +7948,55 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 34620,
+    "rc": 0,
+    "e": 34679,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 34679,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": [
+     34680,
+     34699
+    ],
+    "handoff": 34707,
+    "rc": 0,
+    "e": 34738,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 34738,
+    "a": "fake3",
+    "s": "mail",
+    "login": null,
+    "handoff": 34739,
+    "rc": 0,
+    "e": 34743,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 34743,
+    "a": "fake3",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 34743,
+    "rc": 0,
+    "e": 34767,
+    "secs": 22,
+    "why": ""
+   },
+   {
+    "b": 34767,
+    "a": "fake3",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 34769,
     "rc": null,
-    "e": 34668
+    "e": 34792
    }
   ],
   "idle": []
@@ -8130,23 +8185,23 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 6,
-  "relogMinutes": 3.2,
+  "switches": 7,
+  "relogMinutes": 3.7,
   "retries": 19,
   "tasks": {
    "dailyclaim": {
-    "runs": 8,
-    "minutes": 5.8,
+    "runs": 9,
+    "minutes": 6.3,
     "failed": 2
    },
    "mail": {
-    "runs": 7,
+    "runs": 8,
     "minutes": 0.4,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 6,
-    "minutes": 3.6,
+    "runs": 7,
+    "minutes": 4.0,
     "failed": 0
    },
    "daily_dungeon": {
@@ -8180,8 +8235,8 @@
     "failed": 3
    },
    "sky_pillar": {
-    "runs": 7,
-    "minutes": 5.1,
+    "runs": 8,
+    "minutes": 6.1,
     "failed": 2
    },
    "run_pvp_ranked": {
