@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T13:52:15.781779",
+ "generatedAt": "2026-09-18T13:54:18.992001",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
   "mode": "faction",
-  "since": "13:51:19"
+  "since": "13:53:48"
  },
  "grid": {
   "tasks": [
@@ -239,7 +239,7 @@
      "-",
      "✓",
      "⏸",
-     "·",
+     "✗2",
      "-",
      "-",
      "-",
@@ -442,8 +442,8 @@
  },
  "counts": {
   "done": 212,
-  "todo": 13,
-  "gaveUp": 7,
+  "todo": 12,
+  "gaveUp": 8,
   "unavailable": 4,
   "windowed": 0
  },
@@ -652,6 +652,25 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T13:53:47",
+   "script": "faction",
+   "account": "fake5",
+   "rc": 1,
+   "secs": 147,
+   "stats": {
+    "auto_formation": 19,
+    "popup_never_opened": 1,
+    "incomplete": 1,
+    "floors_fire": 19,
+    "sweeps_used": 0
+   },
+   "incomplete": [
+    "faction: fire tower: Start opened nothing"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260918_135120_faction_fake5"
+  },
   {
    "ts": "2026-09-18T13:51:19",
    "script": "rank_match",
@@ -6916,26 +6935,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_172354_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:23:48",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 179,
-   "stats": {
-    "rift_levels": 34,
-    "rift_rerolls": 5
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_172048_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 49936,
+  "now": 50059,
   "segments": [
    {
     "b": 28932,
@@ -10223,13 +10228,35 @@
     "s": "faction",
     "login": null,
     "handoff": 49880,
-    "rc": null,
-    "e": 49936
+    "rc": 1,
+    "e": 50028,
+    "secs": 147,
+    "why": "faction: fire tower: Start opened nothing"
+   },
+   {
+    "b": 50028,
+    "a": "fake5",
+    "s": "faction",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 50059,
+    "secs": 147,
+    "why": "faction: fire tower: Start opened nothing"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T13:53:47",
+   "account": "fake5",
+   "task": "faction",
+   "rc": 1,
+   "secs": 147,
+   "why": "faction: fire tower: Start opened nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_135120_faction_fake5__KEEP_0198_135347_faction_no_popup_fire.png"
+  },
   {
    "ts": "2026-09-18T13:00:18",
    "account": "fake5",
@@ -10613,7 +10640,7 @@
   "since": "2026-09-18T08:00",
   "switches": 67,
   "relogMinutes": 34.8,
-  "retries": 50,
+  "retries": 51,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -10676,9 +10703,9 @@
     "failed": 4
    },
    "faction": {
-    "runs": 7,
-    "minutes": 8.5,
-    "failed": 0
+    "runs": 8,
+    "minutes": 11.0,
+    "failed": 1
    },
    "championship": {
     "runs": 5,
