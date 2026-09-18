@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:57:50.834193",
+ "generatedAt": "2026-09-18T10:59:53.756494",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
   "mode": "pokemon_home",
-  "since": "10:54:00"
+  "since": "10:59:03"
  },
  "grid": {
   "tasks": [
@@ -374,7 +374,7 @@
      "-",
      "-",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -442,8 +442,8 @@
  },
  "counts": {
   "done": 146,
-  "todo": 43,
-  "gaveUp": 4,
+  "todo": 42,
+  "gaveUp": 5,
   "unavailable": 2,
   "windowed": 34
  },
@@ -633,6 +633,29 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:59:03",
+   "script": "pokemon_home",
+   "account": "test1",
+   "rc": 1,
+   "secs": 301,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_refused": 33,
+    "pair_went_stale": 16,
+    "merge_no_progress": 2,
+    "merge_moved_instead": 2,
+    "balls_unsettled_opened": 9,
+    "ball_tiles_not_merged": 3,
+    "charges_left_unspent": 14,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: 14 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260918_105401_pokemon_home_test1"
+  },
   {
    "ts": "2026-09-18T10:54:00",
    "script": "daily_dungeon",
@@ -6881,28 +6904,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_120408_guild_war_smurf"
-  },
-  {
-   "ts": "2026-09-17T12:03:38",
-   "script": "guild_war",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_never_entered": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_120333_guild_war_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 39471,
+  "now": 39594,
   "segments": [
    {
     "b": 28932,
@@ -8916,13 +8923,35 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 39241,
-    "rc": null,
-    "e": 39471
+    "rc": 1,
+    "e": 39543,
+    "secs": 301,
+    "why": "pokemon_home: 14 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 39543,
+    "a": "test1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 39548,
+    "rc": 1,
+    "e": 39594,
+    "secs": 301,
+    "why": "pokemon_home: 14 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T10:59:03",
+   "account": "test1",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 301,
+   "why": "pokemon_home: 14 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_105401_pokemon_home_test1__KEEP_0201_105902_board_saturated.png"
+  },
   {
    "ts": "2026-09-18T10:44:07",
    "account": "lucifer2",
@@ -9207,7 +9236,7 @@
   "since": "2026-09-18T08:00",
   "switches": 16,
   "relogMinutes": 8.1,
-  "retries": 33,
+  "retries": 34,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9230,9 +9259,9 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 15,
-    "minutes": 24.1,
-    "failed": 2
+    "runs": 16,
+    "minutes": 29.1,
+    "failed": 3
    },
    "combat_daily": {
     "runs": 25,
