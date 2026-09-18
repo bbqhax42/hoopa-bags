@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T13:39:58.130079",
+ "generatedAt": "2026-09-18T13:42:00.987606",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
+  "account": "fake2",
   "mode": "faction",
-  "since": "13:39:54"
+  "since": "13:41:33"
  },
  "grid": {
   "tasks": [
@@ -98,7 +98,7 @@
      "✓",
      "-",
      "✓",
-     "💤",
+     "·",
      "💤"
     ]
    },
@@ -143,7 +143,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "-",
      "-",
      "-",
@@ -161,7 +161,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -441,10 +441,10 @@
   ]
  },
  "counts": {
-  "done": 207,
-  "todo": 20,
+  "done": 208,
+  "todo": 19,
   "gaveUp": 7,
-  "unavailable": 2,
+  "unavailable": 3,
   "windowed": 0
  },
  "disabled": [
@@ -582,7 +582,6 @@
   }
  ],
  "snoozed": {
-  "chris|championship": "2026-09-18T13:41",
   "chris|island_challenge": "2026-09-18T13:48",
   "jeff|championship": "2026-09-18T14:54",
   "jeff|island_challenge": "2026-09-18T15:59"
@@ -647,11 +646,57 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-18T13:38:49.889926",
+  "label": "fake2",
+  "at": "2026-09-18T13:40:25.882534",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T13:41:32",
+   "script": "rank_match",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260918_134033_rank_match_fake2"
+  },
+  {
+   "ts": "2026-09-18T13:40:04",
+   "script": "faction",
+   "account": "fake1",
+   "rc": 2,
+   "secs": 4,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_134000_faction_fake1"
+  },
+  {
+   "ts": "2026-09-18T13:39:58",
+   "script": "faction",
+   "account": "fake1",
+   "rc": 2,
+   "secs": 4,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_133954_faction_fake1"
+  },
   {
    "ts": "2026-09-18T13:39:53",
    "script": "rank_match",
@@ -6860,61 +6905,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_170113_story_test1"
-  },
-  {
-   "ts": "2026-09-17T17:00:43",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 15,
-   "stats": {
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 34,
-    "fights_today": 6
-   },
-   "dir": "debug_runs/20260917_170027_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-17T16:59:50",
-   "script": "story",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 102,
-   "stats": {
-    "skip_retry": 12,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_165807_story_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T16:57:35",
-   "script": "story",
-   "account": "fake6",
-   "rc": 1,
-   "secs": 15,
-   "stats": {
-    "skip_retry": 2,
-    "incomplete": 1,
-    "story_disabled": 1,
-    "stages_cleared": 0
-   },
-   "incomplete": [
-    "story: lost at stage 1 after 0 clear(s) — the next stage needs a stronger team"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260917_165719_story_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 49198,
+  "now": 49321,
   "segments": [
    {
     "b": 28932,
@@ -10066,8 +10062,44 @@
     "s": "faction",
     "login": null,
     "handoff": 49194,
+    "rc": 2,
+    "e": 49199,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49199,
+    "a": "fake1",
+    "s": "faction",
+    "login": null,
+    "handoff": 49200,
+    "rc": 2,
+    "e": 49205,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49205,
+    "a": "fake2",
+    "s": "rank_match",
+    "login": [
+     49205,
+     49225
+    ],
+    "handoff": 49233,
+    "rc": 0,
+    "e": 49293,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 49293,
+    "a": "fake2",
+    "s": "faction",
+    "login": null,
+    "handoff": 49293,
     "rc": null,
-    "e": 49198
+    "e": 49321
    }
   ],
   "idle": []
@@ -10454,8 +10486,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 62,
-  "relogMinutes": 32.3,
+  "switches": 63,
+  "relogMinutes": 32.7,
   "retries": 48,
   "tasks": {
    "dailyclaim": {
@@ -10519,8 +10551,8 @@
     "failed": 4
    },
    "faction": {
-    "runs": 2,
-    "minutes": 4.7,
+    "runs": 4,
+    "minutes": 4.8,
     "failed": 0
    },
    "championship": {
@@ -10549,13 +10581,19 @@
     "failed": 2
    },
    "rank_match": {
-    "runs": 5,
-    "minutes": 4.9,
+    "runs": 6,
+    "minutes": 5.8,
     "failed": 0
    }
   }
  },
  "unavailable": [
+  {
+   "account": "fake1",
+   "task": "faction",
+   "why": "tower_locked",
+   "at": "2026-09-18T13:40:04"
+  },
   {
    "account": "fake6",
    "task": "hoopa",
