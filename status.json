@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:37:20.551675",
+ "generatedAt": "2026-09-18T10:39:23.548672",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "dailyclaim",
-  "since": "10:36:53"
+  "mode": "joint_battle",
+  "since": "10:38:40"
  },
  "grid": {
   "tasks": [
@@ -345,10 +345,10 @@
    {
     "account": "lucifer2",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 130,
-  "todo": 59,
+  "done": 134,
+  "todo": 55,
   "gaveUp": 4,
   "unavailable": 2,
   "windowed": 34
@@ -625,6 +625,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:38:40",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 37,
+   "stats": {
+    "panel_swipes": 2,
+    "artifact_row_found_by_scrolling": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_103802_joint_team_daily_quest_lucifer2"
+  },
+  {
+   "ts": "2026-09-18T10:38:01",
+   "script": "mail",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 5,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_103758_mail_lucifer2"
+  },
+  {
+   "ts": "2026-09-18T10:37:56",
+   "script": "dailyclaim",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_103723_dailyclaim_lucifer2"
+  },
   {
    "ts": "2026-09-18T10:36:52",
    "script": "weekend_bash",
@@ -6842,62 +6890,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_110906_victory_road_dre"
-  },
-  {
-   "ts": "2026-09-17T11:09:05",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 0,
-   "secs": 103,
-   "stats": {
-    "title_reread_named": 3,
-    "marginal_afk_rewards": 4,
-    "near_miss_afk_rewards": 4,
-    "refused_afk_rewards_confirm": 1,
-    "adv_overflow": 1,
-    "near_miss_vr_rank": 4,
-    "marginal_adventure_event": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260917_110721_combat_daily_dre"
-  },
-  {
-   "ts": "2026-09-17T11:07:16",
-   "script": "pokemon_home",
-   "account": "dre",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "reached_via_trial": 1,
-    "no_trusted_grid": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_110703_pokemon_home_dre"
-  },
-  {
-   "ts": "2026-09-17T11:06:57",
-   "script": "pokemon_home",
-   "account": "dre",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "reached_via_trial": 1,
-    "no_trusted_grid": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_110644_pokemon_home_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 38240,
+  "now": 38363,
   "segments": [
    {
     "b": 28932,
@@ -8697,9 +8695,42 @@
      38213,
      38233
     ],
-    "handoff": null,
+    "handoff": 38243,
+    "rc": 0,
+    "e": 38277,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 38277,
+    "a": "lucifer2",
+    "s": "mail",
+    "login": null,
+    "handoff": 38277,
+    "rc": 0,
+    "e": 38282,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 38282,
+    "a": "lucifer2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 38282,
+    "rc": 0,
+    "e": 38320,
+    "secs": 37,
+    "why": ""
+   },
+   {
+    "b": 38320,
+    "a": "lucifer2",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 38323,
     "rc": null,
-    "e": 38240
+    "e": 38363
    }
   ],
   "idle": []
@@ -8979,22 +9010,22 @@
  "day": {
   "since": "2026-09-18T08:00",
   "switches": 14,
-  "relogMinutes": 6.7,
+  "relogMinutes": 7.2,
   "retries": 30,
   "tasks": {
    "dailyclaim": {
-    "runs": 14,
-    "minutes": 9.2,
+    "runs": 15,
+    "minutes": 9.7,
     "failed": 2
    },
    "mail": {
-    "runs": 13,
+    "runs": 14,
     "minutes": 0.7,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 9,
-    "minutes": 5.1,
+    "runs": 10,
+    "minutes": 5.8,
     "failed": 0
    },
    "daily_dungeon": {
