@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:39:51.717250",
+ "generatedAt": "2026-09-18T09:41:54.880607",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
-  "mode": "joint_battle",
-  "since": "09:39:27"
+  "account": "fake5",
+  "mode": "dailyclaim",
+  "since": "09:41:46"
  },
  "grid": {
   "tasks": [
@@ -180,7 +180,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 82,
-  "todo": 111,
+  "done": 83,
+  "todo": 110,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -539,10 +539,19 @@
    "why": "Unlocked after clearing Victory Road -  Fuchsia Gym — clear that by hand, then re-enable"
   }
  ],
- "islandChallenge": [],
+ "islandChallenge": [
+  {
+   "account": "chris",
+   "fights": 3,
+   "stamina": 0,
+   "staminaMax": 5,
+   "staminaAt": "2026-09-18T09:41:38",
+   "nextAt": "2026-09-18T13:11:45"
+  }
+ ],
  "snoozed": {
   "chris|championship": "2026-09-18T10:56",
-  "chris|island_challenge": "2026-09-18T09:39",
+  "chris|island_challenge": "2026-09-18T13:11",
   "jeff|island_challenge": "2026-09-18T10:45"
  },
  "ownerOnline": [],
@@ -605,11 +614,28 @@
   }
  },
  "session": {
-  "label": "fake3",
-  "at": "2026-09-18T09:38:19.548319",
+  "label": "chris",
+  "at": "2026-09-18T09:40:47.413363",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:41:45",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 46,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 0,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260918_094059_island_challenge_chris"
+  },
   {
    "ts": "2026-09-18T09:39:26",
    "script": "joint_team_daily_quest",
@@ -6836,29 +6862,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_101403_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:14:02",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 93,
-   "stats": {
-    "title_reread_named": 3,
-    "arena_slot_unavailable": 1,
-    "near_miss_pokemon_upgrade": 1,
-    "pokemon_upgraded": 1,
-    "left_outstanding": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_101229_combat_daily_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 34792,
+  "now": 34915,
   "segments": [
    {
     "b": 28932,
@@ -7996,7 +8005,33 @@
     "login": null,
     "handoff": 34769,
     "rc": null,
-    "e": 34792
+    "e": 34826
+   },
+   {
+    "b": 34826,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     34827,
+     34847
+    ],
+    "handoff": 34859,
+    "rc": 5,
+    "e": 34906,
+    "secs": 46,
+    "why": ""
+   },
+   {
+    "b": 34906,
+    "a": "fake5",
+    "s": "dailyclaim",
+    "login": [
+     34907,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 34915
    }
   ],
   "idle": []
@@ -8185,9 +8220,9 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 7,
-  "relogMinutes": 3.7,
-  "retries": 19,
+  "switches": 9,
+  "relogMinutes": 4.2,
+  "retries": 20,
   "tasks": {
    "dailyclaim": {
     "runs": 9,
@@ -8263,6 +8298,11 @@
     "runs": 1,
     "minutes": 0.1,
     "failed": 0
+   },
+   "island_challenge": {
+    "runs": 1,
+    "minutes": 0.8,
+    "failed": 1
    }
   }
  },
