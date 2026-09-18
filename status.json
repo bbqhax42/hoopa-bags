@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T08:21:45.053647",
+ "generatedAt": "2026-09-18T08:23:48.928827",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "combat_daily",
-  "since": "08:21:27"
+  "mode": "paradise",
+  "since": "08:23:38"
  },
  "grid": {
   "tasks": [
@@ -39,8 +39,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 17,
-  "todo": 180,
+  "done": 19,
+  "todo": 178,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 34
@@ -609,6 +609,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T08:23:38",
+   "script": "victory_road",
+   "account": "nova",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_082330_victory_road_nova"
+  },
+  {
+   "ts": "2026-09-18T08:23:28",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 0,
+   "secs": 7,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_082321_combat_daily_nova"
+  },
+  {
+   "ts": "2026-09-18T08:23:20",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 1,
+   "secs": 107,
+   "stats": {
+    "title_reread_named": 5,
+    "near_miss_vr_rank": 5,
+    "adv_energy_spent": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 10/10 +)",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260918_082132_combat_daily_nova"
+  },
   {
    "ts": "2026-09-18T08:21:26",
    "script": "pokemon_home",
@@ -6821,58 +6865,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_090804_pokemon_home_fake1"
-  },
-  {
-   "ts": "2026-09-17T09:08:03",
-   "script": "daily_dungeon",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_090748_daily_dungeon_fake1"
-  },
-  {
-   "ts": "2026-09-17T09:07:43",
-   "script": "mail",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_090740_mail_fake1"
-  },
-  {
-   "ts": "2026-09-17T09:07:39",
-   "script": "dailyclaim",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_090708_dailyclaim_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 30105,
+  "now": 30229,
   "segments": [
    {
     "b": 28932,
@@ -7099,13 +7097,55 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 30092,
+    "rc": 1,
+    "e": 30200,
+    "secs": 107,
+    "why": ""
+   },
+   {
+    "b": 30200,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30201,
+    "rc": 1,
+    "e": 30209,
+    "secs": 107,
+    "why": ""
+   },
+   {
+    "b": 30209,
+    "a": "nova",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 30209,
+    "rc": 0,
+    "e": 30218,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 30218,
+    "a": "nova",
+    "s": "paradise",
+    "login": null,
+    "handoff": 30219,
     "rc": null,
-    "e": 30105
+    "e": 30229
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T08:23:20",
+   "account": "nova",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 107,
+   "why": "title_reread_named, near_miss_vr_rank, adv_energy_spent, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_082132_combat_daily_nova__0146_082320_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-18T08:20:26",
    "account": "nova",
@@ -7156,7 +7196,7 @@
   "since": "2026-09-18T08:00",
   "switches": 1,
   "relogMinutes": 0.6,
-  "retries": 3,
+  "retries": 4,
   "tasks": {
    "dailyclaim": {
     "runs": 2,
@@ -7184,13 +7224,13 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 2,
-    "minutes": 2.2,
-    "failed": 1
+    "runs": 4,
+    "minutes": 4.2,
+    "failed": 2
    },
    "victory_road": {
-    "runs": 1,
-    "minutes": 0.1,
+    "runs": 2,
+    "minutes": 0.3,
     "failed": 0
    },
    "paradise": {
