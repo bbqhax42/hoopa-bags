@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:12:42.623760",
+ "generatedAt": "2026-09-18T10:14:46.350021",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
-  "mode": "sky_pillar",
-  "since": "10:12:28"
+  "account": "sprite",
+  "mode": "pokemon_home",
+  "since": "10:14:20"
  },
  "grid": {
   "tasks": [
@@ -297,11 +297,11 @@
    {
     "account": "sprite",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 108,
-  "todo": 81,
+  "done": 111,
+  "todo": 78,
   "gaveUp": 4,
   "unavailable": 2,
   "windowed": 34
@@ -620,11 +620,57 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-18T10:00:18.851209",
+  "label": "sprite",
+  "at": "2026-09-18T10:13:03.947525",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:14:19",
+   "script": "daily_dungeon",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 15,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_101404_daily_dungeon_sprite"
+  },
+  {
+   "ts": "2026-09-18T10:13:59",
+   "script": "mail",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_101355_mail_sprite"
+  },
+  {
+   "ts": "2026-09-18T10:13:54",
+   "script": "dailyclaim",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 40,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_101314_dailyclaim_sprite"
+  },
   {
    "ts": "2026-09-18T10:12:42",
    "script": "sky_pillar",
@@ -6841,59 +6887,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260917_105043_dailyclaim_deno"
-  },
-  {
-   "ts": "2026-09-17T10:50:11",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 41,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 1,
-    "fights_today": 6
-   },
-   "dir": "debug_runs/20260917_104929_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-17T10:48:55",
-   "script": "sky_pillar",
-   "account": "test1",
-   "rc": 0,
-   "secs": 83,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 2,
-    "stage": 8
-   },
-   "dir": "debug_runs/20260917_104731_sky_pillar_test1"
-  },
-  {
-   "ts": "2026-09-17T10:47:30",
-   "script": "collect_hoopa_keys",
-   "account": "test1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_104722_collect_hoopa_keys_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 36763,
+  "now": 36886,
   "segments": [
    {
     "b": 28932,
@@ -8427,6 +8426,51 @@
     "e": 36763,
     "secs": 13,
     "why": ""
+   },
+   {
+    "b": 36763,
+    "a": "sprite",
+    "s": "dailyclaim",
+    "login": [
+     36763,
+     36783
+    ],
+    "handoff": 36793,
+    "rc": 0,
+    "e": 36835,
+    "secs": 40,
+    "why": ""
+   },
+   {
+    "b": 36835,
+    "a": "sprite",
+    "s": "mail",
+    "login": null,
+    "handoff": 36835,
+    "rc": 0,
+    "e": 36839,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 36839,
+    "a": "sprite",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 36843,
+    "rc": 0,
+    "e": 36860,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 36860,
+    "a": "sprite",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 36860,
+    "rc": null,
+    "e": 36886
    }
   ],
   "idle": []
@@ -8687,17 +8731,17 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 11,
-  "relogMinutes": 5.7,
+  "switches": 12,
+  "relogMinutes": 6.2,
   "retries": 28,
   "tasks": {
    "dailyclaim": {
-    "runs": 12,
-    "minutes": 7.9,
+    "runs": 13,
+    "minutes": 8.6,
     "failed": 2
    },
    "mail": {
-    "runs": 11,
+    "runs": 12,
     "minutes": 0.6,
     "failed": 0
    },
@@ -8707,8 +8751,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 10,
-    "minutes": 4.0,
+    "runs": 11,
+    "minutes": 4.2,
     "failed": 0
    },
    "pokemon_home": {
