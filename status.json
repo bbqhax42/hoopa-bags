@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T08:13:31.520995",
+ "generatedAt": "2026-09-18T08:15:35.291973",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "dailyclaim",
-  "since": "08:13:03"
+  "mode": "daily_dungeon",
+  "since": "08:15:32"
  },
  "grid": {
   "tasks": [
@@ -33,10 +33,10 @@
    {
     "account": "nova",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 11,
-  "todo": 186,
+  "done": 15,
+  "todo": 182,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 34
@@ -609,6 +609,53 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T08:14:54",
+   "script": "joint_team_daily_quest",
+   "account": "nova",
+   "rc": 0,
+   "secs": 37,
+   "stats": {
+    "panel_swipes": 2,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_081416_joint_team_daily_quest_nova"
+  },
+  {
+   "ts": "2026-09-18T08:14:15",
+   "script": "mail",
+   "account": "nova",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_081411_mail_nova"
+  },
+  {
+   "ts": "2026-09-18T08:14:10",
+   "script": "dailyclaim",
+   "account": "nova",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_081339_dailyclaim_nova"
+  },
   {
    "ts": "2026-09-18T08:13:02",
    "script": "sky_pillar",
@@ -6820,62 +6867,12 @@
     "stage": 1
    },
    "dir": "debug_runs/20260917_090340_sky_pillar_smurf"
-  },
-  {
-   "ts": "2026-09-17T09:03:38",
-   "script": "collect_hoopa_keys",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_090331_collect_hoopa_keys_smurf"
-  },
-  {
-   "ts": "2026-09-17T09:03:29",
-   "script": "run_pvp_ranked",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "ranked_fought": 10,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 1
-   },
-   "dir": "debug_runs/20260917_090223_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-09-17T09:02:21",
-   "script": "paradise",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 29,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 4,
-    "pass_claims": 1,
-    "dex_milestones": 1,
-    "dex_activated": 0,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "0/20"
-   },
-   "dir": "debug_runs/20260917_090152_paradise_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 29611,
+  "now": 29735,
   "segments": [
    {
     "b": 28932,
@@ -7026,9 +7023,51 @@
      29584,
      29609
     ],
+    "handoff": 29618,
+    "rc": 0,
+    "e": 29651,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 29651,
+    "a": "nova",
+    "s": "mail",
+    "login": null,
+    "handoff": 29651,
+    "rc": 0,
+    "e": 29655,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 29655,
+    "a": "nova",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 29656,
+    "rc": 0,
+    "e": 29694,
+    "secs": 37,
+    "why": ""
+   },
+   {
+    "b": 29694,
+    "a": "nova",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 29697,
+    "rc": null,
+    "e": 29732
+   },
+   {
+    "b": 29732,
+    "a": "nova",
+    "s": "daily_dungeon",
+    "login": null,
     "handoff": null,
     "rc": null,
-    "e": 29611
+    "e": 29735
    }
   ],
   "idle": []
@@ -7074,22 +7113,22 @@
  "day": {
   "since": "2026-09-18T08:00",
   "switches": 1,
-  "relogMinutes": 0.0,
+  "relogMinutes": 0.6,
   "retries": 2,
   "tasks": {
    "dailyclaim": {
-    "runs": 1,
-    "minutes": 0.5,
+    "runs": 2,
+    "minutes": 1.0,
     "failed": 0
    },
    "mail": {
-    "runs": 1,
+    "runs": 2,
     "minutes": 0.1,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 1,
-    "minutes": 0.7,
+    "runs": 2,
+    "minutes": 1.4,
     "failed": 0
    },
    "daily_dungeon": {
