@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T13:50:12.955976",
+ "generatedAt": "2026-09-18T13:52:15.781779",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "rank_match",
-  "since": "13:49:49"
+  "mode": "faction",
+  "since": "13:51:19"
  },
  "grid": {
   "tasks": [
@@ -233,7 +233,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 211,
-  "todo": 14,
+  "done": 212,
+  "todo": 13,
   "gaveUp": 7,
   "unavailable": 4,
   "windowed": 0
@@ -652,6 +652,28 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T13:51:19",
+   "script": "rank_match",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "formation_set": 1,
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260918_135018_rank_match_fake5"
+  },
   {
    "ts": "2026-09-18T13:49:49",
    "script": "championship",
@@ -6908,26 +6930,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_172048_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:20:43",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 182,
-   "stats": {
-    "rift_levels": 35,
-    "rift_rerolls": 7
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_171741_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 49813,
+  "now": 49936,
   "segments": [
    {
     "b": 28932,
@@ -10203,9 +10211,20 @@
      49790,
      49810
     ],
-    "handoff": null,
+    "handoff": 49818,
+    "rc": 0,
+    "e": 49879,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 49879,
+    "a": "fake5",
+    "s": "faction",
+    "login": null,
+    "handoff": 49880,
     "rc": null,
-    "e": 49813
+    "e": 49936
    }
   ],
   "idle": []
@@ -10593,7 +10612,7 @@
  "day": {
   "since": "2026-09-18T08:00",
   "switches": 67,
-  "relogMinutes": 34.3,
+  "relogMinutes": 34.8,
   "retries": 50,
   "tasks": {
    "dailyclaim": {
@@ -10687,8 +10706,8 @@
     "failed": 2
    },
    "rank_match": {
-    "runs": 8,
-    "minutes": 7.9,
+    "runs": 9,
+    "minutes": 8.9,
     "failed": 0
    }
   }
