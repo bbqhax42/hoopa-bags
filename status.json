@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T14:04:35.229686",
+ "generatedAt": "2026-09-18T14:06:38.167514",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "rank_match",
-  "since": "14:03:02"
+  "account": "fake4",
+  "mode": "faction",
+  "since": "14:06:09"
  },
  "grid": {
   "tasks": [
@@ -401,7 +401,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -425,7 +425,7 @@
      "✗2",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 216,
-  "todo": 3,
+  "done": 218,
+  "todo": 1,
   "gaveUp": 8,
   "unavailable": 9,
   "windowed": 0
@@ -647,11 +647,51 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-18T14:03:22.971139",
+  "label": "fake4",
+  "at": "2026-09-18T14:06:29.875898",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T14:06:09",
+   "script": "rank_match",
+   "account": "dre",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260918_140509_rank_match_dre"
+  },
+  {
+   "ts": "2026-09-18T14:04:37",
+   "script": "rank_match",
+   "account": "deno",
+   "rc": 0,
+   "secs": 62,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260918_140334_rank_match_deno"
+  },
   {
    "ts": "2026-09-18T14:03:01",
    "script": "faction",
@@ -6974,34 +7014,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_173055_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:30:50",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_173048_rift_smurf"
-  },
-  {
-   "ts": "2026-09-17T17:30:43",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_173041_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 50675,
+  "now": 50798,
   "segments": [
    {
     "b": 28932,
@@ -10486,8 +10504,36 @@
      50602
     ],
     "handoff": 50614,
+    "rc": 0,
+    "e": 50677,
+    "secs": 62,
+    "why": ""
+   },
+   {
+    "b": 50677,
+    "a": "dre",
+    "s": "rank_match",
+    "login": [
+     50678,
+     50698
+    ],
+    "handoff": 50709,
+    "rc": 0,
+    "e": 50769,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 50769,
+    "a": "fake4",
+    "s": "faction",
+    "login": [
+     50770,
+     50789
+    ],
+    "handoff": 50797,
     "rc": null,
-    "e": 50675
+    "e": 50798
    }
   ],
   "idle": []
@@ -10892,8 +10938,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 74,
-  "relogMinutes": 38.2,
+  "switches": 76,
+  "relogMinutes": 39.2,
   "retries": 52,
   "tasks": {
    "dailyclaim": {
@@ -10987,8 +11033,8 @@
     "failed": 2
    },
    "rank_match": {
-    "runs": 17,
-    "minutes": 13.3,
+    "runs": 19,
+    "minutes": 15.4,
     "failed": 0
    }
   }
