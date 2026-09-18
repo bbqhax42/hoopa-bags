@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:35:17.345354",
+ "generatedAt": "2026-09-18T10:37:20.551675",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "collect_hoopa_keys",
-  "since": "10:35:15"
+  "account": "lucifer2",
+  "mode": "dailyclaim",
+  "since": "10:36:53"
  },
  "grid": {
   "tasks": [
@@ -333,11 +333,11 @@
      "✓",
      "⏰",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 127,
-  "todo": 62,
+  "done": 130,
+  "todo": 59,
   "gaveUp": 4,
   "unavailable": 2,
   "windowed": 34
@@ -620,11 +620,52 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-18T10:23:34.227266",
+  "label": "lucifer2",
+  "at": "2026-09-18T10:37:13.279600",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:36:52",
+   "script": "weekend_bash",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_103652_weekend_bash_lucifer1"
+  },
+  {
+   "ts": "2026-09-18T10:36:48",
+   "script": "sky_pillar",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 83,
+   "stats": {
+    "stages_cleared": 6,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 89,
+    "stage": 4
+   },
+   "dir": "debug_runs/20260918_103524_sky_pillar_lucifer1"
+  },
+  {
+   "ts": "2026-09-18T10:35:23",
+   "script": "collect_hoopa_keys",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_103515_collect_hoopa_keys_lucifer1"
+  },
   {
    "ts": "2026-09-18T10:35:14",
    "script": "run_pvp_ranked",
@@ -6851,53 +6892,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_110644_pokemon_home_dre"
-  },
-  {
-   "ts": "2026-09-17T11:06:43",
-   "script": "daily_dungeon",
-   "account": "dre",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_110628_daily_dungeon_dre"
-  },
-  {
-   "ts": "2026-09-17T11:05:23",
-   "script": "joint_team_daily_quest",
-   "account": "dre",
-   "rc": 0,
-   "secs": 23,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_110500_joint_team_daily_quest_dre"
-  },
-  {
-   "ts": "2026-09-17T11:04:59",
-   "script": "mail",
-   "account": "dre",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_110456_mail_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 38117,
+  "now": 38240,
   "segments": [
    {
     "b": 28932,
@@ -8662,8 +8662,44 @@
     "s": "collect_hoopa_keys",
     "login": null,
     "handoff": 38115,
+    "rc": 0,
+    "e": 38124,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 38124,
+    "a": "lucifer1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 38124,
+    "rc": 0,
+    "e": 38208,
+    "secs": 83,
+    "why": ""
+   },
+   {
+    "b": 38208,
+    "a": "lucifer1",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 38212,
+    "rc": 0,
+    "e": 38213,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 38213,
+    "a": "lucifer2",
+    "s": "dailyclaim",
+    "login": [
+     38213,
+     38233
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 38117
+    "e": 38240
    }
   ],
   "idle": []
@@ -8942,7 +8978,7 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 13,
+  "switches": 14,
   "relogMinutes": 6.7,
   "retries": 30,
   "tasks": {
@@ -8987,13 +9023,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 13,
-    "minutes": 2.0,
+    "runs": 14,
+    "minutes": 2.1,
     "failed": 3
    },
    "sky_pillar": {
-    "runs": 13,
-    "minutes": 9.1,
+    "runs": 14,
+    "minutes": 10.4,
     "failed": 5
    },
    "run_pvp_ranked": {
@@ -9002,7 +9038,7 @@
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 0.0,
     "failed": 2
    },
