@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:31:38.419627",
+ "generatedAt": "2026-09-18T09:33:41.517517",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "combat_daily",
-  "since": "09:30:50"
+  "mode": "paradise",
+  "since": "09:33:21"
  },
  "grid": {
   "tasks": [
@@ -159,8 +159,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 74,
-  "todo": 119,
+  "done": 76,
+  "todo": 117,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -610,6 +610,59 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:33:21",
+   "script": "victory_road",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "nothing_pending": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093307_victory_road_fake2"
+  },
+  {
+   "ts": "2026-09-18T09:33:06",
+   "script": "combat_daily",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 7,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_093258_combat_daily_fake2"
+  },
+  {
+   "ts": "2026-09-18T09:32:57",
+   "script": "combat_daily",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 120,
+   "stats": {
+    "near_miss_afk_rewards": 1,
+    "marginal_afk_rewards": 2,
+    "title_reread_named": 3,
+    "refused_quick_bar": 1,
+    "adv_overflow": 1,
+    "near_miss_vr_rank": 2,
+    "adv_energy_spent": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "upgrade_no_change": 1,
+    "incomplete": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [
+    "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260918_093056_combat_daily_fake2"
+  },
   {
    "ts": "2026-09-18T09:30:50",
    "script": "pokemon_home",
@@ -6790,70 +6843,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_100812_collect_hoopa_keys_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:08:11",
-   "script": "paradise",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 211,
-   "stats": {
-    "marginal_paradise_hub": 4,
-    "explore_clicks": 90,
-    "pass_claims": 5,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 1,
-    "dex_milestones": 3,
-    "dex_activated": 8,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "39/13"
-   },
-   "dir": "debug_runs/20260917_100439_paradise_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:04:38",
-   "script": "rank_match",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 54,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260917_100343_rank_match_fake6"
-  },
-  {
-   "ts": "2026-09-17T10:03:42",
-   "script": "victory_road",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_100334_victory_road_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 34298,
+  "now": 34421,
   "segments": [
    {
     "b": 28932,
@@ -7877,13 +7872,55 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 34256,
+    "rc": 1,
+    "e": 34378,
+    "secs": 120,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   },
+   {
+    "b": 34378,
+    "a": "fake2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34378,
+    "rc": 1,
+    "e": 34386,
+    "secs": 120,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   },
+   {
+    "b": 34386,
+    "a": "fake2",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 34387,
+    "rc": 0,
+    "e": 34401,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 34401,
+    "a": "fake2",
+    "s": "paradise",
+    "login": null,
+    "handoff": 34402,
     "rc": null,
-    "e": 34298
+    "e": 34421
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T09:32:57",
+   "account": "fake2",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 120,
+   "why": "combat_daily: upgrade a Pokemon: Level Up did nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_093056_combat_daily_fake2__KEEP_0159_093231_upgrade_no_change.png"
+  },
   {
    "ts": "2026-09-18T09:25:48",
    "account": "fake1",
@@ -8051,7 +8088,7 @@
   "since": "2026-09-18T08:00",
   "switches": 6,
   "relogMinutes": 3.2,
-  "retries": 17,
+  "retries": 18,
   "tasks": {
    "dailyclaim": {
     "runs": 8,
@@ -8079,13 +8116,13 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 12,
-    "minutes": 13.3,
-    "failed": 7
+    "runs": 14,
+    "minutes": 15.4,
+    "failed": 8
    },
    "victory_road": {
-    "runs": 6,
-    "minutes": 0.8,
+    "runs": 7,
+    "minutes": 1.1,
     "failed": 0
    },
    "paradise": {
