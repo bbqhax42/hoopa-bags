@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T08:11:28.292818",
+ "generatedAt": "2026-09-18T08:13:31.520995",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "nova",
+  "mode": "dailyclaim",
+  "since": "08:13:03"
  },
  "grid": {
   "tasks": [
@@ -210,11 +210,11 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 8,
-  "todo": 189,
+  "done": 11,
+  "todo": 186,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 34
@@ -604,11 +604,80 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-09-18T07:55:45.650846",
+  "label": "nova",
+  "at": "2026-09-18T08:13:29.109393",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T08:13:02",
+   "script": "sky_pillar",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 10,
+   "stats": {
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_081252_sky_pillar_fake4"
+  },
+  {
+   "ts": "2026-09-18T08:12:48",
+   "script": "sky_pillar",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 64,
+   "stats": {
+    "stages_cleared": 3,
+    "no_setform": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "sky_pillar: stage 4 did not complete"
+   ],
+   "values": {
+    "floor": 3,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260918_081143_sky_pillar_fake4"
+  },
+  {
+   "ts": "2026-09-18T08:11:42",
+   "script": "collect_hoopa_keys",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_081134_collect_hoopa_keys_fake4"
+  },
+  {
+   "ts": "2026-09-18T08:11:33",
+   "script": "paradise",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 203,
+   "stats": {
+    "marginal_paradise_hub": 4,
+    "explore_clicks": 91,
+    "pass_claims": 4,
+    "upgraded_energy_drink": 2,
+    "upgraded_small_radar": 1,
+    "upgraded_sports_gloves": 1,
+    "dex_milestones": 1,
+    "dex_activated": 4,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "14/14"
+   },
+   "dir": "debug_runs/20260918_080809_paradise_fake4"
+  },
   {
    "ts": "2026-09-18T08:08:07",
    "script": "victory_road",
@@ -6801,87 +6870,12 @@
     "stamina": "0/20"
    },
    "dir": "debug_runs/20260917_090152_paradise_smurf"
-  },
-  {
-   "ts": "2026-09-17T09:01:51",
-   "script": "rank_match",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 60,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260917_090051_rank_match_smurf"
-  },
-  {
-   "ts": "2026-09-17T09:00:49",
-   "script": "victory_road",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_090041_victory_road_smurf"
-  },
-  {
-   "ts": "2026-09-17T09:00:40",
-   "script": "combat_daily",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 76,
-   "stats": {
-    "title_reread_named": 3,
-    "near_miss_vr_rank": 4,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260917_085923_combat_daily_smurf"
-  },
-  {
-   "ts": "2026-09-17T08:59:18",
-   "script": "pokemon_home",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 173,
-   "stats": {
-    "title_reread_named": 1,
-    "reached_via_trial": 1,
-    "merge_refused": 1,
-    "merge_no_progress": 1,
-    "balls_unsettled_opened": 2,
-    "grid_refit": 7,
-    "burst_balls_unseen": 1,
-    "phantom_creations": 4,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_085624_pokemon_home_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 29488,
+  "now": 29611,
   "segments": [
    {
     "b": 28932,
@@ -6986,13 +6980,69 @@
     "s": "paradise",
     "login": null,
     "handoff": 29289,
+    "rc": 0,
+    "e": 29493,
+    "secs": 203,
+    "why": ""
+   },
+   {
+    "b": 29493,
+    "a": "fake4",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 29494,
+    "rc": 0,
+    "e": 29503,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 29503,
+    "a": "fake4",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 29503,
+    "rc": 1,
+    "e": 29569,
+    "secs": 64,
+    "why": "sky_pillar: stage 4 did not complete"
+   },
+   {
+    "b": 29569,
+    "a": "fake4",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 29572,
+    "rc": 1,
+    "e": 29583,
+    "secs": 64,
+    "why": "sky_pillar: stage 4 did not complete"
+   },
+   {
+    "b": 29583,
+    "a": "nova",
+    "s": "dailyclaim",
+    "login": [
+     29584,
+     29609
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 29488
+    "e": 29611
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T08:12:48",
+   "account": "fake4",
+   "task": "sky_pillar",
+   "rc": 1,
+   "secs": 64,
+   "why": "sky_pillar: stage 4 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_081143_sky_pillar_fake4__KEEP_0005_081248_no_setform_4.png"
+  },
   {
    "ts": "2026-09-18T08:07:48",
    "account": "fake4",
@@ -7023,9 +7073,9 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 0,
+  "switches": 1,
   "relogMinutes": 0.0,
-  "retries": 1,
+  "retries": 2,
   "tasks": {
    "dailyclaim": {
     "runs": 1,
@@ -7061,6 +7111,21 @@
     "runs": 1,
     "minutes": 0.1,
     "failed": 0
+   },
+   "paradise": {
+    "runs": 1,
+    "minutes": 3.4,
+    "failed": 0
+   },
+   "collect_hoopa_keys": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   },
+   "sky_pillar": {
+    "runs": 2,
+    "minutes": 1.2,
+    "failed": 1
    }
   }
  },
