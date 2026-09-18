@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:41:54.880607",
+ "generatedAt": "2026-09-18T09:43:58.034130",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "dailyclaim",
-  "since": "09:41:46"
+  "mode": "joint_battle",
+  "since": "09:43:34"
  },
  "grid": {
   "tasks": [
@@ -225,9 +225,9 @@
    {
     "account": "fake5",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 83,
-  "todo": 110,
+  "done": 86,
+  "todo": 107,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -614,11 +614,59 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-18T09:40:47.413363",
+  "label": "fake5",
+  "at": "2026-09-18T09:42:07.103143",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:43:34",
+   "script": "joint_team_daily_quest",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 42,
+   "stats": {
+    "marginal_joint_team": 1,
+    "joint_level_claims": 1,
+    "panel_swipes": 2,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_094251_joint_team_daily_quest_fake5"
+  },
+  {
+   "ts": "2026-09-18T09:42:50",
+   "script": "mail",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 0,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_094246_mail_fake5"
+  },
+  {
+   "ts": "2026-09-18T09:42:45",
+   "script": "dailyclaim",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_094214_dailyclaim_fake5"
+  },
   {
    "ts": "2026-09-18T09:41:45",
    "script": "island_challenge",
@@ -6818,56 +6866,12 @@
     "stamina": "39/13"
    },
    "dir": "debug_runs/20260917_101530_paradise_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:15:29",
-   "script": "rank_match",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 4,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "attempts_before": 0,
-    "matches": 0,
-    "gifts": 0,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260917_101524_rank_match_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:15:23",
-   "script": "victory_road",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_101515_victory_road_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:15:14",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "title_reread_named": 2,
-    "near_miss_vr_rank": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_101403_combat_daily_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 34915,
+  "now": 35038,
   "segments": [
    {
     "b": 28932,
@@ -8027,11 +8031,44 @@
     "s": "dailyclaim",
     "login": [
      34907,
-     null
+     34927
     ],
-    "handoff": null,
+    "handoff": 34934,
+    "rc": 0,
+    "e": 34966,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 34966,
+    "a": "fake5",
+    "s": "mail",
+    "login": null,
+    "handoff": 34966,
+    "rc": 0,
+    "e": 34970,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 34970,
+    "a": "fake5",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 34971,
+    "rc": 0,
+    "e": 35014,
+    "secs": 42,
+    "why": ""
+   },
+   {
+    "b": 35014,
+    "a": "fake5",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 35017,
     "rc": null,
-    "e": 34915
+    "e": 35038
    }
   ],
   "idle": []
@@ -8221,22 +8258,22 @@
  "day": {
   "since": "2026-09-18T08:00",
   "switches": 9,
-  "relogMinutes": 4.2,
+  "relogMinutes": 4.7,
   "retries": 20,
   "tasks": {
    "dailyclaim": {
-    "runs": 9,
-    "minutes": 6.3,
+    "runs": 10,
+    "minutes": 6.8,
     "failed": 2
    },
    "mail": {
-    "runs": 8,
-    "minutes": 0.4,
+    "runs": 9,
+    "minutes": 0.5,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 7,
-    "minutes": 4.0,
+    "runs": 8,
+    "minutes": 4.8,
     "failed": 0
    },
    "daily_dungeon": {
