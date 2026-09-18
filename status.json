@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:00:23.118193",
+ "generatedAt": "2026-09-18T10:02:26.407078",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
-  "mode": "dailyclaim",
-  "since": "09:59:57"
+  "mode": "daily_dungeon",
+  "since": "10:01:09"
  },
  "grid": {
   "tasks": [
@@ -273,8 +273,8 @@
    {
     "account": "fake7",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 102,
-  "todo": 90,
+  "done": 104,
+  "todo": 88,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -625,6 +625,39 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:01:09",
+   "script": "mail",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260918_100105_mail_fake7"
+  },
+  {
+   "ts": "2026-09-18T10:01:04",
+   "script": "dailyclaim",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 37,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_100027_dailyclaim_fake7"
+  },
   {
    "ts": "2026-09-18T09:59:56",
    "script": "sky_pillar",
@@ -6847,38 +6880,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_103437_dailyclaim_test1"
-  },
-  {
-   "ts": "2026-09-17T10:34:06",
-   "script": "weekend_bash",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 0,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_103405_weekend_bash_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T10:34:04",
-   "script": "weekend_bash",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 0,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_103404_weekend_bash_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 36023,
+  "now": 36146,
   "segments": [
    {
     "b": 28932,
@@ -8286,9 +8293,31 @@
      35997,
      36018
     ],
-    "handoff": null,
+    "handoff": 36026,
+    "rc": 0,
+    "e": 36065,
+    "secs": 37,
+    "why": ""
+   },
+   {
+    "b": 36065,
+    "a": "fake7",
+    "s": "mail",
+    "login": null,
+    "handoff": 36065,
+    "rc": 0,
+    "e": 36069,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 36069,
+    "a": "fake7",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 36073,
     "rc": null,
-    "e": 36023
+    "e": 36146
    }
   ],
   "idle": []
@@ -8505,17 +8534,17 @@
  "day": {
   "since": "2026-09-18T08:00",
   "switches": 11,
-  "relogMinutes": 5.2,
+  "relogMinutes": 5.7,
   "retries": 23,
   "tasks": {
    "dailyclaim": {
-    "runs": 11,
-    "minutes": 7.3,
+    "runs": 12,
+    "minutes": 7.9,
     "failed": 2
    },
    "mail": {
-    "runs": 10,
-    "minutes": 0.5,
+    "runs": 11,
+    "minutes": 0.6,
     "failed": 0
    },
    "joint_team_daily_quest": {
