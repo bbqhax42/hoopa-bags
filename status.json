@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T09:43:58.034130",
+ "generatedAt": "2026-09-18T09:46:01.113111",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "joint_battle",
-  "since": "09:43:34"
+  "mode": "combat_daily",
+  "since": "09:45:23"
  },
  "grid": {
   "tasks": [
@@ -228,9 +228,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 86,
-  "todo": 107,
+  "done": 89,
+  "todo": 104,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 34
@@ -619,6 +619,35 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T09:45:22",
+   "script": "pokemon_home",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 20,
+   "stats": {
+    "title_reread_named": 1,
+    "reached_via_trial": 1,
+    "ball_tiles_not_merged": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_094502_pokemon_home_fake5"
+  },
+  {
+   "ts": "2026-09-18T09:45:00",
+   "script": "daily_dungeon",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 15,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_094445_daily_dungeon_fake5"
+  },
   {
    "ts": "2026-09-18T09:43:34",
    "script": "joint_team_daily_quest",
@@ -6825,53 +6854,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_102001_collect_hoopa_keys_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:20:00",
-   "script": "run_pvp_ranked",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 79,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 3,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 66
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 4
-   },
-   "dir": "debug_runs/20260917_101840_run_pvp_ranked_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T10:18:39",
-   "script": "paradise",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 188,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 86,
-    "pass_claims": 6,
-    "upgraded_sports_gloves": 2,
-    "upgraded_energy_drink": 1,
-    "upgraded_small_radar": 2,
-    "dex_milestones": 2,
-    "dex_activated": 5,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "39/13"
-   },
-   "dir": "debug_runs/20260917_101530_paradise_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 35038,
+  "now": 35161,
   "segments": [
    {
     "b": 28932,
@@ -8068,7 +8056,38 @@
     "login": null,
     "handoff": 35017,
     "rc": null,
-    "e": 35038
+    "e": 35080
+   },
+   {
+    "b": 35080,
+    "a": "fake5",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 35085,
+    "rc": 0,
+    "e": 35101,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 35101,
+    "a": "fake5",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 35102,
+    "rc": 0,
+    "e": 35123,
+    "secs": 20,
+    "why": ""
+   },
+   {
+    "b": 35123,
+    "a": "fake5",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 35128,
+    "rc": null,
+    "e": 35161
    }
   ],
   "idle": []
@@ -8277,13 +8296,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 7,
-    "minutes": 2.0,
+    "runs": 8,
+    "minutes": 2.3,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 8,
-    "minutes": 13.6,
+    "runs": 9,
+    "minutes": 13.9,
     "failed": 1
    },
    "combat_daily": {
