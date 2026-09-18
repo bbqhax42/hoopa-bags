@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T20:14:12.424757",
+ "generatedAt": "2026-09-18T20:16:15.365468",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -638,11 +638,41 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-18T20:13:41.391583",
+  "label": "test1",
+  "at": "2026-09-18T20:15:53.530455",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T20:15:33",
+   "script": "worldboss",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 73,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260918_201419_worldboss_lucifer2"
+  },
+  {
+   "ts": "2026-09-18T20:14:19",
+   "script": "worldboss",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 57,
+   "stats": {
+    "connection_retry": 1,
+    "connection_retry_stuck": 1,
+    "connection_lost": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_201321_worldboss_lucifer1"
+  },
   {
    "ts": "2026-09-18T20:13:20",
    "script": "worldboss",
@@ -6974,41 +7004,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_194914_championship_jeff"
-  },
-  {
-   "ts": "2026-09-17T19:35:20",
-   "script": "story",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 78,
-   "stats": {
-    "skip_retry": 14,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_193401_story_lucifer2"
-  },
-  {
-   "ts": "2026-09-17T19:34:00",
-   "script": "story",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 85,
-   "stats": {
-    "skip_retry": 14,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_193235_story_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 72852,
+  "now": 72975,
   "segments": [
    {
     "b": 28932,
@@ -11444,12 +11445,21 @@
     ],
     "handoff": 63951,
     "rc": null,
-    "e": 72852
+    "e": 72975
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T20:14:19",
+   "account": "lucifer1",
+   "task": "worldboss",
+   "rc": 1,
+   "secs": 57,
+   "why": "connection_retry, connection_retry_stuck, connection_lost",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_201321_worldboss_lucifer1__0003_201345_through_startup_L2055__AFTER__unknown.png"
+  },
   {
    "ts": "2026-09-18T19:30:08",
    "account": "chris",
@@ -11885,9 +11895,9 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 172,
+  "switches": 174,
   "relogMinutes": 87.6,
-  "retries": 61,
+  "retries": 62,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -11985,9 +11995,9 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 12,
-    "minutes": 13.3,
-    "failed": 0
+    "runs": 14,
+    "minutes": 15.5,
+    "failed": 1
    }
   }
  },
@@ -12227,7 +12237,8 @@
    "fake5",
    "fake6",
    "fake7",
-   "sprite"
+   "sprite",
+   "lucifer2"
   ]
  },
  "phase": null,
