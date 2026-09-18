@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:04:29.583662",
+ "generatedAt": "2026-09-18T10:06:32.765116",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
-  "mode": "pokemon_home",
-  "since": "10:02:41"
+  "mode": "combat_daily",
+  "since": "10:06:14"
  },
  "grid": {
   "tasks": [
@@ -278,7 +278,7 @@
      "-",
      "-",
      "✓",
-     "·",
+     "⊘",
      "·",
      "·",
      "⏰",
@@ -442,9 +442,9 @@
  },
  "counts": {
   "done": 105,
-  "todo": 87,
+  "todo": 86,
   "gaveUp": 2,
-  "unavailable": 1,
+  "unavailable": 2,
   "windowed": 34
  },
  "disabled": [
@@ -625,6 +625,57 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:06:32",
+   "script": "combat_daily",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "title_reread_named": 1,
+    "near_miss_tips_header": 3,
+    "left_outstanding": 4
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_100619_combat_daily_fake7"
+  },
+  {
+   "ts": "2026-09-18T10:06:13",
+   "script": "pokemon_home",
+   "account": "fake7",
+   "rc": 2,
+   "secs": 34,
+   "stats": {
+    "craft_pill_gone": 1,
+    "reached_via_trial": 1,
+    "grid_shape_disagreed": 1,
+    "board_stuck": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_100539_pokemon_home_fake7"
+  },
+  {
+   "ts": "2026-09-18T10:05:33",
+   "script": "pokemon_home",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 171,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_refit": 7,
+    "merge_refused": 1,
+    "merge_no_progress": 1,
+    "charges_left_unspent": 23,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: 23 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260918_100242_pokemon_home_fake7"
+  },
   {
    "ts": "2026-09-18T10:02:41",
    "script": "daily_dungeon",
@@ -6830,62 +6881,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260917_104015_combat_daily_test1"
-  },
-  {
-   "ts": "2026-09-17T10:40:10",
-   "script": "pokemon_home",
-   "account": "test1",
-   "rc": 0,
-   "secs": 277,
-   "stats": {
-    "reached_via_trial": 1,
-    "merge_refused": 33,
-    "merge_no_progress": 1,
-    "pair_went_stale": 8,
-    "merge_moved_instead": 4,
-    "burst_balls_unseen": 1,
-    "phantom_creations": 8,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_103532_pokemon_home_test1"
-  },
-  {
-   "ts": "2026-09-17T10:35:31",
-   "script": "daily_dungeon",
-   "account": "test1",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_103516_daily_dungeon_test1"
-  },
-  {
-   "ts": "2026-09-17T10:35:12",
-   "script": "mail",
-   "account": "test1",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260917_103508_mail_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 36269,
+  "now": 36393,
   "segments": [
    {
     "b": 28932,
@@ -8327,13 +8328,66 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 36162,
-    "rc": null,
-    "e": 36269
+    "rc": 1,
+    "e": 36334,
+    "secs": 171,
+    "why": "pokemon_home: 23 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 36334,
+    "a": "fake7",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 36339,
+    "rc": 1,
+    "e": 36374,
+    "secs": 171,
+    "why": "pokemon_home: 23 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 36374,
+    "a": "fake7",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 36378,
+    "rc": 1,
+    "e": 36393,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 36393,
+    "a": "fake7",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 36393,
+    "secs": 13,
+    "why": ""
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-18T10:06:32",
+   "account": "fake7",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 13,
+   "why": "title_reread_named, near_miss_tips_header, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_100619_combat_daily_fake7__0022_100632_panel_back__AFTER__town.png"
+  },
+  {
+   "ts": "2026-09-18T10:05:33",
+   "account": "fake7",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 171,
+   "why": "pokemon_home: 23 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260918_100242_pokemon_home_fake7__KEEP_0091_100533_board_saturated.png"
+  },
   {
    "ts": "2026-09-18T09:55:03",
    "account": "fake6",
@@ -8546,7 +8600,7 @@
   "since": "2026-09-18T08:00",
   "switches": 11,
   "relogMinutes": 5.7,
-  "retries": 23,
+  "retries": 25,
   "tasks": {
    "dailyclaim": {
     "runs": 12,
@@ -8569,14 +8623,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 10,
-    "minutes": 14.3,
-    "failed": 1
+    "runs": 12,
+    "minutes": 17.7,
+    "failed": 2
    },
    "combat_daily": {
-    "runs": 18,
-    "minutes": 19.5,
-    "failed": 10
+    "runs": 19,
+    "minutes": 19.8,
+    "failed": 11
    },
    "victory_road": {
     "runs": 9,
@@ -8631,6 +8685,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "fake7",
+   "task": "pokemon_home",
+   "why": "craft_pill_gone, reached_via_trial, grid_shape_disagreed, board_stuck",
+   "at": "2026-09-18T10:06:13"
+  },
   {
    "account": "smurf",
    "task": "joint_battle",
