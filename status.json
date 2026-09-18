@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T11:28:39.129300",
+ "generatedAt": "2026-09-18T11:30:42.009725",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "dre",
-  "mode": "run_pvp_ranked",
-  "since": "11:28:22"
+  "account": "fake3",
+  "mode": "daily_dungeon",
+  "since": "11:30:02"
  },
  "grid": {
   "tasks": [
@@ -428,12 +428,12 @@
      "⏰",
      "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏸",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 173,
-  "todo": 15,
+  "done": 176,
+  "todo": 12,
   "gaveUp": 5,
   "unavailable": 2,
   "windowed": 34
@@ -628,11 +628,55 @@
   }
  },
  "session": {
-  "label": "dre",
-  "at": "2026-09-18T11:19:19.188624",
+  "label": "fake3",
+  "at": "2026-09-18T11:30:23.001691",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T11:30:01",
+   "script": "weekend_bash",
+   "account": "dre",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_113001_weekend_bash_dre"
+  },
+  {
+   "ts": "2026-09-18T11:30:00",
+   "script": "collect_hoopa_keys",
+   "account": "dre",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_112952_collect_hoopa_keys_dre"
+  },
+  {
+   "ts": "2026-09-18T11:29:51",
+   "script": "run_pvp_ranked",
+   "account": "dre",
+   "rc": 0,
+   "secs": 88,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 1,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 5,
+    "daily_goal_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 2,
+    "daily_goal_claims": 1
+   },
+   "dir": "debug_runs/20260918_112823_run_pvp_ranked_dre"
+  },
   {
    "ts": "2026-09-18T11:28:22",
    "script": "paradise",
@@ -6871,66 +6915,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260917_153720_rank_match_nova"
-  },
-  {
-   "ts": "2026-09-17T15:36:48",
-   "script": "rank_match",
-   "account": "chris",
-   "rc": 0,
-   "secs": 58,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260917_153550_rank_match_chris"
-  },
-  {
-   "ts": "2026-09-17T15:35:48",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 45,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 20,
-    "fights_today": 6
-   },
-   "dir": "debug_runs/20260917_153503_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-17T15:34:27",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 39,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 8,
-    "fights_today": 9
-   },
-   "dir": "debug_runs/20260917_153348_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 41319,
+  "now": 41442,
   "segments": [
    {
     "b": 28932,
@@ -9298,8 +9288,44 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 41303,
+    "rc": 0,
+    "e": 41392,
+    "secs": 88,
+    "why": ""
+   },
+   {
+    "b": 41392,
+    "a": "dre",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 41392,
+    "rc": 0,
+    "e": 41401,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 41401,
+    "a": "dre",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 41401,
+    "rc": 0,
+    "e": 41402,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 41402,
+    "a": "fake3",
+    "s": "daily_dungeon",
+    "login": [
+     41402,
+     41423
+    ],
+    "handoff": 41434,
     "rc": null,
-    "e": 41319
+    "e": 41442
    }
   ],
   "idle": []
@@ -9632,8 +9658,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 18,
-  "relogMinutes": 9.2,
+  "switches": 19,
+  "relogMinutes": 9.7,
   "retries": 38,
   "tasks": {
    "dailyclaim": {
@@ -9677,8 +9703,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 17,
-    "minutes": 2.5,
+    "runs": 18,
+    "minutes": 2.6,
     "failed": 3
    },
    "sky_pillar": {
@@ -9687,12 +9713,12 @@
     "failed": 5
    },
    "run_pvp_ranked": {
-    "runs": 6,
-    "minutes": 9.2,
+    "runs": 7,
+    "minutes": 10.7,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 7,
+    "runs": 8,
     "minutes": 0.0,
     "failed": 2
    },
