@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T13:37:55.340013",
+ "generatedAt": "2026-09-18T13:39:58.130079",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "rank_match",
-  "since": "13:36:58"
+  "account": "fake1",
+  "mode": "faction",
+  "since": "13:39:54"
  },
  "grid": {
   "tasks": [
@@ -89,7 +89,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -137,7 +137,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 205,
-  "todo": 22,
+  "done": 207,
+  "todo": 20,
   "gaveUp": 7,
   "unavailable": 2,
   "windowed": 0
@@ -647,11 +647,52 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-18T13:37:18.579370",
+  "label": "fake1",
+  "at": "2026-09-18T13:38:49.889926",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T13:39:53",
+   "script": "rank_match",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "near_miss_go_button": 2,
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260918_133858_rank_match_fake1"
+  },
+  {
+   "ts": "2026-09-18T13:38:29",
+   "script": "rank_match",
+   "account": "chris",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260918_133730_rank_match_chris"
+  },
   {
    "ts": "2026-09-18T13:36:57",
    "script": "rank_match",
@@ -6868,45 +6909,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260917_165719_story_fake6"
-  },
-  {
-   "ts": "2026-09-17T16:56:47",
-   "script": "story",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 86,
-   "stats": {
-    "skip_retry": 14,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_165521_story_fake5"
-  },
-  {
-   "ts": "2026-09-17T16:54:50",
-   "script": "story",
-   "account": "fake4",
-   "rc": 1,
-   "secs": 151,
-   "stats": {
-    "battle_timeout": 1,
-    "incomplete": 1,
-    "story_disabled": 1,
-    "stages_cleared": 0
-   },
-   "incomplete": [
-    "story: stage 1 never produced a result"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260917_165219_story_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 49075,
+  "now": 49198,
   "segments": [
    {
     "b": 28932,
@@ -10033,8 +10041,33 @@
      49038
     ],
     "handoff": 49050,
+    "rc": 0,
+    "e": 49109,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 49109,
+    "a": "fake1",
+    "s": "rank_match",
+    "login": [
+     49110,
+     49129
+    ],
+    "handoff": 49138,
+    "rc": 0,
+    "e": 49194,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 49194,
+    "a": "fake1",
+    "s": "faction",
+    "login": null,
+    "handoff": 49194,
     "rc": null,
-    "e": 49075
+    "e": 49198
    }
   ],
   "idle": []
@@ -10421,8 +10454,8 @@
  ],
  "day": {
   "since": "2026-09-18T08:00",
-  "switches": 61,
-  "relogMinutes": 31.8,
+  "switches": 62,
+  "relogMinutes": 32.3,
   "retries": 48,
   "tasks": {
    "dailyclaim": {
@@ -10516,8 +10549,8 @@
     "failed": 2
    },
    "rank_match": {
-    "runs": 3,
-    "minutes": 3.0,
+    "runs": 5,
+    "minutes": 4.9,
     "failed": 0
    }
   }
