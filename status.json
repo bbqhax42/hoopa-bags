@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-18T10:53:44.515787",
+ "generatedAt": "2026-09-18T10:55:47.711123",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "daily_dungeon",
-  "since": "10:53:23"
+  "mode": "pokemon_home",
+  "since": "10:54:00"
  },
  "grid": {
   "tasks": [
@@ -373,7 +373,7 @@
      "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 145,
-  "todo": 43,
+  "done": 146,
+  "todo": 42,
   "gaveUp": 4,
   "unavailable": 2,
   "windowed": 34
@@ -634,6 +634,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-18T10:54:00",
+   "script": "daily_dungeon",
+   "account": "test1",
+   "rc": 0,
+   "secs": 32,
+   "stats": {
+    "marginal_dungeon_list": 14,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260918_105328_daily_dungeon_test1"
+  },
   {
    "ts": "2026-09-18T10:53:23",
    "script": "mail",
@@ -6882,28 +6898,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260917_120333_guild_war_jeff"
-  },
-  {
-   "ts": "2026-09-17T12:03:29",
-   "script": "guild_war",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_never_entered": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_120324_guild_war_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-18T00:00",
   "since": 28800.0,
-  "now": 39224,
+  "now": 39348,
   "segments": [
    {
     "b": 28932,
@@ -8906,8 +8906,19 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 39207,
+    "rc": 0,
+    "e": 39240,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 39240,
+    "a": "test1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 39241,
     "rc": null,
-    "e": 39224
+    "e": 39348
    }
   ],
   "idle": []
@@ -9215,8 +9226,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 13,
-    "minutes": 4.7,
+    "runs": 14,
+    "minutes": 5.3,
     "failed": 0
    },
    "pokemon_home": {
