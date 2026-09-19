@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:43:25.223563",
+ "generatedAt": "2026-09-19T09:45:28.961966",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake4",
-  "mode": "combat_daily",
-  "since": "09:42:56"
+  "mode": "paradise",
+  "since": "09:44:33"
  },
  "grid": {
   "tasks": [
@@ -207,8 +207,8 @@
      "✓",
      "✓",
      "✓",
-     "✗2",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 74,
-  "todo": 116,
-  "gaveUp": 7,
+  "done": 76,
+  "todo": 115,
+  "gaveUp": 6,
   "unavailable": 6,
   "windowed": 34
  },
@@ -631,6 +631,48 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:44:32",
+   "script": "victory_road",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_094425_victory_road_fake4"
+  },
+  {
+   "ts": "2026-09-19T09:44:23",
+   "script": "victory_road",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 17,
+   "stats": {
+    "vr_not_open": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_094406_victory_road_fake4"
+  },
+  {
+   "ts": "2026-09-19T09:44:05",
+   "script": "combat_daily",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 67,
+   "stats": {
+    "title_reread_named": 2,
+    "marginal_battle_victory_confirm": 1,
+    "near_miss_vr_rank": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_094257_combat_daily_fake4"
+  },
   {
    "ts": "2026-09-19T09:42:56",
    "script": "combat_daily",
@@ -7019,56 +7061,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_083148_daily_dungeon_jeff"
-  },
-  {
-   "ts": "2026-09-18T08:30:59",
-   "script": "joint_team_daily_quest",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 22,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_083037_joint_team_daily_quest_jeff"
-  },
-  {
-   "ts": "2026-09-18T08:30:35",
-   "script": "mail",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260918_083032_mail_jeff"
-  },
-  {
-   "ts": "2026-09-18T08:30:31",
-   "script": "dailyclaim",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_082957_dailyclaim_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 35005,
+  "now": 35129,
   "segments": [
    {
     "b": 29300,
@@ -8311,14 +8309,54 @@
     "login": null,
     "handoff": 34977,
     "rc": 1,
-    "e": 35005,
+    "e": 35045,
     "secs": 112,
     "why": ""
+   },
+   {
+    "b": 35045,
+    "a": "fake4",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 35046,
+    "rc": 1,
+    "e": 35064,
+    "secs": 17,
+    "why": ""
+   },
+   {
+    "b": 35064,
+    "a": "fake4",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 35064,
+    "rc": 1,
+    "e": 35073,
+    "secs": 17,
+    "why": ""
+   },
+   {
+    "b": 35073,
+    "a": "fake4",
+    "s": "paradise",
+    "login": null,
+    "handoff": 35074,
+    "rc": null,
+    "e": 35129
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T09:44:23",
+   "account": "fake4",
+   "task": "victory_road",
+   "rc": 1,
+   "secs": 17,
+   "why": "vr_not_open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_094406_victory_road_fake4__KEEP_0004_094423_vr_not_open.png"
+  },
   {
    "ts": "2026-09-19T09:42:56",
    "account": "fake4",
@@ -8504,7 +8542,7 @@
   "since": "2026-09-19T08:00",
   "switches": 8,
   "relogMinutes": 4.2,
-  "retries": 23,
+  "retries": 24,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -8537,14 +8575,14 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 13,
-    "minutes": 15.5,
+    "runs": 14,
+    "minutes": 16.7,
     "failed": 9
    },
    "victory_road": {
-    "runs": 7,
-    "minutes": 1.2,
-    "failed": 2
+    "runs": 9,
+    "minutes": 1.6,
+    "failed": 3
    },
    "paradise": {
     "runs": 7,
