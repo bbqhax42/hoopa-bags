@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T11:06:29.813915",
+ "generatedAt": "2026-09-19T11:08:32.799840",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "combat_daily",
-  "since": "11:04:41"
+  "mode": "paradise",
+  "since": "11:06:58"
  },
  "grid": {
   "tasks": [
@@ -87,8 +87,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -120,7 +120,7 @@
      "✓",
      "✓",
      "⊘",
-     "✗2",
+     "·",
      "✗2",
      "-",
      "-"
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 110,
-  "todo": 85,
-  "gaveUp": 3,
+  "done": 112,
+  "todo": 84,
+  "gaveUp": 2,
   "unavailable": 5,
   "windowed": 34
  },
@@ -645,6 +645,45 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T11:06:58",
+   "script": "victory_road",
+   "account": "chris",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_110650_victory_road_chris"
+  },
+  {
+   "ts": "2026-09-19T11:06:49",
+   "script": "combat_daily",
+   "account": "chris",
+   "rc": 1,
+   "secs": 122,
+   "stats": {
+    "title_reread_named": 1,
+    "near_miss_rift_exit_guardian": 3,
+    "near_miss_vr_rank": 7,
+    "near_miss_battle_victory_confirm": 1,
+    "near_miss_go_button": 1,
+    "incomplete": 1,
+    "gacha_no_result": 1,
+    "outstanding_reread_after_toast": 1
+   },
+   "incomplete": [
+    "combat_daily: premium gacha free spin — no result"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 6/8 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260919_110446_combat_daily_chris"
+  },
   {
    "ts": "2026-09-19T11:04:40",
    "script": "island_challenge",
@@ -7073,45 +7112,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_092552_sky_pillar_fake1"
-  },
-  {
-   "ts": "2026-09-18T09:25:48",
-   "script": "sky_pillar",
-   "account": "fake1",
-   "rc": 1,
-   "secs": 59,
-   "stats": {
-    "stages_cleared": 3,
-    "no_setform": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "sky_pillar: stage 4 did not complete"
-   ],
-   "values": {
-    "floor": 3,
-    "stage": 1
-   },
-   "dir": "debug_runs/20260918_092448_sky_pillar_fake1"
-  },
-  {
-   "ts": "2026-09-18T09:24:47",
-   "script": "collect_hoopa_keys",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_092441_collect_hoopa_keys_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 39990,
+  "now": 40113,
   "segments": [
    {
     "b": 29300,
@@ -8956,13 +8962,44 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 39886,
+    "rc": 1,
+    "e": 40010,
+    "secs": 122,
+    "why": "combat_daily: premium gacha free spin — no result"
+   },
+   {
+    "b": 40010,
+    "a": "chris",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 40010,
+    "rc": 0,
+    "e": 40018,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 40018,
+    "a": "chris",
+    "s": "paradise",
+    "login": null,
+    "handoff": 40019,
     "rc": null,
-    "e": 39990
+    "e": 40113
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T11:06:49",
+   "account": "chris",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 122,
+   "why": "combat_daily: premium gacha free spin — no result",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_110446_combat_daily_chris__KEEP_0090_110558_gacha_no_result.png"
+  },
   {
    "ts": "2026-09-19T11:03:30",
    "account": "lucifer1",
@@ -9238,7 +9275,7 @@
   "since": "2026-09-19T08:00",
   "switches": 18,
   "relogMinutes": 8.1,
-  "retries": 35,
+  "retries": 36,
   "tasks": {
    "island_challenge": {
     "runs": 5,
@@ -9271,13 +9308,13 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 20,
-    "minutes": 24.1,
-    "failed": 12
+    "runs": 21,
+    "minutes": 26.2,
+    "failed": 13
    },
    "victory_road": {
-    "runs": 13,
-    "minutes": 2.4,
+    "runs": 14,
+    "minutes": 2.5,
     "failed": 4
    },
    "paradise": {
