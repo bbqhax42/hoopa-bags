@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:02:20.097067",
+ "generatedAt": "2026-09-19T09:04:23.157007",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "misty_woods",
-  "since": "09:01:23"
+  "account": "fake1",
+  "mode": "daily_dungeon",
+  "since": "09:04:21"
  },
  "grid": {
   "tasks": [
@@ -120,8 +120,8 @@
      "✓",
      "✓",
      "⊘",
-     "·",
-     "·",
+     "✗2",
+     "✗2",
      "-",
      "-"
     ]
@@ -129,8 +129,8 @@
    {
     "account": "fake1",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 37,
-  "todo": 159,
-  "gaveUp": 3,
+  "done": 39,
+  "todo": 155,
+  "gaveUp": 5,
   "unavailable": 4,
   "windowed": 34
  },
@@ -626,11 +626,63 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-19T08:41:38.345775",
+  "label": "fake1",
+  "at": "2026-09-19T09:03:38.006528",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:04:20",
+   "script": "mail",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260919_090417_mail_fake1"
+  },
+  {
+   "ts": "2026-09-19T09:04:16",
+   "script": "dailyclaim",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_090345_dailyclaim_fake1"
+  },
+  {
+   "ts": "2026-09-19T09:02:38",
+   "script": "misty_woods",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 15,
+   "stats": {
+    "runes_claimed": 1,
+    "battles_won": 1,
+    "no_allowed_tile": 1,
+    "incomplete": 1,
+    "wins": 1
+   },
+   "incomplete": [
+    "misty_woods: step 2 did not complete"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260919_090223_misty_woods_smurf"
+  },
   {
    "ts": "2026-09-19T09:01:23",
    "script": "faction",
@@ -6993,58 +7045,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_023234_story_fake5"
-  },
-  {
-   "ts": "2026-09-18T02:28:43",
-   "script": "story",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 21,
-   "stats": {
-    "skip_retry": 3,
-    "incomplete": 1,
-    "story_disabled": 1,
-    "stages_cleared": 1
-   },
-   "incomplete": [
-    "story: lost at stage 2 after 1 clear(s) — the next stage needs a stronger team"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260918_022822_story_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T02:28:21",
-   "script": "story",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 78,
-   "stats": {
-    "skip_retry": 12,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_022703_story_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T02:27:02",
-   "script": "story",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 78,
-   "stats": {
-    "skip_retry": 13,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_022543_story_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 32540,
+  "now": 32663,
   "segments": [
    {
     "b": 29300,
@@ -7702,14 +7708,88 @@
     "a": "smurf",
     "s": "misty_woods",
     "login": null,
+    "handoff": 32542,
+    "rc": 1,
+    "e": 32559,
+    "secs": 15,
+    "why": "misty_woods: step 2 did not complete"
+   },
+   {
+    "b": 32559,
+    "a": "smurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 32571,
+    "secs": 15,
+    "why": "misty_woods: step 2 did not complete"
+   },
+   {
+    "b": 32571,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
     "handoff": null,
     "rc": null,
-    "e": 32540
+    "e": 32583
+   },
+   {
+    "b": 32583,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": null,
+    "rc": null,
+    "e": 32595
+   },
+   {
+    "b": 32595,
+    "a": "fake1",
+    "s": "dailyclaim",
+    "login": [
+     32596,
+     32618
+    ],
+    "handoff": 32625,
+    "rc": 0,
+    "e": 32657,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 32657,
+    "a": "fake1",
+    "s": "mail",
+    "login": null,
+    "handoff": 32657,
+    "rc": 0,
+    "e": 32661,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 32661,
+    "a": "fake1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": null,
+    "rc": null,
+    "e": 32663
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T09:02:38",
+   "account": "smurf",
+   "task": "misty_woods",
+   "rc": 1,
+   "secs": 15,
+   "why": "misty_woods: step 2 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_090223_misty_woods_smurf__KEEP_0003_090238_no_allowed_tile_2.png"
+  },
   {
    "ts": "2026-09-19T08:59:46",
    "account": "smurf",
@@ -7821,9 +7901,9 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 4,
-  "relogMinutes": 2.2,
-  "retries": 15,
+  "switches": 5,
+  "relogMinutes": 2.7,
+  "retries": 16,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -7831,13 +7911,13 @@
     "failed": 2
    },
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 4.2,
+    "runs": 6,
+    "minutes": 4.8,
     "failed": 2
    },
    "mail": {
-    "runs": 4,
-    "minutes": 0.2,
+    "runs": 5,
+    "minutes": 0.3,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -7898,6 +7978,11 @@
    "faction": {
     "runs": 2,
     "minutes": 2.7,
+    "failed": 1
+   },
+   "misty_woods": {
+    "runs": 1,
+    "minutes": 0.3,
     "failed": 1
    }
   }
