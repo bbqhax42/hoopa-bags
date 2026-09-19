@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T08:10:59.999545",
+ "generatedAt": "2026-09-19T08:13:03.012173",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "joint_battle",
-  "since": "08:10:01"
+  "mode": "pokemon_home",
+  "since": "08:11:34"
  },
  "grid": {
   "tasks": [
@@ -60,8 +60,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 3,
-  "todo": 201,
+  "done": 5,
+  "todo": 199,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 34
@@ -636,6 +636,19 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T08:11:33",
+   "script": "daily_dungeon",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_081119_daily_dungeon_jeff"
+  },
   {
    "ts": "2026-09-19T08:10:00",
    "script": "joint_team_daily_quest",
@@ -6998,28 +7011,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260917_201341_worldboss_lucifer1"
-  },
-  {
-   "ts": "2026-09-17T20:13:41",
-   "script": "worldboss",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "marginal_popup_close": 1,
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260917_201231_worldboss_sprite"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 29460,
+  "now": 29583,
   "segments": [
    {
     "b": 29300,
@@ -7072,7 +7069,27 @@
     "login": null,
     "handoff": 29404,
     "rc": null,
-    "e": 29460
+    "e": 29474
+   },
+   {
+    "b": 29474,
+    "a": "jeff",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 29478,
+    "rc": 0,
+    "e": 29494,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 29494,
+    "a": "jeff",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 29495,
+    "rc": null,
+    "e": 29583
    }
   ],
   "idle": []
@@ -7102,6 +7119,11 @@
    "joint_team_daily_quest": {
     "runs": 1,
     "minutes": 0.6,
+    "failed": 0
+   },
+   "daily_dungeon": {
+    "runs": 1,
+    "minutes": 0.2,
     "failed": 0
    }
   }
