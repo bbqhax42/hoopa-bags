@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T11:14:42.546178",
+ "generatedAt": "2026-09-19T11:16:45.320748",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "faction",
-  "since": "11:13:35"
+  "account": "fake7",
+  "mode": "pokemon_home",
+  "since": "11:16:18"
  },
  "grid": {
   "tasks": [
@@ -95,10 +95,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
-     "·",
-     "·",
+     "✓",
+     "💤",
      "💤"
     ]
    },
@@ -278,7 +278,7 @@
      "-",
      "-",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 116,
-  "todo": 80,
-  "gaveUp": 2,
+  "done": 118,
+  "todo": 76,
+  "gaveUp": 3,
   "unavailable": 5,
   "windowed": 34
  },
@@ -570,6 +570,7 @@
   }
  ],
  "snoozed": {
+  "chris|championship": "2026-09-19T12:00",
   "chris|island_challenge": "2026-09-19T14:04",
   "jeff|championship": "2026-09-19T12:00",
   "jeff|island_challenge": "2026-09-19T11:54"
@@ -634,11 +635,49 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-19T11:03:46.123961",
+  "label": "fake7",
+  "at": "2026-09-19T11:16:44.284898",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T11:16:17",
+   "script": "championship",
+   "account": "chris",
+   "rc": 5,
+   "secs": 4,
+   "stats": {
+    "no_icon": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_111612_championship_chris"
+  },
+  {
+   "ts": "2026-09-19T11:16:11",
+   "script": "weekend_bash",
+   "account": "chris",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_111611_weekend_bash_chris"
+  },
+  {
+   "ts": "2026-09-19T11:15:34",
+   "script": "faction",
+   "account": "chris",
+   "rc": 0,
+   "secs": 115,
+   "stats": {
+    "floors_grass": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_111338_faction_chris"
+  },
   {
    "ts": "2026-09-19T11:13:34",
    "script": "sky_pillar",
@@ -7057,73 +7096,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_093258_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-18T09:32:57",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 1,
-   "secs": 120,
-   "stats": {
-    "near_miss_afk_rewards": 1,
-    "marginal_afk_rewards": 2,
-    "title_reread_named": 3,
-    "refused_quick_bar": 1,
-    "adv_overflow": 1,
-    "near_miss_vr_rank": 2,
-    "adv_energy_spent": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 + ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260918_093056_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-18T09:30:50",
-   "script": "pokemon_home",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 25,
-   "stats": {
-    "reached_via_trial": 1,
-    "merge_refused": 1,
-    "pair_went_stale": 1,
-    "merge_no_progress": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_093024_pokemon_home_fake2"
-  },
-  {
-   "ts": "2026-09-18T09:30:22",
-   "script": "daily_dungeon",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 32,
-   "stats": {
-    "marginal_dungeon_list": 9,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_092950_daily_dungeon_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 40482,
+  "now": 40605,
   "segments": [
    {
     "b": 29300,
@@ -9034,8 +9012,44 @@
     "s": "faction",
     "login": null,
     "handoff": 40418,
+    "rc": 0,
+    "e": 40534,
+    "secs": 115,
+    "why": ""
+   },
+   {
+    "b": 40534,
+    "a": "chris",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 40571,
+    "rc": 0,
+    "e": 40572,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 40572,
+    "a": "chris",
+    "s": "championship",
+    "login": null,
+    "handoff": 40572,
+    "rc": 5,
+    "e": 40578,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 40578,
+    "a": "fake7",
+    "s": "pokemon_home",
+    "login": [
+     40578,
+     40604
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 40482
+    "e": 40605
    }
   ],
   "idle": []
@@ -9323,9 +9337,9 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 18,
+  "switches": 19,
   "relogMinutes": 8.1,
-  "retries": 36,
+  "retries": 37,
   "tasks": {
    "island_challenge": {
     "runs": 5,
@@ -9388,18 +9402,18 @@
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 3,
+    "runs": 4,
     "minutes": 0.0,
     "failed": 2
    },
    "championship": {
-    "runs": 2,
+    "runs": 3,
     "minutes": 0.2,
-    "failed": 2
+    "failed": 3
    },
    "faction": {
-    "runs": 9,
-    "minutes": 5.4,
+    "runs": 10,
+    "minutes": 7.4,
     "failed": 1
    },
    "misty_woods": {
