@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T11:26:59.875482",
+ "generatedAt": "2026-09-19T11:29:02.942412",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "combat_daily",
-  "since": "11:26:36"
+  "mode": "paradise",
+  "since": "11:27:44"
  },
  "grid": {
   "tasks": [
@@ -351,8 +351,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✗2",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 126,
-  "todo": 81,
-  "gaveUp": 2,
+  "done": 127,
+  "todo": 79,
+  "gaveUp": 3,
   "unavailable": 6,
   "windowed": 36
  },
@@ -664,6 +664,55 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T11:27:43",
+   "script": "victory_road",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "nothing_pending": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_112730_victory_road_lucifer1"
+  },
+  {
+   "ts": "2026-09-19T11:27:29",
+   "script": "combat_daily",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 14,
+   "stats": {
+    "title_reread_named": 2,
+    "near_miss_pokemon_upgrade": 1,
+    "marginal_pokemon_upgrade": 1,
+    "upgrade_skip_resonating": 3,
+    "upgrade_all_unlevellable": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_112715_combat_daily_lucifer1"
+  },
+  {
+   "ts": "2026-09-19T11:27:14",
+   "script": "combat_daily",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "title_reread_named": 1,
+    "near_miss_pokemon_upgrade": 1,
+    "upgrade_skip_resonating": 3,
+    "upgrade_all_unlevellable": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_112700_combat_daily_lucifer1"
+  },
   {
    "ts": "2026-09-19T11:26:35",
    "script": "paradise",
@@ -7082,60 +7131,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_094445_daily_dungeon_fake5"
-  },
-  {
-   "ts": "2026-09-18T09:43:34",
-   "script": "joint_team_daily_quest",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 42,
-   "stats": {
-    "marginal_joint_team": 1,
-    "joint_level_claims": 1,
-    "panel_swipes": 2,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_094251_joint_team_daily_quest_fake5"
-  },
-  {
-   "ts": "2026-09-18T09:42:50",
-   "script": "mail",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 0,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260918_094246_mail_fake5"
-  },
-  {
-   "ts": "2026-09-18T09:42:45",
-   "script": "dailyclaim",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_094214_dailyclaim_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 41220,
+  "now": 41343,
   "segments": [
    {
     "b": 29300,
@@ -9198,13 +9199,64 @@
      41211
     ],
     "handoff": 41219,
+    "rc": 1,
+    "e": 41234,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 41234,
+    "a": "lucifer1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 41235,
+    "rc": 1,
+    "e": 41250,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 41250,
+    "a": "lucifer1",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 41250,
+    "rc": 0,
+    "e": 41264,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 41264,
+    "a": "lucifer1",
+    "s": "paradise",
+    "login": null,
+    "handoff": 41265,
     "rc": null,
-    "e": 41220
+    "e": 41343
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T11:27:29",
+   "account": "lucifer1",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 14,
+   "why": "title_reread_named, near_miss_pokemon_upgrade, marginal_pokemon_upgrade, upgrade_skip_resonating, upgrade_all_unlevellable, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_112715_combat_daily_lucifer1__KEEP_0012_112723_upgrade_unlevellable.png"
+  },
+  {
+   "ts": "2026-09-19T11:27:14",
+   "account": "lucifer1",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 13,
+   "why": "title_reread_named, near_miss_pokemon_upgrade, upgrade_skip_resonating, upgrade_all_unlevellable, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_112700_combat_daily_lucifer1__KEEP_0012_112707_upgrade_unlevellable.png"
+  },
   {
    "ts": "2026-09-19T11:06:49",
    "account": "chris",
@@ -9489,7 +9541,7 @@
   "since": "2026-09-19T08:00",
   "switches": 21,
   "relogMinutes": 9.5,
-  "retries": 37,
+  "retries": 39,
   "tasks": {
    "island_challenge": {
     "runs": 5,
@@ -9522,13 +9574,13 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 23,
-    "minutes": 28.2,
-    "failed": 13
+    "runs": 25,
+    "minutes": 28.7,
+    "failed": 15
    },
    "victory_road": {
-    "runs": 16,
-    "minutes": 2.8,
+    "runs": 17,
+    "minutes": 3.0,
     "failed": 4
    },
    "paradise": {
