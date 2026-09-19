@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T13:03:37.839240",
+ "generatedAt": "2026-09-19T13:05:39.008991",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "joint_battle",
-  "since": "13:03:28"
+  "mode": "daily_dungeon",
+  "since": "13:04:24"
  },
  "grid": {
   "tasks": [
@@ -420,14 +420,14 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
      "⏰",
      "·",
-     "⇢",
+     "·",
      "·",
      "·",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 177,
-  "todo": 47,
+  "done": 179,
+  "todo": 46,
   "gaveUp": 6,
   "unavailable": 11,
   "windowed": 18
@@ -652,10 +652,38 @@
  },
  "session": {
   "label": "deno",
-  "at": "2026-09-19T13:01:50.855368",
+  "at": "2026-09-19T13:05:13.978925",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T13:05:37",
+   "script": "dailyclaim",
+   "account": "deno",
+   "rc": 0,
+   "secs": 23,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_paid_only": 1,
+    "claims": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_130514_dailyclaim_deno"
+  },
+  {
+   "ts": "2026-09-19T13:04:42",
+   "script": "daily_dungeon",
+   "account": "deno",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_130429_daily_dungeon_deno"
+  },
   {
    "ts": "2026-09-19T13:03:27",
    "script": "joint_team_daily_quest",
@@ -7126,36 +7154,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_105248_dailyclaim_test1"
-  },
-  {
-   "ts": "2026-09-18T10:52:18",
-   "script": "championship",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "no_icon": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_105213_championship_jeff"
-  },
-  {
-   "ts": "2026-09-18T10:52:12",
-   "script": "weekend_bash",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_105212_weekend_bash_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 47018,
+  "now": 47139,
   "segments": [
    {
     "b": 29300,
@@ -10094,7 +10098,18 @@
     "login": null,
     "handoff": 47010,
     "rc": null,
-    "e": 47018
+    "e": 47064
+   },
+   {
+    "b": 47064,
+    "a": "deno",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 47069,
+    "rc": 0,
+    "e": 47139,
+    "secs": 13,
+    "why": ""
    }
   ],
   "idle": []
@@ -10515,8 +10530,8 @@
     "failed": 3
    },
    "daily_dungeon": {
-    "runs": 17,
-    "minutes": 5.6,
+    "runs": 18,
+    "minutes": 5.8,
     "failed": 1
    },
    "pokemon_home": {
@@ -10794,7 +10809,11 @@
    "lucifer1"
   ]
  },
- "phase": null,
+ "phase": {
+  "kind": "day",
+  "since": "13:05:38",
+  "until": "18:00"
+ },
  "names": {
   "fake1": "Roflmao123",
   "fake2": "Random713",
