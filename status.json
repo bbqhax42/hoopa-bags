@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T03:09:41.958709",
+ "generatedAt": "2026-09-20T03:11:45.445685",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake4",
+  "mode": "story",
+  "since": "03:11:22"
  },
  "grid": {
   "tasks": [
@@ -497,6 +497,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "fake3",
+   "task": "story",
+   "since": "2026-09-20T03:10:48",
+   "why": "Unlocked after clearing Victory Road Goldenrod Gym — clear that by hand, then re-enable"
+  },
+  {
    "account": "fake4",
    "task": "hoopa",
    "since": "2026-09-18T14:34:08",
@@ -637,11 +643,28 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-20T03:05:42.863110",
+  "label": "fake4",
+  "at": "2026-09-20T03:11:40.110999",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T03:10:48",
+   "script": "story",
+   "account": "fake3",
+   "rc": 2,
+   "secs": 42,
+   "stats": {
+    "skip_retry": 6,
+    "stage_never_started": 1,
+    "stage_start_retry": 1,
+    "story_locked": 1,
+    "stages_cleared": 6
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_031006_story_fake3"
+  },
   {
    "ts": "2026-09-20T03:00:25",
    "script": "story",
@@ -7085,27 +7108,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_081119_daily_dungeon_jeff"
-  },
-  {
-   "ts": "2026-09-19T08:10:00",
-   "script": "joint_team_daily_quest",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 38,
-   "stats": {
-    "panel_swipes": 2,
-    "artifact_row_found_by_scrolling": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_080922_joint_team_daily_quest_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 97782,
+  "now": 97905,
   "segments": [
    {
     "b": 29300,
@@ -7140,10 +7148,8 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 29362,
-    "rc": 0,
-    "e": 29401,
-    "secs": 38,
-    "why": ""
+    "rc": null,
+    "e": 29401
    },
    {
     "b": 29401,
@@ -11352,7 +11358,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 97782,
+    "e": 97905,
     "secs": 102,
     "why": ""
    }
@@ -11826,13 +11832,13 @@
    "rc": 1,
    "secs": 113,
    "why": "title_reread_named, near_miss_afk_rewards, marginal_afk_rewards, near_miss_rift_exit_guardian, refused_quick_bar, near_miss_vr_rank, adv_energy_spent, near_miss",
-   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_081351_combat_daily_jeff__0147_081541_panel_back__AFTER__first_topup.png"
+   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 219,
-  "relogMinutes": 60.9,
+  "switches": 222,
+  "relogMinutes": 61.6,
   "retries": 71,
   "tasks": {
    "island_challenge": {
@@ -11916,8 +11922,8 @@
     "failed": 5
    },
    "story": {
-    "runs": 43,
-    "minutes": 63.3,
+    "runs": 44,
+    "minutes": 64.0,
     "failed": 4
    },
    "guild_war": {
@@ -11985,6 +11991,12 @@
    "task": "faction",
    "why": "tower_locked",
    "at": "2026-09-19T09:37:54"
+  },
+  {
+   "account": "fake3",
+   "task": "story",
+   "why": "skip_retry, stage_never_started, stage_start_retry, story_locked, stages_cleared",
+   "at": "2026-09-20T03:10:48"
   },
   {
    "account": "fake4",
@@ -12243,10 +12255,6 @@
     "mode": "story"
    },
    {
-    "account": "fake3",
-    "mode": "story"
-   },
-   {
     "account": "fake4",
     "mode": "story"
    },
@@ -12257,6 +12265,10 @@
    {
     "account": "fake2",
     "mode": "hoopa"
+   },
+   {
+    "account": "fake5",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -12266,12 +12278,12 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 216,
-   "medianSec": 16.0,
+   "n": 219,
+   "medianSec": 16,
    "picker": {
-    "n": 160,
-    "medianSec": 16.0,
-    "jumps": 84
+    "n": 163,
+    "medianSec": 16,
+    "jumps": 87
    },
    "typed": {
     "n": 27,
@@ -12384,14 +12396,14 @@
   }
  },
  "ledger": {
+  "fake3": {
+   "pillar/story stages cleared": 150
+  },
   "fake7": {
    "pillar/story stages cleared": 12
   },
   "jeff": {
    "island fights": 2
-  },
-  "fake3": {
-   "pillar/story stages cleared": 144
   },
   "chris": {
    "island fights": 3
@@ -12423,6 +12435,15 @@
    "kind": "gym",
    "since": "2026-09-19T23:24:53",
    "why": "Unlocked after clearing Victory Road -  Goldenrod Gym — clear that by hand, then re-enable",
+   "action": "clear that gym by hand, then switch story back on",
+   "enable": true
+  },
+  {
+   "account": "fake3",
+   "task": "story",
+   "kind": "gym",
+   "since": "2026-09-20T03:10:48",
+   "why": "Unlocked after clearing Victory Road Goldenrod Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
   },
@@ -12681,7 +12702,7 @@
      "task": "combat_daily",
      "at": "08:15",
      "why": "title reread named, refused quick bar, adv energy spent",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_081351_combat_daily_jeff__0147_081541_panel_back__AFTER__first_topup.png"
+     "frame": null
     }
    ],
    "off": [],
@@ -13164,7 +13185,7 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-19",
-   "summary": "12 of 14 dailies done · gave up on dailies · 1 switched off · 1 not available today",
+   "summary": "12 of 14 dailies done · gave up on dailies · 2 switched off · 2 not available today",
    "done": 12,
    "owed": 14,
    "open": [
@@ -13190,16 +13211,25 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-18T17:23:12"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Goldenrod Gym — clear that by hand, then re-enable",
+     "since": "2026-09-20T03:10:48"
     }
    ],
    "unavailable": [
     {
      "task": "faction",
      "why": "tower_locked"
+    },
+    {
+     "task": "story",
+     "why": "skip_retry, stage_never_started, stage_start_retry, story_locked, stages_cleared"
     }
    ],
    "spent": {
-    "pillar/story stages cleared": 144
+    "pillar/story stages cleared": 150
    },
    "progress": {
     "mailUnread": 0,
