@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T08:39:44.678898",
+ "generatedAt": "2026-09-19T08:41:47.631456",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "pokemon_home",
-  "since": "08:38:08"
+  "account": "smurf",
+  "mode": "dailyclaim",
+  "since": "08:41:18"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "💤",
-     "·"
+     "💤"
     ]
    },
    {
@@ -86,7 +86,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 26,
-  "todo": 173,
+  "done": 27,
+  "todo": 171,
   "gaveUp": 3,
   "unavailable": 2,
   "windowed": 34
@@ -560,16 +560,17 @@
  "islandChallenge": [
   {
    "account": "jeff",
-   "fights": 0,
-   "stamina": 39,
-   "staminaMax": 39,
-   "staminaAt": "2026-09-19T08:08:31",
-   "nextAt": "2026-09-19T08:23:36"
+   "fights": 1,
+   "stamina": 7,
+   "staminaMax": 19,
+   "staminaAt": "2026-09-19T08:41:09",
+   "nextAt": "2026-09-19T10:47:17"
   }
  ],
  "snoozed": {
   "chris|island_challenge": "2026-09-19T10:01",
-  "jeff|championship": "2026-09-19T10:23"
+  "jeff|championship": "2026-09-19T10:23",
+  "jeff|island_challenge": "2026-09-19T10:47"
  },
  "ownerOnline": [],
  "keys": {
@@ -631,11 +632,46 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-19T08:35:30.659199",
+  "label": "smurf",
+  "at": "2026-09-19T08:41:38.345775",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T08:41:17",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 26,
+   "stats": {
+    "fights": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 7,
+    "fights_today": 1
+   },
+   "dir": "debug_runs/20260919_084050_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-19T08:40:18",
+   "script": "pokemon_home",
+   "account": "chris",
+   "rc": 0,
+   "secs": 128,
+   "stats": {
+    "reached_via_trial": 1,
+    "balls_unsettled_opened": 1,
+    "grid_refit": 35,
+    "merge_moved_instead": 3,
+    "counter_misread": 2,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_083809_pokemon_home_chris"
+  },
   {
    "ts": "2026-09-19T08:38:08",
    "script": "daily_dungeon",
@@ -6978,42 +7014,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260918_020449_worldboss_fake1"
-  },
-  {
-   "ts": "2026-09-18T02:04:49",
-   "script": "worldboss",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 67,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_020342_worldboss_smurf"
-  },
-  {
-   "ts": "2026-09-18T02:03:41",
-   "script": "worldboss",
-   "account": "nova",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_020231_worldboss_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 31185,
+  "now": 31308,
   "segments": [
    {
     "b": 29300,
@@ -7450,8 +7456,36 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 31089,
+    "rc": 0,
+    "e": 31219,
+    "secs": 128,
+    "why": ""
+   },
+   {
+    "b": 31219,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     31220,
+     31239
+    ],
+    "handoff": 31250,
+    "rc": 5,
+    "e": 31278,
+    "secs": 26,
+    "why": ""
+   },
+   {
+    "b": 31278,
+    "a": "smurf",
+    "s": "dailyclaim",
+    "login": [
+     31278,
+     31298
+    ],
+    "handoff": 31306,
     "rc": null,
-    "e": 31185
+    "e": 31308
    }
   ],
   "idle": []
@@ -7523,14 +7557,14 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 2,
-  "relogMinutes": 1.2,
-  "retries": 9,
+  "switches": 4,
+  "relogMinutes": 2.2,
+  "retries": 10,
   "tasks": {
    "island_challenge": {
-    "runs": 1,
-    "minutes": 0.2,
-    "failed": 1
+    "runs": 2,
+    "minutes": 0.7,
+    "failed": 2
    },
    "dailyclaim": {
     "runs": 3,
@@ -7553,8 +7587,8 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 2,
-    "minutes": 4.5,
+    "runs": 3,
+    "minutes": 6.6,
     "failed": 0
    },
    "combat_daily": {
