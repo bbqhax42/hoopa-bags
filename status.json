@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T15:15:13.122405",
+ "generatedAt": "2026-09-19T15:39:19.233825",
  "running": true,
- "runningWhy": "told by run.py (--running)",
+ "runningWhy": "pgrep rc=0 out='26232'",
  "current": {
-  "account": "fake5",
+  "account": "jeff",
   "mode": "hoopa",
-  "since": "14:47:34"
+  "since": "15:28:43"
  },
  "grid": {
   "tasks": [
@@ -600,12 +600,12 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 30,
-   "at": "2026-09-19T06:04:08"
+   "keys": 29,
+   "at": "2026-09-19T15:29:12"
   },
   "chris": {
-   "keys": 0,
-   "at": "2026-09-18T17:35:10"
+   "keys": 5,
+   "at": "2026-09-19T15:17:01"
   },
   "lucifer1": {
    "keys": 277,
@@ -661,11 +661,24 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-19T14:47:51.992980",
+  "label": "jeff",
+  "at": "2026-09-19T15:28:59.642068",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T15:16:32",
+   "script": "hoopa",
+   "account": "fake5",
+   "rc": 1,
+   "secs": 1710,
+   "stats": {},
+   "incomplete": [
+    "battle ended on a screen main.py does not know"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-19T14:47:34",
    "script": "island_challenge",
@@ -7119,32 +7132,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260918_133559_rank_match_jeff"
-  },
-  {
-   "ts": "2026-09-18T13:35:27",
-   "script": "rank_match",
-   "account": "nova",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260918_133430_rank_match_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 54913,
+  "now": 56359,
   "segments": [
    {
     "b": 29300,
@@ -11097,13 +11090,48 @@
      53271
     ],
     "handoff": 53281,
+    "rc": 1,
+    "e": 54992,
+    "secs": 1710,
+    "why": "battle ended on a screen main.py does not know"
+   },
+   {
+    "b": 54992,
+    "a": "chris",
+    "s": "hoopa",
+    "login": [
+     54992,
+     55007
+    ],
+    "handoff": 55019,
     "rc": null,
-    "e": 54913
+    "e": 55723
+   },
+   {
+    "b": 55723,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": [
+     55724,
+     55739
+    ],
+    "handoff": 55750,
+    "rc": null,
+    "e": 56359
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T15:16:32",
+   "account": "fake5",
+   "task": "hoopa",
+   "rc": 1,
+   "secs": 1710,
+   "why": "battle ended on a screen main.py does not know",
+   "frame": null
+  },
   {
    "ts": "2026-09-19T14:27:56",
    "account": "skosmurf",
@@ -11566,8 +11594,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 70,
-  "relogMinutes": 30.3,
+  "switches": 72,
+  "relogMinutes": 31.2,
   "retries": 59,
   "tasks": {
    "island_challenge": {
@@ -11971,10 +11999,10 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 69,
+   "n": 71,
    "medianSec": 19,
    "picker": {
-    "n": 27,
+    "n": 29,
     "medianSec": 16,
     "jumps": 5
    },
@@ -11989,12 +12017,6 @@
   }
  },
  "progress": {
-  "nova": {
-   "mailUnread": 0,
-   "pillar": "floor 98 stage 8",
-   "paradiseStamina": "14/14",
-   "rank": 3
-  },
   "jeff": {
    "islandFights": 6,
    "islandStamina": 28,
@@ -12065,6 +12087,12 @@
    "mailUnread": 0,
    "paradiseStamina": "0/17",
    "rank": 2
+  },
+  "nova": {
+   "mailUnread": 0,
+   "pillar": "floor 98 stage 8",
+   "paradiseStamina": "14/14",
+   "rank": 3
   },
   "smurf": {
    "mailUnread": 0,
@@ -12410,5 +12438,1603 @@
    "at": "2026-09-19T07:10:43",
    "applied": "2026-09-19T15:11:06"
   }
- ]
+ ],
+ "owners": {
+  "chris": [
+   "all"
+  ],
+  "jeff": [
+   "jeff"
+  ],
+  "lucifer": [
+   "lucifer1",
+   "lucifer2"
+  ],
+  "sko": [
+   "skosmurf"
+  ]
+ },
+ "reports": {
+  "nova": {
+   "name": "nova",
+   "day": "2026-09-19",
+   "summary": "15 of 15 dailies done",
+   "done": 15,
+   "owed": 15,
+   "open": [],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "11:51",
+     "why": "marginal_island_shop_on, island_shop_bought, lost_panel",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_115117_combat_daily_nova__KEEP_0019_115140_stuck_shop.png"
+    },
+    {
+     "task": "weekend_bash",
+     "at": "08:34",
+     "why": "no_weekend_bash",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_083459_weekend_bash_nova__KEEP_0000_083459_no_weekend_bash.png"
+    },
+    {
+     "task": "victory_road",
+     "at": "08:33",
+     "why": "vr_not_open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_083243_victory_road_nova__KEEP_0004_083300_vr_not_open.png"
+    }
+   ],
+   "off": [],
+   "unavailable": [],
+   "spent": {
+    "ranked attempts": 1,
+    "guild war attempts": 1,
+    "Island Shop buys (200 coins)": 1,
+    "pillar/story stages cleared": 4,
+    "Home creations": 50,
+    "mail claimed": 1,
+    "daily claims": 2,
+    "Privilege Pack claimed": 1
+   },
+   "progress": {
+    "mailUnread": 0,
+    "pillar": "floor 98 stage 8",
+    "paradiseStamina": "14/14",
+    "rank": 3
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 13,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-14",
+     "done": 12,
+     "failed": 5
+    },
+    {
+     "day": "2026-09-15",
+     "done": 15,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-16",
+     "done": 15,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-17",
+     "done": 18,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-18",
+     "done": 15,
+     "failed": 5
+    },
+    {
+     "day": "2026-09-19",
+     "done": 16,
+     "failed": 7
+    }
+   ]
+  },
+  "jeff": {
+   "name": "jeff",
+   "day": "2026-09-19",
+   "summary": "14 of 17 dailies done · gave up on victoryRank · 1 not available today",
+   "done": 14,
+   "owed": 17,
+   "open": [
+    {
+     "task": "victoryRank",
+     "state": "✗2"
+    },
+    {
+     "task": "champ",
+     "state": "not available today"
+    },
+    {
+     "task": "island",
+     "state": "asks again later"
+    }
+   ],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "08:15",
+     "why": "title_reread_named, near_miss_afk_rewards, marginal_afk_rewards, near_miss_rift_exit_guardian, refused_quick_bar, near_miss_vr_rank, adv_energy_spent, near_miss",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_081351_combat_daily_jeff__0147_081541_panel_back__AFTER__first_topup.png"
+    }
+   ],
+   "off": [],
+   "unavailable": [
+    {
+     "task": "championship",
+     "why": "no_icon"
+    }
+   ],
+   "spent": {
+    "island fights": 11,
+    "guild war attempts": 1,
+    "pillar/story stages cleared": 3,
+    "ranked attempts": 1,
+    "adventure energy": 1,
+    "Home creations": 50,
+    "mail claimed": 1,
+    "daily claims": 3,
+    "Privilege Pack claimed": 1
+   },
+   "progress": {
+    "islandFights": 6,
+    "islandStamina": 28,
+    "mailUnread": 0,
+    "paradiseStamina": "1/16",
+    "rank": 1,
+    "pillar": "floor 147 stage 5"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 13,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-14",
+     "done": 15,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-15",
+     "done": 18,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-16",
+     "done": 17,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-17",
+     "done": 20,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-18",
+     "done": 16,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-19",
+     "done": 15,
+     "failed": 1
+    }
+   ]
+  },
+  "chris": {
+   "name": "chris",
+   "day": "2026-09-19",
+   "summary": "16 of 18 dailies done · 1 not available today",
+   "done": 16,
+   "owed": 18,
+   "open": [
+    {
+     "task": "champ",
+     "state": "not available today"
+    },
+    {
+     "task": "island",
+     "state": "asks again later"
+    }
+   ],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "11:06",
+     "why": "combat_daily: premium gacha free spin — no result",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_110446_combat_daily_chris__KEEP_0090_110558_gacha_no_result.png"
+    },
+    {
+     "task": "island_challenge",
+     "at": "10:34",
+     "why": "",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_103357_island_challenge_chris__KEEP_0002_103410_no_island_home.png"
+    }
+   ],
+   "off": [],
+   "unavailable": [
+    {
+     "task": "championship",
+     "why": "no_icon"
+    }
+   ],
+   "spent": {
+    "island fights": 12,
+    "guild war attempts": 1,
+    "faction sweeps": 2,
+    "pillar/story stages cleared": 4,
+    "ranked attempts": 1,
+    "Home creations": 50,
+    "mail claimed": 1,
+    "daily claims": 3,
+    "Privilege Pack claimed": 1
+   },
+   "progress": {
+    "islandFights": 6,
+    "islandStamina": 1,
+    "mailUnread": 0,
+    "paradiseStamina": "5/15",
+    "rank": 1,
+    "pillar": "floor 136 stage 6"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 14,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-14",
+     "done": 14,
+     "failed": 4
+    },
+    {
+     "day": "2026-09-15",
+     "done": 16,
+     "failed": 4
+    },
+    {
+     "day": "2026-09-16",
+     "done": 16,
+     "failed": 5
+    },
+    {
+     "day": "2026-09-17",
+     "done": 22,
+     "failed": 5
+    },
+    {
+     "day": "2026-09-18",
+     "done": 17,
+     "failed": 4
+    },
+    {
+     "day": "2026-09-19",
+     "done": 16,
+     "failed": 2
+    }
+   ]
+  },
+  "smurf": {
+   "name": "smurf",
+   "day": "2026-09-19",
+   "summary": "13 of 17 dailies done · gave up on claims, bash · 1 switched off · 3 not available today",
+   "done": 13,
+   "owed": 17,
+   "open": [
+    {
+     "task": "claims",
+     "state": "✗2"
+    },
+    {
+     "task": "JointB",
+     "state": "not available today"
+    },
+    {
+     "task": "fctn",
+     "state": "not available today"
+    },
+    {
+     "task": "bash",
+     "state": "✗2"
+    }
+   ],
+   "issues": [
+    {
+     "task": "misty_woods",
+     "at": "11:59",
+     "why": "misty_woods: step 7 did not complete",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_115857_misty_woods_smurf__KEEP_0007_115951_no_allowed_tile_7.png"
+    },
+    {
+     "task": "faction",
+     "at": "08:59",
+     "why": "faction: grass tower: the game would not accept the formation after 17 win(s) — the team needs adjusting",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_085736_faction_smurf__KEEP_0184_085929_faction_setform_refused_grass.png"
+    },
+    {
+     "task": "collect_hoopa_keys",
+     "at": "08:56",
+     "why": "vault_never_opened",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_085545_collect_hoopa_keys_smurf__KEEP_0002_085600_vault_never_opened.png"
+    },
+    {
+     "task": "combat_daily",
+     "at": "08:49",
+     "why": "title_reread_named, near_miss_vr_rank, marginal_adventure_event, adv_energy_spent, near_miss_pokemon_upgrade, pokemon_upgraded, left_outstanding",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_084719_combat_daily_smurf__0152_084911_panel_back__AFTER__combat_quest_panel.png"
+    },
+    {
+     "task": "dailyclaim",
+     "at": "08:45",
+     "why": "dailyclaim: Mythic Incoming would not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_084406_dailyclaim_smurf__KEEP_0004_084521_mythic_no_open.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "story",
+     "why": "lost at stage 8 after 7 clear(s) — the next stage needs a stronger team",
+     "since": "2026-09-17T16:45:18"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "auto_formation, capped_grass, floors_grass"
+    },
+    {
+     "task": "joint_battle",
+     "why": null
+    },
+    {
+     "task": "rift",
+     "why": null
+    }
+   ],
+   "spent": {
+    "guild war attempts": 1,
+    "misty battles won": 23,
+    "faction sweeps": 2,
+    "pillar proofs lost to a refusal": 1,
+    "pillar/story stages cleared": 2,
+    "ranked attempts": 1,
+    "adventure energy": 1,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "20/20",
+    "rank": 1,
+    "pillar": "floor 17 stage 1",
+    "misty": "step 4"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 16,
+     "failed": 8
+    },
+    {
+     "day": "2026-09-14",
+     "done": 13,
+     "failed": 6
+    },
+    {
+     "day": "2026-09-15",
+     "done": 14,
+     "failed": 6
+    },
+    {
+     "day": "2026-09-16",
+     "done": 17,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-17",
+     "done": 16,
+     "failed": 7
+    },
+    {
+     "day": "2026-09-18",
+     "done": 16,
+     "failed": 4
+    },
+    {
+     "day": "2026-09-19",
+     "done": 13,
+     "failed": 9
+    }
+   ]
+  },
+  "fake1": {
+   "name": "Roflmao123",
+   "day": "2026-09-19",
+   "summary": "12 of 14 dailies done · 2 switched off · 2 not available today",
+   "done": 12,
+   "owed": 14,
+   "open": [
+    {
+     "task": "JointB",
+     "state": "not available today"
+    },
+    {
+     "task": "fctn",
+     "state": "not available today"
+    }
+   ],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "09:07",
+     "why": "marginal_afk_yield, marginal_afk_rewards, near_miss_afk_rewards, refused_afk_rewards_confirm, adv_overflow, title_reread_named, near_miss_vr_rank, upgrade_block",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_090550_combat_daily_fake1__0181_090745_panel_back__AFTER__town.png"
+    },
+    {
+     "task": "daily_dungeon",
+     "at": "09:04",
+     "why": "daily_dungeon: 1 dungeon(s) swept nothing",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_090426_daily_dungeon_fake1__KEEP_0012_090449_dd_no_setform.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-18T17:18:35"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Sarlotus Gym — clear that by hand, then re-enable",
+     "since": "2026-09-17T18:23:57"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "tower_locked"
+    },
+    {
+     "task": "joint_battle",
+     "why": null
+    }
+   ],
+   "spent": {
+    "guild war attempts": 1,
+    "pillar/story stages cleared": 2,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "4/14",
+    "pillar": "floor 3 stage 4"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 13,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-14",
+     "done": 11,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-15",
+     "done": 12,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-16",
+     "done": 14,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 18,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-18",
+     "done": 13,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-19",
+     "done": 12,
+     "failed": 2
+    }
+   ]
+  },
+  "fake2": {
+   "name": "Random713",
+   "day": "2026-09-19",
+   "summary": "14 of 14 dailies done · 1 switched off",
+   "done": 14,
+   "owed": 14,
+   "open": [],
+   "issues": [
+    {
+     "task": "collect_hoopa_keys",
+     "at": "09:23",
+     "why": "marginal_rift_exit_guardian, vault_never_opened",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_092338_collect_hoopa_keys_fake2__KEEP_0002_092353_vault_never_opened.png"
+    },
+    {
+     "task": "combat_daily",
+     "at": "09:19",
+     "why": "title_reread_named, near_miss_afk_rewards, marginal_afk_rewards, refused_quick_bar, marginal_battle_victory_confirm, near_miss_battle_victory_confirm, near_miss",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_091731_combat_daily_fake2__0209_091940_panel_back__AFTER__town.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Goldenrod Gym — clear that by hand, then re-enable",
+     "since": "2026-09-18T06:04:44"
+    }
+   ],
+   "unavailable": [],
+   "spent": {
+    "guild war attempts": 1,
+    "faction sweeps": 2,
+    "pillar proofs lost to a refusal": 1,
+    "pillar/story stages cleared": 3,
+    "adventure energy": 1,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "1/15",
+    "pillar": "floor 3 stage 1"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 12,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-14",
+     "done": 11,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-15",
+     "done": 14,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-16",
+     "done": 15,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 24,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-18",
+     "done": 15,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-19",
+     "done": 13,
+     "failed": 2
+    }
+   ]
+  },
+  "fake3": {
+   "name": "Random999",
+   "day": "2026-09-19",
+   "summary": "12 of 14 dailies done · gave up on dailies · 2 switched off · 1 not available today",
+   "done": 12,
+   "owed": 14,
+   "open": [
+    {
+     "task": "dailies",
+     "state": "✗2"
+    },
+    {
+     "task": "fctn",
+     "state": "not available today"
+    }
+   ],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "14:09",
+     "why": "title_reread_named, marginal_pokemon_upgrade, upgrade_skip_maxed, upgrade_all_unlevellable, marginal_island_shop_on, island_shop_bought, left_outstanding",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_140937_combat_daily_fake3__KEEP_0021_140950_buy_before_1.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-18T17:23:12"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Saffron Gym — clear that by hand, then re-enable",
+     "since": "2026-09-17T18:26:41"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "tower_locked"
+    }
+   ],
+   "spent": {
+    "guild war attempts": 1,
+    "Island Shop buys (200 coins)": 1,
+    "pillar/story stages cleared": 3,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "pillar": "floor 3 stage 4"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 13,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-14",
+     "done": 12,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-15",
+     "done": 14,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-16",
+     "done": 15,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 18,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-18",
+     "done": 13,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-19",
+     "done": 11,
+     "failed": 3
+    }
+   ]
+  },
+  "fake4": {
+   "name": "Random32",
+   "day": "2026-09-19",
+   "summary": "13 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 13,
+   "owed": 14,
+   "open": [
+    {
+     "task": "fctn",
+     "state": "not available today"
+    }
+   ],
+   "issues": [
+    {
+     "task": "victory_road",
+     "at": "09:44",
+     "why": "vr_not_open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_094406_victory_road_fake4__KEEP_0004_094423_vr_not_open.png"
+    },
+    {
+     "task": "combat_daily",
+     "at": "09:42",
+     "why": "title_reread_named, marginal_afk_rewards, near_miss_afk_rewards, near_miss_vr_rank, arena_slot_unavailable, upgrade_blocked_by_first_topup, pokemon_upgraded, le",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_094103_combat_daily_fake4__KEEP_0068_094201_arena_slot_unavailable.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-18T14:34:08"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
+     "since": "2026-09-17T16:54:50"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "tower_locked"
+    }
+   ],
+   "spent": {
+    "guild war attempts": 1,
+    "pillar/story stages cleared": 3,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "35/15",
+    "pillar": "floor 3 stage 4"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 13,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-14",
+     "done": 12,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-15",
+     "done": 14,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-16",
+     "done": 15,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 17,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-18",
+     "done": 14,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-19",
+     "done": 12,
+     "failed": 2
+    }
+   ]
+  },
+  "fake5": {
+   "name": "Random77",
+   "day": "2026-09-19",
+   "summary": "13 of 14 dailies done · gave up on fctn",
+   "done": 13,
+   "owed": 14,
+   "open": [
+    {
+     "task": "fctn",
+     "state": "✗2"
+    }
+   ],
+   "issues": [
+    {
+     "task": "hoopa",
+     "at": "15:16",
+     "why": "battle ended on a screen main.py does not know",
+     "frame": null
+    },
+    {
+     "task": "faction",
+     "at": "14:23",
+     "why": "faction: grass tower: Start opened nothing",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_142317_faction_fake5__KEEP_0008_142330_faction_no_popup_grass.png"
+    },
+    {
+     "task": "story",
+     "at": "10:02",
+     "why": "story: stage 1 never produced a result",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_100016_story_fake5__KEEP_0006_100256_story_timeout_1.png"
+    },
+    {
+     "task": "combat_daily",
+     "at": "09:56",
+     "why": "title_reread_named, marginal_afk_rewards, marginal_battle_victory_confirm, near_miss_vr_rank, adv_overflow, upgrade_blocked_by_first_topup, pokemon_upgraded, le",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_095433_combat_daily_fake5__0176_095625_panel_back__AFTER__town.png"
+    }
+   ],
+   "off": [],
+   "unavailable": [],
+   "spent": {
+    "pillar/story stages cleared": 3,
+    "guild war attempts": 1,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "0/15",
+    "pillar": "floor 3 stage 7"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 16,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-14",
+     "done": 12,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-15",
+     "done": 13,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-16",
+     "done": 15,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 25,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-18",
+     "done": 25,
+     "failed": 7
+    },
+    {
+     "day": "2026-09-19",
+     "done": 12,
+     "failed": 5
+    }
+   ]
+  },
+  "fake6": {
+   "name": "Bigpp123",
+   "day": "2026-09-19",
+   "summary": "11 of 14 dailies done · 2 switched off · 3 not available today",
+   "done": 11,
+   "owed": 14,
+   "open": [
+    {
+     "task": "JointB",
+     "state": "not available today"
+    },
+    {
+     "task": "paradise",
+     "state": "not available today"
+    },
+    {
+     "task": "fctn",
+     "state": "not available today"
+    }
+   ],
+   "issues": [],
+   "off": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-18T12:48:14"
+    },
+    {
+     "task": "story",
+     "why": "lost at stage 1 after 0 clear(s) — the next stage needs a stronger team",
+     "since": "2026-09-17T16:57:35"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "reported unavailable"
+    },
+    {
+     "task": "joint_battle",
+     "why": null
+    },
+    {
+     "task": "paradise",
+     "why": "reported unavailable"
+    }
+   ],
+   "spent": {
+    "guild war attempts": 1,
+    "pillar/story stages cleared": 3,
+    "adventure energy": 1,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "pillar": "floor 3 stage 4"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 13,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-14",
+     "done": 10,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-15",
+     "done": 13,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-16",
+     "done": 14,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 16,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-18",
+     "done": 13,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-19",
+     "done": 11,
+     "failed": 0
+    }
+   ]
+  },
+  "fake7": {
+   "name": "1zr0awyyr",
+   "day": "2026-09-19",
+   "summary": "9 of 14 dailies done · gave up on JointQ · 2 switched off · 4 not available today",
+   "done": 9,
+   "owed": 14,
+   "open": [
+    {
+     "task": "JointQ",
+     "state": "✗2"
+    },
+    {
+     "task": "JointB",
+     "state": "not available today"
+    },
+    {
+     "task": "victoryRank",
+     "state": "not available today"
+    },
+    {
+     "task": "pillar",
+     "state": "not available today"
+    },
+    {
+     "task": "fctn",
+     "state": "not available today"
+    }
+   ],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "11:56",
+     "why": "joint_team_daily_quest: artifact quest",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_115643_joint_team_daily_quest_fake7__KEEP_0006_115655_artifact_never_opened.png"
+    },
+    {
+     "task": "pokemon_home",
+     "at": "10:47",
+     "why": "pokemon_home: 32 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_104558_pokemon_home_fake7__KEEP_0079_104745_board_saturated.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-18T01:39:05"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Cerulean Gym — clear that by hand, then re-enable",
+     "since": "2026-09-17T16:43:37"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "reported unavailable"
+    },
+    {
+     "task": "joint_battle",
+     "why": null
+    },
+    {
+     "task": "rank_match",
+     "why": "near_miss_go_button, rank_locked"
+    },
+    {
+     "task": "sky_pillar",
+     "why": "pillar_did_not_open"
+    }
+   ],
+   "spent": {
+    "guild war attempts": 1,
+    "adventure energy": 1,
+    "mail claimed": 1,
+    "daily claims": 1
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "12/12"
+   },
+   "history": [
+    {
+     "day": "2026-09-17",
+     "done": 0,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-18",
+     "done": 8,
+     "failed": 5
+    },
+    {
+     "day": "2026-09-19",
+     "done": 11,
+     "failed": 3
+    }
+   ]
+  },
+  "sprite": {
+   "name": "sprite",
+   "day": "2026-09-19",
+   "summary": "11 of 11 dailies done",
+   "done": 11,
+   "owed": 11,
+   "open": [],
+   "issues": [],
+   "off": [],
+   "unavailable": [],
+   "spent": {
+    "guild war attempts": 1,
+    "Home creations": 50,
+    "mail claimed": 1,
+    "daily claims": 2
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "12/12"
+   },
+   "history": [
+    {
+     "day": "2026-09-17",
+     "done": 7,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-18",
+     "done": 13,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-19",
+     "done": 11,
+     "failed": 0
+    }
+   ]
+  },
+  "skosmurf": {
+   "name": "SkoSmurf",
+   "day": "2026-09-19",
+   "summary": "12 of 15 dailies done · gave up on claims, misty, bash · 1 switched off",
+   "done": 12,
+   "owed": 15,
+   "open": [
+    {
+     "task": "claims",
+     "state": "✗2"
+    },
+    {
+     "task": "misty",
+     "state": "✗2"
+    },
+    {
+     "task": "bash",
+     "state": "✗2"
+    }
+   ],
+   "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "14:27",
+     "why": "weekend_bash: ticket row cost unreadable",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_142752_weekend_bash_skosmurf__KEEP_0000_142755_row_cost_mismatch.png"
+    },
+    {
+     "task": "story",
+     "at": "13:27",
+     "why": "story: lost at stage 1 after 0 clear(s) — the next stage needs a stronger team",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_132635_story_skosmurf__KEEP_0004_132701_story_lost_1.png"
+    },
+    {
+     "task": "misty_woods",
+     "at": "12:26",
+     "why": "misty_woods: step 7 did not complete",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_122530_misty_woods_skosmurf__KEEP_0009_122630_no_allowed_tile_7.png"
+    },
+    {
+     "task": "dailyclaim",
+     "at": "12:13",
+     "why": "dailyclaim: Mythic Incoming would not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_121208_dailyclaim_skosmurf__KEEP_0003_121312_mythic_no_open.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "story",
+     "why": "lost at stage 1 after 0 clear(s) — the next stage needs a stronger team",
+     "since": "2026-09-19T13:27:01"
+    }
+   ],
+   "unavailable": [],
+   "spent": {
+    "misty battles won": 6,
+    "faction sweeps": 2,
+    "pillar proofs lost to a refusal": 1,
+    "pillar/story stages cleared": 2,
+    "ranked attempts": 1,
+    "guild war attempts": 1,
+    "Home creations": 50
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "5/15",
+    "rank": 1,
+    "pillar": "floor 17 stage 1"
+   },
+   "history": [
+    {
+     "day": "2026-09-19",
+     "done": 12,
+     "failed": 6
+    }
+   ]
+  },
+  "lucifer1": {
+   "name": "lucifer1",
+   "day": "2026-09-19",
+   "summary": "14 of 15 dailies done · gave up on dailies",
+   "done": 14,
+   "owed": 15,
+   "open": [
+    {
+     "task": "dailies",
+     "state": "✗2"
+    }
+   ],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "11:27",
+     "why": "title_reread_named, near_miss_pokemon_upgrade, marginal_pokemon_upgrade, upgrade_skip_resonating, upgrade_all_unlevellable, left_outstanding",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_112715_combat_daily_lucifer1__KEEP_0012_112723_upgrade_unlevellable.png"
+    },
+    {
+     "task": "victory_road",
+     "at": "11:03",
+     "why": "nothing_pending",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_110309_victory_road_lucifer1__0005_110313_daily_commission__AFTER__town.png"
+    }
+   ],
+   "off": [],
+   "unavailable": [],
+   "spent": {
+    "pillar/story stages cleared": 1,
+    "ranked attempts": 1,
+    "guild war attempts": 1,
+    "Home creations": 50,
+    "mail claimed": 1,
+    "daily claims": 1
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "0/15",
+    "rank": 4,
+    "pillar": "floor 89 stage 7"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 15,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-14",
+     "done": 13,
+     "failed": 5
+    },
+    {
+     "day": "2026-09-15",
+     "done": 16,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-16",
+     "done": 17,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-17",
+     "done": 19,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-18",
+     "done": 15,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-19",
+     "done": 13,
+     "failed": 5
+    }
+   ]
+  },
+  "lucifer2": {
+   "name": "lucifer2",
+   "day": "2026-09-19",
+   "summary": "15 of 15 dailies done · 1 switched off",
+   "done": 15,
+   "owed": 15,
+   "open": [],
+   "issues": [
+    {
+     "task": "run_pvp_ranked",
+     "at": "13:00",
+     "why": "run_pvp_ranked: attempt 3 did not complete",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_125943_run_pvp_ranked_lucifer2__KEEP_0002_130006_picker_never_opened_3.png"
+    },
+    {
+     "task": "combat_daily",
+     "at": "12:32",
+     "why": "near_miss_afk_rewards, marginal_afk_rewards, refused_afk_rewards_confirm, near_miss_vr_rank, marginal_battle_victory_confirm, near_miss_pokemon_upgrade, upgrade",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_123111_combat_daily_lucifer2__KEEP_0126_123241_buy_before_1.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "story",
+     "why": "lost at stage 2 after 1 clear(s) — the next stage needs a stronger team",
+     "since": "2026-09-18T02:28:43"
+    }
+   ],
+   "unavailable": [],
+   "spent": {
+    "pillar/story stages cleared": 2,
+    "ranked attempts": 1,
+    "guild war attempts": 1,
+    "Island Shop buys (200 coins)": 1,
+    "Home creations": 50,
+    "mail claimed": 1,
+    "daily claims": 1
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "5/15",
+    "rank": 5,
+    "pillar": "floor 83 stage 10"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 13,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-14",
+     "done": 13,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-15",
+     "done": 16,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-16",
+     "done": 15,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-17",
+     "done": 36,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-18",
+     "done": 20,
+     "failed": 4
+    },
+    {
+     "day": "2026-09-19",
+     "done": 14,
+     "failed": 2
+    }
+   ]
+  },
+  "test1": {
+   "name": "Asdggfyd",
+   "day": "2026-09-19",
+   "summary": "11 of 14 dailies done · 2 switched off · 3 not available today",
+   "done": 11,
+   "owed": 14,
+   "open": [
+    {
+     "task": "JointB",
+     "state": "not available today"
+    },
+    {
+     "task": "victoryRank",
+     "state": "not available today"
+    },
+    {
+     "task": "fctn",
+     "state": "not available today"
+    }
+   ],
+   "issues": [],
+   "off": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-18T11:58:18"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road -  Fuchsia Gym — clear that by hand, then re-enable",
+     "since": "2026-09-17T18:33:03"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "reported unavailable"
+    },
+    {
+     "task": "joint_battle",
+     "why": null
+    },
+    {
+     "task": "rank_match",
+     "why": "near_miss_go_button, rank_locked"
+    }
+   ],
+   "spent": {
+    "pillar/story stages cleared": 3,
+    "guild war attempts": 1,
+    "Island Shop buys (200 coins)": 1,
+    "Home creations": 46,
+    "mail claimed": 1,
+    "daily claims": 1
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "1/16",
+    "pillar": "floor 3 stage 4"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 10,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-14",
+     "done": 9,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-15",
+     "done": 10,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-16",
+     "done": 12,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 19,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-18",
+     "done": 13,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-19",
+     "done": 12,
+     "failed": 0
+    }
+   ]
+  },
+  "deno": {
+   "name": "deno",
+   "day": "2026-09-19",
+   "summary": "15 of 15 dailies done",
+   "done": 15,
+   "owed": 15,
+   "open": [],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "13:02",
+     "why": "",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_130226_joint_team_daily_quest_deno__0003_130228_tap_anchor_L808__AFTER__world_map.png"
+    }
+   ],
+   "off": [],
+   "unavailable": [],
+   "spent": {
+    "pillar/story stages cleared": 4,
+    "ranked attempts": 1,
+    "guild war attempts": 1,
+    "Island Shop buys (200 coins)": 1,
+    "Home creations": 50,
+    "mail claimed": 1,
+    "daily claims": 1
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "4/14",
+    "rank": 8,
+    "pillar": "floor 26 stage 10"
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 23,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-14",
+     "done": 30,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-15",
+     "done": 48,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-16",
+     "done": 16,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 17,
+     "failed": 4
+    },
+    {
+     "day": "2026-09-18",
+     "done": 16,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-19",
+     "done": 15,
+     "failed": 1
+    }
+   ]
+  },
+  "dre": {
+   "name": "dre",
+   "day": "2026-09-19",
+   "summary": "13 of 15 dailies done · gave up on home · 1 switched off",
+   "done": 13,
+   "owed": 15,
+   "open": [
+    {
+     "task": "home",
+     "state": "✗2"
+    },
+    {
+     "task": "pillar",
+     "state": "switched off"
+    }
+   ],
+   "issues": [
+    {
+     "task": "pokemon_home",
+     "at": "13:18",
+     "why": "reached_via_trial, no_trusted_grid",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_131754_pokemon_home_dre__0012_131806_no_trusted_grid.png"
+    }
+   ],
+   "off": [
+    {
+     "task": "sky_pillar",
+     "why": "lost floor/stage after 3 clear(s) — the team cannot take the next stage",
+     "since": "2026-09-13T15:38:01"
+    }
+   ],
+   "unavailable": [],
+   "spent": {
+    "ranked attempts": 1,
+    "guild war attempts": 1,
+    "Island Shop buys (200 coins)": 1,
+    "mail claimed": 1,
+    "daily claims": 3,
+    "Privilege Pack claimed": 1
+   },
+   "progress": {
+    "mailUnread": 0,
+    "paradiseStamina": "0/17",
+    "rank": 2
+   },
+   "history": [
+    {
+     "day": "2026-09-13",
+     "done": 12,
+     "failed": 3
+    },
+    {
+     "day": "2026-09-14",
+     "done": 13,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-15",
+     "done": 16,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-16",
+     "done": 14,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-17",
+     "done": 17,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-18",
+     "done": 14,
+     "failed": 2
+    },
+    {
+     "day": "2026-09-19",
+     "done": 12,
+     "failed": 2
+    }
+   ]
+  }
+ }
 }
