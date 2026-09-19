@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T23:23:20.323126",
+ "generatedAt": "2026-09-19T23:25:23.819377",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "smurf",
+  "mode": "hoopa",
+  "since": "23:25:02"
  },
  "grid": {
   "tasks": [
@@ -473,6 +473,12 @@
  },
  "disabled": [
   {
+   "account": "fake2",
+   "task": "story",
+   "since": "2026-09-19T23:24:53",
+   "why": "Unlocked after clearing Victory Road -  Goldenrod Gym — clear that by hand, then re-enable"
+  },
+  {
    "account": "fake3",
    "task": "hoopa",
    "since": "2026-09-18T17:23:12",
@@ -595,11 +601,25 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-19T23:20:46.797401",
+  "label": "smurf",
+  "at": "2026-09-19T23:25:19.253179",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T23:24:53",
+   "script": "story",
+   "account": "fake2",
+   "rc": 2,
+   "secs": 0,
+   "stats": {
+    "story_locked": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_232453_story_fake2"
+  },
   {
    "ts": "2026-09-19T22:54:55",
    "script": "island_challenge",
@@ -7012,32 +7032,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_140637_faction_fake4"
-  },
-  {
-   "ts": "2026-09-18T14:06:09",
-   "script": "rank_match",
-   "account": "dre",
-   "rc": 0,
-   "secs": 59,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260918_140509_rank_match_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 84200,
+  "now": 84324,
   "segments": [
    {
     "b": 29300,
@@ -11290,7 +11290,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 84200,
+    "e": 84324,
     "secs": 102,
     "why": ""
    }
@@ -11769,8 +11769,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 146,
-  "relogMinutes": 43.4,
+  "switches": 148,
+  "relogMinutes": 43.8,
   "retries": 65,
   "tasks": {
    "island_challenge": {
@@ -11854,7 +11854,7 @@
     "failed": 5
    },
    "story": {
-    "runs": 8,
+    "runs": 9,
     "minutes": 12.4,
     "failed": 2
    },
@@ -11899,6 +11899,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "fake2",
+   "task": "story",
+   "why": "story_locked",
+   "at": "2026-09-19T23:24:53"
   },
   {
    "account": "fake3",
@@ -12069,14 +12075,14 @@
    "last_run_actions": 8
   },
   "nova": {
-   "energy": 3,
+   "energy": 1,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-19T23:22:32.779931",
-   "runs": 479,
+   "observed_at": "2026-09-19T23:24:12.449024",
+   "runs": 480,
    "cooldown_until": "2026-09-17T03:21:56.107756",
    "kicks": 1,
-   "last_run_actions": 4
+   "last_run_actions": 1
   }
  },
  "worldBoss": {
@@ -12196,11 +12202,11 @@
     "mode": "story"
    },
    {
-    "account": "fake2",
+    "account": "fake3",
     "mode": "story"
    },
    {
-    "account": "fake3",
+    "account": "fake4",
     "mode": "story"
    }
   ],
@@ -12211,12 +12217,12 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 142,
+   "n": 144,
    "medianSec": 17.0,
    "picker": {
-    "n": 93,
+    "n": 95,
     "medianSec": 16,
-    "jumps": 44
+    "jumps": 46
    },
    "typed": {
     "n": 27,
@@ -12229,11 +12235,6 @@
   }
  },
  "progress": {
-  "dre": {
-   "mailUnread": 0,
-   "paradiseStamina": "0/17",
-   "rank": 2
-  },
   "jeff": {
    "islandFights": 12,
    "islandStamina": 30,
@@ -12311,6 +12312,11 @@
    "paradiseStamina": "4/14",
    "rank": 8,
    "pillar": "floor 26 stage 10"
+  },
+  "dre": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/17",
+   "rank": 2
   },
   "lucifer1": {
    "mailUnread": 0,
@@ -12480,6 +12486,15 @@
  },
  "paused": null,
  "needsYou": [
+  {
+   "account": "fake2",
+   "task": "story",
+   "kind": "gym",
+   "since": "2026-09-19T23:24:53",
+   "why": "Unlocked after clearing Victory Road -  Goldenrod Gym — clear that by hand, then re-enable",
+   "action": "clear that gym by hand, then switch story back on",
+   "enable": true
+  },
   {
    "account": "fake3",
    "task": "hoopa",
@@ -13079,7 +13094,7 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-19",
-   "summary": "14 of 14 dailies done",
+   "summary": "14 of 14 dailies done · 1 switched off · 1 not available today",
    "done": 14,
    "owed": 14,
    "open": [],
@@ -13097,8 +13112,19 @@
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_091731_combat_daily_fake2__0209_091940_panel_back__AFTER__town.png"
     }
    ],
-   "off": [],
-   "unavailable": [],
+   "off": [
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road -  Goldenrod Gym — clear that by hand, then re-enable",
+     "since": "2026-09-19T23:24:53"
+    }
+   ],
+   "unavailable": [
+    {
+     "task": "story",
+     "why": "story_locked"
+    }
+   ],
    "spent": {
     "guild war attempts": 1,
     "faction sweeps": 2,
