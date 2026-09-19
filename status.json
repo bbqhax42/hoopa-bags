@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T12:55:25.325931",
+ "generatedAt": "2026-09-19T12:57:28.289861",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "guild_war",
-  "since": "12:54:51"
+  "mode": "sky_pillar",
+  "since": "12:55:51"
  },
  "grid": {
   "tasks": [
@@ -403,9 +403,9 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 169,
-  "todo": 55,
+  "done": 171,
+  "todo": 53,
   "gaveUp": 6,
   "unavailable": 11,
   "windowed": 18
@@ -656,6 +656,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T12:57:28",
+   "script": "sky_pillar",
+   "account": "test1",
+   "rc": 0,
+   "secs": 96,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 3,
+    "stage": 4
+   },
+   "dir": "debug_runs/20260919_125551_sky_pillar_test1"
+  },
+  {
+   "ts": "2026-09-19T12:55:50",
+   "script": "collect_hoopa_keys",
+   "account": "test1",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_125543_collect_hoopa_keys_test1"
+  },
+  {
+   "ts": "2026-09-19T12:55:39",
+   "script": "guild_war",
+   "account": "test1",
+   "rc": 0,
+   "secs": 47,
+   "stats": {
+    "near_miss_vr_rank": 2,
+    "marginal_battle_over": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_125452_guild_war_test1"
+  },
   {
    "ts": "2026-09-19T12:54:51",
    "script": "paradise",
@@ -7106,66 +7154,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_104409_combat_daily_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T10:44:07",
-   "script": "combat_daily",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 126,
-   "stats": {
-    "near_miss_afk_rewards": 2,
-    "marginal_afk_rewards": 1,
-    "title_reread_named": 2,
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 4,
-    "upgrade_blocked_by_first_topup": 1,
-    "pokemon_upgraded": 1,
-    "near_miss_premium_gacha": 1,
-    "marginal_premium_gacha": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260918_104201_combat_daily_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T10:41:56",
-   "script": "pokemon_home",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 123,
-   "stats": {
-    "reached_via_trial": 1,
-    "balls_unsettled_opened": 1,
-    "counter_misread": 2,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_103952_pokemon_home_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T10:39:50",
-   "script": "daily_dungeon",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_103936_daily_dungeon_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 46525,
+  "now": 46648,
   "segments": [
    {
     "b": 29300,
@@ -9984,8 +9978,32 @@
     "s": "guild_war",
     "login": null,
     "handoff": 46492,
-    "rc": null,
-    "e": 46525
+    "rc": 0,
+    "e": 46540,
+    "secs": 47,
+    "why": ""
+   },
+   {
+    "b": 46540,
+    "a": "test1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 46543,
+    "rc": 0,
+    "e": 46551,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 46551,
+    "a": "test1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 46551,
+    "rc": 0,
+    "e": 46648,
+    "secs": 96,
+    "why": ""
    }
   ],
   "idle": []
@@ -10418,13 +10436,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 13,
-    "minutes": 1.9,
+    "runs": 14,
+    "minutes": 2.0,
     "failed": 2
    },
    "sky_pillar": {
-    "runs": 12,
-    "minutes": 12.8,
+    "runs": 13,
+    "minutes": 14.5,
     "failed": 0
    },
    "weekend_bash": {
@@ -10453,8 +10471,8 @@
     "failed": 1
    },
    "guild_war": {
-    "runs": 9,
-    "minutes": 6.7,
+    "runs": 10,
+    "minutes": 7.5,
     "failed": 0
    }
   }
