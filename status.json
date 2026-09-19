@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T14:25:39.176459",
+ "generatedAt": "2026-09-19T14:27:42.973161",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "sprite",
+  "account": "skosmurf",
   "mode": "rank_match",
-  "since": "14:25:34"
+  "since": "14:27:13"
  },
  "grid": {
   "tasks": [
@@ -305,12 +305,12 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 213,
-  "todo": 23,
+  "done": 216,
+  "todo": 20,
   "gaveUp": 10,
   "unavailable": 16,
   "windowed": 0
@@ -657,11 +657,60 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-19T14:25:13.824312",
+  "label": "skosmurf",
+  "at": "2026-09-19T14:27:33.017965",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T14:27:13",
+   "script": "sky_pillar",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 10,
+   "stats": {
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_142703_sky_pillar_sprite"
+  },
+  {
+   "ts": "2026-09-19T14:27:02",
+   "script": "collect_hoopa_keys",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_142657_collect_hoopa_keys_sprite"
+  },
+  {
+   "ts": "2026-09-19T14:26:56",
+   "script": "rank_match",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "skip_tapped": 8,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260919_142557_rank_match_sprite"
+  },
   {
    "ts": "2026-09-19T14:25:33",
    "script": "faction",
@@ -7159,55 +7208,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_115954_rift_smurf"
-  },
-  {
-   "ts": "2026-09-18T11:59:22",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 27,
-   "stats": {
-    "fights": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 0,
-    "fights_today": 3
-   },
-   "dir": "debug_runs/20260918_115855_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-18T11:58:18",
-   "script": "hoopa",
-   "account": "test1",
-   "rc": 2,
-   "secs": 413,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-18T11:41:37",
-   "script": "championship",
-   "account": "chris",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "no_icon": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_114132_championship_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 51939,
+  "now": 52063,
   "segments": [
    {
     "b": 29300,
@@ -10812,11 +10818,47 @@
     "s": "rank_match",
     "login": [
      51934,
-     null
+     51947
     ],
-    "handoff": null,
+    "handoff": 51957,
+    "rc": 0,
+    "e": 52016,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 52016,
+    "a": "sprite",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 52016,
+    "rc": 0,
+    "e": 52022,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 52022,
+    "a": "sprite",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 52023,
+    "rc": 0,
+    "e": 52033,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 52033,
+    "a": "skosmurf",
+    "s": "rank_match",
+    "login": [
+     52034,
+     52053
+    ],
+    "handoff": 52061,
     "rc": null,
-    "e": 51939
+    "e": 52063
    }
   ],
   "idle": []
@@ -11266,8 +11308,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 60,
-  "relogMinutes": 25.1,
+  "switches": 61,
+  "relogMinutes": 25.9,
   "retries": 56,
   "tasks": {
    "island_challenge": {
@@ -11321,13 +11363,13 @@
     "failed": 1
    },
    "collect_hoopa_keys": {
-    "runs": 15,
+    "runs": 16,
     "minutes": 2.2,
     "failed": 2
    },
    "sky_pillar": {
-    "runs": 13,
-    "minutes": 14.5,
+    "runs": 14,
+    "minutes": 14.6,
     "failed": 0
    },
    "weekend_bash": {
@@ -11361,8 +11403,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 11,
-    "minutes": 8.8,
+    "runs": 12,
+    "minutes": 9.8,
     "failed": 0
    }
   }
@@ -11626,79 +11668,79 @@
  "queue": {
   "next": [
    {
-    "account": "sprite",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-19T14:25"
-   },
-   {
-    "account": "sprite",
-    "task": "collect_hoopa_keys",
-    "startsIn": 0.8,
-    "eta": "2026-09-19T14:26"
-   },
-   {
-    "account": "sprite",
-    "task": "sky_pillar",
-    "startsIn": 0.9,
-    "eta": "2026-09-19T14:26"
-   },
-   {
     "account": "skosmurf",
     "task": "rank_match",
-    "startsIn": 2.5,
-    "eta": "2026-09-19T14:28"
+    "startsIn": 0.0,
+    "eta": "2026-09-19T14:27"
    },
    {
     "account": "skosmurf",
     "task": "weekend_bash",
-    "startsIn": 3.3,
+    "startsIn": 0.8,
     "eta": "2026-09-19T14:28"
    },
    {
     "account": "lucifer1",
     "task": "rank_match",
-    "startsIn": 3.7,
+    "startsIn": 1.2,
+    "eta": "2026-09-19T14:28"
+   },
+   {
+    "account": "lucifer1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 2.1,
     "eta": "2026-09-19T14:29"
    },
    {
     "account": "lucifer1",
-    "task": "collect_hoopa_keys",
-    "startsIn": 4.5,
-    "eta": "2026-09-19T14:30"
-   },
-   {
-    "account": "lucifer1",
     "task": "sky_pillar",
-    "startsIn": 4.6,
-    "eta": "2026-09-19T14:30"
+    "startsIn": 2.2,
+    "eta": "2026-09-19T14:29"
    },
    {
     "account": "lucifer1",
     "task": "weekend_bash",
-    "startsIn": 5.7,
-    "eta": "2026-09-19T14:31"
+    "startsIn": 3.2,
+    "eta": "2026-09-19T14:30"
    },
    {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 6.2,
+    "startsIn": 3.7,
     "eta": "2026-09-19T14:31"
    },
    {
     "account": "lucifer2",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.0,
+    "startsIn": 4.5,
     "eta": "2026-09-19T14:32"
    },
    {
     "account": "lucifer2",
     "task": "sky_pillar",
-    "startsIn": 7.1,
+    "startsIn": 4.6,
     "eta": "2026-09-19T14:32"
+   },
+   {
+    "account": "lucifer2",
+    "task": "weekend_bash",
+    "startsIn": 5.7,
+    "eta": "2026-09-19T14:33"
+   },
+   {
+    "account": "test1",
+    "task": "rank_match",
+    "startsIn": 6.1,
+    "eta": "2026-09-19T14:33"
+   },
+   {
+    "account": "test1",
+    "task": "faction",
+    "startsIn": 6.9,
+    "eta": "2026-09-19T14:34"
    }
   ],
-  "more": 11,
+  "more": 8,
   "fillers": [
    {
     "account": "fake5",
@@ -11732,11 +11774,11 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 58,
+   "n": 60,
    "medianSec": 18.5,
    "picker": {
-    "n": 21,
-    "medianSec": 16,
+    "n": 22,
+    "medianSec": 16.0,
     "jumps": 3
    },
    "typed": {
@@ -11744,20 +11786,12 @@
     "medianSec": 19
    },
    "miss": {
-    "n": 10,
-    "medianSec": 25.0
+    "n": 11,
+    "medianSec": 25
    }
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 4,
-   "islandStamina": 0,
-   "mailUnread": 0,
-   "paradiseStamina": "1/16",
-   "rank": 1,
-   "pillar": "floor 147 stage 5"
-  },
   "chris": {
    "islandFights": 6,
    "islandStamina": 1,
@@ -11778,6 +11812,14 @@
    "pillar": "floor 98 stage 8",
    "paradiseStamina": "14/14",
    "rank": 3
+  },
+  "jeff": {
+   "islandFights": 4,
+   "islandStamina": 0,
+   "mailUnread": 0,
+   "paradiseStamina": "1/16",
+   "rank": 1,
+   "pillar": "floor 147 stage 5"
   },
   "fake1": {
    "mailUnread": 0,
