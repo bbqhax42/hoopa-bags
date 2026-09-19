@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T14:33:54.985978",
+ "generatedAt": "2026-09-19T14:35:59.193312",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "rank_match",
-  "since": "14:33:03"
+  "mode": "sky_pillar",
+  "since": "14:34:48"
  },
  "grid": {
   "tasks": [
@@ -425,11 +425,11 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "·",
      "-",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 225,
-  "todo": 8,
+  "done": 227,
+  "todo": 6,
   "gaveUp": 11,
   "unavailable": 18,
   "windowed": 0
@@ -662,6 +662,41 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T14:34:47",
+   "script": "collect_hoopa_keys",
+   "account": "deno",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_143440_collect_hoopa_keys_deno"
+  },
+  {
+   "ts": "2026-09-19T14:34:39",
+   "script": "rank_match",
+   "account": "deno",
+   "rc": 0,
+   "secs": 65,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 2,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260919_143334_rank_match_deno"
+  },
   {
    "ts": "2026-09-19T14:33:03",
    "script": "faction",
@@ -7115,49 +7150,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_123114_guild_war_chris"
-  },
-  {
-   "ts": "2026-09-18T12:30:41",
-   "script": "guild_war",
-   "account": "dre",
-   "rc": 0,
-   "secs": 54,
-   "stats": {
-    "near_miss_set_form_title": 3,
-    "near_miss_vr_rank": 2,
-    "near_miss_tips_header": 66,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_122947_guild_war_dre"
-  },
-  {
-   "ts": "2026-09-18T12:29:15",
-   "script": "guild_war",
-   "account": "deno",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "marginal_battle_victory": 1,
-    "near_miss_vr_rank": 5,
-    "marginal_battle_over": 1,
-    "near_miss_tips_header": 66,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_122809_guild_war_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 52435,
+  "now": 52559,
   "segments": [
    {
     "b": 29300,
@@ -10978,8 +10976,30 @@
      52403
     ],
     "handoff": 52413,
+    "rc": 0,
+    "e": 52479,
+    "secs": 65,
+    "why": ""
+   },
+   {
+    "b": 52479,
+    "a": "deno",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 52480,
+    "rc": 0,
+    "e": 52488,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 52488,
+    "a": "deno",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 52488,
     "rc": null,
-    "e": 52435
+    "e": 52559
    }
   ],
   "idle": []
@@ -11502,8 +11522,8 @@
     "failed": 1
    },
    "collect_hoopa_keys": {
-    "runs": 18,
-    "minutes": 2.5,
+    "runs": 19,
+    "minutes": 2.6,
     "failed": 2
    },
    "sky_pillar": {
@@ -11542,8 +11562,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 17,
-    "minutes": 11.9,
+    "runs": 18,
+    "minutes": 13.0,
     "failed": 0
    }
   }
@@ -11820,51 +11840,39 @@
   "next": [
    {
     "account": "deno",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-19T14:33"
-   },
-   {
-    "account": "deno",
-    "task": "collect_hoopa_keys",
-    "startsIn": 0.7,
-    "eta": "2026-09-19T14:34"
-   },
-   {
-    "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 0.8,
-    "eta": "2026-09-19T14:34"
+    "startsIn": 0.0,
+    "eta": "2026-09-19T14:35"
    },
    {
     "account": "deno",
     "task": "weekend_bash",
-    "startsIn": 1.8,
-    "eta": "2026-09-19T14:35"
+    "startsIn": 1.0,
+    "eta": "2026-09-19T14:36"
    },
    {
     "account": "dre",
     "task": "rank_match",
-    "startsIn": 2.3,
-    "eta": "2026-09-19T14:36"
-   },
-   {
-    "account": "dre",
-    "task": "run_pvp_ranked",
-    "startsIn": 3.0,
-    "eta": "2026-09-19T14:36"
-   },
-   {
-    "account": "dre",
-    "task": "collect_hoopa_keys",
-    "startsIn": 4.1,
+    "startsIn": 1.4,
     "eta": "2026-09-19T14:37"
    },
    {
     "account": "dre",
-    "task": "weekend_bash",
-    "startsIn": 4.2,
+    "task": "run_pvp_ranked",
+    "startsIn": 2.1,
     "eta": "2026-09-19T14:38"
+   },
+   {
+    "account": "dre",
+    "task": "collect_hoopa_keys",
+    "startsIn": 3.2,
+    "eta": "2026-09-19T14:39"
+   },
+   {
+    "account": "dre",
+    "task": "weekend_bash",
+    "startsIn": 3.4,
+    "eta": "2026-09-19T14:39"
    }
   ],
   "more": 0,
