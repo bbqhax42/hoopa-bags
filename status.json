@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:22:53.436855",
+ "generatedAt": "2026-09-19T09:24:56.332556",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake2",
+  "mode": "sky_pillar",
+  "since": "09:24:15"
  },
  "grid": {
   "tasks": [
@@ -162,10 +162,10 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 54,
-  "todo": 139,
+  "done": 56,
+  "todo": 137,
   "gaveUp": 5,
   "unavailable": 5,
   "windowed": 34
@@ -631,6 +631,56 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:24:14",
+   "script": "collect_hoopa_keys",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_092409_collect_hoopa_keys_fake2"
+  },
+  {
+   "ts": "2026-09-19T09:23:53",
+   "script": "collect_hoopa_keys",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 14,
+   "stats": {
+    "marginal_rift_exit_guardian": 27,
+    "vault_never_opened": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_092338_collect_hoopa_keys_fake2"
+  },
+  {
+   "ts": "2026-09-19T09:23:37",
+   "script": "paradise",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 218,
+   "stats": {
+    "marginal_paradise_hub": 3,
+    "explore_clicks": 110,
+    "pass_claims": 5,
+    "upgraded_energy_drink": 2,
+    "upgraded_sports_gloves": 2,
+    "upgraded_small_radar": 1,
+    "dex_milestones": 2,
+    "dex_activated": 9,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "1/15"
+   },
+   "dir": "debug_runs/20260919_091959_paradise_fake2"
+  },
   {
    "ts": "2026-09-19T09:19:57",
    "script": "victory_road",
@@ -7006,62 +7056,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_080759_victory_road_fake4"
-  },
-  {
-   "ts": "2026-09-18T08:07:57",
-   "script": "combat_daily",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_080750_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-18T08:07:48",
-   "script": "combat_daily",
-   "account": "fake4",
-   "rc": 1,
-   "secs": 128,
-   "stats": {
-    "title_reread_named": 4,
-    "marginal_afk_rewards": 3,
-    "near_miss_afk_rewards": 2,
-    "near_miss_vr_rank": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260918_080540_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-18T08:05:35",
-   "script": "pokemon_home",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 20,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_080514_pokemon_home_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 33773,
+  "now": 33896,
   "segments": [
    {
     "b": 29300,
@@ -8015,13 +8015,55 @@
     "s": "paradise",
     "login": null,
     "handoff": 33598,
+    "rc": 0,
+    "e": 33817,
+    "secs": 218,
+    "why": ""
+   },
+   {
+    "b": 33817,
+    "a": "fake2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 33818,
+    "rc": 1,
+    "e": 33834,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 33834,
+    "a": "fake2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 33849,
+    "rc": 1,
+    "e": 33855,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 33855,
+    "a": "fake2",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33855,
     "rc": null,
-    "e": 33773
+    "e": 33896
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T09:23:53",
+   "account": "fake2",
+   "task": "collect_hoopa_keys",
+   "rc": 1,
+   "secs": 14,
+   "why": "marginal_rift_exit_guardian, vault_never_opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_092338_collect_hoopa_keys_fake2__KEEP_0002_092353_vault_never_opened.png"
+  },
   {
    "ts": "2026-09-19T09:19:40",
    "account": "fake2",
@@ -8171,7 +8213,7 @@
   "since": "2026-09-19T08:00",
   "switches": 6,
   "relogMinutes": 3.1,
-  "retries": 19,
+  "retries": 20,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -8214,8 +8256,8 @@
     "failed": 2
    },
    "paradise": {
-    "runs": 5,
-    "minutes": 12.3,
+    "runs": 6,
+    "minutes": 16.0,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -8224,9 +8266,9 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 5,
-    "minutes": 0.7,
-    "failed": 1
+    "runs": 7,
+    "minutes": 1.1,
+    "failed": 2
    },
    "sky_pillar": {
     "runs": 4,
