@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T08:08:56.801545",
+ "generatedAt": "2026-09-19T08:10:59.999545",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "dailyclaim",
-  "since": "08:08:37"
+  "mode": "joint_battle",
+  "since": "08:10:01"
  },
  "grid": {
   "tasks": [
@@ -57,9 +57,9 @@
    {
     "account": "jeff",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 0,
-  "todo": 204,
+  "done": 3,
+  "todo": 201,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 34
@@ -636,6 +636,54 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T08:10:00",
+   "script": "joint_team_daily_quest",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 38,
+   "stats": {
+    "panel_swipes": 2,
+    "artifact_row_found_by_scrolling": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_080922_joint_team_daily_quest_jeff"
+  },
+  {
+   "ts": "2026-09-19T08:09:21",
+   "script": "mail",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260919_080917_mail_jeff"
+  },
+  {
+   "ts": "2026-09-19T08:09:16",
+   "script": "dailyclaim",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_080842_dailyclaim_jeff"
+  },
   {
    "ts": "2026-09-19T08:08:36",
    "script": "island_challenge",
@@ -6966,55 +7014,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260917_201231_worldboss_sprite"
-  },
-  {
-   "ts": "2026-09-17T20:12:30",
-   "script": "worldboss",
-   "account": "fake7",
-   "rc": 2,
-   "secs": 60,
-   "stats": {
-    "wb_not_unlocked": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260917_201130_worldboss_fake7"
-  },
-  {
-   "ts": "2026-09-17T20:11:30",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260917_201024_worldboss_fake6"
-  },
-  {
-   "ts": "2026-09-17T20:10:24",
-   "script": "worldboss",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260917_200919_worldboss_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 29337,
+  "now": 29460,
   "segments": [
    {
     "b": 29300,
@@ -7033,8 +7038,41 @@
     "s": "dailyclaim",
     "login": null,
     "handoff": 29322,
+    "rc": 0,
+    "e": 29357,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 29357,
+    "a": "jeff",
+    "s": "mail",
+    "login": null,
+    "handoff": 29357,
+    "rc": 0,
+    "e": 29362,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 29362,
+    "a": "jeff",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 29362,
+    "rc": 0,
+    "e": 29401,
+    "secs": 38,
+    "why": ""
+   },
+   {
+    "b": 29401,
+    "a": "jeff",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 29404,
     "rc": null,
-    "e": 29337
+    "e": 29460
    }
   ],
   "idle": []
@@ -7050,6 +7088,21 @@
     "runs": 1,
     "minutes": 0.2,
     "failed": 1
+   },
+   "dailyclaim": {
+    "runs": 1,
+    "minutes": 0.6,
+    "failed": 0
+   },
+   "mail": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   },
+   "joint_team_daily_quest": {
+    "runs": 1,
+    "minutes": 0.6,
+    "failed": 0
    }
   }
  },
