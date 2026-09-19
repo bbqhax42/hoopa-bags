@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-20T02:18:17.691936",
+ "generatedAt": "2026-09-20T02:20:21.160098",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -618,11 +618,41 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-09-20T02:17:18.709117",
+  "label": "deno",
+  "at": "2026-09-20T02:20:08.031009",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T02:19:48",
+   "script": "worldboss",
+   "account": "test1",
+   "rc": 0,
+   "secs": 81,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260920_021826_worldboss_test1"
+  },
+  {
+   "ts": "2026-09-20T02:18:26",
+   "script": "worldboss",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 86,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260920_021659_worldboss_lucifer2"
+  },
   {
    "ts": "2026-09-20T02:16:59",
    "script": "worldboss",
@@ -7056,42 +7086,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260918_201533_worldboss_test1"
-  },
-  {
-   "ts": "2026-09-18T20:15:33",
-   "script": "worldboss",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 73,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_201419_worldboss_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T20:14:19",
-   "script": "worldboss",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 57,
-   "stats": {
-    "connection_retry": 1,
-    "connection_retry_stuck": 1,
-    "connection_lost": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_201321_worldboss_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 94698,
+  "now": 94821,
   "segments": [
    {
     "b": 29300,
@@ -11344,7 +11344,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 94698,
+    "e": 94821,
     "secs": 102,
     "why": ""
    }
@@ -11823,7 +11823,7 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 200,
+  "switches": 202,
   "relogMinutes": 57.3,
   "retries": 68,
   "tasks": {
@@ -11923,8 +11923,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 29,
-    "minutes": 42.9,
+    "runs": 31,
+    "minutes": 45.8,
     "failed": 1
    }
   }
@@ -12182,7 +12182,9 @@
    "fake6",
    "sprite",
    "skosmurf",
-   "lucifer1"
+   "lucifer1",
+   "lucifer2",
+   "test1"
   ]
  },
  "worldBossSkipped": {
@@ -12211,7 +12213,7 @@
     "account": "chris",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-09-20T02:18"
+    "eta": "2026-09-20T02:20"
    }
   ],
   "more": 0,
@@ -12248,30 +12250,24 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 197,
+   "n": 199,
    "medianSec": 16,
    "picker": {
-    "n": 145,
-    "medianSec": 16,
-    "jumps": 76
+    "n": 146,
+    "medianSec": 16.0,
+    "jumps": 77
    },
    "typed": {
     "n": 27,
     "medianSec": 19
    },
    "miss": {
-    "n": 25,
-    "medianSec": 19
+    "n": 26,
+    "medianSec": 19.0
    }
   }
  },
  "progress": {
-  "lucifer2": {
-   "mailUnread": 0,
-   "paradiseStamina": "5/15",
-   "rank": 5,
-   "pillar": "floor 83 stage 10"
-  },
   "test1": {
    "mailUnread": 0,
    "paradiseStamina": "1/16",
@@ -12364,6 +12360,12 @@
    "paradiseStamina": "5/15",
    "rank": 1,
    "pillar": "floor 17 stage 1"
+  },
+  "lucifer2": {
+   "mailUnread": 0,
+   "paradiseStamina": "5/15",
+   "rank": 5,
+   "pillar": "floor 83 stage 10"
   }
  },
  "ledger": {
@@ -13822,6 +13824,11 @@
      "day": "2026-09-19",
      "done": 15,
      "failed": 2
+    },
+    {
+     "day": "2026-09-20",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -13907,6 +13914,11 @@
     {
      "day": "2026-09-19",
      "done": 12,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-20",
+     "done": 1,
      "failed": 0
     }
    ]
