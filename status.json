@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:10:33.953375",
+ "generatedAt": "2026-09-19T09:12:38.369207",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake1",
+  "mode": "sky_pillar",
+  "since": "09:11:57"
  },
  "grid": {
   "tasks": [
@@ -138,10 +138,10 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 43,
-  "todo": 151,
+  "done": 45,
+  "todo": 149,
   "gaveUp": 5,
   "unavailable": 4,
   "windowed": 34
@@ -631,6 +631,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:11:56",
+   "script": "collect_hoopa_keys",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_091149_collect_hoopa_keys_fake1"
+  },
+  {
+   "ts": "2026-09-19T09:11:47",
+   "script": "paradise",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 221,
+   "stats": {
+    "marginal_paradise_hub": 4,
+    "explore_clicks": 97,
+    "pass_claims": 10,
+    "upgraded_energy_drink": 2,
+    "upgraded_sports_gloves": 2,
+    "upgraded_small_radar": 1,
+    "dex_milestones": 3,
+    "dex_activated": 7,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "4/14"
+   },
+   "dir": "debug_runs/20260919_090806_paradise_fake1"
+  },
   {
    "ts": "2026-09-19T09:08:04",
    "script": "victory_road",
@@ -7017,41 +7053,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-18T06:10:04",
-   "script": "hoopa",
-   "account": "fake1",
-   "rc": 2,
-   "secs": 250,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — no Victory card 90s after the fight started — the battle was lost (frame kept)"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-18T06:04:44",
-   "script": "story",
-   "account": "fake2",
-   "rc": 2,
-   "secs": 207,
-   "stats": {
-    "skip_retry": 7,
-    "battle_timeout": 1,
-    "story_locked": 1,
-    "stages_cleared": 6
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_060116_story_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 33034,
+  "now": 33158,
   "segments": [
    {
     "b": 29300,
@@ -7841,8 +7848,30 @@
     "s": "paradise",
     "login": null,
     "handoff": 32886,
+    "rc": 0,
+    "e": 33108,
+    "secs": 221,
+    "why": ""
+   },
+   {
+    "b": 33108,
+    "a": "fake1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 33109,
+    "rc": 0,
+    "e": 33117,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 33117,
+    "a": "fake1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33117,
     "rc": null,
-    "e": 33034
+    "e": 33158
    }
   ],
   "idle": []
@@ -8031,8 +8060,8 @@
     "failed": 2
    },
    "paradise": {
-    "runs": 4,
-    "minutes": 8.6,
+    "runs": 5,
+    "minutes": 12.3,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -8041,8 +8070,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 4,
-    "minutes": 0.6,
+    "runs": 5,
+    "minutes": 0.7,
     "failed": 1
    },
    "sky_pillar": {
@@ -8238,7 +8267,11 @@
    "lucifer1"
   ]
  },
- "phase": null,
+ "phase": {
+  "kind": "day",
+  "since": "09:12:38",
+  "until": "18:00"
+ },
  "names": {
   "fake1": "Roflmao123",
   "fake2": "Random713",
