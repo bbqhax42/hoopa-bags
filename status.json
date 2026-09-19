@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T14:11:10.355718",
+ "generatedAt": "2026-09-19T14:13:14.667518",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
-  "mode": "guild_war",
-  "since": "14:10:56"
+  "account": "nova",
+  "mode": "run_pvp_ranked",
+  "since": "14:13:09"
  },
  "grid": {
   "tasks": [
@@ -41,7 +41,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "·",
@@ -187,7 +187,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 202,
-  "todo": 39,
+  "done": 204,
+  "todo": 37,
   "gaveUp": 8,
   "unavailable": 13,
   "windowed": 0
@@ -657,11 +657,49 @@
   }
  },
  "session": {
-  "label": "fake3",
-  "at": "2026-09-19T14:09:31.637561",
+  "label": "nova",
+  "at": "2026-09-19T14:12:02.440774",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T14:13:09",
+   "script": "rank_match",
+   "account": "nova",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 2,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260919_141210_rank_match_nova"
+  },
+  {
+   "ts": "2026-09-19T14:11:45",
+   "script": "guild_war",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 48,
+   "stats": {
+    "near_miss_vr_rank": 2,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1,
+    "assist_refill": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_141056_guild_war_fake3"
+  },
   {
    "ts": "2026-09-19T14:10:55",
    "script": "rank_match",
@@ -7167,46 +7205,12 @@
     "stamina": "16/16"
    },
    "dir": "debug_runs/20260918_112446_paradise_dre"
-  },
-  {
-   "ts": "2026-09-18T11:24:45",
-   "script": "victory_road",
-   "account": "dre",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_112437_victory_road_dre"
-  },
-  {
-   "ts": "2026-09-18T11:24:36",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 0,
-   "secs": 110,
-   "stats": {
-    "title_reread_named": 2,
-    "marginal_afk_rewards": 2,
-    "near_miss_afk_rewards": 3,
-    "near_miss_go_button": 1,
-    "near_miss_vr_rank": 4
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260918_112245_combat_daily_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 51070,
+  "now": 51194,
   "segments": [
    {
     "b": 29300,
@@ -10563,8 +10567,33 @@
     "s": "guild_war",
     "login": null,
     "handoff": 51056,
+    "rc": 0,
+    "e": 51106,
+    "secs": 48,
+    "why": ""
+   },
+   {
+    "b": 51106,
+    "a": "nova",
+    "s": "rank_match",
+    "login": [
+     51106,
+     51122
+    ],
+    "handoff": 51129,
+    "rc": 0,
+    "e": 51189,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 51189,
+    "a": "nova",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 51190,
     "rc": null,
-    "e": 51070
+    "e": 51194
    }
   ],
   "idle": []
@@ -10996,8 +11025,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 52,
-  "relogMinutes": 22.6,
+  "switches": 53,
+  "relogMinutes": 22.9,
   "retries": 54,
   "tasks": {
    "island_challenge": {
@@ -11086,13 +11115,13 @@
     "failed": 2
    },
    "guild_war": {
-    "runs": 15,
-    "minutes": 11.1,
+    "runs": 16,
+    "minutes": 11.9,
     "failed": 0
    },
    "rank_match": {
-    "runs": 4,
-    "minutes": 3.8,
+    "runs": 5,
+    "minutes": 4.8,
     "failed": 0
    }
   }
@@ -11342,79 +11371,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake3",
-    "task": "guild_war",
-    "startsIn": 0.0,
-    "eta": "2026-09-19T14:11"
-   },
-   {
-    "account": "nova",
-    "task": "rank_match",
-    "startsIn": 1.1,
-    "eta": "2026-09-19T14:12"
-   },
-   {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-19T14:13"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 3.1,
+    "startsIn": 1.0,
     "eta": "2026-09-19T14:14"
    },
    {
     "account": "jeff",
     "task": "rank_match",
-    "startsIn": 3.5,
+    "startsIn": 1.4,
     "eta": "2026-09-19T14:14"
    },
    {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 4.9,
+    "startsIn": 2.8,
     "eta": "2026-09-19T14:16"
    },
    {
     "account": "fake2",
     "task": "guild_war",
-    "startsIn": 5.8,
-    "eta": "2026-09-19T14:16"
+    "startsIn": 3.8,
+    "eta": "2026-09-19T14:17"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 7.0,
+    "startsIn": 4.9,
     "eta": "2026-09-19T14:18"
    },
    {
     "account": "fake4",
     "task": "guild_war",
-    "startsIn": 7.9,
+    "startsIn": 5.9,
     "eta": "2026-09-19T14:19"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 9.1,
+    "startsIn": 7.0,
     "eta": "2026-09-19T14:20"
    },
    {
     "account": "fake5",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.0,
+    "startsIn": 8.0,
     "eta": "2026-09-19T14:21"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 10.1,
+    "startsIn": 8.1,
     "eta": "2026-09-19T14:21"
+   },
+   {
+    "account": "fake6",
+    "task": "rank_match",
+    "startsIn": 9.4,
+    "eta": "2026-09-19T14:22"
+   },
+   {
+    "account": "fake6",
+    "task": "faction",
+    "startsIn": 10.3,
+    "eta": "2026-09-19T14:23"
    }
   ],
-  "more": 27,
+  "more": 25,
   "fillers": [
    {
     "account": "fake5",
@@ -11448,11 +11477,11 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 51,
-   "medianSec": 19,
+   "n": 52,
+   "medianSec": 19.0,
    "picker": {
-    "n": 17,
-    "medianSec": 16,
+    "n": 18,
+    "medianSec": 16.0,
     "jumps": 1
    },
    "typed": {
@@ -11565,6 +11594,7 @@
  },
  "ledger": {
   "fake3": {
+   "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "pillar/story stages cleared": 3,
    "mail claimed": 1,
