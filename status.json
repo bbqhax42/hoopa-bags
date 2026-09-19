@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T12:23:43.659497",
+ "generatedAt": "2026-09-19T12:25:46.858202",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skosmurf",
-  "mode": "faction",
-  "since": "12:22:27"
+  "mode": "misty_woods",
+  "since": "12:25:24"
  },
  "grid": {
   "tasks": [
@@ -335,8 +335,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "-",
      "-"
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 149,
-  "todo": 74,
-  "gaveUp": 5,
+  "done": 150,
+  "todo": 72,
+  "gaveUp": 6,
   "unavailable": 10,
   "windowed": 18
  },
@@ -662,6 +662,41 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T12:25:24",
+   "script": "misty_woods",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 15,
+   "stats": {
+    "runes_claimed": 1,
+    "battles_won": 1,
+    "probe_no_card": 1,
+    "no_allowed_tile": 1,
+    "incomplete": 1,
+    "wins": 1
+   },
+   "incomplete": [
+    "misty_woods: step 2 did not complete"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260919_122508_misty_woods_skosmurf"
+  },
+  {
+   "ts": "2026-09-19T12:24:31",
+   "script": "faction",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 120,
+   "stats": {
+    "auto_formation": 20,
+    "floors_grass": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_122231_faction_skosmurf"
+  },
   {
    "ts": "2026-09-19T12:22:27",
    "script": "sky_pillar",
@@ -7100,53 +7135,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_101822_combat_daily_sprite"
-  },
-  {
-   "ts": "2026-09-18T10:18:21",
-   "script": "combat_daily",
-   "account": "sprite",
-   "rc": 1,
-   "secs": 103,
-   "stats": {
-    "marginal_afk_rewards": 2,
-    "near_miss_afk_rewards": 4,
-    "near_miss_vr_rank": 7,
-    "adv_overflow": 1,
-    "title_reread_named": 2,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260918_101637_combat_daily_sprite"
-  },
-  {
-   "ts": "2026-09-18T10:16:32",
-   "script": "pokemon_home",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 130,
-   "stats": {
-    "reached_via_trial": 1,
-    "balls_unsettled_opened": 2,
-    "counter_misread": 3,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_101421_pokemon_home_sprite"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 44624,
+  "now": 44747,
   "segments": [
    {
     "b": 29300,
@@ -9698,13 +9692,46 @@
     "s": "faction",
     "login": null,
     "handoff": 44550,
-    "rc": null,
-    "e": 44624
+    "rc": 0,
+    "e": 44672,
+    "secs": 120,
+    "why": ""
+   },
+   {
+    "b": 44672,
+    "a": "skosmurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": 44708,
+    "rc": 1,
+    "e": 44724,
+    "secs": 15,
+    "why": "misty_woods: step 2 did not complete"
+   },
+   {
+    "b": 44724,
+    "a": "skosmurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": 44730,
+    "rc": 1,
+    "e": 44747,
+    "secs": 15,
+    "why": "misty_woods: step 2 did not complete"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T12:25:24",
+   "account": "skosmurf",
+   "task": "misty_woods",
+   "rc": 1,
+   "secs": 15,
+   "why": "misty_woods: step 2 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_122508_misty_woods_skosmurf__KEEP_0004_122524_no_allowed_tile_2.png"
+  },
   {
    "ts": "2026-09-19T12:13:14",
    "account": "skosmurf",
@@ -10052,7 +10079,7 @@
   "since": "2026-09-19T08:00",
   "switches": 38,
   "relogMinutes": 16.6,
-  "retries": 44,
+  "retries": 45,
   "tasks": {
    "island_challenge": {
     "runs": 6,
@@ -10125,14 +10152,14 @@
     "failed": 3
    },
    "faction": {
-    "runs": 10,
-    "minutes": 7.4,
+    "runs": 11,
+    "minutes": 9.4,
     "failed": 1
    },
    "misty_woods": {
-    "runs": 4,
-    "minutes": 4.0,
-    "failed": 3
+    "runs": 5,
+    "minutes": 4.2,
+    "failed": 4
    },
    "story": {
     "runs": 1,
