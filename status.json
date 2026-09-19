@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T10:45:56.883796",
+ "generatedAt": "2026-09-19T10:48:00.344911",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
-  "mode": "daily_dungeon",
-  "since": "10:45:39"
+  "account": "jeff",
+  "mode": "island_challenge",
+  "since": "10:47:46"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "·",
-     "💤"
+     "⏳"
     ]
    },
    {
@@ -567,9 +567,7 @@
    "nextAt": "2026-09-19T10:47:17"
   }
  ],
- "snoozed": {
-  "jeff|island_challenge": "2026-09-19T10:47"
- },
+ "snoozed": {},
  "ownerOnline": [],
  "keys": {
   "jeff": {
@@ -635,6 +633,26 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T10:47:45",
+   "script": "pokemon_home",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 106,
+   "stats": {
+    "title_reread_named": 1,
+    "reached_via_trial": 1,
+    "merge_refused": 3,
+    "merge_no_progress": 1,
+    "charges_left_unspent": 32,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: 32 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260919_104558_pokemon_home_fake7"
+  },
   {
    "ts": "2026-09-19T10:45:56",
    "script": "daily_dungeon",
@@ -7071,25 +7089,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260918_090413_combat_daily_smurf"
-  },
-  {
-   "ts": "2026-09-18T09:04:11",
-   "script": "combat_daily",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 15,
-   "stats": {
-    "left_outstanding": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_090356_combat_daily_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 38757,
+  "now": 38880,
   "segments": [
    {
     "b": 29300,
@@ -8697,11 +8702,43 @@
     "e": 38757,
     "secs": 13,
     "why": ""
+   },
+   {
+    "b": 38757,
+    "a": "fake7",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38758,
+    "rc": 1,
+    "e": 38866,
+    "secs": 106,
+    "why": "pokemon_home: 32 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 38866,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     38866,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 38880
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T10:47:45",
+   "account": "fake7",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 106,
+   "why": "pokemon_home: 32 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_104558_pokemon_home_fake7__KEEP_0079_104745_board_saturated.png"
+  },
   {
    "ts": "2026-09-19T10:44:41",
    "account": "smurf",
@@ -8939,9 +8976,9 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 14,
+  "switches": 15,
   "relogMinutes": 6.4,
-  "retries": 28,
+  "retries": 29,
   "tasks": {
    "island_challenge": {
     "runs": 3,
@@ -8969,9 +9006,9 @@
     "failed": 1
    },
    "pokemon_home": {
-    "runs": 10,
-    "minutes": 8.9,
-    "failed": 0
+    "runs": 11,
+    "minutes": 10.7,
+    "failed": 1
    },
    "combat_daily": {
     "runs": 17,
