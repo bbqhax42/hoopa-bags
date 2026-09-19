@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T11:52:43.859905",
+ "generatedAt": "2026-09-19T11:54:57.289331",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skosmurf",
-  "mode": "dailyclaim",
-  "since": "11:33:32"
+  "account": "fake7",
+  "mode": "joint_team_daily_quest",
+  "since": "11:54:20"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "💤",
-     "💤"
+     "·"
     ]
    },
    {
@@ -251,8 +251,8 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "✓",
      "✓",
      "✓",
@@ -465,10 +465,10 @@
   ]
  },
  "counts": {
-  "done": 130,
-  "todo": 83,
+  "done": 131,
+  "todo": 82,
   "gaveUp": 3,
-  "unavailable": 7,
+  "unavailable": 8,
   "windowed": 36
  },
  "disabled": [
@@ -596,8 +596,7 @@
  "snoozed": {
   "chris|championship": "2026-09-19T12:00",
   "chris|island_challenge": "2026-09-19T14:04",
-  "jeff|championship": "2026-09-19T12:00",
-  "jeff|island_challenge": "2026-09-19T11:54"
+  "jeff|championship": "2026-09-19T12:00"
  },
  "ownerOnline": [],
  "keys": {
@@ -659,11 +658,28 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-19T11:51:16.826588",
+  "label": "fake7",
+  "at": "2026-09-19T11:54:47.950562",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T11:53:44",
+   "script": "joint_team_daily_quest",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "panel_swipes": 2,
+    "artifact_row_found_by_scrolling": 1,
+    "guild_base_by_back": 1,
+    "near_miss_joint_team_daily_panel": 1,
+    "refused_close_blank": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_115310_joint_team_daily_quest_fake6"
+  },
   {
    "ts": "2026-09-19T11:51:40",
    "script": "combat_daily",
@@ -7103,29 +7119,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_095137_dailyclaim_fake6"
-  },
-  {
-   "ts": "2026-09-18T09:51:06",
-   "script": "sky_pillar",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 15,
-   "stats": {
-    "stage_lost": 1,
-    "incomplete": 1,
-    "sky_pillar_disabled": 1
-   },
-   "incomplete": [
-    "sky_pillar: lost floor/stage after 0 clear(s) — the team cannot take the next stage"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260918_095050_sky_pillar_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 42764,
+  "now": 42897,
   "segments": [
    {
     "b": 29300,
@@ -9297,6 +9296,50 @@
     "handoff": null,
     "rc": null,
     "e": 42764
+   },
+   {
+    "b": 42764,
+    "a": "fake6",
+    "s": "joint_team_daily_quest",
+    "login": [
+     42765,
+     42785
+    ],
+    "handoff": 42790,
+    "rc": 0,
+    "e": 42825,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 42825,
+    "a": "fake6",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 42829,
+    "rc": null,
+    "e": 42848
+   },
+   {
+    "b": 42848,
+    "a": "fake6",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 42852,
+    "rc": null,
+    "e": 42860
+   },
+   {
+    "b": 42860,
+    "a": "fake7",
+    "s": "joint_team_daily_quest",
+    "login": [
+     42861,
+     42887
+    ],
+    "handoff": 42892,
+    "rc": null,
+    "e": 42897
    }
   ],
   "idle": []
@@ -9611,8 +9654,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 25,
-  "relogMinutes": 9.9,
+  "switches": 27,
+  "relogMinutes": 10.9,
   "retries": 39,
   "tasks": {
    "island_challenge": {
@@ -9631,8 +9674,8 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 9,
-    "minutes": 4.3,
+    "runs": 10,
+    "minutes": 4.9,
     "failed": 0
    },
    "daily_dungeon": {
@@ -9720,6 +9763,12 @@
    "task": "faction",
    "why": "tower_locked",
    "at": "2026-09-19T09:50:36"
+  },
+  {
+   "account": "fake6",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
   },
   {
    "account": "fake6",
