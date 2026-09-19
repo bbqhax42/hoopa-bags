@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T11:10:36.341909",
+ "generatedAt": "2026-09-19T11:12:39.521172",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "chris",
+  "mode": "sky_pillar",
+  "since": "11:12:16"
  },
  "grid": {
   "tasks": [
@@ -92,8 +92,8 @@
      "⏰",
      "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "-",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 113,
-  "todo": 83,
+  "done": 115,
+  "todo": 81,
   "gaveUp": 2,
   "unavailable": 5,
   "windowed": 34
@@ -645,6 +645,39 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T11:12:15",
+   "script": "collect_hoopa_keys",
+   "account": "chris",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_111208_collect_hoopa_keys_chris"
+  },
+  {
+   "ts": "2026-09-19T11:12:07",
+   "script": "run_pvp_ranked",
+   "account": "chris",
+   "rc": 0,
+   "secs": 89,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 1,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 2,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 1,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260919_111037_run_pvp_ranked_chris"
+  },
   {
    "ts": "2026-09-19T11:10:36",
    "script": "paradise",
@@ -7090,44 +7123,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_092713_joint_team_daily_quest_fake2"
-  },
-  {
-   "ts": "2026-09-18T09:27:12",
-   "script": "mail",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 0,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260918_092708_mail_fake2"
-  },
-  {
-   "ts": "2026-09-18T09:27:07",
-   "script": "dailyclaim",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_092637_dailyclaim_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 40236,
+  "now": 40359,
   "segments": [
    {
     "b": 29300,
@@ -8998,6 +8999,37 @@
     "e": 40236,
     "secs": 216,
     "why": ""
+   },
+   {
+    "b": 40236,
+    "a": "chris",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 40237,
+    "rc": 0,
+    "e": 40327,
+    "secs": 89,
+    "why": ""
+   },
+   {
+    "b": 40327,
+    "a": "chris",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 40328,
+    "rc": 0,
+    "e": 40336,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 40336,
+    "a": "chris",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 40336,
+    "rc": null,
+    "e": 40359
    }
   ],
   "idle": []
@@ -9335,13 +9367,13 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 4,
-    "minutes": 3.3,
+    "runs": 5,
+    "minutes": 4.8,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 9,
-    "minutes": 1.3,
+    "runs": 10,
+    "minutes": 1.4,
     "failed": 2
    },
    "sky_pillar": {
