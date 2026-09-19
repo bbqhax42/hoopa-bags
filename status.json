@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-20T02:05:57.574267",
+ "generatedAt": "2026-09-20T02:08:00.952905",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -618,11 +618,41 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-20T02:05:22.715666",
+  "label": "fake2",
+  "at": "2026-09-20T02:06:42.285163",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T02:07:45",
+   "script": "worldboss",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 80,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260920_020625_worldboss_fake2"
+  },
+  {
+   "ts": "2026-09-20T02:06:25",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 78,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260920_020506_worldboss_fake1"
+  },
   {
    "ts": "2026-09-20T02:05:06",
    "script": "worldboss",
@@ -7053,42 +7083,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260918_200550_worldboss_fake2"
-  },
-  {
-   "ts": "2026-09-18T20:05:49",
-   "script": "worldboss",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_200444_worldboss_fake1"
-  },
-  {
-   "ts": "2026-09-18T20:04:44",
-   "script": "worldboss",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_200338_worldboss_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 93957,
+  "now": 94081,
   "segments": [
    {
     "b": 29300,
@@ -11341,7 +11341,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 93957,
+    "e": 94081,
     "secs": 102,
     "why": ""
    }
@@ -11820,7 +11820,7 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 191,
+  "switches": 193,
   "relogMinutes": 57.3,
   "retries": 68,
   "tasks": {
@@ -11920,8 +11920,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 20,
-    "minutes": 31.1,
+    "runs": 22,
+    "minutes": 33.7,
     "failed": 1
    }
   }
@@ -12170,7 +12170,9 @@
   "2026-09-20_02:00": [
    "jeff",
    "nova",
-   "smurf"
+   "smurf",
+   "fake1",
+   "fake2"
   ]
  },
  "worldBossSkipped": {
@@ -12199,7 +12201,7 @@
     "account": "chris",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-09-20T02:06"
+    "eta": "2026-09-20T02:08"
    }
   ],
   "more": 0,
@@ -12236,12 +12238,12 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 188,
-   "medianSec": 16.0,
+   "n": 189,
+   "medianSec": 16,
    "picker": {
-    "n": 138,
-    "medianSec": 16.0,
-    "jumps": 70
+    "n": 139,
+    "medianSec": 16,
+    "jumps": 71
    },
    "typed": {
     "n": 27,
@@ -12254,18 +12256,6 @@
   }
  },
  "progress": {
-  "smurf": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "rank": 1,
-   "pillar": "floor 17 stage 1",
-   "misty": "step 4"
-  },
-  "fake1": {
-   "mailUnread": 0,
-   "paradiseStamina": "4/14",
-   "pillar": "floor 3 stage 4"
-  },
   "fake2": {
    "mailUnread": 0,
    "paradiseStamina": "1/15",
@@ -12342,6 +12332,18 @@
    "pillar": "floor 98 stage 8",
    "paradiseStamina": "14/14",
    "rank": 3
+  },
+  "smurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "rank": 1,
+   "pillar": "floor 17 stage 1",
+   "misty": "step 4"
+  },
+  "fake1": {
+   "mailUnread": 0,
+   "paradiseStamina": "4/14",
+   "pillar": "floor 3 stage 4"
   },
   "fake7": {
    "mailUnread": 0,
@@ -12993,6 +12995,11 @@
      "day": "2026-09-19",
      "done": 13,
      "failed": 2
+    },
+    {
+     "day": "2026-09-20",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -13071,6 +13078,11 @@
      "day": "2026-09-19",
      "done": 14,
      "failed": 2
+    },
+    {
+     "day": "2026-09-20",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
