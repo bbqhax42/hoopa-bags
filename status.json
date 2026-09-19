@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T12:11:23.738967",
+ "generatedAt": "2026-09-19T12:13:26.962068",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skosmurf",
-  "mode": "dailyclaim",
-  "since": "12:10:28"
+  "mode": "daily_dungeon",
+  "since": "12:13:19"
  },
  "grid": {
   "tasks": [
@@ -321,8 +321,8 @@
    {
     "account": "skosmurf",
     "cells": [
-     "·",
-     "·",
+     "✗2",
+     "✓",
      "-",
      "-",
      "·",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 139,
-  "todo": 84,
-  "gaveUp": 4,
+  "done": 140,
+  "todo": 82,
+  "gaveUp": 5,
   "unavailable": 10,
   "windowed": 18
  },
@@ -658,10 +658,46 @@
  },
  "session": {
   "label": "skosmurf",
-  "at": "2026-09-19T12:10:55.106926",
+  "at": "2026-09-19T12:11:59.470097",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T12:13:18",
+   "script": "mail",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 0,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260919_121315_mail_skosmurf"
+  },
+  {
+   "ts": "2026-09-19T12:13:14",
+   "script": "dailyclaim",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 66,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_paid_only": 1,
+    "forbidden_first_topup": 2,
+    "mythic_no_open": 1,
+    "incomplete": 1,
+    "claims": 0
+   },
+   "incomplete": [
+    "dailyclaim: Mythic Incoming would not open"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260919_121208_dailyclaim_skosmurf"
+  },
   {
    "ts": "2026-09-19T12:10:27",
    "script": "guild_war",
@@ -7102,43 +7138,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260918_100633_combat_daily_fake7"
-  },
-  {
-   "ts": "2026-09-18T10:06:32",
-   "script": "combat_daily",
-   "account": "fake7",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "title_reread_named": 1,
-    "near_miss_tips_header": 3,
-    "left_outstanding": 4
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_100619_combat_daily_fake7"
-  },
-  {
-   "ts": "2026-09-18T10:06:13",
-   "script": "pokemon_home",
-   "account": "fake7",
-   "rc": 2,
-   "secs": 34,
-   "stats": {
-    "craft_pill_gone": 1,
-    "reached_via_trial": 1,
-    "grid_shape_disagreed": 1,
-    "board_stuck": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_100539_pokemon_home_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 43884,
+  "now": 44007,
   "segments": [
    {
     "b": 29300,
@@ -9558,12 +9563,55 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 43884
+    "e": 43890
+   },
+   {
+    "b": 43890,
+    "a": "skosmurf",
+    "s": "dailyclaim",
+    "login": [
+     43899,
+     43919
+    ],
+    "handoff": 43927,
+    "rc": 1,
+    "e": 43995,
+    "secs": 66,
+    "why": "dailyclaim: Mythic Incoming would not open"
+   },
+   {
+    "b": 43995,
+    "a": "skosmurf",
+    "s": "mail",
+    "login": null,
+    "handoff": 43995,
+    "rc": 0,
+    "e": 43999,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 43999,
+    "a": "skosmurf",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 44003,
+    "rc": null,
+    "e": 44007
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T12:13:14",
+   "account": "skosmurf",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 66,
+   "why": "dailyclaim: Mythic Incoming would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_121208_dailyclaim_skosmurf__KEEP_0003_121312_mythic_no_open.png"
+  },
   {
    "ts": "2026-09-19T11:59:51",
    "account": "smurf",
@@ -9901,8 +9949,8 @@
  "day": {
   "since": "2026-09-19T08:00",
   "switches": 38,
-  "relogMinutes": 14.9,
-  "retries": 43,
+  "relogMinutes": 16.6,
+  "retries": 44,
   "tasks": {
    "island_challenge": {
     "runs": 6,
@@ -9910,13 +9958,13 @@
     "failed": 6
    },
    "dailyclaim": {
-    "runs": 14,
-    "minutes": 8.3,
-    "failed": 2
+    "runs": 15,
+    "minutes": 9.4,
+    "failed": 3
    },
    "mail": {
-    "runs": 13,
-    "minutes": 0.7,
+    "runs": 14,
+    "minutes": 0.8,
     "failed": 0
    },
    "joint_team_daily_quest": {
