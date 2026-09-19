@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T08:58:13.216953",
+ "generatedAt": "2026-09-19T09:00:16.477397",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
   "mode": "faction",
-  "since": "08:57:33"
+  "since": "08:59:46"
  },
  "grid": {
   "tasks": [
@@ -119,7 +119,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "·",
      "·",
      "-",
@@ -442,9 +442,9 @@
  },
  "counts": {
   "done": 37,
-  "todo": 160,
+  "todo": 159,
   "gaveUp": 3,
-  "unavailable": 3,
+  "unavailable": 4,
   "windowed": 34
  },
  "disabled": [
@@ -631,6 +631,27 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T08:59:46",
+   "script": "faction",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 129,
+   "stats": {
+    "auto_formation": 18,
+    "setform_refused": 1,
+    "incomplete": 1,
+    "refused_grass": 1,
+    "faction_disabled": 1,
+    "floors_grass": 17,
+    "sweeps_used": 2
+   },
+   "incomplete": [
+    "faction: grass tower: the game would not accept the formation after 17 win(s) — the team needs adjusting"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260919_085736_faction_smurf"
+  },
   {
    "ts": "2026-09-19T08:57:32",
    "script": "sky_pillar",
@@ -7017,26 +7038,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_022357_story_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T02:23:57",
-   "script": "story",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 96,
-   "stats": {
-    "skip_retry": 12,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_022220_story_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 32293,
+  "now": 32416,
   "segments": [
    {
     "b": 29300,
@@ -7673,13 +7680,35 @@
     "s": "faction",
     "login": null,
     "handoff": 32256,
-    "rc": null,
-    "e": 32293
+    "rc": 1,
+    "e": 32386,
+    "secs": 129,
+    "why": "faction: grass tower: the game would not accept the formation after 17 win(s) — the team needs adjusting"
+   },
+   {
+    "b": 32386,
+    "a": "smurf",
+    "s": "faction",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 32416,
+    "secs": 129,
+    "why": "faction: grass tower: the game would not accept the formation after 17 win(s) — the team needs adjusting"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T08:59:46",
+   "account": "smurf",
+   "task": "faction",
+   "rc": 1,
+   "secs": 129,
+   "why": "faction: grass tower: the game would not accept the formation after 17 win(s) — the team needs adjusting",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_085736_faction_smurf__KEEP_0184_085929_faction_setform_refused_grass.png"
+  },
   {
    "ts": "2026-09-19T08:56:00",
    "account": "smurf",
@@ -7784,7 +7813,7 @@
   "since": "2026-09-19T08:00",
   "switches": 4,
   "relogMinutes": 2.2,
-  "retries": 14,
+  "retries": 15,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -7855,6 +7884,11 @@
     "runs": 1,
     "minutes": 0.1,
     "failed": 1
+   },
+   "faction": {
+    "runs": 1,
+    "minutes": 2.1,
+    "failed": 1
    }
   }
  },
@@ -7870,6 +7904,12 @@
    "task": "run_pvp_ranked",
    "why": "map_second_tap",
    "at": "2026-09-19T08:33:43"
+  },
+  {
+   "account": "smurf",
+   "task": "faction",
+   "why": null,
+   "at": null
   },
   {
    "account": "smurf",
