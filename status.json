@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T13:01:34.537518",
+ "generatedAt": "2026-09-19T13:03:37.839240",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "dailyclaim",
-  "since": "13:01:31"
+  "mode": "joint_battle",
+  "since": "13:03:28"
  },
  "grid": {
   "tasks": [
@@ -417,9 +417,9 @@
    {
     "account": "deno",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 174,
-  "todo": 50,
+  "done": 177,
+  "todo": 47,
   "gaveUp": 6,
   "unavailable": 11,
   "windowed": 18
@@ -651,11 +651,66 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-09-19T12:59:35.529647",
+  "label": "deno",
+  "at": "2026-09-19T13:01:50.855368",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T13:03:27",
+   "script": "joint_team_daily_quest",
+   "account": "deno",
+   "rc": 0,
+   "secs": 27,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_130259_joint_team_daily_quest_deno"
+  },
+  {
+   "ts": "2026-09-19T13:02:58",
+   "script": "joint_team_daily_quest",
+   "account": "deno",
+   "rc": 1,
+   "secs": 32,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_130226_joint_team_daily_quest_deno"
+  },
+  {
+   "ts": "2026-09-19T13:02:25",
+   "script": "mail",
+   "account": "deno",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260919_130220_mail_deno"
+  },
+  {
+   "ts": "2026-09-19T13:02:19",
+   "script": "dailyclaim",
+   "account": "deno",
+   "rc": 0,
+   "secs": 19,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_130159_dailyclaim_deno"
+  },
   {
    "ts": "2026-09-19T13:01:31",
    "script": "run_pvp_ranked",
@@ -7095,79 +7150,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_105212_weekend_bash_jeff"
-  },
-  {
-   "ts": "2026-09-18T10:52:08",
-   "script": "sky_pillar",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 48,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 147,
-    "stage": 2
-   },
-   "dir": "debug_runs/20260918_105119_sky_pillar_jeff"
-  },
-  {
-   "ts": "2026-09-18T10:51:18",
-   "script": "collect_hoopa_keys",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_105113_collect_hoopa_keys_jeff"
-  },
-  {
-   "ts": "2026-09-18T10:51:12",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 99,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 2,
-    "daily_goal_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 1,
-    "daily_goal_claims": 2
-   },
-   "dir": "debug_runs/20260918_104933_run_pvp_ranked_jeff"
-  },
-  {
-   "ts": "2026-09-18T10:49:26",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 33,
-   "stats": {
-    "fights": 2,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 29,
-    "fights_today": 2
-   },
-   "dir": "debug_runs/20260918_104853_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 46894,
+  "now": 47018,
   "segments": [
    {
     "b": 29300,
@@ -10058,16 +10046,69 @@
     "s": "dailyclaim",
     "login": [
      46892,
-     null
+     46910
     ],
-    "handoff": null,
+    "handoff": 46919,
+    "rc": 0,
+    "e": 46940,
+    "secs": 19,
+    "why": ""
+   },
+   {
+    "b": 46940,
+    "a": "deno",
+    "s": "mail",
+    "login": null,
+    "handoff": 46940,
+    "rc": 0,
+    "e": 46945,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 46945,
+    "a": "deno",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 46945,
+    "rc": 1,
+    "e": 46979,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 46979,
+    "a": "deno",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 46979,
+    "rc": 1,
+    "e": 47008,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 47008,
+    "a": "deno",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 47010,
     "rc": null,
-    "e": 46894
+    "e": 47018
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T13:02:58",
+   "account": "deno",
+   "task": "joint_team_daily_quest",
+   "rc": 1,
+   "secs": 32,
+   "why": "",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_130226_joint_team_daily_quest_deno__0003_130228_tap_anchor_L808__AFTER__world_map.png"
+  },
   {
    "ts": "2026-09-19T13:00:24",
    "account": "lucifer2",
@@ -10450,8 +10491,8 @@
  "day": {
   "since": "2026-09-19T08:00",
   "switches": 44,
-  "relogMinutes": 18.9,
-  "retries": 48,
+  "relogMinutes": 19.3,
+  "retries": 49,
   "tasks": {
    "island_challenge": {
     "runs": 6,
@@ -10459,19 +10500,19 @@
     "failed": 6
    },
    "dailyclaim": {
-    "runs": 17,
-    "minutes": 10.1,
+    "runs": 18,
+    "minutes": 10.4,
     "failed": 3
    },
    "mail": {
-    "runs": 16,
-    "minutes": 0.8,
+    "runs": 17,
+    "minutes": 0.9,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 14,
-    "minutes": 6.3,
-    "failed": 2
+    "runs": 16,
+    "minutes": 7.3,
+    "failed": 3
    },
    "daily_dungeon": {
     "runs": 17,
