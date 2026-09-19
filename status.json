@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T06:29:19.859585",
+ "generatedAt": "2026-09-20T06:31:23.261048",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
-  "mode": "story",
-  "since": "06:26:26"
+  "account": "jeff",
+  "mode": "hoopa",
+  "since": "06:31:08"
  },
  "grid": {
   "tasks": [
@@ -533,6 +533,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "fake7",
+   "task": "story",
+   "since": "2026-09-20T06:30:36",
+   "why": "Unlocked after clearing Victory Road  a Fuchsia Gym — clear that by hand, then re-enable"
+  },
+  {
    "account": "lucifer2",
    "task": "story",
    "since": "2026-09-20T02:54:50",
@@ -655,11 +661,27 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-20T06:26:46.319124",
+  "label": "jeff",
+  "at": "2026-09-20T06:31:22.537057",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T06:30:36",
+   "script": "story",
+   "account": "fake7",
+   "rc": 2,
+   "secs": 224,
+   "stats": {
+    "skip_retry": 18,
+    "afk_card": 1,
+    "story_locked": 1,
+    "stages_cleared": 6
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_062651_story_fake7"
+  },
   {
    "ts": "2026-09-20T06:12:36",
    "script": "story",
@@ -7107,25 +7129,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_082644_pokemon_home_nova"
-  },
-  {
-   "ts": "2026-09-19T08:26:42",
-   "script": "daily_dungeon",
-   "account": "nova",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_082627_daily_dungeon_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 109760,
+  "now": 109883,
   "segments": [
    {
     "b": 29300,
@@ -7316,10 +7325,8 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 30387,
-    "rc": 0,
-    "e": 30403,
-    "secs": 14,
-    "why": ""
+    "rc": null,
+    "e": 30403
    },
    {
     "b": 30403,
@@ -11459,8 +11466,34 @@
      109606
     ],
     "handoff": 109611,
+    "rc": 2,
+    "e": 109836,
+    "secs": 224,
+    "why": ""
+   },
+   {
+    "b": 109836,
+    "a": "fake5",
+    "s": "hoopa",
+    "login": [
+     109837,
+     109854
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 109760
+    "e": 109868
+   },
+   {
+    "b": 109868,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": [
+     109868,
+     109882
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 109883
    }
   ],
   "idle": []
@@ -11928,7 +11961,7 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 262,
+  "switches": 264,
   "relogMinutes": 71.4,
   "retries": 74,
   "tasks": {
@@ -12013,8 +12046,8 @@
     "failed": 5
    },
    "story": {
-    "runs": 55,
-    "minutes": 84.3,
+    "runs": 56,
+    "minutes": 88.0,
     "failed": 5
    },
    "guild_war": {
@@ -12154,6 +12187,12 @@
    "task": "sky_pillar",
    "why": "pillar_did_not_open",
    "at": "2026-09-19T11:23:24"
+  },
+  {
+   "account": "fake7",
+   "task": "story",
+   "why": "skip_retry, afk_card, story_locked, stages_cleared",
+   "at": "2026-09-20T06:30:36"
   },
   {
    "account": "jeff",
@@ -12348,10 +12387,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "fake7",
-    "mode": "story"
-   },
-   {
     "account": "smurf",
     "mode": "hoopa"
    },
@@ -12379,12 +12414,12 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 259,
+   "n": 261,
    "medianSec": 16,
    "picker": {
-    "n": 199,
+    "n": 201,
     "medianSec": 16,
-    "jumps": 104
+    "jumps": 105
    },
    "typed": {
     "n": 27,
@@ -12494,11 +12529,11 @@
   }
  },
  "ledger": {
+  "fake7": {
+   "pillar/story stages cleared": 30
+  },
   "fake4": {
    "pillar/story stages cleared": 184
-  },
-  "fake7": {
-   "pillar/story stages cleared": 24
   },
   "chris": {
    "island fights": 6
@@ -12564,6 +12599,15 @@
    "kind": "gym",
    "since": "2026-09-20T01:38:41",
    "why": "Unlocked after clearing Victory Road Veridian Gym — clear that by hand, then re-enable",
+   "action": "clear that gym by hand, then switch story back on",
+   "enable": true
+  },
+  {
+   "account": "fake7",
+   "task": "story",
+   "kind": "gym",
+   "since": "2026-09-20T06:30:36",
+   "why": "Unlocked after clearing Victory Road  a Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
   },
@@ -13684,7 +13728,7 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-19",
-   "summary": "9 of 14 dailies done · gave up on JointQ · 1 switched off · 4 not available today",
+   "summary": "9 of 14 dailies done · gave up on JointQ · 2 switched off · 5 not available today",
    "done": 9,
    "owed": 14,
    "open": [
@@ -13728,6 +13772,11 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-18T01:39:05"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road  a Fuchsia Gym — clear that by hand, then re-enable",
+     "since": "2026-09-20T06:30:36"
     }
    ],
    "unavailable": [
@@ -13746,10 +13795,14 @@
     {
      "task": "sky_pillar",
      "why": "pillar_did_not_open"
+    },
+    {
+     "task": "story",
+     "why": "skip_retry, afk_card, story_locked, stages_cleared"
     }
    ],
    "spent": {
-    "pillar/story stages cleared": 24
+    "pillar/story stages cleared": 30
    },
    "progress": {
     "mailUnread": 0,
