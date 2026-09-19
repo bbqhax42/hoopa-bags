@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:41:22.157781",
+ "generatedAt": "2026-09-19T09:43:25.223563",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake4",
   "mode": "combat_daily",
-  "since": "09:40:58"
+  "since": "09:42:56"
  },
  "grid": {
   "tasks": [
@@ -207,7 +207,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "⏰",
      "·",
@@ -442,8 +442,8 @@
  },
  "counts": {
   "done": 74,
-  "todo": 117,
-  "gaveUp": 6,
+  "todo": 116,
+  "gaveUp": 7,
   "unavailable": 6,
   "windowed": 34
  },
@@ -631,6 +631,29 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:42:56",
+   "script": "combat_daily",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 112,
+   "stats": {
+    "title_reread_named": 4,
+    "marginal_afk_rewards": 4,
+    "near_miss_afk_rewards": 3,
+    "near_miss_vr_rank": 4,
+    "arena_slot_unavailable": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "pokemon_upgraded": 1,
+    "left_outstanding": 2
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 o ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260919_094103_combat_daily_fake4"
+  },
   {
    "ts": "2026-09-19T09:40:57",
    "script": "pokemon_home",
@@ -7040,25 +7063,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_082957_dailyclaim_jeff"
-  },
-  {
-   "ts": "2026-09-18T08:29:21",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 0,
-   "stats": {
-    "no_weekend_bash": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_082921_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 34882,
+  "now": 35005,
   "segments": [
    {
     "b": 29300,
@@ -8289,13 +8299,35 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 34862,
-    "rc": null,
-    "e": 34882
+    "rc": 1,
+    "e": 34976,
+    "secs": 112,
+    "why": ""
+   },
+   {
+    "b": 34976,
+    "a": "fake4",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34977,
+    "rc": 1,
+    "e": 35005,
+    "secs": 112,
+    "why": ""
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T09:42:56",
+   "account": "fake4",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 112,
+   "why": "title_reread_named, marginal_afk_rewards, near_miss_afk_rewards, near_miss_vr_rank, arena_slot_unavailable, upgrade_blocked_by_first_topup, pokemon_upgraded, le",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_094103_combat_daily_fake4__KEEP_0068_094201_arena_slot_unavailable.png"
+  },
   {
    "ts": "2026-09-19T09:33:17",
    "account": "fake3",
@@ -8472,7 +8504,7 @@
   "since": "2026-09-19T08:00",
   "switches": 8,
   "relogMinutes": 4.2,
-  "retries": 22,
+  "retries": 23,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -8505,9 +8537,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 12,
-    "minutes": 13.7,
-    "failed": 8
+    "runs": 13,
+    "minutes": 15.5,
+    "failed": 9
    },
    "victory_road": {
     "runs": 7,
