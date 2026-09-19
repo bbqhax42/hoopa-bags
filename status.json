@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T11:18:48.278414",
+ "generatedAt": "2026-09-19T11:20:51.151816",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
-  "mode": "combat_daily",
-  "since": "11:17:09"
+  "mode": "paradise",
+  "since": "11:19:17"
  },
  "grid": {
   "tasks": [
@@ -279,8 +279,8 @@
      "-",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 119,
-  "todo": 76,
+  "done": 121,
+  "todo": 74,
   "gaveUp": 2,
   "unavailable": 5,
   "windowed": 34
@@ -640,6 +640,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T11:19:16",
+   "script": "victory_road",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_111909_victory_road_fake7"
+  },
+  {
+   "ts": "2026-09-19T11:19:07",
+   "script": "combat_daily",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 113,
+   "stats": {
+    "marginal_afk_yield": 1,
+    "near_miss_afk_rewards": 1,
+    "near_miss_vr_rank": 6,
+    "title_reread_named": 3,
+    "adv_energy_spent": 1,
+    "marginal_pokemon_upgrade": 1,
+    "pokemon_upgraded": 1,
+    "outstanding_reread_after_toast": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: v1 os ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260919_111714_combat_daily_fake7"
+  },
   {
    "ts": "2026-09-19T11:17:08",
    "script": "pokemon_home",
@@ -7065,47 +7102,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_093630_collect_hoopa_keys_fake2"
-  },
-  {
-   "ts": "2026-09-18T09:36:28",
-   "script": "paradise",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 185,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 74,
-    "pass_claims": 5,
-    "upgraded_sports_gloves": 2,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 2,
-    "dex_milestones": 1,
-    "dex_activated": 5,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_093323_paradise_fake2"
-  },
-  {
-   "ts": "2026-09-18T09:33:21",
-   "script": "victory_road",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "nothing_pending": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_093307_victory_road_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 40728,
+  "now": 40851,
   "segments": [
    {
     "b": 29300,
@@ -9063,8 +9065,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 40634,
+    "rc": 0,
+    "e": 40748,
+    "secs": 113,
+    "why": ""
+   },
+   {
+    "b": 40748,
+    "a": "fake7",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 40748,
+    "rc": 0,
+    "e": 40757,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 40757,
+    "a": "fake7",
+    "s": "paradise",
+    "login": null,
+    "handoff": 40757,
     "rc": null,
-    "e": 40728
+    "e": 40851
    }
   ],
   "idle": []
@@ -9387,13 +9411,13 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 21,
-    "minutes": 26.2,
+    "runs": 22,
+    "minutes": 28.1,
     "failed": 13
    },
    "victory_road": {
-    "runs": 14,
-    "minutes": 2.5,
+    "runs": 15,
+    "minutes": 2.6,
     "failed": 4
    },
    "paradise": {
