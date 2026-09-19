@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T10:58:16.648772",
+ "generatedAt": "2026-09-19T11:00:19.762577",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "joint_team_daily_quest",
-  "since": "10:57:56"
+  "mode": "pokemon_home",
+  "since": "10:59:46"
  },
  "grid": {
   "tasks": [
@@ -323,9 +323,9 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 106,
-  "todo": 87,
+  "done": 109,
+  "todo": 84,
   "gaveUp": 3,
   "unavailable": 7,
   "windowed": 34
@@ -636,6 +636,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T10:59:45",
+   "script": "daily_dungeon",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_105932_daily_dungeon_lucifer1"
+  },
+  {
+   "ts": "2026-09-19T10:58:30",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "panel_swipes": 2,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1,
+    "near_miss_joint_team_daily_panel": 1,
+    "refused_close_blank": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_105756_joint_team_daily_quest_lucifer1"
+  },
   {
    "ts": "2026-09-19T10:57:55",
    "script": "mail",
@@ -7069,40 +7099,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260918_091817_combat_daily_fake1"
-  },
-  {
-   "ts": "2026-09-18T09:18:11",
-   "script": "pokemon_home",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 21,
-   "stats": {
-    "title_reread_named": 1,
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_091749_pokemon_home_fake1"
-  },
-  {
-   "ts": "2026-09-18T09:17:47",
-   "script": "daily_dungeon",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 15,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_091732_daily_dungeon_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 39497,
+  "now": 39620,
   "segments": [
    {
     "b": 29300,
@@ -8858,8 +8860,39 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 39476,
+    "rc": 0,
+    "e": 39511,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 39511,
+    "a": "lucifer1",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 39515,
     "rc": null,
-    "e": 39497
+    "e": 39567
+   },
+   {
+    "b": 39567,
+    "a": "lucifer1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 39571,
+    "rc": 0,
+    "e": 39586,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 39586,
+    "a": "lucifer1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 39587,
+    "rc": null,
+    "e": 39620
    }
   ],
   "idle": []
@@ -9131,13 +9164,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 8,
-    "minutes": 3.8,
+    "runs": 9,
+    "minutes": 4.3,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 13,
-    "minutes": 4.6,
+    "runs": 14,
+    "minutes": 4.8,
     "failed": 1
    },
    "pokemon_home": {
