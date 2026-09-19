@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T11:31:06.650209",
+ "generatedAt": "2026-09-19T11:33:09.645082",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake6",
-  "mode": "paradise",
-  "since": "11:30:53"
+  "mode": "sky_pillar",
+  "since": "11:31:45"
  },
  "grid": {
   "tasks": [
@@ -258,10 +258,10 @@
      "✓",
      "✓",
      "⏰",
-     "✗2",
+     "⊘",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -465,10 +465,10 @@
   ]
  },
  "counts": {
-  "done": 128,
-  "todo": 77,
-  "gaveUp": 4,
-  "unavailable": 6,
+  "done": 129,
+  "todo": 76,
+  "gaveUp": 3,
+  "unavailable": 7,
   "windowed": 36
  },
  "disabled": [
@@ -659,11 +659,37 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-19T11:26:51.942822",
+  "label": "fake6",
+  "at": "2026-09-19T11:31:13.977850",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T11:31:44",
+   "script": "collect_hoopa_keys",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 9,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_113135_collect_hoopa_keys_fake6"
+  },
+  {
+   "ts": "2026-09-19T11:31:33",
+   "script": "paradise",
+   "account": "fake6",
+   "rc": 2,
+   "secs": 14,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_113119_paradise_fake6"
+  },
   {
    "ts": "2026-09-19T11:30:52",
    "script": "paradise",
@@ -7097,55 +7123,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_094721_combat_daily_fake5"
-  },
-  {
-   "ts": "2026-09-18T09:47:20",
-   "script": "combat_daily",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 112,
-   "stats": {
-    "marginal_afk_rewards": 2,
-    "near_miss_afk_rewards": 1,
-    "adv_overflow": 1,
-    "near_miss_vr_rank": 5,
-    "near_miss_pokemon_upgrade": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "marginal_premium_gacha": 1,
-    "title_reread_named": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260918_094528_combat_daily_fake5"
-  },
-  {
-   "ts": "2026-09-18T09:45:22",
-   "script": "pokemon_home",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 20,
-   "stats": {
-    "title_reread_named": 1,
-    "reached_via_trial": 1,
-    "ball_tiles_not_merged": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_094502_pokemon_home_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 41467,
+  "now": 41590,
   "segments": [
    {
     "b": 29300,
@@ -9252,11 +9235,33 @@
     "s": "paradise",
     "login": [
      41453,
-     null
+     41473
     ],
-    "handoff": null,
+    "handoff": 41478,
+    "rc": 2,
+    "e": 41494,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 41494,
+    "a": "fake6",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 41494,
+    "rc": 0,
+    "e": 41505,
+    "secs": 9,
+    "why": ""
+   },
+   {
+    "b": 41505,
+    "a": "fake6",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 41505,
     "rc": null,
-    "e": 41467
+    "e": 41590
    }
   ],
   "idle": []
@@ -9563,7 +9568,7 @@
  "day": {
   "since": "2026-09-19T08:00",
   "switches": 22,
-  "relogMinutes": 9.5,
+  "relogMinutes": 9.9,
   "retries": 39,
   "tasks": {
    "island_challenge": {
@@ -9607,8 +9612,8 @@
     "failed": 4
    },
    "paradise": {
-    "runs": 14,
-    "minutes": 42.1,
+    "runs": 15,
+    "minutes": 42.4,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -9617,8 +9622,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 11,
-    "minutes": 1.6,
+    "runs": 12,
+    "minutes": 1.8,
     "failed": 2
    },
    "sky_pillar": {
@@ -9671,6 +9676,12 @@
    "task": "faction",
    "why": "tower_locked",
    "at": "2026-09-19T09:50:36"
+  },
+  {
+   "account": "fake6",
+   "task": "paradise",
+   "why": "reported unavailable",
+   "at": "2026-09-19T11:31:33"
   },
   {
    "account": "fake7",
