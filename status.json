@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T08:56:09.710425",
+ "generatedAt": "2026-09-19T08:58:13.216953",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "collect_hoopa_keys",
-  "since": "08:56:01"
+  "mode": "faction",
+  "since": "08:57:33"
  },
  "grid": {
   "tasks": [
@@ -117,8 +117,8 @@
      "✓",
      "⏰",
      "✓",
-     "✗2",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 35,
-  "todo": 161,
-  "gaveUp": 4,
+  "done": 37,
+  "todo": 160,
+  "gaveUp": 3,
   "unavailable": 3,
   "windowed": 34
  },
@@ -631,6 +631,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T08:57:32",
+   "script": "sky_pillar",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 68,
+   "stats": {
+    "stages_cleared": 2,
+    "proofs_spent_by_refusal": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 17,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260919_085623_sky_pillar_smurf"
+  },
+  {
+   "ts": "2026-09-19T08:56:22",
+   "script": "collect_hoopa_keys",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_085616_collect_hoopa_keys_smurf"
+  },
   {
    "ts": "2026-09-19T08:56:00",
    "script": "collect_hoopa_keys",
@@ -7001,43 +7031,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_022220_story_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T02:20:22",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 16,
-   "stats": {
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 7,
-    "fights_today": 12
-   },
-   "dir": "debug_runs/20260918_022006_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-18T02:19:30",
-   "script": "worldboss",
-   "account": "dre",
-   "rc": 0,
-   "secs": 72,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_021818_worldboss_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 32170,
+  "now": 32293,
   "segments": [
    {
     "b": 29300,
@@ -7651,11 +7650,31 @@
     "a": "smurf",
     "s": "collect_hoopa_keys",
     "login": null,
-    "handoff": null,
+    "handoff": 32176,
     "rc": 1,
-    "e": 32170,
+    "e": 32183,
     "secs": 15,
     "why": ""
+   },
+   {
+    "b": 32183,
+    "a": "smurf",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 32183,
+    "rc": 0,
+    "e": 32253,
+    "secs": 68,
+    "why": ""
+   },
+   {
+    "b": 32253,
+    "a": "smurf",
+    "s": "faction",
+    "login": null,
+    "handoff": 32256,
+    "rc": null,
+    "e": 32293
    }
   ],
   "idle": []
@@ -7818,13 +7837,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 3,
-    "minutes": 0.5,
+    "runs": 4,
+    "minutes": 0.6,
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 2,
-    "minutes": 3.0,
+    "runs": 3,
+    "minutes": 4.2,
     "failed": 0
    },
    "weekend_bash": {
