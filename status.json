@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:12:38.369207",
+ "generatedAt": "2026-09-19T09:14:41.560371",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "sky_pillar",
-  "since": "09:11:57"
+  "account": "fake2",
+  "mode": "dailyclaim",
+  "since": "09:13:47"
  },
  "grid": {
   "tasks": [
@@ -142,8 +142,8 @@
      "⏰",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "-",
      "-",
@@ -441,10 +441,10 @@
   ]
  },
  "counts": {
-  "done": 45,
-  "todo": 149,
+  "done": 46,
+  "todo": 147,
   "gaveUp": 5,
-  "unavailable": 4,
+  "unavailable": 5,
   "windowed": 34
  },
  "disabled": [
@@ -626,11 +626,53 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-19T09:03:38.006528",
+  "label": "fake2",
+  "at": "2026-09-19T09:14:11.317008",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:13:47",
+   "script": "faction",
+   "account": "fake1",
+   "rc": 2,
+   "secs": 7,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_091339_faction_fake1"
+  },
+  {
+   "ts": "2026-09-19T09:13:37",
+   "script": "faction",
+   "account": "fake1",
+   "rc": 2,
+   "secs": 7,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_091329_faction_fake1"
+  },
+  {
+   "ts": "2026-09-19T09:13:25",
+   "script": "sky_pillar",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 40,
+   "stats": {
+    "stages_cleared": 2
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 3,
+    "stage": 4
+   },
+   "dir": "debug_runs/20260919_091245_sky_pillar_fake1"
+  },
   {
    "ts": "2026-09-19T09:11:56",
    "script": "collect_hoopa_keys",
@@ -7010,55 +7052,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_071101_story_fake5"
-  },
-  {
-   "ts": "2026-09-18T07:05:28",
-   "script": "hoopa",
-   "account": "fake5",
-   "rc": 2,
-   "secs": 392,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — no Victory card 90s after the fight started — the battle was lost (frame kept)"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-18T06:51:06",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 43,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 1,
-    "fights_today": 21
-   },
-   "dir": "debug_runs/20260918_065023_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-18T06:18:08",
-   "script": "hoopa",
-   "account": "fake3",
-   "rc": 2,
-   "secs": 420,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — no Victory card 90s after the fight started — the battle was lost (frame kept)"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 33158,
+  "now": 33282,
   "segments": [
    {
     "b": 29300,
@@ -7871,7 +7870,52 @@
     "login": null,
     "handoff": 33117,
     "rc": null,
-    "e": 33158
+    "e": 33159
+   },
+   {
+    "b": 33159,
+    "a": "fake1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 33165,
+    "rc": 0,
+    "e": 33206,
+    "secs": 40,
+    "why": ""
+   },
+   {
+    "b": 33206,
+    "a": "fake1",
+    "s": "faction",
+    "login": null,
+    "handoff": 33209,
+    "rc": 2,
+    "e": 33218,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 33218,
+    "a": "fake1",
+    "s": "faction",
+    "login": null,
+    "handoff": 33218,
+    "rc": 2,
+    "e": 33227,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 33227,
+    "a": "fake2",
+    "s": "dailyclaim",
+    "login": [
+     33228,
+     33251
+    ],
+    "handoff": 33256,
+    "rc": null,
+    "e": 33282
    }
   ],
   "idle": []
@@ -8015,8 +8059,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 5,
-  "relogMinutes": 2.7,
+  "switches": 6,
+  "relogMinutes": 3.1,
   "retries": 18,
   "tasks": {
    "island_challenge": {
@@ -8075,8 +8119,8 @@
     "failed": 1
    },
    "sky_pillar": {
-    "runs": 3,
-    "minutes": 4.2,
+    "runs": 4,
+    "minutes": 4.8,
     "failed": 0
    },
    "weekend_bash": {
@@ -8090,8 +8134,8 @@
     "failed": 1
    },
    "faction": {
-    "runs": 2,
-    "minutes": 2.7,
+    "runs": 4,
+    "minutes": 3.0,
     "failed": 1
    },
    "misty_woods": {
@@ -8102,6 +8146,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "fake1",
+   "task": "faction",
+   "why": "tower_locked",
+   "at": "2026-09-19T09:13:47"
+  },
   {
    "account": "nova",
    "task": "paradise",
