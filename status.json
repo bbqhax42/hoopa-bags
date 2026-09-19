@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:14:41.560371",
+ "generatedAt": "2026-09-19T09:16:44.426908",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "dailyclaim",
-  "since": "09:13:47"
+  "mode": "daily_dungeon",
+  "since": "09:16:28"
  },
  "grid": {
   "tasks": [
@@ -153,10 +153,10 @@
    {
     "account": "fake2",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 46,
-  "todo": 147,
+  "done": 50,
+  "todo": 143,
   "gaveUp": 5,
   "unavailable": 5,
   "windowed": 34
@@ -631,6 +631,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:15:12",
+   "script": "joint_team_daily_quest",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 21,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_091451_joint_team_daily_quest_fake2"
+  },
+  {
+   "ts": "2026-09-19T09:14:50",
+   "script": "mail",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260919_091446_mail_fake2"
+  },
+  {
+   "ts": "2026-09-19T09:14:45",
+   "script": "dailyclaim",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 28,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_091416_dailyclaim_fake2"
+  },
   {
    "ts": "2026-09-19T09:13:47",
    "script": "faction",
@@ -7009,55 +7053,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260918_074633_story_fake5"
-  },
-  {
-   "ts": "2026-09-18T07:25:42",
-   "script": "story",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 105,
-   "stats": {
-    "skip_retry": 13,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_072357_story_fake5"
-  },
-  {
-   "ts": "2026-09-18T07:18:11",
-   "script": "hoopa",
-   "account": "fake2",
-   "rc": 2,
-   "secs": 255,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — no Victory card 90s after the fight started — the battle was lost (frame kept)"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-18T07:12:46",
-   "script": "story",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 104,
-   "stats": {
-    "skip_retry": 12,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_071101_story_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 33282,
+  "now": 33404,
   "segments": [
    {
     "b": 29300,
@@ -7914,8 +7915,50 @@
      33251
     ],
     "handoff": 33256,
+    "rc": 0,
+    "e": 33286,
+    "secs": 28,
+    "why": ""
+   },
+   {
+    "b": 33286,
+    "a": "fake2",
+    "s": "mail",
+    "login": null,
+    "handoff": 33286,
+    "rc": 0,
+    "e": 33290,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 33290,
+    "a": "fake2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 33291,
+    "rc": 0,
+    "e": 33313,
+    "secs": 21,
+    "why": ""
+   },
+   {
+    "b": 33313,
+    "a": "fake2",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 33315,
     "rc": null,
-    "e": 33282
+    "e": 33388
+   },
+   {
+    "b": 33388,
+    "a": "fake2",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 33393,
+    "rc": null,
+    "e": 33404
    }
   ],
   "idle": []
@@ -8069,18 +8112,18 @@
     "failed": 2
    },
    "dailyclaim": {
-    "runs": 6,
-    "minutes": 4.8,
+    "runs": 7,
+    "minutes": 5.2,
     "failed": 2
    },
    "mail": {
-    "runs": 5,
+    "runs": 6,
     "minutes": 0.3,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 4,
-    "minutes": 2.1,
+    "runs": 5,
+    "minutes": 2.5,
     "failed": 0
    },
    "daily_dungeon": {
