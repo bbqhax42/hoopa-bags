@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T10:50:04.179151",
+ "generatedAt": "2026-09-19T10:52:07.123764",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "sprite",
-  "mode": "daily_dungeon",
-  "since": "10:49:47"
+  "mode": "combat_daily",
+  "since": "10:51:50"
  },
  "grid": {
   "tasks": [
@@ -301,8 +301,8 @@
      "✓",
      "-",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 99,
-  "todo": 94,
+  "done": 101,
+  "todo": 92,
   "gaveUp": 3,
   "unavailable": 7,
   "windowed": 34
@@ -636,6 +636,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T10:51:49",
+   "script": "pokemon_home",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 102,
+   "stats": {
+    "reached_via_trial": 1,
+    "ball_tiles_not_merged": 1,
+    "grid_refit": 1,
+    "counter_misread": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_105007_pokemon_home_sprite"
+  },
+  {
+   "ts": "2026-09-19T10:50:05",
+   "script": "daily_dungeon",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_104951_daily_dungeon_sprite"
+  },
   {
    "ts": "2026-09-19T10:49:46",
    "script": "mail",
@@ -7044,42 +7074,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_091322_faction_smurf"
-  },
-  {
-   "ts": "2026-09-18T09:13:18",
-   "script": "sky_pillar",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 79,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 16,
-    "stage": 8
-   },
-   "dir": "debug_runs/20260918_091158_sky_pillar_smurf"
-  },
-  {
-   "ts": "2026-09-18T09:11:57",
-   "script": "collect_hoopa_keys",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_091151_collect_hoopa_keys_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 39004,
+  "now": 39127,
   "segments": [
    {
     "b": 29300,
@@ -8755,8 +8755,30 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 38991,
+    "rc": 0,
+    "e": 39006,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 39006,
+    "a": "sprite",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 39007,
+    "rc": 0,
+    "e": 39110,
+    "secs": 102,
+    "why": ""
+   },
+   {
+    "b": 39110,
+    "a": "sprite",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 39115,
     "rc": null,
-    "e": 39004
+    "e": 39127
    }
   ],
   "idle": []
@@ -9033,13 +9055,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 12,
-    "minutes": 4.4,
+    "runs": 13,
+    "minutes": 4.6,
     "failed": 1
    },
    "pokemon_home": {
-    "runs": 11,
-    "minutes": 10.7,
+    "runs": 12,
+    "minutes": 12.4,
     "failed": 1
    },
    "combat_daily": {
