@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:29:02.418281",
+ "generatedAt": "2026-09-19T09:31:05.612902",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "joint_battle",
-  "since": "09:28:48"
+  "mode": "pokemon_home",
+  "since": "09:30:47"
  },
  "grid": {
   "tasks": [
@@ -180,8 +180,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -441,8 +441,8 @@
   ]
  },
  "counts": {
-  "done": 61,
-  "todo": 132,
+  "done": 63,
+  "todo": 130,
   "gaveUp": 5,
   "unavailable": 5,
   "windowed": 34
@@ -631,6 +631,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:30:46",
+   "script": "daily_dungeon",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 47,
+   "stats": {
+    "marginal_dungeon_list": 13,
+    "near_miss_vr_rank": 2,
+    "sweep_dead_after_clear": 2,
+    "dungeon_unrankable": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_092958_daily_dungeon_fake3"
+  },
   {
    "ts": "2026-09-19T09:28:47",
    "script": "joint_team_daily_quest",
@@ -7037,28 +7053,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260918_081411_mail_nova"
-  },
-  {
-   "ts": "2026-09-18T08:14:10",
-   "script": "dailyclaim",
-   "account": "nova",
-   "rc": 0,
-   "secs": 31,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_081339_dailyclaim_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 34142,
+  "now": 34266,
   "segments": [
    {
     "b": 29300,
@@ -8104,7 +8104,27 @@
     "login": null,
     "handoff": 34132,
     "rc": null,
-    "e": 34142
+    "e": 34194
+   },
+   {
+    "b": 34194,
+    "a": "fake3",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 34198,
+    "rc": 0,
+    "e": 34247,
+    "secs": 47,
+    "why": ""
+   },
+   {
+    "b": 34247,
+    "a": "fake3",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 34248,
+    "rc": null,
+    "e": 34266
    }
   ],
   "idle": []
@@ -8291,8 +8311,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 7,
-    "minutes": 2.4,
+    "runs": 8,
+    "minutes": 3.2,
     "failed": 1
    },
    "pokemon_home": {
