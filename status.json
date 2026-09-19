@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-19T23:35:42.414887",
+ "generatedAt": "2026-09-19T23:37:45.824961",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -473,6 +473,12 @@
  },
  "disabled": [
   {
+   "account": "fake1",
+   "task": "hoopa",
+   "since": "2026-09-19T23:37:18",
+   "why": "lost a fight while climbing — the result card says the fight was lost"
+  },
+  {
    "account": "fake2",
    "task": "story",
    "since": "2026-09-19T23:24:53",
@@ -606,6 +612,19 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T23:37:18",
+   "script": "hoopa",
+   "account": "fake1",
+   "rc": 2,
+   "secs": 132,
+   "stats": {},
+   "incomplete": [
+    "lost a fight while climbing — the result card says the fight was lost"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-19T23:28:51",
    "script": "story",
@@ -7022,25 +7041,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_145404_faction_fake1"
-  },
-  {
-   "ts": "2026-09-18T14:34:08",
-   "script": "hoopa",
-   "account": "fake4",
-   "rc": 2,
-   "secs": 224,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 84942,
+  "now": 85066,
   "segments": [
    {
     "b": 29300,
@@ -11293,7 +11299,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 84942,
+    "e": 85066,
     "secs": 102,
     "why": ""
    }
@@ -11899,6 +11905,12 @@
   },
   {
    "account": "fake1",
+   "task": "hoopa",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "at": "2026-09-19T23:37:18"
+  },
+  {
+   "account": "fake1",
    "task": "joint_battle",
    "why": null,
    "at": null
@@ -12499,6 +12511,15 @@
    "enable": true
   },
   {
+   "account": "fake1",
+   "task": "hoopa",
+   "kind": "climb",
+   "since": "2026-09-19T23:37:18",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
+   "enable": true
+  },
+  {
    "account": "fake3",
    "task": "hoopa",
    "kind": "climb",
@@ -13007,7 +13028,7 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-19",
-   "summary": "12 of 14 dailies done · 2 not available today",
+   "summary": "12 of 14 dailies done · 1 switched off · 3 not available today",
    "done": 12,
    "owed": 14,
    "open": [
@@ -13034,11 +13055,21 @@
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_090426_daily_dungeon_fake1__KEEP_0012_090449_dd_no_setform.png"
     }
    ],
-   "off": [],
+   "off": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-19T23:37:18"
+    }
+   ],
    "unavailable": [
     {
      "task": "faction",
      "why": "tower_locked"
+    },
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost"
     },
     {
      "task": "joint_battle",
