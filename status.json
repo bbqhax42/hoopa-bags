@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T09:31:05.612902",
+ "generatedAt": "2026-09-19T09:33:08.944185",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "pokemon_home",
-  "since": "09:30:47"
+  "mode": "combat_daily",
+  "since": "09:33:02"
  },
  "grid": {
   "tasks": [
@@ -182,8 +182,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "⏰",
      "·",
@@ -441,9 +441,9 @@
   ]
  },
  "counts": {
-  "done": 63,
-  "todo": 130,
-  "gaveUp": 5,
+  "done": 64,
+  "todo": 128,
+  "gaveUp": 6,
   "unavailable": 5,
   "windowed": 34
  },
@@ -631,6 +631,49 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T09:33:01",
+   "script": "combat_daily",
+   "account": "fake3",
+   "rc": 1,
+   "secs": 107,
+   "stats": {
+    "marginal_afk_yield": 1,
+    "near_miss_afk_rewards": 1,
+    "marginal_afk_rewards": 1,
+    "refused_quick_bar": 1,
+    "adv_overflow": 1,
+    "marginal_battle_victory_confirm": 1,
+    "near_miss_vr_rank": 1,
+    "upgrade_blocked_by_first_topup": 1,
+    "upgrade_no_change": 1,
+    "incomplete": 1,
+    "title_reread_named": 1,
+    "left_outstanding": 2
+   },
+   "incomplete": [
+    "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   ],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 os a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260919_093113_combat_daily_fake3"
+  },
+  {
+   "ts": "2026-09-19T09:31:08",
+   "script": "pokemon_home",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 20,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_093048_pokemon_home_fake3"
+  },
   {
    "ts": "2026-09-19T09:30:46",
    "script": "daily_dungeon",
@@ -7022,43 +7065,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_081537_daily_dungeon_nova"
-  },
-  {
-   "ts": "2026-09-18T08:14:54",
-   "script": "joint_team_daily_quest",
-   "account": "nova",
-   "rc": 0,
-   "secs": 37,
-   "stats": {
-    "panel_swipes": 2,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_081416_joint_team_daily_quest_nova"
-  },
-  {
-   "ts": "2026-09-18T08:14:15",
-   "script": "mail",
-   "account": "nova",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260918_081411_mail_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 34266,
+  "now": 34389,
   "segments": [
    {
     "b": 29300,
@@ -8123,13 +8135,46 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 34248,
-    "rc": null,
-    "e": 34266
+    "rc": 0,
+    "e": 34269,
+    "secs": 20,
+    "why": ""
+   },
+   {
+    "b": 34269,
+    "a": "fake3",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34273,
+    "rc": 1,
+    "e": 34382,
+    "secs": 107,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
+   },
+   {
+    "b": 34382,
+    "a": "fake3",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34382,
+    "rc": 1,
+    "e": 34389,
+    "secs": 107,
+    "why": "combat_daily: upgrade a Pokemon: Level Up did nothing"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T09:33:01",
+   "account": "fake3",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 107,
+   "why": "combat_daily: upgrade a Pokemon: Level Up did nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_093113_combat_daily_fake3__KEEP_0145_093240_upgrade_no_change.png"
+  },
   {
    "ts": "2026-09-19T09:23:53",
    "account": "fake2",
@@ -8288,7 +8333,7 @@
   "since": "2026-09-19T08:00",
   "switches": 7,
   "relogMinutes": 3.6,
-  "retries": 20,
+  "retries": 21,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -8316,14 +8361,14 @@
     "failed": 1
    },
    "pokemon_home": {
-    "runs": 6,
-    "minutes": 7.6,
+    "runs": 7,
+    "minutes": 8.0,
     "failed": 0
    },
    "combat_daily": {
-    "runs": 10,
-    "minutes": 11.6,
-    "failed": 6
+    "runs": 11,
+    "minutes": 13.4,
+    "failed": 7
    },
    "victory_road": {
     "runs": 6,
@@ -8544,11 +8589,7 @@
    "lucifer1"
   ]
  },
- "phase": {
-  "kind": "day",
-  "since": "09:12:38",
-  "until": "18:00"
- },
+ "phase": null,
  "names": {
   "fake1": "Roflmao123",
   "fake2": "Random713",
