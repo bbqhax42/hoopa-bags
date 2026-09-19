@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T00:23:03.255645",
+ "generatedAt": "2026-09-20T00:25:06.744153",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "fake3",
   "mode": "story",
-  "since": "00:21:27"
+  "since": "00:23:12"
  },
  "grid": {
   "tasks": [
@@ -515,6 +515,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "smurf",
+   "task": "story",
+   "since": "2026-09-20T00:23:12",
+   "why": "lost at stage 11 after 10 clear(s) — the next stage needs a stronger team"
+  },
+  {
    "account": "test1",
    "task": "hoopa",
    "since": "2026-09-18T11:58:18",
@@ -607,11 +613,30 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-20T00:21:10.475675",
+  "label": "fake3",
+  "at": "2026-09-20T00:23:29.490824",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T00:23:12",
+   "script": "story",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 99,
+   "stats": {
+    "skip_retry": 11,
+    "afk_card": 1,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 10
+   },
+   "incomplete": [
+    "story: lost at stage 11 after 10 clear(s) — the next stage needs a stronger team"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260920_002133_story_smurf"
+  },
   {
    "ts": "2026-09-20T00:08:11",
    "script": "story",
@@ -7044,25 +7069,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_145711_faction_fake7"
-  },
-  {
-   "ts": "2026-09-18T14:56:39",
-   "script": "faction",
-   "account": "fake6",
-   "rc": 2,
-   "secs": 7,
-   "stats": {
-    "tower_locked": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_145631_faction_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 87783,
+  "now": 87907,
   "segments": [
    {
     "b": 29300,
@@ -11315,7 +11327,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 87783,
+    "e": 87907,
     "secs": 102,
     "why": ""
    }
@@ -11794,9 +11806,9 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 163,
-  "relogMinutes": 48.9,
-  "retries": 66,
+  "switches": 164,
+  "relogMinutes": 49.3,
+  "retries": 67,
   "tasks": {
    "island_challenge": {
     "runs": 15,
@@ -11879,9 +11891,9 @@
     "failed": 5
    },
    "story": {
-    "runs": 17,
-    "minutes": 25.5,
-    "failed": 2
+    "runs": 18,
+    "minutes": 27.2,
+    "failed": 3
    },
    "guild_war": {
     "runs": 18,
@@ -12221,10 +12233,6 @@
     "mode": "story"
    },
    {
-    "account": "smurf",
-    "mode": "story"
-   },
-   {
     "account": "skosmurf",
     "mode": "story"
    },
@@ -12239,6 +12247,10 @@
    {
     "account": "fake4",
     "mode": "story"
+   },
+   {
+    "account": "fake6",
+    "mode": "story"
    }
   ],
   "held": {}
@@ -12248,12 +12260,12 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 159,
-   "medianSec": 16,
+   "n": 160,
+   "medianSec": 16.0,
    "picker": {
-    "n": 110,
-    "medianSec": 16.0,
-    "jumps": 55
+    "n": 111,
+    "medianSec": 16,
+    "jumps": 56
    },
    "typed": {
     "n": 27,
@@ -12367,6 +12379,9 @@
   }
  },
  "ledger": {
+  "smurf": {
+   "pillar/story stages cleared": 10
+  },
   "fake4": {
    "pillar/story stages cleared": 48
   }
@@ -12443,6 +12458,15 @@
    "since": "2026-09-18T11:58:18",
    "why": "lost a fight while climbing — the result card says the fight was lost",
    "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
+   "enable": true
+  },
+  {
+   "account": "smurf",
+   "task": "story",
+   "kind": "story",
+   "since": "2026-09-20T00:23:12",
+   "why": "lost at stage 11 after 10 clear(s) — the next stage needs a stronger team",
+   "action": "story stopped at a lost stage — needs a stronger team",
    "enable": true
   }
  ],
@@ -12744,7 +12768,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-19",
-   "summary": "13 of 17 dailies done · gave up on claims, bash · 3 not available today",
+   "summary": "13 of 17 dailies done · gave up on claims, bash · 1 switched off · 3 not available today",
    "done": 13,
    "owed": 17,
    "open": [
@@ -12797,7 +12821,13 @@
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_084406_dailyclaim_smurf__KEEP_0004_084521_mythic_no_open.png"
     }
    ],
-   "off": [],
+   "off": [
+    {
+     "task": "story",
+     "why": "lost at stage 11 after 10 clear(s) — the next stage needs a stronger team",
+     "since": "2026-09-20T00:23:12"
+    }
+   ],
    "unavailable": [
     {
      "task": "faction",
@@ -12812,7 +12842,9 @@
      "why": null
     }
    ],
-   "spent": {},
+   "spent": {
+    "pillar/story stages cleared": 10
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "20/20",
@@ -12855,6 +12887,11 @@
      "day": "2026-09-19",
      "done": 18,
      "failed": 9
+    },
+    {
+     "day": "2026-09-20",
+     "done": 0,
+     "failed": 1
     }
    ]
   },
