@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T12:45:03.979767",
+ "generatedAt": "2026-09-19T12:47:07.150698",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "test1",
+  "mode": "dailyclaim",
+  "since": "12:46:36"
  },
  "grid": {
   "tasks": [
@@ -378,8 +378,8 @@
      "✓",
      "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 159,
-  "todo": 65,
+  "done": 161,
+  "todo": 63,
   "gaveUp": 6,
   "unavailable": 10,
   "windowed": 18
@@ -651,11 +651,53 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-09-19T12:41:23.643960",
+  "label": "test1",
+  "at": "2026-09-19T12:46:56.604137",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T12:46:36",
+   "script": "guild_war",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 73,
+   "stats": {
+    "marginal_last_hit": 3,
+    "near_miss_last_hit": 5,
+    "near_miss_vr_rank": 3,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_124523_guild_war_lucifer2"
+  },
+  {
+   "ts": "2026-09-19T12:45:22",
+   "script": "paradise",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 221,
+   "stats": {
+    "marginal_paradise_hub": 2,
+    "explore_clicks": 122,
+    "pass_claims": 7,
+    "upgraded_energy_drink": 2,
+    "upgraded_small_radar": 1,
+    "upgraded_sports_gloves": 1,
+    "dex_milestones": 4,
+    "dex_activated": 9,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "5/15"
+   },
+   "dir": "debug_runs/20260919_124140_paradise_lucifer2"
+  },
   {
    "ts": "2026-09-19T12:41:38",
    "script": "victory_road",
@@ -7108,52 +7150,12 @@
     "stamina": "1/15"
    },
    "dir": "debug_runs/20260918_103033_paradise_lucifer1"
-  },
-  {
-   "ts": "2026-09-18T10:30:31",
-   "script": "victory_road",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_103023_victory_road_lucifer1"
-  },
-  {
-   "ts": "2026-09-18T10:30:22",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 119,
-   "stats": {
-    "marginal_afk_rewards": 3,
-    "near_miss_afk_rewards": 1,
-    "near_miss_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 1,
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_pokemon_upgrade": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "title_reread_named": 4
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 8/8 +) a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260918_102823_combat_daily_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 45904,
+  "now": 46027,
   "segments": [
    {
     "b": 29300,
@@ -9841,8 +9843,33 @@
     "s": "paradise",
     "login": null,
     "handoff": 45699,
+    "rc": 0,
+    "e": 45922,
+    "secs": 221,
+    "why": ""
+   },
+   {
+    "b": 45922,
+    "a": "lucifer2",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 45923,
+    "rc": 0,
+    "e": 45996,
+    "secs": 73,
+    "why": ""
+   },
+   {
+    "b": 45996,
+    "a": "test1",
+    "s": "dailyclaim",
+    "login": [
+     45997,
+     46016
+    ],
+    "handoff": 46022,
     "rc": null,
-    "e": 45904
+    "e": 46027
    }
   ],
   "idle": []
@@ -10220,8 +10247,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 40,
-  "relogMinutes": 17.6,
+  "switches": 41,
+  "relogMinutes": 18.0,
   "retries": 47,
   "tasks": {
    "island_challenge": {
@@ -10265,8 +10292,8 @@
     "failed": 4
    },
    "paradise": {
-    "runs": 16,
-    "minutes": 45.6,
+    "runs": 17,
+    "minutes": 49.3,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -10310,8 +10337,8 @@
     "failed": 1
    },
    "guild_war": {
-    "runs": 8,
-    "minutes": 5.5,
+    "runs": 9,
+    "minutes": 6.7,
     "failed": 0
    }
   }
