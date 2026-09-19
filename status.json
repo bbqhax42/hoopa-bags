@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T14:35:59.193312",
+ "generatedAt": "2026-09-19T14:38:03.197074",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "sky_pillar",
-  "since": "14:34:48"
+  "account": "dre",
+  "mode": "run_pvp_ranked",
+  "since": "14:37:09"
  },
  "grid": {
   "tasks": [
@@ -430,10 +430,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -449,7 +449,7 @@
      "✗2",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 227,
-  "todo": 6,
+  "done": 230,
+  "todo": 3,
   "gaveUp": 11,
   "unavailable": 18,
   "windowed": 0
@@ -657,11 +657,55 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-19T14:33:23.368807",
+  "label": "dre",
+  "at": "2026-09-19T14:36:54.176798",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T14:37:08",
+   "script": "rank_match",
+   "account": "dre",
+   "rc": 0,
+   "secs": 4,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "attempts_before": 0,
+    "matches": 0,
+    "gifts": 0,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260919_143704_rank_match_dre"
+  },
+  {
+   "ts": "2026-09-19T14:36:27",
+   "script": "weekend_bash",
+   "account": "deno",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_143627_weekend_bash_deno"
+  },
+  {
+   "ts": "2026-09-19T14:36:23",
+   "script": "sky_pillar",
+   "account": "deno",
+   "rc": 0,
+   "secs": 95,
+   "stats": {
+    "stages_cleared": 4,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 26,
+    "stage": 10
+   },
+   "dir": "debug_runs/20260919_143448_sky_pillar_deno"
+  },
   {
    "ts": "2026-09-19T14:34:47",
    "script": "collect_hoopa_keys",
@@ -7098,64 +7142,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_125411_championship_jeff"
-  },
-  {
-   "ts": "2026-09-18T12:48:14",
-   "script": "hoopa",
-   "account": "fake6",
-   "rc": 2,
-   "secs": 52,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-18T12:35:29",
-   "script": "story",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 167,
-   "stats": {
-    "skip_retry": 1,
-    "setform_door": 1,
-    "battle_timeout": 1,
-    "incomplete": 1,
-    "stages_cleared": 1
-   },
-   "incomplete": [
-    "story: stage 2 never produced a result"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260918_123242_story_fake5"
-  },
-  {
-   "ts": "2026-09-18T12:32:11",
-   "script": "guild_war",
-   "account": "chris",
-   "rc": 0,
-   "secs": 57,
-   "stats": {
-    "near_miss_vr_rank": 4,
-    "marginal_battle_over": 1,
-    "near_miss_battle_over": 1,
-    "near_miss_tips_header": 66,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_never_entered": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_123114_guild_war_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 52559,
+  "now": 52683,
   "segments": [
    {
     "b": 29300,
@@ -10998,8 +10990,44 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 52488,
+    "rc": 0,
+    "e": 52584,
+    "secs": 95,
+    "why": ""
+   },
+   {
+    "b": 52584,
+    "a": "deno",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 52587,
+    "rc": 0,
+    "e": 52587,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 52587,
+    "a": "dre",
+    "s": "rank_match",
+    "login": [
+     52588,
+     52614
+    ],
+    "handoff": 52624,
+    "rc": 0,
+    "e": 52629,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 52629,
+    "a": "dre",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 52629,
     "rc": null,
-    "e": 52559
+    "e": 52683
    }
   ],
   "idle": []
@@ -11467,8 +11495,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 65,
-  "relogMinutes": 27.7,
+  "switches": 66,
+  "relogMinutes": 28.4,
   "retries": 58,
   "tasks": {
    "island_challenge": {
@@ -11527,12 +11555,12 @@
     "failed": 2
    },
    "sky_pillar": {
-    "runs": 16,
-    "minutes": 15.7,
+    "runs": 17,
+    "minutes": 17.3,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 9,
+    "runs": 10,
     "minutes": 0.3,
     "failed": 4
    },
@@ -11562,8 +11590,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 18,
-    "minutes": 13.0,
+    "runs": 19,
+    "minutes": 13.1,
     "failed": 0
    }
   }
@@ -11839,39 +11867,21 @@
  "queue": {
   "next": [
    {
-    "account": "deno",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-19T14:35"
-   },
-   {
-    "account": "deno",
-    "task": "weekend_bash",
-    "startsIn": 1.0,
-    "eta": "2026-09-19T14:36"
-   },
-   {
-    "account": "dre",
-    "task": "rank_match",
-    "startsIn": 1.4,
-    "eta": "2026-09-19T14:37"
-   },
-   {
     "account": "dre",
     "task": "run_pvp_ranked",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-19T14:38"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 3.2,
+    "startsIn": 1.1,
     "eta": "2026-09-19T14:39"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 3.4,
+    "startsIn": 1.2,
     "eta": "2026-09-19T14:39"
    }
   ],
@@ -11909,8 +11919,8 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 64,
-   "medianSec": 19.0,
+   "n": 65,
+   "medianSec": 19,
    "picker": {
     "n": 24,
     "medianSec": 16.0,
@@ -11921,8 +11931,8 @@
     "medianSec": 19
    },
    "miss": {
-    "n": 13,
-    "medianSec": 20
+    "n": 14,
+    "medianSec": 22.5
    }
   }
  },
@@ -12003,7 +12013,8 @@
   "deno": {
    "mailUnread": 0,
    "paradiseStamina": "4/14",
-   "rank": 8
+   "rank": 8,
+   "pillar": "floor 26 stage 10"
   },
   "dre": {
    "mailUnread": 0,
@@ -12026,6 +12037,15 @@
   }
  },
  "ledger": {
+  "deno": {
+   "pillar/story stages cleared": 4,
+   "ranked attempts": 1,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 1
+  },
   "lucifer2": {
    "pillar/story stages cleared": 2,
    "ranked attempts": 1,
@@ -12109,14 +12129,6 @@
    "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
-  },
-  "deno": {
-   "ranked attempts": 1,
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 1
   },
   "test1": {
    "pillar/story stages cleared": 3,
