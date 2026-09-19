@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T14:04:58.280997",
+ "generatedAt": "2026-09-19T14:07:02.377933",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "island_challenge",
-  "since": "14:04:52"
+  "account": "fake1",
+  "mode": "joint_battle",
+  "since": "14:06:55"
  },
  "grid": {
   "tasks": [
@@ -89,7 +89,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "⊘",
-     "⏳"
+     "💤"
     ]
    },
    {
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 198,
-  "todo": 44,
+  "done": 199,
+  "todo": 43,
   "gaveUp": 7,
   "unavailable": 13,
   "windowed": 0
@@ -578,11 +578,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 3,
-   "stamina": 10,
-   "staminaMax": 10,
-   "staminaAt": "2026-09-19T11:04:35",
-   "nextAt": "2026-09-19T14:04:40"
+   "fights": 6,
+   "stamina": 1,
+   "staminaMax": 1,
+   "staminaAt": "2026-09-19T14:05:46",
+   "nextAt": "2026-09-19T17:59:51"
   },
   {
    "account": "jeff",
@@ -594,6 +594,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-19T17:59",
   "jeff|island_challenge": "2026-09-19T14:44"
  },
  "ownerOnline": [],
@@ -656,11 +657,48 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-19T14:04:06.667033",
+  "label": "chris",
+  "at": "2026-09-19T14:05:06.939574",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T14:06:55",
+   "script": "rank_match",
+   "account": "chris",
+   "rc": 0,
+   "secs": 57,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 2,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260919_140557_rank_match_chris"
+  },
+  {
+   "ts": "2026-09-19T14:05:51",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 36,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 1,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260919_140515_island_challenge_chris"
+  },
   {
    "ts": "2026-09-19T14:04:31",
    "script": "joint_team_daily_quest",
@@ -7140,45 +7178,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_112009_joint_team_daily_quest_dre"
-  },
-  {
-   "ts": "2026-09-18T11:20:08",
-   "script": "mail",
-   "account": "dre",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260918_112004_mail_dre"
-  },
-  {
-   "ts": "2026-09-18T11:20:03",
-   "script": "dailyclaim",
-   "account": "dre",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_111930_dailyclaim_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 50698,
+  "now": 50822,
   "segments": [
    {
     "b": 29300,
@@ -10451,11 +10456,36 @@
     "s": "island_challenge",
     "login": [
      50693,
+     50706
+    ],
+    "handoff": 50715,
+    "rc": 5,
+    "e": 50752,
+    "secs": 36,
+    "why": ""
+   },
+   {
+    "b": 50752,
+    "a": "chris",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 50757,
+    "rc": 0,
+    "e": 50815,
+    "secs": 57,
+    "why": ""
+   },
+   {
+    "b": 50815,
+    "a": "fake1",
+    "s": "joint_battle",
+    "login": [
+     50816,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 50698
+    "e": 50822
    }
   ],
   "idle": []
@@ -10878,14 +10908,14 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 50,
-  "relogMinutes": 21.4,
-  "retries": 52,
+  "switches": 51,
+  "relogMinutes": 21.7,
+  "retries": 53,
   "tasks": {
    "island_challenge": {
-    "runs": 6,
-    "minutes": 2.6,
-    "failed": 6
+    "runs": 7,
+    "minutes": 3.2,
+    "failed": 7
    },
    "dailyclaim": {
     "runs": 19,
@@ -10973,8 +11003,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 1,
-    "minutes": 0.9,
+    "runs": 2,
+    "minutes": 1.9,
     "failed": 0
    }
   }
@@ -11224,79 +11254,79 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
+    "account": "fake1",
     "task": "rank_match",
     "startsIn": 0.0,
-    "eta": "2026-09-19T14:04"
-   },
-   {
-    "account": "fake1",
-    "task": "joint_battle",
-    "startsIn": 1.3,
-    "eta": "2026-09-19T14:06"
-   },
-   {
-    "account": "fake1",
-    "task": "rank_match",
-    "startsIn": 3.3,
-    "eta": "2026-09-19T14:08"
+    "eta": "2026-09-19T14:07"
    },
    {
     "account": "fake1",
     "task": "guild_war",
-    "startsIn": 4.2,
-    "eta": "2026-09-19T14:09"
+    "startsIn": 0.9,
+    "eta": "2026-09-19T14:07"
    },
    {
     "account": "fake3",
     "task": "combat_daily",
-    "startsIn": 5.3,
+    "startsIn": 2.1,
+    "eta": "2026-09-19T14:09"
+   },
+   {
+    "account": "fake3",
+    "task": "rank_match",
+    "startsIn": 3.3,
     "eta": "2026-09-19T14:10"
    },
    {
     "account": "fake3",
-    "task": "rank_match",
-    "startsIn": 6.5,
+    "task": "guild_war",
+    "startsIn": 4.2,
     "eta": "2026-09-19T14:11"
    },
    {
-    "account": "fake3",
-    "task": "guild_war",
-    "startsIn": 7.4,
+    "account": "nova",
+    "task": "rank_match",
+    "startsIn": 5.4,
     "eta": "2026-09-19T14:12"
    },
    {
     "account": "nova",
-    "task": "rank_match",
-    "startsIn": 8.6,
+    "task": "run_pvp_ranked",
+    "startsIn": 6.3,
     "eta": "2026-09-19T14:13"
    },
    {
     "account": "nova",
-    "task": "run_pvp_ranked",
-    "startsIn": 9.5,
-    "eta": "2026-09-19T14:14"
-   },
-   {
-    "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 10.5,
-    "eta": "2026-09-19T14:15"
+    "startsIn": 7.4,
+    "eta": "2026-09-19T14:14"
    },
    {
     "account": "jeff",
     "task": "rank_match",
-    "startsIn": 10.9,
-    "eta": "2026-09-19T14:15"
+    "startsIn": 7.8,
+    "eta": "2026-09-19T14:14"
    },
    {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 12.2,
+    "startsIn": 9.1,
+    "eta": "2026-09-19T14:16"
+   },
+   {
+    "account": "fake2",
+    "task": "guild_war",
+    "startsIn": 10.1,
     "eta": "2026-09-19T14:17"
+   },
+   {
+    "account": "fake4",
+    "task": "rank_match",
+    "startsIn": 11.2,
+    "eta": "2026-09-19T14:18"
    }
   ],
-  "more": 33,
+  "more": 31,
   "fillers": [
    {
     "account": "fake5",
@@ -11330,11 +11360,11 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 48,
-   "medianSec": 19.0,
+   "n": 49,
+   "medianSec": 19,
    "picker": {
-    "n": 15,
-    "medianSec": 16,
+    "n": 16,
+    "medianSec": 15.5,
     "jumps": 1
    },
    "typed": {
@@ -11349,9 +11379,9 @@
  },
  "progress": {
   "dre": {
-   "mailUnread": 0,
    "paradiseStamina": "0/17",
-   "rank": 2
+   "rank": 2,
+   "mailUnread": 0
   },
   "fake3": {
    "pillar": "floor 3 stage 4",
@@ -11372,8 +11402,8 @@
    "pillar": "floor 147 stage 5"
   },
   "chris": {
-   "islandFights": 3,
-   "islandStamina": 10,
+   "islandFights": 6,
+   "islandStamina": 1,
    "mailUnread": 0,
    "paradiseStamina": "5/15",
    "rank": 1,
@@ -11446,6 +11476,17 @@
   }
  },
  "ledger": {
+  "chris": {
+   "island fights": 12,
+   "guild war attempts": 1,
+   "faction sweeps": 2,
+   "pillar/story stages cleared": 4,
+   "ranked attempts": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "smurf": {
    "guild war attempts": 1,
    "misty battles won": 23,
@@ -11456,17 +11497,6 @@
    "adventure energy": 1,
    "mail claimed": 1,
    "daily claims": 2
-  },
-  "chris": {
-   "guild war attempts": 1,
-   "faction sweeps": 2,
-   "pillar/story stages cleared": 4,
-   "ranked attempts": 1,
-   "island fights": 9,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
   },
   "dre": {
    "guild war attempts": 1,
