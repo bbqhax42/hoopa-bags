@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T08:45:53.776243",
+ "generatedAt": "2026-09-19T08:47:57.031384",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "joint_team_daily_quest",
-  "since": "08:45:28"
+  "mode": "combat_daily",
+  "since": "08:47:18"
  },
  "grid": {
   "tasks": [
@@ -107,10 +107,10 @@
     "cells": [
      "✗2",
      "✓",
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "⊘",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -441,10 +441,10 @@
   ]
  },
  "counts": {
-  "done": 28,
-  "todo": 170,
+  "done": 31,
+  "todo": 166,
   "gaveUp": 3,
-  "unavailable": 2,
+  "unavailable": 3,
   "windowed": 34
  },
  "disabled": [
@@ -501,12 +501,6 @@
    "task": "sky_pillar",
    "since": "2026-09-18T09:51:06",
    "why": "lost floor/stage after 0 clear(s) — the team cannot take the next stage"
-  },
-  {
-   "account": "fake5",
-   "task": "story",
-   "since": "2026-09-18T13:00:18",
-   "why": "stage 1 never produced a result in 150s — the battle ran long or ended on a screen story.py does not know (frame kept)"
   },
   {
    "account": "fake6",
@@ -637,6 +631,44 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T08:47:18",
+   "script": "pokemon_home",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 17,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_084701_pokemon_home_smurf"
+  },
+  {
+   "ts": "2026-09-19T08:46:59",
+   "script": "daily_dungeon",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_084644_daily_dungeon_smurf"
+  },
+  {
+   "ts": "2026-09-19T08:46:00",
+   "script": "joint_team_daily_quest",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_084529_joint_team_daily_quest_smurf"
+  },
   {
    "ts": "2026-09-19T08:45:27",
    "script": "mail",
@@ -6983,57 +7015,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260918_021126_worldboss_fake7"
-  },
-  {
-   "ts": "2026-09-18T02:11:26",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_021020_worldboss_fake6"
-  },
-  {
-   "ts": "2026-09-18T02:10:20",
-   "script": "worldboss",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_020915_worldboss_fake5"
-  },
-  {
-   "ts": "2026-09-18T02:09:14",
-   "script": "worldboss",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260918_020809_worldboss_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 31554,
+  "now": 31677,
   "segments": [
    {
     "b": 29300,
@@ -7531,8 +7518,59 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 31529,
+    "rc": 0,
+    "e": 31561,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 31561,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 31563,
     "rc": null,
-    "e": 31554
+    "e": 31584
+   },
+   {
+    "b": 31584,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 31587,
+    "rc": null,
+    "e": 31601
+   },
+   {
+    "b": 31601,
+    "a": "smurf",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 31603,
+    "rc": 0,
+    "e": 31619,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 31619,
+    "a": "smurf",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 31620,
+    "rc": 0,
+    "e": 31638,
+    "secs": 17,
+    "why": ""
+   },
+   {
+    "b": 31638,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 31639,
+    "rc": null,
+    "e": 31677
    }
   ],
   "idle": []
@@ -7642,18 +7680,18 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 3,
-    "minutes": 1.6,
+    "runs": 4,
+    "minutes": 2.1,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 3,
-    "minutes": 0.8,
+    "runs": 4,
+    "minutes": 1.0,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 3,
-    "minutes": 6.6,
+    "runs": 4,
+    "minutes": 6.9,
     "failed": 0
    },
    "combat_daily": {
@@ -7710,6 +7748,12 @@
    "task": "run_pvp_ranked",
    "why": "map_second_tap",
    "at": "2026-09-19T08:33:43"
+  },
+  {
+   "account": "smurf",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
   }
  ],
  "windows": {
