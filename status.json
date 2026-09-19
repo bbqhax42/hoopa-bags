@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T02:51:11.692049",
+ "generatedAt": "2026-09-20T02:53:15.189370",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake1",
+  "mode": "story",
+  "since": "02:53:08"
  },
  "grid": {
   "tasks": [
@@ -531,6 +531,12 @@
    "task": "hoopa",
    "since": "2026-09-18T11:58:18",
    "why": "lost a fight while climbing — the result card says the fight was lost"
+  },
+  {
+   "account": "test1",
+   "task": "story",
+   "since": "2026-09-20T02:52:29",
+   "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable"
   }
  ],
  "islandChallenge": [
@@ -619,11 +625,27 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-20T02:49:56.819145",
+  "label": "fake2",
+  "at": "2026-09-20T02:52:47.369727",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T02:52:29",
+   "script": "story",
+   "account": "test1",
+   "rc": 2,
+   "secs": 5,
+   "stats": {
+    "stage_never_started": 1,
+    "stage_start_retry": 1,
+    "story_locked": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_025223_story_test1"
+  },
   {
    "ts": "2026-09-20T02:48:13",
    "script": "island_challenge",
@@ -7068,29 +7090,12 @@
     "fights_today": 0
    },
    "dir": "debug_runs/20260919_080822_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-19T06:56:07",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 34,
-   "stats": {
-    "fights": 2,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 30,
-    "fights_today": 17
-   },
-   "dir": "debug_runs/20260919_065533_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 96672,
+  "now": 96795,
   "segments": [
    {
     "b": 29300,
@@ -11343,7 +11348,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 96672,
+    "e": 96795,
     "secs": 102,
     "why": ""
    }
@@ -11822,8 +11827,8 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 211,
-  "relogMinutes": 58.5,
+  "switches": 215,
+  "relogMinutes": 58.9,
   "retries": 70,
   "tasks": {
    "island_challenge": {
@@ -11907,8 +11912,8 @@
     "failed": 5
    },
    "story": {
-    "runs": 39,
-    "minutes": 57.9,
+    "runs": 40,
+    "minutes": 58.0,
     "failed": 3
    },
    "guild_war": {
@@ -12084,6 +12089,12 @@
    "task": "rank_match",
    "why": "near_miss_go_button, rank_locked",
    "at": "2026-09-19T14:33:00"
+  },
+  {
+   "account": "test1",
+   "task": "story",
+   "why": "stage_never_started, stage_start_retry, story_locked",
+   "at": "2026-09-20T02:52:29"
   }
  ],
  "windows": {
@@ -12245,12 +12256,12 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 208,
-   "medianSec": 16.0,
+   "n": 211,
+   "medianSec": 16,
    "picker": {
-    "n": 154,
-    "medianSec": 16.0,
-    "jumps": 80
+    "n": 157,
+    "medianSec": 16,
+    "jumps": 83
    },
    "typed": {
     "n": 27,
@@ -12400,6 +12411,15 @@
    "kind": "gym",
    "since": "2026-09-20T01:38:41",
    "why": "Unlocked after clearing Victory Road Veridian Gym — clear that by hand, then re-enable",
+   "action": "clear that gym by hand, then switch story back on",
+   "enable": true
+  },
+  {
+   "account": "test1",
+   "task": "story",
+   "kind": "gym",
+   "since": "2026-09-20T02:52:29",
+   "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
   },
@@ -13840,7 +13860,7 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-19",
-   "summary": "11 of 14 dailies done · 1 switched off · 3 not available today",
+   "summary": "11 of 14 dailies done · 2 switched off · 4 not available today",
    "done": 11,
    "owed": 14,
    "open": [
@@ -13863,6 +13883,11 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-18T11:58:18"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
+     "since": "2026-09-20T02:52:29"
     }
    ],
    "unavailable": [
@@ -13877,6 +13902,10 @@
     {
      "task": "rank_match",
      "why": "near_miss_go_button, rank_locked"
+    },
+    {
+     "task": "story",
+     "why": "stage_never_started, stage_start_retry, story_locked"
     }
    ],
    "spent": {},
