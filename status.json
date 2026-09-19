@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T10:01:59.062617",
+ "generatedAt": "2026-09-19T10:04:01.934253",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
-  "mode": "story",
-  "since": "10:00:15"
+  "account": "smurf",
+  "mode": "hoopa",
+  "since": "10:02:57"
  },
  "grid": {
   "tasks": [
@@ -503,6 +503,12 @@
    "why": "lost floor/stage after 0 clear(s) — the team cannot take the next stage"
   },
   {
+   "account": "fake5",
+   "task": "story",
+   "since": "2026-09-19T10:02:56",
+   "why": "stage 1 never produced a result in 150s — the battle ran long or ended on a screen story.py does not know (frame kept)"
+  },
+  {
    "account": "fake6",
    "task": "hoopa",
    "since": "2026-09-18T12:48:14",
@@ -592,8 +598,8 @@
    "at": "2026-09-18T11:42:14"
   },
   "smurf": {
-   "keys": 28,
-   "at": "2026-09-18T17:53:47"
+   "keys": 29,
+   "at": "2026-09-19T10:03:27"
   },
   "fake5": {
    "keys": 78,
@@ -625,11 +631,31 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-19T09:51:02.834002",
+  "label": "smurf",
+  "at": "2026-09-19T10:03:16.573079",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T10:02:57",
+   "script": "story",
+   "account": "fake5",
+   "rc": 1,
+   "secs": 160,
+   "stats": {
+    "setform_door": 1,
+    "setform_autoformat": 1,
+    "battle_timeout": 1,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [
+    "story: stage 1 never produced a result"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260919_100016_story_fake5"
+  },
   {
    "ts": "2026-09-19T10:00:14",
    "script": "paradise",
@@ -7042,34 +7068,12 @@
     "daily_goal_claims": 3
    },
    "dir": "debug_runs/20260918_084958_run_pvp_ranked_chris"
-  },
-  {
-   "ts": "2026-09-18T08:49:56",
-   "script": "paradise",
-   "account": "chris",
-   "rc": 0,
-   "secs": 191,
-   "stats": {
-    "marginal_paradise_hub": 3,
-    "explore_clicks": 75,
-    "pass_claims": 5,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 1,
-    "dex_activated": 3,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "4/14"
-   },
-   "dir": "debug_runs/20260918_084645_paradise_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 36119,
+  "now": 36242,
   "segments": [
    {
     "b": 29300,
@@ -8510,13 +8514,36 @@
     "s": "story",
     "login": null,
     "handoff": 36015,
+    "rc": 1,
+    "e": 36177,
+    "secs": 160,
+    "why": "story: stage 1 never produced a result"
+   },
+   {
+    "b": 36177,
+    "a": "smurf",
+    "s": "hoopa",
+    "login": [
+     36178,
+     36196
+    ],
+    "handoff": 36204,
     "rc": null,
-    "e": 36119
+    "e": 36242
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T10:02:57",
+   "account": "fake5",
+   "task": "story",
+   "rc": 1,
+   "secs": 160,
+   "why": "story: stage 1 never produced a result",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_100016_story_fake5__KEEP_0006_100256_story_timeout_1.png"
+  },
   {
    "ts": "2026-09-19T09:56:25",
    "account": "fake5",
@@ -8718,9 +8745,9 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 9,
-  "relogMinutes": 4.7,
-  "retries": 25,
+  "switches": 10,
+  "relogMinutes": 5.1,
+  "retries": 26,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -8800,6 +8827,11 @@
    "misty_woods": {
     "runs": 1,
     "minutes": 0.3,
+    "failed": 1
+   },
+   "story": {
+    "runs": 1,
+    "minutes": 2.7,
     "failed": 1
    }
   }
