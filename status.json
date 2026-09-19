@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T12:59:31.409968",
+ "generatedAt": "2026-09-19T13:01:34.537518",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
-  "mode": "run_pvp_ranked",
-  "since": "12:59:16"
+  "account": "deno",
+  "mode": "dailyclaim",
+  "since": "13:01:31"
  },
  "grid": {
   "tasks": [
@@ -380,7 +380,7 @@
      "⏰",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 173,
-  "todo": 51,
+  "done": 174,
+  "todo": 50,
   "gaveUp": 6,
   "unavailable": 11,
   "windowed": 18
@@ -651,11 +651,48 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-19T12:57:45.136552",
+  "label": "lucifer2",
+  "at": "2026-09-19T12:59:35.529647",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T13:01:31",
+   "script": "run_pvp_ranked",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "ranked_fought": 8,
+    "free_attempts_spent": 1,
+    "rank_unreadable": 1,
+    "near_miss_buy_items": 1
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 5,
+    "daily_goal_claims": 0
+   },
+   "dir": "debug_runs/20260919_130027_run_pvp_ranked_lucifer2"
+  },
+  {
+   "ts": "2026-09-19T13:00:24",
+   "script": "run_pvp_ranked",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 40,
+   "stats": {
+    "ranked_fought": 2,
+    "picker_never_opened": 1,
+    "incomplete": 1,
+    "rank_unreadable": 1
+   },
+   "incomplete": [
+    "run_pvp_ranked: attempt 3 did not complete"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260919_125943_run_pvp_ranked_lucifer2"
+  },
   {
    "ts": "2026-09-19T12:59:15",
    "script": "run_pvp_ranked",
@@ -7125,49 +7162,12 @@
     "fights_today": 2
    },
    "dir": "debug_runs/20260918_104853_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-18T10:48:21",
-   "script": "paradise",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 233,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 101,
-    "pass_claims": 5,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 1,
-    "dex_milestones": 2,
-    "dex_activated": 4,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "4/14"
-   },
-   "dir": "debug_runs/20260918_104427_paradise_lucifer2"
-  },
-  {
-   "ts": "2026-09-18T10:44:26",
-   "script": "victory_road",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_104417_victory_road_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 46771,
+  "now": 46894,
   "segments": [
    {
     "b": 29300,
@@ -10033,16 +10033,50 @@
     "s": "run_pvp_ranked",
     "login": [
      46756,
+     46775
+    ],
+    "handoff": 46783,
+    "rc": 1,
+    "e": 46824,
+    "secs": 40,
+    "why": "run_pvp_ranked: attempt 3 did not complete"
+   },
+   {
+    "b": 46824,
+    "a": "lucifer2",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 46827,
+    "rc": 1,
+    "e": 46891,
+    "secs": 40,
+    "why": "run_pvp_ranked: attempt 3 did not complete"
+   },
+   {
+    "b": 46891,
+    "a": "deno",
+    "s": "dailyclaim",
+    "login": [
+     46892,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 46771
+    "e": 46894
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-19T13:00:24",
+   "account": "lucifer2",
+   "task": "run_pvp_ranked",
+   "rc": 1,
+   "secs": 40,
+   "why": "run_pvp_ranked: attempt 3 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260919_125943_run_pvp_ranked_lucifer2__KEEP_0002_130006_picker_never_opened_3.png"
+  },
   {
    "ts": "2026-09-19T12:32:56",
    "account": "lucifer2",
@@ -10415,9 +10449,9 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 43,
-  "relogMinutes": 18.4,
-  "retries": 47,
+  "switches": 44,
+  "relogMinutes": 18.9,
+  "retries": 48,
   "tasks": {
    "island_challenge": {
     "runs": 6,
@@ -10465,9 +10499,9 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 7,
-    "minutes": 7.2,
-    "failed": 0
+    "runs": 9,
+    "minutes": 8.9,
+    "failed": 1
    },
    "collect_hoopa_keys": {
     "runs": 14,
@@ -10719,11 +10753,7 @@
    "lucifer1"
   ]
  },
- "phase": {
-  "kind": "day",
-  "since": "12:40:57",
-  "until": "18:00"
- },
+ "phase": null,
  "names": {
   "fake1": "Roflmao123",
   "fake2": "Random713",
