@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T04:19:40.657349",
+ "generatedAt": "2026-09-20T04:21:43.888147",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "nova",
+  "mode": "hoopa",
+  "since": "04:20:43"
  },
  "grid": {
   "tasks": [
@@ -539,6 +539,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "skosmurf",
+   "task": "story",
+   "since": "2026-09-20T04:20:42",
+   "why": "lost at stage 1 after 0 clear(s) — the next stage needs a stronger team"
+  },
+  {
    "account": "smurf",
    "task": "story",
    "since": "2026-09-20T00:23:12",
@@ -643,11 +649,29 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-20T04:19:20.113437",
+  "label": "nova",
+  "at": "2026-09-20T04:20:59.162047",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T04:20:42",
+   "script": "story",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 26,
+   "stats": {
+    "skip_retry": 1,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [
+    "story: lost at stage 1 after 0 clear(s) — the next stage needs a stronger team"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260920_042016_story_skosmurf"
+  },
   {
    "ts": "2026-09-20T04:02:28",
    "script": "island_challenge",
@@ -7079,31 +7103,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_082121_collect_hoopa_keys_jeff"
-  },
-  {
-   "ts": "2026-09-19T08:21:20",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 93,
-   "stats": {
-    "ranked_fought": 10,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0,
-    "daily_goal_claimed": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 1,
-    "daily_goal_claims": 3
-   },
-   "dir": "debug_runs/20260919_081947_run_pvp_ranked_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 101980,
+  "now": 102104,
   "segments": [
    {
     "b": 29300,
@@ -7210,10 +7215,8 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 29987,
-    "rc": 0,
-    "e": 30081,
-    "secs": 93,
-    "why": ""
+    "rc": null,
+    "e": 30081
    },
    {
     "b": 30081,
@@ -11336,7 +11339,7 @@
     ],
     "handoff": 64515,
     "rc": 0,
-    "e": 101980,
+    "e": 102104,
     "secs": 102,
     "why": ""
    }
@@ -11806,9 +11809,9 @@
  ],
  "day": {
   "since": "2026-09-19T08:00",
-  "switches": 232,
-  "relogMinutes": 65.3,
-  "retries": 72,
+  "switches": 234,
+  "relogMinutes": 65.8,
+  "retries": 73,
   "tasks": {
    "island_challenge": {
     "runs": 18,
@@ -11891,9 +11894,9 @@
     "failed": 5
    },
    "story": {
-    "runs": 49,
-    "minutes": 72.1,
-    "failed": 4
+    "runs": 50,
+    "minutes": 72.5,
+    "failed": 5
    },
    "guild_war": {
     "runs": 18,
@@ -12123,13 +12126,13 @@
   },
   "chris": {
    "energy": 23,
-   "needs": 4,
+   "needs": 110,
    "cost": 3,
-   "observed_at": "2026-09-20T04:19:33.497204",
-   "runs": 437,
+   "observed_at": "2026-09-20T04:19:45.158634",
+   "runs": 438,
    "cooldown_until": "2026-09-19T19:38:42.844486",
    "kicks": 1,
-   "last_run_actions": 3
+   "last_run_actions": 1
   },
   "smurf": {
    "energy": 1,
@@ -12142,10 +12145,10 @@
    "last_run_actions": 13
   },
   "nova": {
-   "energy": 3,
+   "energy": 7,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-20T04:16:13.336654",
+   "observed_at": "2026-09-20T04:21:25.545769",
    "runs": 489,
    "cooldown_until": "2026-09-17T03:21:56.107756",
    "kicks": 1,
@@ -12220,10 +12223,6 @@
     "mode": "story"
    },
    {
-    "account": "skosmurf",
-    "mode": "story"
-   },
-   {
     "account": "fake4",
     "mode": "story"
    },
@@ -12238,6 +12237,10 @@
    {
     "account": "fake5",
     "mode": "hoopa"
+   },
+   {
+    "account": "jeff",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -12247,26 +12250,25 @@
   "restarts": 6,
   "downtimeMin": 30.4,
   "switches": {
-   "n": 229,
+   "n": 231,
    "medianSec": 16,
    "picker": {
-    "n": 173,
-    "medianSec": 16,
-    "jumps": 90
+    "n": 174,
+    "medianSec": 16.0,
+    "jumps": 91
    },
    "typed": {
     "n": 27,
     "medianSec": 19
    },
    "miss": {
-    "n": 29,
-    "medianSec": 19
+    "n": 30,
+    "medianSec": 19.0
    }
   }
  },
  "progress": {
   "jeff": {
-   "rank": 1,
    "pillar": "floor 147 stage 5",
    "islandFights": 16,
    "islandStamina": 1
@@ -12506,6 +12508,15 @@
    "enable": true
   },
   {
+   "account": "skosmurf",
+   "task": "story",
+   "kind": "story",
+   "since": "2026-09-20T04:20:42",
+   "why": "lost at stage 1 after 0 clear(s) — the next stage needs a stronger team",
+   "action": "story stopped at a lost stage — needs a stronger team",
+   "enable": true
+  },
+  {
    "account": "smurf",
    "task": "story",
    "kind": "story",
@@ -12677,7 +12688,6 @@
     "island fights": 3
    },
    "progress": {
-    "rank": 1,
     "pillar": "floor 147 stage 5",
     "islandFights": 16,
     "islandStamina": 1
@@ -13661,7 +13671,7 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-19",
-   "summary": "12 of 15 dailies done · gave up on claims, misty, bash · 1 switched off · 2 not available today",
+   "summary": "12 of 15 dailies done · gave up on claims, misty, bash · 2 switched off · 2 not available today",
    "done": 12,
    "owed": 15,
    "open": [
@@ -13709,6 +13719,11 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-19T17:07:39"
+    },
+    {
+     "task": "story",
+     "why": "lost at stage 1 after 0 clear(s) — the next stage needs a stronger team",
+     "since": "2026-09-20T04:20:42"
     }
    ],
    "unavailable": [
@@ -13737,7 +13752,7 @@
     {
      "day": "2026-09-20",
      "done": 1,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
