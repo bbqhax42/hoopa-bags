@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-19T13:05:39.008991",
+ "generatedAt": "2026-09-19T13:07:42.118272",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "daily_dungeon",
-  "since": "13:04:24"
+  "mode": "combat_daily",
+  "since": "13:07:23"
  },
  "grid": {
   "tasks": [
@@ -422,7 +422,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 179,
-  "todo": 46,
+  "done": 180,
+  "todo": 45,
   "gaveUp": 6,
   "unavailable": 11,
   "windowed": 18
@@ -656,6 +656,25 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-19T13:07:22",
+   "script": "pokemon_home",
+   "account": "deno",
+   "rc": 0,
+   "secs": 102,
+   "stats": {
+    "title_reread_named": 1,
+    "reached_via_trial": 1,
+    "merge_moved_instead": 1,
+    "ball_tiles_not_merged": 2,
+    "balls_unsettled_opened": 2,
+    "phantom_creations": 9,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260919_130540_pokemon_home_deno"
+  },
   {
    "ts": "2026-09-19T13:05:37",
    "script": "dailyclaim",
@@ -7138,28 +7157,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260918_105319_mail_test1"
-  },
-  {
-   "ts": "2026-09-18T10:53:18",
-   "script": "dailyclaim",
-   "account": "test1",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260918_105248_dailyclaim_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-19T00:00",
   "since": 28800.0,
-  "now": 47139,
+  "now": 47262,
   "segments": [
    {
     "b": 29300,
@@ -10110,6 +10113,26 @@
     "e": 47139,
     "secs": 13,
     "why": ""
+   },
+   {
+    "b": 47139,
+    "a": "deno",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 47139,
+    "rc": 0,
+    "e": 47243,
+    "secs": 102,
+    "why": ""
+   },
+   {
+    "b": 47243,
+    "a": "deno",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 47247,
+    "rc": null,
+    "e": 47262
    }
   ],
   "idle": []
@@ -10535,8 +10558,8 @@
     "failed": 1
    },
    "pokemon_home": {
-    "runs": 17,
-    "minutes": 19.2,
+    "runs": 18,
+    "minutes": 20.9,
     "failed": 1
    },
    "combat_daily": {
