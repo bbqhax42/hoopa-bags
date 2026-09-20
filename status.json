@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T13:14:55.618272",
+ "generatedAt": "2026-09-20T13:16:59.409510",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
-  "mode": "story",
-  "since": "13:14:35"
+  "account": "nova",
+  "mode": "hoopa",
+  "since": "13:15:03"
  },
  "grid": {
   "tasks": [
@@ -527,6 +527,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "fake5",
+   "task": "story",
+   "since": "2026-09-20T13:15:03",
+   "why": "Unlocked after clearing Victory Roac a Blackthorn Gym — clear that by hand, then re-enable"
+  },
+  {
    "account": "fake6",
    "task": "hoopa",
    "since": "2026-09-18T12:48:14",
@@ -673,11 +679,25 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-20T13:14:54.638987",
+  "label": "nova",
+  "at": "2026-09-20T13:15:20.013620",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T13:15:03",
+   "script": "story",
+   "account": "fake5",
+   "rc": 2,
+   "secs": 0,
+   "stats": {
+    "story_locked": 1,
+    "stages_cleared": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_131503_story_fake5"
+  },
   {
    "ts": "2026-09-20T13:03:35",
    "script": "hoopa",
@@ -7183,29 +7203,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_131600_joint_team_daily_quest_dre"
-  },
-  {
-   "ts": "2026-09-19T13:15:59",
-   "script": "mail",
-   "account": "dre",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260919_131556_mail_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 47695,
+  "now": 47819,
   "segments": [
    {
     "b": 28814,
@@ -9954,9 +9957,23 @@
      47676,
      47694
     ],
-    "handoff": null,
+    "handoff": 47702,
+    "rc": 2,
+    "e": 47703,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 47703,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     47704,
+     47720
+    ],
+    "handoff": 47731,
     "rc": null,
-    "e": 47695
+    "e": 47819
    }
   ],
   "idle": []
@@ -10244,8 +10261,8 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 31,
-  "relogMinutes": 13.2,
+  "switches": 32,
+  "relogMinutes": 14.1,
   "retries": 31,
   "tasks": {
    "dailyclaim": {
@@ -10332,6 +10349,11 @@
     "runs": 2,
     "minutes": 0.9,
     "failed": 0
+   },
+   "story": {
+    "runs": 1,
+    "minutes": 0.0,
+    "failed": 0
    }
   }
  },
@@ -10371,6 +10393,12 @@
    "task": "hoopa",
    "why": "lost a fight while climbing — the result card says the fight was lost",
    "at": "2026-09-20T13:03:35"
+  },
+  {
+   "account": "fake5",
+   "task": "story",
+   "why": "story_locked",
+   "at": "2026-09-20T13:15:03"
   },
   {
    "account": "fake6",
@@ -10529,84 +10557,80 @@
  "queue": {
   "next": [
    {
-    "account": "fake5",
-    "task": "joint_team_daily_quest",
+    "account": "nova",
+    "task": "guild_war",
     "startsIn": 0.0,
-    "eta": "2026-09-20T13:14"
-   },
-   {
-    "account": "fake5",
-    "task": "faction",
-    "startsIn": 0.5,
-    "eta": "2026-09-20T13:15"
+    "eta": "2026-09-20T13:16"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 3.1,
+    "startsIn": 0.9,
     "eta": "2026-09-20T13:17"
    },
    {
     "account": "jeff",
     "task": "championship",
-    "startsIn": 3.6,
+    "startsIn": 1.4,
     "eta": "2026-09-20T13:18"
    },
    {
     "account": "smurf",
     "task": "joint_team_daily_quest",
-    "startsIn": 4.1,
-    "eta": "2026-09-20T13:19"
+    "startsIn": 1.9,
+    "eta": "2026-09-20T13:18"
    },
    {
     "account": "fake1",
     "task": "joint_team_daily_quest",
-    "startsIn": 5.0,
+    "startsIn": 2.8,
     "eta": "2026-09-20T13:19"
    },
    {
     "account": "fake3",
     "task": "joint_team_daily_quest",
-    "startsIn": 5.9,
+    "startsIn": 3.7,
     "eta": "2026-09-20T13:20"
    },
    {
     "account": "fake4",
     "task": "joint_team_daily_quest",
-    "startsIn": 6.8,
+    "startsIn": 4.6,
     "eta": "2026-09-20T13:21"
+   },
+   {
+    "account": "fake5",
+    "task": "joint_team_daily_quest",
+    "startsIn": 5.5,
+    "eta": "2026-09-20T13:22"
+   },
+   {
+    "account": "fake5",
+    "task": "faction",
+    "startsIn": 6.0,
+    "eta": "2026-09-20T13:23"
    },
    {
     "account": "fake6",
     "task": "joint_team_daily_quest",
-    "startsIn": 7.7,
-    "eta": "2026-09-20T13:22"
+    "startsIn": 8.6,
+    "eta": "2026-09-20T13:25"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 8.3,
-    "eta": "2026-09-20T13:23"
+    "startsIn": 9.1,
+    "eta": "2026-09-20T13:26"
    },
    {
     "account": "lucifer2",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.8,
-    "eta": "2026-09-20T13:25"
-   },
-   {
-    "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 11.3,
-    "eta": "2026-09-20T13:26"
+    "startsIn": 11.7,
+    "eta": "2026-09-20T13:28"
    }
   ],
   "more": 26,
   "fillers": [
-   {
-    "account": "fake5",
-    "mode": "story"
-   },
    {
     "account": "smurf",
     "mode": "rift"
@@ -10626,6 +10650,10 @@
    {
     "account": "jeff",
     "mode": "hoopa"
+   },
+   {
+    "account": "nova",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -10635,12 +10663,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 31,
-   "medianSec": 18,
+   "n": 32,
+   "medianSec": 18.0,
    "picker": {
-    "n": 21,
-    "medianSec": 16,
-    "jumps": 15
+    "n": 22,
+    "medianSec": 16.0,
+    "jumps": 16
    },
    "typed": {
     "n": 0,
@@ -10654,10 +10682,10 @@
  },
  "progress": {
   "dre": {
-   "mailUnread": 0,
    "paradiseStamina": "0/17",
    "rank": 2,
-   "pillar": "floor 82 stage 1"
+   "pillar": "floor 82 stage 1",
+   "mailUnread": 0
   },
   "smurf": {
    "mailUnread": 0,
@@ -10940,6 +10968,15 @@
    "kind": "gym",
    "since": "2026-09-20T06:12:36",
    "why": "Unlocked after clearing Victory Road  Goldenrod Gym — clear that by hand, then re-enable",
+   "action": "clear that gym by hand, then switch story back on",
+   "enable": true
+  },
+  {
+   "account": "fake5",
+   "task": "story",
+   "kind": "gym",
+   "since": "2026-09-20T13:15:03",
+   "why": "Unlocked after clearing Victory Roac a Blackthorn Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
   },
@@ -11905,7 +11942,7 @@
   "fake5": {
    "name": "Random77",
    "day": "2026-09-20",
-   "summary": "10 of 14 dailies done · 1 switched off · 1 not available today",
+   "summary": "10 of 14 dailies done · 2 switched off · 2 not available today",
    "done": 10,
    "owed": 14,
    "open": [
@@ -11932,12 +11969,21 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-20T13:03:35"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Roac a Blackthorn Gym — clear that by hand, then re-enable",
+     "since": "2026-09-20T13:15:03"
     }
    ],
    "unavailable": [
     {
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost"
+    },
+    {
+     "task": "story",
+     "why": "story_locked"
     }
    ],
    "spent": {
@@ -12798,10 +12844,10 @@
     "pillar/story stages cleared": 6
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "0/17",
     "rank": 2,
-    "pillar": "floor 82 stage 1"
+    "pillar": "floor 82 stage 1",
+    "mailUnread": 0
    },
    "history": [
     {
