@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T13:51:58.207053",
+ "generatedAt": "2026-09-20T13:54:01.629298",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake4",
-  "mode": "rank_match",
-  "since": "13:51:58"
+  "account": "fake5",
+  "mode": "joint_team_daily_quest",
+  "since": "13:53:38"
  },
  "grid": {
   "tasks": [
@@ -209,9 +209,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 197,
-  "todo": 47,
+  "done": 199,
+  "todo": 45,
   "gaveUp": 5,
   "unavailable": 10,
   "windowed": 0
@@ -679,11 +679,50 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-09-20T13:51:17.039655",
+  "label": "fake5",
+  "at": "2026-09-20T13:53:55.429275",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T13:53:38",
+   "script": "guild_war",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 45,
+   "stats": {
+    "near_miss_vr_rank": 2,
+    "marginal_battle_over": 1,
+    "marginal_battle_victory": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_135253_guild_war_fake4"
+  },
+  {
+   "ts": "2026-09-20T13:52:52",
+   "script": "rank_match",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260920_135159_rank_match_fake4"
+  },
   {
    "ts": "2026-09-20T13:51:57",
    "script": "joint_team_daily_quest",
@@ -7169,49 +7208,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260919_140731_rank_match_fake1"
-  },
-  {
-   "ts": "2026-09-19T14:06:55",
-   "script": "rank_match",
-   "account": "chris",
-   "rc": 0,
-   "secs": 57,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 8,
-    "matches": 6,
-    "gifts": 2,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260919_140557_rank_match_chris"
-  },
-  {
-   "ts": "2026-09-19T14:05:51",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 36,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 1,
-    "fights_today": 6
-   },
-   "dir": "debug_runs/20260919_140515_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 49918,
+  "now": 50041,
   "segments": [
    {
     "b": 28814,
@@ -10186,9 +10188,34 @@
     "a": "fake4",
     "s": "rank_match",
     "login": null,
+    "handoff": 49918,
+    "rc": 0,
+    "e": 49972,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 49972,
+    "a": "fake4",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49973,
+    "rc": 0,
+    "e": 50018,
+    "secs": 45,
+    "why": ""
+   },
+   {
+    "b": 50018,
+    "a": "fake5",
+    "s": "joint_team_daily_quest",
+    "login": [
+     50019,
+     50035
+    ],
     "handoff": null,
     "rc": null,
-    "e": 49918
+    "e": 50041
    }
   ],
   "idle": []
@@ -10476,7 +10503,7 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 38,
+  "switches": 39,
   "relogMinutes": 16.6,
   "retries": 31,
   "tasks": {
@@ -10561,8 +10588,8 @@
     "failed": 3
    },
    "guild_war": {
-    "runs": 6,
-    "minutes": 4.3,
+    "runs": 7,
+    "minutes": 5.0,
     "failed": 0
    },
    "story": {
@@ -10571,8 +10598,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 4,
-    "minutes": 3.7,
+    "runs": 5,
+    "minutes": 4.6,
     "failed": 0
    }
   }
@@ -10789,79 +10816,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake4",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-20T13:51"
-   },
-   {
-    "account": "fake4",
-    "task": "guild_war",
-    "startsIn": 0.9,
-    "eta": "2026-09-20T13:52"
-   },
-   {
     "account": "fake5",
     "task": "joint_team_daily_quest",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-09-20T13:54"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 2.5,
+    "startsIn": 0.5,
     "eta": "2026-09-20T13:54"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 3.5,
+    "startsIn": 1.4,
     "eta": "2026-09-20T13:55"
    },
    {
     "account": "fake6",
     "task": "joint_team_daily_quest",
-    "startsIn": 6.0,
+    "startsIn": 4.0,
     "eta": "2026-09-20T13:58"
    },
    {
     "account": "fake6",
     "task": "rank_match",
-    "startsIn": 6.5,
+    "startsIn": 4.5,
     "eta": "2026-09-20T13:58"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 7.5,
+    "startsIn": 5.4,
     "eta": "2026-09-20T13:59"
    },
    {
     "account": "lucifer2",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.0,
+    "startsIn": 8.0,
     "eta": "2026-09-20T14:01"
    },
    {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 10.5,
+    "startsIn": 8.5,
     "eta": "2026-09-20T14:02"
    },
    {
     "account": "lucifer2",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.4,
+    "startsIn": 9.4,
     "eta": "2026-09-20T14:03"
    },
    {
     "account": "lucifer2",
     "task": "sky_pillar",
-    "startsIn": 11.6,
+    "startsIn": 9.5,
     "eta": "2026-09-20T14:03"
+   },
+   {
+    "account": "lucifer2",
+    "task": "weekend_bash",
+    "startsIn": 10.7,
+    "eta": "2026-09-20T14:04"
+   },
+   {
+    "account": "test1",
+    "task": "joint_team_daily_quest",
+    "startsIn": 11.1,
+    "eta": "2026-09-20T14:05"
    }
   ],
-  "more": 35,
+  "more": 33,
   "fillers": [
    {
     "account": "skosmurf",
@@ -10891,12 +10918,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 38,
-   "medianSec": 17.0,
+   "n": 39,
+   "medianSec": 17,
    "picker": {
-    "n": 28,
-    "medianSec": 16.0,
-    "jumps": 21
+    "n": 29,
+    "medianSec": 16,
+    "jumps": 22
    },
    "typed": {
     "n": 0,
@@ -10909,14 +10936,6 @@
   }
  },
  "progress": {
-  "chris": {
-   "islandFights": 3,
-   "islandStamina": 0,
-   "mailUnread": 0,
-   "paradiseStamina": "0/16",
-   "rank": 1,
-   "pillar": "floor 136 stage 8"
-  },
   "fake1": {
    "mailUnread": 0,
    "paradiseStamina": "5/15",
@@ -10992,6 +11011,14 @@
    "rank": 1,
    "pillar": "floor 147 stage 8"
   },
+  "chris": {
+   "islandFights": 3,
+   "islandStamina": 0,
+   "mailUnread": 0,
+   "paradiseStamina": "0/16",
+   "rank": 1,
+   "pillar": "floor 136 stage 8"
+  },
   "smurf": {
    "mailUnread": 0,
    "paradiseStamina": "9/20",
@@ -11010,6 +11037,13 @@
   }
  },
  "ledger": {
+  "fake4": {
+   "guild war attempts": 1,
+   "pillar/story stages cleared": 187,
+   "Island Shop buys (200 coins)": 1,
+   "mail claimed": 1,
+   "daily claims": 1
+  },
   "fake3": {
    "guild war attempts": 1,
    "pillar/story stages cleared": 153,
@@ -11126,12 +11160,6 @@
    "mail claimed": 1,
    "daily claims": 2,
    "Privilege Pack claimed": 1
-  },
-  "fake4": {
-   "pillar/story stages cleared": 187,
-   "Island Shop buys (200 coins)": 1,
-   "mail claimed": 1,
-   "daily claims": 1
   },
   "fake2": {
    "faction sweeps": 2,
@@ -12046,18 +12074,10 @@
   "fake4": {
    "name": "Random32",
    "day": "2026-09-20",
-   "summary": "11 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 11,
+   "summary": "13 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 13,
    "owed": 14,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
-    },
     {
      "task": "fctn",
      "state": "not available today"
@@ -12083,6 +12103,7 @@
     }
    ],
    "spent": {
+    "guild war attempts": 1,
     "pillar/story stages cleared": 187,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
@@ -12126,7 +12147,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 27,
+     "done": 29,
      "failed": 0
     }
    ]
