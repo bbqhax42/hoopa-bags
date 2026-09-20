@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T03:57:48.318476",
+ "generatedAt": "2026-09-21T03:59:51.706766",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "smurf",
   "mode": "hoopa",
-  "since": "03:53:05"
+  "since": "03:58:00"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "⊘",
-     "⏳"
+     "⇢"
     ]
    },
    {
@@ -614,7 +614,15 @@
  "snoozed": {
   "chris|island_challenge": "2026-09-21T05:59"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "jeff",
+   "since": "2026-09-21T03:58:00",
+   "held": true,
+   "heldUntil": "2026-09-21T04:08:00",
+   "deferredUntil": "2026-09-21T04:08:12"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 17,
@@ -678,11 +686,30 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-21T03:55:39.692141",
+  "label": "smurf",
+  "at": "2026-09-21T03:58:17.163277",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T03:58:00",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 132,
+   "stats": {
+    "battle_no_result": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "island_challenge: fight 15 did not complete"
+   ],
+   "values": {
+    "stamina": 40,
+    "fights_today": 14
+   },
+   "dir": "debug_runs/20260921_035547_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-21T02:48:50",
    "script": "island_challenge",
@@ -7261,27 +7288,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260920_023600_story_fake3"
-  },
-  {
-   "ts": "2026-09-20T02:35:59",
-   "script": "story",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 78,
-   "stats": {
-    "skip_retry": 14,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_023440_story_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 100668,
+  "now": 100792,
   "segments": [
    {
     "b": 28814,
@@ -11384,7 +11396,7 @@
     ],
     "handoff": 64511,
     "rc": null,
-    "e": 100668
+    "e": 100792
    }
   ],
   "idle": []
@@ -11798,9 +11810,9 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 183,
-  "relogMinutes": 104.1,
-  "retries": 58,
+  "switches": 184,
+  "relogMinutes": 104.5,
+  "retries": 59,
   "tasks": {
    "dailyclaim": {
     "runs": 19,
@@ -11878,9 +11890,9 @@
     "failed": 2
    },
    "island_challenge": {
-    "runs": 15,
-    "minutes": 7.8,
-    "failed": 15
+    "runs": 16,
+    "minutes": 10.1,
+    "failed": 16
    },
    "guild_war": {
     "runs": 18,
@@ -12169,10 +12181,6 @@
     "mode": "hoopa"
    },
    {
-    "account": "jeff",
-    "mode": "hoopa"
-   },
-   {
     "account": "nova",
     "mode": "hoopa"
    }
@@ -12184,12 +12192,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 183,
-   "medianSec": 16,
+   "n": 184,
+   "medianSec": 16.0,
    "picker": {
-    "n": 159,
-    "medianSec": 16,
-    "jumps": 91
+    "n": 160,
+    "medianSec": 16.0,
+    "jumps": 92
    },
    "typed": {
     "n": 0,
@@ -12204,7 +12212,7 @@
  "progress": {
   "jeff": {
    "islandFights": 14,
-   "islandStamina": 29,
+   "islandStamina": 40,
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "rank": 1,
@@ -12384,6 +12392,15 @@
    "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "jeff",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-21T03:58:00",
+   "why": "someone is playing on it",
+   "action": "left alone until 04:08",
+   "enable": false
   },
   {
    "account": "fake1",
@@ -12597,7 +12614,7 @@
     },
     {
      "task": "island",
-     "state": "cooling off"
+     "state": "waits on another task"
     }
    ],
    "issues": [
@@ -12620,7 +12637,7 @@
    },
    "progress": {
     "islandFights": 14,
-    "islandStamina": 29,
+    "islandStamina": 40,
     "mailUnread": 0,
     "paradiseStamina": "16/16",
     "rank": 1,
@@ -12660,6 +12677,11 @@
     {
      "day": "2026-09-20",
      "done": 19,
+     "failed": 1
+    },
+    {
+     "day": "2026-09-21",
+     "done": 0,
      "failed": 1
     }
    ]
