@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T15:55:30.583687",
+ "generatedAt": "2026-09-20T15:57:34.262282",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "15:53:50"
+  "since": "15:57:33"
  },
  "grid": {
   "tasks": [
@@ -604,18 +604,26 @@
   },
   {
    "account": "jeff",
-   "fights": 5,
-   "stamina": 29,
-   "staminaMax": 29,
-   "staminaAt": "2026-09-20T14:49:56",
-   "nextAt": "2026-09-20T15:56:03"
+   "fights": 6,
+   "stamina": 0,
+   "staminaMax": 12,
+   "staminaAt": "2026-09-20T15:57:26",
+   "nextAt": "2026-09-20T18:45:33"
   }
  ],
  "snoozed": {
   "chris|island_challenge": "2026-09-20T18:03",
-  "jeff|island_challenge": "2026-09-20T15:56"
+  "jeff|island_challenge": "2026-09-20T18:45"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "chris",
+   "since": "2026-09-20T15:56:43",
+   "held": true,
+   "heldUntil": "2026-09-20T16:06:43",
+   "deferredUntil": "2026-09-20T16:06:55"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 27,
@@ -679,11 +687,28 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-20T15:54:05.006964",
+  "label": "jeff",
+  "at": "2026-09-20T15:56:59.025282",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T15:57:33",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 25,
+   "stats": {
+    "fights": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 0,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260920_155708_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-20T15:44:52",
    "script": "rank_match",
@@ -7248,27 +7273,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_232715_story_smurf"
-  },
-  {
-   "ts": "2026-09-19T23:27:14",
-   "script": "story",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 92,
-   "stats": {
-    "skip_retry": 13,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_232542_story_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 57330,
+  "now": 57454,
   "segments": [
    {
     "b": 28814,
@@ -11156,7 +11166,33 @@
     ],
     "handoff": 57257,
     "rc": null,
-    "e": 57330
+    "e": 57404
+   },
+   {
+    "b": 57404,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     57404,
+     57419
+    ],
+    "handoff": 57428,
+    "rc": 5,
+    "e": 57453,
+    "secs": 25,
+    "why": ""
+   },
+   {
+    "b": 57453,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     57454,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 57454
    }
   ],
   "idle": []
@@ -11579,9 +11615,9 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 66,
-  "relogMinutes": 27.6,
-  "retries": 47,
+  "switches": 68,
+  "relogMinutes": 28.0,
+  "retries": 48,
   "tasks": {
    "dailyclaim": {
     "runs": 19,
@@ -11659,9 +11695,9 @@
     "failed": 2
    },
    "island_challenge": {
-    "runs": 5,
-    "minutes": 2.8,
-    "failed": 5
+    "runs": 6,
+    "minutes": 3.2,
+    "failed": 6
    },
    "guild_war": {
     "runs": 18,
@@ -11922,10 +11958,6 @@
     "mode": "hoopa"
    },
    {
-    "account": "chris",
-    "mode": "hoopa"
-   },
-   {
     "account": "jeff",
     "mode": "hoopa"
    },
@@ -11941,11 +11973,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 66,
-   "medianSec": 17.0,
+   "n": 67,
+   "medianSec": 17,
    "picker": {
-    "n": 50,
-    "medianSec": 16.0,
+    "n": 51,
+    "medianSec": 16,
     "jumps": 34
    },
    "typed": {
@@ -11960,8 +11992,8 @@
  },
  "progress": {
   "jeff": {
-   "islandFights": 5,
-   "islandStamina": 29,
+   "islandFights": 6,
+   "islandStamina": 0,
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "rank": 1,
@@ -12060,6 +12092,16 @@
   }
  },
  "ledger": {
+  "jeff": {
+   "island fights": 12,
+   "guild war attempts": 1,
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "daily claims": 2,
+   "Privilege Pack claimed": 1
+  },
   "lucifer1": {
    "daily claims": 3,
    "pillar/story stages cleared": 2,
@@ -12150,16 +12192,6 @@
    "pillar/story stages cleared": 1,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1
-  },
-  "jeff": {
-   "island fights": 11,
-   "guild war attempts": 1,
-   "pillar/story stages cleared": 3,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "daily claims": 2,
-   "Privilege Pack claimed": 1
   },
   "chris": {
    "guild war attempts": 1,
@@ -12327,6 +12359,15 @@
    "action": "the game lost its connection — check the phone",
    "enable": false,
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_020000_worldboss_chris__0003_020018_through_startup_L2108__AFTER__unknown.png"
+  },
+  {
+   "account": "chris",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-20T15:56:43",
+   "why": "someone is playing on it",
+   "action": "left alone until 16:06",
+   "enable": false
   },
   {
    "account": "deno",
@@ -12598,7 +12639,7 @@
     }
    ],
    "spent": {
-    "island fights": 11,
+    "island fights": 12,
     "guild war attempts": 1,
     "pillar/story stages cleared": 3,
     "ranked attempts": 1,
@@ -12608,8 +12649,8 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "islandFights": 5,
-    "islandStamina": 29,
+    "islandFights": 6,
+    "islandStamina": 0,
     "mailUnread": 0,
     "paradiseStamina": "16/16",
     "rank": 1,
