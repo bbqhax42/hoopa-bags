@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T06:07:28.501716",
+ "generatedAt": "2026-09-21T06:09:31.979462",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "06:00:54"
+  "since": "06:07:39"
  },
  "grid": {
   "tasks": [
@@ -642,8 +642,8 @@
    "at": "2026-09-18T11:42:14"
   },
   "smurf": {
-   "keys": 2,
-   "at": "2026-09-21T05:21:00"
+   "keys": 0,
+   "at": "2026-09-21T06:07:34"
   },
   "fake5": {
    "keys": 88,
@@ -679,11 +679,27 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-21T06:01:11.420942",
+  "label": "nova",
+  "at": "2026-09-21T06:07:56.227112",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T06:07:35",
+   "script": "hoopa",
+   "account": "smurf",
+   "rc": 2,
+   "secs": 371,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-21T06:00:54",
    "script": "island_challenge",
@@ -7269,27 +7285,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260920_024025_story_fake3"
-  },
-  {
-   "ts": "2026-09-20T02:40:24",
-   "script": "story",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 84,
-   "stats": {
-    "skip_retry": 12,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_023900_story_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 108448,
+  "now": 108572,
   "segments": [
    {
     "b": 28814,
@@ -11403,8 +11404,22 @@
      108071
     ],
     "handoff": 108084,
+    "rc": 2,
+    "e": 108459,
+    "secs": 371,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 108459,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     108460,
+     108476
+    ],
+    "handoff": 108487,
     "rc": null,
-    "e": 108448
+    "e": 108572
    }
   ],
   "idle": []
@@ -11818,8 +11833,8 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 195,
-  "relogMinutes": 107.2,
+  "switches": 196,
+  "relogMinutes": 107.7,
   "retries": 61,
   "tasks": {
    "dailyclaim": {
@@ -12017,6 +12032,12 @@
   },
   {
    "account": "smurf",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-21T06:07:35"
+  },
+  {
+   "account": "smurf",
    "task": "joint_battle",
    "why": null,
    "at": null
@@ -12189,10 +12210,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "smurf",
-    "mode": "hoopa"
-   },
-   {
     "account": "jeff",
     "mode": "hoopa"
    },
@@ -12208,12 +12225,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 195,
-   "medianSec": 16,
+   "n": 196,
+   "medianSec": 16.0,
    "picker": {
-    "n": 171,
-    "medianSec": 16,
-    "jumps": 98
+    "n": 172,
+    "medianSec": 16.0,
+    "jumps": 99
    },
    "typed": {
     "n": 0,
@@ -12791,7 +12808,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-20",
-   "summary": "16 of 17 dailies done · 1 switched off · 2 not available today",
+   "summary": "16 of 17 dailies done · 1 switched off · 3 not available today",
    "done": 16,
    "owed": 17,
    "open": [
@@ -12816,6 +12833,10 @@
     }
    ],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "joint_battle",
      "why": null
