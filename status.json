@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T15:43:09.807725",
+ "generatedAt": "2026-09-20T15:45:13.278350",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "combat_daily",
-  "since": "15:42:33"
+  "account": "jeff",
+  "mode": "hoopa",
+  "since": "15:44:52"
  },
  "grid": {
   "tasks": [
@@ -304,8 +304,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 240,
-  "todo": 2,
+  "done": 242,
+  "todo": 0,
   "gaveUp": 8,
   "unavailable": 13,
   "windowed": 0
@@ -679,11 +679,65 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-20T15:42:49.081533",
+  "label": "jeff",
+  "at": "2026-09-20T15:45:06.923169",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T15:44:52",
+   "script": "rank_match",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 64,
+   "stats": {
+    "near_miss_rift_exit_guardian": 2,
+    "formation_set": 1,
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260920_154348_rank_match_sprite"
+  },
+  {
+   "ts": "2026-09-20T15:43:46",
+   "script": "victory_road",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "near_miss_rift_exit_guardian": 7,
+    "nothing_pending": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_154333_victory_road_sprite"
+  },
+  {
+   "ts": "2026-09-20T15:43:10",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 0,
+   "secs": 11,
+   "stats": {
+    "island_shop_too_dear": 1,
+    "title_reread_named": 1
+   },
+   "incomplete": [],
+   "values": {
+    "left": "island shop: first item costs 30000 coins, cap 500"
+   },
+   "dir": "debug_runs/20260920_154258_combat_daily_nova"
+  },
   {
    "ts": "2026-09-20T15:42:23",
    "script": "dailyclaim",
@@ -7209,60 +7263,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_232542_story_smurf"
-  },
-  {
-   "ts": "2026-09-19T23:24:53",
-   "script": "story",
-   "account": "fake2",
-   "rc": 2,
-   "secs": 0,
-   "stats": {
-    "story_locked": 1,
-    "stages_cleared": 0
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_232453_story_fake2"
-  },
-  {
-   "ts": "2026-09-19T22:54:55",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 32,
-   "stats": {
-    "fights": 2,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 30,
-    "fights_today": 12
-   },
-   "dir": "debug_runs/20260919_225422_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-19T22:06:29",
-   "script": "hoopa",
-   "account": "chris",
-   "rc": 2,
-   "secs": 6,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 56590,
+  "now": 56713,
   "segments": [
    {
     "b": 28814,
@@ -11074,8 +11080,47 @@
      56569
     ],
     "handoff": 56578,
+    "rc": 0,
+    "e": 56590,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 56590,
+    "a": "sprite",
+    "s": "victory_road",
+    "login": [
+     56591,
+     56604
+    ],
+    "handoff": 56613,
+    "rc": 0,
+    "e": 56626,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 56626,
+    "a": "sprite",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 56627,
+    "rc": 0,
+    "e": 56692,
+    "secs": 64,
+    "why": ""
+   },
+   {
+    "b": 56692,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": [
+     56693,
+     56706
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 56590
+    "e": 56713
    }
   ],
   "idle": []
@@ -11498,8 +11543,8 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 61,
-  "relogMinutes": 25.9,
+  "switches": 63,
+  "relogMinutes": 26.2,
   "retries": 47,
   "tasks": {
    "dailyclaim": {
@@ -11528,13 +11573,13 @@
     "failed": 2
    },
    "combat_daily": {
-    "runs": 25,
-    "minutes": 34.7,
+    "runs": 26,
+    "minutes": 34.9,
     "failed": 8
    },
    "victory_road": {
-    "runs": 19,
-    "minutes": 2.9,
+    "runs": 20,
+    "minutes": 3.1,
     "failed": 2
    },
    "paradise": {
@@ -11593,8 +11638,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 21,
-    "minutes": 15.0,
+    "runs": 22,
+    "minutes": 16.1,
     "failed": 2
    }
   }
@@ -11833,20 +11878,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "sprite",
-    "task": "victory_road",
-    "startsIn": 0.4,
-    "eta": "2026-09-20T15:43"
-   },
-   {
-    "account": "sprite",
-    "task": "rank_match",
-    "startsIn": 0.6,
-    "eta": "2026-09-20T15:43"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -11873,10 +11905,10 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 61,
+   "n": 63,
    "medianSec": 17,
    "picker": {
-    "n": 45,
+    "n": 47,
     "medianSec": 16,
     "jumps": 32
    },
@@ -12153,6 +12185,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-20T15:43:10",
+   "account": "nova",
+   "task": "combat_daily",
+   "left": "island shop: first item costs 30000 coins, cap 500"
+  },
+  {
    "ts": "2026-09-20T14:13:23",
    "account": "test1",
    "task": "joint_team_daily_quest",
@@ -12269,6 +12307,15 @@
    "kind": "left",
    "since": "2026-09-20T11:10:56",
    "why": "participate in the relic battlefield one: todo; upgrade squad skill once: blocked",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "nova",
+   "task": "combat_daily",
+   "kind": "left",
+   "since": "2026-09-20T15:43:10",
+   "why": "island shop: first item costs 30000 coins, cap 500",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
   },
@@ -13394,19 +13441,10 @@
   "sprite": {
    "name": "sprite",
    "day": "2026-09-20",
-   "summary": "9 of 11 dailies done",
-   "done": 9,
+   "summary": "11 of 11 dailies done",
+   "done": 11,
    "owed": 11,
-   "open": [
-    {
-     "task": "victory",
-     "state": "still to do"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    }
-   ],
+   "open": [],
    "issues": [
     {
      "task": "rank_match",
@@ -13454,7 +13492,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 10,
+     "done": 12,
      "failed": 6
     }
    ]
