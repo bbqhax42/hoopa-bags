@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T14:04:18.359299",
+ "generatedAt": "2026-09-20T14:06:21.862998",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "fake6",
   "mode": "rank_match",
-  "since": "14:03:44"
+  "since": "14:05:53"
  },
  "grid": {
   "tasks": [
@@ -89,7 +89,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "·",
      "✓",
@@ -251,7 +251,7 @@
     "cells": [
      "✓",
      "✓",
-     "·",
+     "✓",
      "⊘",
      "✓",
      "✓",
@@ -259,7 +259,7 @@
      "✓",
      "·",
      "✓",
-     "⇢",
+     "·",
      "-",
      "✓",
      "✓",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 203,
-  "todo": 42,
+  "done": 205,
+  "todo": 41,
   "gaveUp": 5,
   "unavailable": 10,
   "windowed": 0
@@ -679,11 +679,45 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-20T14:02:54.459944",
+  "label": "fake6",
+  "at": "2026-09-20T14:05:05.270421",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T14:05:52",
+   "script": "joint_team_daily_quest",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 39,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 2,
+    "panel_swipes": 8,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_140512_joint_team_daily_quest_fake6"
+  },
+  {
+   "ts": "2026-09-20T14:04:46",
+   "script": "rank_match",
+   "account": "chris",
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 0,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260920_140350_rank_match_chris"
+  },
   {
    "ts": "2026-09-20T14:03:44",
    "script": "island_challenge",
@@ -7162,51 +7196,12 @@
     "tickets": 0
    },
    "dir": "debug_runs/20260919_141503_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-19T14:15:02",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 0,
-   "secs": 112,
-   "stats": {
-    "ranked_fought": 10,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0,
-    "near_miss_buy_items": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 3,
-    "daily_goal_claims": 0
-   },
-   "dir": "debug_runs/20260919_141310_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-09-19T14:13:09",
-   "script": "rank_match",
-   "account": "nova",
-   "rc": 0,
-   "secs": 59,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 2,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260919_141210_rank_match_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 50658,
+  "now": 50782,
   "segments": [
    {
     "b": 28814,
@@ -10265,8 +10260,33 @@
     "s": "rank_match",
     "login": null,
     "handoff": 50629,
+    "rc": 0,
+    "e": 50687,
+    "secs": 56,
+    "why": ""
+   },
+   {
+    "b": 50687,
+    "a": "fake6",
+    "s": "joint_team_daily_quest",
+    "login": [
+     50687,
+     50705
+    ],
+    "handoff": 50712,
+    "rc": 0,
+    "e": 50753,
+    "secs": 39,
+    "why": ""
+   },
+   {
+    "b": 50753,
+    "a": "fake6",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 50754,
     "rc": null,
-    "e": 50658
+    "e": 50782
    }
   ],
   "idle": []
@@ -10554,8 +10574,8 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 40,
-  "relogMinutes": 17.4,
+  "switches": 41,
+  "relogMinutes": 17.8,
   "retries": 32,
   "tasks": {
    "dailyclaim": {
@@ -10569,8 +10589,8 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 27,
-    "minutes": 13.8,
+    "runs": 28,
+    "minutes": 14.4,
     "failed": 8
    },
    "daily_dungeon": {
@@ -10649,8 +10669,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 6,
-    "minutes": 5.7,
+    "runs": 7,
+    "minutes": 6.6,
     "failed": 0
    }
   }
@@ -10867,79 +10887,79 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
+    "account": "fake6",
     "task": "rank_match",
     "startsIn": 0.0,
-    "eta": "2026-09-20T14:04"
+    "eta": "2026-09-20T14:06"
    },
    {
-    "account": "chris",
+    "account": "fake6",
     "task": "guild_war",
-    "startsIn": 1.0,
-    "eta": "2026-09-20T14:05"
-   },
-   {
-    "account": "chris",
-    "task": "championship",
-    "startsIn": 1.7,
-    "eta": "2026-09-20T14:05"
-   },
-   {
-    "account": "fake6",
-    "task": "joint_team_daily_quest",
-    "startsIn": 2.1,
-    "eta": "2026-09-20T14:06"
-   },
-   {
-    "account": "fake6",
-    "task": "rank_match",
-    "startsIn": 2.6,
-    "eta": "2026-09-20T14:06"
+    "startsIn": 0.9,
+    "eta": "2026-09-20T14:07"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 3.6,
-    "eta": "2026-09-20T14:07"
+    "startsIn": 1.7,
+    "eta": "2026-09-20T14:08"
    },
    {
     "account": "lucifer2",
     "task": "joint_team_daily_quest",
-    "startsIn": 6.4,
+    "startsIn": 4.5,
     "eta": "2026-09-20T14:10"
    },
    {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 6.9,
+    "startsIn": 5.0,
     "eta": "2026-09-20T14:11"
    },
    {
     "account": "lucifer2",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.9,
+    "startsIn": 6.0,
     "eta": "2026-09-20T14:12"
    },
    {
     "account": "lucifer2",
     "task": "sky_pillar",
-    "startsIn": 8.0,
+    "startsIn": 6.1,
     "eta": "2026-09-20T14:12"
    },
    {
     "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 9.2,
+    "startsIn": 7.3,
     "eta": "2026-09-20T14:13"
    },
    {
     "account": "test1",
     "task": "joint_team_daily_quest",
-    "startsIn": 9.6,
-    "eta": "2026-09-20T14:13"
+    "startsIn": 7.7,
+    "eta": "2026-09-20T14:14"
+   },
+   {
+    "account": "test1",
+    "task": "rank_match",
+    "startsIn": 8.2,
+    "eta": "2026-09-20T14:14"
+   },
+   {
+    "account": "test1",
+    "task": "faction",
+    "startsIn": 9.2,
+    "eta": "2026-09-20T14:15"
+   },
+   {
+    "account": "nova",
+    "task": "rank_match",
+    "startsIn": 12.0,
+    "eta": "2026-09-20T14:18"
    }
   ],
-  "more": 30,
+  "more": 29,
   "fillers": [
    {
     "account": "skosmurf",
@@ -10969,12 +10989,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 40,
-   "medianSec": 17.0,
+   "n": 41,
+   "medianSec": 17,
    "picker": {
-    "n": 30,
-    "medianSec": 16.0,
-    "jumps": 22
+    "n": 31,
+    "medianSec": 16,
+    "jumps": 23
    },
    "typed": {
     "n": 0,
@@ -10988,9 +11008,9 @@
  },
  "progress": {
   "nova": {
-   "rank": 3,
    "mailUnread": 0,
    "paradiseStamina": "2/16",
+   "rank": 3,
    "pillar": "floor 98 stage 10"
   },
   "fake2": {
@@ -11537,9 +11557,9 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 3,
     "mailUnread": 0,
     "paradiseStamina": "2/16",
+    "rank": 3,
     "pillar": "floor 98 stage 10"
    },
    "history": [
@@ -11670,14 +11690,10 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-20",
-   "summary": "14 of 18 dailies done",
-   "done": 14,
+   "summary": "15 of 18 dailies done",
+   "done": 15,
    "owed": 18,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
     {
      "task": "guildBoss",
      "state": "still to do"
@@ -11759,7 +11775,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 15,
+     "done": 16,
      "failed": 2
     }
    ]
@@ -12289,14 +12305,10 @@
   "fake6": {
    "name": "Bigpp123",
    "day": "2026-09-20",
-   "summary": "9 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 9,
+   "summary": "10 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 10,
    "owed": 14,
    "open": [
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
     {
      "task": "JointB",
      "state": "not available today"
@@ -12307,7 +12319,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "fctn",
@@ -12385,7 +12397,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 16,
+     "done": 17,
      "failed": 1
     }
    ]
