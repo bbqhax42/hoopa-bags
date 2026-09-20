@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T15:41:06.506880",
+ "generatedAt": "2026-09-20T15:43:09.807725",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "nova",
+  "mode": "combat_daily",
+  "since": "15:42:33"
  },
  "grid": {
   "tasks": [
@@ -39,7 +39,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -297,7 +297,7 @@
    {
     "account": "sprite",
     "cells": [
-     "✗2",
+     "✓",
      "✓",
      "-",
      "-",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 238,
-  "todo": 3,
-  "gaveUp": 9,
+  "done": 240,
+  "todo": 2,
+  "gaveUp": 8,
   "unavailable": 13,
   "windowed": 0
  },
@@ -679,11 +679,43 @@
   }
  },
  "session": {
-  "label": "sprite",
-  "at": "2026-09-20T15:40:56.472051",
+  "label": "nova",
+  "at": "2026-09-20T15:42:49.081533",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T15:42:23",
+   "script": "dailyclaim",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 35,
+   "stats": {
+    "sign_in_already": 1,
+    "claims": 0
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:70 0.275:8 0.345:53 0.428:9 0.500:0"
+   },
+   "dir": "debug_runs/20260920_154206_dailyclaim_smurf"
+  },
+  {
+   "ts": "2026-09-20T15:41:30",
+   "script": "dailyclaim",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "sign_in_already": 1,
+    "claims": 0
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:71 0.275:0 0.345:53 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260920_154113_dailyclaim_sprite"
+  },
   {
    "ts": "2026-09-20T15:40:42",
    "script": "dailyclaim",
@@ -7225,46 +7257,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-19T22:02:14",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 39,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 0,
-    "fights_today": 12
-   },
-   "dir": "debug_runs/20260919_220135_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-19T20:31:14",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 24,
-   "stats": {
-    "fights": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 6,
-    "fights_today": 10
-   },
-   "dir": "debug_runs/20260919_203049_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 56466,
+  "now": 56590,
   "segments": [
    {
     "b": 28814,
@@ -11065,7 +11063,19 @@
     ],
     "handoff": 54798,
     "rc": null,
-    "e": 56466
+    "e": 56553
+   },
+   {
+    "b": 56553,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": [
+     56553,
+     56569
+    ],
+    "handoff": 56578,
+    "rc": null,
+    "e": 56590
    }
   ],
   "idle": []
@@ -11488,8 +11498,8 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 60,
-  "relogMinutes": 25.4,
+  "switches": 61,
+  "relogMinutes": 25.9,
   "retries": 47,
   "tasks": {
    "dailyclaim": {
@@ -11825,21 +11835,15 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
-    "task": "combat_daily",
-    "startsIn": 0.4,
-    "eta": "2026-09-20T15:41"
-   },
-   {
     "account": "sprite",
     "task": "victory_road",
-    "startsIn": 2.2,
+    "startsIn": 0.4,
     "eta": "2026-09-20T15:43"
    },
    {
     "account": "sprite",
     "task": "rank_match",
-    "startsIn": 2.3,
+    "startsIn": 0.6,
     "eta": "2026-09-20T15:43"
    }
   ],
@@ -11869,12 +11873,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 60,
-   "medianSec": 17.0,
+   "n": 61,
+   "medianSec": 17,
    "picker": {
-    "n": 44,
-    "medianSec": 16.0,
-    "jumps": 31
+    "n": 45,
+    "medianSec": 16,
+    "jumps": 32
    },
    "typed": {
     "n": 0,
@@ -11894,14 +11898,6 @@
    "paradiseStamina": "16/16",
    "rank": 1,
    "pillar": "floor 147 stage 8"
-  },
-  "chris": {
-   "islandFights": 6,
-   "islandStamina": 0,
-   "mailUnread": 0,
-   "paradiseStamina": "0/16",
-   "rank": 1,
-   "pillar": "floor 136 stage 8"
   },
   "nova": {
    "mailUnread": 0,
@@ -11980,6 +11976,14 @@
    "pillar": "floor 82 stage 9",
    "mailUnread": 0,
    "rank": 2
+  },
+  "chris": {
+   "islandFights": 6,
+   "islandStamina": 0,
+   "mailUnread": 0,
+   "paradiseStamina": "0/16",
+   "rank": 1,
+   "pillar": "floor 136 stage 8"
   },
   "fake7": {
    "mailUnread": 0,
@@ -12146,11 +12150,7 @@
    "daily claims": 1
   }
  },
- "paused": {
-  "since": "2026-09-20T15:36:12",
-  "by": "cli",
-  "why": "sign-in catch-up pass 2 (blank-panel accounts)"
- },
+ "paused": null,
  "warnings": [
   {
    "ts": "2026-09-20T14:13:23",
@@ -12410,15 +12410,10 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-20",
-   "summary": "14 of 15 dailies done",
-   "done": 14,
+   "summary": "15 of 15 dailies done",
+   "done": 15,
    "owed": 15,
-   "open": [
-    {
-     "task": "dailies",
-     "state": "still to do"
-    }
-   ],
+   "open": [],
    "issues": [
     {
      "task": "run_pvp_ranked",
@@ -12483,7 +12478,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 15,
+     "done": 16,
      "failed": 3
     }
    ]
@@ -12765,7 +12760,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 18,
+     "done": 19,
      "failed": 2
     }
    ]
@@ -13399,14 +13394,10 @@
   "sprite": {
    "name": "sprite",
    "day": "2026-09-20",
-   "summary": "8 of 11 dailies done · gave up on claims",
-   "done": 8,
+   "summary": "9 of 11 dailies done",
+   "done": 9,
    "owed": 11,
    "open": [
-    {
-     "task": "claims",
-     "state": "gave up"
-    },
     {
      "task": "victory",
      "state": "still to do"
@@ -13463,7 +13454,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 9,
+     "done": 10,
      "failed": 6
     }
    ]
