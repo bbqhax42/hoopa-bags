@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T08:06:03.681424",
+ "generatedAt": "2026-09-20T08:08:07.543814",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "combat_daily",
-  "since": "08:04:20"
+  "mode": "paradise",
+  "since": "08:06:55"
  },
  "grid": {
   "tasks": [
@@ -39,8 +39,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✗2",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 6,
-  "todo": 221,
-  "gaveUp": 0,
+  "done": 7,
+  "todo": 219,
+  "gaveUp": 1,
   "unavailable": 0,
   "windowed": 36
  },
@@ -649,6 +649,57 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T08:06:54",
+   "script": "victory_road",
+   "account": "nova",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_080647_victory_road_nova"
+  },
+  {
+   "ts": "2026-09-20T08:06:45",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 1,
+   "secs": 17,
+   "stats": {
+    "marginal_island_shop_on": 2,
+    "buy_dialog_missing": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_080627_combat_daily_nova"
+  },
+  {
+   "ts": "2026-09-20T08:06:26",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 1,
+   "secs": 120,
+   "stats": {
+    "title_reread_named": 2,
+    "marginal_afk_rewards": 1,
+    "near_miss_vr_rank": 4,
+    "marginal_island_shop_on": 2,
+    "buy_dialog_missing": 1,
+    "outstanding_reread_after_toast": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 10/10 s ",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260920_080425_combat_daily_nova"
+  },
   {
    "ts": "2026-09-20T08:04:19",
    "script": "pokemon_home",
@@ -7094,49 +7145,12 @@
     "stage": 8
    },
    "dir": "debug_runs/20260919_083356_sky_pillar_nova"
-  },
-  {
-   "ts": "2026-09-19T08:33:54",
-   "script": "collect_hoopa_keys",
-   "account": "nova",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_083346_collect_hoopa_keys_nova"
-  },
-  {
-   "ts": "2026-09-19T08:33:45",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_083345_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-09-19T08:33:43",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 2,
-   "secs": 23,
-   "stats": {
-    "map_second_tap": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_083319_run_pvp_ranked_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 29164,
+  "now": 29288,
   "segments": [
    {
     "b": 28814,
@@ -7208,13 +7222,64 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 29065,
+    "rc": 1,
+    "e": 29187,
+    "secs": 120,
+    "why": ""
+   },
+   {
+    "b": 29187,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29187,
+    "rc": 1,
+    "e": 29206,
+    "secs": 120,
+    "why": ""
+   },
+   {
+    "b": 29206,
+    "a": "nova",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 29206,
+    "rc": 0,
+    "e": 29215,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 29215,
+    "a": "nova",
+    "s": "paradise",
+    "login": null,
+    "handoff": 29217,
     "rc": null,
-    "e": 29164
+    "e": 29288
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T08:06:45",
+   "account": "nova",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 17,
+   "why": "marginal_island_shop_on, buy_dialog_missing, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_080627_combat_daily_nova__KEEP_0006_080636_buy_dialog_missing.png"
+  },
+  {
+   "ts": "2026-09-20T08:06:26",
+   "account": "nova",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 120,
+   "why": "title_reread_named, marginal_afk_rewards, near_miss_vr_rank, marginal_island_shop_on, buy_dialog_missing, outstanding_reread_after_toast, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_080425_combat_daily_nova__KEEP_0154_080608_buy_dialog_missing.png"
+  },
   {
    "ts": "2026-09-20T04:20:42",
    "account": "skosmurf",
@@ -7256,7 +7321,7 @@
   "since": "2026-09-20T08:00",
   "switches": 0,
   "relogMinutes": 0.0,
-  "retries": 0,
+  "retries": 2,
   "tasks": {
    "dailyclaim": {
     "runs": 1,
@@ -7281,6 +7346,16 @@
    "pokemon_home": {
     "runs": 1,
     "minutes": 1.9,
+    "failed": 0
+   },
+   "combat_daily": {
+    "runs": 2,
+    "minutes": 2.3,
+    "failed": 2
+   },
+   "victory_road": {
+    "runs": 1,
+    "minutes": 0.1,
     "failed": 0
    }
   }
@@ -7413,78 +7488,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "combat_daily",
+    "task": "paradise",
     "startsIn": 0.0,
-    "eta": "2026-09-20T08:06"
-   },
-   {
-    "account": "nova",
-    "task": "victory_road",
-    "startsIn": 2.0,
     "eta": "2026-09-20T08:08"
    },
    {
     "account": "nova",
-    "task": "paradise",
-    "startsIn": 4.0,
+    "task": "run_pvp_ranked",
+    "startsIn": 2.0,
     "eta": "2026-09-20T08:10"
    },
    {
     "account": "nova",
-    "task": "run_pvp_ranked",
-    "startsIn": 6.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 4.0,
     "eta": "2026-09-20T08:12"
    },
    {
     "account": "nova",
-    "task": "collect_hoopa_keys",
-    "startsIn": 8.0,
+    "task": "sky_pillar",
+    "startsIn": 6.0,
     "eta": "2026-09-20T08:14"
    },
    {
     "account": "nova",
-    "task": "sky_pillar",
-    "startsIn": 10.0,
-    "eta": "2026-09-20T08:16"
-   },
-   {
-    "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 12.0,
-    "eta": "2026-09-20T08:18"
+    "startsIn": 8.0,
+    "eta": "2026-09-20T08:16"
    },
    {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 14.4,
-    "eta": "2026-09-20T08:20"
+    "startsIn": 10.4,
+    "eta": "2026-09-20T08:18"
    },
    {
     "account": "jeff",
     "task": "mail",
-    "startsIn": 14.8,
-    "eta": "2026-09-20T08:20"
+    "startsIn": 10.8,
+    "eta": "2026-09-20T08:18"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 14.9,
-    "eta": "2026-09-20T08:20"
+    "startsIn": 10.9,
+    "eta": "2026-09-20T08:19"
    },
    {
     "account": "jeff",
     "task": "joint_battle",
-    "startsIn": 15.5,
-    "eta": "2026-09-20T08:21"
+    "startsIn": 11.5,
+    "eta": "2026-09-20T08:19"
    },
    {
     "account": "jeff",
     "task": "daily_dungeon",
-    "startsIn": 17.5,
+    "startsIn": 13.5,
+    "eta": "2026-09-20T08:21"
+   },
+   {
+    "account": "jeff",
+    "task": "pokemon_home",
+    "startsIn": 13.7,
+    "eta": "2026-09-20T08:21"
+   },
+   {
+    "account": "jeff",
+    "task": "combat_daily",
+    "startsIn": 15.6,
     "eta": "2026-09-20T08:23"
    }
   ],
-  "more": 209,
+  "more": 207,
   "fillers": [
    {
     "account": "fake5",
@@ -7871,17 +7946,13 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-20",
-   "summary": "6 of 15 dailies done",
-   "done": 6,
+   "summary": "7 of 15 dailies done · gave up on dailies",
+   "done": 7,
    "owed": 15,
    "open": [
     {
      "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "victoryRank",
@@ -7912,7 +7983,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "08:06",
+     "why": "buy dialog missing, left outstanding",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_080627_combat_daily_nova__KEEP_0006_080636_buy_dialog_missing.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
@@ -7960,8 +8038,8 @@
     },
     {
      "day": "2026-09-20",
-     "done": 6,
-     "failed": 0
+     "done": 7,
+     "failed": 2
     }
    ]
   },
