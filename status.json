@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T11:46:31.287594",
+ "generatedAt": "2026-09-20T11:48:34.538020",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "joint_battle",
-  "since": "11:46:05"
+  "mode": "combat_daily",
+  "since": "11:47:47"
  },
  "grid": {
   "tasks": [
@@ -444,9 +444,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 175,
-  "todo": 35,
-  "gaveUp": 7,
+  "done": 177,
+  "todo": 32,
+  "gaveUp": 8,
   "unavailable": 8,
   "windowed": 36
  },
@@ -668,6 +668,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T11:47:46",
+   "script": "pokemon_home",
+   "account": "dre",
+   "rc": 1,
+   "secs": 12,
+   "stats": {
+    "reached_via_trial": 1,
+    "no_trusted_grid": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_114733_pokemon_home_dre"
+  },
+  {
+   "ts": "2026-09-20T11:47:28",
+   "script": "pokemon_home",
+   "account": "dre",
+   "rc": 1,
+   "secs": 12,
+   "stats": {
+    "reached_via_trial": 1,
+    "no_trusted_grid": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_114715_pokemon_home_dre"
+  },
+  {
+   "ts": "2026-09-20T11:47:13",
+   "script": "daily_dungeon",
+   "account": "dre",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_114700_daily_dungeon_dre"
+  },
   {
    "ts": "2026-09-20T11:46:05",
    "script": "joint_team_daily_quest",
@@ -7142,65 +7183,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260919_130220_mail_deno"
-  },
-  {
-   "ts": "2026-09-19T13:02:19",
-   "script": "dailyclaim",
-   "account": "deno",
-   "rc": 0,
-   "secs": 19,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_130159_dailyclaim_deno"
-  },
-  {
-   "ts": "2026-09-19T13:01:31",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 63,
-   "stats": {
-    "ranked_fought": 8,
-    "free_attempts_spent": 1,
-    "rank_unreadable": 1,
-    "near_miss_buy_items": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 5,
-    "daily_goal_claims": 0
-   },
-   "dir": "debug_runs/20260919_130027_run_pvp_ranked_lucifer2"
-  },
-  {
-   "ts": "2026-09-19T13:00:24",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 40,
-   "stats": {
-    "ranked_fought": 2,
-    "picker_never_opened": 1,
-    "incomplete": 1,
-    "rank_unreadable": 1
-   },
-   "incomplete": [
-    "run_pvp_ranked: attempt 3 did not complete"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260919_125943_run_pvp_ranked_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 42391,
+  "now": 42514,
   "segments": [
    {
     "b": 28814,
@@ -9729,12 +9717,72 @@
     "login": null,
     "handoff": 42368,
     "rc": null,
-    "e": 42391
+    "e": 42415
+   },
+   {
+    "b": 42415,
+    "a": "dre",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 42419,
+    "rc": 0,
+    "e": 42434,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 42434,
+    "a": "dre",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 42435,
+    "rc": 1,
+    "e": 42448,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 42448,
+    "a": "dre",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 42453,
+    "rc": 1,
+    "e": 42467,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 42467,
+    "a": "dre",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 42471,
+    "rc": null,
+    "e": 42514
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T11:47:46",
+   "account": "dre",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 12,
+   "why": "reached_via_trial, no_trusted_grid",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_114733_pokemon_home_dre__0012_114746_no_trusted_grid.png"
+  },
+  {
+   "ts": "2026-09-20T11:47:28",
+   "account": "dre",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 12,
+   "why": "reached_via_trial, no_trusted_grid",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_114715_pokemon_home_dre__0012_114728_no_trusted_grid.png"
+  },
   {
    "ts": "2026-09-20T11:27:02",
    "account": "test1",
@@ -10001,7 +10049,7 @@
   "since": "2026-09-20T08:00",
   "switches": 21,
   "relogMinutes": 9.2,
-  "retries": 28,
+  "retries": 30,
   "tasks": {
    "dailyclaim": {
     "runs": 19,
@@ -10019,14 +10067,14 @@
     "failed": 8
    },
    "daily_dungeon": {
-    "runs": 18,
-    "minutes": 6.8,
+    "runs": 19,
+    "minutes": 7.0,
     "failed": 1
    },
    "pokemon_home": {
-    "runs": 17,
-    "minutes": 19.1,
-    "failed": 0
+    "runs": 19,
+    "minutes": 19.5,
+    "failed": 2
    },
    "combat_daily": {
     "runs": 24,
@@ -10262,78 +10310,78 @@
   "next": [
    {
     "account": "dre",
-    "task": "joint_battle",
-    "startsIn": 0.0,
-    "eta": "2026-09-20T11:46"
-   },
-   {
-    "account": "dre",
-    "task": "daily_dungeon",
-    "startsIn": 2.0,
-    "eta": "2026-09-20T11:48"
-   },
-   {
-    "account": "dre",
-    "task": "pokemon_home",
-    "startsIn": 2.4,
-    "eta": "2026-09-20T11:48"
-   },
-   {
-    "account": "dre",
     "task": "combat_daily",
-    "startsIn": 3.5,
-    "eta": "2026-09-20T11:50"
+    "startsIn": 0.0,
+    "eta": "2026-09-20T11:48"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 4.9,
-    "eta": "2026-09-20T11:51"
+    "startsIn": 1.4,
+    "eta": "2026-09-20T11:49"
    },
    {
     "account": "dre",
     "task": "paradise",
-    "startsIn": 5.0,
-    "eta": "2026-09-20T11:51"
+    "startsIn": 1.5,
+    "eta": "2026-09-20T11:50"
    },
    {
     "account": "dre",
     "task": "run_pvp_ranked",
-    "startsIn": 8.1,
-    "eta": "2026-09-20T11:54"
+    "startsIn": 4.6,
+    "eta": "2026-09-20T11:53"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 9.4,
-    "eta": "2026-09-20T11:55"
+    "startsIn": 5.9,
+    "eta": "2026-09-20T11:54"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 9.5,
-    "eta": "2026-09-20T11:56"
+    "startsIn": 6.0,
+    "eta": "2026-09-20T11:54"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 10.7,
-    "eta": "2026-09-20T11:57"
+    "startsIn": 7.2,
+    "eta": "2026-09-20T11:55"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 11.1,
-    "eta": "2026-09-20T11:57"
+    "startsIn": 7.6,
+    "eta": "2026-09-20T11:56"
    },
    {
     "account": "smurf",
     "task": "joint_team_daily_quest",
-    "startsIn": 12.0,
+    "startsIn": 8.5,
+    "eta": "2026-09-20T11:57"
+   },
+   {
+    "account": "fake1",
+    "task": "joint_team_daily_quest",
+    "startsIn": 9.5,
     "eta": "2026-09-20T11:58"
+   },
+   {
+    "account": "fake3",
+    "task": "joint_team_daily_quest",
+    "startsIn": 10.4,
+    "eta": "2026-09-20T11:58"
+   },
+   {
+    "account": "fake4",
+    "task": "joint_team_daily_quest",
+    "startsIn": 11.3,
+    "eta": "2026-09-20T11:59"
    }
   ],
-  "more": 23,
+  "more": 20,
   "fillers": [
    {
     "account": "fake5",
@@ -10385,12 +10433,6 @@
   }
  },
  "progress": {
-  "lucifer2": {
-   "rank": 5,
-   "pillar": "floor 83 stage 10",
-   "mailUnread": 0,
-   "paradiseStamina": "14/16"
-  },
   "deno": {
    "mailUnread": 0,
    "paradiseStamina": "5/15",
@@ -10467,6 +10509,11 @@
    "mailUnread": 0,
    "paradiseStamina": "5/15",
    "rank": 4
+  },
+  "lucifer2": {
+   "pillar": "floor 83 stage 10",
+   "mailUnread": 0,
+   "paradiseStamina": "14/16"
   },
   "jeff": {
    "islandFights": 2,
@@ -12204,7 +12251,6 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 5,
     "pillar": "floor 83 stage 10",
     "mailUnread": 0,
     "paradiseStamina": "14/16"
@@ -12443,21 +12489,13 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-20",
-   "summary": "3 of 15 dailies done",
-   "done": 3,
+   "summary": "5 of 15 dailies done · gave up on home",
+   "done": 5,
    "owed": 15,
    "open": [
     {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
      "task": "home",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -12496,7 +12534,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "pokemon_home",
+     "at": "11:47",
+     "why": "reached via trial, no trusted grid",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_114733_pokemon_home_dre__0012_114746_no_trusted_grid.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
@@ -12545,8 +12590,8 @@
     },
     {
      "day": "2026-09-20",
-     "done": 5,
-     "failed": 0
+     "done": 6,
+     "failed": 2
     }
    ]
   }
