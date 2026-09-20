@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T10:34:28.816222",
+ "generatedAt": "2026-09-20T10:36:32.316553",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "sprite",
-  "mode": "victory_road",
-  "since": "10:34:27"
+  "account": "skosmurf",
+  "mode": "dailyclaim",
+  "since": "10:35:41"
  },
  "grid": {
   "tasks": [
@@ -306,7 +306,7 @@
      "✓",
      "✗2",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 131,
-  "todo": 83,
+  "done": 132,
+  "todo": 82,
   "gaveUp": 4,
   "unavailable": 7,
   "windowed": 36
@@ -655,11 +655,43 @@
   }
  },
  "session": {
-  "label": "sprite",
-  "at": "2026-09-20T10:31:35.576494",
+  "label": "skosmurf",
+  "at": "2026-09-20T10:36:01.267127",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T10:35:40",
+   "script": "paradise",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "marginal_paradise_hub": 1,
+    "explore_clicks": 8,
+    "pass_claims": 1,
+    "dex_activated": 0,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_103508_paradise_sprite"
+  },
+  {
+   "ts": "2026-09-20T10:34:57",
+   "script": "victory_road",
+   "account": "sprite",
+   "rc": 1,
+   "secs": 18,
+   "stats": {
+    "marginal_rift_exit_guardian": 30,
+    "vr_badge_retap": 1,
+    "vr_not_open": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_103438_victory_road_sprite"
+  },
   {
    "ts": "2026-09-20T10:34:26",
    "script": "victory_road",
@@ -7102,47 +7134,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_112730_victory_road_lucifer1"
-  },
-  {
-   "ts": "2026-09-19T11:27:29",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 14,
-   "stats": {
-    "title_reread_named": 2,
-    "near_miss_pokemon_upgrade": 1,
-    "marginal_pokemon_upgrade": 1,
-    "upgrade_skip_resonating": 3,
-    "upgrade_all_unlevellable": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_112715_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-19T11:27:14",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "title_reread_named": 1,
-    "near_miss_pokemon_upgrade": 1,
-    "upgrade_skip_resonating": 3,
-    "upgrade_all_unlevellable": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_112700_combat_daily_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 38069,
+  "now": 38192,
   "segments": [
    {
     "b": 28814,
@@ -8940,16 +8937,48 @@
     "a": "sprite",
     "s": "victory_road",
     "login": null,
-    "handoff": null,
+    "handoff": 38077,
     "rc": 1,
-    "e": 38069,
+    "e": 38097,
     "secs": 18,
     "why": ""
+   },
+   {
+    "b": 38097,
+    "a": "sprite",
+    "s": "paradise",
+    "login": null,
+    "handoff": 38108,
+    "rc": 0,
+    "e": 38141,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 38141,
+    "a": "skosmurf",
+    "s": "dailyclaim",
+    "login": [
+     38141,
+     38161
+    ],
+    "handoff": 38169,
+    "rc": null,
+    "e": 38192
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T10:34:57",
+   "account": "sprite",
+   "task": "victory_road",
+   "rc": 1,
+   "secs": 18,
+   "why": "marginal_rift_exit_guardian, vr_badge_retap, vr_not_open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_103438_victory_road_sprite__KEEP_0006_103456_vr_not_open.png"
+  },
   {
    "ts": "2026-09-20T10:34:26",
    "account": "sprite",
@@ -9115,9 +9144,9 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 13,
-  "relogMinutes": 5.5,
-  "retries": 17,
+  "switches": 14,
+  "relogMinutes": 6.0,
+  "retries": 18,
   "tasks": {
    "dailyclaim": {
     "runs": 13,
@@ -9150,13 +9179,13 @@
     "failed": 7
    },
    "victory_road": {
-    "runs": 12,
-    "minutes": 1.8,
-    "failed": 1
+    "runs": 13,
+    "minutes": 2.1,
+    "failed": 2
    },
    "paradise": {
-    "runs": 11,
-    "minutes": 34.6,
+    "runs": 12,
+    "minutes": 35.1,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -9371,79 +9400,79 @@
  "queue": {
   "next": [
    {
-    "account": "sprite",
-    "task": "paradise",
-    "startsIn": 0.0,
-    "eta": "2026-09-20T10:34"
-   },
-   {
-    "account": "sprite",
-    "task": "collect_hoopa_keys",
-    "startsIn": 3.1,
-    "eta": "2026-09-20T10:37"
-   },
-   {
-    "account": "sprite",
-    "task": "sky_pillar",
-    "startsIn": 3.3,
-    "eta": "2026-09-20T10:37"
-   },
-   {
-    "account": "fake5",
-    "task": "faction",
-    "startsIn": 4.9,
-    "eta": "2026-09-20T10:39"
-   },
-   {
-    "account": "fake6",
-    "task": "faction",
-    "startsIn": 8.0,
-    "eta": "2026-09-20T10:42"
-   },
-   {
-    "account": "fake7",
-    "task": "faction",
-    "startsIn": 11.1,
-    "eta": "2026-09-20T10:45"
-   },
-   {
     "account": "skosmurf",
     "task": "dailyclaim",
-    "startsIn": 14.2,
-    "eta": "2026-09-20T10:48"
+    "startsIn": 0.0,
+    "eta": "2026-09-20T10:36"
    },
    {
     "account": "skosmurf",
     "task": "mail",
-    "startsIn": 14.6,
-    "eta": "2026-09-20T10:49"
+    "startsIn": 0.4,
+    "eta": "2026-09-20T10:36"
    },
    {
     "account": "skosmurf",
     "task": "daily_dungeon",
-    "startsIn": 14.6,
-    "eta": "2026-09-20T10:49"
+    "startsIn": 0.4,
+    "eta": "2026-09-20T10:36"
    },
    {
     "account": "skosmurf",
     "task": "pokemon_home",
-    "startsIn": 15.0,
-    "eta": "2026-09-20T10:49"
+    "startsIn": 0.8,
+    "eta": "2026-09-20T10:37"
    },
    {
     "account": "skosmurf",
     "task": "combat_daily",
-    "startsIn": 15.8,
-    "eta": "2026-09-20T10:50"
+    "startsIn": 1.6,
+    "eta": "2026-09-20T10:38"
    },
    {
     "account": "skosmurf",
     "task": "victory_road",
-    "startsIn": 17.1,
-    "eta": "2026-09-20T10:51"
+    "startsIn": 2.9,
+    "eta": "2026-09-20T10:39"
+   },
+   {
+    "account": "skosmurf",
+    "task": "paradise",
+    "startsIn": 3.1,
+    "eta": "2026-09-20T10:39"
+   },
+   {
+    "account": "skosmurf",
+    "task": "run_pvp_ranked",
+    "startsIn": 6.0,
+    "eta": "2026-09-20T10:42"
+   },
+   {
+    "account": "skosmurf",
+    "task": "collect_hoopa_keys",
+    "startsIn": 7.3,
+    "eta": "2026-09-20T10:43"
+   },
+   {
+    "account": "skosmurf",
+    "task": "sky_pillar",
+    "startsIn": 7.4,
+    "eta": "2026-09-20T10:43"
+   },
+   {
+    "account": "skosmurf",
+    "task": "faction",
+    "startsIn": 8.7,
+    "eta": "2026-09-20T10:45"
+   },
+   {
+    "account": "skosmurf",
+    "task": "misty_woods",
+    "startsIn": 11.4,
+    "eta": "2026-09-20T10:47"
    }
   ],
-  "more": 71,
+  "more": 70,
   "fillers": [
    {
     "account": "fake5",
@@ -9477,8 +9506,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 13,
-   "medianSec": 17,
+   "n": 14,
+   "medianSec": 17.5,
    "picker": {
     "n": 12,
     "medianSec": 17.0,
@@ -9489,8 +9518,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 1,
-    "medianSec": 19
+    "n": 2,
+    "medianSec": 19.5
    }
   }
  },
@@ -10889,8 +10918,8 @@
   "sprite": {
    "name": "sprite",
    "day": "2026-09-20",
-   "summary": "4 of 11 dailies done · gave up on claims, victory",
-   "done": 4,
+   "summary": "5 of 11 dailies done · gave up on claims, victory",
+   "done": 5,
    "owed": 11,
    "open": [
     {
@@ -10904,10 +10933,6 @@
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "paradise",
-     "state": "still to do"
     },
     {
      "task": "guildBoss",
@@ -10927,7 +10952,7 @@
      "task": "victory_road",
      "at": "10:34",
      "why": "vr badge retap, vr not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_103407_victory_road_sprite__KEEP_0006_103426_vr_not_open.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_103438_victory_road_sprite__KEEP_0006_103456_vr_not_open.png"
     },
     {
      "task": "dailyclaim",
@@ -10962,8 +10987,8 @@
     },
     {
      "day": "2026-09-20",
-     "done": 5,
-     "failed": 3
+     "done": 6,
+     "failed": 4
     }
    ]
   },
