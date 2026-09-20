@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T08:57:38.075945",
+ "generatedAt": "2026-09-20T08:59:42.365875",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "paradise",
-  "since": "08:57:34"
+  "mode": "sky_pillar",
+  "since": "08:59:36"
  },
  "grid": {
   "tasks": [
@@ -114,10 +114,10 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 46,
-  "todo": 177,
+  "done": 49,
+  "todo": 174,
   "gaveUp": 1,
   "unavailable": 1,
   "windowed": 36
@@ -651,6 +651,61 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T08:59:35",
+   "script": "collect_hoopa_keys",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 10,
+   "stats": {
+    "keys_card_seen": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_085925_collect_hoopa_keys_smurf"
+  },
+  {
+   "ts": "2026-09-20T08:59:23",
+   "script": "run_pvp_ranked",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 72,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 1,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 1,
+    "daily_goal_claimed": 3,
+    "near_miss_buy_items": 1
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 1,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260920_085811_run_pvp_ranked_smurf"
+  },
+  {
+   "ts": "2026-09-20T08:58:09",
+   "script": "paradise",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 34,
+   "stats": {
+    "marginal_paradise_hub": 2,
+    "explore_clicks": 9,
+    "pass_claims": 1,
+    "dex_milestones": 2,
+    "dex_activated": 0,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "9/20"
+   },
+   "dir": "debug_runs/20260920_085735_paradise_smurf"
+  },
   {
    "ts": "2026-09-20T08:57:33",
    "script": "victory_road",
@@ -7097,69 +7152,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_091942_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-19T09:19:40",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 1,
-   "secs": 129,
-   "stats": {
-    "title_reread_named": 2,
-    "near_miss_afk_rewards": 1,
-    "marginal_afk_rewards": 2,
-    "refused_quick_bar": 1,
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 2,
-    "marginal_adventure_event": 1,
-    "adv_energy_spent": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "pokemon_upgraded": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260919_091731_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-19T09:17:26",
-   "script": "pokemon_home",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 19,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_091706_pokemon_home_fake2"
-  },
-  {
-   "ts": "2026-09-19T09:17:04",
-   "script": "daily_dungeon",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "marginal_dungeon_list": 9,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_091633_daily_dungeon_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 32258,
+  "now": 32382,
   "segments": [
    {
     "b": 28814,
@@ -7771,8 +7769,41 @@
     "s": "paradise",
     "login": null,
     "handoff": 32255,
+    "rc": 0,
+    "e": 32290,
+    "secs": 34,
+    "why": ""
+   },
+   {
+    "b": 32290,
+    "a": "smurf",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 32290,
+    "rc": 0,
+    "e": 32364,
+    "secs": 72,
+    "why": ""
+   },
+   {
+    "b": 32364,
+    "a": "smurf",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 32364,
+    "rc": 0,
+    "e": 32376,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 32376,
+    "a": "smurf",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 32376,
     "rc": null,
-    "e": 32258
+    "e": 32382
    }
   ],
   "idle": []
@@ -7902,18 +7933,18 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 3,
-    "minutes": 10.8,
+    "runs": 4,
+    "minutes": 11.3,
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 4,
-    "minutes": 5.5,
+    "runs": 5,
+    "minutes": 6.7,
     "failed": 1
    },
    "collect_hoopa_keys": {
-    "runs": 3,
-    "minutes": 0.4,
+    "runs": 4,
+    "minutes": 0.5,
     "failed": 0
    },
    "sky_pillar": {
@@ -8073,78 +8104,78 @@
   "next": [
    {
     "account": "smurf",
-    "task": "paradise",
-    "startsIn": 0.0,
-    "eta": "2026-09-20T08:57"
-   },
-   {
-    "account": "smurf",
-    "task": "run_pvp_ranked",
-    "startsIn": 3.6,
-    "eta": "2026-09-20T09:01"
-   },
-   {
-    "account": "smurf",
-    "task": "collect_hoopa_keys",
-    "startsIn": 5.0,
-    "eta": "2026-09-20T09:02"
-   },
-   {
-    "account": "smurf",
     "task": "sky_pillar",
-    "startsIn": 5.1,
-    "eta": "2026-09-20T09:02"
+    "startsIn": 0.0,
+    "eta": "2026-09-20T08:59"
    },
    {
     "account": "smurf",
     "task": "faction",
-    "startsIn": 5.9,
-    "eta": "2026-09-20T09:03"
+    "startsIn": 0.8,
+    "eta": "2026-09-20T09:00"
    },
    {
     "account": "smurf",
     "task": "misty_woods",
-    "startsIn": 15.7,
-    "eta": "2026-09-20T09:13"
+    "startsIn": 10.6,
+    "eta": "2026-09-20T09:10"
    },
    {
     "account": "smurf",
     "task": "weekend_bash",
-    "startsIn": 17.7,
-    "eta": "2026-09-20T09:15"
+    "startsIn": 12.6,
+    "eta": "2026-09-20T09:12"
    },
    {
     "account": "fake1",
     "task": "dailyclaim",
-    "startsIn": 18.1,
-    "eta": "2026-09-20T09:15"
+    "startsIn": 13.0,
+    "eta": "2026-09-20T09:12"
    },
    {
     "account": "fake1",
     "task": "mail",
-    "startsIn": 18.5,
-    "eta": "2026-09-20T09:16"
+    "startsIn": 13.4,
+    "eta": "2026-09-20T09:13"
    },
    {
     "account": "fake1",
     "task": "joint_team_daily_quest",
-    "startsIn": 18.5,
-    "eta": "2026-09-20T09:16"
+    "startsIn": 13.4,
+    "eta": "2026-09-20T09:13"
    },
    {
     "account": "fake1",
     "task": "joint_battle",
-    "startsIn": 19.0,
-    "eta": "2026-09-20T09:16"
+    "startsIn": 13.9,
+    "eta": "2026-09-20T09:13"
    },
    {
     "account": "fake1",
     "task": "daily_dungeon",
-    "startsIn": 21.0,
+    "startsIn": 15.9,
+    "eta": "2026-09-20T09:15"
+   },
+   {
+    "account": "fake1",
+    "task": "pokemon_home",
+    "startsIn": 16.2,
+    "eta": "2026-09-20T09:15"
+   },
+   {
+    "account": "fake1",
+    "task": "combat_daily",
+    "startsIn": 18.1,
+    "eta": "2026-09-20T09:17"
+   },
+   {
+    "account": "fake1",
+    "task": "victory_road",
+    "startsIn": 19.2,
     "eta": "2026-09-20T09:18"
    }
   ],
-  "more": 165,
+  "more": 162,
   "fillers": [
    {
     "account": "fake5",
@@ -8220,7 +8251,9 @@
   },
   "smurf": {
    "misty": "step 4",
-   "mailUnread": 0
+   "mailUnread": 0,
+   "paradiseStamina": "9/20",
+   "rank": 1
   },
   "fake7": {
    "mailUnread": 0,
@@ -8291,6 +8324,7 @@
  },
  "ledger": {
   "smurf": {
+   "ranked attempts": 1,
    "Home creations": 50,
    "pillar/story stages cleared": 10
   },
@@ -8812,8 +8846,8 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-20",
-   "summary": "7 of 17 dailies done · 1 switched off · 1 not available today",
-   "done": 7,
+   "summary": "10 of 17 dailies done · 1 switched off · 1 not available today",
+   "done": 10,
    "owed": 17,
    "open": [
     {
@@ -8825,20 +8859,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "paradise",
-     "state": "still to do"
-    },
-    {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
     },
     {
      "task": "pillar",
@@ -8885,12 +8907,15 @@
     }
    ],
    "spent": {
+    "ranked attempts": 1,
     "Home creations": 50,
     "pillar/story stages cleared": 10
    },
    "progress": {
     "misty": "step 4",
-    "mailUnread": 0
+    "mailUnread": 0,
+    "paradiseStamina": "9/20",
+    "rank": 1
    },
    "history": [
     {
@@ -8925,7 +8950,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 8,
+     "done": 11,
      "failed": 2
     }
    ]
