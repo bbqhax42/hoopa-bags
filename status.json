@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T08:18:28.076894",
+ "generatedAt": "2026-09-20T08:20:31.815895",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "pokemon_home",
-  "since": "08:16:37"
+  "mode": "combat_daily",
+  "since": "08:20:29"
  },
  "grid": {
   "tasks": [
@@ -62,8 +62,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "⏰",
      "·",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 17,
-  "todo": 209,
-  "gaveUp": 1,
+  "done": 18,
+  "todo": 207,
+  "gaveUp": 2,
   "unavailable": 0,
   "windowed": 36
  },
@@ -649,6 +649,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T08:20:28",
+   "script": "combat_daily",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 114,
+   "stats": {
+    "title_reread_named": 3,
+    "marginal_afk_yield": 1,
+    "near_miss_afk_rewards": 6,
+    "marginal_afk_rewards": 2,
+    "near_miss_rift_exit_guardian": 2,
+    "refused_quick_bar": 1,
+    "marginal_battle_victory_confirm": 2,
+    "near_miss_vr_rank": 3,
+    "shop_never_opened": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 os a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260920_081834_combat_daily_jeff"
+  },
+  {
+   "ts": "2026-09-20T08:18:28",
+   "script": "pokemon_home",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 108,
+   "stats": {
+    "title_reread_named": 1,
+    "reached_via_trial": 1,
+    "grid_refit": 1,
+    "merge_moved_instead": 4,
+    "pair_went_stale": 2,
+    "counter_misread": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_081640_pokemon_home_jeff"
+  },
   {
    "ts": "2026-09-20T08:16:36",
    "script": "daily_dungeon",
@@ -7105,52 +7149,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_084529_joint_team_daily_quest_smurf"
-  },
-  {
-   "ts": "2026-09-19T08:45:27",
-   "script": "mail",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "reward_card_closed": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "reward_cards": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260919_084524_mail_smurf"
-  },
-  {
-   "ts": "2026-09-19T08:45:23",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 76,
-   "stats": {
-    "sign_in_already": 1,
-    "milestone_claimed": 1,
-    "privpack_paid_only": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 1
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260919_084406_dailyclaim_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 29908,
+  "now": 30032,
   "segments": [
    {
     "b": 28814,
@@ -7377,13 +7381,46 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 29799,
-    "rc": null,
-    "e": 29908
+    "rc": 0,
+    "e": 29909,
+    "secs": 108,
+    "why": ""
+   },
+   {
+    "b": 29909,
+    "a": "jeff",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29914,
+    "rc": 1,
+    "e": 30029,
+    "secs": 114,
+    "why": ""
+   },
+   {
+    "b": 30029,
+    "a": "jeff",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30029,
+    "rc": 1,
+    "e": 30032,
+    "secs": 114,
+    "why": ""
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T08:20:28",
+   "account": "jeff",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 114,
+   "why": "title_reread_named, marginal_afk_yield, near_miss_afk_rewards, marginal_afk_rewards, near_miss_rift_exit_guardian, refused_quick_bar, marginal_battle_victory_co",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_081834_combat_daily_jeff__KEEP_0099_081957_shop_never_opened.png"
+  },
   {
    "ts": "2026-09-20T08:11:38",
    "account": "nova",
@@ -7452,7 +7489,7 @@
   "since": "2026-09-20T08:00",
   "switches": 1,
   "relogMinutes": 0.4,
-  "retries": 3,
+  "retries": 4,
   "tasks": {
    "dailyclaim": {
     "runs": 2,
@@ -7475,14 +7512,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 1,
-    "minutes": 1.9,
+    "runs": 2,
+    "minutes": 3.7,
     "failed": 0
    },
    "combat_daily": {
-    "runs": 2,
-    "minutes": 2.3,
-    "failed": 2
+    "runs": 3,
+    "minutes": 4.2,
+    "failed": 3
    },
    "victory_road": {
     "runs": 1,
@@ -7644,78 +7681,78 @@
   "next": [
    {
     "account": "jeff",
-    "task": "pokemon_home",
+    "task": "victory_road",
     "startsIn": 0.0,
-    "eta": "2026-09-20T08:18"
-   },
-   {
-    "account": "jeff",
-    "task": "combat_daily",
-    "startsIn": 1.9,
     "eta": "2026-09-20T08:20"
    },
    {
     "account": "jeff",
-    "task": "victory_road",
-    "startsIn": 3.0,
-    "eta": "2026-09-20T08:21"
-   },
-   {
-    "account": "jeff",
     "task": "paradise",
-    "startsIn": 3.1,
-    "eta": "2026-09-20T08:21"
+    "startsIn": 0.1,
+    "eta": "2026-09-20T08:20"
    },
    {
     "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 7.1,
-    "eta": "2026-09-20T08:25"
+    "startsIn": 4.1,
+    "eta": "2026-09-20T08:24"
    },
    {
     "account": "jeff",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.3,
-    "eta": "2026-09-20T08:26"
+    "startsIn": 5.3,
+    "eta": "2026-09-20T08:25"
    },
    {
     "account": "jeff",
     "task": "sky_pillar",
-    "startsIn": 8.4,
-    "eta": "2026-09-20T08:26"
+    "startsIn": 5.4,
+    "eta": "2026-09-20T08:25"
    },
    {
     "account": "jeff",
     "task": "weekend_bash",
-    "startsIn": 9.0,
-    "eta": "2026-09-20T08:27"
+    "startsIn": 6.0,
+    "eta": "2026-09-20T08:26"
    },
    {
     "account": "jeff",
     "task": "championship",
-    "startsIn": 9.0,
-    "eta": "2026-09-20T08:27"
+    "startsIn": 6.0,
+    "eta": "2026-09-20T08:26"
    },
    {
     "account": "chris",
     "task": "dailyclaim",
-    "startsIn": 11.4,
-    "eta": "2026-09-20T08:29"
+    "startsIn": 8.4,
+    "eta": "2026-09-20T08:28"
    },
    {
     "account": "chris",
     "task": "mail",
-    "startsIn": 11.8,
-    "eta": "2026-09-20T08:30"
+    "startsIn": 8.8,
+    "eta": "2026-09-20T08:29"
    },
    {
     "account": "chris",
     "task": "joint_team_daily_quest",
-    "startsIn": 11.9,
-    "eta": "2026-09-20T08:30"
+    "startsIn": 8.9,
+    "eta": "2026-09-20T08:29"
+   },
+   {
+    "account": "chris",
+    "task": "joint_battle",
+    "startsIn": 9.4,
+    "eta": "2026-09-20T08:29"
+   },
+   {
+    "account": "chris",
+    "task": "daily_dungeon",
+    "startsIn": 11.4,
+    "eta": "2026-09-20T08:31"
    }
   ],
-  "more": 197,
+  "more": 195,
   "fillers": [
    {
     "account": "fake5",
@@ -7768,7 +7805,6 @@
  },
  "progress": {
   "smurf": {
-   "mailUnread": 0,
    "paradiseStamina": "20/20",
    "rank": 1,
    "pillar": "floor 17 stage 1",
@@ -7866,6 +7902,7 @@
  },
  "ledger": {
   "jeff": {
+   "Home creations": 50,
    "daily claims": 2,
    "Privilege Pack claimed": 1,
    "island fights": 6
@@ -8194,17 +8231,13 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-20",
-   "summary": "5 of 17 dailies done",
-   "done": 5,
+   "summary": "6 of 17 dailies done · gave up on dailies",
+   "done": 6,
    "owed": 17,
    "open": [
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "dailies",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "victory",
@@ -8247,10 +8280,18 @@
      "state": "asks again later"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "08:20",
+     "why": "title reread named, refused quick bar",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_081834_combat_daily_jeff__KEEP_0099_081957_shop_never_opened.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "daily claims": 2,
     "Privilege Pack claimed": 1,
     "island fights": 6
@@ -8294,7 +8335,7 @@
     {
      "day": "2026-09-20",
      "done": 6,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
@@ -8532,7 +8573,6 @@
     "pillar/story stages cleared": 10
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "20/20",
     "rank": 1,
     "pillar": "floor 17 stage 1",
