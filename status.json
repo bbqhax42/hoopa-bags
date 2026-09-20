@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T14:14:36.363605",
+ "generatedAt": "2026-09-20T14:16:39.846960",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
-  "mode": "faction",
-  "since": "14:14:34"
+  "account": "nova",
+  "mode": "guild_war",
+  "since": "14:16:06"
  },
  "grid": {
   "tasks": [
@@ -41,7 +41,7 @@
      "✓",
      "✗2",
      "✓",
-     "·",
+     "✓",
      "✓",
      "·",
      "✓",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 214,
-  "todo": 30,
+  "done": 215,
+  "todo": 29,
   "gaveUp": 8,
   "unavailable": 11,
   "windowed": 0
@@ -679,11 +679,43 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-20T14:12:40.111837",
+  "label": "nova",
+  "at": "2026-09-20T14:15:02.407746",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T14:16:06",
+   "script": "rank_match",
+   "account": "nova",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 0,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260920_141512_rank_match_nova"
+  },
+  {
+   "ts": "2026-09-20T14:14:43",
+   "script": "faction",
+   "account": "test1",
+   "rc": 1,
+   "secs": 7,
+   "stats": {
+    "tower_blocked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_141435_faction_test1"
+  },
   {
    "ts": "2026-09-20T14:14:34",
    "script": "faction",
@@ -7169,48 +7201,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_142703_sky_pillar_sprite"
-  },
-  {
-   "ts": "2026-09-19T14:27:02",
-   "script": "collect_hoopa_keys",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "near_miss_hoopa_vault": 1,
-    "marginal_hoopa_vault": 1,
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_142657_collect_hoopa_keys_sprite"
-  },
-  {
-   "ts": "2026-09-19T14:26:56",
-   "script": "rank_match",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 58,
-   "stats": {
-    "skip_tapped": 8,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260919_142557_rank_match_sprite"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 51276,
+  "now": 51400,
   "segments": [
    {
     "b": 28814,
@@ -10477,14 +10473,46 @@
     "login": null,
     "handoff": 51275,
     "rc": 1,
-    "e": 51276,
+    "e": 51284,
     "secs": 7,
     "why": ""
+   },
+   {
+    "b": 51284,
+    "a": "nova",
+    "s": "rank_match",
+    "login": [
+     51284,
+     51302
+    ],
+    "handoff": 51311,
+    "rc": 0,
+    "e": 51366,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 51366,
+    "a": "nova",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 51367,
+    "rc": null,
+    "e": 51400
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T14:14:43",
+   "account": "test1",
+   "task": "faction",
+   "rc": 1,
+   "secs": 7,
+   "why": "tower_blocked",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_141435_faction_test1__KEEP_0006_141443_faction_blocked.png"
+  },
   {
    "ts": "2026-09-20T14:14:34",
    "account": "test1",
@@ -10812,9 +10840,9 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 43,
-  "relogMinutes": 18.6,
-  "retries": 37,
+  "switches": 44,
+  "relogMinutes": 19.1,
+  "retries": 38,
   "tasks": {
    "dailyclaim": {
     "runs": 19,
@@ -10882,9 +10910,9 @@
     "failed": 2
    },
    "faction": {
-    "runs": 16,
-    "minutes": 32.2,
-    "failed": 5
+    "runs": 17,
+    "minutes": 32.3,
+    "failed": 6
    },
    "misty_woods": {
     "runs": 1,
@@ -10907,8 +10935,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 11,
-    "minutes": 8.6,
+    "runs": 12,
+    "minutes": 9.5,
     "failed": 0
    }
   }
@@ -11132,78 +11160,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "rank_match",
-    "startsIn": 0.4,
-    "eta": "2026-09-20T14:15"
-   },
-   {
-    "account": "nova",
     "task": "guild_war",
-    "startsIn": 1.2,
-    "eta": "2026-09-20T14:15"
-   },
-   {
-    "account": "fake2",
-    "task": "rank_match",
-    "startsIn": 2.3,
+    "startsIn": 0.0,
     "eta": "2026-09-20T14:16"
    },
    {
     "account": "fake2",
-    "task": "guild_war",
-    "startsIn": 3.1,
+    "task": "rank_match",
+    "startsIn": 1.2,
     "eta": "2026-09-20T14:17"
    },
    {
-    "account": "fake7",
-    "task": "rank_match",
-    "startsIn": 4.3,
+    "account": "fake2",
+    "task": "guild_war",
+    "startsIn": 1.9,
     "eta": "2026-09-20T14:18"
    },
    {
     "account": "fake7",
-    "task": "faction",
-    "startsIn": 5.1,
+    "task": "rank_match",
+    "startsIn": 3.1,
     "eta": "2026-09-20T14:19"
+   },
+   {
+    "account": "fake7",
+    "task": "faction",
+    "startsIn": 3.9,
+    "eta": "2026-09-20T14:20"
    },
    {
     "account": "sprite",
     "task": "rank_match",
-    "startsIn": 7.5,
+    "startsIn": 6.2,
     "eta": "2026-09-20T14:22"
    },
    {
     "account": "sprite",
     "task": "guild_war",
-    "startsIn": 8.2,
-    "eta": "2026-09-20T14:22"
+    "startsIn": 7.0,
+    "eta": "2026-09-20T14:23"
    },
    {
     "account": "sprite",
     "task": "collect_hoopa_keys",
-    "startsIn": 9.0,
-    "eta": "2026-09-20T14:23"
+    "startsIn": 7.7,
+    "eta": "2026-09-20T14:24"
    },
    {
     "account": "sprite",
     "task": "sky_pillar",
-    "startsIn": 9.1,
-    "eta": "2026-09-20T14:23"
+    "startsIn": 7.9,
+    "eta": "2026-09-20T14:24"
    },
    {
     "account": "skosmurf",
     "task": "rank_match",
-    "startsIn": 10.7,
-    "eta": "2026-09-20T14:25"
+    "startsIn": 9.4,
+    "eta": "2026-09-20T14:26"
    },
    {
     "account": "skosmurf",
     "task": "misty_woods",
-    "startsIn": 11.5,
+    "startsIn": 10.2,
     "eta": "2026-09-20T14:26"
+   },
+   {
+    "account": "skosmurf",
+    "task": "weekend_bash",
+    "startsIn": 10.3,
+    "eta": "2026-09-20T14:27"
    }
   ],
-  "more": 18,
+  "more": 17,
   "fillers": [
    {
     "account": "skosmurf",
@@ -11233,12 +11261,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 43,
-   "medianSec": 17,
+   "n": 44,
+   "medianSec": 17.0,
    "picker": {
-    "n": 32,
-    "medianSec": 16.0,
-    "jumps": 24
+    "n": 33,
+    "medianSec": 16,
+    "jumps": 25
    },
    "typed": {
     "n": 0,
@@ -11251,9 +11279,6 @@
   }
  },
  "progress": {
-  "sprite": {
-   "mailUnread": 0
-  },
   "skosmurf": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
@@ -11333,6 +11358,9 @@
    "mailUnread": 0,
    "paradiseStamina": "5/15",
    "pillar": "floor 3 stage 7"
+  },
+  "sprite": {
+   "mailUnread": 0
   },
   "nova": {
    "mailUnread": 0,
@@ -11778,17 +11806,13 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-20",
-   "summary": "12 of 15 dailies done · gave up on dailies",
-   "done": 12,
+   "summary": "13 of 15 dailies done · gave up on dailies",
+   "done": 13,
    "owed": 15,
    "open": [
     {
      "task": "dailies",
      "state": "gave up"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
     },
     {
      "task": "guildBoss",
@@ -11858,7 +11882,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 12,
+     "done": 13,
      "failed": 3
     }
    ]
@@ -13134,7 +13158,7 @@
      "task": "faction",
      "at": "14:14",
      "why": "tower blocked",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_141426_faction_test1__KEEP_0006_141434_faction_blocked.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_141435_faction_test1__KEEP_0006_141443_faction_blocked.png"
     },
     {
      "task": "joint_team_daily_quest",
@@ -13211,7 +13235,7 @@
     {
      "day": "2026-09-20",
      "done": 13,
-     "failed": 5
+     "failed": 6
     }
    ]
   },
