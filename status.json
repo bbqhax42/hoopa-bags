@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T14:08:25.259875",
+ "generatedAt": "2026-09-20T14:10:29.483053",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "joint_team_daily_quest",
-  "since": "14:07:55"
+  "mode": "guild_war",
+  "since": "14:10:23"
  },
  "grid": {
   "tasks": [
@@ -371,15 +371,15 @@
     "cells": [
      "✓",
      "✓",
+     "✗2",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
-     "✓",
-     "✓",
-     "✓",
-     "✓",
-     "✓",
-     "·",
-     "✓",
-     "⇢",
      "✓",
      "·",
      "·",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 207,
-  "todo": 38,
-  "gaveUp": 6,
+  "done": 208,
+  "todo": 37,
+  "gaveUp": 7,
   "unavailable": 10,
   "windowed": 0
  },
@@ -684,6 +684,70 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T14:10:22",
+   "script": "rank_match",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260920_140925_rank_match_lucifer2"
+  },
+  {
+   "ts": "2026-09-20T14:09:24",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 28,
+   "stats": {
+    "squad_unaffordable": 1,
+    "guild_base_by_back": 1,
+    "panel_swipes": 6,
+    "rows_left": 2,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "joint_team_daily_quest: still open: enhance any artifact once: todo"
+   ],
+   "values": {
+    "squad_points": "not enough for today's skill",
+    "left": "enhance any artifact once: todo; upgrade squad skill once: blocked"
+   },
+   "dir": "debug_runs/20260920_140855_joint_team_daily_quest_lucifer2"
+  },
+  {
+   "ts": "2026-09-20T14:08:53",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 29,
+   "stats": {
+    "squad_unaffordable": 1,
+    "guild_base_by_back": 1,
+    "panel_swipes": 6,
+    "rows_left": 2,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "joint_team_daily_quest: still open: enhance any artifact once: todo"
+   ],
+   "values": {
+    "squad_points": "not enough for today's skill",
+    "left": "enhance any artifact once: todo; upgrade squad skill once: blocked"
+   },
+   "dir": "debug_runs/20260920_140824_joint_team_daily_quest_lucifer2"
+  },
   {
    "ts": "2026-09-20T14:07:55",
    "script": "faction",
@@ -7130,68 +7194,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260919_142228_faction_fake5"
-  },
-  {
-   "ts": "2026-09-19T14:22:27",
-   "script": "collect_hoopa_keys",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 10,
-   "stats": {
-    "near_miss_hoopa_vault": 1,
-    "marginal_hoopa_vault": 1,
-    "keys_card_seen": 1,
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_142217_collect_hoopa_keys_fake5"
-  },
-  {
-   "ts": "2026-09-19T14:22:16",
-   "script": "rank_match",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 62,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260919_142113_rank_match_fake5"
-  },
-  {
-   "ts": "2026-09-19T14:20:47",
-   "script": "guild_war",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 68,
-   "stats": {
-    "gw_featured_alive": 1,
-    "near_miss_vr_rank": 3,
-    "marginal_battle_over": 3,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_141938_guild_war_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 50905,
+  "now": 51029,
   "segments": [
    {
     "b": 28814,
@@ -10322,13 +10330,64 @@
      50895
     ],
     "handoff": 50904,
+    "rc": 1,
+    "e": 50934,
+    "secs": 29,
+    "why": "joint_team_daily_quest: still open: enhance any artifact once: todo"
+   },
+   {
+    "b": 50934,
+    "a": "lucifer2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 50935,
+    "rc": 1,
+    "e": 50964,
+    "secs": 29,
+    "why": "joint_team_daily_quest: still open: enhance any artifact once: todo"
+   },
+   {
+    "b": 50964,
+    "a": "lucifer2",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 50965,
+    "rc": 0,
+    "e": 51023,
+    "secs": 56,
+    "why": ""
+   },
+   {
+    "b": 51023,
+    "a": "lucifer2",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 51023,
     "rc": null,
-    "e": 50905
+    "e": 51029
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T14:09:24",
+   "account": "lucifer2",
+   "task": "joint_team_daily_quest",
+   "rc": 1,
+   "secs": 28,
+   "why": "joint_team_daily_quest: still open: enhance any artifact once: todo",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_140855_joint_team_daily_quest_lucifer2__KEEP_0016_140908_squad_unaffordable.png"
+  },
+  {
+   "ts": "2026-09-20T14:08:53",
+   "account": "lucifer2",
+   "task": "joint_team_daily_quest",
+   "rc": 1,
+   "secs": 29,
+   "why": "joint_team_daily_quest: still open: enhance any artifact once: todo",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_140824_joint_team_daily_quest_lucifer2__KEEP_0016_140837_squad_unaffordable.png"
+  },
   {
    "ts": "2026-09-20T14:07:55",
    "account": "fake6",
@@ -10631,7 +10690,7 @@
   "since": "2026-09-20T08:00",
   "switches": 42,
   "relogMinutes": 18.2,
-  "retries": 34,
+  "retries": 36,
   "tasks": {
    "dailyclaim": {
     "runs": 19,
@@ -10644,9 +10703,9 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 28,
-    "minutes": 14.4,
-    "failed": 8
+    "runs": 30,
+    "minutes": 15.4,
+    "failed": 10
    },
    "daily_dungeon": {
     "runs": 19,
@@ -10724,8 +10783,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 8,
-    "minutes": 7.5,
+    "runs": 9,
+    "minutes": 8.4,
     "failed": 0
    }
   }
@@ -10943,78 +11002,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "joint_team_daily_quest",
+    "task": "guild_war",
     "startsIn": 0.0,
-    "eta": "2026-09-20T14:08"
-   },
-   {
-    "account": "lucifer2",
-    "task": "rank_match",
-    "startsIn": 0.5,
-    "eta": "2026-09-20T14:08"
-   },
-   {
-    "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 1.5,
-    "eta": "2026-09-20T14:09"
-   },
-   {
-    "account": "lucifer2",
-    "task": "sky_pillar",
-    "startsIn": 1.6,
     "eta": "2026-09-20T14:10"
    },
    {
     "account": "lucifer2",
+    "task": "collect_hoopa_keys",
+    "startsIn": 0.7,
+    "eta": "2026-09-20T14:11"
+   },
+   {
+    "account": "lucifer2",
+    "task": "sky_pillar",
+    "startsIn": 0.9,
+    "eta": "2026-09-20T14:11"
+   },
+   {
+    "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 2.8,
-    "eta": "2026-09-20T14:11"
-   },
-   {
-    "account": "test1",
-    "task": "joint_team_daily_quest",
-    "startsIn": 3.2,
-    "eta": "2026-09-20T14:11"
-   },
-   {
-    "account": "test1",
-    "task": "rank_match",
-    "startsIn": 3.7,
+    "startsIn": 2.1,
     "eta": "2026-09-20T14:12"
    },
    {
     "account": "test1",
-    "task": "faction",
-    "startsIn": 4.6,
+    "task": "joint_team_daily_quest",
+    "startsIn": 2.5,
+    "eta": "2026-09-20T14:12"
+   },
+   {
+    "account": "test1",
+    "task": "rank_match",
+    "startsIn": 3.0,
     "eta": "2026-09-20T14:13"
+   },
+   {
+    "account": "test1",
+    "task": "faction",
+    "startsIn": 3.9,
+    "eta": "2026-09-20T14:14"
    },
    {
     "account": "nova",
     "task": "rank_match",
-    "startsIn": 7.2,
-    "eta": "2026-09-20T14:15"
+    "startsIn": 6.5,
+    "eta": "2026-09-20T14:16"
    },
    {
     "account": "nova",
     "task": "guild_war",
-    "startsIn": 8.1,
-    "eta": "2026-09-20T14:16"
-   },
-   {
-    "account": "fake2",
-    "task": "rank_match",
-    "startsIn": 9.3,
+    "startsIn": 7.4,
     "eta": "2026-09-20T14:17"
    },
    {
     "account": "fake2",
+    "task": "rank_match",
+    "startsIn": 8.5,
+    "eta": "2026-09-20T14:19"
+   },
+   {
+    "account": "fake2",
     "task": "guild_war",
-    "startsIn": 10.2,
-    "eta": "2026-09-20T14:18"
+    "startsIn": 9.5,
+    "eta": "2026-09-20T14:19"
+   },
+   {
+    "account": "fake7",
+    "task": "rank_match",
+    "startsIn": 10.6,
+    "eta": "2026-09-20T14:21"
    }
   ],
-  "more": 26,
+  "more": 25,
   "fillers": [
    {
     "account": "skosmurf",
@@ -11062,11 +11121,6 @@
   }
  },
  "progress": {
-  "fake5": {
-   "mailUnread": 0,
-   "paradiseStamina": "5/15",
-   "pillar": "floor 4 stage 3"
-  },
   "fake6": {
    "mailUnread": 0,
    "paradiseStamina": "5/15",
@@ -11144,6 +11198,11 @@
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "pillar": "floor 3 stage 7"
+  },
+  "fake5": {
+   "mailUnread": 0,
+   "paradiseStamina": "5/15",
+   "pillar": "floor 4 stage 3"
   },
   "nova": {
    "mailUnread": 0,
@@ -12818,21 +12877,17 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-20",
-   "summary": "9 of 15 dailies done · 1 switched off",
-   "done": 9,
+   "summary": "10 of 15 dailies done · gave up on JointQ · 1 switched off",
+   "done": 10,
    "owed": 15,
    "open": [
     {
      "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -12849,16 +12904,16 @@
    ],
    "issues": [
     {
+     "task": "joint_team_daily_quest",
+     "at": "14:09",
+     "why": "joint_team_daily_quest: still open: enhance any artifact once: todo",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_140855_joint_team_daily_quest_lucifer2__KEEP_0016_140908_squad_unaffordable.png"
+    },
+    {
      "task": "story",
      "at": "02:54",
      "why": "story: lost at stage 1 after 0 clear(s) — the next stage needs a stronger team",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_025440_story_lucifer2__KEEP_0004_025449_story_lost_1.png"
-    },
-    {
-     "task": "joint_team_daily_quest",
-     "at": "11:10",
-     "why": "finished, but left open: participate in the relic battlefield one: todo; upgrade squad skill once: blocked",
-     "frame": null
     }
    ],
    "off": [
@@ -12915,8 +12970,8 @@
     },
     {
      "day": "2026-09-20",
-     "done": 10,
-     "failed": 1
+     "done": 11,
+     "failed": 3
     }
    ]
   },
