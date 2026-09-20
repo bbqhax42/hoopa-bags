@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T15:01:58.651114",
+ "generatedAt": "2026-09-20T15:04:02.339343",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "hoopa",
-  "since": "14:50:03"
+  "account": null,
+  "mode": null,
+  "since": null
  },
  "grid": {
   "tasks": [
@@ -679,11 +679,32 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-20T14:50:19.739369",
+  "label": "jeff",
+  "at": "2026-09-20T15:03:53.189421",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T15:03:03",
+   "script": "dailyclaim",
+   "account": "chris",
+   "rc": 1,
+   "secs": 37,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_already": 1,
+    "logingifts_no_open": 1,
+    "incomplete": 1,
+    "claims": 0
+   },
+   "incomplete": [
+    "dailyclaim: the Login Gifts list would not open"
+   ],
+   "values": {
+    "rail_badges": "0.190:80 0.275:0 0.345:54 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260920_150226_dailyclaim_chris"
+  },
   {
    "ts": "2026-09-20T14:50:03",
    "script": "island_challenge",
@@ -7219,27 +7240,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260919_200207_worldboss_jeff"
-  },
-  {
-   "ts": "2026-09-19T20:02:07",
-   "script": "worldboss",
-   "account": "chris",
-   "rc": 0,
-   "secs": 84,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260919_200043_worldboss_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 54119,
+  "now": 54242,
   "segments": [
    {
     "b": 28814,
@@ -11016,12 +11022,21 @@
     ],
     "handoff": 53431,
     "rc": null,
-    "e": 54119
+    "e": 54242
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T15:03:03",
+   "account": "chris",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 37,
+   "why": "dailyclaim: the Login Gifts list would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_150226_dailyclaim_chris__KEEP_0010_150303_home_at_exit.png"
+  },
   {
    "ts": "2026-09-20T14:24:51",
    "account": "skosmurf",
@@ -11810,14 +11825,6 @@
   }
  },
  "progress": {
-  "chris": {
-   "islandFights": 6,
-   "islandStamina": 0,
-   "mailUnread": 0,
-   "paradiseStamina": "0/16",
-   "rank": 1,
-   "pillar": "floor 136 stage 8"
-  },
   "jeff": {
    "islandFights": 5,
    "islandStamina": 29,
@@ -11892,6 +11899,14 @@
    "pillar": "floor 82 stage 9",
    "mailUnread": 0,
    "rank": 2
+  },
+  "chris": {
+   "islandFights": 6,
+   "islandStamina": 0,
+   "mailUnread": 0,
+   "paradiseStamina": "0/16",
+   "rank": 1,
+   "pillar": "floor 136 stage 8"
   },
   "nova": {
    "mailUnread": 0,
@@ -12070,9 +12085,9 @@
   }
  },
  "paused": {
-  "since": "2026-09-20T14:59:03",
+  "since": "2026-09-20T15:03:03",
   "by": "cli",
-  "why": "sign-in fix live test on chris"
+  "why": "sunday team pass + sign-in catch-up"
  },
  "warnings": [
   {
@@ -12516,6 +12531,12 @@
    ],
    "issues": [
     {
+     "task": "dailyclaim",
+     "at": "15:03",
+     "why": "dailyclaim: the Login Gifts list would not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_150226_dailyclaim_chris__KEEP_0010_150303_home_at_exit.png"
+    },
+    {
      "task": "joint_team_daily_quest",
      "at": "10:52",
      "why": "joint_team_daily_quest: still open: daily login: blocked; joint_team_daily_quest: still open: speak 1 time in team channel: blocked; joint_team_daily_quest: still open: enhance any artifact once,: blocked",
@@ -12589,7 +12610,7 @@
     {
      "day": "2026-09-20",
      "done": 18,
-     "failed": 2
+     "failed": 3
     }
    ]
   },
