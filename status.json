@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-20T10:59:11.134839",
+ "generatedAt": "2026-09-20T11:01:14.473085",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skosmurf",
-  "mode": "faction",
-  "since": "10:58:31"
+  "account": "lucifer1",
+  "mode": "joint_team_daily_quest",
+  "since": "11:00:28"
  },
  "grid": {
   "tasks": [
@@ -345,8 +345,8 @@
    {
     "account": "lucifer1",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 136,
-  "todo": 77,
+  "done": 138,
+  "todo": 75,
   "gaveUp": 5,
   "unavailable": 7,
   "windowed": 36
@@ -663,11 +663,66 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-20T10:54:32.412736",
+  "label": "lucifer1",
+  "at": "2026-09-20T10:59:51.144374",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-20T11:00:27",
+   "script": "mail",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 5,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260920_110024_mail_lucifer1"
+  },
+  {
+   "ts": "2026-09-20T11:00:23",
+   "script": "dailyclaim",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 22,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260920_110000_dailyclaim_lucifer1"
+  },
+  {
+   "ts": "2026-09-20T10:59:34",
+   "script": "faction",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 24,
+   "stats": {
+    "popup_never_opened": 3,
+    "incomplete": 3,
+    "floors_water": 0,
+    "floors_fire": 0,
+    "floors_grass": 0,
+    "sweeps_used": 0
+   },
+   "incomplete": [
+    "faction: water tower: Start opened nothing",
+    "faction: fire tower: Start opened nothing",
+    "faction: grass tower: Start opened nothing"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260920_105910_faction_skosmurf"
+  },
   {
    "ts": "2026-09-20T10:58:30",
    "script": "faction",
@@ -7121,54 +7176,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260919_120431_guild_war_fake5"
-  },
-  {
-   "ts": "2026-09-19T12:04:05",
-   "script": "championship",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_120405_championship_jeff"
-  },
-  {
-   "ts": "2026-09-19T12:04:04",
-   "script": "championship",
-   "account": "jeff",
-   "rc": 2,
-   "secs": 4,
-   "stats": {
-    "no_icon": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_120400_championship_jeff"
-  },
-  {
-   "ts": "2026-09-19T12:03:56",
-   "script": "guild_war",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "near_miss_tips_header": 17,
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_attempts_spent": 1,
-    "assist_already_set": 1,
-    "gw_no_attempts": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260919_120348_guild_war_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-20T00:00",
   "since": 28800.0,
-  "now": 39551,
+  "now": 39674,
   "segments": [
    {
     "b": 28814,
@@ -9142,14 +9155,57 @@
     "login": null,
     "handoff": 39549,
     "rc": 1,
-    "e": 39551,
+    "e": 39575,
     "secs": 24,
     "why": "faction: water tower: Start opened nothing; faction: fire tower: Start opened nothing; faction: grass tower: Start opened nothing"
+   },
+   {
+    "b": 39575,
+    "a": "lucifer1",
+    "s": "dailyclaim",
+    "login": [
+     39575,
+     39591
+    ],
+    "handoff": 39600,
+    "rc": 0,
+    "e": 39624,
+    "secs": 22,
+    "why": ""
+   },
+   {
+    "b": 39624,
+    "a": "lucifer1",
+    "s": "mail",
+    "login": null,
+    "handoff": 39624,
+    "rc": 0,
+    "e": 39628,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 39628,
+    "a": "lucifer1",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 39628,
+    "rc": null,
+    "e": 39674
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-20T10:59:34",
+   "account": "skosmurf",
+   "task": "faction",
+   "rc": 1,
+   "secs": 24,
+   "why": "faction: water tower: Start opened nothing; faction: fire tower: Start opened nothing; faction: grass tower: Start opened nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_105910_faction_skosmurf__KEEP_0014_105934_faction_no_popup_grass.png"
+  },
   {
    "ts": "2026-09-20T10:58:30",
    "account": "skosmurf",
@@ -9351,17 +9407,17 @@
  ],
  "day": {
   "since": "2026-09-20T08:00",
-  "switches": 16,
-  "relogMinutes": 6.8,
-  "retries": 21,
+  "switches": 17,
+  "relogMinutes": 7.2,
+  "retries": 22,
   "tasks": {
    "dailyclaim": {
-    "runs": 14,
-    "minutes": 5.8,
+    "runs": 15,
+    "minutes": 6.2,
     "failed": 2
    },
    "mail": {
-    "runs": 13,
+    "runs": 14,
     "minutes": 0.7,
     "failed": 0
    },
@@ -9421,9 +9477,9 @@
     "failed": 2
    },
    "faction": {
-    "runs": 10,
-    "minutes": 24.7,
-    "failed": 1
+    "runs": 11,
+    "minutes": 25.1,
+    "failed": 2
    },
    "misty_woods": {
     "runs": 1,
@@ -9607,79 +9663,79 @@
  "queue": {
   "next": [
    {
-    "account": "skosmurf",
-    "task": "misty_woods",
+    "account": "lucifer1",
+    "task": "joint_team_daily_quest",
     "startsIn": 0.0,
-    "eta": "2026-09-20T10:59"
+    "eta": "2026-09-20T11:01"
    },
    {
-    "account": "skosmurf",
+    "account": "lucifer1",
+    "task": "joint_battle",
+    "startsIn": 0.4,
+    "eta": "2026-09-20T11:01"
+   },
+   {
+    "account": "lucifer1",
+    "task": "daily_dungeon",
+    "startsIn": 2.4,
+    "eta": "2026-09-20T11:03"
+   },
+   {
+    "account": "lucifer1",
+    "task": "pokemon_home",
+    "startsIn": 2.8,
+    "eta": "2026-09-20T11:04"
+   },
+   {
+    "account": "lucifer1",
+    "task": "combat_daily",
+    "startsIn": 3.9,
+    "eta": "2026-09-20T11:05"
+   },
+   {
+    "account": "lucifer1",
+    "task": "victory_road",
+    "startsIn": 5.2,
+    "eta": "2026-09-20T11:06"
+   },
+   {
+    "account": "lucifer1",
+    "task": "paradise",
+    "startsIn": 5.4,
+    "eta": "2026-09-20T11:06"
+   },
+   {
+    "account": "lucifer1",
+    "task": "run_pvp_ranked",
+    "startsIn": 8.3,
+    "eta": "2026-09-20T11:09"
+   },
+   {
+    "account": "lucifer1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 9.7,
+    "eta": "2026-09-20T11:10"
+   },
+   {
+    "account": "lucifer1",
+    "task": "sky_pillar",
+    "startsIn": 9.8,
+    "eta": "2026-09-20T11:11"
+   },
+   {
+    "account": "lucifer1",
     "task": "weekend_bash",
-    "startsIn": 0.1,
-    "eta": "2026-09-20T10:59"
+    "startsIn": 10.9,
+    "eta": "2026-09-20T11:12"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 0.5,
-    "eta": "2026-09-20T10:59"
-   },
-   {
-    "account": "fake1",
-    "task": "joint_team_daily_quest",
-    "startsIn": 1.3,
-    "eta": "2026-09-20T11:00"
-   },
-   {
-    "account": "fake3",
-    "task": "joint_team_daily_quest",
-    "startsIn": 2.2,
-    "eta": "2026-09-20T11:01"
-   },
-   {
-    "account": "fake4",
-    "task": "joint_team_daily_quest",
-    "startsIn": 3.0,
-    "eta": "2026-09-20T11:02"
-   },
-   {
-    "account": "fake5",
-    "task": "joint_team_daily_quest",
-    "startsIn": 3.8,
-    "eta": "2026-09-20T11:03"
-   },
-   {
-    "account": "fake5",
-    "task": "faction",
-    "startsIn": 4.3,
-    "eta": "2026-09-20T11:03"
-   },
-   {
-    "account": "fake6",
-    "task": "joint_team_daily_quest",
-    "startsIn": 7.1,
-    "eta": "2026-09-20T11:06"
-   },
-   {
-    "account": "fake6",
-    "task": "faction",
-    "startsIn": 7.6,
-    "eta": "2026-09-20T11:06"
-   },
-   {
-    "account": "sprite",
-    "task": "collect_hoopa_keys",
-    "startsIn": 10.4,
-    "eta": "2026-09-20T11:09"
-   },
-   {
-    "account": "sprite",
-    "task": "sky_pillar",
-    "startsIn": 10.6,
-    "eta": "2026-09-20T11:09"
+    "startsIn": 11.3,
+    "eta": "2026-09-20T11:12"
    }
   ],
-  "more": 65,
+  "more": 63,
   "fillers": [
    {
     "account": "fake5",
@@ -9713,12 +9769,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 16,
-   "medianSec": 17.5,
+   "n": 17,
+   "medianSec": 17,
    "picker": {
-    "n": 13,
-    "medianSec": 17,
-    "jumps": 8
+    "n": 14,
+    "medianSec": 16.5,
+    "jumps": 9
    },
    "typed": {
     "n": 0,
@@ -9755,7 +9811,8 @@
   },
   "lucifer1": {
    "rank": 4,
-   "pillar": "floor 89 stage 7"
+   "pillar": "floor 89 stage 7",
+   "mailUnread": 0
   },
   "deno": {
    "mailUnread": 0,
@@ -9832,6 +9889,11 @@
   }
  },
  "ledger": {
+  "lucifer1": {
+   "mail claimed": 1,
+   "daily claims": 2,
+   "Privilege Pack claimed": 1
+  },
   "skosmurf": {
    "pillar/story stages cleared": 1,
    "ranked attempts": 1,
@@ -11267,9 +11329,9 @@
    "issues": [
     {
      "task": "faction",
-     "at": "10:58",
+     "at": "10:59",
      "why": "faction: water tower: Start opened nothing; faction: fire tower: Start opened nothing; faction: grass tower: Start opened nothing",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_105805_faction_skosmurf__KEEP_0014_105830_faction_no_popup_grass.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260920_105910_faction_skosmurf__KEEP_0014_105934_faction_no_popup_grass.png"
     },
     {
      "task": "combat_daily",
@@ -11321,25 +11383,17 @@
     {
      "day": "2026-09-20",
      "done": 11,
-     "failed": 3
+     "failed": 4
     }
    ]
   },
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-20",
-   "summary": "0 of 15 dailies done",
-   "done": 0,
+   "summary": "2 of 15 dailies done",
+   "done": 2,
    "owed": 15,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "still to do"
@@ -11396,10 +11450,15 @@
    "issues": [],
    "off": [],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 2,
+    "Privilege Pack claimed": 1
+   },
    "progress": {
     "rank": 4,
-    "pillar": "floor 89 stage 7"
+    "pillar": "floor 89 stage 7",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -11434,7 +11493,7 @@
     },
     {
      "day": "2026-09-20",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
