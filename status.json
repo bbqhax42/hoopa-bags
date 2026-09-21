@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T17:29:32.365957",
+ "generatedAt": "2026-09-21T17:31:35.859700",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "joint_team_daily_quest",
-  "since": "17:29:11"
+  "mode": "pokemon_home",
+  "since": "17:30:30"
  },
  "grid": {
   "tasks": [
@@ -59,15 +59,15 @@
     "cells": [
      "✓",
      "✓",
+     "✓",
+     "⊘",
+     "✓",
      "·",
      "·",
      "·",
      "·",
      "·",
      "·",
-     "·",
-     "·",
-     "⇢",
      "·",
      "·",
      "·",
@@ -465,10 +465,10 @@
   ]
  },
  "counts": {
-  "done": 175,
-  "todo": 44,
+  "done": 177,
+  "todo": 42,
   "gaveUp": 13,
-  "unavailable": 28,
+  "unavailable": 29,
   "windowed": 0
  },
  "disabled": [
@@ -694,6 +694,32 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T17:30:29",
+   "script": "daily_dungeon",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 20,
+   "stats": {
+    "marginal_dungeon_list": 13
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_173009_daily_dungeon_jeff"
+  },
+  {
+   "ts": "2026-09-21T17:29:40",
+   "script": "joint_team_daily_quest",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 28,
+   "stats": {
+    "panel_swipes": 8
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_172911_joint_team_daily_quest_jeff"
+  },
   {
    "ts": "2026-09-21T17:29:10",
    "script": "mail",
@@ -7226,44 +7252,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-20T12:51:02",
-   "script": "hoopa",
-   "account": "fake2",
-   "rc": 2,
-   "secs": 969,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-20T12:34:25",
-   "script": "faction",
-   "account": "skosmurf",
-   "rc": 2,
-   "secs": 40,
-   "stats": {
-    "capped_water": 1,
-    "floors_water": 0,
-    "capped_fire": 1,
-    "floors_fire": 0,
-    "capped_grass": 1,
-    "floors_grass": 0,
-    "sweeps_used": 0
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_123345_faction_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 62972,
+  "now": 63096,
   "segments": [
    {
     "b": 28882,
@@ -10975,8 +10969,48 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 62951,
+    "rc": 0,
+    "e": 62980,
+    "secs": 28,
+    "why": ""
+   },
+   {
+    "b": 62980,
+    "a": "jeff",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 62983,
     "rc": null,
-    "e": 62972
+    "e": 62991
+   },
+   {
+    "b": 62991,
+    "a": "jeff",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 62996,
+    "rc": null,
+    "e": 63004
+   },
+   {
+    "b": 63004,
+    "a": "jeff",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 63009,
+    "rc": 0,
+    "e": 63030,
+    "secs": 20,
+    "why": ""
+   },
+   {
+    "b": 63030,
+    "a": "jeff",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 63030,
+    "rc": null,
+    "e": 63096
    }
   ],
   "idle": [
@@ -11245,13 +11279,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 22,
-    "minutes": 6.9,
+    "runs": 23,
+    "minutes": 7.3,
     "failed": 2
    },
    "daily_dungeon": {
-    "runs": 14,
-    "minutes": 5.2,
+    "runs": 15,
+    "minutes": 5.6,
     "failed": 0
    },
    "pokemon_home": {
@@ -11435,6 +11469,12 @@
    "task": "rank_match",
    "why": "near_miss_go_button, rank_locked",
    "at": "2026-09-21T16:35:50"
+  },
+  {
+   "account": "jeff",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
   },
   {
    "account": "lucifer1",
@@ -11641,78 +11681,78 @@
   "next": [
    {
     "account": "jeff",
-    "task": "joint_team_daily_quest",
+    "task": "pokemon_home",
     "startsIn": 0.0,
-    "eta": "2026-09-21T17:29"
-   },
-   {
-    "account": "jeff",
-    "task": "joint_battle",
-    "startsIn": 0.3,
-    "eta": "2026-09-21T17:29"
-   },
-   {
-    "account": "jeff",
-    "task": "daily_dungeon",
-    "startsIn": 2.3,
     "eta": "2026-09-21T17:31"
    },
    {
     "account": "jeff",
-    "task": "pokemon_home",
-    "startsIn": 2.7,
+    "task": "combat_daily",
+    "startsIn": 1.0,
     "eta": "2026-09-21T17:32"
    },
    {
     "account": "jeff",
-    "task": "combat_daily",
-    "startsIn": 3.7,
-    "eta": "2026-09-21T17:33"
-   },
-   {
-    "account": "jeff",
     "task": "victory_road",
-    "startsIn": 5.4,
+    "startsIn": 2.7,
     "eta": "2026-09-21T17:34"
    },
    {
     "account": "jeff",
     "task": "rank_match",
-    "startsIn": 5.5,
-    "eta": "2026-09-21T17:35"
+    "startsIn": 2.8,
+    "eta": "2026-09-21T17:34"
    },
    {
     "account": "jeff",
     "task": "paradise",
-    "startsIn": 6.2,
+    "startsIn": 3.6,
     "eta": "2026-09-21T17:35"
    },
    {
     "account": "jeff",
+    "task": "guild_war",
+    "startsIn": 7.0,
+    "eta": "2026-09-21T17:38"
+   },
+   {
+    "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 9.7,
-    "eta": "2026-09-21T17:39"
+    "startsIn": 7.0,
+    "eta": "2026-09-21T17:38"
    },
    {
     "account": "jeff",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.1,
+    "startsIn": 7.5,
     "eta": "2026-09-21T17:39"
    },
    {
     "account": "jeff",
     "task": "sky_pillar",
-    "startsIn": 10.3,
+    "startsIn": 7.6,
     "eta": "2026-09-21T17:39"
    },
    {
     "account": "jeff",
     "task": "weekend_bash",
-    "startsIn": 11.5,
-    "eta": "2026-09-21T17:41"
+    "startsIn": 8.8,
+    "eta": "2026-09-21T17:40"
+   },
+   {
+    "account": "jeff",
+    "task": "championship",
+    "startsIn": 9.0,
+    "eta": "2026-09-21T17:40"
+   },
+   {
+    "account": "sprite",
+    "task": "dailyclaim",
+    "startsIn": 11.4,
+    "eta": "2026-09-21T17:43"
    }
   ],
-  "more": 32,
+  "more": 30,
   "fillers": [
    {
     "account": "smurf",
@@ -12294,21 +12334,13 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-21",
-   "summary": "2 of 17 dailies done",
-   "done": 2,
+   "summary": "4 of 17 dailies done · 1 not available today",
+   "done": 4,
    "owed": 17,
    "open": [
     {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
      "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "home",
@@ -12332,7 +12364,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "pvpRank",
@@ -12374,7 +12406,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "joint_battle",
+     "why": null
+    }
+   ],
    "spent": {
     "mail claimed": 1,
     "daily claims": 3,
@@ -12419,7 +12456,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 2,
+     "done": 4,
      "failed": 2
     }
    ]
