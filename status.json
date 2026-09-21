@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T16:52:06.024193",
+ "generatedAt": "2026-09-21T16:54:09.073811",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "sky_pillar",
-  "since": "16:50:00"
+  "mode": "faction",
+  "since": "16:52:39"
  },
  "grid": {
   "tasks": [
@@ -214,8 +214,8 @@
      "✓",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "-",
      "-",
@@ -225,10 +225,10 @@
   ]
  },
  "counts": {
-  "done": 82,
-  "todo": 2,
+  "done": 83,
+  "todo": 0,
   "gaveUp": 8,
-  "unavailable": 20,
+  "unavailable": 21,
   "windowed": 0
  },
  "disabled": [
@@ -443,6 +443,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T16:52:40",
+   "script": "faction",
+   "account": "test1",
+   "rc": 2,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_165240_faction_test1"
+  },
+  {
+   "ts": "2026-09-21T16:52:39",
+   "script": "faction",
+   "account": "test1",
+   "rc": 2,
+   "secs": 10,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_165228_faction_test1"
+  },
+  {
+   "ts": "2026-09-21T16:52:24",
+   "script": "sky_pillar",
+   "account": "test1",
+   "rc": 0,
+   "secs": 143,
+   "stats": {
+    "stages_cleared": 4,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 4,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260921_165001_sky_pillar_test1"
+  },
   {
    "ts": "2026-09-21T16:50:00",
    "script": "collect_hoopa_keys",
@@ -6975,65 +7016,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260920_112407_combat_daily_test1"
-  },
-  {
-   "ts": "2026-09-20T11:24:02",
-   "script": "pokemon_home",
-   "account": "test1",
-   "rc": 0,
-   "secs": 42,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_shrank_rejected": 1,
-    "merge_refused": 9,
-    "merge_no_progress": 2,
-    "pair_went_stale": 1,
-    "charges_left_by_cap": 49
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_112319_pokemon_home_test1"
-  },
-  {
-   "ts": "2026-09-20T11:23:17",
-   "script": "daily_dungeon",
-   "account": "test1",
-   "rc": 0,
-   "secs": 31,
-   "stats": {
-    "marginal_dungeon_list": 9,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_112246_daily_dungeon_test1"
-  },
-  {
-   "ts": "2026-09-20T11:22:18",
-   "script": "joint_team_daily_quest",
-   "account": "test1",
-   "rc": 1,
-   "secs": 22,
-   "stats": {
-    "panel_swipes": 9,
-    "rows_left": 3,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "joint_team_daily_quest: still open: enhance any artifact once,: todo"
-   ],
-   "values": {
-    "left": "enhance any artifact once,: todo; i ntgh ;: todo; participate in the relic battlefield one: todo"
-   },
-   "dir": "debug_runs/20260920_112155_joint_team_daily_quest_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 60726,
+  "now": 60849,
   "segments": [
    {
     "b": 28882,
@@ -10326,11 +10314,37 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 60601,
-    "rc": null,
-    "e": 60726
+    "rc": 0,
+    "e": 60744,
+    "secs": 143,
+    "why": ""
+   },
+   {
+    "b": 60744,
+    "a": "test1",
+    "s": "faction",
+    "login": null,
+    "handoff": 60747,
+    "rc": 2,
+    "e": 60759,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 60759,
+    "a": "test1",
+    "s": "faction",
+    "login": null,
+    "handoff": 60760,
+    "rc": 2,
+    "e": 60849,
+    "secs": 10,
+    "why": ""
    }
   ],
-  "idle": []
+  "idle": [
+   60760
+  ]
  },
  "failures": [
   {
@@ -10634,13 +10648,13 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 13,
-    "minutes": 14.7,
+    "runs": 14,
+    "minutes": 17.1,
     "failed": 0
    },
    "faction": {
-    "runs": 12,
-    "minutes": 13.7,
+    "runs": 14,
+    "minutes": 13.8,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -10811,6 +10825,12 @@
   },
   {
    "account": "test1",
+   "task": "faction",
+   "why": "reported unavailable",
+   "at": "2026-09-21T16:52:40"
+  },
+  {
+   "account": "test1",
    "task": "joint_battle",
    "why": null,
    "at": null
@@ -10927,20 +10947,7 @@
   "test1": "Asdggfyd"
  },
  "queue": {
-  "next": [
-   {
-    "account": "test1",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-21T16:52"
-   },
-   {
-    "account": "test1",
-    "task": "faction",
-    "startsIn": 1.1,
-    "eta": "2026-09-21T16:53"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [],
   "held": {}
@@ -10970,7 +10977,7 @@
  "progress": {
   "test1": {
    "paradiseStamina": "1/17",
-   "pillar": "floor 3 stage 7",
+   "pillar": "floor 4 stage 1",
    "mailUnread": 0
   },
   "deno": {
@@ -11055,6 +11062,7 @@
  },
  "ledger": {
   "test1": {
+   "pillar/story stages cleared": 4,
    "Island Shop buys (200 coins)": 1,
    "adventure energy": 1,
    "mail claimed": 1,
@@ -12129,8 +12137,8 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-21",
-   "summary": "9 of 14 dailies done · 2 switched off · 3 not available today",
-   "done": 9,
+   "summary": "10 of 14 dailies done · 2 switched off · 4 not available today",
+   "done": 10,
    "owed": 14,
    "open": [
     {
@@ -12146,12 +12154,8 @@
      "state": "not available today"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
    "issues": [],
@@ -12169,6 +12173,10 @@
    ],
    "unavailable": [
     {
+     "task": "faction",
+     "why": "reported unavailable"
+    },
+    {
      "task": "joint_battle",
      "why": null
     },
@@ -12182,6 +12190,7 @@
     }
    ],
    "spent": {
+    "pillar/story stages cleared": 4,
     "Island Shop buys (200 coins)": 1,
     "adventure energy": 1,
     "mail claimed": 1,
@@ -12189,7 +12198,7 @@
    },
    "progress": {
     "paradiseStamina": "1/17",
-    "pillar": "floor 3 stage 7",
+    "pillar": "floor 4 stage 1",
     "mailUnread": 0
    },
    "history": [
@@ -12225,7 +12234,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 11,
+     "done": 12,
      "failed": 0
     }
    ]
