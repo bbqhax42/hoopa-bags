@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T16:19:10.519149",
+ "generatedAt": "2026-09-21T16:21:13.862973",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake6",
-  "mode": "combat_daily",
-  "since": "16:18:12"
+  "mode": "rank_match",
+  "since": "16:20:21"
  },
  "grid": {
   "tasks": [
@@ -159,8 +159,8 @@
      "⊘",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -225,8 +225,8 @@
   ]
  },
  "counts": {
-  "done": 57,
-  "todo": 32,
+  "done": 59,
+  "todo": 30,
   "gaveUp": 6,
   "unavailable": 15,
   "windowed": 0
@@ -443,6 +443,45 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T16:20:20",
+   "script": "victory_road",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_162013_victory_road_fake6"
+  },
+  {
+   "ts": "2026-09-21T16:20:12",
+   "script": "combat_daily",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 115,
+   "stats": {
+    "title_reread_named": 2,
+    "near_miss_afk_rewards": 5,
+    "refused_afk_rewards_confirm": 1,
+    "marginal_afk_rewards": 1,
+    "refused_quick_bar": 1,
+    "adv_overflow": 1,
+    "near_miss_vr_rank": 5,
+    "marginal_pokemon_upgrade": 1,
+    "pokemon_upgraded": 1,
+    "island_shop_bought": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 os a",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260921_161817_combat_daily_fake6"
+  },
   {
    "ts": "2026-09-21T16:18:11",
    "script": "pokemon_home",
@@ -7064,47 +7103,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260920_103722_mail_skosmurf"
-  },
-  {
-   "ts": "2026-09-20T10:37:20",
-   "script": "dailyclaim",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 71,
-   "stats": {
-    "sign_in_already": 1,
-    "milestone_claimed": 1,
-    "privpack_claimed": 1,
-    "forbidden_first_topup": 2,
-    "mythic_absent": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_103609_dailyclaim_skosmurf"
-  },
-  {
-   "ts": "2026-09-20T10:35:40",
-   "script": "paradise",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 31,
-   "stats": {
-    "marginal_paradise_hub": 1,
-    "explore_clicks": 8,
-    "pass_claims": 1,
-    "dex_activated": 0,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_103508_paradise_sprite"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 58750,
+  "now": 58874,
   "segments": [
    {
     "b": 28882,
@@ -9926,8 +9930,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 58696,
+    "rc": 0,
+    "e": 58812,
+    "secs": 115,
+    "why": ""
+   },
+   {
+    "b": 58812,
+    "a": "fake6",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 58812,
+    "rc": 0,
+    "e": 58821,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 58821,
+    "a": "fake6",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 58822,
     "rc": null,
-    "e": 58750
+    "e": 58874
    }
   ],
   "idle": []
@@ -10178,13 +10204,13 @@
     "failed": 1
    },
    "combat_daily": {
-    "runs": 12,
-    "minutes": 22.1,
+    "runs": 13,
+    "minutes": 24.0,
     "failed": 2
    },
    "victory_road": {
-    "runs": 11,
-    "minutes": 1.4,
+    "runs": 12,
+    "minutes": 1.5,
     "failed": 0
    },
    "paradise": {
@@ -10464,78 +10490,78 @@
   "next": [
    {
     "account": "fake6",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-21T16:19"
-   },
-   {
-    "account": "fake6",
-    "task": "victory_road",
-    "startsIn": 1.8,
-    "eta": "2026-09-21T16:21"
-   },
-   {
-    "account": "fake6",
     "task": "rank_match",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-09-21T16:21"
    },
    {
     "account": "fake6",
     "task": "paradise",
-    "startsIn": 2.9,
+    "startsIn": 1.0,
     "eta": "2026-09-21T16:22"
    },
    {
     "account": "fake6",
     "task": "guild_war",
-    "startsIn": 6.5,
+    "startsIn": 4.5,
     "eta": "2026-09-21T16:25"
    },
    {
     "account": "fake6",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.5,
+    "startsIn": 4.5,
     "eta": "2026-09-21T16:25"
    },
    {
     "account": "fake6",
     "task": "sky_pillar",
-    "startsIn": 6.6,
+    "startsIn": 4.6,
     "eta": "2026-09-21T16:25"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 7.6,
+    "startsIn": 5.6,
     "eta": "2026-09-21T16:26"
    },
    {
     "account": "fake7",
     "task": "dailyclaim",
-    "startsIn": 9.6,
+    "startsIn": 7.7,
     "eta": "2026-09-21T16:28"
    },
    {
     "account": "fake7",
     "task": "mail",
-    "startsIn": 10.5,
+    "startsIn": 8.5,
     "eta": "2026-09-21T16:29"
    },
    {
     "account": "fake7",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.5,
+    "startsIn": 8.6,
     "eta": "2026-09-21T16:29"
    },
    {
     "account": "fake7",
     "task": "joint_battle",
-    "startsIn": 10.8,
+    "startsIn": 8.9,
     "eta": "2026-09-21T16:30"
+   },
+   {
+    "account": "fake7",
+    "task": "daily_dungeon",
+    "startsIn": 10.9,
+    "eta": "2026-09-21T16:32"
+   },
+   {
+    "account": "fake7",
+    "task": "pokemon_home",
+    "startsIn": 11.2,
+    "eta": "2026-09-21T16:32"
    }
   ],
-  "more": 22,
+  "more": 20,
   "fillers": [],
   "held": {}
  },
@@ -10645,6 +10671,7 @@
  },
  "ledger": {
   "fake6": {
+   "Island Shop buys (200 coins)": 1,
    "Home creations": 46,
    "mail claimed": 1,
    "daily claims": 2
@@ -11497,8 +11524,8 @@
   "fake6": {
    "name": "Bigpp123",
    "day": "2026-09-21",
-   "summary": "4 of 14 dailies done · 2 switched off · 2 not available today",
-   "done": 4,
+   "summary": "6 of 14 dailies done · 2 switched off · 2 not available today",
+   "done": 6,
    "owed": 14,
    "open": [
     {
@@ -11508,14 +11535,6 @@
     {
      "task": "JointB",
      "state": "not available today"
-    },
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
     },
     {
      "task": "victoryRank",
@@ -11566,6 +11585,7 @@
     }
    ],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "Home creations": 46,
     "mail claimed": 1,
     "daily claims": 2
@@ -11606,7 +11626,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 5,
+     "done": 7,
      "failed": 0
     }
    ]
