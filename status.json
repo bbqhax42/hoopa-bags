@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T17:17:12.191179",
+ "generatedAt": "2026-09-21T17:19:15.560847",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "skosmurf",
   "mode": "run_pvp_ranked",
-  "since": "17:16:20"
+  "since": "17:19:04"
  },
  "grid": {
   "tasks": [
@@ -116,7 +116,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -329,9 +329,9 @@
      "✓",
      "✗2",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "·",
      "✓",
      "✓",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 160,
-  "todo": 59,
+  "done": 163,
+  "todo": 56,
   "gaveUp": 13,
   "unavailable": 28,
   "windowed": 0
@@ -689,11 +689,65 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-21T17:16:07.426106",
+  "label": "skosmurf",
+  "at": "2026-09-21T17:17:52.850426",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T17:19:04",
+   "script": "guild_war",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_171904_guild_war_skosmurf"
+  },
+  {
+   "ts": "2026-09-21T17:19:02",
+   "script": "rank_match",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 61,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260921_171801_rank_match_skosmurf"
+  },
+  {
+   "ts": "2026-09-21T17:17:30",
+   "script": "run_pvp_ranked",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 68,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 1,
+    "free_attempts_spent": 1,
+    "rank_places_gained": -349,
+    "rank_went_backwards": 1,
+    "daily_goal_claimed": 3,
+    "near_miss_buy_items": 1
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 350,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260921_171621_run_pvp_ranked_smurf"
+  },
   {
    "ts": "2026-09-21T17:16:20",
    "script": "guild_war",
@@ -7193,60 +7247,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260920_114700_daily_dungeon_dre"
-  },
-  {
-   "ts": "2026-09-20T11:46:05",
-   "script": "joint_team_daily_quest",
-   "account": "dre",
-   "rc": 0,
-   "secs": 47,
-   "stats": {
-    "panel_swipes": 8,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_114518_joint_team_daily_quest_dre"
-  },
-  {
-   "ts": "2026-09-20T11:45:16",
-   "script": "mail",
-   "account": "dre",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260920_114513_mail_dre"
-  },
-  {
-   "ts": "2026-09-20T11:45:12",
-   "script": "dailyclaim",
-   "account": "dre",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_114449_dailyclaim_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 62232,
+  "now": 62355,
   "segments": [
    {
     "b": 28882,
@@ -10778,8 +10784,44 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 62181,
+    "rc": 0,
+    "e": 62250,
+    "secs": 68,
+    "why": ""
+   },
+   {
+    "b": 62250,
+    "a": "skosmurf",
+    "s": "rank_match",
+    "login": [
+     62251,
+     62272
+    ],
+    "handoff": 62281,
+    "rc": 0,
+    "e": 62343,
+    "secs": 61,
+    "why": ""
+   },
+   {
+    "b": 62343,
+    "a": "skosmurf",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 62343,
+    "rc": 0,
+    "e": 62344,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 62344,
+    "a": "skosmurf",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 62344,
     "rc": null,
-    "e": 62232
+    "e": 62355
    }
   ],
   "idle": [
@@ -11033,8 +11075,8 @@
  ],
  "day": {
   "since": "2026-09-21T08:00",
-  "switches": 83,
-  "relogMinutes": 50.0,
+  "switches": 84,
+  "relogMinutes": 50.5,
   "retries": 41,
   "tasks": {
    "dailyclaim": {
@@ -11098,8 +11140,8 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 13,
-    "minutes": 2.1,
+    "runs": 14,
+    "minutes": 3.2,
     "failed": 12
    },
    "weekend_bash": {
@@ -11113,13 +11155,13 @@
     "failed": 4
    },
    "guild_war": {
-    "runs": 10,
+    "runs": 11,
     "minutes": 0.0,
     "failed": 0
    },
    "rank_match": {
-    "runs": 13,
-    "minutes": 8.4,
+    "runs": 14,
+    "minutes": 9.4,
     "failed": 0
    }
   }
@@ -11447,79 +11489,79 @@
  "queue": {
   "next": [
    {
-    "account": "smurf",
+    "account": "skosmurf",
     "task": "run_pvp_ranked",
     "startsIn": 0.0,
-    "eta": "2026-09-21T17:17"
+    "eta": "2026-09-21T17:19"
    },
    {
-    "account": "skosmurf",
+    "account": "lucifer1",
     "task": "rank_match",
     "startsIn": 0.6,
-    "eta": "2026-09-21T17:17"
-   },
-   {
-    "account": "skosmurf",
-    "task": "guild_war",
-    "startsIn": 1.2,
-    "eta": "2026-09-21T17:18"
-   },
-   {
-    "account": "skosmurf",
-    "task": "run_pvp_ranked",
-    "startsIn": 1.2,
-    "eta": "2026-09-21T17:18"
-   },
-   {
-    "account": "lucifer1",
-    "task": "rank_match",
-    "startsIn": 1.8,
-    "eta": "2026-09-21T17:18"
-   },
-   {
-    "account": "lucifer1",
-    "task": "guild_war",
-    "startsIn": 2.4,
     "eta": "2026-09-21T17:19"
    },
    {
     "account": "lucifer1",
+    "task": "guild_war",
+    "startsIn": 1.3,
+    "eta": "2026-09-21T17:20"
+   },
+   {
+    "account": "lucifer1",
     "task": "run_pvp_ranked",
-    "startsIn": 2.4,
-    "eta": "2026-09-21T17:19"
+    "startsIn": 1.3,
+    "eta": "2026-09-21T17:20"
    },
    {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 3.0,
-    "eta": "2026-09-21T17:20"
+    "startsIn": 1.9,
+    "eta": "2026-09-21T17:21"
    },
    {
     "account": "lucifer2",
     "task": "guild_war",
-    "startsIn": 3.6,
-    "eta": "2026-09-21T17:20"
+    "startsIn": 2.6,
+    "eta": "2026-09-21T17:21"
    },
    {
     "account": "lucifer2",
     "task": "run_pvp_ranked",
-    "startsIn": 3.6,
-    "eta": "2026-09-21T17:20"
-   },
-   {
-    "account": "dre",
-    "task": "rank_match",
-    "startsIn": 4.2,
+    "startsIn": 2.6,
     "eta": "2026-09-21T17:21"
    },
    {
     "account": "dre",
-    "task": "guild_war",
-    "startsIn": 4.8,
+    "task": "rank_match",
+    "startsIn": 3.2,
     "eta": "2026-09-21T17:22"
+   },
+   {
+    "account": "dre",
+    "task": "guild_war",
+    "startsIn": 3.9,
+    "eta": "2026-09-21T17:23"
+   },
+   {
+    "account": "dre",
+    "task": "run_pvp_ranked",
+    "startsIn": 3.9,
+    "eta": "2026-09-21T17:23"
+   },
+   {
+    "account": "jeff",
+    "task": "dailyclaim",
+    "startsIn": 4.5,
+    "eta": "2026-09-21T17:23"
+   },
+   {
+    "account": "jeff",
+    "task": "mail",
+    "startsIn": 5.3,
+    "eta": "2026-09-21T17:24"
    }
   ],
-  "more": 47,
+  "more": 44,
   "fillers": [
    {
     "account": "smurf",
@@ -11549,8 +11591,8 @@
   "restarts": 3,
   "downtimeMin": 62.4,
   "switches": {
-   "n": 83,
-   "medianSec": 17,
+   "n": 84,
+   "medianSec": 17.0,
    "picker": {
     "n": 58,
     "medianSec": 16.0,
@@ -11561,16 +11603,16 @@
     "medianSec": null
    },
    "miss": {
-    "n": 25,
-    "medianSec": 19
+    "n": 26,
+    "medianSec": 19.0
    }
   }
  },
  "progress": {
   "dre": {
-   "mailUnread": 0,
    "rank": 2,
    "pillar": "floor 82 stage 9",
+   "mailUnread": 0,
    "paradiseStamina": "8/18"
   },
   "jeff": {
@@ -11580,7 +11622,8 @@
   "smurf": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
-   "pillar": "floor 18 stage 1"
+   "pillar": "floor 18 stage 1",
+   "rank": 350
   },
   "fake1": {
    "mailUnread": 0,
@@ -11653,6 +11696,18 @@
   "sprite": {}
  },
  "ledger": {
+  "smurf": {
+   "ranked attempts": 1,
+   "misty battles won": 7,
+   "faction sweeps": 2,
+   "pillar proofs lost to a refusal": 1,
+   "pillar/story stages cleared": 3,
+   "Island Shop buys (200 coins)": 1,
+   "adventure energy": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 1
+  },
   "nova": {
    "ranked attempts": 1,
    "pillar proofs lost to a refusal": 1,
@@ -11746,17 +11801,6 @@
    "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
-  },
-  "smurf": {
-   "misty battles won": 7,
-   "faction sweeps": 2,
-   "pillar proofs lost to a refusal": 1,
-   "pillar/story stages cleared": 3,
-   "Island Shop buys (200 coins)": 1,
-   "adventure energy": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 1
   },
   "lucifer2": {
    "pillar proofs lost to a refusal": 1,
@@ -12330,17 +12374,13 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-21",
-   "summary": "14 of 17 dailies done · gave up on misty · 2 switched off · 2 not available today",
-   "done": 14,
+   "summary": "15 of 17 dailies done · gave up on misty · 2 switched off · 2 not available today",
+   "done": 15,
    "owed": 17,
    "open": [
     {
      "task": "JointB",
      "state": "not available today"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
     },
     {
      "task": "misty",
@@ -12378,6 +12418,7 @@
     }
    ],
    "spent": {
+    "ranked attempts": 1,
     "misty battles won": 7,
     "faction sweeps": 2,
     "pillar proofs lost to a refusal": 1,
@@ -12391,7 +12432,8 @@
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "20/20",
-    "pillar": "floor 18 stage 1"
+    "pillar": "floor 18 stage 1",
+    "rank": 350
    },
    "history": [
     {
@@ -12426,7 +12468,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 14,
+     "done": 15,
      "failed": 2
     }
    ]
@@ -13243,21 +13285,13 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-21",
-   "summary": "10 of 15 dailies done · gave up on dailies, misty · 2 switched off",
-   "done": 10,
+   "summary": "12 of 15 dailies done · gave up on dailies, misty · 2 switched off",
+   "done": 12,
    "owed": 15,
    "open": [
     {
      "task": "dailies",
      "state": "gave up"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     },
     {
      "task": "pvpRank",
@@ -13323,7 +13357,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 11,
+     "done": 13,
      "failed": 4
     }
    ]
@@ -13788,9 +13822,9 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0,
     "rank": 2,
     "pillar": "floor 82 stage 9",
+    "mailUnread": 0,
     "paradiseStamina": "8/18"
    },
    "history": [
