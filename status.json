@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T16:04:45.069389",
+ "generatedAt": "2026-09-21T16:06:49.332628",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "joint_battle",
-  "since": "16:04:20"
+  "mode": "combat_daily",
+  "since": "16:05:44"
  },
  "grid": {
   "tasks": [
@@ -133,13 +133,13 @@
      "✓",
      "⊘",
      "⊘",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
      "·",
      "·",
-     "·",
-     "⇢",
      "-",
      "·",
      "·",
@@ -225,8 +225,8 @@
   ]
  },
  "counts": {
-  "done": 43,
-  "todo": 44,
+  "done": 45,
+  "todo": 43,
   "gaveUp": 6,
   "unavailable": 15,
   "windowed": 0
@@ -443,6 +443,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T16:05:43",
+   "script": "pokemon_home",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 19,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 49
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_160524_pokemon_home_fake5"
+  },
+  {
+   "ts": "2026-09-21T16:05:23",
+   "script": "daily_dungeon",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_160452_daily_dungeon_fake5"
+  },
   {
    "ts": "2026-09-21T16:03:48",
    "script": "joint_team_daily_quest",
@@ -7077,39 +7107,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260920_102405_combat_daily_fake7"
-  },
-  {
-   "ts": "2026-09-20T10:24:00",
-   "script": "pokemon_home",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 19,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 49
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_102341_pokemon_home_fake7"
-  },
-  {
-   "ts": "2026-09-20T10:23:39",
-   "script": "daily_dungeon",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_102326_daily_dungeon_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 57885,
+  "now": 58009,
   "segments": [
    {
     "b": 28882,
@@ -9726,7 +9729,38 @@
     "login": null,
     "handoff": 57863,
     "rc": null,
-    "e": 57885
+    "e": 57889
+   },
+   {
+    "b": 57889,
+    "a": "fake5",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 57891,
+    "rc": 0,
+    "e": 57923,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 57923,
+    "a": "fake5",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 57924,
+    "rc": 0,
+    "e": 57944,
+    "secs": 19,
+    "why": ""
+   },
+   {
+    "b": 57944,
+    "a": "fake5",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 57948,
+    "rc": null,
+    "e": 58009
    }
   ],
   "idle": []
@@ -9962,13 +9996,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 9,
-    "minutes": 2.9,
+    "runs": 10,
+    "minutes": 3.4,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 11,
-    "minutes": 12.9,
+    "runs": 12,
+    "minutes": 13.3,
     "failed": 2
    },
    "island_challenge": {
@@ -10267,78 +10301,78 @@
   "next": [
    {
     "account": "fake5",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-21T16:04"
-   },
-   {
-    "account": "fake5",
-    "task": "pokemon_home",
-    "startsIn": 0.3,
-    "eta": "2026-09-21T16:05"
-   },
-   {
-    "account": "fake5",
     "task": "combat_daily",
-    "startsIn": 1.5,
+    "startsIn": 0.0,
     "eta": "2026-09-21T16:06"
    },
    {
     "account": "fake5",
     "task": "victory_road",
-    "startsIn": 3.3,
+    "startsIn": 1.8,
     "eta": "2026-09-21T16:08"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 3.4,
+    "startsIn": 1.9,
     "eta": "2026-09-21T16:08"
    },
    {
     "account": "fake5",
     "task": "paradise",
-    "startsIn": 4.4,
+    "startsIn": 2.9,
     "eta": "2026-09-21T16:09"
    },
    {
     "account": "fake5",
+    "task": "guild_war",
+    "startsIn": 6.4,
+    "eta": "2026-09-21T16:13"
+   },
+   {
+    "account": "fake5",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.9,
-    "eta": "2026-09-21T16:12"
+    "startsIn": 6.4,
+    "eta": "2026-09-21T16:13"
    },
    {
     "account": "fake5",
     "task": "sky_pillar",
-    "startsIn": 8.1,
-    "eta": "2026-09-21T16:12"
+    "startsIn": 6.6,
+    "eta": "2026-09-21T16:13"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 9.0,
-    "eta": "2026-09-21T16:13"
+    "startsIn": 7.6,
+    "eta": "2026-09-21T16:14"
    },
    {
     "account": "fake6",
     "task": "dailyclaim",
-    "startsIn": 11.0,
-    "eta": "2026-09-21T16:15"
+    "startsIn": 9.5,
+    "eta": "2026-09-21T16:16"
    },
    {
     "account": "fake6",
     "task": "mail",
-    "startsIn": 11.9,
-    "eta": "2026-09-21T16:16"
+    "startsIn": 10.4,
+    "eta": "2026-09-21T16:17"
    },
    {
     "account": "fake6",
     "task": "joint_team_daily_quest",
-    "startsIn": 12.0,
-    "eta": "2026-09-21T16:16"
+    "startsIn": 10.5,
+    "eta": "2026-09-21T16:17"
+   },
+   {
+    "account": "fake6",
+    "task": "joint_battle",
+    "startsIn": 10.8,
+    "eta": "2026-09-21T16:17"
    }
   ],
-  "more": 36,
+  "more": 35,
   "fillers": [],
   "held": {}
  },
@@ -11197,8 +11231,8 @@
   "fake5": {
    "name": "Random77",
    "day": "2026-09-21",
-   "summary": "2 of 14 dailies done · 2 switched off · 2 not available today",
-   "done": 2,
+   "summary": "4 of 14 dailies done · 2 switched off · 2 not available today",
+   "done": 4,
    "owed": 14,
    "open": [
     {
@@ -11208,14 +11242,6 @@
     {
      "task": "JointB",
      "state": "not available today"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -11235,7 +11261,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -11320,7 +11346,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 3,
+     "done": 5,
      "failed": 1
     }
    ]
