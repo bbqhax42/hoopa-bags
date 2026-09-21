@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T13:39:42.171666",
+ "generatedAt": "2026-09-21T13:41:45.569309",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "faction",
-  "since": "13:39:42"
+  "account": "fake3",
+  "mode": "dailyclaim",
+  "since": "13:41:18"
  },
  "grid": {
   "tasks": [
@@ -81,7 +81,7 @@
    {
     "account": "fake3",
     "cells": [
-     "·",
+     "✗2",
      "·",
      "⊘",
      "⊘",
@@ -226,8 +226,8 @@
  },
  "counts": {
   "done": 20,
-  "todo": 68,
-  "gaveUp": 3,
+  "todo": 67,
+  "gaveUp": 4,
   "unavailable": 15,
   "windowed": 0
  },
@@ -434,11 +434,44 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-21T13:38:24.906563",
+  "label": "fake3",
+  "at": "2026-09-21T13:40:01.987037",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T13:41:18",
+   "script": "dailyclaim",
+   "account": "fake3",
+   "rc": 1,
+   "secs": 69,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "forbidden_first_topup": 2,
+    "mythic_no_open": 1,
+    "incomplete": 1,
+    "claims": 1
+   },
+   "incomplete": [
+    "dailyclaim: Mythic Incoming would not open"
+   ],
+   "values": {
+    "rail_badges": "0.190:77 0.275:8 0.345:53 0.428:0 0.500:0"
+   },
+   "dir": "debug_runs/20260921_134009_dailyclaim_fake3"
+  },
+  {
+   "ts": "2026-09-21T13:39:43",
+   "script": "faction",
+   "account": "fake1",
+   "rc": 2,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_133943_faction_fake1"
+  },
   {
    "ts": "2026-09-21T13:39:41",
    "script": "faction",
@@ -7061,39 +7094,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260920_095041_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-20T09:50:35",
-   "script": "pokemon_home",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 20,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 48
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_095014_pokemon_home_fake4"
-  },
-  {
-   "ts": "2026-09-20T09:50:12",
-   "script": "daily_dungeon",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_094959_daily_dungeon_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 49182,
+  "now": 49305,
   "segments": [
    {
     "b": 28882,
@@ -9236,16 +9242,50 @@
     "a": "fake1",
     "s": "faction",
     "login": null,
-    "handoff": null,
+    "handoff": 49182,
     "rc": 2,
-    "e": 49182,
+    "e": 49183,
     "secs": 10,
     "why": ""
+   },
+   {
+    "b": 49183,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": [
+     49184,
+     49201
+    ],
+    "handoff": 49208,
+    "rc": 1,
+    "e": 49278,
+    "secs": 69,
+    "why": "dailyclaim: Mythic Incoming would not open"
+   },
+   {
+    "b": 49278,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 49279,
+    "rc": 1,
+    "e": 49305,
+    "secs": 69,
+    "why": "dailyclaim: Mythic Incoming would not open"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-21T13:41:18",
+   "account": "fake3",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 69,
+   "why": "dailyclaim: Mythic Incoming would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_134009_dailyclaim_fake3__KEEP_0006_134118_home_at_exit.png"
+  },
   {
    "ts": "2026-09-21T13:25:48",
    "account": "fake2",
@@ -9411,14 +9451,14 @@
  ],
  "day": {
   "since": "2026-09-21T08:00",
-  "switches": 71,
-  "relogMinutes": 32.1,
-  "retries": 30,
+  "switches": 72,
+  "relogMinutes": 32.5,
+  "retries": 31,
   "tasks": {
    "dailyclaim": {
-    "runs": 12,
-    "minutes": 10.4,
-    "failed": 7
+    "runs": 13,
+    "minutes": 11.6,
+    "failed": 8
    },
    "mail": {
     "runs": 8,
@@ -9471,7 +9511,7 @@
     "failed": 0
    },
    "faction": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 6.6,
     "failed": 0
    },
@@ -9512,8 +9552,8 @@
   {
    "account": "fake1",
    "task": "faction",
-   "why": "tower_locked",
-   "at": "2026-09-21T13:39:41"
+   "why": "reported unavailable",
+   "at": "2026-09-21T13:39:43"
   },
   {
    "account": "fake1",
@@ -9732,78 +9772,78 @@
   "next": [
    {
     "account": "fake3",
-    "task": "dailyclaim",
-    "startsIn": 0.4,
-    "eta": "2026-09-21T13:40"
-   },
-   {
-    "account": "fake3",
     "task": "mail",
-    "startsIn": 1.3,
-    "eta": "2026-09-21T13:40"
+    "startsIn": 0.0,
+    "eta": "2026-09-21T13:41"
    },
    {
     "account": "fake3",
     "task": "joint_team_daily_quest",
-    "startsIn": 1.3,
+    "startsIn": 0.1,
     "eta": "2026-09-21T13:41"
    },
    {
     "account": "fake3",
     "task": "joint_battle",
-    "startsIn": 1.8,
-    "eta": "2026-09-21T13:41"
+    "startsIn": 0.6,
+    "eta": "2026-09-21T13:42"
    },
    {
     "account": "fake3",
     "task": "daily_dungeon",
-    "startsIn": 3.8,
-    "eta": "2026-09-21T13:43"
+    "startsIn": 2.5,
+    "eta": "2026-09-21T13:44"
    },
    {
     "account": "fake3",
     "task": "pokemon_home",
-    "startsIn": 4.1,
-    "eta": "2026-09-21T13:43"
+    "startsIn": 2.8,
+    "eta": "2026-09-21T13:44"
    },
    {
     "account": "fake3",
     "task": "combat_daily",
-    "startsIn": 5.5,
+    "startsIn": 4.2,
     "eta": "2026-09-21T13:45"
    },
    {
     "account": "fake3",
     "task": "victory_road",
-    "startsIn": 7.3,
-    "eta": "2026-09-21T13:46"
+    "startsIn": 6.0,
+    "eta": "2026-09-21T13:47"
    },
    {
     "account": "fake3",
     "task": "rank_match",
-    "startsIn": 7.4,
+    "startsIn": 6.1,
     "eta": "2026-09-21T13:47"
    },
    {
     "account": "fake3",
     "task": "paradise",
-    "startsIn": 8.4,
+    "startsIn": 7.1,
     "eta": "2026-09-21T13:48"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.8,
-    "eta": "2026-09-21T13:51"
+    "startsIn": 10.5,
+    "eta": "2026-09-21T13:52"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 11.9,
-    "eta": "2026-09-21T13:51"
+    "startsIn": 10.7,
+    "eta": "2026-09-21T13:52"
+   },
+   {
+    "account": "fake3",
+    "task": "faction",
+    "startsIn": 11.7,
+    "eta": "2026-09-21T13:53"
    }
   ],
-  "more": 66,
+  "more": 65,
   "fillers": [],
   "held": {}
  },
@@ -9812,12 +9852,12 @@
   "restarts": 1,
   "downtimeMin": 4.1,
   "switches": {
-   "n": 71,
-   "medianSec": 17,
+   "n": 72,
+   "medianSec": 17.0,
    "picker": {
-    "n": 47,
-    "medianSec": 16,
-    "jumps": 46
+    "n": 48,
+    "medianSec": 16.0,
+    "jumps": 47
    },
    "typed": {
     "n": 0,
@@ -9916,6 +9956,9 @@
   }
  },
  "ledger": {
+  "fake3": {
+   "daily claims": 1
+  },
   "fake2": {
    "faction sweeps": 2,
    "pillar/story stages cleared": 4,
@@ -10276,7 +10319,7 @@
    "unavailable": [
     {
      "task": "faction",
-     "why": "tower_locked"
+     "why": "reported unavailable"
     },
     {
      "task": "joint_battle",
@@ -10438,13 +10481,13 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-21",
-   "summary": "0 of 14 dailies done · 2 switched off · 2 not available today",
+   "summary": "0 of 14 dailies done · gave up on claims · 2 switched off · 2 not available today",
    "done": 0,
    "owed": 14,
    "open": [
     {
      "task": "claims",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "mail",
@@ -10499,7 +10542,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "dailyclaim",
+     "at": "13:41",
+     "why": "dailyclaim: Mythic Incoming would not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_134009_dailyclaim_fake3__KEEP_0006_134118_home_at_exit.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -10522,7 +10572,9 @@
      "why": null
     }
    ],
-   "spent": {},
+   "spent": {
+    "daily claims": 1
+   },
    "progress": {},
    "history": [
     {
@@ -10558,7 +10610,7 @@
     {
      "day": "2026-09-21",
      "done": 1,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
