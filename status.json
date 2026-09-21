@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-22T02:09:59.827248",
+ "generatedAt": "2026-09-22T02:12:03.218377",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -696,11 +696,41 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-22T02:09:09.912875",
+  "label": "fake2",
+  "at": "2026-09-22T02:11:42.106675",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T02:11:25",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 73,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260922_021011_worldboss_fake1"
+  },
+  {
+   "ts": "2026-09-22T02:10:11",
+   "script": "worldboss",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 80,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260922_020851_worldboss_smurf"
+  },
   {
    "ts": "2026-09-22T02:05:34",
    "script": "worldboss",
@@ -7222,44 +7252,12 @@
     "rail_badges": "0.190:79 0.275:7 0.345:53 0.428:7 0.500:0"
    },
    "dir": "debug_runs/20260920_152906_dailyclaim_jeff"
-  },
-  {
-   "ts": "2026-09-20T15:28:34",
-   "script": "dailyclaim",
-   "account": "nova",
-   "rc": 0,
-   "secs": 35,
-   "stats": {
-    "signed_in": 1,
-    "claims": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:79 0.275:7 0.345:51 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260920_152817_dailyclaim_nova"
-  },
-  {
-   "ts": "2026-09-20T15:27:43",
-   "script": "dailyclaim",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 35,
-   "stats": {
-    "signed_in": 1,
-    "claims": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:76 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260920_152728_dailyclaim_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 94200,
+  "now": 94323,
   "segments": [
    {
     "b": 28882,
@@ -11577,7 +11575,7 @@
     ],
     "handoff": 66232,
     "rc": null,
-    "e": 94200
+    "e": 94323
    }
   ],
   "idle": [
@@ -11930,7 +11928,7 @@
  ],
  "day": {
   "since": "2026-09-21T08:00",
-  "switches": 142,
+  "switches": 144,
   "relogMinutes": 62.9,
   "retries": 52,
   "tasks": {
@@ -12025,8 +12023,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 20,
-    "minutes": 27.0,
+    "runs": 22,
+    "minutes": 29.6,
     "failed": 0
    }
   }
@@ -12357,7 +12355,9 @@
   "2026-09-22_02:00": [
    "chris",
    "jeff",
-   "nova"
+   "nova",
+   "smurf",
+   "fake1"
   ]
  },
  "worldBossSkipped": {},
@@ -12379,7 +12379,7 @@
     "account": "jeff",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-09-22T02:10"
+    "eta": "2026-09-22T02:12"
    }
   ],
   "more": 0,
@@ -12408,12 +12408,12 @@
   "restarts": 4,
   "downtimeMin": 62.4,
   "switches": {
-   "n": 134,
+   "n": 136,
    "medianSec": 17.0,
    "picker": {
-    "n": 93,
+    "n": 95,
     "medianSec": 16,
-    "jumps": 72
+    "jumps": 74
    },
    "typed": {
     "n": 0,
@@ -12426,16 +12426,6 @@
   }
  },
  "progress": {
-  "fake2": {
-   "mailUnread": 0,
-   "pillar": "floor 3 stage 7"
-  },
-  "nova": {
-   "mailUnread": 0,
-   "paradiseStamina": "16/16",
-   "pillar": "floor 99 stage 1",
-   "rank": 338
-  },
   "jeff": {
    "islandFights": 5,
    "islandStamina": 31,
@@ -12519,6 +12509,12 @@
    "rank": 350,
    "misty": "step 1"
   },
+  "nova": {
+   "mailUnread": 0,
+   "paradiseStamina": "16/16",
+   "pillar": "floor 99 stage 1",
+   "rank": 338
+  },
   "chris": {
    "islandFights": 6,
    "islandStamina": 11,
@@ -12526,6 +12522,10 @@
    "paradiseStamina": "14/16",
    "rank": 348,
    "pillar": "floor 137 stage 1"
+  },
+  "fake2": {
+   "mailUnread": 0,
+   "pillar": "floor 3 stage 7"
   }
  },
  "ledger": {},
@@ -13115,6 +13115,11 @@
      "day": "2026-09-21",
      "done": 17,
      "failed": 4
+    },
+    {
+     "day": "2026-09-22",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -13227,6 +13232,11 @@
      "day": "2026-09-21",
      "done": 11,
      "failed": 4
+    },
+    {
+     "day": "2026-09-22",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
