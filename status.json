@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T08:00:40.225605",
+ "generatedAt": "2026-09-21T08:02:44.242020",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "hoopa",
-  "since": "07:57:25"
+  "mode": "joint_team_daily_quest",
+  "since": "08:01:56"
  },
  "grid": {
   "tasks": [
@@ -33,8 +33,8 @@
    {
     "account": "nova",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 0,
-  "todo": 218,
+  "done": 2,
+  "todo": 216,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 45
@@ -667,6 +667,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T08:01:55",
+   "script": "mail",
+   "account": "nova",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "reward_card_closed": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 18,
+    "reward_cards": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260921_080152_mail_nova"
+  },
+  {
+   "ts": "2026-09-21T08:01:50",
+   "script": "dailyclaim",
+   "account": "nova",
+   "rc": 0,
+   "secs": 25,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:77 0.275:8 0.345:51 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260921_080124_dailyclaim_nova"
+  },
   {
    "ts": "2026-09-21T06:57:35",
    "script": "island_challenge",
@@ -7238,46 +7275,45 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260920_025223_story_test1"
-  },
-  {
-   "ts": "2026-09-20T02:48:13",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 32,
-   "stats": {
-    "fights": 2,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 23,
-    "fights_today": 15
-   },
-   "dir": "debug_runs/20260920_024740_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-20T02:43:31",
-   "script": "story",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 100,
-   "stats": {
-    "skip_retry": 12,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_024151_story_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 28840,
-  "segments": [],
+  "now": 28964,
+  "segments": [
+   {
+    "b": 28882,
+    "a": "nova",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 28884,
+    "rc": 0,
+    "e": 28911,
+    "secs": 25,
+    "why": ""
+   },
+   {
+    "b": 28911,
+    "a": "nova",
+    "s": "mail",
+    "login": null,
+    "handoff": 28911,
+    "rc": 0,
+    "e": 28916,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 28916,
+    "a": "nova",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 28916,
+    "rc": null,
+    "e": 28964
+   }
+  ],
   "idle": []
  },
  "failures": [
@@ -7296,7 +7332,18 @@
   "switches": 0,
   "relogMinutes": 0.0,
   "retries": 0,
-  "tasks": {}
+  "tasks": {
+   "dailyclaim": {
+    "runs": 1,
+    "minutes": 0.4,
+    "failed": 0
+   },
+   "mail": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   }
+  }
  },
  "unavailable": [],
  "windows": {
@@ -7443,78 +7490,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "dailyclaim",
+    "task": "joint_team_daily_quest",
     "startsIn": 0.0,
-    "eta": "2026-09-21T08:00"
-   },
-   {
-    "account": "nova",
-    "task": "mail",
-    "startsIn": 2.0,
     "eta": "2026-09-21T08:02"
    },
    {
     "account": "nova",
-    "task": "joint_team_daily_quest",
-    "startsIn": 4.0,
+    "task": "joint_battle",
+    "startsIn": 2.0,
     "eta": "2026-09-21T08:04"
    },
    {
     "account": "nova",
-    "task": "joint_battle",
-    "startsIn": 6.0,
+    "task": "daily_dungeon",
+    "startsIn": 4.0,
     "eta": "2026-09-21T08:06"
    },
    {
     "account": "nova",
-    "task": "daily_dungeon",
-    "startsIn": 8.0,
+    "task": "pokemon_home",
+    "startsIn": 6.0,
     "eta": "2026-09-21T08:08"
    },
    {
     "account": "nova",
-    "task": "pokemon_home",
-    "startsIn": 10.0,
+    "task": "combat_daily",
+    "startsIn": 8.0,
     "eta": "2026-09-21T08:10"
    },
    {
     "account": "nova",
-    "task": "combat_daily",
-    "startsIn": 12.0,
+    "task": "victory_road",
+    "startsIn": 10.0,
     "eta": "2026-09-21T08:12"
    },
    {
     "account": "nova",
-    "task": "victory_road",
-    "startsIn": 14.0,
+    "task": "paradise",
+    "startsIn": 12.0,
     "eta": "2026-09-21T08:14"
    },
    {
     "account": "nova",
-    "task": "paradise",
-    "startsIn": 16.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 14.0,
     "eta": "2026-09-21T08:16"
    },
    {
     "account": "nova",
-    "task": "collect_hoopa_keys",
-    "startsIn": 18.0,
+    "task": "sky_pillar",
+    "startsIn": 16.0,
     "eta": "2026-09-21T08:18"
    },
    {
     "account": "nova",
-    "task": "sky_pillar",
-    "startsIn": 20.0,
+    "task": "weekend_bash",
+    "startsIn": 18.0,
     "eta": "2026-09-21T08:20"
    },
    {
-    "account": "nova",
-    "task": "weekend_bash",
-    "startsIn": 22.0,
-    "eta": "2026-09-21T08:22"
+    "account": "jeff",
+    "task": "dailyclaim",
+    "startsIn": 20.4,
+    "eta": "2026-09-21T08:23"
+   },
+   {
+    "account": "jeff",
+    "task": "mail",
+    "startsIn": 20.8,
+    "eta": "2026-09-21T08:23"
    }
   ],
-  "more": 206,
+  "more": 204,
   "fillers": [
    {
     "account": "smurf",
@@ -7667,6 +7714,11 @@
   }
  },
  "ledger": {
+  "nova": {
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "jeff": {
    "island fights": 4
   },
@@ -7878,18 +7930,10 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-21",
-   "summary": "0 of 15 dailies done",
-   "done": 0,
+   "summary": "2 of 15 dailies done",
+   "done": 2,
    "owed": 15,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "still to do"
@@ -7946,7 +7990,11 @@
    "issues": [],
    "off": [],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 3,
+    "Privilege Pack claimed": 1
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "2/16",
@@ -7986,7 +8034,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
