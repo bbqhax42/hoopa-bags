@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T07:22:52.056078",
+ "generatedAt": "2026-09-22T07:24:55.465602",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "07:19:25"
+  "since": "07:24:30"
  },
  "grid": {
   "tasks": [
@@ -624,8 +624,8 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 15,
-   "at": "2026-09-22T02:45:59"
+   "keys": 0,
+   "at": "2026-09-22T07:23:56"
   },
   "chris": {
    "keys": 0,
@@ -689,11 +689,27 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-22T07:19:40.750507",
+  "label": "nova",
+  "at": "2026-09-22T07:24:46.622538",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T07:23:57",
+   "script": "hoopa",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 244,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-22T06:47:14",
    "script": "island_challenge",
@@ -7195,27 +7211,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260920_200252_worldboss_nova"
-  },
-  {
-   "ts": "2026-09-20T20:02:52",
-   "script": "worldboss",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 84,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": null
-   },
-   "dir": "debug_runs/20260920_200127_worldboss_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 112972,
+  "now": 113095,
   "segments": [
    {
     "b": 28882,
@@ -11790,8 +11791,34 @@
      112780
     ],
     "handoff": 112792,
+    "rc": 2,
+    "e": 113041,
+    "secs": 244,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 113041,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     113042,
+     113061
+    ],
+    "handoff": 113070,
     "rc": null,
-    "e": 112972
+    "e": 113070
+   },
+   {
+    "b": 113070,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     113071,
+     113086
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 113095
    }
   ],
   "idle": [
@@ -12144,8 +12171,8 @@
  ],
  "day": {
   "since": "2026-09-21T08:00",
-  "switches": 190,
-  "relogMinutes": 77.6,
+  "switches": 192,
+  "relogMinutes": 78.1,
   "retries": 62,
   "tasks": {
    "dailyclaim": {
@@ -12386,6 +12413,12 @@
   },
   {
    "account": "jeff",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-22T07:23:57"
+  },
+  {
+   "account": "jeff",
    "task": "joint_battle",
    "why": null,
    "at": null
@@ -12621,10 +12654,6 @@
     "mode": "rift"
    },
    {
-    "account": "jeff",
-    "mode": "hoopa"
-   },
-   {
     "account": "nova",
     "mode": "hoopa"
    }
@@ -12636,32 +12665,24 @@
   "restarts": 4,
   "downtimeMin": 62.4,
   "switches": {
-   "n": 179,
+   "n": 181,
    "medianSec": 17,
    "picker": {
-    "n": 117,
-    "medianSec": 16,
-    "jumps": 85
+    "n": 118,
+    "medianSec": 16.0,
+    "jumps": 86
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 62,
-    "medianSec": 19.0
+    "n": 63,
+    "medianSec": 19
    }
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 9,
-   "islandStamina": 22,
-   "mailUnread": 0,
-   "paradiseStamina": "16/16",
-   "rank": 347,
-   "pillar": "floor 148 stage 1"
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
@@ -12741,6 +12762,14 @@
    "paradiseStamina": "16/16",
    "pillar": "floor 90 stage 8",
    "rank": 354
+  },
+  "jeff": {
+   "islandFights": 9,
+   "islandStamina": 22,
+   "mailUnread": 0,
+   "paradiseStamina": "16/16",
+   "rank": 347,
+   "pillar": "floor 148 stage 1"
   },
   "chris": {
    "islandFights": 12,
@@ -13057,7 +13086,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-21",
-   "summary": "14 of 17 dailies done · 2 not available today",
+   "summary": "14 of 17 dailies done · 3 not available today",
    "done": 14,
    "owed": 17,
    "open": [
@@ -13099,6 +13128,10 @@
     {
      "task": "championship",
      "why": "no_icon"
+    },
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
     },
     {
      "task": "joint_battle",
