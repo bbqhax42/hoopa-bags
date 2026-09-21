@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T09:25:31.765907",
+ "generatedAt": "2026-09-21T09:27:35.007189",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "dre",
-  "mode": "sky_pillar",
-  "since": "09:25:27"
+  "account": "skosmurf",
+  "mode": "rift",
+  "since": "09:27:01"
  },
  "grid": {
   "tasks": [
@@ -166,10 +166,10 @@
      "⏰",
      "💤",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✗2",
      "-",
      "-"
     ]
@@ -177,9 +177,9 @@
   ]
  },
  "counts": {
-  "done": 63,
-  "todo": 2,
-  "gaveUp": 4,
+  "done": 64,
+  "todo": 0,
+  "gaveUp": 5,
   "unavailable": 5,
   "windowed": 12
  },
@@ -389,11 +389,47 @@
   }
  },
  "session": {
-  "label": "dre",
-  "at": "2026-09-21T09:12:58.320550",
+  "label": "skosmurf",
+  "at": "2026-09-21T09:27:21.501687",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T09:26:25",
+   "script": "weekend_bash",
+   "account": "dre",
+   "rc": 1,
+   "secs": 17,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_092608_weekend_bash_dre"
+  },
+  {
+   "ts": "2026-09-21T09:26:07",
+   "script": "weekend_bash",
+   "account": "dre",
+   "rc": 1,
+   "secs": 9,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_092557_weekend_bash_dre"
+  },
+  {
+   "ts": "2026-09-21T09:25:53",
+   "script": "sky_pillar",
+   "account": "dre",
+   "rc": 0,
+   "secs": 25,
+   "stats": {
+    "stage_lost": 1,
+    "sky_pillar_loss": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_092528_sky_pillar_dre"
+  },
   {
    "ts": "2026-09-21T09:25:27",
    "script": "collect_hoopa_keys",
@@ -7021,54 +7057,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260920_091146_mail_fake1"
-  },
-  {
-   "ts": "2026-09-20T09:11:45",
-   "script": "dailyclaim",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "sign_in_already": 1,
-    "milestone_claimed": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_091122_dailyclaim_fake1"
-  },
-  {
-   "ts": "2026-09-20T09:10:57",
-   "script": "weekend_bash",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_091057_weekend_bash_smurf"
-  },
-  {
-   "ts": "2026-09-20T09:10:53",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "path_exhausted": 1,
-    "wins": 0
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_091047_misty_woods_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 33932,
+  "now": 34055,
   "segments": [
    {
     "b": 28882,
@@ -8068,13 +8062,79 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 33928,
+    "rc": 0,
+    "e": 33954,
+    "secs": 25,
+    "why": ""
+   },
+   {
+    "b": 33954,
+    "a": "dre",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 33957,
+    "rc": 1,
+    "e": 33967,
+    "secs": 9,
+    "why": ""
+   },
+   {
+    "b": 33967,
+    "a": "dre",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 33967,
+    "rc": 1,
+    "e": 33985,
+    "secs": 9,
+    "why": ""
+   },
+   {
+    "b": 33985,
+    "a": "smurf",
+    "s": "rift",
+    "login": [
+     33986,
+     34002
+    ],
+    "handoff": 34011,
     "rc": null,
-    "e": 33932
+    "e": 34021
+   },
+   {
+    "b": 34021,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     34022,
+     34041
+    ],
+    "handoff": 34050,
+    "rc": null,
+    "e": 34055
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-21T09:26:25",
+   "account": "dre",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 17,
+   "why": "",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_092608_weekend_bash_dre__KEEP_0006_092625_no_home_hub.png"
+  },
+  {
+   "ts": "2026-09-21T09:26:07",
+   "account": "dre",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 9,
+   "why": "",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_092557_weekend_bash_dre__KEEP_0002_092607_no_bash_page.png"
+  },
   {
    "ts": "2026-09-21T09:15:35",
    "account": "dre",
@@ -8168,9 +8228,9 @@
  ],
  "day": {
   "since": "2026-09-21T08:00",
-  "switches": 11,
-  "relogMinutes": 4.8,
-  "retries": 16,
+  "switches": 13,
+  "relogMinutes": 5.7,
+  "retries": 18,
   "tasks": {
    "dailyclaim": {
     "runs": 8,
@@ -8223,8 +8283,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 5,
-    "minutes": 5.0,
+    "runs": 6,
+    "minutes": 5.4,
     "failed": 0
    },
    "faction": {
@@ -8238,9 +8298,9 @@
     "failed": 6
    },
    "weekend_bash": {
-    "runs": 5,
-    "minutes": 0.9,
-    "failed": 0
+    "runs": 7,
+    "minutes": 1.4,
+    "failed": 2
    },
    "misty_woods": {
     "runs": 4,
@@ -8394,20 +8454,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "dre",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-21T09:25"
-   },
-   {
-    "account": "dre",
-    "task": "weekend_bash",
-    "startsIn": 1.0,
-    "eta": "2026-09-21T09:26"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -8434,20 +8481,20 @@
   "restarts": 0,
   "downtimeMin": 4.1,
   "switches": {
-   "n": 11,
+   "n": 13,
    "medianSec": 16,
    "picker": {
-    "n": 7,
-    "medianSec": 16,
-    "jumps": 6
+    "n": 8,
+    "medianSec": 16.0,
+    "jumps": 7
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 4,
-    "medianSec": 19.5
+    "n": 5,
+    "medianSec": 19
    }
   }
  },
@@ -9286,8 +9333,8 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-21",
-   "summary": "8 of 15 dailies done · gave up on claims · 1 not available today",
-   "done": 8,
+   "summary": "9 of 15 dailies done · gave up on claims, bash · 1 not available today",
+   "done": 9,
    "owed": 15,
    "open": [
     {
@@ -9311,15 +9358,17 @@
      "state": "asks again later"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "09:26",
+     "why": null,
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_092608_weekend_bash_dre__KEEP_0006_092625_no_home_hub.png"
+    },
     {
      "task": "dailyclaim",
      "at": "09:15",
@@ -9380,8 +9429,8 @@
     },
     {
      "day": "2026-09-21",
-     "done": 9,
-     "failed": 2
+     "done": 10,
+     "failed": 4
     }
    ]
   }
