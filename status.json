@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T06:45:49.080859",
+ "generatedAt": "2026-09-22T06:47:52.378005",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "hoopa",
-  "since": "06:42:54"
+  "account": "skosmurf",
+  "mode": "rift",
+  "since": "06:47:41"
  },
  "grid": {
   "tasks": [
@@ -75,7 +75,7 @@
      "-",
      "✓",
      "⊘",
-     "·"
+     "💤"
     ]
    },
    {
@@ -466,7 +466,7 @@
  },
  "counts": {
   "done": 216,
-  "todo": 1,
+  "todo": 0,
   "gaveUp": 13,
   "unavailable": 32,
   "windowed": 2
@@ -610,15 +610,16 @@
   },
   {
    "account": "jeff",
-   "fights": 7,
-   "stamina": 10,
-   "staminaMax": 28,
-   "staminaAt": "2026-09-22T05:33:35",
-   "nextAt": "2026-09-22T06:45:43"
+   "fights": 9,
+   "stamina": 22,
+   "staminaMax": 22,
+   "staminaAt": "2026-09-22T06:47:07",
+   "nextAt": "2026-09-22T08:35:14"
   }
  ],
  "snoozed": {
-  "chris|island_challenge": "2026-09-22T10:42"
+  "chris|island_challenge": "2026-09-22T10:42",
+  "jeff|island_challenge": "2026-09-22T08:35"
  },
  "ownerOnline": [],
  "keys": {
@@ -688,11 +689,28 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-22T06:43:09.817500",
+  "label": "smurf",
+  "at": "2026-09-22T06:47:34.368828",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T06:47:14",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 32,
+   "stats": {
+    "fights": 2,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 22,
+    "fights_today": 9
+   },
+   "dir": "debug_runs/20260922_064642_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-22T06:42:54",
    "script": "island_challenge",
@@ -7192,28 +7210,12 @@
     "attempts_left": null
    },
    "dir": "debug_runs/20260920_200127_worldboss_jeff"
-  },
-  {
-   "ts": "2026-09-20T20:01:27",
-   "script": "worldboss",
-   "account": "chris",
-   "rc": 0,
-   "secs": 87,
-   "stats": {
-    "marginal_popup_close": 1,
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260920_200000_worldboss_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 110749,
+  "now": 110872,
   "segments": [
    {
     "b": 28882,
@@ -11691,7 +11693,45 @@
     ],
     "handoff": 110602,
     "rc": null,
-    "e": 110749
+    "e": 110778
+   },
+   {
+    "b": 110778,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     110778,
+     110792
+    ],
+    "handoff": 110802,
+    "rc": 5,
+    "e": 110835,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 110835,
+    "a": "smurf",
+    "s": "rift",
+    "login": [
+     110835,
+     110854
+    ],
+    "handoff": 110861,
+    "rc": null,
+    "e": 110861
+   },
+   {
+    "b": 110861,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     110862,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 110872
    }
   ],
   "idle": [
@@ -12044,9 +12084,9 @@
  ],
  "day": {
   "since": "2026-09-21T08:00",
-  "switches": 182,
-  "relogMinutes": 73.3,
-  "retries": 61,
+  "switches": 185,
+  "relogMinutes": 74.1,
+  "retries": 62,
   "tasks": {
    "dailyclaim": {
     "runs": 25,
@@ -12074,9 +12114,9 @@
     "failed": 3
    },
    "island_challenge": {
-    "runs": 17,
-    "minutes": 7.8,
-    "failed": 17
+    "runs": 18,
+    "minutes": 8.4,
+    "failed": 18
    },
    "combat_daily": {
     "runs": 20,
@@ -12513,14 +12553,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "jeff",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-22T06:46"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -12547,11 +12580,11 @@
   "restarts": 4,
   "downtimeMin": 62.4,
   "switches": {
-   "n": 171,
+   "n": 173,
    "medianSec": 17,
    "picker": {
-    "n": 113,
-    "medianSec": 16,
+    "n": 114,
+    "medianSec": 16.0,
     "jumps": 84
    },
    "typed": {
@@ -12559,23 +12592,15 @@
     "medianSec": null
    },
    "miss": {
-    "n": 58,
-    "medianSec": 19.0
+    "n": 59,
+    "medianSec": 19
    }
   }
  },
  "progress": {
-  "chris": {
-   "islandFights": 12,
-   "islandStamina": 0,
-   "mailUnread": 0,
-   "paradiseStamina": "14/16",
-   "rank": 348,
-   "pillar": "floor 137 stage 1"
-  },
   "jeff": {
-   "islandFights": 7,
-   "islandStamina": 10,
+   "islandFights": 9,
+   "islandStamina": 22,
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "rank": 347,
@@ -12661,6 +12686,14 @@
    "pillar": "floor 90 stage 8",
    "rank": 354
   },
+  "chris": {
+   "islandFights": 12,
+   "islandStamina": 0,
+   "mailUnread": 0,
+   "paradiseStamina": "14/16",
+   "rank": 348,
+   "pillar": "floor 137 stage 1"
+  },
   "fake7": {
    "mailUnread": 0,
    "paradiseStamina": "4/14",
@@ -12668,11 +12701,11 @@
   }
  },
  "ledger": {
+  "jeff": {
+   "island fights": 4
+  },
   "chris": {
    "island fights": 6
-  },
-  "jeff": {
-   "island fights": 2
   }
  },
  "paused": null,
@@ -12982,7 +13015,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -13017,11 +13050,11 @@
     }
    ],
    "spent": {
-    "island fights": 2
+    "island fights": 4
    },
    "progress": {
-    "islandFights": 7,
-    "islandStamina": 10,
+    "islandFights": 9,
+    "islandStamina": 22,
     "mailUnread": 0,
     "paradiseStamina": "16/16",
     "rank": 347,
