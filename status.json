@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T16:45:55.906970",
+ "generatedAt": "2026-09-21T16:47:59.511727",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "victory_road",
-  "since": "16:45:54"
+  "mode": "paradise",
+  "since": "16:46:17"
  },
  "grid": {
   "tasks": [
@@ -208,8 +208,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "·",
      "·",
      "-",
@@ -225,10 +225,10 @@
   ]
  },
  "counts": {
-  "done": 78,
-  "todo": 7,
+  "done": 79,
+  "todo": 5,
   "gaveUp": 8,
-  "unavailable": 19,
+  "unavailable": 20,
   "windowed": 0
  },
  "disabled": [
@@ -443,6 +443,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T16:46:17",
+   "script": "rank_match",
+   "account": "test1",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_164617_rank_match_test1"
+  },
+  {
+   "ts": "2026-09-21T16:46:15",
+   "script": "rank_match",
+   "account": "test1",
+   "rc": 2,
+   "secs": 11,
+   "stats": {
+    "near_miss_go_button": 3,
+    "rank_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_164604_rank_match_test1"
+  },
+  {
+   "ts": "2026-09-21T16:46:02",
+   "script": "victory_road",
+   "account": "test1",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "near_miss_go_button": 8,
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_164555_victory_road_test1"
+  },
   {
    "ts": "2026-09-21T16:45:54",
    "script": "combat_daily",
@@ -6996,66 +7036,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260920_112042_dailyclaim_test1"
-  },
-  {
-   "ts": "2026-09-20T11:20:14",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 74,
-   "stats": {
-    "ranked_fought": 10,
-    "free_attempts_spent": 1,
-    "rank_unreadable": 1,
-    "near_miss_buy_items": 1
-   },
-   "incomplete": [],
-   "values": {
-    "daily_goal_claims": 0
-   },
-   "dir": "debug_runs/20260920_111859_run_pvp_ranked_lucifer2"
-  },
-  {
-   "ts": "2026-09-20T11:18:58",
-   "script": "paradise",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 200,
-   "stats": {
-    "marginal_paradise_hub": 1,
-    "explore_clicks": 108,
-    "pass_claims": 5,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 1,
-    "upgraded_energy_drink": 1,
-    "dex_activated": 1,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "14/16"
-   },
-   "dir": "debug_runs/20260920_111537_paradise_lucifer2"
-  },
-  {
-   "ts": "2026-09-20T11:15:36",
-   "script": "victory_road",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_111528_victory_road_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 60356,
+  "now": 60479,
   "segments": [
    {
     "b": 28882,
@@ -10282,8 +10268,41 @@
     "s": "victory_road",
     "login": null,
     "handoff": 60355,
+    "rc": 0,
+    "e": 60363,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 60363,
+    "a": "test1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 60364,
+    "rc": 2,
+    "e": 60376,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 60376,
+    "a": "test1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 60376,
+    "rc": 2,
+    "e": 60377,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 60377,
+    "a": "test1",
+    "s": "paradise",
+    "login": null,
+    "handoff": 60377,
     "rc": null,
-    "e": 60356
+    "e": 60479
    }
   ],
   "idle": []
@@ -10575,8 +10594,8 @@
     "failed": 4
    },
    "victory_road": {
-    "runs": 13,
-    "minutes": 1.6,
+    "runs": 14,
+    "minutes": 1.8,
     "failed": 0
    },
    "paradise": {
@@ -10620,8 +10639,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 8,
-    "minutes": 6.1,
+    "runs": 10,
+    "minutes": 6.3,
     "failed": 0
    }
   }
@@ -10776,6 +10795,12 @@
    "task": "joint_team_daily_quest",
    "why": "reported unavailable",
    "at": "2026-09-21T16:41:34"
+  },
+  {
+   "account": "test1",
+   "task": "rank_match",
+   "why": "near_miss_go_button, rank_locked",
+   "at": "2026-09-21T16:46:15"
   }
  ],
  "windows": {
@@ -10880,45 +10905,33 @@
   "next": [
    {
     "account": "test1",
-    "task": "victory_road",
-    "startsIn": 0.0,
-    "eta": "2026-09-21T16:45"
-   },
-   {
-    "account": "test1",
-    "task": "rank_match",
-    "startsIn": 0.1,
-    "eta": "2026-09-21T16:46"
-   },
-   {
-    "account": "test1",
     "task": "paradise",
-    "startsIn": 0.9,
-    "eta": "2026-09-21T16:46"
+    "startsIn": 0.0,
+    "eta": "2026-09-21T16:47"
    },
    {
     "account": "test1",
     "task": "guild_war",
-    "startsIn": 4.3,
-    "eta": "2026-09-21T16:50"
+    "startsIn": 3.5,
+    "eta": "2026-09-21T16:51"
    },
    {
     "account": "test1",
     "task": "collect_hoopa_keys",
-    "startsIn": 4.3,
-    "eta": "2026-09-21T16:50"
+    "startsIn": 3.5,
+    "eta": "2026-09-21T16:51"
    },
    {
     "account": "test1",
     "task": "sky_pillar",
-    "startsIn": 4.5,
-    "eta": "2026-09-21T16:50"
+    "startsIn": 3.6,
+    "eta": "2026-09-21T16:51"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 5.6,
-    "eta": "2026-09-21T16:51"
+    "startsIn": 4.7,
+    "eta": "2026-09-21T16:52"
    }
   ],
   "more": 0,
@@ -10948,11 +10961,6 @@
   }
  },
  "progress": {
-  "lucifer2": {
-   "paradiseStamina": "16/16",
-   "pillar": "floor 85 stage 1",
-   "mailUnread": 0
-  },
   "test1": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
@@ -11006,6 +11014,11 @@
    "mailUnread": 0,
    "paradiseStamina": "14/16",
    "pillar": "floor 4 stage 1"
+  },
+  "lucifer2": {
+   "pillar": "floor 85 stage 1",
+   "mailUnread": 0,
+   "paradiseStamina": "16/16"
   },
   "nova": {
    "mailUnread": 0,
@@ -12109,8 +12122,8 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-21",
-   "summary": "5 of 14 dailies done · 2 switched off · 2 not available today",
-   "done": 5,
+   "summary": "6 of 14 dailies done · 2 switched off · 3 not available today",
+   "done": 6,
    "owed": 14,
    "open": [
     {
@@ -12122,12 +12135,8 @@
      "state": "not available today"
     },
     {
-     "task": "victory",
-     "state": "still to do"
-    },
-    {
      "task": "victoryRank",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "paradise",
@@ -12171,6 +12180,10 @@
     {
      "task": "joint_team_daily_quest",
      "why": "reported unavailable"
+    },
+    {
+     "task": "rank_match",
+     "why": "near_miss_go_button, rank_locked"
     }
    ],
    "spent": {
@@ -12217,7 +12230,7 @@
     },
     {
      "day": "2026-09-21",
-     "done": 6,
+     "done": 8,
      "failed": 0
     }
    ]
