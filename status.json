@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T13:41:45.569309",
+ "generatedAt": "2026-09-21T13:43:48.935797",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "dailyclaim",
-  "since": "13:41:18"
+  "mode": "daily_dungeon",
+  "since": "13:43:45"
  },
  "grid": {
   "tasks": [
@@ -82,7 +82,7 @@
     "account": "fake3",
     "cells": [
      "✗2",
-     "·",
+     "✓",
      "⊘",
      "⊘",
      "·",
@@ -225,8 +225,8 @@
   ]
  },
  "counts": {
-  "done": 20,
-  "todo": 67,
+  "done": 21,
+  "todo": 66,
   "gaveUp": 4,
   "unavailable": 15,
   "windowed": 0
@@ -439,6 +439,70 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T13:42:43",
+   "script": "joint_team_daily_quest",
+   "account": "fake3",
+   "rc": 2,
+   "secs": 1,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_134241_joint_team_daily_quest_fake3"
+  },
+  {
+   "ts": "2026-09-21T13:42:40",
+   "script": "joint_team_daily_quest",
+   "account": "fake3",
+   "rc": 2,
+   "secs": 4,
+   "stats": {
+    "near_miss_joint_team": 1,
+    "marginal_joint_team": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_134235_joint_team_daily_quest_fake3"
+  },
+  {
+   "ts": "2026-09-21T13:42:34",
+   "script": "mail",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 16,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260921_134230_mail_fake3"
+  },
+  {
+   "ts": "2026-09-21T13:42:29",
+   "script": "dailyclaim",
+   "account": "fake3",
+   "rc": 1,
+   "secs": 70,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_paid_only": 1,
+    "forbidden_first_topup": 2,
+    "mythic_no_open": 1,
+    "incomplete": 1,
+    "claims": 0
+   },
+   "incomplete": [
+    "dailyclaim: Mythic Incoming would not open"
+   ],
+   "values": {
+    "rail_badges": "0.190:77 0.275:8 0.345:53 0.428:0 0.500:0"
+   },
+   "dir": "debug_runs/20260921_134119_dailyclaim_fake3"
+  },
   {
    "ts": "2026-09-21T13:41:18",
    "script": "dailyclaim",
@@ -7021,85 +7085,12 @@
     "stage": 7
    },
    "dir": "debug_runs/20260920_095553_sky_pillar_fake4"
-  },
-  {
-   "ts": "2026-09-20T09:55:52",
-   "script": "collect_hoopa_keys",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_095544_collect_hoopa_keys_fake4"
-  },
-  {
-   "ts": "2026-09-20T09:55:43",
-   "script": "paradise",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 182,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 100,
-    "pass_claims": 3,
-    "dex_milestones": 1,
-    "dex_activated": 3,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "16/16"
-   },
-   "dir": "debug_runs/20260920_095240_paradise_fake4"
-  },
-  {
-   "ts": "2026-09-20T09:52:38",
-   "script": "victory_road",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_095230_victory_road_fake4"
-  },
-  {
-   "ts": "2026-09-20T09:52:29",
-   "script": "combat_daily",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 108,
-   "stats": {
-    "title_reread_named": 3,
-    "marginal_afk_yield": 1,
-    "near_miss_afk_rewards": 1,
-    "marginal_afk_rewards": 1,
-    "near_miss_vr_rank": 2,
-    "adv_overflow": 1,
-    "marginal_battle_victory_confirm": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "pokemon_upgraded": 1,
-    "marginal_island_shop_on": 2,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260920_095041_combat_daily_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 49305,
+  "now": 49429,
   "segments": [
    {
     "b": 28882,
@@ -9269,14 +9260,83 @@
     "login": null,
     "handoff": 49279,
     "rc": 1,
-    "e": 49305,
+    "e": 49350,
     "secs": 69,
     "why": "dailyclaim: Mythic Incoming would not open"
+   },
+   {
+    "b": 49350,
+    "a": "fake3",
+    "s": "mail",
+    "login": null,
+    "handoff": 49350,
+    "rc": 0,
+    "e": 49354,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 49354,
+    "a": "fake3",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 49355,
+    "rc": 2,
+    "e": 49360,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49360,
+    "a": "fake3",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 49361,
+    "rc": 2,
+    "e": 49363,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 49363,
+    "a": "fake3",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 49366,
+    "rc": null,
+    "e": 49396
+   },
+   {
+    "b": 49396,
+    "a": "fake3",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 49398,
+    "rc": null,
+    "e": 49425
+   },
+   {
+    "b": 49425,
+    "a": "fake3",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 49427,
+    "rc": null,
+    "e": 49429
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-21T13:42:29",
+   "account": "fake3",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 70,
+   "why": "dailyclaim: Mythic Incoming would not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_134119_dailyclaim_fake3__KEEP_0005_134229_home_at_exit.png"
+  },
   {
    "ts": "2026-09-21T13:41:18",
    "account": "fake3",
@@ -9453,21 +9513,21 @@
   "since": "2026-09-21T08:00",
   "switches": 72,
   "relogMinutes": 32.5,
-  "retries": 31,
+  "retries": 32,
   "tasks": {
    "dailyclaim": {
-    "runs": 13,
-    "minutes": 11.6,
-    "failed": 8
+    "runs": 14,
+    "minutes": 12.7,
+    "failed": 9
    },
    "mail": {
-    "runs": 8,
-    "minutes": 0.4,
+    "runs": 9,
+    "minutes": 0.5,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 9,
-    "minutes": 4.5,
+    "runs": 11,
+    "minutes": 4.6,
     "failed": 0
    },
    "daily_dungeon": {
@@ -9588,8 +9648,8 @@
   {
    "account": "fake3",
    "task": "joint_team_daily_quest",
-   "why": null,
-   "at": null
+   "why": "reported unavailable",
+   "at": "2026-09-21T13:42:43"
   },
   {
    "account": "fake4",
@@ -9772,78 +9832,78 @@
   "next": [
    {
     "account": "fake3",
-    "task": "mail",
-    "startsIn": 0.0,
-    "eta": "2026-09-21T13:41"
-   },
-   {
-    "account": "fake3",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.1,
-    "eta": "2026-09-21T13:41"
-   },
-   {
-    "account": "fake3",
-    "task": "joint_battle",
-    "startsIn": 0.6,
-    "eta": "2026-09-21T13:42"
-   },
-   {
-    "account": "fake3",
     "task": "daily_dungeon",
-    "startsIn": 2.5,
-    "eta": "2026-09-21T13:44"
+    "startsIn": 0.0,
+    "eta": "2026-09-21T13:43"
    },
    {
     "account": "fake3",
     "task": "pokemon_home",
-    "startsIn": 2.8,
+    "startsIn": 0.3,
     "eta": "2026-09-21T13:44"
    },
    {
     "account": "fake3",
     "task": "combat_daily",
-    "startsIn": 4.2,
+    "startsIn": 1.7,
     "eta": "2026-09-21T13:45"
    },
    {
     "account": "fake3",
     "task": "victory_road",
-    "startsIn": 6.0,
+    "startsIn": 3.5,
     "eta": "2026-09-21T13:47"
    },
    {
     "account": "fake3",
     "task": "rank_match",
-    "startsIn": 6.1,
+    "startsIn": 3.6,
     "eta": "2026-09-21T13:47"
    },
    {
     "account": "fake3",
     "task": "paradise",
-    "startsIn": 7.1,
+    "startsIn": 4.5,
     "eta": "2026-09-21T13:48"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.5,
-    "eta": "2026-09-21T13:52"
+    "startsIn": 8.0,
+    "eta": "2026-09-21T13:51"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 10.7,
-    "eta": "2026-09-21T13:52"
+    "startsIn": 8.1,
+    "eta": "2026-09-21T13:51"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 11.7,
-    "eta": "2026-09-21T13:53"
+    "startsIn": 9.1,
+    "eta": "2026-09-21T13:52"
+   },
+   {
+    "account": "fake4",
+    "task": "dailyclaim",
+    "startsIn": 10.9,
+    "eta": "2026-09-21T13:54"
+   },
+   {
+    "account": "fake4",
+    "task": "mail",
+    "startsIn": 11.8,
+    "eta": "2026-09-21T13:55"
+   },
+   {
+    "account": "fake4",
+    "task": "joint_team_daily_quest",
+    "startsIn": 11.8,
+    "eta": "2026-09-21T13:55"
    }
   ],
-  "more": 65,
+  "more": 62,
   "fillers": [],
   "held": {}
  },
@@ -9871,7 +9931,6 @@
  },
  "progress": {
   "fake4": {
-   "paradiseStamina": "16/16",
    "pillar": "floor 3 stage 7"
   },
   "fake5": {
@@ -9944,7 +10003,9 @@
    "paradiseStamina": "35/15",
    "pillar": "floor 3 stage 10"
   },
-  "fake3": {},
+  "fake3": {
+   "mailUnread": 0
+  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
@@ -9957,6 +10018,7 @@
  },
  "ledger": {
   "fake3": {
+   "mail claimed": 1,
    "daily claims": 1
   },
   "fake2": {
@@ -10481,17 +10543,13 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-21",
-   "summary": "0 of 14 dailies done · gave up on claims · 2 switched off · 2 not available today",
-   "done": 0,
+   "summary": "1 of 14 dailies done · gave up on claims · 2 switched off · 2 not available today",
+   "done": 1,
    "owed": 14,
    "open": [
     {
      "task": "claims",
      "state": "gave up"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
     },
     {
      "task": "JointQ",
@@ -10545,9 +10603,9 @@
    "issues": [
     {
      "task": "dailyclaim",
-     "at": "13:41",
+     "at": "13:42",
      "why": "dailyclaim: Mythic Incoming would not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_134009_dailyclaim_fake3__KEEP_0006_134118_home_at_exit.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260921_134119_dailyclaim_fake3__KEEP_0005_134229_home_at_exit.png"
     }
    ],
    "off": [
@@ -10569,13 +10627,16 @@
     },
     {
      "task": "joint_team_daily_quest",
-     "why": null
+     "why": "reported unavailable"
     }
    ],
    "spent": {
+    "mail claimed": 1,
     "daily claims": 1
    },
-   "progress": {},
+   "progress": {
+    "mailUnread": 0
+   },
    "history": [
     {
      "day": "2026-09-15",
@@ -10609,8 +10670,8 @@
     },
     {
      "day": "2026-09-21",
-     "done": 1,
-     "failed": 1
+     "done": 2,
+     "failed": 2
     }
    ]
   },
@@ -10703,7 +10764,6 @@
    ],
    "spent": {},
    "progress": {
-    "paradiseStamina": "16/16",
     "pillar": "floor 3 stage 7"
    },
    "history": [
