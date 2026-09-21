@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-21T09:35:48.406814",
+ "generatedAt": "2026-09-21T09:37:51.496463",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "hoopa",
-  "since": "09:27:40"
+  "mode": "run_pvp_ranked",
+  "since": "09:37:47"
  },
  "grid": {
   "tasks": [
@@ -68,7 +68,7 @@
      "⏰",
      "✓",
      "⏰",
-     "💤",
+     "·",
      "✓",
      "✓",
      "✓",
@@ -178,7 +178,7 @@
  },
  "counts": {
   "done": 64,
-  "todo": 1,
+  "todo": 2,
   "gaveUp": 5,
   "unavailable": 5,
   "windowed": 12
@@ -288,6 +288,12 @@
   },
   {
    "account": "smurf",
+   "task": "hoopa",
+   "since": "2026-09-21T09:37:12",
+   "why": "lost a fight while climbing — the result card says the fight was lost"
+  },
+  {
+   "account": "smurf",
    "task": "story",
    "since": "2026-09-20T00:23:12",
    "why": "lost at stage 11 after 10 clear(s) — the next stage needs a stronger team"
@@ -320,9 +326,8 @@
   "dre|run_pvp_ranked": "2026-09-21T09:55",
   "jeff|island_challenge": "2026-09-21T10:48",
   "lucifer1|run_pvp_ranked": "2026-09-21T09:40",
-  "nova|run_pvp_ranked": "2026-09-21T09:36",
-  "skosmurf|run_pvp_ranked": "2026-09-21T09:39",
-  "smurf|run_pvp_ranked": "2026-09-21T09:37"
+  "nova|run_pvp_ranked": "2026-09-21T10:07",
+  "skosmurf|run_pvp_ranked": "2026-09-21T09:39"
  },
  "ownerOnline": [],
  "keys": {
@@ -388,11 +393,37 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-21T09:27:56.993492",
+  "label": "nova",
+  "at": "2026-09-21T09:37:32.823417",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-21T09:37:47",
+   "script": "run_pvp_ranked",
+   "account": "nova",
+   "rc": 5,
+   "secs": 5,
+   "stats": {
+    "off_season": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260921_093742_run_pvp_ranked_nova"
+  },
+  {
+   "ts": "2026-09-21T09:37:12",
+   "script": "hoopa",
+   "account": "smurf",
+   "rc": 2,
+   "secs": 545,
+   "stats": {},
+   "incomplete": [
+    "lost a fight while climbing — the result card says the fight was lost"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-21T09:26:25",
    "script": "weekend_bash",
@@ -7026,42 +7057,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260920_091246_daily_dungeon_fake1"
-  },
-  {
-   "ts": "2026-09-20T09:12:17",
-   "script": "joint_team_daily_quest",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 25,
-   "stats": {
-    "marginal_joint_team_daily_panel": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260920_091151_joint_team_daily_quest_fake1"
-  },
-  {
-   "ts": "2026-09-20T09:11:50",
-   "script": "mail",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260920_091146_mail_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-21T00:00",
   "since": 28800.0,
-  "now": 34548,
+  "now": 34671,
   "segments": [
    {
     "b": 28882,
@@ -8121,8 +8122,36 @@
      34076
     ],
     "handoff": 34087,
+    "rc": 2,
+    "e": 34636,
+    "secs": 545,
+    "why": "lost a fight while climbing — the result card says the fight was lost"
+   },
+   {
+    "b": 34636,
+    "a": "nova",
+    "s": "run_pvp_ranked",
+    "login": [
+     34637,
+     34652
+    ],
+    "handoff": 34661,
+    "rc": 5,
+    "e": 34667,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 34667,
+    "a": "smurf",
+    "s": "run_pvp_ranked",
+    "login": [
+     34668,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 34548
+    "e": 34671
    }
   ],
   "idle": []
@@ -8239,9 +8268,9 @@
  ],
  "day": {
   "since": "2026-09-21T08:00",
-  "switches": 14,
-  "relogMinutes": 6.1,
-  "retries": 18,
+  "switches": 16,
+  "relogMinutes": 6.5,
+  "retries": 19,
   "tasks": {
    "dailyclaim": {
     "runs": 8,
@@ -8304,9 +8333,9 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 6,
-    "minutes": 0.5,
-    "failed": 6
+    "runs": 7,
+    "minutes": 0.6,
+    "failed": 7
    },
    "weekend_bash": {
     "runs": 7,
@@ -8344,6 +8373,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "smurf",
+   "task": "hoopa",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "at": "2026-09-21T09:37:12"
   },
   {
    "account": "smurf",
@@ -8467,10 +8502,16 @@
  "queue": {
   "next": [
    {
+    "account": "smurf",
+    "task": "run_pvp_ranked",
+    "startsIn": 0.0,
+    "eta": "2026-09-21T09:37"
+   },
+   {
     "account": "lucifer2",
     "task": "run_pvp_ranked",
-    "startsIn": 0.4,
-    "eta": "2026-09-21T09:36"
+    "startsIn": 0.5,
+    "eta": "2026-09-21T09:38"
    }
   ],
   "more": 0,
@@ -8484,10 +8525,6 @@
     "mode": "rift"
    },
    {
-    "account": "smurf",
-    "mode": "hoopa"
-   },
-   {
     "account": "nova",
     "mode": "hoopa"
    }
@@ -8499,12 +8536,12 @@
   "restarts": 0,
   "downtimeMin": 4.1,
   "switches": {
-   "n": 14,
-   "medianSec": 16.0,
+   "n": 15,
+   "medianSec": 16,
    "picker": {
-    "n": 9,
-    "medianSec": 16,
-    "jumps": 8
+    "n": 10,
+    "medianSec": 15.5,
+    "jumps": 9
    },
    "typed": {
     "n": 0,
@@ -8518,7 +8555,6 @@
  },
  "progress": {
   "fake1": {
-   "mailUnread": 0,
    "paradiseStamina": "5/15",
    "pillar": "floor 3 stage 7"
   },
@@ -8837,6 +8873,15 @@
    "enable": true
   },
   {
+   "account": "smurf",
+   "task": "hoopa",
+   "kind": "climb",
+   "since": "2026-09-21T09:37:12",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
+   "enable": true
+  },
+  {
    "account": "test1",
    "task": "hoopa",
    "kind": "climb",
@@ -8977,7 +9022,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-21",
-   "summary": "12 of 17 dailies done · gave up on misty · 1 switched off · 1 not available today",
+   "summary": "12 of 17 dailies done · gave up on misty · 2 switched off · 2 not available today",
    "done": 12,
    "owed": 17,
    "open": [
@@ -8995,7 +9040,7 @@
     },
     {
      "task": "pvpRank",
-     "state": "asks again later"
+     "state": "still to do"
     },
     {
      "task": "misty",
@@ -9012,12 +9057,21 @@
    ],
    "off": [
     {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-21T09:37:12"
+    },
+    {
      "task": "story",
      "why": "lost at stage 11 after 10 clear(s) — the next stage needs a stronger team",
      "since": "2026-09-20T00:23:12"
     }
    ],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost"
+    },
     {
      "task": "joint_battle",
      "why": null
