@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T05:15:14.529489",
+ "generatedAt": "2026-09-23T05:17:17.879917",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
   "mode": "hoopa",
-  "since": "05:14:44"
+  "since": "05:16:14"
  },
  "grid": {
   "tasks": [
@@ -664,8 +664,8 @@
    "at": "2026-09-21T14:25:52"
   },
   "nova": {
-   "keys": 1,
-   "at": "2026-09-23T05:09:12"
+   "keys": 0,
+   "at": "2026-09-23T05:16:20"
   },
   "fake6": {
    "keys": 79,
@@ -718,6 +718,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T05:16:22",
+   "script": "hoopa",
+   "account": "nova",
+   "rc": 2,
+   "secs": 6,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-23T05:07:43",
    "script": "island_challenge",
@@ -7321,38 +7337,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260921_182257_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-21T18:22:54",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 125,
-   "stats": {
-    "fountain_taken": 4,
-    "runes_claimed": 10,
-    "battles_won": 10,
-    "portals": 1,
-    "infernal_confirmed": 1,
-    "near_miss_popup_close": 1,
-    "probe_no_card": 2,
-    "no_allowed_tile": 1,
-    "incomplete": 1,
-    "wins": 10
-   },
-   "incomplete": [
-    "misty_woods: step 16 did not complete"
-   ],
-   "values": {
-    "stage": 1
-   },
-   "dir": "debug_runs/20260921_182048_misty_woods_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 105314,
+  "now": 105438,
   "segments": [
    {
     "b": 29206,
@@ -12149,8 +12139,10 @@
      64476
     ],
     "handoff": 64490,
-    "rc": null,
-    "e": 105314
+    "rc": 2,
+    "e": 105438,
+    "secs": 6,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
    }
   ],
   "idle": []
@@ -12493,6 +12485,12 @@
    "at": "2026-09-22T15:19:01"
   },
   {
+   "account": "nova",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-23T05:16:22"
+  },
+  {
    "account": "skosmurf",
    "task": "faction",
    "why": "auto_formation, skip_retry, capped_fire, floors_fire",
@@ -12699,10 +12697,6 @@
    {
     "account": "skosmurf",
     "mode": "rift"
-   },
-   {
-    "account": "nova",
-    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -12730,13 +12724,6 @@
   }
  },
  "progress": {
-  "smurf": {
-   "misty": "step 1",
-   "mailUnread": 0,
-   "paradiseStamina": "0/10",
-   "rank": 193,
-   "pillar": "floor 18 stage 4"
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
@@ -12755,6 +12742,12 @@
    "mailUnread": 0,
    "rank": 209,
    "pillar": "floor 137 stage 4"
+  },
+  "smurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/10",
+   "rank": 193,
+   "pillar": "floor 18 stage 4"
   },
   "skosmurf": {
    "mailUnread": 0,
@@ -13065,13 +13058,18 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-22",
-   "summary": "15 of 15 dailies done",
+   "summary": "15 of 15 dailies done · 1 not available today",
    "done": 15,
    "owed": 15,
    "open": [],
    "issues": [],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {},
    "progress": {
     "mailUnread": 0,
@@ -13335,7 +13333,6 @@
    ],
    "spent": {},
    "progress": {
-    "misty": "step 1",
     "mailUnread": 0,
     "paradiseStamina": "0/10",
     "rank": 193,
