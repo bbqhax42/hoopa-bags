@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T09:28:30.774510",
+ "generatedAt": "2026-09-22T09:30:34.775240",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
-  "mode": "faction",
-  "since": "09:28:23"
+  "account": "fake3",
+  "mode": "joint_team_daily_quest",
+  "since": "09:30:05"
  },
  "grid": {
   "tasks": [
@@ -177,8 +177,8 @@
    {
     "account": "fake3",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 70,
-  "todo": 136,
+  "done": 72,
+  "todo": 134,
   "gaveUp": 0,
   "unavailable": 3,
   "windowed": 52
@@ -683,11 +683,67 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-22T09:16:47.017406",
+  "label": "fake3",
+  "at": "2026-09-22T09:29:29.791571",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T09:30:04",
+   "script": "mail",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260922_093001_mail_fake3"
+  },
+  {
+   "ts": "2026-09-22T09:29:59",
+   "script": "dailyclaim",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 24,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:78 0.275:8 0.345:51 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260922_092935_dailyclaim_fake3"
+  },
+  {
+   "ts": "2026-09-22T09:29:11",
+   "script": "faction",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "auto_formation": 1,
+    "skip_retry": 1,
+    "incomplete": 1,
+    "lost_fire": 1,
+    "faction_disabled": 1,
+    "floors_fire": 0,
+    "sweeps_used": 0
+   },
+   "incomplete": [
+    "faction: fire tower: lost the battle after 0 win(s) — the team needs adjusting"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260922_092857_faction_fake2"
+  },
   {
    "ts": "2026-09-22T09:28:22",
    "script": "faction",
@@ -7185,66 +7241,12 @@
     "stamina": "16/16"
    },
    "dir": "debug_runs/20260921_085108_paradise_lucifer1"
-  },
-  {
-   "ts": "2026-09-21T08:51:06",
-   "script": "victory_road",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_085059_victory_road_lucifer1"
-  },
-  {
-   "ts": "2026-09-21T08:50:58",
-   "script": "combat_daily",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 114,
-   "stats": {
-    "title_reread_named": 7,
-    "marginal_afk_rewards": 2,
-    "near_miss_afk_rewards": 3,
-    "refused_afk_rewards_confirm": 1,
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 4,
-    "near_miss_pokemon_upgrade": 1,
-    "upgrade_skip_resonating": 1,
-    "pokemon_upgraded": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 8/8 os a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260921_084903_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-21T08:48:58",
-   "script": "pokemon_home",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 111,
-   "stats": {
-    "reached_via_trial": 1,
-    "balls_unsettled_opened": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_084706_pokemon_home_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 34111,
+  "now": 34235,
   "segments": [
    {
     "b": 29206,
@@ -8156,16 +8158,59 @@
     "a": "fake2",
     "s": "faction",
     "login": null,
-    "handoff": null,
+    "handoff": 34137,
     "rc": 1,
-    "e": 34111,
+    "e": 34152,
     "secs": 125,
     "why": "faction: fire tower: lost the battle after 18 win(s) — the team needs adjusting"
+   },
+   {
+    "b": 34152,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": [
+     34152,
+     34169
+    ],
+    "handoff": 34175,
+    "rc": 0,
+    "e": 34200,
+    "secs": 24,
+    "why": ""
+   },
+   {
+    "b": 34200,
+    "a": "fake3",
+    "s": "mail",
+    "login": null,
+    "handoff": 34201,
+    "rc": 0,
+    "e": 34205,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 34205,
+    "a": "fake3",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 34205,
+    "rc": null,
+    "e": 34235
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-22T09:29:11",
+   "account": "fake2",
+   "task": "faction",
+   "rc": 1,
+   "secs": 13,
+   "why": "faction: fire tower: lost the battle after 0 win(s) — the team needs adjusting",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_092857_faction_fake2__KEEP_0014_092910_faction_lost_fire.png"
+  },
   {
    "ts": "2026-09-22T09:28:22",
    "account": "fake2",
@@ -8223,18 +8268,18 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 9,
-  "relogMinutes": 3.4,
-  "retries": 6,
+  "switches": 10,
+  "relogMinutes": 3.8,
+  "retries": 7,
   "tasks": {
    "dailyclaim": {
-    "runs": 6,
-    "minutes": 2.3,
+    "runs": 7,
+    "minutes": 2.7,
     "failed": 0
    },
    "mail": {
-    "runs": 6,
-    "minutes": 0.3,
+    "runs": 7,
+    "minutes": 0.4,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -8293,9 +8338,9 @@
     "failed": 2
    },
    "faction": {
-    "runs": 6,
-    "minutes": 6.6,
-    "failed": 2
+    "runs": 7,
+    "minutes": 6.9,
+    "failed": 3
    },
    "misty_woods": {
     "runs": 1,
@@ -8490,78 +8535,78 @@
   "next": [
    {
     "account": "fake3",
-    "task": "dailyclaim",
-    "startsIn": 0.4,
-    "eta": "2026-09-22T09:28"
-   },
-   {
-    "account": "fake3",
-    "task": "mail",
-    "startsIn": 0.8,
-    "eta": "2026-09-22T09:29"
-   },
-   {
-    "account": "fake3",
     "task": "joint_team_daily_quest",
-    "startsIn": 0.8,
-    "eta": "2026-09-22T09:29"
+    "startsIn": 0.0,
+    "eta": "2026-09-22T09:30"
    },
    {
     "account": "fake3",
     "task": "daily_dungeon",
-    "startsIn": 1.7,
-    "eta": "2026-09-22T09:30"
-   },
-   {
-    "account": "fake3",
-    "task": "pokemon_home",
-    "startsIn": 2.0,
-    "eta": "2026-09-22T09:30"
-   },
-   {
-    "account": "fake3",
-    "task": "combat_daily",
-    "startsIn": 3.3,
+    "startsIn": 0.8,
     "eta": "2026-09-22T09:31"
    },
    {
     "account": "fake3",
-    "task": "victory_road",
-    "startsIn": 5.0,
+    "task": "pokemon_home",
+    "startsIn": 1.2,
+    "eta": "2026-09-22T09:31"
+   },
+   {
+    "account": "fake3",
+    "task": "combat_daily",
+    "startsIn": 2.5,
     "eta": "2026-09-22T09:33"
+   },
+   {
+    "account": "fake3",
+    "task": "victory_road",
+    "startsIn": 4.1,
+    "eta": "2026-09-22T09:34"
    },
    {
     "account": "fake3",
     "task": "paradise",
-    "startsIn": 5.1,
-    "eta": "2026-09-22T09:33"
+    "startsIn": 4.3,
+    "eta": "2026-09-22T09:34"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.8,
-    "eta": "2026-09-22T09:37"
+    "startsIn": 8.0,
+    "eta": "2026-09-22T09:38"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 8.9,
-    "eta": "2026-09-22T09:37"
+    "startsIn": 8.1,
+    "eta": "2026-09-22T09:38"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 10.0,
-    "eta": "2026-09-22T09:38"
+    "startsIn": 9.2,
+    "eta": "2026-09-22T09:39"
    },
    {
     "account": "fake4",
     "task": "dailyclaim",
-    "startsIn": 11.5,
-    "eta": "2026-09-22T09:40"
+    "startsIn": 10.5,
+    "eta": "2026-09-22T09:41"
+   },
+   {
+    "account": "fake4",
+    "task": "mail",
+    "startsIn": 10.9,
+    "eta": "2026-09-22T09:41"
+   },
+   {
+    "account": "fake4",
+    "task": "joint_team_daily_quest",
+    "startsIn": 11.0,
+    "eta": "2026-09-22T09:41"
    }
   ],
-  "more": 124,
+  "more": 122,
   "fillers": [
    {
     "account": "smurf",
@@ -8591,12 +8636,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 9,
-   "medianSec": 18,
+   "n": 10,
+   "medianSec": 17.5,
    "picker": {
-    "n": 6,
-    "medianSec": 16.0,
-    "jumps": 3
+    "n": 7,
+    "medianSec": 16,
+    "jumps": 4
    },
    "typed": {
     "n": 0,
@@ -8709,6 +8754,10 @@
   }
  },
  "ledger": {
+  "fake3": {
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "fake2": {
    "faction sweeps": 2,
    "pillar/story stages cleared": 2,
@@ -9487,9 +9536,9 @@
    "issues": [
     {
      "task": "faction",
-     "at": "09:28",
-     "why": "faction: fire tower: lost the battle after 18 win(s) — the team needs adjusting",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_092617_faction_fake2__KEEP_0194_092813_faction_lost_fire.png"
+     "at": "09:29",
+     "why": "faction: fire tower: lost the battle after 0 win(s) — the team needs adjusting",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_092857_faction_fake2__KEEP_0014_092910_faction_lost_fire.png"
     }
    ],
    "off": [
@@ -9557,25 +9606,17 @@
     {
      "day": "2026-09-22",
      "done": 11,
-     "failed": 1
+     "failed": 2
     }
    ]
   },
   "fake3": {
    "name": "Random999",
    "day": "2026-09-22",
-   "summary": "0 of 14 dailies done · 2 switched off",
-   "done": 0,
+   "summary": "2 of 14 dailies done · 2 switched off",
+   "done": 2,
    "owed": 14,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "still to do"
@@ -9646,7 +9687,10 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 2
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "16/16",
@@ -9685,7 +9729,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 1,
+     "done": 3,
      "failed": 1
     }
    ]
