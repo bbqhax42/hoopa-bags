@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T15:18:29.493800",
+ "generatedAt": "2026-09-22T15:20:32.567334",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "chris",
   "mode": "hoopa",
-  "since": "15:11:40"
+  "since": "15:19:40"
  },
  "grid": {
   "tasks": [
@@ -624,8 +624,8 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 5,
-   "at": "2026-09-22T11:50:19"
+   "keys": 0,
+   "at": "2026-09-22T15:19:00"
   },
   "chris": {
    "keys": 5,
@@ -689,11 +689,27 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-22T15:11:58.614127",
+  "label": "chris",
+  "at": "2026-09-22T15:19:59.814940",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T15:19:01",
+   "script": "hoopa",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 413,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-22T14:58:28",
    "script": "championship",
@@ -7442,34 +7458,12 @@
     "rank_rewards": 2
    },
    "dir": "debug_runs/20260921_171801_rank_match_skosmurf"
-  },
-  {
-   "ts": "2026-09-21T17:17:30",
-   "script": "run_pvp_ranked",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 68,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": -349,
-    "rank_went_backwards": 1,
-    "daily_goal_claimed": 3,
-    "near_miss_buy_items": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 350,
-    "daily_goal_claims": 3
-   },
-   "dir": "debug_runs/20260921_171621_run_pvp_ranked_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 55109,
+  "now": 55232,
   "segments": [
    {
     "b": 29206,
@@ -10879,8 +10873,34 @@
      54718
     ],
     "handoff": 54728,
+    "rc": 2,
+    "e": 55145,
+    "secs": 413,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 55145,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     55146,
+     55171
+    ],
+    "handoff": 55180,
     "rc": null,
-    "e": 55109
+    "e": 55180
+   },
+   {
+    "b": 55180,
+    "a": "chris",
+    "s": "hoopa",
+    "login": [
+     55181,
+     55199
+    ],
+    "handoff": 55210,
+    "rc": null,
+    "e": 55232
    }
   ],
   "idle": []
@@ -11060,8 +11080,8 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 67,
-  "relogMinutes": 29.0,
+  "switches": 69,
+  "relogMinutes": 30.1,
   "retries": 24,
   "tasks": {
    "dailyclaim": {
@@ -11198,6 +11218,12 @@
    "task": "championship",
    "why": "no_icon",
    "at": "2026-09-22T13:45:50"
+  },
+  {
+   "account": "jeff",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-22T15:19:01"
   },
   {
    "account": "skosmurf",
@@ -11398,10 +11424,6 @@
     "mode": "hoopa"
    },
    {
-    "account": "jeff",
-    "mode": "hoopa"
-   },
-   {
     "account": "nova",
     "mode": "hoopa"
    }
@@ -11413,7 +11435,7 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 67,
+   "n": 69,
    "medianSec": 18,
    "picker": {
     "n": 34,
@@ -11425,19 +11447,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 33,
+    "n": 35,
     "medianSec": 19
    }
   }
  },
  "progress": {
-  "smurf": {
-   "rank": 193,
-   "misty": "step 1",
-   "mailUnread": 0,
-   "paradiseStamina": "0/10",
-   "pillar": "floor 18 stage 4"
-  },
   "skosmurf": {
    "rank": 187,
    "mailUnread": 0,
@@ -11485,6 +11500,13 @@
    "paradiseStamina": "16/16",
    "rank": 194,
    "pillar": "floor 27 stage 9"
+  },
+  "smurf": {
+   "misty": "step 1",
+   "mailUnread": 0,
+   "paradiseStamina": "0/10",
+   "rank": 193,
+   "pillar": "floor 18 stage 4"
   },
   "nova": {
    "mailUnread": 0,
@@ -12106,7 +12128,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-22",
-   "summary": "14 of 17 dailies done · 1 not available today",
+   "summary": "14 of 17 dailies done · 2 not available today",
    "done": 14,
    "owed": 17,
    "open": [
@@ -12129,6 +12151,10 @@
     {
      "task": "championship",
      "why": "no_icon"
+    },
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
     }
    ],
    "spent": {
@@ -12329,10 +12355,10 @@
     "daily claims": 1
    },
    "progress": {
-    "rank": 193,
     "misty": "step 1",
     "mailUnread": 0,
     "paradiseStamina": "0/10",
+    "rank": 193,
     "pillar": "floor 18 stage 4"
    },
    "history": [
