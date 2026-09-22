@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T14:55:51.540212",
+ "generatedAt": "2026-09-22T14:57:55.434149",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "sky_pillar",
-  "since": "14:55:43"
+  "account": "chris",
+  "mode": "guild_war",
+  "since": "14:56:57"
  },
  "grid": {
   "tasks": [
@@ -430,10 +430,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✗2",
      "-",
      "-"
     ]
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 229,
-  "todo": 4,
-  "gaveUp": 4,
+  "done": 230,
+  "todo": 2,
+  "gaveUp": 5,
   "unavailable": 10,
   "windowed": 16
  },
@@ -689,11 +689,64 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-22T14:55:25.842303",
+  "label": "chris",
+  "at": "2026-09-22T14:57:16.057829",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T14:56:56",
+   "script": "weekend_bash",
+   "account": "deno",
+   "rc": 1,
+   "secs": 4,
+   "stats": {
+    "row_cost_mismatch": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: ticket row cost unreadable"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "dir": "debug_runs/20260922_145652_weekend_bash_deno"
+  },
+  {
+   "ts": "2026-09-22T14:56:51",
+   "script": "weekend_bash",
+   "account": "deno",
+   "rc": 1,
+   "secs": 5,
+   "stats": {
+    "row_cost_mismatch": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: ticket row cost unreadable"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "dir": "debug_runs/20260922_145646_weekend_bash_deno"
+  },
+  {
+   "ts": "2026-09-22T14:56:42",
+   "script": "sky_pillar",
+   "account": "deno",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 27,
+    "stage": 9
+   },
+   "dir": "debug_runs/20260922_145543_sky_pillar_deno"
+  },
   {
    "ts": "2026-09-22T14:55:42",
    "script": "collect_hoopa_keys",
@@ -7416,67 +7469,12 @@
     "daily_goal_claims": 3
    },
    "dir": "debug_runs/20260921_171441_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-09-21T17:14:40",
-   "script": "guild_war",
-   "account": "nova",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_171440_guild_war_nova"
-  },
-  {
-   "ts": "2026-09-21T17:14:38",
-   "script": "rank_match",
-   "account": "nova",
-   "rc": 0,
-   "secs": 61,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260921_171337_rank_match_nova"
-  },
-  {
-   "ts": "2026-09-21T17:13:12",
-   "script": "paradise",
-   "account": "chris",
-   "rc": 0,
-   "secs": 205,
-   "stats": {
-    "marginal_paradise_hub": 10,
-    "explore_clicks": 115,
-    "pass_claims": 4,
-    "upgraded_energy_drink": 1,
-    "upgraded_small_radar": 1,
-    "upgraded_sports_gloves": 1,
-    "dex_milestones": 2,
-    "dex_activated": 3,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "14/16"
-   },
-   "dir": "debug_runs/20260921_170947_paradise_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 53751,
+  "now": 53875,
   "segments": [
    {
     "b": 29206,
@@ -10778,13 +10776,67 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 53743,
+    "rc": 0,
+    "e": 53802,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 53802,
+    "a": "deno",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 53806,
+    "rc": 1,
+    "e": 53811,
+    "secs": 5,
+    "why": "weekend_bash: ticket row cost unreadable"
+   },
+   {
+    "b": 53811,
+    "a": "deno",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 53812,
+    "rc": 1,
+    "e": 53817,
+    "secs": 5,
+    "why": "weekend_bash: ticket row cost unreadable"
+   },
+   {
+    "b": 53817,
+    "a": "chris",
+    "s": "guild_war",
+    "login": [
+     53817,
+     53836
+    ],
+    "handoff": 53845,
     "rc": null,
-    "e": 53751
+    "e": 53875
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-22T14:56:56",
+   "account": "deno",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 4,
+   "why": "weekend_bash: ticket row cost unreadable",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_145652_weekend_bash_deno__KEEP_0000_145655_row_cost_mismatch_1.png"
+  },
+  {
+   "ts": "2026-09-22T14:56:51",
+   "account": "deno",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 5,
+   "why": "weekend_bash: ticket row cost unreadable",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_145646_weekend_bash_deno__KEEP_0002_145650_row_cost_mismatch_1.png"
+  },
   {
    "ts": "2026-09-22T14:55:05",
    "account": "dre",
@@ -10941,9 +10993,9 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 62,
-  "relogMinutes": 26.7,
-  "retries": 22,
+  "switches": 63,
+  "relogMinutes": 27.2,
+  "retries": 24,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -10996,14 +11048,14 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 17,
-    "minutes": 16.2,
+    "runs": 18,
+    "minutes": 17.2,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 9,
-    "minutes": 0.7,
-    "failed": 2
+    "runs": 11,
+    "minutes": 0.8,
+    "failed": 4
    },
    "championship": {
     "runs": 4,
@@ -11259,27 +11311,15 @@
  "queue": {
   "next": [
    {
-    "account": "deno",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-22T14:55"
-   },
-   {
-    "account": "deno",
-    "task": "weekend_bash",
-    "startsIn": 1.0,
-    "eta": "2026-09-22T14:56"
-   },
-   {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 1.4,
+    "startsIn": 0.0,
     "eta": "2026-09-22T14:57"
    },
    {
     "account": "chris",
     "task": "championship",
-    "startsIn": 2.4,
+    "startsIn": 1.0,
     "eta": "2026-09-22T14:58"
    }
   ],
@@ -11313,8 +11353,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 62,
-   "medianSec": 18.0,
+   "n": 63,
+   "medianSec": 18,
    "picker": {
     "n": 33,
     "medianSec": 16,
@@ -11325,20 +11365,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 29,
-    "medianSec": 19
+    "n": 30,
+    "medianSec": 19.0
    }
   }
  },
  "progress": {
-  "chris": {
-   "paradiseStamina": "14/16",
-   "islandFights": 6,
-   "islandStamina": 1,
-   "rank": 209,
-   "pillar": "floor 137 stage 4",
-   "mailUnread": 0
-  },
   "nova": {
    "rank": 2,
    "mailUnread": 0,
@@ -11387,11 +11419,18 @@
    "paradiseStamina": "0/15",
    "pillar": "floor 50 stage 1"
   },
+  "chris": {
+   "islandFights": 6,
+   "islandStamina": 1,
+   "rank": 209,
+   "pillar": "floor 137 stage 4",
+   "mailUnread": 0
+  },
   "deno": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "rank": 194,
-   "pillar": "floor 27 stage 6"
+   "pillar": "floor 27 stage 9"
   },
   "fake1": {
    "mailUnread": 0,
@@ -11432,6 +11471,16 @@
   }
  },
  "ledger": {
+  "deno": {
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "dre": {
    "pillar/story stages cleared": 8,
    "ranked attempts": 1,
@@ -11460,15 +11509,6 @@
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
-  },
-  "deno": {
-   "ranked attempts": 1,
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
   },
@@ -12125,7 +12165,6 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "paradiseStamina": "14/16",
     "islandFights": 6,
     "islandStamina": 1,
     "rank": 209,
@@ -13312,8 +13351,8 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-22",
-   "summary": "12 of 15 dailies done",
-   "done": 12,
+   "summary": "13 of 15 dailies done · gave up on bash",
+   "done": 13,
    "owed": 15,
    "open": [
     {
@@ -13321,15 +13360,17 @@
      "state": "waits for its window"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "14:56",
+     "why": "weekend bash: ticket row cost unreadable",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_145652_weekend_bash_deno__KEEP_0000_145655_row_cost_mismatch_1.png"
+    },
     {
      "task": "joint_team_daily_quest",
      "at": "11:17",
@@ -13340,6 +13381,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 3,
     "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -13352,7 +13394,7 @@
     "mailUnread": 0,
     "paradiseStamina": "16/16",
     "rank": 194,
-    "pillar": "floor 27 stage 6"
+    "pillar": "floor 27 stage 9"
    },
    "history": [
     {
@@ -13387,8 +13429,8 @@
     },
     {
      "day": "2026-09-22",
-     "done": 13,
-     "failed": 0
+     "done": 14,
+     "failed": 2
     }
    ]
   },
