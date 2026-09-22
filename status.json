@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T09:26:27.272690",
+ "generatedAt": "2026-09-22T09:28:30.774510",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
   "mode": "faction",
-  "since": "09:26:13"
+  "since": "09:28:23"
  },
  "grid": {
   "tasks": [
@@ -167,7 +167,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "-",
      "-",
      "-",
@@ -466,9 +466,9 @@
  },
  "counts": {
   "done": 70,
-  "todo": 137,
+  "todo": 136,
   "gaveUp": 0,
-  "unavailable": 2,
+  "unavailable": 3,
   "windowed": 52
  },
  "disabled": [
@@ -688,6 +688,27 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T09:28:22",
+   "script": "faction",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 125,
+   "stats": {
+    "auto_formation": 19,
+    "skip_retry": 18,
+    "incomplete": 1,
+    "lost_fire": 1,
+    "faction_disabled": 1,
+    "floors_fire": 18,
+    "sweeps_used": 2
+   },
+   "incomplete": [
+    "faction: fire tower: lost the battle after 18 win(s) — the team needs adjusting"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260922_092617_faction_fake2"
+  },
   {
    "ts": "2026-09-22T09:26:13",
    "script": "sky_pillar",
@@ -7218,25 +7239,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260921_084706_pokemon_home_lucifer1"
-  },
-  {
-   "ts": "2026-09-21T08:47:05",
-   "script": "daily_dungeon",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 15,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_084650_daily_dungeon_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 33987,
+  "now": 34111,
   "segments": [
    {
     "b": 29206,
@@ -8138,13 +8146,35 @@
     "s": "faction",
     "login": null,
     "handoff": 33976,
-    "rc": null,
-    "e": 33987
+    "rc": 1,
+    "e": 34103,
+    "secs": 125,
+    "why": "faction: fire tower: lost the battle after 18 win(s) — the team needs adjusting"
+   },
+   {
+    "b": 34103,
+    "a": "fake2",
+    "s": "faction",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 34111,
+    "secs": 125,
+    "why": "faction: fire tower: lost the battle after 18 win(s) — the team needs adjusting"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-22T09:28:22",
+   "account": "fake2",
+   "task": "faction",
+   "rc": 1,
+   "secs": 125,
+   "why": "faction: fire tower: lost the battle after 18 win(s) — the team needs adjusting",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_092617_faction_fake2__KEEP_0194_092813_faction_lost_fire.png"
+  },
   {
    "ts": "2026-09-22T09:03:39",
    "account": "smurf",
@@ -8195,7 +8225,7 @@
   "since": "2026-09-22T08:00",
   "switches": 9,
   "relogMinutes": 3.4,
-  "retries": 5,
+  "retries": 6,
   "tasks": {
    "dailyclaim": {
     "runs": 6,
@@ -8263,9 +8293,9 @@
     "failed": 2
    },
    "faction": {
-    "runs": 5,
-    "minutes": 4.5,
-    "failed": 1
+    "runs": 6,
+    "minutes": 6.6,
+    "failed": 2
    },
    "misty_woods": {
     "runs": 1,
@@ -8285,6 +8315,12 @@
    "task": "faction",
    "why": "reported unavailable",
    "at": "2026-09-22T09:16:26"
+  },
+  {
+   "account": "fake2",
+   "task": "faction",
+   "why": null,
+   "at": null
   },
   {
    "account": "smurf",
@@ -8453,79 +8489,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake2",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-22T09:26"
-   },
-   {
     "account": "fake3",
     "task": "dailyclaim",
-    "startsIn": 1.3,
-    "eta": "2026-09-22T09:27"
+    "startsIn": 0.4,
+    "eta": "2026-09-22T09:28"
    },
    {
     "account": "fake3",
     "task": "mail",
-    "startsIn": 1.7,
-    "eta": "2026-09-22T09:28"
+    "startsIn": 0.8,
+    "eta": "2026-09-22T09:29"
    },
    {
     "account": "fake3",
     "task": "joint_team_daily_quest",
-    "startsIn": 1.7,
-    "eta": "2026-09-22T09:28"
+    "startsIn": 0.8,
+    "eta": "2026-09-22T09:29"
    },
    {
     "account": "fake3",
     "task": "daily_dungeon",
-    "startsIn": 2.6,
-    "eta": "2026-09-22T09:29"
-   },
-   {
-    "account": "fake3",
-    "task": "pokemon_home",
-    "startsIn": 2.9,
-    "eta": "2026-09-22T09:29"
-   },
-   {
-    "account": "fake3",
-    "task": "combat_daily",
-    "startsIn": 4.2,
+    "startsIn": 1.7,
     "eta": "2026-09-22T09:30"
    },
    {
     "account": "fake3",
+    "task": "pokemon_home",
+    "startsIn": 2.0,
+    "eta": "2026-09-22T09:30"
+   },
+   {
+    "account": "fake3",
+    "task": "combat_daily",
+    "startsIn": 3.3,
+    "eta": "2026-09-22T09:31"
+   },
+   {
+    "account": "fake3",
     "task": "victory_road",
-    "startsIn": 5.9,
-    "eta": "2026-09-22T09:32"
+    "startsIn": 5.0,
+    "eta": "2026-09-22T09:33"
    },
    {
     "account": "fake3",
     "task": "paradise",
-    "startsIn": 6.0,
-    "eta": "2026-09-22T09:32"
+    "startsIn": 5.1,
+    "eta": "2026-09-22T09:33"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 9.7,
-    "eta": "2026-09-22T09:36"
+    "startsIn": 8.8,
+    "eta": "2026-09-22T09:37"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 9.8,
-    "eta": "2026-09-22T09:36"
+    "startsIn": 8.9,
+    "eta": "2026-09-22T09:37"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 10.9,
-    "eta": "2026-09-22T09:37"
+    "startsIn": 10.0,
+    "eta": "2026-09-22T09:38"
+   },
+   {
+    "account": "fake4",
+    "task": "dailyclaim",
+    "startsIn": 11.5,
+    "eta": "2026-09-22T09:40"
    }
   ],
-  "more": 125,
+  "more": 124,
   "fillers": [
    {
     "account": "smurf",
@@ -8674,6 +8710,7 @@
  },
  "ledger": {
   "fake2": {
+   "faction sweeps": 2,
    "pillar/story stages cleared": 2,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 46,
@@ -9426,7 +9463,7 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-22",
-   "summary": "10 of 14 dailies done · 2 switched off",
+   "summary": "10 of 14 dailies done · 2 switched off · 1 not available today",
    "done": 10,
    "owed": 14,
    "open": [
@@ -9444,10 +9481,17 @@
     },
     {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "faction",
+     "at": "09:28",
+     "why": "faction: fire tower: lost the battle after 18 win(s) — the team needs adjusting",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_092617_faction_fake2__KEEP_0194_092813_faction_lost_fire.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -9460,8 +9504,14 @@
      "since": "2026-09-19T23:24:53"
     }
    ],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": null
+    }
+   ],
    "spent": {
+    "faction sweeps": 2,
     "pillar/story stages cleared": 2,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 46,
@@ -9507,7 +9557,7 @@
     {
      "day": "2026-09-22",
      "done": 11,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
