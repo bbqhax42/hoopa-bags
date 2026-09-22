@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T09:59:25.865835",
+ "generatedAt": "2026-09-22T10:01:29.204221",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake6",
+  "mode": "dailyclaim",
+  "since": "10:01:12"
  },
  "grid": {
   "tasks": [
@@ -234,11 +234,11 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "-",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 99,
-  "todo": 107,
+  "done": 102,
+  "todo": 104,
   "gaveUp": 0,
   "unavailable": 3,
   "windowed": 52
@@ -688,6 +688,56 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T10:01:11",
+   "script": "sky_pillar",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 27,
+   "stats": {
+    "stage_lost": 1,
+    "sky_pillar_loss": 1,
+    "sweep_presses": 6,
+    "marginal_sky_pillar": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_100044_sky_pillar_fake5"
+  },
+  {
+   "ts": "2026-09-22T10:00:43",
+   "script": "collect_hoopa_keys",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_100035_collect_hoopa_keys_fake5"
+  },
+  {
+   "ts": "2026-09-22T10:00:34",
+   "script": "paradise",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 222,
+   "stats": {
+    "marginal_paradise_hub": 3,
+    "explore_clicks": 117,
+    "pass_claims": 5,
+    "upgraded_energy_drink": 2,
+    "upgraded_small_radar": 1,
+    "upgraded_sports_gloves": 1,
+    "dex_milestones": 4,
+    "dex_activated": 11,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_095651_paradise_fake5"
+  },
   {
    "ts": "2026-09-22T09:56:50",
    "script": "victory_road",
@@ -7183,75 +7233,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260921_091536_mail_dre"
-  },
-  {
-   "ts": "2026-09-21T09:15:35",
-   "script": "dailyclaim",
-   "account": "dre",
-   "rc": 1,
-   "secs": 72,
-   "stats": {
-    "sign_in_already": 1,
-    "milestone_claimed": 1,
-    "privpack_already": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 1
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {
-    "rail_badges": "0.190:78 0.275:0 0.345:53 0.428:0 0.500:0"
-   },
-   "dir": "debug_runs/20260921_091422_dailyclaim_dre"
-  },
-  {
-   "ts": "2026-09-21T09:14:21",
-   "script": "dailyclaim",
-   "account": "dre",
-   "rc": 1,
-   "secs": 73,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "forbidden_first_topup": 2,
-    "mythic_no_open": 1,
-    "incomplete": 1,
-    "claims": 2
-   },
-   "incomplete": [
-    "dailyclaim: Mythic Incoming would not open"
-   ],
-   "values": {
-    "rail_badges": "0.190:78 0.275:0 0.345:53 0.428:0 0.500:0"
-   },
-   "dir": "debug_runs/20260921_091308_dailyclaim_dre"
-  },
-  {
-   "ts": "2026-09-21T09:12:38",
-   "script": "weekend_bash",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 10,
-   "stats": {
-    "near_miss_nav_explore": 1,
-    "diamond_read_mismatch": 1,
-    "tickets": 25
-   },
-   "incomplete": [],
-   "values": {
-    "diamonds_spent": 875,
-    "tickets": 25
-   },
-   "dir": "debug_runs/20260921_091227_weekend_bash_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 35966,
+  "now": 36089,
   "segments": [
    {
     "b": 29206,
@@ -8514,8 +8501,44 @@
     "s": "paradise",
     "login": null,
     "handoff": 35811,
+    "rc": 0,
+    "e": 36034,
+    "secs": 222,
+    "why": ""
+   },
+   {
+    "b": 36034,
+    "a": "fake5",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 36035,
+    "rc": 0,
+    "e": 36043,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 36043,
+    "a": "fake5",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 36044,
+    "rc": 0,
+    "e": 36072,
+    "secs": 27,
+    "why": ""
+   },
+   {
+    "b": 36072,
+    "a": "fake6",
+    "s": "dailyclaim",
+    "login": [
+     36073,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 35966
+    "e": 36089
    }
   ],
   "idle": []
@@ -8596,7 +8619,7 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 12,
+  "switches": 13,
   "relogMinutes": 4.6,
   "retries": 8,
   "tasks": {
@@ -8636,8 +8659,8 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 8,
-    "minutes": 28.9,
+    "runs": 9,
+    "minutes": 32.6,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -8646,13 +8669,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 8,
-    "minutes": 1.0,
+    "runs": 9,
+    "minutes": 1.1,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 8,
-    "minutes": 7.8,
+    "runs": 9,
+    "minutes": 8.3,
     "failed": 0
    },
    "weekend_bash": {
@@ -8862,79 +8885,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake5",
-    "task": "paradise",
-    "startsIn": 0.4,
-    "eta": "2026-09-22T09:59"
-   },
-   {
-    "account": "fake5",
-    "task": "collect_hoopa_keys",
-    "startsIn": 4.0,
-    "eta": "2026-09-22T10:03"
-   },
-   {
-    "account": "fake5",
-    "task": "sky_pillar",
-    "startsIn": 4.1,
-    "eta": "2026-09-22T10:03"
-   },
-   {
-    "account": "fake5",
-    "task": "faction",
-    "startsIn": 5.1,
-    "eta": "2026-09-22T10:04"
-   },
-   {
     "account": "fake6",
     "task": "dailyclaim",
-    "startsIn": 6.8,
-    "eta": "2026-09-22T10:06"
+    "startsIn": 0.0,
+    "eta": "2026-09-22T10:01"
    },
    {
     "account": "fake6",
     "task": "mail",
-    "startsIn": 7.1,
-    "eta": "2026-09-22T10:06"
+    "startsIn": 0.4,
+    "eta": "2026-09-22T10:01"
    },
    {
     "account": "fake6",
     "task": "joint_team_daily_quest",
-    "startsIn": 7.2,
-    "eta": "2026-09-22T10:06"
+    "startsIn": 0.4,
+    "eta": "2026-09-22T10:01"
    },
    {
     "account": "fake6",
     "task": "daily_dungeon",
-    "startsIn": 8.0,
-    "eta": "2026-09-22T10:07"
+    "startsIn": 1.3,
+    "eta": "2026-09-22T10:02"
    },
    {
     "account": "fake6",
     "task": "pokemon_home",
-    "startsIn": 8.4,
-    "eta": "2026-09-22T10:07"
+    "startsIn": 1.6,
+    "eta": "2026-09-22T10:03"
    },
    {
     "account": "fake6",
     "task": "combat_daily",
-    "startsIn": 9.4,
-    "eta": "2026-09-22T10:08"
+    "startsIn": 2.6,
+    "eta": "2026-09-22T10:04"
    },
    {
     "account": "fake6",
     "task": "victory_road",
-    "startsIn": 11.0,
-    "eta": "2026-09-22T10:10"
+    "startsIn": 4.2,
+    "eta": "2026-09-22T10:05"
    },
    {
     "account": "fake6",
     "task": "paradise",
-    "startsIn": 11.2,
+    "startsIn": 4.4,
+    "eta": "2026-09-22T10:05"
+   },
+   {
+    "account": "fake6",
+    "task": "collect_hoopa_keys",
+    "startsIn": 8.0,
+    "eta": "2026-09-22T10:09"
+   },
+   {
+    "account": "fake6",
+    "task": "sky_pillar",
+    "startsIn": 8.1,
+    "eta": "2026-09-22T10:09"
+   },
+   {
+    "account": "fake6",
+    "task": "faction",
+    "startsIn": 9.1,
     "eta": "2026-09-22T10:10"
+   },
+   {
+    "account": "fake5",
+    "task": "faction",
+    "startsIn": 10.7,
+    "eta": "2026-09-22T10:12"
    }
   ],
-  "more": 95,
+  "more": 92,
   "fillers": [
    {
     "account": "smurf",
@@ -8982,9 +9005,6 @@
   }
  },
  "progress": {
-  "lucifer1": {
-   "rank": 354
-  },
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "8/18",
@@ -9062,6 +9082,9 @@
   "skosmurf": {
    "rank": 342
   },
+  "lucifer1": {
+   "rank": 354
+  },
   "lucifer2": {
    "rank": 339
   },
@@ -9079,6 +9102,7 @@
  },
  "ledger": {
   "fake5": {
+   "pillar proofs swept": 6,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 2
@@ -10165,8 +10189,8 @@
   "fake5": {
    "name": "Random77",
    "day": "2026-09-22",
-   "summary": "7 of 14 dailies done · 2 switched off",
-   "done": 7,
+   "summary": "10 of 14 dailies done · 2 switched off",
+   "done": 10,
    "owed": 14,
    "open": [
     {
@@ -10178,20 +10202,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "paradise",
-     "state": "still to do"
-    },
-    {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "fctn",
@@ -10220,6 +10232,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "pillar proofs swept": 6,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 2
@@ -10262,7 +10275,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 8,
+     "done": 11,
      "failed": 1
     }
    ]
