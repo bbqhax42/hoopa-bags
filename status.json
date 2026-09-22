@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T14:45:35.223378",
+ "generatedAt": "2026-09-22T14:47:38.512051",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "run_pvp_ranked",
-  "since": "14:45:13"
+  "account": "chris",
+  "mode": "island_challenge",
+  "since": "14:47:26"
  },
  "grid": {
   "tasks": [
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "·",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -428,7 +428,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 222,
-  "todo": 13,
+  "done": 223,
+  "todo": 11,
   "gaveUp": 3,
   "unavailable": 10,
   "windowed": 16
@@ -610,15 +610,15 @@
   },
   {
    "account": "jeff",
-   "fights": 4,
-   "stamina": 0,
-   "staminaMax": 18,
-   "staminaAt": "2026-09-22T12:33:42",
-   "nextAt": "2026-09-22T14:45:49"
+   "fights": 6,
+   "stamina": 22,
+   "staminaMax": 22,
+   "staminaAt": "2026-09-22T14:47:18",
+   "nextAt": "2026-09-22T16:35:25"
   }
  ],
  "snoozed": {
-  "jeff|island_challenge": "2026-09-22T14:45"
+  "jeff|island_challenge": "2026-09-22T16:35"
  },
  "ownerOnline": [],
  "keys": {
@@ -688,11 +688,50 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-22T14:42:54.769794",
+  "label": "jeff",
+  "at": "2026-09-22T14:46:42.051825",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T14:47:25",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 32,
+   "stats": {
+    "fights": 2,
+    "partial_formation": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 22,
+    "fights_today": 6
+   },
+   "dir": "debug_runs/20260922_144652_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-22T14:46:26",
+   "script": "run_pvp_ranked",
+   "account": "deno",
+   "rc": 0,
+   "secs": 70,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 160,
+    "daily_goal_claimed": 3,
+    "near_miss_buy_items": 1
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 194,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260922_144516_run_pvp_ranked_deno"
+  },
   {
    "ts": "2026-09-22T14:45:12",
    "script": "guild_war",
@@ -7415,40 +7454,12 @@
     "fights_today": 0
    },
    "dir": "debug_runs/20260921_170403_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-21T17:03:36",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 22,
-   "stats": {
-    "fights": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 10,
-    "fights_today": 2
-   },
-   "dir": "debug_runs/20260921_170313_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-21T16:52:40",
-   "script": "faction",
-   "account": "test1",
-   "rc": 2,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_165240_faction_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 53135,
+  "now": 53258,
   "segments": [
    {
     "b": 29206,
@@ -10617,8 +10628,36 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 53116,
+    "rc": 0,
+    "e": 53187,
+    "secs": 70,
+    "why": ""
+   },
+   {
+    "b": 53187,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     53187,
+     53202
+    ],
+    "handoff": 53212,
+    "rc": 5,
+    "e": 53246,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 53246,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     53246,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 53135
+    "e": 53258
    }
   ],
   "idle": []
@@ -10762,9 +10801,9 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 58,
-  "relogMinutes": 24.9,
-  "retries": 18,
+  "switches": 60,
+  "relogMinutes": 25.3,
+  "retries": 19,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -10807,8 +10846,8 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 7,
-    "minutes": 9.1,
+    "runs": 8,
+    "minutes": 10.2,
     "failed": 0
    },
    "collect_hoopa_keys": {
@@ -10842,9 +10881,9 @@
     "failed": 2
    },
    "island_challenge": {
-    "runs": 4,
-    "minutes": 2.0,
-    "failed": 4
+    "runs": 5,
+    "minutes": 2.6,
+    "failed": 5
    },
    "rank_match": {
     "runs": 19,
@@ -11080,79 +11119,73 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-22T14:45"
-   },
-   {
-    "account": "deno",
-    "task": "run_pvp_ranked",
-    "startsIn": 1.3,
-    "eta": "2026-09-22T14:46"
-   },
-   {
-    "account": "deno",
-    "task": "collect_hoopa_keys",
-    "startsIn": 2.6,
-    "eta": "2026-09-22T14:48"
-   },
-   {
-    "account": "deno",
-    "task": "sky_pillar",
-    "startsIn": 2.7,
-    "eta": "2026-09-22T14:48"
-   },
-   {
-    "account": "deno",
-    "task": "weekend_bash",
-    "startsIn": 3.6,
-    "eta": "2026-09-22T14:49"
-   },
-   {
     "account": "dre",
     "task": "rank_match",
-    "startsIn": 4.1,
-    "eta": "2026-09-22T14:49"
+    "startsIn": 0.4,
+    "eta": "2026-09-22T14:48"
    },
    {
     "account": "dre",
     "task": "guild_war",
-    "startsIn": 4.9,
-    "eta": "2026-09-22T14:50"
+    "startsIn": 1.2,
+    "eta": "2026-09-22T14:48"
    },
    {
     "account": "dre",
     "task": "run_pvp_ranked",
-    "startsIn": 5.8,
-    "eta": "2026-09-22T14:51"
+    "startsIn": 2.2,
+    "eta": "2026-09-22T14:49"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.1,
-    "eta": "2026-09-22T14:52"
+    "startsIn": 3.4,
+    "eta": "2026-09-22T14:51"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 7.3,
-    "eta": "2026-09-22T14:52"
+    "startsIn": 3.6,
+    "eta": "2026-09-22T14:51"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 8.1,
+    "startsIn": 4.4,
+    "eta": "2026-09-22T14:52"
+   },
+   {
+    "account": "deno",
+    "task": "collect_hoopa_keys",
+    "startsIn": 4.9,
+    "eta": "2026-09-22T14:52"
+   },
+   {
+    "account": "deno",
+    "task": "sky_pillar",
+    "startsIn": 5.0,
+    "eta": "2026-09-22T14:52"
+   },
+   {
+    "account": "deno",
+    "task": "weekend_bash",
+    "startsIn": 5.9,
     "eta": "2026-09-22T14:53"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 8.6,
+    "startsIn": 6.4,
+    "eta": "2026-09-22T14:54"
+   },
+   {
+    "account": "chris",
+    "task": "championship",
+    "startsIn": 7.3,
     "eta": "2026-09-22T14:54"
    }
   ],
-  "more": 1,
+  "more": 0,
   "fillers": [
    {
     "account": "smurf",
@@ -11182,11 +11215,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 58,
-   "medianSec": 18.0,
+   "n": 59,
+   "medianSec": 18,
    "picker": {
-    "n": 32,
-    "medianSec": 16.0,
+    "n": 33,
+    "medianSec": 16,
     "jumps": 21
    },
    "typed": {
@@ -11200,14 +11233,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 4,
-   "islandStamina": 0,
-   "mailUnread": 0,
-   "paradiseStamina": "16/16",
-   "rank": 189,
-   "pillar": "floor 148 stage 1"
-  },
   "chris": {
    "islandFights": 3,
    "islandStamina": 0,
@@ -11250,6 +11275,14 @@
    "mailUnread": 0,
    "paradiseStamina": "1/20"
   },
+  "jeff": {
+   "mailUnread": 0,
+   "paradiseStamina": "16/16",
+   "rank": 189,
+   "pillar": "floor 148 stage 1",
+   "islandFights": 6,
+   "islandStamina": 22
+  },
   "sprite": {
    "mailUnread": 0,
    "paradiseStamina": "0/15",
@@ -11258,7 +11291,7 @@
   "deno": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
-   "rank": 354,
+   "rank": 194,
    "pillar": "floor 27 stage 6"
   },
   "fake1": {
@@ -11300,7 +11333,18 @@
   }
  },
  "ledger": {
+  "jeff": {
+   "island fights": 10,
+   "guild war attempts": 1,
+   "pillar proofs swept": 3,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "deno": {
+   "ranked attempts": 1,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
@@ -11418,16 +11462,6 @@
    "ranked attempts": 1,
    "Home creations": 50,
    "daily claims": 1
-  },
-  "jeff": {
-   "guild war attempts": 1,
-   "island fights": 8,
-   "pillar proofs swept": 3,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
   },
   "nova": {
    "guild war attempts": 1,
@@ -11895,8 +11929,8 @@
     }
    ],
    "spent": {
+    "island fights": 10,
     "guild war attempts": 1,
-    "island fights": 8,
     "pillar proofs swept": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -11905,12 +11939,12 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "islandFights": 4,
-    "islandStamina": 0,
     "mailUnread": 0,
     "paradiseStamina": "16/16",
     "rank": 189,
-    "pillar": "floor 148 stage 1"
+    "pillar": "floor 148 stage 1",
+    "islandFights": 6,
+    "islandStamina": 22
    },
    "history": [
     {
@@ -11971,7 +12005,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [],
@@ -13176,17 +13210,13 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-22",
-   "summary": "10 of 15 dailies done",
-   "done": 10,
+   "summary": "11 of 15 dailies done",
+   "done": 11,
    "owed": 15,
    "open": [
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -13212,6 +13242,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -13222,7 +13253,7 @@
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "16/16",
-    "rank": 354,
+    "rank": 194,
     "pillar": "floor 27 stage 6"
    },
    "history": [
@@ -13258,7 +13289,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 11,
+     "done": 12,
      "failed": 0
     }
    ]
