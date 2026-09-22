@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T16:01:42.009619",
+ "generatedAt": "2026-09-22T16:03:45.412460",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "exou",
-  "mode": "combat_daily",
-  "since": "16:00:55"
+  "mode": "paradise",
+  "since": "16:03:21"
  },
  "grid": {
   "tasks": [
@@ -327,9 +327,9 @@
      "-",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "-",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 235,
-  "todo": 7,
+  "done": 238,
+  "todo": 4,
   "gaveUp": 5,
   "unavailable": 11,
   "windowed": 16
@@ -718,6 +718,55 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T16:03:20",
+   "script": "rank_match",
+   "account": "exou",
+   "rc": 0,
+   "secs": 62,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "dir": "debug_runs/20260922_160218_rank_match_exou"
+  },
+  {
+   "ts": "2026-09-22T16:02:17",
+   "script": "victory_road",
+   "account": "exou",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "nothing_pending": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_160204_victory_road_exou"
+  },
+  {
+   "ts": "2026-09-22T16:02:02",
+   "script": "combat_daily",
+   "account": "exou",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "title_reread_named": 1,
+    "near_miss_vr_rank": 5
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_160059_combat_daily_exou"
+  },
   {
    "ts": "2026-09-22T16:00:54",
    "script": "pokemon_home",
@@ -7421,65 +7470,12 @@
     "daily_goal_claims": 3
    },
    "dir": "debug_runs/20260921_172422_run_pvp_ranked_lucifer2"
-  },
-  {
-   "ts": "2026-09-21T17:24:21",
-   "script": "guild_war",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_172421_guild_war_lucifer2"
-  },
-  {
-   "ts": "2026-09-21T17:24:20",
-   "script": "rank_match",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 62,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260921_172318_rank_match_lucifer2"
-  },
-  {
-   "ts": "2026-09-21T17:22:49",
-   "script": "run_pvp_ranked",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 151,
-    "daily_goal_claimed": 3,
-    "near_miss_buy_items": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 354,
-    "daily_goal_claims": 3
-   },
-   "dir": "debug_runs/20260921_172138_run_pvp_ranked_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 57702,
+  "now": 57825,
   "segments": [
    {
     "b": 29206,
@@ -11078,8 +11074,41 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 57659,
+    "rc": 0,
+    "e": 57723,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 57723,
+    "a": "exou",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 57724,
+    "rc": 0,
+    "e": 57737,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 57737,
+    "a": "exou",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 57738,
+    "rc": 0,
+    "e": 57801,
+    "secs": 62,
+    "why": ""
+   },
+   {
+    "b": 57801,
+    "a": "exou",
+    "s": "paradise",
+    "login": null,
+    "handoff": 57801,
     "rc": null,
-    "e": 57702
+    "e": 57825
    }
   ],
   "idle": []
@@ -11289,13 +11318,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 20,
-    "minutes": 33.8,
+    "runs": 21,
+    "minutes": 34.9,
     "failed": 2
    },
    "victory_road": {
-    "runs": 18,
-    "minutes": 2.6,
+    "runs": 19,
+    "minutes": 2.8,
     "failed": 0
    },
    "paradise": {
@@ -11344,8 +11373,8 @@
     "failed": 6
    },
    "rank_match": {
-    "runs": 20,
-    "minutes": 16.3,
+    "runs": 21,
+    "minutes": 17.3,
     "failed": 0
    },
    "guild_war": {
@@ -11596,45 +11625,27 @@
   "next": [
    {
     "account": "exou",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-22T16:01"
-   },
-   {
-    "account": "exou",
-    "task": "victory_road",
-    "startsIn": 1.7,
-    "eta": "2026-09-22T16:03"
-   },
-   {
-    "account": "exou",
-    "task": "rank_match",
-    "startsIn": 1.8,
-    "eta": "2026-09-22T16:03"
-   },
-   {
-    "account": "exou",
     "task": "paradise",
-    "startsIn": 2.6,
-    "eta": "2026-09-22T16:04"
+    "startsIn": 0.0,
+    "eta": "2026-09-22T16:03"
    },
    {
     "account": "exou",
     "task": "guild_war",
-    "startsIn": 6.4,
-    "eta": "2026-09-22T16:08"
+    "startsIn": 3.8,
+    "eta": "2026-09-22T16:07"
    },
    {
     "account": "exou",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.4,
-    "eta": "2026-09-22T16:09"
+    "startsIn": 4.8,
+    "eta": "2026-09-22T16:08"
    },
    {
     "account": "exou",
     "task": "sky_pillar",
-    "startsIn": 7.5,
-    "eta": "2026-09-22T16:09"
+    "startsIn": 4.9,
+    "eta": "2026-09-22T16:08"
    }
   ],
   "more": 0,
@@ -11677,11 +11688,6 @@
   }
  },
  "progress": {
-  "lucifer1": {
-   "rank": 193,
-   "mailUnread": 0,
-   "pillar": "floor 91 stage 5"
-  },
   "lucifer2": {
    "rank": 198,
    "mailUnread": 0,
@@ -11737,6 +11743,11 @@
    "paradiseStamina": "7/17",
    "rank": 187,
    "pillar": "floor 18 stage 5"
+  },
+  "lucifer1": {
+   "mailUnread": 0,
+   "rank": 193,
+   "pillar": "floor 91 stage 5"
   },
   "fake1": {
    "mailUnread": 0,
@@ -13324,22 +13335,10 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-22",
-   "summary": "4 of 11 dailies done",
-   "done": 4,
+   "summary": "7 of 11 dailies done",
+   "done": 7,
    "owed": 11,
    "open": [
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
     {
      "task": "paradise",
      "state": "still to do"
@@ -13369,7 +13368,7 @@
    "history": [
     {
      "day": "2026-09-22",
-     "done": 4,
+     "done": 7,
      "failed": 0
     }
    ]
@@ -13501,8 +13500,8 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 193,
     "mailUnread": 0,
+    "rank": 193,
     "pillar": "floor 91 stage 5"
    },
    "history": [
