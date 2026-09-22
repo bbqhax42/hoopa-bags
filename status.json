@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T10:11:46.597699",
+ "generatedAt": "2026-09-22T10:13:50.862989",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
-  "mode": "joint_team_daily_quest",
-  "since": "10:11:44"
+  "mode": "pokemon_home",
+  "since": "10:13:49"
  },
  "grid": {
   "tasks": [
@@ -275,9 +275,9 @@
     "cells": [
      "✓",
      "✓",
-     "·",
+     "✗2",
      "⏰",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -465,9 +465,9 @@
   ]
  },
  "counts": {
-  "done": 114,
-  "todo": 92,
-  "gaveUp": 0,
+  "done": 115,
+  "todo": 90,
+  "gaveUp": 1,
   "unavailable": 3,
   "windowed": 52
  },
@@ -688,6 +688,63 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T10:13:48",
+   "script": "daily_dungeon",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 30,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_101318_daily_dungeon_fake7"
+  },
+  {
+   "ts": "2026-09-22T10:13:14",
+   "script": "joint_team_daily_quest",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 30,
+   "stats": {
+    "panel_swipes": 8,
+    "artifact_never_opened": 1,
+    "incomplete": 2,
+    "rows_left": 1
+   },
+   "incomplete": [
+    "joint_team_daily_quest: artifact quest",
+    "joint_team_daily_quest: still open: enhance any artifact once: todo"
+   ],
+   "values": {
+    "left": "enhance any artifact once: todo"
+   },
+   "dir": "debug_runs/20260922_101244_joint_team_daily_quest_fake7"
+  },
+  {
+   "ts": "2026-09-22T10:12:42",
+   "script": "joint_team_daily_quest",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 57,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 2,
+    "panel_swipes": 8,
+    "artifact_row_found_by_scrolling": 1,
+    "artifact_never_opened": 1,
+    "incomplete": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [
+    "joint_team_daily_quest: artifact quest"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260922_101145_joint_team_daily_quest_fake7"
+  },
   {
    "ts": "2026-09-22T10:11:44",
    "script": "mail",
@@ -7218,51 +7275,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260921_093846_run_pvp_ranked_lucifer2"
-  },
-  {
-   "ts": "2026-09-21T09:38:16",
-   "script": "run_pvp_ranked",
-   "account": "smurf",
-   "rc": 5,
-   "secs": 5,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_093811_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-09-21T09:37:47",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 5,
-   "secs": 5,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_093742_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-09-21T09:37:12",
-   "script": "hoopa",
-   "account": "smurf",
-   "rc": 2,
-   "secs": 545,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 36707,
+  "now": 36831,
   "segments": [
    {
     "b": 29206,
@@ -8696,13 +8714,64 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 36705,
+    "rc": 1,
+    "e": 36763,
+    "secs": 57,
+    "why": "joint_team_daily_quest: artifact quest"
+   },
+   {
+    "b": 36763,
+    "a": "fake7",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 36764,
+    "rc": 1,
+    "e": 36795,
+    "secs": 57,
+    "why": "joint_team_daily_quest: artifact quest"
+   },
+   {
+    "b": 36795,
+    "a": "fake7",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 36797,
+    "rc": 0,
+    "e": 36829,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 36829,
+    "a": "fake7",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 36830,
     "rc": null,
-    "e": 36707
+    "e": 36831
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-22T10:13:14",
+   "account": "fake7",
+   "task": "joint_team_daily_quest",
+   "rc": 1,
+   "secs": 30,
+   "why": "joint_team_daily_quest: artifact quest; joint_team_daily_quest: still open: enhance any artifact once: todo",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_101244_joint_team_daily_quest_fake7__KEEP_0006_101259_artifact_never_opened.png"
+  },
+  {
+   "ts": "2026-09-22T10:12:42",
+   "account": "fake7",
+   "task": "joint_team_daily_quest",
+   "rc": 1,
+   "secs": 57,
+   "why": "joint_team_daily_quest: artifact quest",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_101145_joint_team_daily_quest_fake7__KEEP_0016_101210_artifact_never_opened.png"
+  },
   {
    "ts": "2026-09-22T09:33:37",
    "account": "fake3",
@@ -8780,7 +8849,7 @@
   "since": "2026-09-22T08:00",
   "switches": 14,
   "relogMinutes": 5.5,
-  "retries": 8,
+  "retries": 10,
   "tasks": {
    "dailyclaim": {
     "runs": 11,
@@ -8793,13 +8862,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 10,
-    "minutes": 8.4,
-    "failed": 0
+    "runs": 12,
+    "minutes": 9.8,
+    "failed": 2
    },
    "daily_dungeon": {
-    "runs": 10,
-    "minutes": 3.5,
+    "runs": 11,
+    "minutes": 4.0,
     "failed": 0
    },
    "pokemon_home": {
@@ -9045,78 +9114,78 @@
   "next": [
    {
     "account": "fake7",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-22T10:11"
-   },
-   {
-    "account": "fake7",
-    "task": "daily_dungeon",
-    "startsIn": 0.8,
-    "eta": "2026-09-22T10:12"
-   },
-   {
-    "account": "fake7",
     "task": "pokemon_home",
-    "startsIn": 1.2,
-    "eta": "2026-09-22T10:12"
-   },
-   {
-    "account": "fake7",
-    "task": "combat_daily",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-22T10:13"
    },
    {
     "account": "fake7",
+    "task": "combat_daily",
+    "startsIn": 0.9,
+    "eta": "2026-09-22T10:14"
+   },
+   {
+    "account": "fake7",
     "task": "victory_road",
-    "startsIn": 3.7,
-    "eta": "2026-09-22T10:15"
+    "startsIn": 2.5,
+    "eta": "2026-09-22T10:16"
    },
    {
     "account": "fake7",
     "task": "paradise",
-    "startsIn": 3.9,
-    "eta": "2026-09-22T10:15"
+    "startsIn": 2.7,
+    "eta": "2026-09-22T10:16"
    },
    {
     "account": "fake7",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.5,
-    "eta": "2026-09-22T10:19"
+    "startsIn": 6.3,
+    "eta": "2026-09-22T10:20"
    },
    {
     "account": "fake7",
     "task": "sky_pillar",
-    "startsIn": 7.6,
-    "eta": "2026-09-22T10:19"
+    "startsIn": 6.4,
+    "eta": "2026-09-22T10:20"
    },
    {
     "account": "fake7",
     "task": "faction",
-    "startsIn": 8.6,
-    "eta": "2026-09-22T10:20"
+    "startsIn": 7.4,
+    "eta": "2026-09-22T10:21"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 10.2,
+    "startsIn": 9.0,
     "eta": "2026-09-22T10:22"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 11.9,
-    "eta": "2026-09-22T10:23"
+    "startsIn": 10.7,
+    "eta": "2026-09-22T10:24"
    },
    {
     "account": "sprite",
     "task": "dailyclaim",
-    "startsIn": 13.5,
-    "eta": "2026-09-22T10:25"
+    "startsIn": 12.3,
+    "eta": "2026-09-22T10:26"
+   },
+   {
+    "account": "sprite",
+    "task": "mail",
+    "startsIn": 12.7,
+    "eta": "2026-09-22T10:26"
+   },
+   {
+    "account": "sprite",
+    "task": "daily_dungeon",
+    "startsIn": 12.8,
+    "eta": "2026-09-22T10:26"
    }
   ],
-  "more": 80,
+  "more": 78,
   "fillers": [
    {
     "account": "smurf",
@@ -10561,21 +10630,17 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-22",
-   "summary": "2 of 14 dailies done · 2 switched off",
-   "done": 2,
+   "summary": "3 of 14 dailies done · gave up on JointQ · 2 switched off",
+   "done": 3,
    "owed": 14,
    "open": [
     {
      "task": "JointQ",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
     },
     {
      "task": "home",
@@ -10614,7 +10679,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "10:13",
+     "why": "joint_team_daily_quest: artifact quest; joint_team_daily_quest: still open: enhance any artifact once: todo",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_101244_joint_team_daily_quest_fake7__KEEP_0006_101259_artifact_never_opened.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -10665,8 +10737,8 @@
     },
     {
      "day": "2026-09-22",
-     "done": 3,
-     "failed": 0
+     "done": 4,
+     "failed": 2
     }
    ]
   },
