@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T13:41:45.126542",
+ "generatedAt": "2026-09-22T13:43:48.422522",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "jeff",
   "mode": "rank_match",
-  "since": "13:40:57"
+  "since": "13:43:10"
  },
  "grid": {
   "tasks": [
@@ -41,9 +41,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 179,
-  "todo": 62,
+  "done": 181,
+  "todo": 60,
   "gaveUp": 2,
   "unavailable": 4,
   "windowed": 16
@@ -689,11 +689,51 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-22T13:30:15.295776",
+  "label": "jeff",
+  "at": "2026-09-22T13:43:25.851951",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T13:43:09",
+   "script": "guild_war",
+   "account": "nova",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "near_miss_last_hit": 4,
+    "near_miss_vr_rank": 3,
+    "marginal_last_hit": 2,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_134209_guild_war_nova"
+  },
+  {
+   "ts": "2026-09-22T13:42:08",
+   "script": "rank_match",
+   "account": "nova",
+   "rc": 0,
+   "secs": 68,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260922_134059_rank_match_nova"
+  },
   {
    "ts": "2026-09-22T12:33:49",
    "script": "island_challenge",
@@ -7343,42 +7383,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260921_160548_combat_daily_fake5"
-  },
-  {
-   "ts": "2026-09-21T16:05:43",
-   "script": "pokemon_home",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 19,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 49
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_160524_pokemon_home_fake5"
-  },
-  {
-   "ts": "2026-09-21T16:05:23",
-   "script": "daily_dungeon",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 31,
-   "stats": {
-    "marginal_dungeon_list": 9,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_160452_daily_dungeon_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 49305,
+  "now": 49428,
   "segments": [
    {
     "b": 29206,
@@ -9872,8 +9882,33 @@
     "s": "rank_match",
     "login": null,
     "handoff": 49259,
+    "rc": 0,
+    "e": 49328,
+    "secs": 68,
+    "why": ""
+   },
+   {
+    "b": 49328,
+    "a": "nova",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49329,
+    "rc": 0,
+    "e": 49390,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 49390,
+    "a": "jeff",
+    "s": "rank_match",
+    "login": [
+     49390,
+     49405
+    ],
+    "handoff": 49416,
     "rc": null,
-    "e": 49305
+    "e": 49428
    }
   ],
   "idle": []
@@ -9999,8 +10034,8 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 42,
-  "relogMinutes": 18.2,
+  "switches": 43,
+  "relogMinutes": 18.6,
   "retries": 16,
   "tasks": {
    "dailyclaim": {
@@ -10082,6 +10117,16 @@
     "runs": 4,
     "minutes": 2.0,
     "failed": 4
+   },
+   "rank_match": {
+    "runs": 1,
+    "minutes": 1.1,
+    "failed": 0
+   },
+   "guild_war": {
+    "runs": 1,
+    "minutes": 1.0,
+    "failed": 0
    }
   }
  },
@@ -10271,79 +10316,79 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
+    "account": "jeff",
     "task": "rank_match",
     "startsIn": 0.0,
-    "eta": "2026-09-22T13:41"
-   },
-   {
-    "account": "nova",
-    "task": "guild_war",
-    "startsIn": 2.0,
     "eta": "2026-09-22T13:43"
    },
    {
     "account": "jeff",
+    "task": "guild_war",
+    "startsIn": 1.1,
+    "eta": "2026-09-22T13:44"
+   },
+   {
+    "account": "jeff",
+    "task": "championship",
+    "startsIn": 2.1,
+    "eta": "2026-09-22T13:45"
+   },
+   {
+    "account": "chris",
     "task": "rank_match",
-    "startsIn": 4.4,
+    "startsIn": 2.5,
     "eta": "2026-09-22T13:46"
    },
    {
-    "account": "jeff",
+    "account": "chris",
     "task": "guild_war",
-    "startsIn": 6.4,
+    "startsIn": 3.6,
+    "eta": "2026-09-22T13:47"
+   },
+   {
+    "account": "chris",
+    "task": "championship",
+    "startsIn": 4.7,
     "eta": "2026-09-22T13:48"
    },
    {
-    "account": "jeff",
-    "task": "championship",
-    "startsIn": 8.4,
-    "eta": "2026-09-22T13:50"
-   },
-   {
-    "account": "chris",
+    "account": "smurf",
     "task": "rank_match",
-    "startsIn": 8.9,
+    "startsIn": 5.1,
+    "eta": "2026-09-22T13:48"
+   },
+   {
+    "account": "smurf",
+    "task": "guild_war",
+    "startsIn": 6.2,
     "eta": "2026-09-22T13:50"
    },
    {
-    "account": "chris",
+    "account": "fake1",
+    "task": "rank_match",
+    "startsIn": 7.6,
+    "eta": "2026-09-22T13:51"
+   },
+   {
+    "account": "fake1",
     "task": "guild_war",
-    "startsIn": 10.9,
+    "startsIn": 8.7,
     "eta": "2026-09-22T13:52"
    },
    {
-    "account": "chris",
-    "task": "championship",
-    "startsIn": 12.9,
-    "eta": "2026-09-22T13:54"
+    "account": "fake2",
+    "task": "rank_match",
+    "startsIn": 10.1,
+    "eta": "2026-09-22T13:53"
    },
    {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 13.3,
+    "account": "fake2",
+    "task": "guild_war",
+    "startsIn": 11.2,
     "eta": "2026-09-22T13:55"
-   },
-   {
-    "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 15.3,
-    "eta": "2026-09-22T13:57"
-   },
-   {
-    "account": "fake1",
-    "task": "rank_match",
-    "startsIn": 17.7,
-    "eta": "2026-09-22T13:59"
-   },
-   {
-    "account": "fake1",
-    "task": "guild_war",
-    "startsIn": 19.7,
-    "eta": "2026-09-22T14:01"
    }
   ],
-  "more": 50,
+  "more": 48,
   "fillers": [
    {
     "account": "smurf",
@@ -10373,11 +10418,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 42,
-   "medianSec": 18.0,
+   "n": 43,
+   "medianSec": 18,
    "picker": {
-    "n": 22,
-    "medianSec": 16.0,
+    "n": 23,
+    "medianSec": 16,
     "jumps": 13
    },
    "typed": {
@@ -10492,6 +10537,16 @@
   }
  },
  "ledger": {
+  "nova": {
+   "guild war attempts": 1,
+   "pillar/story stages cleared": 5,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "jeff": {
    "island fights": 8,
    "pillar proofs swept": 3,
@@ -10615,15 +10670,6 @@
    "ranked attempts": 1,
    "Home creations": 50,
    "daily claims": 1
-  },
-  "nova": {
-   "pillar/story stages cleared": 5,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
   }
  },
  "paused": null,
@@ -10945,21 +10991,13 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-22",
-   "summary": "12 of 15 dailies done",
-   "done": 12,
+   "summary": "14 of 15 dailies done",
+   "done": 14,
    "owed": 15,
    "open": [
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -10973,6 +11011,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "pillar/story stages cleared": 5,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -11020,7 +11059,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 12,
+     "done": 14,
      "failed": 0
     }
    ]
