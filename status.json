@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T13:54:05.435796",
+ "generatedAt": "2026-09-22T13:56:08.608943",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
+  "account": "fake3",
   "mode": "guild_war",
-  "since": "13:53:25"
+  "since": "13:55:45"
  },
  "grid": {
   "tasks": [
@@ -163,7 +163,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -185,7 +185,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "·",
      "-",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 189,
-  "todo": 51,
+  "done": 191,
+  "todo": 49,
   "gaveUp": 2,
   "unavailable": 5,
   "windowed": 16
@@ -689,11 +689,51 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-22T13:52:23.047309",
+  "label": "fake3",
+  "at": "2026-09-22T13:54:41.698691",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T13:55:44",
+   "script": "rank_match",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260922_135448_rank_match_fake3"
+  },
+  {
+   "ts": "2026-09-22T13:54:23",
+   "script": "guild_war",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "near_miss_vr_rank": 1,
+    "marginal_last_hit": 5,
+    "near_miss_last_hit": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_135325_guild_war_fake2"
+  },
   {
    "ts": "2026-09-22T13:53:24",
    "script": "rank_match",
@@ -7373,34 +7413,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260921_161739_daily_dungeon_fake6"
-  },
-  {
-   "ts": "2026-09-21T16:16:34",
-   "script": "joint_team_daily_quest",
-   "account": "fake6",
-   "rc": 2,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_161633_joint_team_daily_quest_fake6"
-  },
-  {
-   "ts": "2026-09-21T16:16:31",
-   "script": "joint_team_daily_quest",
-   "account": "fake6",
-   "rc": 2,
-   "secs": 3,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_161628_joint_team_daily_quest_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 50045,
+  "now": 50168,
   "segments": [
    {
     "b": 29206,
@@ -10041,8 +10059,33 @@
     "s": "guild_war",
     "login": null,
     "handoff": 50005,
+    "rc": 0,
+    "e": 50064,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 50064,
+    "a": "fake3",
+    "s": "rank_match",
+    "login": [
+     50064,
+     50081
+    ],
+    "handoff": 50087,
+    "rc": 0,
+    "e": 50145,
+    "secs": 56,
+    "why": ""
+   },
+   {
+    "b": 50145,
+    "a": "fake3",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 50145,
     "rc": null,
-    "e": 50045
+    "e": 50168
    }
   ],
   "idle": []
@@ -10168,8 +10211,8 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 47,
-  "relogMinutes": 20.2,
+  "switches": 48,
+  "relogMinutes": 20.6,
   "retries": 16,
   "tasks": {
    "dailyclaim": {
@@ -10253,13 +10296,13 @@
     "failed": 4
    },
    "rank_match": {
-    "runs": 6,
-    "minutes": 6.0,
+    "runs": 7,
+    "minutes": 7.0,
     "failed": 0
    },
    "guild_war": {
-    "runs": 4,
-    "minutes": 4.0,
+    "runs": 5,
+    "minutes": 5.0,
     "failed": 0
    }
   }
@@ -10456,79 +10499,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake2",
+    "account": "fake3",
     "task": "guild_war",
     "startsIn": 0.0,
-    "eta": "2026-09-22T13:54"
-   },
-   {
-    "account": "fake3",
-    "task": "rank_match",
-    "startsIn": 1.4,
-    "eta": "2026-09-22T13:55"
-   },
-   {
-    "account": "fake3",
-    "task": "guild_war",
-    "startsIn": 2.4,
     "eta": "2026-09-22T13:56"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 3.8,
+    "startsIn": 1.4,
     "eta": "2026-09-22T13:57"
    },
    {
     "account": "fake4",
     "task": "guild_war",
-    "startsIn": 4.8,
+    "startsIn": 2.4,
     "eta": "2026-09-22T13:58"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 6.2,
-    "eta": "2026-09-22T14:00"
+    "startsIn": 3.8,
+    "eta": "2026-09-22T13:59"
    },
    {
     "account": "fake5",
     "task": "guild_war",
-    "startsIn": 7.2,
-    "eta": "2026-09-22T14:01"
+    "startsIn": 4.8,
+    "eta": "2026-09-22T14:00"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 8.2,
-    "eta": "2026-09-22T14:02"
+    "startsIn": 5.8,
+    "eta": "2026-09-22T14:01"
    },
    {
     "account": "fake6",
     "task": "rank_match",
-    "startsIn": 9.8,
+    "startsIn": 7.4,
     "eta": "2026-09-22T14:03"
    },
    {
     "account": "fake6",
     "task": "guild_war",
-    "startsIn": 10.8,
+    "startsIn": 8.4,
     "eta": "2026-09-22T14:04"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 11.8,
+    "startsIn": 9.4,
     "eta": "2026-09-22T14:05"
    },
    {
     "account": "fake7",
     "task": "rank_match",
-    "startsIn": 13.5,
+    "startsIn": 11.1,
     "eta": "2026-09-22T14:07"
+   },
+   {
+    "account": "fake7",
+    "task": "guild_war",
+    "startsIn": 12.1,
+    "eta": "2026-09-22T14:08"
+   },
+   {
+    "account": "fake7",
+    "task": "faction",
+    "startsIn": 13.1,
+    "eta": "2026-09-22T14:09"
    }
   ],
-  "more": 39,
+  "more": 37,
   "fillers": [
    {
     "account": "smurf",
@@ -10558,12 +10601,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 47,
-   "medianSec": 18,
+   "n": 48,
+   "medianSec": 18.0,
    "picker": {
-    "n": 25,
-    "medianSec": 16,
-    "jumps": 15
+    "n": 26,
+    "medianSec": 16.0,
+    "jumps": 16
    },
    "typed": {
     "n": 0,
@@ -10675,6 +10718,15 @@
   }
  },
  "ledger": {
+  "fake2": {
+   "guild war attempts": 1,
+   "faction sweeps": 2,
+   "pillar/story stages cleared": 2,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 46,
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "fake1": {
    "guild war attempts": 1,
    "pillar/story stages cleared": 3,
@@ -10801,14 +10853,6 @@
    "pillar proofs lost to a refusal": 1,
    "pillar/story stages cleared": 1,
    "Island Shop buys (200 coins)": 1,
-   "mail claimed": 1,
-   "daily claims": 2
-  },
-  "fake2": {
-   "faction sweeps": 2,
-   "pillar/story stages cleared": 2,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 46,
    "mail claimed": 1,
    "daily claims": 2
   }
@@ -11563,17 +11607,13 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-22",
-   "summary": "11 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 11,
+   "summary": "12 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 12,
    "owed": 14,
    "open": [
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     },
     {
      "task": "fctn",
@@ -11607,6 +11647,7 @@
     }
    ],
    "spent": {
+    "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar/story stages cleared": 2,
     "Island Shop buys (200 coins)": 1,
@@ -11652,7 +11693,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 12,
+     "done": 13,
      "failed": 2
     }
    ]
@@ -11660,17 +11701,13 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-22",
-   "summary": "11 of 14 dailies done · 2 switched off",
-   "done": 11,
+   "summary": "12 of 14 dailies done · 2 switched off",
+   "done": 12,
    "owed": 14,
    "open": [
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
     },
     {
      "task": "guildBoss",
@@ -11756,7 +11793,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 12,
+     "done": 13,
      "failed": 2
     }
    ]
