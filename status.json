@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T14:35:18.493200",
+ "generatedAt": "2026-09-22T14:37:21.890836",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "sky_pillar",
-  "since": "14:35:16"
+  "account": "lucifer2",
+  "mode": "rank_match",
+  "since": "14:36:26"
  },
  "grid": {
   "tasks": [
@@ -358,10 +358,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 211,
-  "todo": 25,
+  "done": 213,
+  "todo": 23,
   "gaveUp": 3,
   "unavailable": 8,
   "windowed": 16
@@ -689,11 +689,41 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-22T14:31:35.841594",
+  "label": "lucifer2",
+  "at": "2026-09-22T14:36:46.821353",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T14:36:26",
+   "script": "weekend_bash",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 5,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "tickets": 0
+   },
+   "dir": "debug_runs/20260922_143621_weekend_bash_lucifer1"
+  },
+  {
+   "ts": "2026-09-22T14:36:17",
+   "script": "sky_pillar",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 61,
+   "stats": {
+    "stages_cleared": 4,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 91,
+    "stage": 5
+   },
+   "dir": "debug_runs/20260922_143516_sky_pillar_lucifer1"
+  },
   {
    "ts": "2026-09-22T14:35:15",
    "script": "collect_hoopa_keys",
@@ -7404,49 +7434,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260921_164127_joint_team_daily_quest_test1"
-  },
-  {
-   "ts": "2026-09-21T16:41:26",
-   "script": "mail",
-   "account": "test1",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "reward_card_closed": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 11,
-    "reward_cards": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260921_164123_mail_test1"
-  },
-  {
-   "ts": "2026-09-21T16:41:22",
-   "script": "dailyclaim",
-   "account": "test1",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:79 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260921_164059_dailyclaim_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 52518,
+  "now": 52642,
   "segments": [
    {
     "b": 29206,
@@ -10441,8 +10434,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 52516,
+    "rc": 0,
+    "e": 52578,
+    "secs": 61,
+    "why": ""
+   },
+   {
+    "b": 52578,
+    "a": "lucifer1",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 52581,
+    "rc": 0,
+    "e": 52586,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 52586,
+    "a": "lucifer2",
+    "s": "rank_match",
+    "login": [
+     52587,
+     52606
+    ],
+    "handoff": 52615,
     "rc": null,
-    "e": 52518
+    "e": 52642
    }
   ],
   "idle": []
@@ -10586,8 +10604,8 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 55,
-  "relogMinutes": 23.5,
+  "switches": 56,
+  "relogMinutes": 24.0,
   "retries": 18,
   "tasks": {
    "dailyclaim": {
@@ -10641,13 +10659,13 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 14,
-    "minutes": 12.6,
+    "runs": 15,
+    "minutes": 13.6,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 5,
-    "minutes": 0.3,
+    "runs": 6,
+    "minutes": 0.4,
     "failed": 0
    },
    "championship": {
@@ -10892,79 +10910,79 @@
  "queue": {
   "next": [
    {
-    "account": "lucifer1",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-22T14:35"
-   },
-   {
-    "account": "lucifer1",
-    "task": "weekend_bash",
-    "startsIn": 0.9,
-    "eta": "2026-09-22T14:36"
-   },
-   {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 1.4,
-    "eta": "2026-09-22T14:36"
-   },
-   {
-    "account": "lucifer2",
-    "task": "guild_war",
-    "startsIn": 2.2,
+    "startsIn": 0.0,
     "eta": "2026-09-22T14:37"
    },
    {
     "account": "lucifer2",
-    "task": "run_pvp_ranked",
-    "startsIn": 3.2,
+    "task": "guild_war",
+    "startsIn": 0.9,
     "eta": "2026-09-22T14:38"
    },
    {
     "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 4.5,
+    "task": "run_pvp_ranked",
+    "startsIn": 1.8,
     "eta": "2026-09-22T14:39"
+   },
+   {
+    "account": "lucifer2",
+    "task": "collect_hoopa_keys",
+    "startsIn": 3.1,
+    "eta": "2026-09-22T14:40"
    },
    {
     "account": "lucifer2",
     "task": "sky_pillar",
-    "startsIn": 4.6,
-    "eta": "2026-09-22T14:39"
+    "startsIn": 3.3,
+    "eta": "2026-09-22T14:40"
    },
    {
     "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 5.5,
-    "eta": "2026-09-22T14:40"
-   },
-   {
-    "account": "test1",
-    "task": "rank_match",
-    "startsIn": 6.0,
+    "startsIn": 4.2,
     "eta": "2026-09-22T14:41"
    },
    {
     "account": "test1",
+    "task": "rank_match",
+    "startsIn": 4.6,
+    "eta": "2026-09-22T14:42"
+   },
+   {
+    "account": "test1",
     "task": "guild_war",
-    "startsIn": 6.9,
+    "startsIn": 5.5,
     "eta": "2026-09-22T14:42"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 7.8,
+    "startsIn": 6.5,
     "eta": "2026-09-22T14:43"
    },
    {
     "account": "deno",
     "task": "rank_match",
-    "startsIn": 9.2,
-    "eta": "2026-09-22T14:44"
+    "startsIn": 7.9,
+    "eta": "2026-09-22T14:45"
+   },
+   {
+    "account": "deno",
+    "task": "guild_war",
+    "startsIn": 8.7,
+    "eta": "2026-09-22T14:46"
+   },
+   {
+    "account": "deno",
+    "task": "run_pvp_ranked",
+    "startsIn": 9.7,
+    "eta": "2026-09-22T14:47"
    }
   ],
-  "more": 13,
+  "more": 11,
   "fillers": [
    {
     "account": "smurf",
@@ -10994,8 +11012,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 55,
-   "medianSec": 18,
+   "n": 56,
+   "medianSec": 18.0,
    "picker": {
     "n": 31,
     "medianSec": 16,
@@ -11006,16 +11024,16 @@
     "medianSec": null
    },
    "miss": {
-    "n": 24,
-    "medianSec": 19.0
+    "n": 25,
+    "medianSec": 19
    }
   }
  },
  "progress": {
   "test1": {
-   "mailUnread": 0,
    "paradiseStamina": "1/17",
-   "pillar": "floor 4 stage 3"
+   "pillar": "floor 4 stage 3",
+   "mailUnread": 0
   },
   "jeff": {
    "islandFights": 4,
@@ -11054,7 +11072,8 @@
   },
   "lucifer1": {
    "rank": 193,
-   "mailUnread": 0
+   "mailUnread": 0,
+   "pillar": "floor 91 stage 5"
   },
   "lucifer2": {
    "rank": 339,
@@ -11112,6 +11131,7 @@
  },
  "ledger": {
   "lucifer1": {
+   "pillar/story stages cleared": 4,
    "ranked attempts": 1,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -12721,8 +12741,8 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-22",
-   "summary": "11 of 15 dailies done · gave up on JointQ",
-   "done": 11,
+   "summary": "13 of 15 dailies done · gave up on JointQ",
+   "done": 13,
    "owed": 15,
    "open": [
     {
@@ -12732,14 +12752,6 @@
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -12753,6 +12765,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 4,
     "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -12763,7 +12776,8 @@
    },
    "progress": {
     "rank": 193,
-    "mailUnread": 0
+    "mailUnread": 0,
+    "pillar": "floor 91 stage 5"
    },
    "history": [
     {
@@ -12798,7 +12812,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 12,
+     "done": 14,
      "failed": 2
     }
    ]
@@ -12957,9 +12971,9 @@
     "daily claims": 2
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "1/17",
-    "pillar": "floor 4 stage 3"
+    "pillar": "floor 4 stage 3",
+    "mailUnread": 0
    },
    "history": [
     {
