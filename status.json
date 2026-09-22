@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T14:49:41.890294",
+ "generatedAt": "2026-09-22T14:51:44.942006",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "rank_match",
-  "since": "14:48:35"
+  "mode": "run_pvp_ranked",
+  "since": "14:51:06"
  },
  "grid": {
   "tasks": [
@@ -449,9 +449,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -465,8 +465,8 @@
   ]
  },
  "counts": {
-  "done": 223,
-  "todo": 11,
+  "done": 225,
+  "todo": 9,
   "gaveUp": 3,
   "unavailable": 10,
   "windowed": 16
@@ -694,6 +694,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T14:51:05",
+   "script": "guild_war",
+   "account": "dre",
+   "rc": 0,
+   "secs": 62,
+   "stats": {
+    "near_miss_set_form_title": 9,
+    "near_miss_last_hit": 3,
+    "near_miss_vr_rank": 6,
+    "marginal_last_hit": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260922_145003_guild_war_dre"
+  },
+  {
+   "ts": "2026-09-22T14:50:02",
+   "script": "rank_match",
+   "account": "dre",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260922_144903_rank_match_dre"
+  },
   {
    "ts": "2026-09-22T14:48:34",
    "script": "island_challenge",
@@ -7422,46 +7463,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260921_170450_joint_team_daily_quest_chris"
-  },
-  {
-   "ts": "2026-09-21T17:04:49",
-   "script": "mail",
-   "account": "chris",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 0,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260921_170445_mail_chris"
-  },
-  {
-   "ts": "2026-09-21T17:04:44",
-   "script": "dailyclaim",
-   "account": "chris",
-   "rc": 0,
-   "secs": 23,
-   "stats": {
-    "sign_in_already": 1,
-    "privpack_already": 1,
-    "logingift_claimed": 1,
-    "claims": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:80 0.275:8 0.345:54 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260921_170421_dailyclaim_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 53382,
+  "now": 53505,
   "segments": [
    {
     "b": 29206,
@@ -10672,8 +10679,30 @@
      53333
     ],
     "handoff": 53342,
+    "rc": 0,
+    "e": 53402,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 53402,
+    "a": "dre",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 53402,
+    "rc": 0,
+    "e": 53466,
+    "secs": 62,
+    "why": ""
+   },
+   {
+    "b": 53466,
+    "a": "dre",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 53469,
     "rc": null,
-    "e": 53382
+    "e": 53505
    }
   ],
   "idle": []
@@ -10902,13 +10931,13 @@
     "failed": 6
    },
    "rank_match": {
-    "runs": 19,
-    "minutes": 15.3,
+    "runs": 20,
+    "minutes": 16.3,
     "failed": 0
    },
    "guild_war": {
-    "runs": 16,
-    "minutes": 15.5,
+    "runs": 17,
+    "minutes": 16.6,
     "failed": 0
    }
   }
@@ -11136,68 +11165,56 @@
   "next": [
    {
     "account": "dre",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-22T14:49"
-   },
-   {
-    "account": "dre",
-    "task": "guild_war",
-    "startsIn": 0.8,
-    "eta": "2026-09-22T14:50"
-   },
-   {
-    "account": "dre",
     "task": "run_pvp_ranked",
-    "startsIn": 1.8,
+    "startsIn": 0.0,
     "eta": "2026-09-22T14:51"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 3.0,
-    "eta": "2026-09-22T14:52"
+    "startsIn": 1.3,
+    "eta": "2026-09-22T14:53"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 3.2,
-    "eta": "2026-09-22T14:52"
+    "startsIn": 1.4,
+    "eta": "2026-09-22T14:53"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 4.0,
-    "eta": "2026-09-22T14:53"
+    "startsIn": 2.3,
+    "eta": "2026-09-22T14:54"
    },
    {
     "account": "deno",
     "task": "collect_hoopa_keys",
-    "startsIn": 4.5,
+    "startsIn": 2.7,
     "eta": "2026-09-22T14:54"
    },
    {
     "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 4.6,
+    "startsIn": 2.9,
     "eta": "2026-09-22T14:54"
    },
    {
     "account": "deno",
     "task": "weekend_bash",
-    "startsIn": 5.5,
+    "startsIn": 3.7,
     "eta": "2026-09-22T14:55"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 6.0,
+    "startsIn": 4.2,
     "eta": "2026-09-22T14:55"
    },
    {
     "account": "chris",
     "task": "championship",
-    "startsIn": 6.9,
+    "startsIn": 5.2,
     "eta": "2026-09-22T14:56"
    }
   ],
@@ -11250,12 +11267,12 @@
  },
  "progress": {
   "chris": {
-   "mailUnread": 0,
    "paradiseStamina": "14/16",
    "islandFights": 6,
    "islandStamina": 1,
    "rank": 209,
-   "pillar": "floor 137 stage 4"
+   "pillar": "floor 137 stage 4",
+   "mailUnread": 0
   },
   "nova": {
    "rank": 2,
@@ -11349,6 +11366,14 @@
   }
  },
  "ledger": {
+  "dre": {
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "chris": {
    "island fights": 12,
    "faction sweeps": 2,
@@ -11494,13 +11519,6 @@
    "guild war attempts": 1,
    "pillar/story stages cleared": 5,
    "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
-  },
-  "dre": {
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
@@ -12039,12 +12057,12 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "14/16",
     "islandFights": 6,
     "islandStamina": 1,
     "rank": 209,
-    "pillar": "floor 137 stage 4"
+    "pillar": "floor 137 stage 4",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -13313,21 +13331,13 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-22",
-   "summary": "8 of 15 dailies done",
-   "done": 8,
+   "summary": "10 of 15 dailies done",
+   "done": 10,
    "owed": 15,
    "open": [
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     },
     {
      "task": "pvpRank",
@@ -13350,6 +13360,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -13394,7 +13405,7 @@
     },
     {
      "day": "2026-09-22",
-     "done": 9,
+     "done": 11,
      "failed": 0
     }
    ]
