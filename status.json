@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-22T10:42:40.754570",
+ "generatedAt": "2026-09-22T10:44:44.053498",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "joint_team_daily_quest",
-  "since": "10:42:06"
+  "account": "chris",
+  "mode": "island_challenge",
+  "since": "10:44:03"
  },
  "grid": {
   "tasks": [
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "💤",
-     "💤"
+     "⏳"
     ]
    },
    {
@@ -601,19 +601,26 @@
  ],
  "islandChallenge": [
   {
+   "account": "chris",
+   "fights": 0,
+   "stamina": 40,
+   "staminaMax": 40,
+   "staminaAt": "2026-09-22T10:44:41",
+   "nextAt": null
+  },
+  {
    "account": "jeff",
-   "fights": 1,
-   "stamina": 5,
-   "staminaMax": 24,
-   "staminaAt": "2026-09-22T09:06:51",
-   "nextAt": "2026-09-22T10:42:58"
+   "fights": 3,
+   "stamina": 22,
+   "staminaMax": 22,
+   "staminaAt": "2026-09-22T10:43:57",
+   "nextAt": "2026-09-22T12:32:02"
   }
  ],
  "snoozed": {
   "chris|championship": "2026-09-22T12:00",
-  "chris|island_challenge": "2026-09-22T10:42",
   "jeff|championship": "2026-09-22T12:00",
-  "jeff|island_challenge": "2026-09-22T10:42"
+  "jeff|island_challenge": "2026-09-22T12:32"
  },
  "ownerOnline": [],
  "keys": {
@@ -683,11 +690,53 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-22T10:41:26.117955",
+  "label": "chris",
+  "at": "2026-09-22T10:44:20.829507",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-22T10:44:02",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 30,
+   "stats": {
+    "fights": 2,
+    "partial_formation": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 22,
+    "fights_today": 3
+   },
+   "dir": "debug_runs/20260922_104331_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-22T10:43:07",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 60,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 1,
+    "marginal_joint_team_daily_panel": 4,
+    "panel_swipes": 8,
+    "artifact_row_found_by_scrolling": 1,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1,
+    "rows_left": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "joint_team_daily_quest: still open: enhance any artifact once: todo"
+   ],
+   "values": {
+    "left": "enhance any artifact once: todo"
+   },
+   "dir": "debug_runs/20260922_104206_joint_team_daily_quest_lucifer1"
+  },
   {
    "ts": "2026-09-22T10:42:05",
    "script": "mail",
@@ -7269,51 +7318,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260921_133412_guild_war_fake2"
-  },
-  {
-   "ts": "2026-09-21T13:34:11",
-   "script": "paradise",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 178,
-   "stats": {
-    "marginal_paradise_hub": 3,
-    "explore_clicks": 90,
-    "pass_claims": 3,
-    "dex_milestones": 2,
-    "dex_activated": 6,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260921_133112_paradise_fake2"
-  },
-  {
-   "ts": "2026-09-21T13:31:10",
-   "script": "rank_match",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 58,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260921_133012_rank_match_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-22T00:00",
   "since": 28800.0,
-  "now": 38561,
+  "now": 38684,
   "segments": [
    {
     "b": 29206,
@@ -9086,13 +9096,50 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 38526,
+    "rc": 1,
+    "e": 38588,
+    "secs": 60,
+    "why": "joint_team_daily_quest: still open: enhance any artifact once: todo"
+   },
+   {
+    "b": 38588,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     38588,
+     38602
+    ],
+    "handoff": 38611,
+    "rc": 5,
+    "e": 38643,
+    "secs": 30,
+    "why": ""
+   },
+   {
+    "b": 38643,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     38643,
+     38660
+    ],
+    "handoff": 38673,
     "rc": null,
-    "e": 38561
+    "e": 38684
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-22T10:43:07",
+   "account": "lucifer1",
+   "task": "joint_team_daily_quest",
+   "rc": 1,
+   "secs": 60,
+   "why": "joint_team_daily_quest: still open: enhance any artifact once: todo",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_104206_joint_team_daily_quest_lucifer1__0045_104307_close_blank__AFTER__guild_base.png"
+  },
   {
    "ts": "2026-09-22T10:39:58",
    "account": "skosmurf",
@@ -9195,9 +9242,9 @@
  ],
  "day": {
   "since": "2026-09-22T08:00",
-  "switches": 17,
-  "relogMinutes": 6.7,
-  "retries": 11,
+  "switches": 19,
+  "relogMinutes": 7.5,
+  "retries": 13,
   "tasks": {
    "dailyclaim": {
     "runs": 14,
@@ -9210,9 +9257,9 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 12,
-    "minutes": 9.8,
-    "failed": 2
+    "runs": 13,
+    "minutes": 10.8,
+    "failed": 3
    },
    "daily_dungeon": {
     "runs": 13,
@@ -9275,9 +9322,9 @@
     "failed": 0
    },
    "island_challenge": {
-    "runs": 1,
-    "minutes": 0.4,
-    "failed": 1
+    "runs": 2,
+    "minutes": 0.9,
+    "failed": 2
    }
   }
  },
@@ -9469,74 +9516,74 @@
    {
     "account": "lucifer1",
     "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-22T10:42"
+    "startsIn": 0.4,
+    "eta": "2026-09-22T10:45"
    },
    {
     "account": "lucifer1",
     "task": "daily_dungeon",
-    "startsIn": 0.8,
-    "eta": "2026-09-22T10:43"
+    "startsIn": 1.2,
+    "eta": "2026-09-22T10:45"
    },
    {
     "account": "lucifer1",
     "task": "pokemon_home",
-    "startsIn": 1.2,
-    "eta": "2026-09-22T10:43"
+    "startsIn": 1.6,
+    "eta": "2026-09-22T10:46"
    },
    {
     "account": "lucifer1",
     "task": "combat_daily",
-    "startsIn": 2.1,
-    "eta": "2026-09-22T10:44"
+    "startsIn": 2.5,
+    "eta": "2026-09-22T10:47"
    },
    {
     "account": "lucifer1",
     "task": "victory_road",
-    "startsIn": 3.7,
-    "eta": "2026-09-22T10:46"
+    "startsIn": 4.1,
+    "eta": "2026-09-22T10:48"
    },
    {
     "account": "lucifer1",
     "task": "paradise",
-    "startsIn": 3.9,
-    "eta": "2026-09-22T10:46"
+    "startsIn": 4.3,
+    "eta": "2026-09-22T10:49"
    },
    {
     "account": "lucifer1",
     "task": "run_pvp_ranked",
-    "startsIn": 7.4,
-    "eta": "2026-09-22T10:50"
+    "startsIn": 7.9,
+    "eta": "2026-09-22T10:52"
    },
    {
     "account": "lucifer1",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.8,
-    "eta": "2026-09-22T10:51"
+    "startsIn": 9.2,
+    "eta": "2026-09-22T10:53"
    },
    {
     "account": "lucifer1",
     "task": "sky_pillar",
-    "startsIn": 8.9,
-    "eta": "2026-09-22T10:51"
+    "startsIn": 9.3,
+    "eta": "2026-09-22T10:54"
    },
    {
     "account": "lucifer1",
     "task": "weekend_bash",
-    "startsIn": 9.8,
-    "eta": "2026-09-22T10:52"
+    "startsIn": 10.3,
+    "eta": "2026-09-22T10:54"
    },
    {
     "account": "sprite",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.3,
-    "eta": "2026-09-22T10:52"
+    "startsIn": 10.7,
+    "eta": "2026-09-22T10:55"
    },
    {
     "account": "sprite",
     "task": "sky_pillar",
-    "startsIn": 10.4,
-    "eta": "2026-09-22T10:53"
+    "startsIn": 10.8,
+    "eta": "2026-09-22T10:55"
    }
   ],
   "more": 52,
@@ -9569,11 +9616,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 17,
+   "n": 19,
    "medianSec": 18,
    "picker": {
-    "n": 12,
-    "medianSec": 16.5,
+    "n": 13,
+    "medianSec": 16,
     "jumps": 8
    },
    "typed": {
@@ -9581,8 +9628,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 5,
-    "medianSec": 19
+    "n": 6,
+    "medianSec": 19.0
    }
   }
  },
@@ -9628,8 +9675,8 @@
    "pillar": "floor 4 stage 1"
   },
   "jeff": {
-   "islandFights": 1,
-   "islandStamina": 5,
+   "islandFights": 3,
+   "islandStamina": 22,
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "rank": 189,
@@ -9685,6 +9732,15 @@
   }
  },
  "ledger": {
+  "jeff": {
+   "island fights": 7,
+   "pillar proofs swept": 3,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "lucifer1": {
    "mail claimed": 1,
    "daily claims": 3,
@@ -9751,15 +9807,6 @@
    "adventure energy": 1,
    "mail claimed": 1,
    "daily claims": 2
-  },
-  "jeff": {
-   "island fights": 5,
-   "pillar proofs swept": 3,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
   },
   "smurf": {
    "faction sweeps": 2,
@@ -10175,7 +10222,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
-    "island fights": 5,
+    "island fights": 7,
     "pillar proofs swept": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -10184,8 +10231,8 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "islandFights": 1,
-    "islandStamina": 5,
+    "islandFights": 3,
+    "islandStamina": 22,
     "mailUnread": 0,
     "paradiseStamina": "16/16",
     "rank": 189,
@@ -10254,7 +10301,7 @@
     },
     {
      "task": "island",
-     "state": "asks again later"
+     "state": "cooling off"
     }
    ],
    "issues": [],
@@ -11318,7 +11365,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "10:43",
+     "why": "joint_team_daily_quest: still open: enhance any artifact once: todo",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260922_104206_joint_team_daily_quest_lucifer1__0045_104307_close_blank__AFTER__guild_base.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
@@ -11364,7 +11418,7 @@
     {
      "day": "2026-09-22",
      "done": 3,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
