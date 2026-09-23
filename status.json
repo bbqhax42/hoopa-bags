@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T09:28:52.486654",
+ "generatedAt": "2026-09-23T09:30:55.970182",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake1",
-  "mode": "daily_dungeon",
-  "since": "09:28:36"
+  "mode": "combat_daily",
+  "since": "09:29:15"
  },
  "grid": {
   "tasks": [
@@ -133,8 +133,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 69,
-  "todo": 162,
+  "done": 71,
+  "todo": 160,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 38
@@ -710,6 +710,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T09:29:15",
+   "script": "pokemon_home",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 18,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "grid_shrank_rejected": 1,
+    "phantom_creations": 0,
+    "charges_spent": 46
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_092856_pokemon_home_fake1"
+  },
+  {
+   "ts": "2026-09-23T09:28:55",
+   "script": "daily_dungeon",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_092841_daily_dungeon_fake1"
+  },
   {
    "ts": "2026-09-23T09:27:41",
    "script": "joint_team_daily_quest",
@@ -7376,43 +7406,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260922_082011_mail_jeff"
-  },
-  {
-   "ts": "2026-09-22T08:20:10",
-   "script": "dailyclaim",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 26,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:80 0.275:0 0.345:52 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260922_081944_dailyclaim_jeff"
-  },
-  {
-   "ts": "2026-09-22T08:19:19",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 0,
-   "secs": 5,
-   "stats": {},
-   "incomplete": [],
-   "values": {
-    "tickets": 0
-   },
-   "dir": "debug_runs/20260922_081914_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 34132,
+  "now": 34256,
   "segments": [
    {
     "b": 28824,
@@ -8314,8 +8313,30 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 34120,
+    "rc": 0,
+    "e": 34135,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 34135,
+    "a": "fake1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 34136,
+    "rc": 0,
+    "e": 34155,
+    "secs": 18,
+    "why": ""
+   },
+   {
+    "b": 34155,
+    "a": "fake1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34160,
     "rc": null,
-    "e": 34132
+    "e": 34256
    }
   ],
   "idle": []
@@ -8591,13 +8612,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 5,
-    "minutes": 1.2,
+    "runs": 6,
+    "minutes": 1.4,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 6,
-    "minutes": 7.9,
+    "runs": 7,
+    "minutes": 8.2,
     "failed": 2
    },
    "combat_daily": {
@@ -8835,78 +8856,78 @@
   "next": [
    {
     "account": "fake1",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T09:28"
-   },
-   {
-    "account": "fake1",
-    "task": "pokemon_home",
-    "startsIn": 0.2,
-    "eta": "2026-09-23T09:29"
-   },
-   {
-    "account": "fake1",
     "task": "combat_daily",
-    "startsIn": 1.6,
+    "startsIn": 0.0,
     "eta": "2026-09-23T09:30"
    },
    {
     "account": "fake1",
     "task": "victory_road",
-    "startsIn": 3.3,
+    "startsIn": 1.8,
     "eta": "2026-09-23T09:32"
    },
    {
     "account": "fake1",
     "task": "paradise",
-    "startsIn": 3.4,
+    "startsIn": 1.9,
     "eta": "2026-09-23T09:32"
    },
    {
     "account": "fake1",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.9,
-    "eta": "2026-09-23T09:36"
+    "startsIn": 6.4,
+    "eta": "2026-09-23T09:37"
    },
    {
     "account": "fake1",
     "task": "sky_pillar",
-    "startsIn": 8.0,
-    "eta": "2026-09-23T09:36"
+    "startsIn": 6.5,
+    "eta": "2026-09-23T09:37"
    },
    {
     "account": "fake1",
     "task": "faction",
-    "startsIn": 8.6,
-    "eta": "2026-09-23T09:37"
+    "startsIn": 7.1,
+    "eta": "2026-09-23T09:38"
    },
    {
     "account": "fake2",
     "task": "dailyclaim",
-    "startsIn": 11.2,
+    "startsIn": 9.7,
     "eta": "2026-09-23T09:40"
    },
    {
     "account": "fake2",
     "task": "mail",
-    "startsIn": 11.6,
+    "startsIn": 10.0,
     "eta": "2026-09-23T09:40"
    },
    {
     "account": "fake2",
     "task": "joint_team_daily_quest",
-    "startsIn": 11.6,
-    "eta": "2026-09-23T09:40"
+    "startsIn": 10.1,
+    "eta": "2026-09-23T09:41"
    },
    {
     "account": "fake2",
     "task": "joint_battle",
-    "startsIn": 12.4,
+    "startsIn": 10.9,
     "eta": "2026-09-23T09:41"
+   },
+   {
+    "account": "fake2",
+    "task": "daily_dungeon",
+    "startsIn": 12.9,
+    "eta": "2026-09-23T09:43"
+   },
+   {
+    "account": "fake2",
+    "task": "pokemon_home",
+    "startsIn": 13.1,
+    "eta": "2026-09-23T09:44"
    }
   ],
-  "more": 150,
+  "more": 148,
   "fillers": [
    {
     "account": "smurf",
@@ -8954,10 +8975,6 @@
   }
  },
  "progress": {
-  "nova": {
-   "mailUnread": 0,
-   "rank": 2
-  },
   "jeff": {
    "mailUnread": 0,
    "rank": 15,
@@ -9049,6 +9066,10 @@
    "rank": 195,
    "pillar": "floor 83 stage 8"
   },
+  "nova": {
+   "mailUnread": 0,
+   "rank": 2
+  },
   "exou": {
    "mailUnread": 0,
    "paradiseStamina": "0/15",
@@ -9057,6 +9078,7 @@
  },
  "ledger": {
   "fake1": {
+   "Home creations": 46,
    "mail claimed": 1,
    "daily claims": 2
   },
@@ -9689,18 +9711,10 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-23",
-   "summary": "4 of 14 dailies done · 2 switched off",
-   "done": 4,
+   "summary": "6 of 14 dailies done · 2 switched off",
+   "done": 6,
    "owed": 14,
    "open": [
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -9756,6 +9770,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Home creations": 46,
     "mail claimed": 1,
     "daily claims": 2
    },
@@ -9797,7 +9812,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 3,
+     "done": 5,
      "failed": 1
     }
    ]
