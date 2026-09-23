@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T11:09:49.602432",
+ "generatedAt": "2026-09-23T11:11:53.118767",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "joint_team_daily_quest",
-  "since": "11:09:17"
+  "mode": "pokemon_home",
+  "since": "11:11:14"
  },
  "grid": {
   "tasks": [
@@ -395,9 +395,9 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 160,
-  "todo": 67,
+  "done": 163,
+  "todo": 64,
   "gaveUp": 6,
   "unavailable": 3,
   "windowed": 38
@@ -718,6 +718,40 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T11:11:14",
+   "script": "daily_dungeon",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_111100_daily_dungeon_lucifer2"
+  },
+  {
+   "ts": "2026-09-23T11:10:06",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 48,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 2,
+    "marginal_joint_team_daily_panel": 2,
+    "panel_swipes": 8,
+    "squad_unaffordable": 1,
+    "guild_base_by_back": 1,
+    "rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "squad_points": "not enough for today's skill",
+    "left": "upgrade squad skill once: blocked"
+   },
+   "dir": "debug_runs/20260923_110917_joint_team_daily_quest_lucifer2"
+  },
   {
    "ts": "2026-09-23T11:09:16",
    "script": "mail",
@@ -7394,47 +7428,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_095406_daily_dungeon_fake5"
-  },
-  {
-   "ts": "2026-09-22T09:54:03",
-   "script": "joint_team_daily_quest",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "near_miss_joint_team_daily_panel": 1,
-    "marginal_joint_team_daily_panel": 2,
-    "panel_swipes": 8,
-    "artifact_row_found_by_scrolling": 1,
-    "guild_base_by_back": 1,
-    "squad_unconfirmed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_095307_joint_team_daily_quest_fake5"
-  },
-  {
-   "ts": "2026-09-22T09:53:05",
-   "script": "mail",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260922_095302_mail_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 40189,
+  "now": 40313,
   "segments": [
    {
     "b": 28824,
@@ -9488,8 +9487,39 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 40157,
+    "rc": 0,
+    "e": 40206,
+    "secs": 48,
+    "why": ""
+   },
+   {
+    "b": 40206,
+    "a": "lucifer2",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 40208,
     "rc": null,
-    "e": 40189
+    "e": 40255
+   },
+   {
+    "b": 40255,
+    "a": "lucifer2",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 40260,
+    "rc": 0,
+    "e": 40274,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 40274,
+    "a": "lucifer2",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 40275,
+    "rc": null,
+    "e": 40313
    }
   ],
   "idle": []
@@ -9801,8 +9831,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 15,
-    "minutes": 3.8,
+    "runs": 16,
+    "minutes": 4.0,
     "failed": 0
    },
    "pokemon_home": {
@@ -9856,8 +9886,8 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 13,
-    "minutes": 10.1,
+    "runs": 14,
+    "minutes": 10.9,
     "failed": 3
    },
    "island_challenge": {
@@ -10057,78 +10087,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T11:09"
-   },
-   {
-    "account": "lucifer2",
-    "task": "joint_battle",
-    "startsIn": 0.8,
-    "eta": "2026-09-23T11:10"
-   },
-   {
-    "account": "lucifer2",
-    "task": "daily_dungeon",
-    "startsIn": 2.8,
-    "eta": "2026-09-23T11:12"
-   },
-   {
-    "account": "lucifer2",
     "task": "pokemon_home",
-    "startsIn": 3.0,
-    "eta": "2026-09-23T11:12"
+    "startsIn": 0.0,
+    "eta": "2026-09-23T11:11"
    },
    {
     "account": "lucifer2",
     "task": "combat_daily",
-    "startsIn": 3.8,
-    "eta": "2026-09-23T11:13"
+    "startsIn": 0.8,
+    "eta": "2026-09-23T11:12"
    },
    {
     "account": "lucifer2",
     "task": "victory_road",
-    "startsIn": 5.6,
-    "eta": "2026-09-23T11:15"
+    "startsIn": 2.6,
+    "eta": "2026-09-23T11:14"
    },
    {
     "account": "lucifer2",
     "task": "paradise",
-    "startsIn": 5.7,
-    "eta": "2026-09-23T11:15"
+    "startsIn": 2.7,
+    "eta": "2026-09-23T11:14"
    },
    {
     "account": "lucifer2",
     "task": "run_pvp_ranked",
-    "startsIn": 9.7,
-    "eta": "2026-09-23T11:19"
+    "startsIn": 6.6,
+    "eta": "2026-09-23T11:18"
    },
    {
     "account": "lucifer2",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.1,
-    "eta": "2026-09-23T11:20"
+    "startsIn": 8.1,
+    "eta": "2026-09-23T11:19"
    },
    {
     "account": "lucifer2",
     "task": "sky_pillar",
-    "startsIn": 11.2,
-    "eta": "2026-09-23T11:21"
+    "startsIn": 8.2,
+    "eta": "2026-09-23T11:20"
    },
    {
     "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 12.1,
-    "eta": "2026-09-23T11:21"
+    "startsIn": 9.0,
+    "eta": "2026-09-23T11:20"
    },
    {
     "account": "lucifer1",
     "task": "run_pvp_ranked",
-    "startsIn": 12.5,
+    "startsIn": 9.4,
+    "eta": "2026-09-23T11:21"
+   },
+   {
+    "account": "lucifer1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 10.9,
     "eta": "2026-09-23T11:22"
+   },
+   {
+    "account": "lucifer1",
+    "task": "sky_pillar",
+    "startsIn": 11.0,
+    "eta": "2026-09-23T11:22"
+   },
+   {
+    "account": "lucifer1",
+    "task": "weekend_bash",
+    "startsIn": 11.8,
+    "eta": "2026-09-23T11:23"
    }
   ],
-  "more": 55,
+  "more": 52,
   "fillers": [
    {
     "account": "smurf",
@@ -10388,6 +10418,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-23T11:10:06",
+   "account": "lucifer2",
+   "task": "joint_team_daily_quest",
+   "left": "upgrade squad skill once: blocked"
+  },
+  {
    "ts": "2026-09-23T09:56:39",
    "account": "fake3",
    "task": "combat_daily",
@@ -10473,6 +10509,15 @@
    "kind": "left",
    "since": "2026-09-23T09:56:39",
    "why": "island shop: first item costs None coins, cap 500",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "lucifer2",
+   "task": "joint_team_daily_quest",
+   "kind": "left",
+   "since": "2026-09-23T11:10:06",
+   "why": "upgrade squad skill once: blocked",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
   },
@@ -12009,22 +12054,10 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-23",
-   "summary": "2 of 15 dailies done · 1 switched off",
-   "done": 2,
+   "summary": "5 of 15 dailies done · 1 switched off",
+   "done": 5,
    "owed": 15,
    "open": [
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
     {
      "task": "home",
      "state": "still to do"
@@ -12071,6 +12104,12 @@
      "task": "worldboss",
      "at": "02:24",
      "why": null,
+     "frame": null
+    },
+    {
+     "task": "joint_team_daily_quest",
+     "at": "11:10",
+     "why": "finished, but left open: upgrade squad skill once: blocked",
      "frame": null
     }
    ],
@@ -12125,7 +12164,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 2,
+     "done": 4,
      "failed": 1
     }
    ]
