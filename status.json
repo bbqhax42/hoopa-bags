@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T06:00:06.356011",
+ "generatedAt": "2026-09-24T06:02:09.892984",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
-  "mode": "dailyclaim",
-  "since": "06:00:00"
+  "account": "lucifer1",
+  "mode": "hoopa",
+  "since": "06:01:23"
  },
  "grid": {
   "tasks": [
@@ -177,7 +177,7 @@
    {
     "account": "fake3",
     "cells": [
-     "✗2",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -333,7 +333,7 @@
      "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "✓",
      "-",
      "-",
@@ -489,9 +489,9 @@
   ]
  },
  "counts": {
-  "done": 253,
-  "todo": 1,
-  "gaveUp": 10,
+  "done": 255,
+  "todo": 0,
+  "gaveUp": 9,
   "unavailable": 9,
   "windowed": 1
  },
@@ -713,11 +713,44 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-24T05:59:13.480345",
+  "label": "lucifer1",
+  "at": "2026-09-24T06:01:37.605773",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T06:01:22",
+   "script": "collect_hoopa_keys",
+   "account": "exou",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_060117_collect_hoopa_keys_exou"
+  },
+  {
+   "ts": "2026-09-24T06:00:46",
+   "script": "dailyclaim",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 24,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:79 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260924_060022_dailyclaim_fake3"
+  },
   {
    "ts": "2026-09-24T05:25:03",
    "script": "island_challenge",
@@ -7264,39 +7297,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-22T15:19:01",
-   "script": "hoopa",
-   "account": "jeff",
-   "rc": 2,
-   "secs": 413,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-22T14:58:28",
-   "script": "championship",
-   "account": "chris",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_145828_championship_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 108006,
+  "now": 108130,
   "segments": [
    {
     "b": 28824,
@@ -12883,11 +12889,39 @@
     "s": "dailyclaim",
     "login": [
      108000,
-     null
+     108017
     ],
-    "handoff": null,
+    "handoff": 108022,
+    "rc": 0,
+    "e": 108047,
+    "secs": 24,
+    "why": ""
+   },
+   {
+    "b": 108047,
+    "a": "exou",
+    "s": "collect_hoopa_keys",
+    "login": [
+     108047,
+     108066
+    ],
+    "handoff": 108077,
+    "rc": 0,
+    "e": 108083,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 108083,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     108083,
+     108097
+    ],
+    "handoff": 108108,
     "rc": null,
-    "e": 108006
+    "e": 108130
    }
   ],
   "idle": [
@@ -13252,13 +13286,13 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 396,
-  "relogMinutes": 77.6,
+  "switches": 398,
+  "relogMinutes": 78.9,
   "retries": 36,
   "tasks": {
    "dailyclaim": {
-    "runs": 18,
-    "minutes": 7.3,
+    "runs": 19,
+    "minutes": 7.7,
     "failed": 0
    },
    "mail": {
@@ -13297,8 +13331,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 18,
-    "minutes": 2.0,
+    "runs": 19,
+    "minutes": 2.1,
     "failed": 0
    },
    "sky_pillar": {
@@ -13607,14 +13641,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "exou",
-    "task": "collect_hoopa_keys",
-    "startsIn": 0.4,
-    "eta": "2026-09-24T06:00"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -13633,20 +13660,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 273,
-   "medianSec": 17,
+   "n": 276,
+   "medianSec": 17.0,
    "picker": {
-    "n": 177,
+    "n": 179,
     "medianSec": 16,
-    "jumps": 105
+    "jumps": 107
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 96,
-    "medianSec": 19.0
+    "n": 97,
+    "medianSec": 19
    }
   }
  },
@@ -13751,6 +13778,9 @@
   }
  },
  "ledger": {
+  "fake3": {
+   "daily claims": 2
+  },
   "jeff": {
    "island fights": 7
   },
@@ -14498,15 +14528,10 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-23",
-   "summary": "13 of 14 dailies done · gave up on claims · 2 switched off",
-   "done": 13,
+   "summary": "14 of 14 dailies done · 2 switched off",
+   "done": 14,
    "owed": 14,
-   "open": [
-    {
-     "task": "claims",
-     "state": "gave up"
-    }
-   ],
+   "open": [],
    "issues": [
     {
      "task": "worldboss",
@@ -14528,7 +14553,9 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "daily claims": 2
+   },
    "progress": {
     "mailUnread": 0,
     "pillar": "floor 4 stage 6"
@@ -14571,7 +14598,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 1,
+     "done": 2,
      "failed": 0
     }
    ]
@@ -15007,17 +15034,13 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-23",
-   "summary": "9 of 11 dailies done",
-   "done": 9,
+   "summary": "10 of 11 dailies done",
+   "done": 10,
    "owed": 11,
    "open": [
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -15055,7 +15078,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 1,
+     "done": 2,
      "failed": 0
     }
    ]
