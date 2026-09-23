@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T14:02:46.046479",
+ "generatedAt": "2026-09-23T14:04:49.573757",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
-  "mode": "faction",
-  "since": "14:02:07"
+  "account": "fake6",
+  "mode": "rank_match",
+  "since": "14:04:12"
  },
  "grid": {
   "tasks": [
@@ -239,7 +239,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "-",
      "-",
      "-",
@@ -490,9 +490,9 @@
  },
  "counts": {
   "done": 223,
-  "todo": 41,
+  "todo": 40,
   "gaveUp": 7,
-  "unavailable": 3,
+  "unavailable": 4,
   "windowed": 0
  },
  "disabled": [
@@ -713,11 +713,28 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-23T14:00:05.497098",
+  "label": "fake6",
+  "at": "2026-09-23T14:04:31.207244",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T14:04:12",
+   "script": "faction",
+   "account": "fake5",
+   "rc": 2,
+   "secs": 121,
+   "stats": {
+    "auto_formation": 19,
+    "skip_retry": 15,
+    "capped_grass": 1,
+    "floors_grass": 19,
+    "sweeps_used": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_140210_faction_fake5"
+  },
   {
    "ts": "2026-09-23T14:02:06",
    "script": "sky_pillar",
@@ -7477,30 +7494,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260922_105545_mail_lucifer2"
-  },
-  {
-   "ts": "2026-09-22T10:55:44",
-   "script": "dailyclaim",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 26,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:78 0.275:8 0.345:52 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260922_105518_dailyclaim_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 50566,
+  "now": 50689,
   "segments": [
    {
     "b": 28824,
@@ -10565,8 +10564,22 @@
     "s": "faction",
     "login": null,
     "handoff": 50530,
+    "rc": 2,
+    "e": 50652,
+    "secs": 121,
+    "why": ""
+   },
+   {
+    "b": 50652,
+    "a": "fake6",
+    "s": "rank_match",
+    "login": [
+     50653,
+     50671
+    ],
+    "handoff": 50677,
     "rc": null,
-    "e": 50566
+    "e": 50689
    }
   ],
   "idle": []
@@ -10863,8 +10876,8 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 58,
-  "relogMinutes": 27.3,
+  "switches": 59,
+  "relogMinutes": 27.7,
   "retries": 16,
   "tasks": {
    "dailyclaim": {
@@ -10918,8 +10931,8 @@
     "failed": 0
    },
    "faction": {
-    "runs": 8,
-    "minutes": 13.1,
+    "runs": 9,
+    "minutes": 15.1,
     "failed": 0
    },
    "misty_woods": {
@@ -10965,6 +10978,12 @@
    "task": "faction",
    "why": "reported unavailable",
    "at": "2026-09-23T09:37:38"
+  },
+  {
+   "account": "fake5",
+   "task": "faction",
+   "why": "auto_formation, skip_retry, capped_grass, floors_grass",
+   "at": "2026-09-23T14:04:12"
   },
   {
    "account": "fake7",
@@ -11143,79 +11162,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake5",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T14:02"
-   },
-   {
     "account": "fake6",
     "task": "rank_match",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-09-23T14:04"
    },
    {
     "account": "fake6",
     "task": "sky_pillar",
-    "startsIn": 3.0,
+    "startsIn": 0.9,
     "eta": "2026-09-23T14:05"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 3.9,
+    "startsIn": 1.9,
     "eta": "2026-09-23T14:06"
    },
    {
     "account": "fake7",
     "task": "rank_match",
-    "startsIn": 5.9,
+    "startsIn": 3.9,
     "eta": "2026-09-23T14:08"
    },
    {
     "account": "fake7",
     "task": "sky_pillar",
-    "startsIn": 6.9,
+    "startsIn": 4.9,
     "eta": "2026-09-23T14:09"
    },
    {
     "account": "fake7",
     "task": "faction",
-    "startsIn": 7.8,
+    "startsIn": 5.8,
     "eta": "2026-09-23T14:10"
    },
    {
     "account": "sprite",
     "task": "rank_match",
-    "startsIn": 9.8,
+    "startsIn": 7.9,
     "eta": "2026-09-23T14:12"
    },
    {
     "account": "sprite",
     "task": "guild_war",
-    "startsIn": 10.8,
+    "startsIn": 8.8,
     "eta": "2026-09-23T14:13"
    },
    {
     "account": "sprite",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.8,
+    "startsIn": 9.8,
     "eta": "2026-09-23T14:14"
    },
    {
     "account": "sprite",
     "task": "sky_pillar",
-    "startsIn": 11.9,
+    "startsIn": 9.9,
     "eta": "2026-09-23T14:14"
    },
    {
     "account": "exou",
     "task": "rank_match",
-    "startsIn": 13.2,
-    "eta": "2026-09-23T14:15"
+    "startsIn": 11.3,
+    "eta": "2026-09-23T14:16"
+   },
+   {
+    "account": "exou",
+    "task": "guild_war",
+    "startsIn": 12.2,
+    "eta": "2026-09-23T14:17"
    }
   ],
-  "more": 29,
+  "more": 28,
   "fillers": [
    {
     "account": "smurf",
@@ -11245,12 +11264,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 60,
-   "medianSec": 17.0,
+   "n": 61,
+   "medianSec": 17,
    "picker": {
-    "n": 33,
-    "medianSec": 16,
-    "jumps": 26
+    "n": 34,
+    "medianSec": 16.0,
+    "jumps": 27
    },
    "typed": {
     "n": 0,
@@ -12452,13 +12471,13 @@
   "fake5": {
    "name": "Random77",
    "day": "2026-09-23",
-   "summary": "13 of 14 dailies done · 2 switched off",
+   "summary": "13 of 14 dailies done · 2 switched off · 1 not available today",
    "done": 13,
    "owed": 14,
    "open": [
     {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
    "issues": [
@@ -12481,7 +12500,12 @@
      "since": "2026-09-20T13:15:03"
     }
    ],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "auto_formation, skip_retry, capped_grass, floors_grass"
+    }
+   ],
    "spent": {
     "pillar proofs lost to a refusal": 1,
     "pillar/story stages cleared": 4,
