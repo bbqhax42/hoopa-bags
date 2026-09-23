@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T14:35:41.068386",
+ "generatedAt": "2026-09-23T14:37:46.621680",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "rank_match",
-  "since": "14:34:59"
+  "mode": "collect_hoopa_keys",
+  "since": "14:37:41"
  },
  "grid": {
   "tasks": [
@@ -473,10 +473,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "-",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 248,
-  "todo": 6,
+  "done": 250,
+  "todo": 4,
   "gaveUp": 11,
   "unavailable": 9,
   "windowed": 0
@@ -718,6 +718,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T14:37:40",
+   "script": "run_pvp_ranked",
+   "account": "dre",
+   "rc": 0,
+   "secs": 72,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 162,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 33,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260923_143628_run_pvp_ranked_dre"
+  },
+  {
+   "ts": "2026-09-23T14:36:27",
+   "script": "rank_match",
+   "account": "dre",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260923_143528_rank_match_dre"
+  },
   {
    "ts": "2026-09-23T14:34:59",
    "script": "weekend_bash",
@@ -7369,44 +7409,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_134551_championship_jeff"
-  },
-  {
-   "ts": "2026-09-22T13:45:50",
-   "script": "championship",
-   "account": "jeff",
-   "rc": 2,
-   "secs": 4,
-   "stats": {
-    "no_icon": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_134545_championship_jeff"
-  },
-  {
-   "ts": "2026-09-22T13:45:41",
-   "script": "guild_war",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 59,
-   "stats": {
-    "near_miss_vr_rank": 6,
-    "near_miss_last_hit": 1,
-    "marginal_last_hit": 1,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_134441_guild_war_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 52541,
+  "now": 52666,
   "segments": [
    {
     "b": 28824,
@@ -10982,8 +10990,30 @@
      52518
     ],
     "handoff": 52527,
+    "rc": 0,
+    "e": 52587,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 52587,
+    "a": "dre",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 52587,
+    "rc": 0,
+    "e": 52661,
+    "secs": 72,
+    "why": ""
+   },
+   {
+    "b": 52661,
+    "a": "dre",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 52661,
     "rc": null,
-    "e": 52541
+    "e": 52666
    }
   ],
   "idle": []
@@ -11338,8 +11368,8 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 8,
-    "minutes": 10.8,
+    "runs": 9,
+    "minutes": 12.0,
     "failed": 0
    },
    "collect_hoopa_keys": {
@@ -11388,8 +11418,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 18,
-    "minutes": 13.7,
+    "runs": 19,
+    "minutes": 14.7,
     "failed": 0
    }
   }
@@ -11615,38 +11645,26 @@
   "next": [
    {
     "account": "dre",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T14:35"
-   },
-   {
-    "account": "dre",
-    "task": "run_pvp_ranked",
-    "startsIn": 0.8,
-    "eta": "2026-09-23T14:36"
-   },
-   {
-    "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-23T14:37"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 2.2,
+    "startsIn": 0.1,
     "eta": "2026-09-23T14:37"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 3.3,
+    "startsIn": 1.2,
     "eta": "2026-09-23T14:38"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 3.7,
+    "startsIn": 1.6,
     "eta": "2026-09-23T14:39"
    }
   ],
@@ -11774,7 +11792,7 @@
    "pillar": "floor 148 stage 5"
   },
   "dre": {
-   "rank": 195,
+   "rank": 33,
    "pillar": "floor 83 stage 8",
    "mailUnread": 0,
    "paradiseStamina": "20/20"
@@ -11799,6 +11817,15 @@
   }
  },
  "ledger": {
+  "dre": {
+   "ranked attempts": 1,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "deno": {
    "pillar proofs lost to a refusal": 1,
    "pillar/story stages cleared": 2,
@@ -11943,14 +11970,6 @@
    "adventure energy": 1,
    "Home creations": 50,
    "daily claims": 1
-  },
-  "dre": {
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
   },
   "exou": {
    "Island Shop buys (200 coins)": 1,
@@ -13759,18 +13778,10 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-23",
-   "summary": "10 of 15 dailies done",
-   "done": 10,
+   "summary": "12 of 15 dailies done",
+   "done": 12,
    "owed": 15,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
     {
      "task": "hoopa",
      "state": "still to do"
@@ -13795,6 +13806,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -13803,7 +13815,7 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 195,
+    "rank": 33,
     "pillar": "floor 83 stage 8",
     "mailUnread": 0,
     "paradiseStamina": "20/20"
@@ -13841,7 +13853,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 9,
+     "done": 11,
      "failed": 1
     }
    ]
