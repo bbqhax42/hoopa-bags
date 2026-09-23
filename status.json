@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T13:42:11.726271",
+ "generatedAt": "2026-09-23T13:44:15.374758",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "rank_match",
-  "since": "13:41:17"
+  "account": "smurf",
+  "mode": "guild_war",
+  "since": "13:44:02"
  },
  "grid": {
   "tasks": [
@@ -65,9 +65,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -113,7 +113,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "·",
      "✓",
@@ -489,9 +489,9 @@
   ]
  },
  "counts": {
-  "done": 208,
-  "todo": 57,
-  "gaveUp": 6,
+  "done": 210,
+  "todo": 54,
+  "gaveUp": 7,
   "unavailable": 3,
   "windowed": 0
  },
@@ -713,11 +713,48 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-23T13:41:33.299405",
+  "label": "smurf",
+  "at": "2026-09-23T13:43:18.676663",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T13:43:00",
+   "script": "guild_war",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 15,
+   "stats": {
+    "near_miss_tips_header": 17,
+    "refused_auto_formation": 1,
+    "refused_setform_confirm": 1,
+    "gw_attempts_spent": 1,
+    "gw_no_attempts": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_134244_guild_war_jeff"
+  },
+  {
+   "ts": "2026-09-23T13:42:43",
+   "script": "rank_match",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260923_134143_rank_match_jeff"
+  },
   {
    "ts": "2026-09-23T13:41:17",
    "script": "guild_war",
@@ -7454,45 +7491,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260922_103802_faction_skosmurf"
-  },
-  {
-   "ts": "2026-09-22T10:37:58",
-   "script": "sky_pillar",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 45,
-   "stats": {
-    "stages_cleared": 1,
-    "stage_lost": 1,
-    "sky_pillar_loss": 1,
-    "sweep_presses": 4,
-    "marginal_sky_pillar": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 18,
-    "stage": 5
-   },
-   "dir": "debug_runs/20260922_103713_sky_pillar_skosmurf"
-  },
-  {
-   "ts": "2026-09-22T10:37:12",
-   "script": "collect_hoopa_keys",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_103705_collect_hoopa_keys_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 49332,
+  "now": 49455,
   "segments": [
    {
     "b": 28824,
@@ -10353,8 +10357,54 @@
      49293
     ],
     "handoff": 49303,
+    "rc": 0,
+    "e": 49363,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 49363,
+    "a": "jeff",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49364,
+    "rc": 0,
+    "e": 49380,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 49380,
+    "a": "smurf",
+    "s": "rank_match",
+    "login": [
+     49381,
+     49398
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 49332
+    "e": 49434
+   },
+   {
+    "b": 49434,
+    "a": "smurf",
+    "s": "rank_match",
+    "login": null,
+    "handoff": null,
+    "rc": null,
+    "e": 49442
+   },
+   {
+    "b": 49442,
+    "a": "smurf",
+    "s": "guild_war",
+    "login": [
+     49445,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 49455
    }
   ],
   "idle": []
@@ -10651,7 +10701,7 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 52,
+  "switches": 53,
   "relogMinutes": 23.8,
   "retries": 16,
   "tasks": {
@@ -10736,13 +10786,13 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 11,
-    "minutes": 11.7,
+    "runs": 12,
+    "minutes": 11.9,
     "failed": 0
    },
    "rank_match": {
-    "runs": 2,
-    "minutes": 1.9,
+    "runs": 3,
+    "minutes": 2.9,
     "failed": 0
    }
   }
@@ -10931,79 +10981,79 @@
  "queue": {
   "next": [
    {
-    "account": "jeff",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T13:42"
-   },
-   {
-    "account": "jeff",
-    "task": "guild_war",
-    "startsIn": 0.9,
-    "eta": "2026-09-23T13:43"
-   },
-   {
     "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 2.4,
+    "task": "guild_war",
+    "startsIn": 0.0,
     "eta": "2026-09-23T13:44"
    },
    {
-    "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 3.4,
+    "account": "fake1",
+    "task": "rank_match",
+    "startsIn": 1.4,
     "eta": "2026-09-23T13:45"
    },
    {
     "account": "fake1",
-    "task": "rank_match",
-    "startsIn": 4.8,
-    "eta": "2026-09-23T13:47"
-   },
-   {
-    "account": "fake1",
     "task": "guild_war",
-    "startsIn": 5.8,
-    "eta": "2026-09-23T13:47"
+    "startsIn": 2.4,
+    "eta": "2026-09-23T13:46"
    },
    {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 7.2,
-    "eta": "2026-09-23T13:49"
+    "startsIn": 3.8,
+    "eta": "2026-09-23T13:48"
    },
    {
     "account": "fake2",
     "task": "guild_war",
-    "startsIn": 8.2,
+    "startsIn": 4.7,
+    "eta": "2026-09-23T13:48"
+   },
+   {
+    "account": "fake3",
+    "task": "rank_match",
+    "startsIn": 6.1,
     "eta": "2026-09-23T13:50"
    },
    {
     "account": "fake3",
-    "task": "rank_match",
-    "startsIn": 9.7,
+    "task": "sky_pillar",
+    "startsIn": 7.1,
     "eta": "2026-09-23T13:51"
    },
    {
     "account": "fake3",
-    "task": "sky_pillar",
-    "startsIn": 10.6,
-    "eta": "2026-09-23T13:52"
-   },
-   {
-    "account": "fake3",
     "task": "faction",
-    "startsIn": 11.4,
-    "eta": "2026-09-23T13:53"
+    "startsIn": 7.9,
+    "eta": "2026-09-23T13:52"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 13.3,
+    "startsIn": 9.8,
+    "eta": "2026-09-23T13:54"
+   },
+   {
+    "account": "fake4",
+    "task": "sky_pillar",
+    "startsIn": 10.8,
     "eta": "2026-09-23T13:55"
+   },
+   {
+    "account": "fake4",
+    "task": "faction",
+    "startsIn": 11.6,
+    "eta": "2026-09-23T13:55"
+   },
+   {
+    "account": "fake5",
+    "task": "rank_match",
+    "startsIn": 13.5,
+    "eta": "2026-09-23T13:57"
    }
   ],
-  "more": 45,
+  "more": 42,
   "fillers": [
    {
     "account": "smurf",
@@ -11033,8 +11083,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 53,
-   "medianSec": 17,
+   "n": 54,
+   "medianSec": 17.0,
    "picker": {
     "n": 28,
     "medianSec": 16.0,
@@ -11045,19 +11095,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 25,
-    "medianSec": 18
+    "n": 26,
+    "medianSec": 18.0
    }
   }
  },
  "progress": {
-  "skosmurf": {
-   "pillar": "floor 19 stage 4",
-   "mailUnread": 0,
-   "paradiseStamina": "1/19",
-   "rank": 25,
-   "misty": "step 1"
-  },
   "lucifer1": {
    "mailUnread": 0,
    "rank": 193,
@@ -11135,6 +11178,13 @@
    "mailUnread": 0,
    "paradiseStamina": "5/15"
   },
+  "skosmurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/19",
+   "rank": 25,
+   "pillar": "floor 19 stage 4",
+   "misty": "step 1"
+  },
   "exou": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
@@ -11146,15 +11196,8 @@
   }
  },
  "ledger": {
-  "nova": {
-   "guild war attempts": 1,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "adventure energy": 1,
-   "Home creations": 50,
-   "daily claims": 1
-  },
   "jeff": {
+   "guild war attempts": 1,
    "island fights": 27,
    "pillar/story stages cleared": 3,
    "ranked attempts": 1,
@@ -11163,6 +11206,14 @@
    "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
+  },
+  "nova": {
+   "guild war attempts": 1,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "adventure energy": 1,
+   "Home creations": 50,
+   "daily claims": 1
   },
   "dre": {
    "guild war attempts": 1,
@@ -11613,18 +11664,10 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-23",
-   "summary": "14 of 17 dailies done",
-   "done": 14,
+   "summary": "16 of 17 dailies done",
+   "done": 16,
    "owed": 17,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
-    },
     {
      "task": "island",
      "state": "asks again later"
@@ -11647,6 +11690,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "island fights": 27,
     "pillar/story stages cleared": 3,
     "ranked attempts": 1,
@@ -11696,7 +11740,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 13,
+     "done": 15,
      "failed": 2
     }
    ]
@@ -11786,7 +11830,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-23",
-   "summary": "13 of 17 dailies done · gave up on misty · 2 switched off · 1 not available today",
+   "summary": "13 of 17 dailies done · gave up on victoryRank, misty · 2 switched off · 1 not available today",
    "done": 13,
    "owed": 17,
    "open": [
@@ -11796,7 +11840,7 @@
     },
     {
      "task": "victoryRank",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "guildBoss",
@@ -12771,10 +12815,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "pillar": "floor 19 stage 4",
     "mailUnread": 0,
     "paradiseStamina": "1/19",
     "rank": 25,
+    "pillar": "floor 19 stage 4",
     "misty": "step 1"
    },
    "history": [
