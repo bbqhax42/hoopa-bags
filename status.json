@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T09:24:44.284303",
+ "generatedAt": "2026-09-23T09:26:48.050273",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "misty_woods",
-  "since": "09:23:38"
+  "account": "fake1",
+  "mode": "mail",
+  "since": "09:26:47"
  },
  "grid": {
   "tasks": [
@@ -121,7 +121,7 @@
      "✓",
      "✓",
      "✗2",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -129,7 +129,7 @@
    {
     "account": "fake1",
     "cells": [
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 64,
-  "todo": 167,
+  "done": 66,
+  "todo": 165,
   "gaveUp": 4,
   "unavailable": 1,
   "windowed": 38
@@ -705,11 +705,66 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-23T09:07:37.536469",
+  "label": "fake1",
+  "at": "2026-09-23T09:26:18.173501",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T09:26:46",
+   "script": "dailyclaim",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 22,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:79 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260923_092623_dailyclaim_fake1"
+  },
+  {
+   "ts": "2026-09-23T09:26:00",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_092600_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-09-23T09:25:56",
+   "script": "misty_woods",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 132,
+   "stats": {
+    "runes_claimed": 11,
+    "battles_won": 11,
+    "fountain_taken": 4,
+    "portals": 1,
+    "near_miss_popup_close": 1,
+    "marker_seen_late": 1,
+    "probe_under_chevron": 1,
+    "no_allowed_tile": 1,
+    "incomplete": 1,
+    "wins": 11
+   },
+   "incomplete": [
+    "misty_woods: step 17 did not complete"
+   ],
+   "values": {
+    "stage": 2
+   },
+   "dir": "debug_runs/20260923_092344_misty_woods_smurf"
+  },
   {
    "ts": "2026-09-23T09:23:37",
    "script": "misty_woods",
@@ -7351,67 +7406,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_081755_collect_hoopa_keys_nova"
-  },
-  {
-   "ts": "2026-09-22T08:17:53",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 0,
-   "secs": 112,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 2,
-    "near_miss_buy_items": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 2,
-    "daily_goal_claims": 0
-   },
-   "dir": "debug_runs/20260922_081601_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-09-22T08:15:49",
-   "script": "paradise",
-   "account": "nova",
-   "rc": 0,
-   "secs": 193,
-   "stats": {
-    "marginal_paradise_hub": 1,
-    "explore_clicks": 80,
-    "shop_saved": 1,
-    "paradise_exit_unclear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "16/16"
-   },
-   "dir": "debug_runs/20260922_081235_paradise_nova"
-  },
-  {
-   "ts": "2026-09-22T08:12:33",
-   "script": "victory_road",
-   "account": "nova",
-   "rc": 0,
-   "secs": 16,
-   "stats": {
-    "near_miss_victory_road": 15,
-    "vr_badge_retap": 1,
-    "refused_victory_road_badge_retry": 1,
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_081217_victory_road_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 33884,
+  "now": 34008,
   "segments": [
    {
     "b": 28824,
@@ -8247,14 +8247,57 @@
     "login": null,
     "handoff": 33823,
     "rc": 1,
-    "e": 33884,
+    "e": 33957,
     "secs": 15,
     "why": "misty_woods: step 2 did not complete"
+   },
+   {
+    "b": 33957,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 33960,
+    "rc": 0,
+    "e": 33961,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 33961,
+    "a": "fake1",
+    "s": "dailyclaim",
+    "login": [
+     33962,
+     33978
+    ],
+    "handoff": 33983,
+    "rc": 0,
+    "e": 34007,
+    "secs": 22,
+    "why": ""
+   },
+   {
+    "b": 34007,
+    "a": "fake1",
+    "s": "mail",
+    "login": null,
+    "handoff": 34007,
+    "rc": null,
+    "e": 34008
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-23T09:25:56",
+   "account": "smurf",
+   "task": "misty_woods",
+   "rc": 1,
+   "secs": 132,
+   "why": "misty_woods: step 17 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_092344_misty_woods_smurf__KEEP_0015_092556_no_allowed_tile_17.png"
+  },
   {
    "ts": "2026-09-23T09:23:37",
    "account": "smurf",
@@ -8501,13 +8544,13 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 4,
-  "relogMinutes": 1.8,
-  "retries": 8,
+  "switches": 5,
+  "relogMinutes": 2.1,
+  "retries": 9,
   "tasks": {
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 1.9,
+    "runs": 6,
+    "minutes": 2.2,
     "failed": 0
    },
    "mail": {
@@ -8561,12 +8604,12 @@
     "failed": 0
    },
    "misty_woods": {
-    "runs": 3,
-    "minutes": 4.5,
-    "failed": 2
+    "runs": 4,
+    "minutes": 6.7,
+    "failed": 3
    },
    "weekend_bash": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 0.0,
     "failed": 0
    },
@@ -8759,79 +8802,79 @@
  "queue": {
   "next": [
    {
-    "account": "smurf",
-    "task": "weekend_bash",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T09:24"
-   },
-   {
-    "account": "fake1",
-    "task": "dailyclaim",
-    "startsIn": 0.4,
-    "eta": "2026-09-23T09:25"
-   },
-   {
     "account": "fake1",
     "task": "mail",
-    "startsIn": 0.8,
-    "eta": "2026-09-23T09:25"
-   },
-   {
-    "account": "fake1",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.8,
-    "eta": "2026-09-23T09:25"
-   },
-   {
-    "account": "fake1",
-    "task": "joint_battle",
-    "startsIn": 1.6,
+    "startsIn": 0.0,
     "eta": "2026-09-23T09:26"
    },
    {
     "account": "fake1",
+    "task": "joint_team_daily_quest",
+    "startsIn": 0.0,
+    "eta": "2026-09-23T09:26"
+   },
+   {
+    "account": "fake1",
+    "task": "joint_battle",
+    "startsIn": 0.8,
+    "eta": "2026-09-23T09:27"
+   },
+   {
+    "account": "fake1",
     "task": "daily_dungeon",
-    "startsIn": 3.6,
-    "eta": "2026-09-23T09:28"
-   },
-   {
-    "account": "fake1",
-    "task": "pokemon_home",
-    "startsIn": 3.8,
-    "eta": "2026-09-23T09:28"
-   },
-   {
-    "account": "fake1",
-    "task": "combat_daily",
-    "startsIn": 5.2,
+    "startsIn": 2.8,
     "eta": "2026-09-23T09:29"
    },
    {
     "account": "fake1",
-    "task": "victory_road",
-    "startsIn": 6.9,
+    "task": "pokemon_home",
+    "startsIn": 3.1,
+    "eta": "2026-09-23T09:29"
+   },
+   {
+    "account": "fake1",
+    "task": "combat_daily",
+    "startsIn": 4.4,
     "eta": "2026-09-23T09:31"
+   },
+   {
+    "account": "fake1",
+    "task": "victory_road",
+    "startsIn": 6.1,
+    "eta": "2026-09-23T09:32"
    },
    {
     "account": "fake1",
     "task": "paradise",
-    "startsIn": 7.0,
-    "eta": "2026-09-23T09:31"
+    "startsIn": 6.2,
+    "eta": "2026-09-23T09:33"
    },
    {
     "account": "fake1",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.5,
-    "eta": "2026-09-23T09:36"
+    "startsIn": 10.7,
+    "eta": "2026-09-23T09:37"
    },
    {
     "account": "fake1",
     "task": "sky_pillar",
-    "startsIn": 11.6,
-    "eta": "2026-09-23T09:36"
+    "startsIn": 10.8,
+    "eta": "2026-09-23T09:37"
+   },
+   {
+    "account": "fake1",
+    "task": "faction",
+    "startsIn": 11.5,
+    "eta": "2026-09-23T09:38"
+   },
+   {
+    "account": "fake2",
+    "task": "dailyclaim",
+    "startsIn": 14.0,
+    "eta": "2026-09-23T09:40"
    }
   ],
-  "more": 155,
+  "more": 153,
   "fillers": [
    {
     "account": "smurf",
@@ -8861,12 +8904,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 4,
-   "medianSec": 17.0,
+   "n": 5,
+   "medianSec": 16,
    "picker": {
-    "n": 2,
-    "medianSec": 15.5,
-    "jumps": 1
+    "n": 3,
+    "medianSec": 16,
+    "jumps": 2
    },
    "typed": {
     "n": 0,
@@ -8880,10 +8923,9 @@
  },
  "progress": {
   "nova": {
-   "paradiseStamina": "16/16",
-   "rank": 2,
    "pillar": "floor 99 stage 6",
-   "mailUnread": 0
+   "mailUnread": 0,
+   "rank": 2
   },
   "jeff": {
    "mailUnread": 0,
@@ -8903,7 +8945,8 @@
    "mailUnread": 0,
    "paradiseStamina": "0/13",
    "rank": 66,
-   "pillar": "floor 18 stage 4"
+   "pillar": "floor 18 stage 4",
+   "misty": "step 2"
   },
   "fake1": {
    "mailUnread": 0,
@@ -8982,8 +9025,11 @@
   }
  },
  "ledger": {
+  "fake1": {
+   "daily claims": 2
+  },
   "smurf": {
-   "misty battles won": 1,
+   "misty battles won": 12,
    "faction sweeps": 2,
    "pillar proofs swept": 4,
    "ranked attempts": 1,
@@ -9282,10 +9328,9 @@
     "daily claims": 1
    },
    "progress": {
-    "paradiseStamina": "16/16",
-    "rank": 2,
     "pillar": "floor 99 stage 6",
-    "mailUnread": 0
+    "mailUnread": 0,
+    "rank": 2
    },
    "history": [
     {
@@ -9505,8 +9550,8 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-23",
-   "summary": "12 of 17 dailies done · gave up on misty · 2 switched off · 1 not available today",
-   "done": 12,
+   "summary": "13 of 17 dailies done · gave up on misty · 2 switched off · 1 not available today",
+   "done": 13,
    "owed": 17,
    "open": [
     {
@@ -9524,18 +9569,14 @@
     {
      "task": "misty",
      "state": "gave up"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     }
    ],
    "issues": [
     {
      "task": "misty_woods",
-     "at": "09:23",
-     "why": "misty_woods: step 2 did not complete",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_092321_misty_woods_smurf__KEEP_0004_092337_no_allowed_tile_2.png"
+     "at": "09:25",
+     "why": "misty_woods: step 17 did not complete",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_092344_misty_woods_smurf__KEEP_0015_092556_no_allowed_tile_17.png"
     },
     {
      "task": "worldboss",
@@ -9563,7 +9604,7 @@
     }
    ],
    "spent": {
-    "misty battles won": 1,
+    "misty battles won": 12,
     "faction sweeps": 2,
     "pillar proofs swept": 4,
     "ranked attempts": 1,
@@ -9573,7 +9614,8 @@
     "mailUnread": 0,
     "paradiseStamina": "0/13",
     "rank": 66,
-    "pillar": "floor 18 stage 4"
+    "pillar": "floor 18 stage 4",
+    "misty": "step 2"
    },
    "history": [
     {
@@ -9608,22 +9650,18 @@
     },
     {
      "day": "2026-09-23",
-     "done": 12,
-     "failed": 2
+     "done": 13,
+     "failed": 3
     }
    ]
   },
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-23",
-   "summary": "0 of 14 dailies done · 2 switched off",
-   "done": 0,
+   "summary": "1 of 14 dailies done · 2 switched off",
+   "done": 1,
    "owed": 14,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
     {
      "task": "mail",
      "state": "still to do"
@@ -9698,7 +9736,9 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "daily claims": 2
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "45/15",
@@ -9737,7 +9777,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 0,
+     "done": 1,
      "failed": 1
     }
    ]
