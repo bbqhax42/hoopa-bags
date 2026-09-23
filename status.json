@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T08:20:44.313274",
+ "generatedAt": "2026-09-23T08:22:48.757264",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "joint_team_daily_quest",
-  "since": "08:20:38"
+  "mode": "joint_battle",
+  "since": "08:22:37"
  },
  "grid": {
   "tasks": [
@@ -35,7 +35,7 @@
     "cells": [
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -490,8 +490,8 @@
  },
  "counts": {
   "done": 13,
-  "todo": 221,
-  "gaveUp": 2,
+  "todo": 220,
+  "gaveUp": 3,
   "unavailable": 0,
   "windowed": 38
  },
@@ -701,6 +701,29 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T08:21:22",
+   "script": "joint_team_daily_quest",
+   "account": "nova",
+   "rc": 1,
+   "secs": 43,
+   "stats": {
+    "marginal_joint_team_daily_panel": 1,
+    "panel_swipes": 9,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1,
+    "squad_unconfirmed": 1,
+    "rows_left": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "joint_team_daily_quest: still open: upgrade squad skill once: blocked"
+   ],
+   "values": {
+    "left": "upgrade squad skill once: blocked"
+   },
+   "dir": "debug_runs/20260923_082039_joint_team_daily_quest_nova"
+  },
   {
    "ts": "2026-09-23T08:20:37",
    "script": "mail",
@@ -7326,27 +7349,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260921_201046_worldboss_fake5"
-  },
-  {
-   "ts": "2026-09-21T20:10:46",
-   "script": "worldboss",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 78,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260921_200927_worldboss_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 30044,
+  "now": 30169,
   "segments": [
    {
     "b": 28824,
@@ -7555,13 +7563,44 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 30039,
+    "rc": 1,
+    "e": 30083,
+    "secs": 43,
+    "why": "joint_team_daily_quest: still open: upgrade squad skill once: blocked"
+   },
+   {
+    "b": 30083,
+    "a": "nova",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 30084,
+    "rc": 1,
+    "e": 30157,
+    "secs": 43,
+    "why": "joint_team_daily_quest: still open: upgrade squad skill once: blocked"
+   },
+   {
+    "b": 30157,
+    "a": "nova",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": null,
     "rc": null,
-    "e": 30044
+    "e": 30169
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-23T08:21:22",
+   "account": "nova",
+   "task": "joint_team_daily_quest",
+   "rc": 1,
+   "secs": 43,
+   "why": "joint_team_daily_quest: still open: upgrade squad skill once: blocked",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_082039_joint_team_daily_quest_nova__0035_082122_close_blank__AFTER__guild_base.png"
+  },
   {
    "ts": "2026-09-23T08:18:59",
    "account": "skosmurf",
@@ -7792,7 +7831,7 @@
   "since": "2026-09-23T08:00",
   "switches": 1,
   "relogMinutes": 0.4,
-  "retries": 5,
+  "retries": 6,
   "tasks": {
    "dailyclaim": {
     "runs": 2,
@@ -7858,6 +7897,11 @@
     "runs": 1,
     "minutes": 0.0,
     "failed": 0
+   },
+   "joint_team_daily_quest": {
+    "runs": 1,
+    "minutes": 0.7,
+    "failed": 1
    }
   }
  },
@@ -8027,78 +8071,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T08:20"
-   },
-   {
-    "account": "nova",
     "task": "joint_battle",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-09-23T08:22"
    },
    {
     "account": "nova",
     "task": "daily_dungeon",
-    "startsIn": 4.0,
+    "startsIn": 2.0,
     "eta": "2026-09-23T08:24"
    },
    {
     "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 4.2,
-    "eta": "2026-09-23T08:24"
+    "startsIn": 2.2,
+    "eta": "2026-09-23T08:25"
    },
    {
     "account": "nova",
     "task": "combat_daily",
-    "startsIn": 4.5,
+    "startsIn": 2.5,
     "eta": "2026-09-23T08:25"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 6.2,
-    "eta": "2026-09-23T08:26"
+    "startsIn": 4.2,
+    "eta": "2026-09-23T08:27"
    },
    {
     "account": "nova",
     "task": "paradise",
-    "startsIn": 6.3,
+    "startsIn": 4.3,
     "eta": "2026-09-23T08:27"
    },
    {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 11.2,
-    "eta": "2026-09-23T08:31"
+    "startsIn": 9.2,
+    "eta": "2026-09-23T08:32"
    },
    {
     "account": "nova",
     "task": "collect_hoopa_keys",
-    "startsIn": 12.4,
+    "startsIn": 10.4,
     "eta": "2026-09-23T08:33"
    },
    {
     "account": "nova",
     "task": "sky_pillar",
-    "startsIn": 12.5,
+    "startsIn": 10.5,
     "eta": "2026-09-23T08:33"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 13.3,
+    "startsIn": 11.3,
     "eta": "2026-09-23T08:34"
    },
    {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 13.8,
+    "startsIn": 11.8,
+    "eta": "2026-09-23T08:34"
+   },
+   {
+    "account": "jeff",
+    "task": "mail",
+    "startsIn": 12.1,
     "eta": "2026-09-23T08:34"
    }
   ],
-  "more": 209,
+  "more": 208,
   "fillers": [
    {
     "account": "smurf",
@@ -8146,11 +8190,6 @@
   }
  },
  "progress": {
-  "fake4": {
-   "mailUnread": 0,
-   "paradiseStamina": "16/16",
-   "pillar": "floor 3 stage 10"
-  },
   "fake5": {
    "mailUnread": 0
   },
@@ -8234,6 +8273,11 @@
    "mailUnread": 0,
    "paradiseStamina": "37/17",
    "pillar": "floor 4 stage 1"
+  },
+  "fake4": {
+   "mailUnread": 0,
+   "paradiseStamina": "16/16",
+   "pillar": "floor 3 stage 10"
   },
   "nova": {
    "mailUnread": 0,
@@ -8481,13 +8525,13 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-23",
-   "summary": "2 of 15 dailies done",
+   "summary": "2 of 15 dailies done · gave up on JointQ",
    "done": 2,
    "owed": 15,
    "open": [
     {
      "task": "JointQ",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "JointB",
@@ -8540,6 +8584,12 @@
    ],
    "issues": [
     {
+     "task": "joint_team_daily_quest",
+     "at": "08:21",
+     "why": "joint_team_daily_quest: still open: upgrade squad skill once: blocked",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_082039_joint_team_daily_quest_nova__0035_082122_close_blank__AFTER__guild_base.png"
+    },
+    {
      "task": "worldboss",
      "at": "02:04",
      "why": null,
@@ -8591,7 +8641,7 @@
     {
      "day": "2026-09-23",
      "done": 2,
-     "failed": 1
+     "failed": 2
     }
    ]
   },
