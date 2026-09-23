@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T13:56:36.160356",
+ "generatedAt": "2026-09-23T13:58:39.321957",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake4",
-  "mode": "rank_match",
-  "since": "13:55:40"
+  "mode": "faction",
+  "since": "13:57:34"
  },
  "grid": {
   "tasks": [
@@ -209,12 +209,12 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
      "✓",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 218,
-  "todo": 46,
+  "done": 220,
+  "todo": 44,
   "gaveUp": 7,
   "unavailable": 3,
   "windowed": 0
@@ -718,6 +718,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T13:57:33",
+   "script": "sky_pillar",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 34,
+   "stats": {
+    "stages_cleared": 1,
+    "proofs_spent_by_refusal": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 4,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260923_135659_sky_pillar_fake4"
+  },
+  {
+   "ts": "2026-09-23T13:56:58",
+   "script": "rank_match",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260923_135603_rank_match_fake4"
+  },
   {
    "ts": "2026-09-23T13:55:39",
    "script": "faction",
@@ -7464,39 +7501,12 @@
     "quick_combat_cost": "free free"
    },
    "dir": "debug_runs/20260922_104818_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-22T10:48:12",
-   "script": "pokemon_home",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 106,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_104625_pokemon_home_lucifer1"
-  },
-  {
-   "ts": "2026-09-22T10:46:24",
-   "script": "daily_dungeon",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_104610_daily_dungeon_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 50196,
+  "now": 50319,
   "segments": [
    {
     "b": 28824,
@@ -10503,8 +10513,30 @@
      50157
     ],
     "handoff": 50163,
+    "rc": 0,
+    "e": 50218,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 50218,
+    "a": "fake4",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 50219,
+    "rc": 0,
+    "e": 50254,
+    "secs": 34,
+    "why": ""
+   },
+   {
+    "b": 50254,
+    "a": "fake4",
+    "s": "faction",
+    "login": null,
+    "handoff": 50257,
     "rc": null,
-    "e": 50196
+    "e": 50319
    }
   ],
   "idle": []
@@ -10851,8 +10883,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 8,
-    "minutes": 7.7,
+    "runs": 9,
+    "minutes": 8.2,
     "failed": 0
    },
    "faction": {
@@ -10891,8 +10923,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 6,
-    "minutes": 5.7,
+    "runs": 7,
+    "minutes": 6.6,
     "failed": 0
    }
   }
@@ -11082,78 +11114,78 @@
   "next": [
    {
     "account": "fake4",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T13:56"
-   },
-   {
-    "account": "fake4",
-    "task": "sky_pillar",
-    "startsIn": 1.0,
-    "eta": "2026-09-23T13:57"
-   },
-   {
-    "account": "fake4",
     "task": "faction",
-    "startsIn": 1.9,
+    "startsIn": 0.0,
     "eta": "2026-09-23T13:58"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 3.9,
+    "startsIn": 2.0,
     "eta": "2026-09-23T14:00"
    },
    {
     "account": "fake5",
     "task": "sky_pillar",
-    "startsIn": 4.8,
+    "startsIn": 2.9,
     "eta": "2026-09-23T14:01"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 5.8,
+    "startsIn": 3.8,
     "eta": "2026-09-23T14:02"
    },
    {
     "account": "fake6",
     "task": "rank_match",
-    "startsIn": 7.7,
+    "startsIn": 5.8,
     "eta": "2026-09-23T14:04"
    },
    {
     "account": "fake6",
     "task": "sky_pillar",
-    "startsIn": 8.7,
+    "startsIn": 6.7,
     "eta": "2026-09-23T14:05"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 9.7,
+    "startsIn": 7.6,
     "eta": "2026-09-23T14:06"
    },
    {
     "account": "fake7",
     "task": "rank_match",
-    "startsIn": 11.6,
+    "startsIn": 9.6,
     "eta": "2026-09-23T14:08"
    },
    {
     "account": "fake7",
     "task": "sky_pillar",
-    "startsIn": 12.6,
+    "startsIn": 10.5,
     "eta": "2026-09-23T14:09"
    },
    {
     "account": "fake7",
     "task": "faction",
-    "startsIn": 13.5,
+    "startsIn": 11.4,
     "eta": "2026-09-23T14:10"
+   },
+   {
+    "account": "sprite",
+    "task": "rank_match",
+    "startsIn": 13.4,
+    "eta": "2026-09-23T14:12"
+   },
+   {
+    "account": "sprite",
+    "task": "guild_war",
+    "startsIn": 14.3,
+    "eta": "2026-09-23T14:12"
    }
   ],
-  "more": 34,
+  "more": 32,
   "fillers": [
    {
     "account": "smurf",
@@ -11267,7 +11299,8 @@
   },
   "fake4": {
    "mailUnread": 0,
-   "paradiseStamina": "16/16"
+   "paradiseStamina": "16/16",
+   "pillar": "floor 4 stage 1"
   },
   "fake5": {
    "mailUnread": 0
@@ -11297,6 +11330,15 @@
   }
  },
  "ledger": {
+  "fake4": {
+   "pillar proofs lost to a refusal": 1,
+   "pillar/story stages cleared": 1,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "adventure energy": 1,
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "fake3": {
    "faction sweeps": 2,
    "pillar/story stages cleared": 5,
@@ -11401,13 +11443,6 @@
    "daily claims": 2
   },
   "fake5": {
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "adventure energy": 1,
-   "mail claimed": 1,
-   "daily claims": 2
-  },
-  "fake4": {
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "adventure energy": 1,
@@ -12302,18 +12337,10 @@
   "fake4": {
    "name": "Random32",
    "day": "2026-09-23",
-   "summary": "11 of 14 dailies done · 2 switched off",
-   "done": 11,
+   "summary": "13 of 14 dailies done · 2 switched off",
+   "done": 13,
    "owed": 14,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
-    },
     {
      "task": "fctn",
      "state": "still to do"
@@ -12341,6 +12368,8 @@
    ],
    "unavailable": [],
    "spent": {
+    "pillar proofs lost to a refusal": 1,
+    "pillar/story stages cleared": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "adventure energy": 1,
@@ -12349,7 +12378,8 @@
    },
    "progress": {
     "mailUnread": 0,
-    "paradiseStamina": "16/16"
+    "paradiseStamina": "16/16",
+    "pillar": "floor 4 stage 1"
    },
    "history": [
     {
@@ -12384,7 +12414,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 10,
+     "done": 12,
      "failed": 1
     }
    ]
