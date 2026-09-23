@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T19:09:52.591937",
+ "generatedAt": "2026-09-23T19:11:55.805197",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "exou",
+  "mode": "rank_match",
+  "since": "19:11:12"
  },
  "grid": {
   "tasks": [
@@ -113,7 +113,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "✓",
      "✓",
@@ -329,7 +329,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✓",
      "⏰",
      "-",
@@ -490,8 +490,8 @@
  },
  "counts": {
   "done": 252,
-  "todo": 2,
-  "gaveUp": 8,
+  "todo": 0,
+  "gaveUp": 10,
   "unavailable": 9,
   "windowed": 3
  },
@@ -713,11 +713,28 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-23T19:09:06.694100",
+  "label": "exou",
+  "at": "2026-09-23T19:11:32.183246",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T19:11:12",
+   "script": "rank_match",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 20,
+   "stats": {
+    "vr_badge_retap": 1,
+    "vr_not_open": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "rank_match: the Rank screen never opened"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260923_191052_rank_match_smurf"
+  },
   {
    "ts": "2026-09-23T18:50:38",
    "script": "island_challenge",
@@ -7347,23 +7364,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_142452_guild_war_fake7"
-  },
-  {
-   "ts": "2026-09-22T14:24:51",
-   "script": "rank_match",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_142451_rank_match_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 68992,
+  "now": 69116,
   "segments": [
    {
     "b": 28824,
@@ -12940,7 +12946,7 @@
     ],
     "handoff": 62249,
     "rc": null,
-    "e": 68992,
+    "e": 69116,
     "secs": 176,
     "why": ""
    }
@@ -12953,6 +12959,15 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-23T19:11:12",
+   "account": "smurf",
+   "task": "rank_match",
+   "rc": 1,
+   "secs": 20,
+   "why": "rank_match: the Rank screen never opened",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_191052_rank_match_smurf__KEEP_0007_191112_no_victory_road.png"
+  },
   {
    "ts": "2026-09-23T14:38:32",
    "account": "dre",
@@ -13298,9 +13313,9 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 235,
-  "relogMinutes": 51.8,
-  "retries": 27,
+  "switches": 236,
+  "relogMinutes": 54.3,
+  "retries": 28,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -13388,9 +13403,9 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 19,
-    "minutes": 14.7,
-    "failed": 0
+    "runs": 20,
+    "minutes": 15.1,
+    "failed": 1
    }
   }
  },
@@ -13524,14 +13539,14 @@
    "last_run_actions": 42
   },
   "smurf": {
-   "energy": 48,
+   "energy": 1,
    "needs": 45,
    "cost": 2,
-   "observed_at": "2026-09-23T19:09:16.491872",
-   "runs": 306,
+   "observed_at": "2026-09-23T19:10:48.819627",
+   "runs": 307,
    "cooldown_until": "2026-09-19T03:31:44.083957",
    "kicks": 1,
-   "last_run_actions": 24
+   "last_run_actions": 6
   },
   "nova": {
    "energy": 1,
@@ -13642,20 +13657,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 0.4,
-    "eta": "2026-09-23T19:10"
-   },
-   {
-    "account": "exou",
-    "task": "rank_match",
-    "startsIn": 1.6,
-    "eta": "2026-09-23T19:11"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [],
   "held": {}
@@ -13665,8 +13667,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 115,
-   "medianSec": 17,
+   "n": 116,
+   "medianSec": 17.5,
    "picker": {
     "n": 51,
     "medianSec": 16,
@@ -13677,8 +13679,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 64,
-    "medianSec": 19.0
+    "n": 65,
+    "medianSec": 19
    }
   }
  },
@@ -14457,7 +14459,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-23",
-   "summary": "14 of 17 dailies done · gave up on misty · 2 switched off · 2 not available today",
+   "summary": "14 of 17 dailies done · gave up on victoryRank, misty · 2 switched off · 2 not available today",
    "done": 14,
    "owed": 17,
    "open": [
@@ -14467,7 +14469,7 @@
     },
     {
      "task": "victoryRank",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "misty",
@@ -14475,6 +14477,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "rank_match",
+     "at": "19:11",
+     "why": "rank match: the Rank screen never opened",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_191052_rank_match_smurf__KEEP_0007_191112_no_victory_road.png"
+    },
     {
      "task": "misty_woods",
      "at": "09:25",
@@ -14558,7 +14566,7 @@
     {
      "day": "2026-09-23",
      "done": 14,
-     "failed": 3
+     "failed": 4
     }
    ]
   },
@@ -15267,13 +15275,13 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-23",
-   "summary": "8 of 11 dailies done",
+   "summary": "8 of 11 dailies done · gave up on victoryRank",
    "done": 8,
    "owed": 11,
    "open": [
     {
      "task": "victoryRank",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "guildBoss",
