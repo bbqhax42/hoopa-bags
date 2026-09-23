@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T15:39:35.431398",
+ "generatedAt": "2026-09-23T15:41:38.783597",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "jeff",
   "mode": "hoopa",
-  "since": "15:34:05"
+  "since": "15:40:43"
  },
  "grid": {
   "tasks": [
@@ -664,8 +664,8 @@
    "at": "2026-09-21T14:25:52"
   },
   "nova": {
-   "keys": 5,
-   "at": "2026-09-23T11:52:47"
+   "keys": 0,
+   "at": "2026-09-23T15:40:38"
   },
   "fake6": {
    "keys": 79,
@@ -713,11 +713,27 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-23T15:34:25.441698",
+  "label": "jeff",
+  "at": "2026-09-23T15:40:57.581445",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T15:40:39",
+   "script": "hoopa",
+   "account": "nova",
+   "rc": 2,
+   "secs": 358,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-23T15:34:01",
    "script": "hoopa",
@@ -7365,33 +7381,12 @@
     "rank_rewards": 1
    },
    "dir": "debug_runs/20260922_135713_rank_match_fake4"
-  },
-  {
-   "ts": "2026-09-22T13:56:49",
-   "script": "guild_war",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 63,
-   "stats": {
-    "near_miss_vr_rank": 3,
-    "marginal_last_hit": 5,
-    "near_miss_last_hit": 2,
-    "refused_battle_skip": 1,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1,
-    "assist_refill": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_135545_guild_war_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 56375,
+  "now": 56499,
   "segments": [
    {
     "b": 28824,
@@ -11211,8 +11206,22 @@
      56065
     ],
     "handoff": 56080,
+    "rc": 2,
+    "e": 56443,
+    "secs": 358,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 56443,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": [
+     56444,
+     56457
+    ],
+    "handoff": 56469,
     "rc": null,
-    "e": 56375
+    "e": 56499
    }
   ],
   "idle": []
@@ -11563,8 +11572,8 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 82,
-  "relogMinutes": 42.5,
+  "switches": 83,
+  "relogMinutes": 42.9,
   "retries": 24,
   "tasks": {
    "dailyclaim": {
@@ -11701,6 +11710,12 @@
    "task": "rank_match",
    "why": "near_miss_go_button, rank_locked",
    "at": "2026-09-23T14:08:50"
+  },
+  {
+   "account": "nova",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-23T15:40:39"
   },
   {
    "account": "smurf",
@@ -11897,10 +11912,6 @@
    {
     "account": "jeff",
     "mode": "hoopa"
-   },
-   {
-    "account": "nova",
-    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -11910,11 +11921,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 87,
-   "medianSec": 17,
+   "n": 88,
+   "medianSec": 17.0,
    "picker": {
-    "n": 43,
-    "medianSec": 16,
+    "n": 44,
+    "medianSec": 16.0,
     "jumps": 32
    },
    "typed": {
@@ -12446,7 +12457,7 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-23",
-   "summary": "14 of 15 dailies done · gave up on JointQ",
+   "summary": "14 of 15 dailies done · gave up on JointQ · 1 not available today",
    "done": 14,
    "owed": 15,
    "open": [
@@ -12470,7 +12481,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {
     "guild war attempts": 1,
     "ranked attempts": 1,
