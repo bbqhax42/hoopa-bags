@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T13:50:25.773174",
+ "generatedAt": "2026-09-23T13:52:29.317100",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "rank_match",
-  "since": "13:50:19"
+  "mode": "sky_pillar",
+  "since": "13:51:39"
  },
  "grid": {
   "tasks": [
@@ -185,7 +185,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 215,
-  "todo": 49,
+  "done": 216,
+  "todo": 48,
   "gaveUp": 7,
   "unavailable": 3,
   "windowed": 0
@@ -713,11 +713,31 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-23T13:48:16.556221",
+  "label": "fake3",
+  "at": "2026-09-23T13:50:36.997526",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T13:51:38",
+   "script": "rank_match",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "skip_tapped": 8,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260923_135042_rank_match_fake3"
+  },
   {
    "ts": "2026-09-23T13:50:19",
    "script": "guild_war",
@@ -7474,30 +7494,12 @@
     "fights_today": 3
    },
    "dir": "debug_runs/20260922_104433_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-22T10:44:02",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 30,
-   "stats": {
-    "fights": 2,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 22,
-    "fights_today": 3
-   },
-   "dir": "debug_runs/20260922_104331_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 49826,
+  "now": 49949,
   "segments": [
    {
     "b": 28824,
@@ -10465,11 +10467,22 @@
     "s": "rank_match",
     "login": [
      49820,
-     null
+     49836
     ],
-    "handoff": null,
+    "handoff": 49841,
+    "rc": 0,
+    "e": 49899,
+    "secs": 56,
+    "why": ""
+   },
+   {
+    "b": 49899,
+    "a": "fake3",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 49899,
     "rc": null,
-    "e": 49826
+    "e": 49949
    }
   ],
   "idle": []
@@ -10767,7 +10780,7 @@
  "day": {
   "since": "2026-09-23T08:00",
   "switches": 56,
-  "relogMinutes": 26.1,
+  "relogMinutes": 26.5,
   "retries": 16,
   "tasks": {
    "dailyclaim": {
@@ -10856,8 +10869,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 5,
-    "minutes": 4.7,
+    "runs": 6,
+    "minutes": 5.7,
     "failed": 0
    }
   }
@@ -11047,78 +11060,78 @@
   "next": [
    {
     "account": "fake3",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T13:50"
-   },
-   {
-    "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 0.9,
-    "eta": "2026-09-23T13:51"
-   },
-   {
-    "account": "fake3",
-    "task": "faction",
-    "startsIn": 1.8,
+    "startsIn": 0.0,
     "eta": "2026-09-23T13:52"
    },
    {
+    "account": "fake3",
+    "task": "faction",
+    "startsIn": 0.8,
+    "eta": "2026-09-23T13:53"
+   },
+   {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 3.6,
-    "eta": "2026-09-23T13:54"
+    "startsIn": 2.7,
+    "eta": "2026-09-23T13:55"
    },
    {
     "account": "fake4",
     "task": "sky_pillar",
-    "startsIn": 4.6,
-    "eta": "2026-09-23T13:55"
+    "startsIn": 3.7,
+    "eta": "2026-09-23T13:56"
    },
    {
     "account": "fake4",
     "task": "faction",
-    "startsIn": 5.4,
-    "eta": "2026-09-23T13:55"
+    "startsIn": 4.5,
+    "eta": "2026-09-23T13:56"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 7.3,
-    "eta": "2026-09-23T13:57"
-   },
-   {
-    "account": "fake5",
-    "task": "sky_pillar",
-    "startsIn": 8.2,
+    "startsIn": 6.4,
     "eta": "2026-09-23T13:58"
    },
    {
     "account": "fake5",
-    "task": "faction",
-    "startsIn": 9.1,
+    "task": "sky_pillar",
+    "startsIn": 7.3,
     "eta": "2026-09-23T13:59"
+   },
+   {
+    "account": "fake5",
+    "task": "faction",
+    "startsIn": 8.2,
+    "eta": "2026-09-23T14:00"
    },
    {
     "account": "fake6",
     "task": "rank_match",
-    "startsIn": 10.9,
-    "eta": "2026-09-23T14:01"
-   },
-   {
-    "account": "fake6",
-    "task": "sky_pillar",
-    "startsIn": 11.9,
+    "startsIn": 10.0,
     "eta": "2026-09-23T14:02"
    },
    {
     "account": "fake6",
-    "task": "faction",
-    "startsIn": 12.7,
+    "task": "sky_pillar",
+    "startsIn": 11.0,
     "eta": "2026-09-23T14:03"
+   },
+   {
+    "account": "fake6",
+    "task": "faction",
+    "startsIn": 11.8,
+    "eta": "2026-09-23T14:04"
+   },
+   {
+    "account": "fake7",
+    "task": "rank_match",
+    "startsIn": 13.7,
+    "eta": "2026-09-23T14:06"
    }
   ],
-  "more": 37,
+  "more": 36,
   "fillers": [
    {
     "account": "smurf",
@@ -11148,12 +11161,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 57,
-   "medianSec": 17,
+   "n": 58,
+   "medianSec": 17.0,
    "picker": {
-    "n": 30,
-    "medianSec": 16.0,
-    "jumps": 23
+    "n": 31,
+    "medianSec": 16,
+    "jumps": 24
    },
    "typed": {
     "n": 0,
@@ -11166,13 +11179,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 6,
-   "islandStamina": 2,
-   "mailUnread": 0,
-   "rank": 15,
-   "pillar": "floor 148 stage 5"
-  },
   "chris": {
    "islandFights": 3,
    "islandStamina": 1,
@@ -11207,6 +11213,13 @@
    "paradiseStamina": "20/20",
    "rank": 195,
    "pillar": "floor 83 stage 8"
+  },
+  "jeff": {
+   "islandFights": 6,
+   "islandStamina": 2,
+   "mailUnread": 0,
+   "rank": 15,
+   "pillar": "floor 148 stage 5"
   },
   "nova": {
    "mailUnread": 0,
@@ -12175,17 +12188,13 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-23",
-   "summary": "10 of 14 dailies done · gave up on claims · 2 switched off",
-   "done": 10,
+   "summary": "11 of 14 dailies done · gave up on claims · 2 switched off",
+   "done": 11,
    "owed": 14,
    "open": [
     {
      "task": "claims",
      "state": "gave up"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
     },
     {
      "task": "pillar",
@@ -12265,7 +12274,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 9,
+     "done": 10,
      "failed": 1
     }
    ]
