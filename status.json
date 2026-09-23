@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T14:29:30.559392",
+ "generatedAt": "2026-09-23T14:31:34.003838",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
-  "mode": "sky_pillar",
-  "since": "14:29:02"
+  "account": "deno",
+  "mode": "rank_match",
+  "since": "14:31:21"
  },
  "grid": {
   "tasks": [
@@ -430,8 +430,8 @@
      "✓",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "-",
      "-",
@@ -489,10 +489,10 @@
   ]
  },
  "counts": {
-  "done": 243,
-  "todo": 13,
+  "done": 244,
+  "todo": 11,
   "gaveUp": 10,
-  "unavailable": 8,
+  "unavailable": 9,
   "windowed": 0
  },
  "disabled": [
@@ -718,6 +718,44 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T14:31:20",
+   "script": "faction",
+   "account": "test1",
+   "rc": 2,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_143120_faction_test1"
+  },
+  {
+   "ts": "2026-09-23T14:31:19",
+   "script": "faction",
+   "account": "test1",
+   "rc": 2,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_143119_faction_test1"
+  },
+  {
+   "ts": "2026-09-23T14:31:15",
+   "script": "sky_pillar",
+   "account": "test1",
+   "rc": 0,
+   "secs": 132,
+   "stats": {
+    "stages_cleared": 3
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 4,
+    "stage": 6
+   },
+   "dir": "debug_runs/20260923_142902_sky_pillar_test1"
+  },
   {
    "ts": "2026-09-23T14:29:01",
    "script": "rank_match",
@@ -7373,65 +7411,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_113142_victory_road_dre"
-  },
-  {
-   "ts": "2026-09-22T11:31:41",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 0,
-   "secs": 111,
-   "stats": {
-    "title_reread_named": 2,
-    "near_miss_afk_rewards": 2,
-    "marginal_afk_rewards": 2,
-    "near_miss_go_button": 2,
-    "near_miss_vr_rank": 5,
-    "marginal_adventure_event": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 +) a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260922_112949_combat_daily_dre"
-  },
-  {
-   "ts": "2026-09-22T11:29:44",
-   "script": "pokemon_home",
-   "account": "dre",
-   "rc": 0,
-   "secs": 91,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "merge_moved_instead": 3,
-    "pair_went_stale": 4,
-    "ball_tiles_not_merged": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_112813_pokemon_home_dre"
-  },
-  {
-   "ts": "2026-09-22T11:28:12",
-   "script": "daily_dungeon",
-   "account": "dre",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_112758_daily_dungeon_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 52170,
+  "now": 52294,
   "segments": [
    {
     "b": 28824,
@@ -10902,8 +10887,44 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 52142,
+    "rc": 0,
+    "e": 52276,
+    "secs": 132,
+    "why": ""
+   },
+   {
+    "b": 52276,
+    "a": "test1",
+    "s": "faction",
+    "login": null,
+    "handoff": 52279,
+    "rc": 2,
+    "e": 52280,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 52280,
+    "a": "test1",
+    "s": "faction",
+    "login": null,
+    "handoff": 52280,
+    "rc": 2,
+    "e": 52281,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 52281,
+    "a": "deno",
+    "s": "rank_match",
+    "login": [
+     52281,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 52170
+    "e": 52294
    }
   ],
   "idle": []
@@ -11200,7 +11221,7 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 66,
+  "switches": 67,
   "relogMinutes": 35.1,
   "retries": 16,
   "tasks": {
@@ -11250,12 +11271,12 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 16,
-    "minutes": 16.4,
+    "runs": 17,
+    "minutes": 18.6,
     "failed": 0
    },
    "faction": {
-    "runs": 13,
+    "runs": 15,
     "minutes": 15.1,
     "failed": 0
    },
@@ -11338,6 +11359,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "test1",
+   "task": "faction",
+   "why": "reported unavailable",
+   "at": "2026-09-23T14:31:20"
   },
   {
    "account": "test1",
@@ -11510,79 +11537,73 @@
  "queue": {
   "next": [
    {
-    "account": "test1",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T14:29"
-   },
-   {
-    "account": "test1",
-    "task": "faction",
-    "startsIn": 1.0,
-    "eta": "2026-09-23T14:30"
-   },
-   {
     "account": "deno",
     "task": "rank_match",
-    "startsIn": 2.6,
-    "eta": "2026-09-23T14:32"
+    "startsIn": 0.0,
+    "eta": "2026-09-23T14:31"
    },
    {
     "account": "deno",
     "task": "run_pvp_ranked",
-    "startsIn": 3.3,
+    "startsIn": 0.8,
     "eta": "2026-09-23T14:32"
    },
    {
     "account": "deno",
     "task": "collect_hoopa_keys",
-    "startsIn": 4.7,
-    "eta": "2026-09-23T14:34"
+    "startsIn": 2.1,
+    "eta": "2026-09-23T14:33"
    },
    {
     "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 4.8,
-    "eta": "2026-09-23T14:34"
+    "startsIn": 2.2,
+    "eta": "2026-09-23T14:33"
    },
    {
     "account": "deno",
     "task": "weekend_bash",
-    "startsIn": 5.8,
-    "eta": "2026-09-23T14:35"
+    "startsIn": 3.3,
+    "eta": "2026-09-23T14:34"
    },
    {
     "account": "dre",
     "task": "rank_match",
-    "startsIn": 6.2,
+    "startsIn": 3.7,
     "eta": "2026-09-23T14:35"
    },
    {
     "account": "dre",
     "task": "run_pvp_ranked",
-    "startsIn": 7.0,
+    "startsIn": 4.5,
     "eta": "2026-09-23T14:36"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.4,
+    "startsIn": 5.9,
     "eta": "2026-09-23T14:37"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 8.5,
-    "eta": "2026-09-23T14:38"
+    "startsIn": 6.0,
+    "eta": "2026-09-23T14:37"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 9.5,
+    "startsIn": 7.1,
+    "eta": "2026-09-23T14:38"
+   },
+   {
+    "account": "chris",
+    "task": "guild_war",
+    "startsIn": 7.5,
     "eta": "2026-09-23T14:39"
    }
   ],
-  "more": 1,
+  "more": 0,
   "fillers": [
    {
     "account": "smurf",
@@ -11726,10 +11747,19 @@
    "pillar": "floor 2 stage 6"
   },
   "test1": {
-   "mailUnread": 0
+   "mailUnread": 0,
+   "pillar": "floor 4 stage 6"
   }
  },
  "ledger": {
+  "test1": {
+   "pillar/story stages cleared": 3,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 46,
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "lucifer2": {
    "pillar/story stages cleared": 3,
    "ranked attempts": 1,
@@ -11871,13 +11901,6 @@
    "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
-  },
-  "test1": {
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 46,
-   "mail claimed": 1,
-   "daily claims": 2
   },
   "exou": {
    "Island Shop buys (200 coins)": 1,
@@ -13507,8 +13530,8 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-23",
-   "summary": "11 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 11,
+   "summary": "12 of 14 dailies done · 2 switched off · 2 not available today",
+   "done": 12,
    "owed": 14,
    "open": [
     {
@@ -13516,12 +13539,8 @@
      "state": "not available today"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
    "issues": [
@@ -13546,11 +13565,16 @@
    ],
    "unavailable": [
     {
+     "task": "faction",
+     "why": "reported unavailable"
+    },
+    {
      "task": "rank_match",
      "why": "near_miss_go_button, rank_locked"
     }
    ],
    "spent": {
+    "pillar/story stages cleared": 3,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 46,
@@ -13558,7 +13582,8 @@
     "daily claims": 2
    },
    "progress": {
-    "mailUnread": 0
+    "mailUnread": 0,
+    "pillar": "floor 4 stage 6"
    },
    "history": [
     {
@@ -13593,7 +13618,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 11,
+     "done": 12,
      "failed": 1
     }
    ]
