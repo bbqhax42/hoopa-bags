@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T15:33:24.950480",
+ "generatedAt": "2026-09-23T15:35:28.358020",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "15:30:44"
+  "since": "15:34:05"
  },
  "grid": {
   "tasks": [
@@ -652,8 +652,8 @@
    "at": "2026-09-23T12:26:40"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-23T12:20:10"
+   "keys": 0,
+   "at": "2026-09-23T15:34:00"
   },
   "lucifer1": {
    "keys": 340,
@@ -713,11 +713,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-23T15:31:03.026090",
+  "label": "nova",
+  "at": "2026-09-23T15:34:25.441698",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T15:34:01",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 167,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-23T14:46:27",
    "script": "island_challenge",
@@ -7370,33 +7386,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_135545_guild_war_fake3"
-  },
-  {
-   "ts": "2026-09-22T13:55:44",
-   "script": "rank_match",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 8,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260922_135448_rank_match_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 56005,
+  "now": 56128,
   "segments": [
    {
     "b": 28824,
@@ -11202,8 +11197,22 @@
      55863
     ],
     "handoff": 55873,
+    "rc": 2,
+    "e": 56045,
+    "secs": 167,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 56045,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     56046,
+     56065
+    ],
+    "handoff": 56080,
     "rc": null,
-    "e": 56005
+    "e": 56128
    }
   ],
   "idle": []
@@ -11554,8 +11563,8 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 81,
-  "relogMinutes": 41.9,
+  "switches": 82,
+  "relogMinutes": 42.5,
   "retries": 24,
   "tasks": {
    "dailyclaim": {
@@ -11651,6 +11660,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-23T15:34:01"
+  },
   {
    "account": "fake1",
    "task": "faction",
@@ -11880,10 +11895,6 @@
     "mode": "rift"
    },
    {
-    "account": "chris",
-    "mode": "hoopa"
-   },
-   {
     "account": "jeff",
     "mode": "hoopa"
    },
@@ -11899,12 +11910,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 86,
-   "medianSec": 17.0,
+   "n": 87,
+   "medianSec": 17,
    "picker": {
-    "n": 42,
-    "medianSec": 16.0,
-    "jumps": 31
+    "n": 43,
+    "medianSec": 16,
+    "jumps": 32
    },
    "typed": {
     "n": 0,
@@ -11917,10 +11928,6 @@
   }
  },
  "progress": {
-  "fake3": {
-   "mailUnread": 0,
-   "pillar": "floor 4 stage 6"
-  },
   "fake4": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
@@ -12006,6 +12013,10 @@
   "fake2": {
    "mailUnread": 0,
    "pillar": "floor 4 stage 1"
+  },
+  "fake3": {
+   "mailUnread": 0,
+   "pillar": "floor 4 stage 6"
   },
   "fake7": {
    "mailUnread": 0,
@@ -12597,7 +12608,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-23",
-   "summary": "17 of 18 dailies done",
+   "summary": "17 of 18 dailies done · 1 not available today",
    "done": 17,
    "owed": 18,
    "open": [
@@ -12615,7 +12626,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {
     "island fights": 29,
     "guild war attempts": 1,
