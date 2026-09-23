@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T11:30:24.824307",
+ "generatedAt": "2026-09-23T11:32:28.025685",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "dailyclaim",
-  "since": "11:30:00"
+  "mode": "joint_battle",
+  "since": "11:31:46"
  },
  "grid": {
   "tasks": [
@@ -441,10 +441,10 @@
    {
     "account": "deno",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 177,
-  "todo": 50,
+  "done": 181,
+  "todo": 46,
   "gaveUp": 6,
   "unavailable": 3,
   "windowed": 38
@@ -718,6 +718,57 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T11:31:45",
+   "script": "joint_team_daily_quest",
+   "account": "deno",
+   "rc": 0,
+   "secs": 44,
+   "stats": {
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1,
+    "panel_swipes": 6,
+    "squad_unconfirmed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_113101_joint_team_daily_quest_deno"
+  },
+  {
+   "ts": "2026-09-23T11:31:00",
+   "script": "mail",
+   "account": "deno",
+   "rc": 0,
+   "secs": 2,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 3,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260923_113057_mail_deno"
+  },
+  {
+   "ts": "2026-09-23T11:30:55",
+   "script": "dailyclaim",
+   "account": "deno",
+   "rc": 0,
+   "secs": 25,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:77 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260923_113030_dailyclaim_deno"
+  },
   {
    "ts": "2026-09-23T11:29:59",
    "script": "collect_hoopa_keys",
@@ -7402,62 +7453,12 @@
     "stage": 3
    },
    "dir": "debug_runs/20260922_100916_sky_pillar_fake6"
-  },
-  {
-   "ts": "2026-09-22T10:09:15",
-   "script": "collect_hoopa_keys",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_100907_collect_hoopa_keys_fake6"
-  },
-  {
-   "ts": "2026-09-22T10:09:06",
-   "script": "paradise",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 201,
-   "stats": {
-    "marginal_paradise_hub": 4,
-    "explore_clicks": 102,
-    "pass_claims": 5,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 1,
-    "upgraded_sports_gloves": 1,
-    "dex_milestones": 3,
-    "dex_activated": 6,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "1/17"
-   },
-   "dir": "debug_runs/20260922_100545_paradise_fake6"
-  },
-  {
-   "ts": "2026-09-22T10:05:43",
-   "script": "victory_road",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_100535_victory_road_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 41425,
+  "now": 41548,
   "segments": [
    {
     "b": 28824,
@@ -9699,9 +9700,42 @@
      41400,
      41420
     ],
-    "handoff": null,
+    "handoff": 41430,
+    "rc": 0,
+    "e": 41456,
+    "secs": 25,
+    "why": ""
+   },
+   {
+    "b": 41456,
+    "a": "deno",
+    "s": "mail",
+    "login": null,
+    "handoff": 41456,
+    "rc": 0,
+    "e": 41460,
+    "secs": 2,
+    "why": ""
+   },
+   {
+    "b": 41460,
+    "a": "deno",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 41460,
+    "rc": 0,
+    "e": 41506,
+    "secs": 44,
+    "why": ""
+   },
+   {
+    "b": 41506,
+    "a": "deno",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 41508,
     "rc": null,
-    "e": 41425
+    "e": 41548
    }
   ],
   "idle": []
@@ -9999,17 +10033,17 @@
  "day": {
   "since": "2026-09-23T08:00",
   "switches": 19,
-  "relogMinutes": 8.8,
+  "relogMinutes": 9.2,
   "retries": 15,
   "tasks": {
    "dailyclaim": {
-    "runs": 16,
-    "minutes": 6.4,
+    "runs": 17,
+    "minutes": 6.9,
     "failed": 0
    },
    "mail": {
-    "runs": 17,
-    "minutes": 0.8,
+    "runs": 18,
+    "minutes": 0.9,
     "failed": 0
    },
    "daily_dungeon": {
@@ -10068,8 +10102,8 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 15,
-    "minutes": 11.9,
+    "runs": 16,
+    "minutes": 12.6,
     "failed": 3
    },
    "island_challenge": {
@@ -10269,78 +10303,78 @@
   "next": [
    {
     "account": "deno",
-    "task": "dailyclaim",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T11:30"
-   },
-   {
-    "account": "deno",
-    "task": "mail",
-    "startsIn": 0.4,
-    "eta": "2026-09-23T11:30"
-   },
-   {
-    "account": "deno",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.4,
-    "eta": "2026-09-23T11:30"
-   },
-   {
-    "account": "deno",
-    "task": "joint_battle",
-    "startsIn": 1.2,
-    "eta": "2026-09-23T11:31"
-   },
-   {
-    "account": "deno",
     "task": "daily_dungeon",
-    "startsIn": 3.2,
-    "eta": "2026-09-23T11:33"
+    "startsIn": 0.0,
+    "eta": "2026-09-23T11:32"
    },
    {
     "account": "deno",
     "task": "pokemon_home",
-    "startsIn": 3.5,
-    "eta": "2026-09-23T11:33"
+    "startsIn": 0.3,
+    "eta": "2026-09-23T11:32"
    },
    {
     "account": "deno",
     "task": "combat_daily",
-    "startsIn": 4.3,
-    "eta": "2026-09-23T11:34"
+    "startsIn": 1.1,
+    "eta": "2026-09-23T11:33"
    },
    {
     "account": "deno",
     "task": "victory_road",
-    "startsIn": 6.1,
-    "eta": "2026-09-23T11:36"
+    "startsIn": 2.9,
+    "eta": "2026-09-23T11:35"
    },
    {
     "account": "deno",
     "task": "paradise",
-    "startsIn": 6.2,
-    "eta": "2026-09-23T11:36"
+    "startsIn": 3.0,
+    "eta": "2026-09-23T11:35"
    },
    {
     "account": "deno",
     "task": "run_pvp_ranked",
-    "startsIn": 10.3,
-    "eta": "2026-09-23T11:40"
+    "startsIn": 7.0,
+    "eta": "2026-09-23T11:39"
    },
    {
     "account": "deno",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.7,
-    "eta": "2026-09-23T11:42"
+    "startsIn": 8.5,
+    "eta": "2026-09-23T11:40"
    },
    {
     "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 11.8,
+    "startsIn": 8.6,
+    "eta": "2026-09-23T11:41"
+   },
+   {
+    "account": "deno",
+    "task": "weekend_bash",
+    "startsIn": 9.4,
+    "eta": "2026-09-23T11:41"
+   },
+   {
+    "account": "lucifer1",
+    "task": "run_pvp_ranked",
+    "startsIn": 9.8,
     "eta": "2026-09-23T11:42"
+   },
+   {
+    "account": "lucifer1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 11.3,
+    "eta": "2026-09-23T11:43"
+   },
+   {
+    "account": "lucifer1",
+    "task": "sky_pillar",
+    "startsIn": 11.4,
+    "eta": "2026-09-23T11:43"
    }
   ],
-  "more": 38,
+  "more": 34,
   "fillers": [
    {
     "account": "smurf",
@@ -10389,7 +10423,6 @@
  },
  "progress": {
   "fake6": {
-   "paradiseStamina": "1/17",
    "pillar": "floor 4 stage 3",
    "mailUnread": 0
   },
@@ -10486,6 +10519,11 @@
   }
  },
  "ledger": {
+  "deno": {
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "test1": {
    "Island Shop buys (200 coins)": 1,
    "Home creations": 46,
@@ -11741,7 +11779,6 @@
     "daily claims": 2
    },
    "progress": {
-    "paradiseStamina": "1/17",
     "pillar": "floor 4 stage 3",
     "mailUnread": 0
    },
@@ -12443,26 +12480,10 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-23",
-   "summary": "0 of 15 dailies done",
-   "done": 0,
+   "summary": "4 of 15 dailies done",
+   "done": 4,
    "owed": 15,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
     {
      "task": "dungeon",
      "state": "still to do"
@@ -12518,7 +12539,11 @@
    ],
    "off": [],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 3,
+    "Privilege Pack claimed": 1
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "16/16",
@@ -12558,7 +12583,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 0,
+     "done": 3,
      "failed": 1
     }
    ]
