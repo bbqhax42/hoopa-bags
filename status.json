@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T16:00:27.689766",
+ "generatedAt": "2026-09-23T16:02:31.051908",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "hoopa",
-  "since": "15:56:17"
+  "account": "skosmurf",
+  "mode": "rift",
+  "since": "16:02:23"
  },
  "grid": {
   "tasks": [
@@ -648,8 +648,8 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 5,
-   "at": "2026-09-23T12:26:40"
+   "keys": 0,
+   "at": "2026-09-23T16:01:50"
   },
   "chris": {
    "keys": 0,
@@ -713,11 +713,27 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-23T15:56:31.168551",
+  "label": "smurf",
+  "at": "2026-09-23T16:02:15.299549",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T16:01:51",
+   "script": "hoopa",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 310,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-23T15:40:39",
    "script": "hoopa",
@@ -7360,33 +7376,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_135810_guild_war_fake4"
-  },
-  {
-   "ts": "2026-09-22T13:58:09",
-   "script": "rank_match",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 55,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 1
-   },
-   "dir": "debug_runs/20260922_135713_rank_match_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 57627,
+  "now": 57751,
   "segments": [
    {
     "b": 28824,
@@ -11256,8 +11251,34 @@
      57391
     ],
     "handoff": 57401,
+    "rc": 2,
+    "e": 57716,
+    "secs": 310,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 57716,
+    "a": "smurf",
+    "s": "rift",
+    "login": [
+     57716,
+     57735
+    ],
+    "handoff": 57742,
     "rc": null,
-    "e": 57627
+    "e": 57743
+   },
+   {
+    "b": 57743,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     57743,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 57751
    }
   ],
   "idle": []
@@ -11608,8 +11629,8 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 86,
-  "relogMinutes": 44.2,
+  "switches": 88,
+  "relogMinutes": 44.7,
   "retries": 24,
   "tasks": {
    "dailyclaim": {
@@ -11746,6 +11767,12 @@
    "task": "rank_match",
    "why": "near_miss_go_button, rank_locked",
    "at": "2026-09-23T14:08:50"
+  },
+  {
+   "account": "jeff",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-23T16:01:51"
   },
   {
    "account": "nova",
@@ -11944,10 +11971,6 @@
    {
     "account": "skosmurf",
     "mode": "rift"
-   },
-   {
-    "account": "jeff",
-    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -11957,8 +11980,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 91,
-   "medianSec": 17,
+   "n": 92,
+   "medianSec": 17.0,
    "picker": {
     "n": 45,
     "medianSec": 16,
@@ -11969,17 +11992,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 46,
-    "medianSec": 18.0
+    "n": 47,
+    "medianSec": 18
    }
   }
  },
  "progress": {
-  "fake4": {
-   "mailUnread": 0,
-   "paradiseStamina": "16/16",
-   "pillar": "floor 4 stage 1"
-  },
   "fake5": {
    "mailUnread": 0,
    "pillar": "floor 5 stage 1"
@@ -12064,6 +12082,11 @@
   "fake3": {
    "mailUnread": 0,
    "pillar": "floor 4 stage 6"
+  },
+  "fake4": {
+   "mailUnread": 0,
+   "paradiseStamina": "16/16",
+   "pillar": "floor 4 stage 1"
   },
   "fake7": {
    "mailUnread": 0,
@@ -12576,7 +12599,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-23",
-   "summary": "16 of 17 dailies done",
+   "summary": "16 of 17 dailies done · 1 not available today",
    "done": 16,
    "owed": 17,
    "open": [
@@ -12600,7 +12623,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {
     "island fights": 29,
     "guild war attempts": 1,
