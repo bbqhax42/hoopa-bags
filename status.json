@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T14:21:17.352748",
+ "generatedAt": "2026-09-23T14:23:20.639171",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "rank_match",
-  "since": "14:20:37"
+  "mode": "collect_hoopa_keys",
+  "since": "14:23:17"
  },
  "grid": {
   "tasks": [
@@ -377,10 +377,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "-",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 233,
-  "todo": 24,
+  "done": 235,
+  "todo": 22,
   "gaveUp": 10,
   "unavailable": 7,
   "windowed": 0
@@ -718,6 +718,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T14:23:16",
+   "script": "run_pvp_ranked",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 71,
+   "stats": {
+    "ranked_fought": 10,
+    "picker_retry": 2,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 139,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 54,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260923_142205_run_pvp_ranked_lucifer1"
+  },
+  {
+   "ts": "2026-09-23T14:22:04",
+   "script": "rank_match",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260923_142104_rank_match_lucifer1"
+  },
   {
    "ts": "2026-09-23T14:20:37",
    "script": "guild_war",
@@ -7419,46 +7459,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260922_111632_mail_deno"
-  },
-  {
-   "ts": "2026-09-22T11:16:31",
-   "script": "dailyclaim",
-   "account": "deno",
-   "rc": 0,
-   "secs": 27,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:77 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260922_111604_dailyclaim_deno"
-  },
-  {
-   "ts": "2026-09-22T11:15:30",
-   "script": "sky_pillar",
-   "account": "test1",
-   "rc": 0,
-   "secs": 82,
-   "stats": {
-    "stages_cleared": 2
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 4,
-    "stage": 3
-   },
-   "dir": "debug_runs/20260922_111407_sky_pillar_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 51677,
+  "now": 51800,
   "segments": [
    {
     "b": 28824,
@@ -10791,8 +10797,30 @@
      51652
     ],
     "handoff": 51663,
+    "rc": 0,
+    "e": 51724,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 51724,
+    "a": "lucifer1",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 51725,
+    "rc": 0,
+    "e": 51797,
+    "secs": 71,
+    "why": ""
+   },
+   {
+    "b": 51797,
+    "a": "lucifer1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 51797,
     "rc": null,
-    "e": 51677
+    "e": 51800
    }
   ],
   "idle": []
@@ -11129,8 +11157,8 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 5,
-    "minutes": 7.2,
+    "runs": 6,
+    "minutes": 8.3,
     "failed": 0
    },
    "collect_hoopa_keys": {
@@ -11179,8 +11207,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 13,
-    "minutes": 10.6,
+    "runs": 14,
+    "minutes": 11.6,
     "failed": 0
    }
   }
@@ -11394,78 +11422,78 @@
   "next": [
    {
     "account": "lucifer1",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T14:21"
-   },
-   {
-    "account": "lucifer1",
-    "task": "run_pvp_ranked",
-    "startsIn": 0.8,
-    "eta": "2026-09-23T14:22"
-   },
-   {
-    "account": "lucifer1",
     "task": "collect_hoopa_keys",
-    "startsIn": 2.3,
+    "startsIn": 0.0,
     "eta": "2026-09-23T14:23"
    },
    {
     "account": "lucifer1",
     "task": "sky_pillar",
-    "startsIn": 2.4,
+    "startsIn": 0.1,
     "eta": "2026-09-23T14:23"
    },
    {
     "account": "lucifer1",
     "task": "weekend_bash",
-    "startsIn": 3.4,
+    "startsIn": 1.1,
     "eta": "2026-09-23T14:24"
    },
    {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 3.8,
-    "eta": "2026-09-23T14:25"
+    "startsIn": 1.5,
+    "eta": "2026-09-23T14:24"
    },
    {
     "account": "lucifer2",
     "task": "run_pvp_ranked",
-    "startsIn": 4.6,
+    "startsIn": 2.4,
     "eta": "2026-09-23T14:25"
    },
    {
     "account": "lucifer2",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.1,
+    "startsIn": 3.8,
     "eta": "2026-09-23T14:27"
    },
    {
     "account": "lucifer2",
     "task": "sky_pillar",
-    "startsIn": 6.2,
+    "startsIn": 3.9,
     "eta": "2026-09-23T14:27"
    },
    {
     "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 7.2,
+    "startsIn": 4.9,
     "eta": "2026-09-23T14:28"
    },
    {
     "account": "test1",
     "task": "rank_match",
-    "startsIn": 7.6,
+    "startsIn": 5.3,
     "eta": "2026-09-23T14:28"
    },
    {
     "account": "test1",
     "task": "sky_pillar",
-    "startsIn": 8.4,
+    "startsIn": 6.1,
     "eta": "2026-09-23T14:29"
+   },
+   {
+    "account": "test1",
+    "task": "faction",
+    "startsIn": 7.2,
+    "eta": "2026-09-23T14:30"
+   },
+   {
+    "account": "deno",
+    "task": "rank_match",
+    "startsIn": 8.7,
+    "eta": "2026-09-23T14:32"
    }
   ],
-  "more": 12,
+  "more": 10,
   "fillers": [
    {
     "account": "smurf",
@@ -11513,10 +11541,6 @@
   }
  },
  "progress": {
-  "test1": {
-   "pillar": "floor 4 stage 3",
-   "mailUnread": 0
-  },
   "deno": {
    "mailUnread": 0,
    "paradiseStamina": "7/17",
@@ -11591,7 +11615,7 @@
    "misty": "step 1"
   },
   "lucifer1": {
-   "rank": 193,
+   "rank": 54,
    "pillar": "floor 91 stage 5",
    "mailUnread": 0,
    "paradiseStamina": "1/19"
@@ -11611,9 +11635,21 @@
    "mailUnread": 0,
    "paradiseStamina": "0/16",
    "pillar": "floor 2 stage 6"
+  },
+  "test1": {
+   "mailUnread": 0
   }
  },
  "ledger": {
+  "lucifer1": {
+   "ranked attempts": 1,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "skosmurf": {
    "guild war attempts": 1,
    "misty battles won": 20,
@@ -11743,14 +11779,6 @@
    "daily claims": 2
   },
   "lucifer2": {
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
-  },
-  "lucifer1": {
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
@@ -13231,18 +13259,10 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-23",
-   "summary": "10 of 15 dailies done",
-   "done": 10,
+   "summary": "12 of 15 dailies done",
+   "done": 12,
    "owed": 15,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
     {
      "task": "hoopa",
      "state": "still to do"
@@ -13267,6 +13287,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -13275,7 +13296,7 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 193,
+    "rank": 54,
     "pillar": "floor 91 stage 5",
     "mailUnread": 0,
     "paradiseStamina": "1/19"
@@ -13313,7 +13334,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 9,
+     "done": 11,
      "failed": 1
     }
    ]
@@ -13469,7 +13490,6 @@
     "daily claims": 2
    },
    "progress": {
-    "pillar": "floor 4 stage 3",
     "mailUnread": 0
    },
    "history": [
