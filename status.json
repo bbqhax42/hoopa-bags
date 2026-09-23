@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T08:04:08.491788",
+ "generatedAt": "2026-09-23T08:06:12.554580",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skosmurf",
-  "mode": "combat_daily",
-  "since": "08:03:39"
+  "mode": "paradise",
+  "since": "08:05:28"
  },
  "grid": {
   "tasks": [
@@ -352,7 +352,7 @@
      "✓",
      "✗2",
      "✗2",
-     "·",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 3,
-  "todo": 231,
+  "done": 4,
+  "todo": 230,
   "gaveUp": 2,
   "unavailable": 0,
   "windowed": 38
@@ -701,6 +701,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T08:05:26",
+   "script": "victory_road",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_080519_victory_road_skosmurf"
+  },
+  {
+   "ts": "2026-09-23T08:05:18",
+   "script": "combat_daily",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 98,
+   "stats": {
+    "title_reread_named": 3,
+    "marginal_battle_victory_confirm": 1,
+    "near_miss_vr_rank": 3,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_080339_combat_daily_skosmurf"
+  },
   {
    "ts": "2026-09-23T08:03:38",
    "script": "combat_daily",
@@ -7287,48 +7317,12 @@
     "tickets": 0
    },
    "dir": "debug_runs/20260921_193216_weekend_bash_dre"
-  },
-  {
-   "ts": "2026-09-21T19:31:57",
-   "script": "weekend_bash",
-   "account": "deno",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "row_cost_mismatch": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "weekend_bash: ticket row cost unreadable"
-   ],
-   "values": {
-    "tickets": 0
-   },
-   "dir": "debug_runs/20260921_193144_weekend_bash_deno"
-  },
-  {
-   "ts": "2026-09-21T19:31:24",
-   "script": "weekend_bash",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "row_cost_mismatch": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "weekend_bash: ticket row cost unreadable"
-   ],
-   "values": {
-    "tickets": 0
-   },
-   "dir": "debug_runs/20260921_193111_weekend_bash_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 29049,
+  "now": 29173,
   "segments": [
    {
     "b": 28824,
@@ -7403,14 +7397,43 @@
     "login": null,
     "handoff": 29019,
     "rc": 1,
-    "e": 29049,
+    "e": 29119,
     "secs": 110,
     "why": ""
+   },
+   {
+    "b": 29119,
+    "a": "skosmurf",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 29119,
+    "rc": 0,
+    "e": 29128,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 29128,
+    "a": "skosmurf",
+    "s": "paradise",
+    "login": null,
+    "handoff": 29128,
+    "rc": null,
+    "e": 29173
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-23T08:05:18",
+   "account": "skosmurf",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 98,
+   "why": "title_reread_named, marginal_battle_victory_confirm, near_miss_vr_rank, left_outstanding",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_080339_combat_daily_skosmurf__0068_080518_panel_back__AFTER__town.png"
+  },
   {
    "ts": "2026-09-23T08:03:38",
    "account": "skosmurf",
@@ -7623,7 +7646,7 @@
   "since": "2026-09-23T08:00",
   "switches": 0,
   "relogMinutes": 0.0,
-  "retries": 3,
+  "retries": 4,
   "tasks": {
    "dailyclaim": {
     "runs": 1,
@@ -7646,9 +7669,14 @@
     "failed": 2
    },
    "combat_daily": {
+    "runs": 2,
+    "minutes": 3.5,
+    "failed": 2
+   },
+   "victory_road": {
     "runs": 1,
-    "minutes": 1.8,
-    "failed": 1
+    "minutes": 0.1,
+    "failed": 0
    }
   }
  },
@@ -7818,78 +7846,78 @@
   "next": [
    {
     "account": "skosmurf",
-    "task": "victory_road",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T08:04"
-   },
-   {
-    "account": "skosmurf",
     "task": "paradise",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-09-23T08:06"
    },
    {
     "account": "skosmurf",
     "task": "run_pvp_ranked",
-    "startsIn": 4.0,
+    "startsIn": 2.0,
     "eta": "2026-09-23T08:08"
    },
    {
     "account": "skosmurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.0,
+    "startsIn": 4.0,
     "eta": "2026-09-23T08:10"
    },
    {
     "account": "skosmurf",
     "task": "sky_pillar",
-    "startsIn": 8.0,
+    "startsIn": 6.0,
     "eta": "2026-09-23T08:12"
    },
    {
     "account": "skosmurf",
     "task": "faction",
-    "startsIn": 10.0,
+    "startsIn": 8.0,
     "eta": "2026-09-23T08:14"
    },
    {
     "account": "skosmurf",
     "task": "misty_woods",
-    "startsIn": 12.0,
+    "startsIn": 10.0,
     "eta": "2026-09-23T08:16"
    },
    {
     "account": "skosmurf",
     "task": "weekend_bash",
-    "startsIn": 14.0,
+    "startsIn": 12.0,
     "eta": "2026-09-23T08:18"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 16.4,
+    "startsIn": 14.4,
     "eta": "2026-09-23T08:20"
    },
    {
     "account": "nova",
     "task": "mail",
-    "startsIn": 16.8,
-    "eta": "2026-09-23T08:20"
+    "startsIn": 14.8,
+    "eta": "2026-09-23T08:21"
    },
    {
     "account": "nova",
     "task": "joint_team_daily_quest",
-    "startsIn": 16.9,
+    "startsIn": 14.9,
     "eta": "2026-09-23T08:21"
    },
    {
     "account": "nova",
     "task": "joint_battle",
-    "startsIn": 18.9,
+    "startsIn": 16.9,
     "eta": "2026-09-23T08:23"
+   },
+   {
+    "account": "nova",
+    "task": "daily_dungeon",
+    "startsIn": 18.9,
+    "eta": "2026-09-23T08:25"
    }
   ],
-  "more": 219,
+  "more": 218,
   "fillers": [
    {
     "account": "smurf",
@@ -7937,17 +7965,6 @@
   }
  },
  "progress": {
-  "lucifer2": {
-   "mailUnread": 0,
-   "rank": 198,
-   "pillar": "floor 85 stage 8"
-  },
-  "deno": {
-   "mailUnread": 0,
-   "paradiseStamina": "16/16",
-   "rank": 194,
-   "pillar": "floor 27 stage 9"
-  },
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "1/20",
@@ -8027,9 +8044,20 @@
    "rank": 193,
    "pillar": "floor 91 stage 5"
   },
+  "lucifer2": {
+   "mailUnread": 0,
+   "rank": 198,
+   "pillar": "floor 85 stage 8"
+  },
   "test1": {
    "mailUnread": 0,
    "pillar": "floor 4 stage 3"
+  },
+  "deno": {
+   "mailUnread": 0,
+   "paradiseStamina": "16/16",
+   "rank": 194,
+   "pillar": "floor 27 stage 9"
   },
   "exou": {
    "mailUnread": 0,
@@ -9893,8 +9921,8 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-23",
-   "summary": "3 of 15 dailies done · gave up on home, dailies · 2 switched off",
-   "done": 3,
+   "summary": "4 of 15 dailies done · gave up on home, dailies · 2 switched off",
+   "done": 4,
    "owed": 15,
    "open": [
     {
@@ -9904,10 +9932,6 @@
     {
      "task": "dailies",
      "state": "gave up"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
     },
     {
      "task": "victoryRank",
@@ -9949,9 +9973,9 @@
    "issues": [
     {
      "task": "combat_daily",
-     "at": "08:03",
-     "why": "title reread named, refused afk rewards confirm, adv overflow",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_080147_combat_daily_skosmurf__KEEP_0116_080324_buy_before_1.png"
+     "at": "08:05",
+     "why": "title reread named, left outstanding",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260923_080339_combat_daily_skosmurf__0068_080518_panel_back__AFTER__town.png"
     },
     {
      "task": "pokemon_home",
@@ -10014,8 +10038,8 @@
     },
     {
      "day": "2026-09-23",
-     "done": 3,
-     "failed": 4
+     "done": 4,
+     "failed": 5
     }
    ]
   },
