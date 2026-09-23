@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-23T09:49:29.321832",
+ "generatedAt": "2026-09-23T09:51:32.845587",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
-  "mode": "faction",
-  "since": "09:47:51"
+  "account": "fake3",
+  "mode": "mail",
+  "since": "09:51:11"
  },
  "grid": {
   "tasks": [
@@ -167,7 +167,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -177,7 +177,7 @@
    {
     "account": "fake3",
     "cells": [
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -489,9 +489,9 @@
   ]
  },
  "counts": {
-  "done": 87,
-  "todo": 143,
-  "gaveUp": 4,
+  "done": 88,
+  "todo": 141,
+  "gaveUp": 5,
   "unavailable": 2,
   "windowed": 38
  },
@@ -705,11 +705,27 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-23T09:37:56.198890",
+  "label": "fake3",
+  "at": "2026-09-23T09:51:32.329966",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-23T09:50:07",
+   "script": "faction",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 132,
+   "stats": {
+    "auto_formation": 20,
+    "skip_retry": 17,
+    "floors_grass": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260923_094754_faction_fake2"
+  },
   {
    "ts": "2026-09-23T09:47:50",
    "script": "sky_pillar",
@@ -7384,26 +7400,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260922_083941_paradise_chris"
-  },
-  {
-   "ts": "2026-09-22T08:39:39",
-   "script": "victory_road",
-   "account": "chris",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260922_083932_victory_road_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-23T00:00",
   "since": 28800.0,
-  "now": 35369,
+  "now": 35493,
   "segments": [
    {
     "b": 28824,
@@ -8537,8 +8539,43 @@
     "s": "faction",
     "login": null,
     "handoff": 35274,
+    "rc": 0,
+    "e": 35408,
+    "secs": 132,
+    "why": ""
+   },
+   {
+    "b": 35408,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": [
+     35409,
+     35426
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 35369
+    "e": 35462
+   },
+   {
+    "b": 35462,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": null,
+    "rc": null,
+    "e": 35471
+   },
+   {
+    "b": 35471,
+    "a": "fake3",
+    "s": "mail",
+    "login": [
+     35476,
+     35492
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 35493
    }
   ],
   "idle": []
@@ -8808,7 +8845,7 @@
  ],
  "day": {
   "since": "2026-09-23T08:00",
-  "switches": 6,
+  "switches": 7,
   "relogMinutes": 2.5,
   "retries": 10,
   "tasks": {
@@ -8863,8 +8900,8 @@
     "failed": 0
    },
    "faction": {
-    "runs": 5,
-    "minutes": 6.5,
+    "runs": 6,
+    "minutes": 8.8,
     "failed": 0
    },
    "misty_woods": {
@@ -9072,79 +9109,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake2",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-23T09:49"
-   },
-   {
-    "account": "fake3",
-    "task": "dailyclaim",
-    "startsIn": 1.7,
-    "eta": "2026-09-23T09:51"
-   },
-   {
     "account": "fake3",
     "task": "mail",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-23T09:51"
    },
    {
     "account": "fake3",
     "task": "joint_team_daily_quest",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-23T09:51"
    },
    {
     "account": "fake3",
     "task": "joint_battle",
-    "startsIn": 2.9,
+    "startsIn": 0.8,
     "eta": "2026-09-23T09:52"
    },
    {
     "account": "fake3",
     "task": "daily_dungeon",
-    "startsIn": 4.9,
+    "startsIn": 2.8,
     "eta": "2026-09-23T09:54"
    },
    {
     "account": "fake3",
     "task": "pokemon_home",
-    "startsIn": 5.1,
+    "startsIn": 3.1,
     "eta": "2026-09-23T09:54"
    },
    {
     "account": "fake3",
     "task": "combat_daily",
-    "startsIn": 6.2,
+    "startsIn": 4.1,
     "eta": "2026-09-23T09:55"
    },
    {
     "account": "fake3",
     "task": "victory_road",
-    "startsIn": 7.8,
+    "startsIn": 5.7,
     "eta": "2026-09-23T09:57"
    },
    {
     "account": "fake3",
     "task": "paradise",
-    "startsIn": 7.9,
+    "startsIn": 5.9,
     "eta": "2026-09-23T09:57"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 12.2,
+    "startsIn": 10.1,
     "eta": "2026-09-23T10:01"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 12.3,
+    "startsIn": 10.3,
     "eta": "2026-09-23T10:01"
+   },
+   {
+    "account": "fake3",
+    "task": "faction",
+    "startsIn": 11.1,
+    "eta": "2026-09-23T10:02"
+   },
+   {
+    "account": "fake4",
+    "task": "dailyclaim",
+    "startsIn": 13.0,
+    "eta": "2026-09-23T10:04"
    }
   ],
-  "more": 131,
+  "more": 129,
   "fillers": [
    {
     "account": "smurf",
@@ -9174,12 +9211,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 6,
+   "n": 8,
    "medianSec": 16.0,
    "picker": {
-    "n": 4,
+    "n": 6,
     "medianSec": 16.0,
-    "jumps": 3
+    "jumps": 5
    },
    "typed": {
     "n": 0,
@@ -9295,6 +9332,7 @@
  },
  "ledger": {
   "fake2": {
+   "faction sweeps": 2,
    "pillar proofs lost to a refusal": 1,
    "pillar/story stages cleared": 2,
    "Island Shop buys (200 coins)": 1,
@@ -10039,8 +10077,8 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-23",
-   "summary": "11 of 14 dailies done · 2 switched off",
-   "done": 11,
+   "summary": "12 of 14 dailies done · 2 switched off",
+   "done": 12,
    "owed": 14,
    "open": [
     {
@@ -10050,10 +10088,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "fctn",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -10078,6 +10112,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "faction sweeps": 2,
     "pillar proofs lost to a refusal": 1,
     "pillar/story stages cleared": 2,
     "Island Shop buys (200 coins)": 1,
@@ -10122,7 +10157,7 @@
     },
     {
      "day": "2026-09-23",
-     "done": 10,
+     "done": 11,
      "failed": 1
     }
    ]
@@ -10130,13 +10165,13 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-23",
-   "summary": "0 of 14 dailies done · 2 switched off",
+   "summary": "0 of 14 dailies done · gave up on claims · 2 switched off",
    "done": 0,
    "owed": 14,
    "open": [
     {
      "task": "claims",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "mail",
