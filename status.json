@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T10:01:26.491891",
+ "generatedAt": "2026-09-24T10:03:30.366509",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "daily_dungeon",
-  "since": "10:01:16"
+  "mode": "combat_daily",
+  "since": "10:02:11"
  },
  "grid": {
   "tasks": [
@@ -181,8 +181,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 94,
-  "todo": 138,
+  "done": 96,
+  "todo": 136,
   "gaveUp": 1,
   "unavailable": 3,
   "windowed": 38
@@ -710,6 +710,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T10:02:10",
+   "script": "pokemon_home",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 16,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 49
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_100154_pokemon_home_fake3"
+  },
+  {
+   "ts": "2026-09-24T10:01:52",
+   "script": "daily_dungeon",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "marginal_dungeon_list": 13,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_100120_daily_dungeon_fake3"
+  },
   {
    "ts": "2026-09-24T10:00:30",
    "script": "joint_team_daily_quest",
@@ -7436,43 +7466,12 @@
     "fights_today": 3
    },
    "dir": "debug_runs/20260923_083828_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-23T08:38:23",
-   "script": "pokemon_home",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 95,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "grid_shrank_rejected": 1,
-    "merge_moved_instead": 2,
-    "pair_went_stale": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_083647_pokemon_home_jeff"
-  },
-  {
-   "ts": "2026-09-23T08:36:45",
-   "script": "daily_dungeon",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_083632_daily_dungeon_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 36086,
+  "now": 36210,
   "segments": [
    {
     "b": 29498,
@@ -8602,8 +8601,30 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 36080,
+    "rc": 0,
+    "e": 36112,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 36112,
+    "a": "fake3",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 36113,
+    "rc": 0,
+    "e": 36131,
+    "secs": 16,
+    "why": ""
+   },
+   {
+    "b": 36131,
+    "a": "fake3",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 36135,
     "rc": null,
-    "e": 36086
+    "e": 36210
    }
   ],
   "idle": []
@@ -8677,13 +8698,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 7,
-    "minutes": 1.7,
+    "runs": 8,
+    "minutes": 2.2,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 8,
-    "minutes": 8.8,
+    "runs": 9,
+    "minutes": 9.1,
     "failed": 2
    },
    "combat_daily": {
@@ -8930,78 +8951,78 @@
   "next": [
    {
     "account": "fake3",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-24T10:01"
-   },
-   {
-    "account": "fake3",
-    "task": "pokemon_home",
-    "startsIn": 0.2,
-    "eta": "2026-09-24T10:01"
-   },
-   {
-    "account": "fake3",
     "task": "combat_daily",
-    "startsIn": 1.3,
-    "eta": "2026-09-24T10:02"
+    "startsIn": 0.0,
+    "eta": "2026-09-24T10:03"
    },
    {
     "account": "fake3",
     "task": "victory_road",
-    "startsIn": 3.3,
-    "eta": "2026-09-24T10:04"
+    "startsIn": 2.0,
+    "eta": "2026-09-24T10:05"
    },
    {
     "account": "fake3",
     "task": "paradise",
-    "startsIn": 3.4,
-    "eta": "2026-09-24T10:04"
+    "startsIn": 2.1,
+    "eta": "2026-09-24T10:05"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.8,
-    "eta": "2026-09-24T10:09"
+    "startsIn": 6.5,
+    "eta": "2026-09-24T10:10"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 8.0,
-    "eta": "2026-09-24T10:09"
+    "startsIn": 6.6,
+    "eta": "2026-09-24T10:10"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 9.2,
-    "eta": "2026-09-24T10:10"
+    "startsIn": 7.8,
+    "eta": "2026-09-24T10:11"
    },
    {
     "account": "fake4",
     "task": "dailyclaim",
-    "startsIn": 11.0,
-    "eta": "2026-09-24T10:12"
+    "startsIn": 9.6,
+    "eta": "2026-09-24T10:13"
    },
    {
     "account": "fake4",
     "task": "mail",
-    "startsIn": 11.4,
-    "eta": "2026-09-24T10:12"
+    "startsIn": 10.1,
+    "eta": "2026-09-24T10:13"
    },
    {
     "account": "fake4",
     "task": "joint_team_daily_quest",
-    "startsIn": 11.4,
-    "eta": "2026-09-24T10:12"
+    "startsIn": 10.1,
+    "eta": "2026-09-24T10:13"
    },
    {
     "account": "fake4",
     "task": "joint_battle",
-    "startsIn": 12.3,
-    "eta": "2026-09-24T10:13"
+    "startsIn": 10.9,
+    "eta": "2026-09-24T10:14"
+   },
+   {
+    "account": "fake4",
+    "task": "daily_dungeon",
+    "startsIn": 12.9,
+    "eta": "2026-09-24T10:16"
+   },
+   {
+    "account": "fake4",
+    "task": "pokemon_home",
+    "startsIn": 13.2,
+    "eta": "2026-09-24T10:16"
    }
   ],
-  "more": 126,
+  "more": 124,
   "fillers": [
    {
     "account": "smurf",
@@ -9982,18 +10003,10 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-24",
-   "summary": "4 of 14 dailies done · 2 switched off",
-   "done": 4,
+   "summary": "6 of 14 dailies done · 2 switched off",
+   "done": 6,
    "owed": 14,
    "open": [
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -10082,7 +10095,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 5,
+     "done": 7,
      "failed": 0
     }
    ]
