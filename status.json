@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T14:20:56.133436",
+ "generatedAt": "2026-09-24T14:22:59.557144",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "test1",
-  "mode": "faction",
-  "since": "14:20:55"
+  "account": "deno",
+  "mode": "run_pvp_ranked",
+  "since": "14:22:22"
  },
  "grid": {
   "tasks": [
@@ -449,7 +449,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 247,
-  "todo": 15,
+  "done": 248,
+  "todo": 14,
   "gaveUp": 2,
   "unavailable": 10,
   "windowed": 0
@@ -713,11 +713,31 @@
   }
  },
  "session": {
-  "label": "test1",
-  "at": "2026-09-24T14:20:37.953388",
+  "label": "deno",
+  "at": "2026-09-24T14:21:15.085691",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T14:22:21",
+   "script": "rank_match",
+   "account": "deno",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260924_142123_rank_match_deno"
+  },
   {
    "ts": "2026-09-24T14:20:55",
    "script": "faction",
@@ -7541,32 +7561,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260923_120543_guild_war_fake4"
-  },
-  {
-   "ts": "2026-09-23T12:05:19",
-   "script": "guild_war",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "near_miss_last_hit": 4,
-    "near_miss_vr_rank": 2,
-    "marginal_last_hit": 2,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1,
-    "assist_refill": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_120413_guild_war_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 51656,
+  "now": 51779,
   "segments": [
    {
     "b": 29498,
@@ -10828,10 +10828,24 @@
     "b": 51656,
     "a": "deno",
     "s": "rank_match",
+    "login": [
+     51656,
+     51675
+    ],
+    "handoff": 51683,
+    "rc": 0,
+    "e": 51742,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 51742,
+    "a": "deno",
+    "s": "run_pvp_ranked",
     "login": null,
-    "handoff": null,
+    "handoff": 51742,
     "rc": null,
-    "e": 51656
+    "e": 51779
    }
   ],
   "idle": []
@@ -10957,8 +10971,8 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 60,
-  "relogMinutes": 25.5,
+  "switches": 61,
+  "relogMinutes": 25.9,
   "retries": 19,
   "tasks": {
    "dailyclaim": {
@@ -11052,8 +11066,8 @@
     "failed": 1
    },
    "rank_match": {
-    "runs": 17,
-    "minutes": 14.6,
+    "runs": 18,
+    "minutes": 15.6,
     "failed": 0
    }
   }
@@ -11293,78 +11307,78 @@
   "next": [
    {
     "account": "deno",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-24T14:20"
-   },
-   {
-    "account": "deno",
     "task": "run_pvp_ranked",
-    "startsIn": 0.9,
-    "eta": "2026-09-24T14:21"
+    "startsIn": 0.0,
+    "eta": "2026-09-24T14:22"
    },
    {
     "account": "deno",
     "task": "collect_hoopa_keys",
-    "startsIn": 2.3,
-    "eta": "2026-09-24T14:23"
-   },
-   {
-    "account": "deno",
-    "task": "sky_pillar",
-    "startsIn": 2.4,
-    "eta": "2026-09-24T14:23"
-   },
-   {
-    "account": "deno",
-    "task": "weekend_bash",
-    "startsIn": 3.8,
+    "startsIn": 1.4,
     "eta": "2026-09-24T14:24"
    },
    {
+    "account": "deno",
+    "task": "sky_pillar",
+    "startsIn": 1.5,
+    "eta": "2026-09-24T14:24"
+   },
+   {
+    "account": "deno",
+    "task": "weekend_bash",
+    "startsIn": 2.9,
+    "eta": "2026-09-24T14:25"
+   },
+   {
     "account": "dre",
     "task": "rank_match",
-    "startsIn": 4.2,
-    "eta": "2026-09-24T14:25"
+    "startsIn": 3.3,
+    "eta": "2026-09-24T14:26"
    },
    {
     "account": "dre",
     "task": "run_pvp_ranked",
-    "startsIn": 5.0,
-    "eta": "2026-09-24T14:25"
+    "startsIn": 4.2,
+    "eta": "2026-09-24T14:27"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.5,
-    "eta": "2026-09-24T14:27"
+    "startsIn": 5.6,
+    "eta": "2026-09-24T14:28"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 6.6,
-    "eta": "2026-09-24T14:27"
+    "startsIn": 5.7,
+    "eta": "2026-09-24T14:28"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 8.0,
-    "eta": "2026-09-24T14:28"
+    "startsIn": 7.1,
+    "eta": "2026-09-24T14:30"
    },
    {
     "account": "fake1",
     "task": "guild_war",
-    "startsIn": 8.4,
-    "eta": "2026-09-24T14:29"
+    "startsIn": 7.5,
+    "eta": "2026-09-24T14:30"
    },
    {
     "account": "sprite",
     "task": "guild_war",
-    "startsIn": 9.8,
-    "eta": "2026-09-24T14:30"
+    "startsIn": 8.9,
+    "eta": "2026-09-24T14:31"
+   },
+   {
+    "account": "sprite",
+    "task": "collect_hoopa_keys",
+    "startsIn": 10.0,
+    "eta": "2026-09-24T14:32"
    }
   ],
-  "more": 3,
+  "more": 2,
   "fillers": [
    {
     "account": "smurf",
@@ -11398,8 +11412,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 60,
-   "medianSec": 17.0,
+   "n": 61,
+   "medianSec": 17,
    "picker": {
     "n": 47,
     "medianSec": 16,
@@ -11410,8 +11424,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 13,
-    "medianSec": 20
+    "n": 14,
+    "medianSec": 20.0
    }
   }
  },
@@ -13333,14 +13347,10 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-24",
-   "summary": "10 of 15 dailies done",
-   "done": 10,
+   "summary": "11 of 15 dailies done",
+   "done": 11,
    "owed": 15,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
     {
      "task": "pvpRank",
      "state": "still to do"
@@ -13408,7 +13418,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 10,
+     "done": 11,
      "failed": 0
     }
    ]
