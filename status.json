@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T09:18:04.520128",
+ "generatedAt": "2026-09-24T09:20:08.218777",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "joint_team_daily_quest",
-  "since": "09:17:24"
+  "mode": "pokemon_home",
+  "since": "09:18:59"
  },
  "grid": {
   "tasks": [
@@ -107,10 +107,10 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "⊘",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -489,10 +489,10 @@
   ]
  },
  "counts": {
-  "done": 57,
-  "todo": 179,
-  "gaveUp": 0,
-  "unavailable": 0,
+  "done": 59,
+  "todo": 175,
+  "gaveUp": 1,
+  "unavailable": 1,
   "windowed": 38
  },
  "disabled": [
@@ -710,6 +710,50 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T09:18:58",
+   "script": "pokemon_home",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 16,
+   "stats": {
+    "board_not_reached": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260924_091842_pokemon_home_smurf"
+  },
+  {
+   "ts": "2026-09-24T09:18:40",
+   "script": "daily_dungeon",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_091826_daily_dungeon_smurf"
+  },
+  {
+   "ts": "2026-09-24T09:18:06",
+   "script": "joint_team_daily_quest",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 41,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 1,
+    "panel_swipes": 9,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_091725_joint_team_daily_quest_smurf"
+  },
   {
    "ts": "2026-09-24T09:17:23",
    "script": "mail",
@@ -7403,45 +7447,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260923_022727_worldboss_dre"
-  },
-  {
-   "ts": "2026-09-23T02:27:27",
-   "script": "worldboss",
-   "account": "deno",
-   "rc": 1,
-   "secs": 92,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_022555_worldboss_deno"
-  },
-  {
-   "ts": "2026-09-23T02:25:55",
-   "script": "worldboss",
-   "account": "test1",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_022423_worldboss_test1"
-  },
-  {
-   "ts": "2026-09-23T02:24:23",
-   "script": "worldboss",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_022251_worldboss_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 33485,
+  "now": 33608,
   "segments": [
    {
     "b": 29498,
@@ -8097,13 +8108,66 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 33445,
+    "rc": 0,
+    "e": 33487,
+    "secs": 41,
+    "why": ""
+   },
+   {
+    "b": 33487,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 33489,
     "rc": null,
-    "e": 33485
+    "e": 33503
+   },
+   {
+    "b": 33503,
+    "a": "smurf",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 33505,
+    "rc": 0,
+    "e": 33521,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 33521,
+    "a": "smurf",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 33522,
+    "rc": 1,
+    "e": 33539,
+    "secs": 16,
+    "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)"
+   },
+   {
+    "b": 33539,
+    "a": "smurf",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 33540,
+    "rc": 1,
+    "e": 33608,
+    "secs": 16,
+    "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-24T09:18:58",
+   "account": "smurf",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 16,
+   "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_091842_pokemon_home_smurf__KEEP_0015_091858_board_not_reached.png"
+  },
   {
    "ts": "2026-09-24T02:03:01",
    "account": "nova",
@@ -8118,7 +8182,7 @@
   "since": "2026-09-24T08:00",
   "switches": 6,
   "relogMinutes": 2.4,
-  "retries": 1,
+  "retries": 2,
   "tasks": {
    "dailyclaim": {
     "runs": 5,
@@ -8131,19 +8195,19 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 4,
-    "minutes": 3.4,
+    "runs": 5,
+    "minutes": 4.1,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 4,
-    "minutes": 1.0,
+    "runs": 5,
+    "minutes": 1.2,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 4,
-    "minutes": 6.7,
-    "failed": 0
+    "runs": 5,
+    "minutes": 6.9,
+    "failed": 1
    },
    "combat_daily": {
     "runs": 4,
@@ -8197,7 +8261,14 @@
    }
   }
  },
- "unavailable": [],
+ "unavailable": [
+  {
+   "account": "smurf",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
+  }
+ ],
  "windows": {
   "dailyclaim": "06:00-19:00",
   "mail": null,
@@ -8365,78 +8436,78 @@
   "next": [
    {
     "account": "smurf",
-    "task": "joint_team_daily_quest",
+    "task": "combat_daily",
     "startsIn": 0.0,
-    "eta": "2026-09-24T09:18"
-   },
-   {
-    "account": "smurf",
-    "task": "joint_battle",
-    "startsIn": 0.8,
-    "eta": "2026-09-24T09:18"
-   },
-   {
-    "account": "smurf",
-    "task": "daily_dungeon",
-    "startsIn": 2.9,
     "eta": "2026-09-24T09:20"
    },
    {
     "account": "smurf",
-    "task": "pokemon_home",
-    "startsIn": 3.1,
-    "eta": "2026-09-24T09:21"
-   },
-   {
-    "account": "smurf",
-    "task": "combat_daily",
-    "startsIn": 4.8,
+    "task": "victory_road",
+    "startsIn": 2.0,
     "eta": "2026-09-24T09:22"
    },
    {
     "account": "smurf",
-    "task": "victory_road",
-    "startsIn": 6.8,
-    "eta": "2026-09-24T09:24"
-   },
-   {
-    "account": "smurf",
     "task": "paradise",
-    "startsIn": 6.9,
-    "eta": "2026-09-24T09:24"
+    "startsIn": 2.1,
+    "eta": "2026-09-24T09:22"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 11.5,
-    "eta": "2026-09-24T09:29"
+    "startsIn": 6.7,
+    "eta": "2026-09-24T09:26"
    },
    {
     "account": "smurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 13.0,
-    "eta": "2026-09-24T09:31"
+    "startsIn": 8.2,
+    "eta": "2026-09-24T09:28"
    },
    {
     "account": "smurf",
     "task": "sky_pillar",
-    "startsIn": 13.1,
-    "eta": "2026-09-24T09:31"
+    "startsIn": 8.3,
+    "eta": "2026-09-24T09:28"
    },
    {
     "account": "smurf",
     "task": "faction",
-    "startsIn": 14.1,
-    "eta": "2026-09-24T09:32"
+    "startsIn": 9.3,
+    "eta": "2026-09-24T09:29"
    },
    {
     "account": "smurf",
     "task": "misty_woods",
-    "startsIn": 16.2,
+    "startsIn": 11.4,
+    "eta": "2026-09-24T09:31"
+   },
+   {
+    "account": "smurf",
+    "task": "weekend_bash",
+    "startsIn": 13.4,
+    "eta": "2026-09-24T09:33"
+   },
+   {
+    "account": "fake1",
+    "task": "dailyclaim",
+    "startsIn": 13.8,
+    "eta": "2026-09-24T09:33"
+   },
+   {
+    "account": "fake1",
+    "task": "mail",
+    "startsIn": 14.2,
+    "eta": "2026-09-24T09:34"
+   },
+   {
+    "account": "fake1",
+    "task": "joint_team_daily_quest",
+    "startsIn": 14.2,
     "eta": "2026-09-24T09:34"
    }
   ],
-  "more": 167,
+  "more": 163,
   "fillers": [
    {
     "account": "smurf",
@@ -9103,25 +9174,17 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-24",
-   "summary": "2 of 17 dailies done · 2 switched off",
-   "done": 2,
+   "summary": "4 of 17 dailies done · gave up on home · 2 switched off · 1 not available today",
+   "done": 4,
    "owed": 17,
    "open": [
     {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
      "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "home",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -9168,7 +9231,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "pokemon_home",
+     "at": "09:18",
+     "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_091842_pokemon_home_smurf__KEEP_0015_091858_board_not_reached.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -9181,7 +9251,12 @@
      "since": "2026-09-20T00:23:12"
     }
    ],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "joint_battle",
+     "why": null
+    }
+   ],
    "spent": {
     "mail claimed": 1,
     "daily claims": 1
@@ -9225,8 +9300,8 @@
     },
     {
      "day": "2026-09-24",
-     "done": 3,
-     "failed": 0
+     "done": 5,
+     "failed": 1
     }
    ]
   },
