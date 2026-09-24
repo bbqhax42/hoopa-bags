@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T11:23:52.710461",
+ "generatedAt": "2026-09-24T11:25:56.190460",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skosmurf",
-  "mode": "combat_daily",
-  "since": "11:23:23"
+  "mode": "victory_road",
+  "since": "11:25:49"
  },
  "grid": {
   "tasks": [
@@ -351,7 +351,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "✓",
      "·",
      "⏰",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 160,
-  "todo": 70,
+  "done": 161,
+  "todo": 69,
   "gaveUp": 2,
   "unavailable": 4,
   "windowed": 38
@@ -718,6 +718,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T11:25:49",
+   "script": "combat_daily",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 23,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 6/6 + ac",
+    "quick_combat_cost": "free free"
+   },
+   "dir": "debug_runs/20260924_112525_combat_daily_skosmurf"
+  },
+  {
+   "ts": "2026-09-24T11:25:24",
+   "script": "combat_daily",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 116,
+   "stats": {
+    "title_reread_named": 2,
+    "marginal_afk_rewards": 1,
+    "refused_quick_bar": 1,
+    "marginal_adventure_event": 1,
+    "near_miss_pokemon_upgrade": 1,
+    "marginal_pokemon_upgrade": 1,
+    "pokemon_upgraded": 1,
+    "gacha_free": 1,
+    "near_miss_vr_rank": 5,
+    "near_miss_battle_victory_confirm": 1,
+    "island_shop_bought": 1,
+    "outstanding_reread_after_toast": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "gacha_one_cost": "free"
+   },
+   "dir": "debug_runs/20260924_112328_combat_daily_skosmurf"
+  },
   {
    "ts": "2026-09-24T11:23:23",
    "script": "pokemon_home",
@@ -7488,46 +7529,12 @@
     "rail_badges": "0.190:77 0.275:8 0.345:54 0.428:7 0.500:0"
    },
    "dir": "debug_runs/20260923_100115_dailyclaim_fake4"
-  },
-  {
-   "ts": "2026-09-23T10:00:51",
-   "script": "collect_hoopa_keys",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_100044_collect_hoopa_keys_fake3"
-  },
-  {
-   "ts": "2026-09-23T10:00:43",
-   "script": "paradise",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 233,
-   "stats": {
-    "marginal_paradise_hub": 4,
-    "explore_clicks": 117,
-    "pass_claims": 4,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 1,
-    "upgraded_energy_drink": 1,
-    "dex_milestones": 3,
-    "dex_activated": 11,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_095650_paradise_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 41033,
+  "now": 41156,
   "segments": [
    {
     "b": 29498,
@@ -9520,13 +9527,44 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 41008,
+    "rc": 1,
+    "e": 41125,
+    "secs": 116,
+    "why": ""
+   },
+   {
+    "b": 41125,
+    "a": "skosmurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 41125,
+    "rc": 1,
+    "e": 41149,
+    "secs": 116,
+    "why": ""
+   },
+   {
+    "b": 41149,
+    "a": "skosmurf",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 41150,
     "rc": null,
-    "e": 41033
+    "e": 41156
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-24T11:25:24",
+   "account": "skosmurf",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 116,
+   "why": "title_reread_named, marginal_afk_rewards, refused_quick_bar, marginal_adventure_event, near_miss_pokemon_upgrade, marginal_pokemon_upgrade, pokemon_upgraded, ga",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_112328_combat_daily_skosmurf__KEEP_0143_112507_buy_before_1.png"
+  },
   {
    "ts": "2026-09-24T11:03:43",
    "account": "sprite",
@@ -9622,7 +9660,7 @@
   "since": "2026-09-24T08:00",
   "switches": 22,
   "relogMinutes": 9.3,
-  "retries": 12,
+  "retries": 13,
   "tasks": {
    "dailyclaim": {
     "runs": 16,
@@ -9650,9 +9688,9 @@
     "failed": 2
    },
    "combat_daily": {
-    "runs": 15,
-    "minutes": 26.9,
-    "failed": 2
+    "runs": 17,
+    "minutes": 29.2,
+    "failed": 3
    },
    "victory_road": {
     "runs": 14,
@@ -9899,78 +9937,78 @@
   "next": [
    {
     "account": "skosmurf",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-24T11:23"
-   },
-   {
-    "account": "skosmurf",
     "task": "victory_road",
-    "startsIn": 1.8,
+    "startsIn": 0.0,
     "eta": "2026-09-24T11:25"
    },
    {
     "account": "skosmurf",
     "task": "paradise",
-    "startsIn": 1.9,
-    "eta": "2026-09-24T11:25"
+    "startsIn": 0.1,
+    "eta": "2026-09-24T11:26"
    },
    {
     "account": "skosmurf",
     "task": "run_pvp_ranked",
-    "startsIn": 6.3,
+    "startsIn": 4.5,
     "eta": "2026-09-24T11:30"
    },
    {
     "account": "skosmurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.7,
+    "startsIn": 5.9,
     "eta": "2026-09-24T11:31"
    },
    {
     "account": "skosmurf",
     "task": "sky_pillar",
-    "startsIn": 7.8,
-    "eta": "2026-09-24T11:31"
+    "startsIn": 6.1,
+    "eta": "2026-09-24T11:32"
    },
    {
     "account": "skosmurf",
     "task": "faction",
-    "startsIn": 9.3,
+    "startsIn": 7.5,
     "eta": "2026-09-24T11:33"
    },
    {
     "account": "skosmurf",
     "task": "misty_woods",
-    "startsIn": 10.7,
+    "startsIn": 8.9,
     "eta": "2026-09-24T11:34"
    },
    {
     "account": "skosmurf",
     "task": "weekend_bash",
-    "startsIn": 11.5,
+    "startsIn": 9.7,
     "eta": "2026-09-24T11:35"
    },
    {
     "account": "fake5",
     "task": "daily_dungeon",
-    "startsIn": 11.9,
-    "eta": "2026-09-24T11:35"
+    "startsIn": 10.1,
+    "eta": "2026-09-24T11:36"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 12.3,
+    "startsIn": 10.5,
     "eta": "2026-09-24T11:36"
    },
    {
     "account": "sprite",
     "task": "collect_hoopa_keys",
-    "startsIn": 14.1,
-    "eta": "2026-09-24T11:37"
+    "startsIn": 12.3,
+    "eta": "2026-09-24T11:38"
+   },
+   {
+    "account": "sprite",
+    "task": "sky_pillar",
+    "startsIn": 12.4,
+    "eta": "2026-09-24T11:38"
    }
   ],
-  "more": 58,
+  "more": 57,
   "fillers": [
    {
     "account": "smurf",
@@ -10124,6 +10162,7 @@
  },
  "ledger": {
   "skosmurf": {
+   "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 2,
@@ -11593,14 +11632,10 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-24",
-   "summary": "4 of 15 dailies done · 2 switched off",
-   "done": 4,
+   "summary": "5 of 15 dailies done · 2 switched off",
+   "done": 5,
    "owed": 15,
    "open": [
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
     {
      "task": "victory",
      "state": "still to do"
@@ -11642,7 +11677,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "11:25",
+     "why": "title reread named, refused quick bar, pokemon upgraded",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_112328_combat_daily_skosmurf__KEEP_0143_112507_buy_before_1.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -11657,6 +11699,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 2,
@@ -11693,8 +11736,8 @@
     },
     {
      "day": "2026-09-24",
-     "done": 5,
-     "failed": 0
+     "done": 6,
+     "failed": 1
     }
    ]
   },
