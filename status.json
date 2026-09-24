@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T09:20:08.218777",
+ "generatedAt": "2026-09-24T09:22:12.197018",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "pokemon_home",
-  "since": "09:18:59"
+  "mode": "combat_daily",
+  "since": "09:20:20"
  },
  "grid": {
   "tasks": [
@@ -710,6 +710,27 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T09:20:19",
+   "script": "pokemon_home",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 79,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_refused": 2,
+    "diamond_dialog_cancelled": 1,
+    "merge_no_progress": 1,
+    "balls_unsettled_opened": 1,
+    "charges_left_unspent": 41,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: 41 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260924_091900_pokemon_home_smurf"
+  },
   {
    "ts": "2026-09-24T09:18:58",
    "script": "pokemon_home",
@@ -7436,23 +7457,12 @@
     "fights_today": 13
    },
    "dir": "debug_runs/20260923_050645_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-23T02:29:00",
-   "script": "worldboss",
-   "account": "dre",
-   "rc": 1,
-   "secs": 92,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_022727_worldboss_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 33608,
+  "now": 33732,
   "segments": [
    {
     "b": 29498,
@@ -8151,14 +8161,32 @@
     "login": null,
     "handoff": 33540,
     "rc": 1,
-    "e": 33608,
+    "e": 33620,
     "secs": 16,
     "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)"
+   },
+   {
+    "b": 33620,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33625,
+    "rc": null,
+    "e": 33732
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-24T09:20:19",
+   "account": "smurf",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 79,
+   "why": "pokemon_home: 41 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_091900_pokemon_home_smurf__KEEP_0045_092019_board_saturated.png"
+  },
   {
    "ts": "2026-09-24T09:18:58",
    "account": "smurf",
@@ -8182,7 +8210,7 @@
   "since": "2026-09-24T08:00",
   "switches": 6,
   "relogMinutes": 2.4,
-  "retries": 2,
+  "retries": 3,
   "tasks": {
    "dailyclaim": {
     "runs": 5,
@@ -8205,9 +8233,9 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 5,
-    "minutes": 6.9,
-    "failed": 1
+    "runs": 6,
+    "minutes": 8.2,
+    "failed": 2
    },
    "combat_daily": {
     "runs": 4,
@@ -8438,73 +8466,73 @@
     "account": "smurf",
     "task": "combat_daily",
     "startsIn": 0.0,
-    "eta": "2026-09-24T09:20"
+    "eta": "2026-09-24T09:22"
    },
    {
     "account": "smurf",
     "task": "victory_road",
     "startsIn": 2.0,
-    "eta": "2026-09-24T09:22"
+    "eta": "2026-09-24T09:24"
    },
    {
     "account": "smurf",
     "task": "paradise",
     "startsIn": 2.1,
-    "eta": "2026-09-24T09:22"
+    "eta": "2026-09-24T09:24"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
     "startsIn": 6.7,
-    "eta": "2026-09-24T09:26"
+    "eta": "2026-09-24T09:28"
    },
    {
     "account": "smurf",
     "task": "collect_hoopa_keys",
     "startsIn": 8.2,
-    "eta": "2026-09-24T09:28"
+    "eta": "2026-09-24T09:30"
    },
    {
     "account": "smurf",
     "task": "sky_pillar",
     "startsIn": 8.3,
-    "eta": "2026-09-24T09:28"
+    "eta": "2026-09-24T09:30"
    },
    {
     "account": "smurf",
     "task": "faction",
     "startsIn": 9.3,
-    "eta": "2026-09-24T09:29"
+    "eta": "2026-09-24T09:31"
    },
    {
     "account": "smurf",
     "task": "misty_woods",
     "startsIn": 11.4,
-    "eta": "2026-09-24T09:31"
+    "eta": "2026-09-24T09:33"
    },
    {
     "account": "smurf",
     "task": "weekend_bash",
     "startsIn": 13.4,
-    "eta": "2026-09-24T09:33"
+    "eta": "2026-09-24T09:35"
    },
    {
     "account": "fake1",
     "task": "dailyclaim",
     "startsIn": 13.8,
-    "eta": "2026-09-24T09:33"
+    "eta": "2026-09-24T09:35"
    },
    {
     "account": "fake1",
     "task": "mail",
     "startsIn": 14.2,
-    "eta": "2026-09-24T09:34"
+    "eta": "2026-09-24T09:36"
    },
    {
     "account": "fake1",
     "task": "joint_team_daily_quest",
     "startsIn": 14.2,
-    "eta": "2026-09-24T09:34"
+    "eta": "2026-09-24T09:36"
    }
   ],
   "more": 163,
@@ -9234,9 +9262,9 @@
    "issues": [
     {
      "task": "pokemon_home",
-     "at": "09:18",
-     "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_091842_pokemon_home_smurf__KEEP_0015_091858_board_not_reached.png"
+     "at": "09:20",
+     "why": "pokemon_home: 41 charge(s) unspent after 1 merge(s) that moved nothing — the board was not really saturated",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_091900_pokemon_home_smurf__KEEP_0045_092019_board_saturated.png"
     }
    ],
    "off": [
@@ -9301,7 +9329,7 @@
     {
      "day": "2026-09-24",
      "done": 5,
-     "failed": 1
+     "failed": 2
     }
    ]
   },
