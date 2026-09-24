@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-24T20:14:40.968109",
+ "generatedAt": "2026-09-24T20:16:44.460401",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -642,7 +642,15 @@
   }
  ],
  "snoozed": {},
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "exou",
+   "since": "2026-09-24T20:15:19",
+   "held": true,
+   "heldUntil": "2026-09-24T20:25:19",
+   "deferredUntil": "2026-09-24T20:25:31"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 0,
@@ -710,11 +718,44 @@
   }
  },
  "session": {
-  "label": "exou",
-  "at": "2026-09-24T20:14:26.490549",
+  "label": "skosmurf",
+  "at": "2026-09-24T20:15:39.117838",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T20:16:38",
+   "script": "worldboss",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 79,
+   "stats": {
+    "wb_no_setform": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 1
+   },
+   "dir": "debug_runs/20260924_201519_worldboss_skosmurf"
+  },
+  {
+   "ts": "2026-09-24T20:15:19",
+   "script": "worldboss",
+   "account": "exou",
+   "rc": 4,
+   "secs": 71,
+   "stats": {
+    "wb_no_setform": 1,
+    "owner_online": 1,
+    "account_taken": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 2
+   },
+   "dir": "debug_runs/20260924_201407_worldboss_exou"
+  },
   {
    "ts": "2026-09-24T20:14:07",
    "script": "worldboss",
@@ -7451,46 +7492,12 @@
     "stage": 4
    },
    "dir": "debug_runs/20260923_141433_sky_pillar_sprite"
-  },
-  {
-   "ts": "2026-09-23T14:14:31",
-   "script": "collect_hoopa_keys",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "near_miss_hoopa_vault": 1,
-    "marginal_hoopa_vault": 1,
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_141425_collect_hoopa_keys_sprite"
-  },
-  {
-   "ts": "2026-09-23T14:14:21",
-   "script": "guild_war",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 64,
-   "stats": {
-    "near_miss_last_hit": 4,
-    "near_miss_vr_rank": 2,
-    "marginal_last_hit": 1,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_141317_guild_war_sprite"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 72881,
+  "now": 73004,
   "segments": [
    {
     "b": 29498,
@@ -11341,12 +11348,21 @@
     ],
     "handoff": 64500,
     "rc": null,
-    "e": 72881
+    "e": 73004
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-24T20:15:19",
+   "account": "exou",
+   "task": "worldboss",
+   "rc": 4,
+   "secs": 71,
+   "why": "wb_no_setform, owner_online, account_taken",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_201407_worldboss_exou__0009_201440_tap_anchor_L820__AFTER__boss.png"
+  },
   {
    "ts": "2026-09-24T16:37:18",
    "account": "smurf",
@@ -11548,9 +11564,9 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 126,
+  "switches": 128,
   "relogMinutes": 43.6,
-  "retries": 33,
+  "retries": 34,
   "tasks": {
    "dailyclaim": {
     "runs": 20,
@@ -11648,9 +11664,9 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 12,
-    "minutes": 13.4,
-    "failed": 0
+    "runs": 14,
+    "minutes": 15.9,
+    "failed": 1
    }
   }
  },
@@ -11868,7 +11884,9 @@
    "fake5",
    "fake6",
    "fake7",
-   "sprite"
+   "sprite",
+   "exou",
+   "skosmurf"
   ]
  },
  "worldBossSkipped": {},
@@ -11894,13 +11912,13 @@
     "account": "jeff",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-09-24T20:15"
+    "eta": "2026-09-24T20:17"
    },
    {
     "account": "chris",
     "task": "island_challenge",
     "startsIn": 1.1,
-    "eta": "2026-09-24T20:15"
+    "eta": "2026-09-24T20:17"
    }
   ],
   "more": 0,
@@ -11933,8 +11951,8 @@
   "restarts": 0,
   "downtimeMin": 0.7,
   "switches": {
-   "n": 126,
-   "medianSec": 16.0,
+   "n": 127,
+   "medianSec": 16,
    "picker": {
     "n": 103,
     "medianSec": 16,
@@ -11945,8 +11963,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 23,
-    "medianSec": 19
+    "n": 24,
+    "medianSec": 19.5
    }
   }
  },
@@ -12330,6 +12348,15 @@
    "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "exou",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-24T20:15:19",
+   "why": "someone is playing on it",
+   "action": "left alone until 20:25",
+   "enable": false
   },
   {
    "account": "fake7",
@@ -13487,7 +13514,14 @@
    "done": 11,
    "owed": 11,
    "open": [],
-   "issues": [],
+   "issues": [
+    {
+     "task": "worldboss",
+     "at": "20:15",
+     "why": "wb no setform, owner online, account taken",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260924_201407_worldboss_exou__0009_201440_tap_anchor_L820__AFTER__boss.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
@@ -13613,7 +13647,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 15,
+     "done": 16,
      "failed": 2
     }
    ]
