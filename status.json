@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T11:09:26.892909",
+ "generatedAt": "2026-09-24T11:11:30.619424",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "exou",
+  "mode": "dailyclaim",
+  "since": "11:11:05"
  },
  "grid": {
   "tasks": [
@@ -275,7 +275,7 @@
     "cells": [
      "✓",
      "✓",
-     "·",
+     "✓",
      "⊘",
      "✓",
      "✓",
@@ -306,7 +306,7 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 147,
-  "todo": 83,
+  "done": 149,
+  "todo": 81,
   "gaveUp": 2,
   "unavailable": 4,
   "windowed": 38
@@ -713,11 +713,50 @@
   }
  },
  "session": {
-  "label": "sprite",
-  "at": "2026-09-24T11:03:57.567441",
+  "label": "exou",
+  "at": "2026-09-24T11:11:25.305476",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T11:11:04",
+   "script": "joint_team_daily_quest",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "panel_swipes": 8,
+    "artifact_none_owned": 1,
+    "rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "artifact": "none owned — nothing to enhance",
+    "left": "enhance any artifact once: todo"
+   },
+   "dir": "debug_runs/20260924_111028_joint_team_daily_quest_fake7"
+  },
+  {
+   "ts": "2026-09-24T11:09:59",
+   "script": "paradise",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 194,
+   "stats": {
+    "marginal_paradise_hub": 1,
+    "explore_clicks": 93,
+    "pass_claims": 4,
+    "upgraded_small_radar": 2,
+    "upgraded_sports_gloves": 1,
+    "upgraded_energy_drink": 1,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "16/16"
+   },
+   "dir": "debug_runs/20260924_110645_paradise_sprite"
+  },
   {
    "ts": "2026-09-24T11:06:44",
    "script": "victory_road",
@@ -7479,55 +7518,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260923_094300_victory_road_fake2"
-  },
-  {
-   "ts": "2026-09-23T09:42:59",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 115,
-   "stats": {
-    "title_reread_named": 3,
-    "marginal_afk_rewards": 2,
-    "near_miss_afk_rewards": 3,
-    "refused_quick_bar": 1,
-    "adv_overflow": 1,
-    "near_miss_vr_rank": 5,
-    "near_miss_battle_victory_confirm": 1,
-    "refused_reward_banner_close": 3,
-    "near_miss_adventure_event": 1,
-    "marginal_pokemon_upgrade": 1,
-    "pokemon_upgraded": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 +) a",
-    "quick_combat_cost": "free free"
-   },
-   "dir": "debug_runs/20260923_094104_combat_daily_fake2"
-  },
-  {
-   "ts": "2026-09-23T09:40:58",
-   "script": "pokemon_home",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 16,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "grid_shrank_rejected": 1,
-    "charges_left_by_cap": 49
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_094042_pokemon_home_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 40167,
+  "now": 40291,
   "segments": [
    {
     "b": 29498,
@@ -9368,8 +9364,36 @@
     "s": "paradise",
     "login": null,
     "handoff": 40005,
+    "rc": 0,
+    "e": 40200,
+    "secs": 194,
+    "why": ""
+   },
+   {
+    "b": 40200,
+    "a": "fake7",
+    "s": "joint_team_daily_quest",
+    "login": [
+     40201,
+     40222
+    ],
+    "handoff": 40227,
+    "rc": 0,
+    "e": 40265,
+    "secs": 36,
+    "why": ""
+   },
+   {
+    "b": 40265,
+    "a": "exou",
+    "s": "dailyclaim",
+    "login": [
+     40265,
+     40285
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 40167
+    "e": 40291
    }
   ],
   "idle": []
@@ -9468,8 +9492,8 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 19,
-  "relogMinutes": 7.8,
+  "switches": 21,
+  "relogMinutes": 8.3,
   "retries": 12,
   "tasks": {
    "dailyclaim": {
@@ -9483,8 +9507,8 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 13,
-    "minutes": 10.3,
+    "runs": 14,
+    "minutes": 10.9,
     "failed": 2
    },
    "daily_dungeon": {
@@ -9508,8 +9532,8 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 12,
-    "minutes": 52.6,
+    "runs": 13,
+    "minutes": 55.8,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -9746,79 +9770,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake7",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.4,
-    "eta": "2026-09-24T11:09"
-   },
-   {
-    "account": "fake7",
-    "task": "faction",
-    "startsIn": 1.2,
-    "eta": "2026-09-24T11:10"
-   },
-   {
-    "account": "fake5",
-    "task": "daily_dungeon",
-    "startsIn": 3.0,
-    "eta": "2026-09-24T11:12"
-   },
-   {
-    "account": "fake5",
-    "task": "faction",
-    "startsIn": 3.3,
-    "eta": "2026-09-24T11:12"
-   },
-   {
-    "account": "sprite",
-    "task": "paradise",
-    "startsIn": 5.1,
-    "eta": "2026-09-24T11:14"
-   },
-   {
-    "account": "sprite",
-    "task": "collect_hoopa_keys",
-    "startsIn": 9.5,
-    "eta": "2026-09-24T11:18"
-   },
-   {
-    "account": "sprite",
-    "task": "sky_pillar",
-    "startsIn": 9.6,
-    "eta": "2026-09-24T11:19"
-   },
-   {
-    "account": "fake3",
-    "task": "faction",
-    "startsIn": 11.5,
-    "eta": "2026-09-24T11:20"
-   },
-   {
-    "account": "fake4",
-    "task": "faction",
-    "startsIn": 13.3,
-    "eta": "2026-09-24T11:22"
-   },
-   {
-    "account": "fake6",
-    "task": "faction",
-    "startsIn": 15.1,
-    "eta": "2026-09-24T11:24"
-   },
-   {
     "account": "exou",
     "task": "dailyclaim",
-    "startsIn": 16.9,
-    "eta": "2026-09-24T11:26"
+    "startsIn": 0.0,
+    "eta": "2026-09-24T11:11"
    },
    {
     "account": "exou",
     "task": "mail",
-    "startsIn": 17.4,
-    "eta": "2026-09-24T11:26"
+    "startsIn": 0.5,
+    "eta": "2026-09-24T11:12"
+   },
+   {
+    "account": "exou",
+    "task": "daily_dungeon",
+    "startsIn": 0.6,
+    "eta": "2026-09-24T11:12"
+   },
+   {
+    "account": "exou",
+    "task": "pokemon_home",
+    "startsIn": 0.9,
+    "eta": "2026-09-24T11:12"
+   },
+   {
+    "account": "exou",
+    "task": "combat_daily",
+    "startsIn": 1.7,
+    "eta": "2026-09-24T11:13"
+   },
+   {
+    "account": "exou",
+    "task": "victory_road",
+    "startsIn": 3.4,
+    "eta": "2026-09-24T11:14"
+   },
+   {
+    "account": "exou",
+    "task": "paradise",
+    "startsIn": 3.6,
+    "eta": "2026-09-24T11:15"
+   },
+   {
+    "account": "exou",
+    "task": "collect_hoopa_keys",
+    "startsIn": 7.9,
+    "eta": "2026-09-24T11:19"
+   },
+   {
+    "account": "exou",
+    "task": "sky_pillar",
+    "startsIn": 8.0,
+    "eta": "2026-09-24T11:19"
+   },
+   {
+    "account": "fake5",
+    "task": "daily_dungeon",
+    "startsIn": 9.8,
+    "eta": "2026-09-24T11:21"
+   },
+   {
+    "account": "fake5",
+    "task": "faction",
+    "startsIn": 10.1,
+    "eta": "2026-09-24T11:21"
+   },
+   {
+    "account": "sprite",
+    "task": "collect_hoopa_keys",
+    "startsIn": 11.9,
+    "eta": "2026-09-24T11:23"
    }
   ],
-  "more": 71,
+  "more": 69,
   "fillers": [
    {
     "account": "smurf",
@@ -9852,8 +9876,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 19,
-   "medianSec": 17,
+   "n": 21,
+   "medianSec": 18,
    "picker": {
     "n": 18,
     "medianSec": 17.0,
@@ -9864,7 +9888,7 @@
     "medianSec": null
    },
    "miss": {
-    "n": 1,
+    "n": 3,
     "medianSec": 20
    }
   }
@@ -9900,7 +9924,7 @@
   },
   "sprite": {
    "mailUnread": 0,
-   "paradiseStamina": "5/15",
+   "paradiseStamina": "16/16",
    "pillar": "floor 50 stage 4"
   },
   "jeff": {
@@ -10072,6 +10096,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-24T11:11:04",
+   "account": "fake7",
+   "task": "joint_team_daily_quest",
+   "left": "enhance any artifact once: todo"
+  },
+  {
    "ts": "2026-09-24T08:13:16",
    "account": "lucifer2",
    "task": "joint_team_daily_quest",
@@ -10150,6 +10180,15 @@
    "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "fake7",
+   "task": "joint_team_daily_quest",
+   "kind": "left",
+   "since": "2026-09-24T11:11:04",
+   "why": "enhance any artifact once: todo",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
   },
   {
    "account": "lucifer2",
@@ -11176,14 +11215,10 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-24",
-   "summary": "9 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 9,
+   "summary": "10 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 10,
    "owed": 14,
    "open": [
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
     {
      "task": "JointB",
      "state": "not available today"
@@ -11272,7 +11307,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 10,
+     "done": 11,
      "failed": 2
     }
    ]
@@ -11280,17 +11315,13 @@
   "sprite": {
    "name": "sprite",
    "day": "2026-09-24",
-   "summary": "6 of 11 dailies done",
-   "done": 6,
+   "summary": "7 of 11 dailies done",
+   "done": 7,
    "owed": 11,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "paradise",
-     "state": "still to do"
     },
     {
      "task": "guildBoss",
@@ -11321,7 +11352,7 @@
    },
    "progress": {
     "mailUnread": 0,
-    "paradiseStamina": "5/15",
+    "paradiseStamina": "16/16",
     "pillar": "floor 50 stage 4"
    },
    "history": [
@@ -11357,7 +11388,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 7,
+     "done": 8,
      "failed": 1
     }
    ]
