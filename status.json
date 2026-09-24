@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T21:47:52.673111",
+ "generatedAt": "2026-09-24T21:49:56.475250",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "rift",
-  "since": "21:44:51"
+  "account": "chris",
+  "mode": "hoopa",
+  "since": "21:49:33"
  },
  "grid": {
   "tasks": [
@@ -712,11 +712,38 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-24T21:41:50.854663",
+  "label": "chris",
+  "at": "2026-09-24T21:49:48.952807",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T21:49:33",
+   "script": "rift",
+   "account": "smurf",
+   "rc": 2,
+   "secs": 7,
+   "stats": {
+    "rift_levels": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_214926_rift_smurf"
+  },
+  {
+   "ts": "2026-09-24T21:49:20",
+   "script": "rift",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 265,
+   "stats": {
+    "rift_levels": 51,
+    "rift_rerolls": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_214455_rift_smurf"
+  },
   {
    "ts": "2026-09-24T20:45:19",
    "script": "rift",
@@ -7440,40 +7467,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260923_142849_rank_match_test1"
-  },
-  {
-   "ts": "2026-09-23T14:28:26",
-   "script": "weekend_bash",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_142826_weekend_bash_lucifer2"
-  },
-  {
-   "ts": "2026-09-23T14:28:23",
-   "script": "sky_pillar",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 86,
-    "stage": 4
-   },
-   "dir": "debug_runs/20260923_142716_sky_pillar_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 78473,
+  "now": 78596,
   "segments": [
    {
     "b": 29498,
@@ -11324,7 +11323,7 @@
     ],
     "handoff": 64500,
     "rc": null,
-    "e": 78473
+    "e": 78596
    }
   ],
   "idle": []
@@ -11540,7 +11539,7 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 142,
+  "switches": 143,
   "relogMinutes": 53.9,
   "retries": 36,
   "tasks": {
@@ -11630,8 +11629,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 8,
-    "minutes": 15.2,
+    "runs": 10,
+    "minutes": 19.8,
     "failed": 4
    },
    "rank_match": {
@@ -11706,6 +11705,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "smurf",
+   "task": "rift",
+   "why": "rift_levels",
+   "at": "2026-09-24T21:49:33"
   },
   {
    "account": "test1",
@@ -11888,10 +11893,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "smurf",
-    "mode": "rift"
-   },
-   {
     "account": "chris",
     "mode": "hoopa"
    },
@@ -11915,11 +11916,11 @@
   "restarts": 0,
   "downtimeMin": 0.7,
   "switches": {
-   "n": 142,
-   "medianSec": 16.0,
+   "n": 143,
+   "medianSec": 16,
    "picker": {
-    "n": 112,
-    "medianSec": 16.0,
+    "n": 113,
+    "medianSec": 16,
     "jumps": 65
    },
    "typed": {
@@ -11933,12 +11934,6 @@
   }
  },
  "progress": {
-  "lucifer2": {
-   "pillar": "floor 86 stage 10",
-   "mailUnread": 0,
-   "paradiseStamina": "9/19",
-   "rank": 7
-  },
   "test1": {
    "pillar": "floor 4 stage 6",
    "mailUnread": 0
@@ -12032,6 +12027,12 @@
    "paradiseStamina": "9/19",
    "rank": 3,
    "pillar": "floor 92 stage 7"
+  },
+  "lucifer2": {
+   "mailUnread": 0,
+   "paradiseStamina": "9/19",
+   "rank": 7,
+   "pillar": "floor 86 stage 10"
   }
  },
  "ledger": {
@@ -12703,7 +12704,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-24",
-   "summary": "15 of 17 dailies done · gave up on home · 2 switched off · 1 not available today",
+   "summary": "15 of 17 dailies done · gave up on home · 2 switched off · 2 not available today",
    "done": 15,
    "owed": 17,
    "open": [
@@ -12752,6 +12753,10 @@
     {
      "task": "joint_battle",
      "why": null
+    },
+    {
+     "task": "rift",
+     "why": "rift_levels"
     }
    ],
    "spent": {
@@ -12805,7 +12810,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 21,
+     "done": 22,
      "failed": 7
     }
    ]
@@ -13708,10 +13713,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "pillar": "floor 86 stage 10",
     "mailUnread": 0,
     "paradiseStamina": "9/19",
-    "rank": 7
+    "rank": 7,
+    "pillar": "floor 86 stage 10"
    },
    "history": [
     {
