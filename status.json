@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T08:57:26.534296",
+ "generatedAt": "2026-09-24T08:59:30.212295",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "dailyclaim",
-  "since": "08:57:19"
+  "mode": "joint_battle",
+  "since": "08:59:10"
  },
  "grid": {
   "tasks": [
@@ -81,9 +81,9 @@
    {
     "account": "chris",
     "cells": [
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 40,
-  "todo": 196,
+  "done": 43,
+  "todo": 193,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 38
@@ -696,11 +696,61 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-24T08:41:49.648743",
+  "label": "chris",
+  "at": "2026-09-24T08:57:34.495128",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T08:59:09",
+   "script": "joint_team_daily_quest",
+   "account": "chris",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "panel_swipes": 8,
+    "artifact_row_found_by_scrolling": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_085815_joint_team_daily_quest_chris"
+  },
+  {
+   "ts": "2026-09-24T08:58:13",
+   "script": "mail",
+   "account": "chris",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260924_085810_mail_chris"
+  },
+  {
+   "ts": "2026-09-24T08:58:09",
+   "script": "dailyclaim",
+   "account": "chris",
+   "rc": 0,
+   "secs": 26,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:77 0.275:8 0.345:54 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260924_085742_dailyclaim_chris"
+  },
   {
    "ts": "2026-09-24T08:57:18",
    "script": "championship",
@@ -7288,53 +7338,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260923_020101_worldboss_jeff"
-  },
-  {
-   "ts": "2026-09-23T02:01:01",
-   "script": "worldboss",
-   "account": "chris",
-   "rc": 1,
-   "secs": 60,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_020000_worldboss_chris"
-  },
-  {
-   "ts": "2026-09-23T01:09:27",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 23,
-   "stats": {
-    "fights": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 6,
-    "fights_today": 13
-   },
-   "dir": "debug_runs/20260923_010904_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-23T00:38:21",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 1,
-   "secs": 23,
-   "stats": {
-    "map_second_tap": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_003757_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 32247,
+  "now": 32370,
   "segments": [
    {
     "b": 29498,
@@ -7782,11 +7791,44 @@
     "s": "dailyclaim",
     "login": [
      32239,
-     null
+     32254
     ],
-    "handoff": null,
+    "handoff": 32262,
+    "rc": 0,
+    "e": 32290,
+    "secs": 26,
+    "why": ""
+   },
+   {
+    "b": 32290,
+    "a": "chris",
+    "s": "mail",
+    "login": null,
+    "handoff": 32290,
+    "rc": 0,
+    "e": 32294,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 32294,
+    "a": "chris",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 32295,
+    "rc": 0,
+    "e": 32350,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 32350,
+    "a": "chris",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 32353,
     "rc": null,
-    "e": 32247
+    "e": 32370
    }
   ],
   "idle": []
@@ -7805,22 +7847,22 @@
  "day": {
   "since": "2026-09-24T08:00",
   "switches": 3,
-  "relogMinutes": 0.8,
+  "relogMinutes": 1.1,
   "retries": 0,
   "tasks": {
    "dailyclaim": {
-    "runs": 3,
-    "minutes": 1.4,
+    "runs": 4,
+    "minutes": 1.9,
     "failed": 0
    },
    "mail": {
-    "runs": 3,
-    "minutes": 0.1,
+    "runs": 4,
+    "minutes": 0.2,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 3,
-    "minutes": 2.5,
+    "runs": 4,
+    "minutes": 3.4,
     "failed": 0
    },
    "daily_dungeon": {
@@ -8043,78 +8085,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "dailyclaim",
-    "startsIn": 0.0,
-    "eta": "2026-09-24T08:57"
-   },
-   {
-    "account": "chris",
-    "task": "mail",
-    "startsIn": 0.5,
-    "eta": "2026-09-24T08:57"
-   },
-   {
-    "account": "chris",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.5,
-    "eta": "2026-09-24T08:57"
-   },
-   {
-    "account": "chris",
     "task": "joint_battle",
-    "startsIn": 1.3,
-    "eta": "2026-09-24T08:58"
+    "startsIn": 0.0,
+    "eta": "2026-09-24T08:59"
    },
    {
     "account": "chris",
     "task": "daily_dungeon",
-    "startsIn": 3.3,
-    "eta": "2026-09-24T09:00"
+    "startsIn": 2.0,
+    "eta": "2026-09-24T09:01"
    },
    {
     "account": "chris",
     "task": "pokemon_home",
-    "startsIn": 3.6,
+    "startsIn": 2.3,
     "eta": "2026-09-24T09:01"
    },
    {
     "account": "chris",
     "task": "combat_daily",
-    "startsIn": 5.3,
-    "eta": "2026-09-24T09:02"
+    "startsIn": 3.9,
+    "eta": "2026-09-24T09:03"
    },
    {
     "account": "chris",
     "task": "victory_road",
-    "startsIn": 7.3,
-    "eta": "2026-09-24T09:04"
+    "startsIn": 6.0,
+    "eta": "2026-09-24T09:05"
    },
    {
     "account": "chris",
     "task": "paradise",
-    "startsIn": 7.4,
-    "eta": "2026-09-24T09:04"
+    "startsIn": 6.1,
+    "eta": "2026-09-24T09:05"
    },
    {
     "account": "chris",
     "task": "run_pvp_ranked",
-    "startsIn": 12.1,
-    "eta": "2026-09-24T09:09"
+    "startsIn": 10.8,
+    "eta": "2026-09-24T09:10"
    },
    {
     "account": "chris",
     "task": "collect_hoopa_keys",
-    "startsIn": 13.7,
+    "startsIn": 12.3,
     "eta": "2026-09-24T09:11"
    },
    {
     "account": "chris",
     "task": "sky_pillar",
-    "startsIn": 13.8,
+    "startsIn": 12.5,
     "eta": "2026-09-24T09:11"
+   },
+   {
+    "account": "chris",
+    "task": "faction",
+    "startsIn": 13.4,
+    "eta": "2026-09-24T09:12"
+   },
+   {
+    "account": "chris",
+    "task": "weekend_bash",
+    "startsIn": 15.4,
+    "eta": "2026-09-24T09:14"
+   },
+   {
+    "account": "chris",
+    "task": "championship",
+    "startsIn": 15.4,
+    "eta": "2026-09-24T09:14"
    }
   ],
-  "more": 184,
+  "more": 181,
   "fillers": [
    {
     "account": "smurf",
@@ -8148,11 +8190,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 2,
-   "medianSec": 14.5,
+   "n": 3,
+   "medianSec": 15,
    "picker": {
-    "n": 2,
-    "medianSec": 14.5,
+    "n": 3,
+    "medianSec": 15,
     "jumps": 1
    },
    "typed": {
@@ -8267,6 +8309,12 @@
   }
  },
  "ledger": {
+  "chris": {
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1,
+   "island fights": 6
+  },
   "jeff": {
    "island fights": 37,
    "pillar/story stages cleared": 3,
@@ -8294,9 +8342,6 @@
    "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
-  },
-  "chris": {
-   "island fights": 6
   },
   "fake3": {
    "daily claims": 2
@@ -8688,22 +8733,10 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-24",
-   "summary": "0 of 18 dailies done",
-   "done": 0,
+   "summary": "3 of 18 dailies done",
+   "done": 3,
    "owed": 18,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
     {
      "task": "JointB",
      "state": "still to do"
@@ -8769,6 +8802,9 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "mail claimed": 1,
+    "daily claims": 3,
+    "Privilege Pack claimed": 1,
     "island fights": 6
    },
    "progress": {
@@ -8811,7 +8847,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 1,
+     "done": 4,
      "failed": 0
     }
    ]
