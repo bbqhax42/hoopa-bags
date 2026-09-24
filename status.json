@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T07:09:46.489102",
+ "generatedAt": "2026-09-25T07:11:49.877544",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "lucifer1",
   "mode": "hoopa",
-  "since": "07:03:58"
+  "since": "07:11:05"
  },
  "grid": {
   "tasks": [
@@ -664,8 +664,8 @@
    "at": "2026-09-25T03:37:33"
   },
   "nova": {
-   "keys": 2,
-   "at": "2026-09-25T02:48:39"
+   "keys": 0,
+   "at": "2026-09-25T07:11:00"
   },
   "fake6": {
    "keys": 79,
@@ -713,11 +713,27 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-25T07:04:14.601423",
+  "label": "lucifer1",
+  "at": "2026-09-25T07:11:22.180667",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T07:11:01",
+   "script": "hoopa",
+   "account": "nova",
+   "rc": 2,
+   "secs": 396,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-25T05:49:03",
    "script": "island_challenge",
@@ -7438,23 +7454,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260923_171428_rift_skosmurf"
-  },
-  {
-   "ts": "2026-09-23T17:14:01",
-   "script": "rift",
-   "account": "smurf",
-   "rc": null,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_171359_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 112186,
+  "now": 112310,
   "segments": [
    {
     "b": 29498,
@@ -11352,8 +11357,22 @@
      111854
     ],
     "handoff": 111864,
+    "rc": 2,
+    "e": 112265,
+    "secs": 396,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 112265,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     112266,
+     112282
+    ],
+    "handoff": 112291,
     "rc": null,
-    "e": 112186
+    "e": 112310
    }
   ],
   "idle": []
@@ -11569,8 +11588,8 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 263,
-  "relogMinutes": 83.8,
+  "switches": 264,
+  "relogMinutes": 84.2,
   "retries": 44,
   "tasks": {
    "dailyclaim": {
@@ -11723,6 +11742,12 @@
    "task": "hoopa",
    "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
    "at": "2026-09-24T17:54:28"
+  },
+  {
+   "account": "nova",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-25T07:11:01"
   },
   {
    "account": "skosmurf",
@@ -11933,10 +11958,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "nova",
-    "mode": "hoopa"
-   },
-   {
     "account": "lucifer1",
     "mode": "hoopa"
    },
@@ -11952,12 +11973,12 @@
   "restarts": 0,
   "downtimeMin": 0.7,
   "switches": {
-   "n": 261,
-   "medianSec": 16,
+   "n": 262,
+   "medianSec": 16.0,
    "picker": {
-    "n": 215,
-    "medianSec": 15,
-    "jumps": 121
+    "n": 216,
+    "medianSec": 15.0,
+    "jumps": 122
    },
    "typed": {
     "n": 0,
@@ -12284,7 +12305,7 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-24",
-   "summary": "15 of 15 dailies done",
+   "summary": "15 of 15 dailies done · 1 not available today",
    "done": 15,
    "owed": 15,
    "open": [],
@@ -12297,7 +12318,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {},
    "progress": {
     "mailUnread": 0,
