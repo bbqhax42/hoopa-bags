@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T08:24:25.362441",
+ "generatedAt": "2026-09-24T08:26:29.050542",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
-  "mode": "sky_pillar",
-  "since": "08:24:23"
+  "account": "nova",
+  "mode": "dailyclaim",
+  "since": "08:25:40"
  },
  "grid": {
   "tasks": [
@@ -406,10 +406,10 @@
      "⏰",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 11,
-  "todo": 225,
+  "done": 13,
+  "todo": 223,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 38
@@ -696,11 +696,39 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-09-24T07:48:58.910677",
+  "label": "nova",
+  "at": "2026-09-24T08:25:55.770346",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T08:25:39",
+   "script": "weekend_bash",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_082539_weekend_bash_lucifer2"
+  },
+  {
+   "ts": "2026-09-24T08:25:34",
+   "script": "sky_pillar",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 70,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 86,
+    "stage": 10
+   },
+   "dir": "debug_runs/20260924_082424_sky_pillar_lucifer2"
+  },
   {
    "ts": "2026-09-24T08:24:22",
    "script": "collect_hoopa_keys",
@@ -7268,46 +7296,12 @@
     "fights_today": 9
    },
    "dir": "debug_runs/20260922_194940_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-22T16:36:20",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 21,
-   "stats": {
-    "fights": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 0,
-    "fights_today": 7
-   },
-   "dir": "debug_runs/20260922_163558_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-22T16:07:58",
-   "script": "sky_pillar",
-   "account": "exou",
-   "rc": 0,
-   "secs": 47,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 139,
-    "stage": 9
-   },
-   "dir": "debug_runs/20260922_160710_sky_pillar_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 30265,
+  "now": 30389,
   "segments": [
    {
     "b": 29498,
@@ -7434,8 +7428,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 30263,
+    "rc": 0,
+    "e": 30335,
+    "secs": 70,
+    "why": ""
+   },
+   {
+    "b": 30335,
+    "a": "lucifer2",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 30338,
+    "rc": 0,
+    "e": 30340,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 30340,
+    "a": "nova",
+    "s": "dailyclaim",
+    "login": [
+     30340,
+     30355
+    ],
+    "handoff": 30364,
     "rc": null,
-    "e": 30265
+    "e": 30389
    }
   ],
   "idle": []
@@ -7453,8 +7472,8 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 0,
-  "relogMinutes": 0.0,
+  "switches": 1,
+  "relogMinutes": 0.4,
   "retries": 0,
   "tasks": {
    "dailyclaim": {
@@ -7505,6 +7524,16 @@
    "collect_hoopa_keys": {
     "runs": 1,
     "minutes": 0.1,
+    "failed": 0
+   },
+   "sky_pillar": {
+    "runs": 1,
+    "minutes": 1.2,
+    "failed": 0
+   },
+   "weekend_bash": {
+    "runs": 1,
+    "minutes": 0.0,
     "failed": 0
    }
   }
@@ -7676,79 +7705,79 @@
  "queue": {
   "next": [
    {
-    "account": "lucifer2",
-    "task": "sky_pillar",
+    "account": "nova",
+    "task": "dailyclaim",
     "startsIn": 0.0,
-    "eta": "2026-09-24T08:24"
-   },
-   {
-    "account": "lucifer2",
-    "task": "weekend_bash",
-    "startsIn": 2.0,
     "eta": "2026-09-24T08:26"
    },
    {
     "account": "nova",
-    "task": "dailyclaim",
-    "startsIn": 4.4,
-    "eta": "2026-09-24T08:28"
-   },
-   {
-    "account": "nova",
     "task": "mail",
-    "startsIn": 4.9,
-    "eta": "2026-09-24T08:29"
+    "startsIn": 0.5,
+    "eta": "2026-09-24T08:26"
    },
    {
     "account": "nova",
     "task": "joint_team_daily_quest",
-    "startsIn": 5.0,
-    "eta": "2026-09-24T08:29"
+    "startsIn": 0.6,
+    "eta": "2026-09-24T08:27"
    },
    {
     "account": "nova",
     "task": "joint_battle",
-    "startsIn": 5.7,
-    "eta": "2026-09-24T08:30"
+    "startsIn": 1.3,
+    "eta": "2026-09-24T08:27"
    },
    {
     "account": "nova",
     "task": "daily_dungeon",
-    "startsIn": 7.7,
-    "eta": "2026-09-24T08:32"
+    "startsIn": 3.3,
+    "eta": "2026-09-24T08:29"
    },
    {
     "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 7.9,
-    "eta": "2026-09-24T08:32"
+    "startsIn": 3.5,
+    "eta": "2026-09-24T08:29"
    },
    {
     "account": "nova",
     "task": "combat_daily",
-    "startsIn": 9.5,
-    "eta": "2026-09-24T08:33"
+    "startsIn": 5.1,
+    "eta": "2026-09-24T08:31"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 11.6,
-    "eta": "2026-09-24T08:36"
+    "startsIn": 7.2,
+    "eta": "2026-09-24T08:33"
    },
    {
     "account": "nova",
     "task": "paradise",
-    "startsIn": 11.7,
-    "eta": "2026-09-24T08:36"
+    "startsIn": 7.3,
+    "eta": "2026-09-24T08:33"
    },
    {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 16.1,
-    "eta": "2026-09-24T08:40"
+    "startsIn": 11.7,
+    "eta": "2026-09-24T08:38"
+   },
+   {
+    "account": "nova",
+    "task": "collect_hoopa_keys",
+    "startsIn": 13.1,
+    "eta": "2026-09-24T08:39"
+   },
+   {
+    "account": "nova",
+    "task": "sky_pillar",
+    "startsIn": 13.2,
+    "eta": "2026-09-24T08:39"
    }
   ],
-  "more": 213,
+  "more": 211,
   "fillers": [
    {
     "account": "smurf",
@@ -7782,12 +7811,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 0,
-   "medianSec": null,
+   "n": 1,
+   "medianSec": 15,
    "picker": {
-    "n": 0,
-    "medianSec": null,
-    "jumps": 0
+    "n": 1,
+    "medianSec": 15,
+    "jumps": 1
    },
    "typed": {
     "n": 0,
@@ -7800,11 +7829,6 @@
   }
  },
  "progress": {
-  "exou": {
-   "pillar": "floor 139 stage 9",
-   "mailUnread": 0,
-   "paradiseStamina": "16/16"
-  },
   "jeff": {
    "islandFights": 20,
    "islandStamina": 0,
@@ -7864,6 +7888,10 @@
    "paradiseStamina": "5/15",
    "pillar": "floor 50 stage 4"
   },
+  "exou": {
+   "mailUnread": 0,
+   "paradiseStamina": "16/16"
+  },
   "skosmurf": {
    "mailUnread": 0,
    "paradiseStamina": "1/19",
@@ -7881,7 +7909,7 @@
    "mailUnread": 0,
    "paradiseStamina": "9/19",
    "rank": 7,
-   "pillar": "floor 86 stage 4"
+   "pillar": "floor 86 stage 10"
   },
   "test1": {
    "mailUnread": 0,
@@ -7901,6 +7929,7 @@
  },
  "ledger": {
   "lucifer2": {
+   "pillar/story stages cleared": 3,
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
@@ -9665,7 +9694,6 @@
    "unavailable": [],
    "spent": {},
    "progress": {
-    "pillar": "floor 139 stage 9",
     "mailUnread": 0,
     "paradiseStamina": "16/16"
    },
@@ -9929,8 +9957,8 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-24",
-   "summary": "11 of 15 dailies done · 1 switched off",
-   "done": 11,
+   "summary": "13 of 15 dailies done · 1 switched off",
+   "done": 13,
    "owed": 15,
    "open": [
     {
@@ -9940,14 +9968,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -9967,6 +9987,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -9978,7 +9999,7 @@
     "mailUnread": 0,
     "paradiseStamina": "9/19",
     "rank": 7,
-    "pillar": "floor 86 stage 4"
+    "pillar": "floor 86 stage 10"
    },
    "history": [
     {
@@ -10013,7 +10034,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 11,
+     "done": 13,
      "failed": 0
     }
    ]
