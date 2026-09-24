@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T11:50:38.541576",
+ "generatedAt": "2026-09-24T11:52:42.027766",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "joint_team_daily_quest",
-  "since": "11:50:34"
+  "mode": "pokemon_home",
+  "since": "11:52:23"
  },
  "grid": {
   "tasks": [
@@ -419,9 +419,9 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 178,
-  "todo": 52,
+  "done": 181,
+  "todo": 49,
   "gaveUp": 2,
   "unavailable": 4,
   "windowed": 38
@@ -718,6 +718,38 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T11:52:22",
+   "script": "daily_dungeon",
+   "account": "test1",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_115208_daily_dungeon_test1"
+  },
+  {
+   "ts": "2026-09-24T11:51:29",
+   "script": "joint_team_daily_quest",
+   "account": "test1",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "panel_swipes": 8,
+    "artifact_none_owned": 1,
+    "guild_base_by_back": 1,
+    "rows_left": 2
+   },
+   "incomplete": [],
+   "values": {
+    "artifact": "none owned — nothing to enhance",
+    "left": "upgrade squad skill once: claimable; enhance any artifact once: todo"
+   },
+   "dir": "debug_runs/20260924_115034_joint_team_daily_quest_test1"
+  },
   {
    "ts": "2026-09-24T11:50:33",
    "script": "mail",
@@ -7515,45 +7547,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260923_101940_mail_fake6"
-  },
-  {
-   "ts": "2026-09-23T10:19:38",
-   "script": "dailyclaim",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 23,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:78 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260923_101915_dailyclaim_fake6"
-  },
-  {
-   "ts": "2026-09-23T10:18:49",
-   "script": "collect_hoopa_keys",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "near_miss_hoopa_vault": 1,
-    "marginal_hoopa_vault": 1,
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_101842_collect_hoopa_keys_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 42638,
+  "now": 42762,
   "segments": [
    {
     "b": 29498,
@@ -9776,8 +9775,39 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 42634,
+    "rc": 0,
+    "e": 42690,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 42690,
+    "a": "test1",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 42692,
     "rc": null,
-    "e": 42638
+    "e": 42723
+   },
+   {
+    "b": 42723,
+    "a": "test1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 42728,
+    "rc": 0,
+    "e": 42743,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 42743,
+    "a": "test1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 42744,
+    "rc": null,
+    "e": 42762
    }
   ],
   "idle": []
@@ -9900,13 +9930,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 15,
-    "minutes": 11.7,
+    "runs": 16,
+    "minutes": 12.6,
     "failed": 2
    },
    "daily_dungeon": {
-    "runs": 15,
-    "minutes": 4.8,
+    "runs": 16,
+    "minutes": 5.0,
     "failed": 0
    },
    "pokemon_home": {
@@ -10164,78 +10194,78 @@
   "next": [
    {
     "account": "test1",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-24T11:50"
-   },
-   {
-    "account": "test1",
-    "task": "joint_battle",
-    "startsIn": 0.8,
-    "eta": "2026-09-24T11:51"
-   },
-   {
-    "account": "test1",
-    "task": "daily_dungeon",
-    "startsIn": 2.8,
-    "eta": "2026-09-24T11:53"
-   },
-   {
-    "account": "test1",
     "task": "pokemon_home",
-    "startsIn": 3.1,
-    "eta": "2026-09-24T11:53"
+    "startsIn": 0.0,
+    "eta": "2026-09-24T11:52"
    },
    {
     "account": "test1",
     "task": "combat_daily",
-    "startsIn": 4.0,
-    "eta": "2026-09-24T11:54"
+    "startsIn": 0.9,
+    "eta": "2026-09-24T11:53"
    },
    {
     "account": "test1",
     "task": "victory_road",
-    "startsIn": 5.7,
-    "eta": "2026-09-24T11:56"
+    "startsIn": 2.6,
+    "eta": "2026-09-24T11:55"
    },
    {
     "account": "test1",
     "task": "paradise",
-    "startsIn": 5.8,
-    "eta": "2026-09-24T11:56"
+    "startsIn": 2.7,
+    "eta": "2026-09-24T11:55"
    },
    {
     "account": "test1",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.2,
-    "eta": "2026-09-24T12:00"
+    "startsIn": 7.1,
+    "eta": "2026-09-24T11:59"
    },
    {
     "account": "test1",
     "task": "sky_pillar",
-    "startsIn": 10.4,
-    "eta": "2026-09-24T12:01"
+    "startsIn": 7.3,
+    "eta": "2026-09-24T11:59"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 11.8,
-    "eta": "2026-09-24T12:02"
+    "startsIn": 8.7,
+    "eta": "2026-09-24T12:01"
    },
    {
     "account": "fake5",
     "task": "daily_dungeon",
-    "startsIn": 13.8,
-    "eta": "2026-09-24T12:04"
+    "startsIn": 10.7,
+    "eta": "2026-09-24T12:03"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 14.1,
-    "eta": "2026-09-24T12:04"
+    "startsIn": 11.0,
+    "eta": "2026-09-24T12:03"
+   },
+   {
+    "account": "lucifer1",
+    "task": "run_pvp_ranked",
+    "startsIn": 13.0,
+    "eta": "2026-09-24T12:05"
+   },
+   {
+    "account": "lucifer1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 14.4,
+    "eta": "2026-09-24T12:07"
+   },
+   {
+    "account": "lucifer1",
+    "task": "sky_pillar",
+    "startsIn": 14.6,
+    "eta": "2026-09-24T12:07"
    }
   ],
-  "more": 40,
+  "more": 37,
   "fillers": [
    {
     "account": "smurf",
@@ -10522,6 +10552,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-24T11:51:29",
+   "account": "test1",
+   "task": "joint_team_daily_quest",
+   "left": "upgrade squad skill once: claimable; enhance any artifact once: todo"
+  },
+  {
    "ts": "2026-09-24T11:38:23",
    "account": "lucifer1",
    "task": "joint_team_daily_quest",
@@ -10637,6 +10673,15 @@
    "kind": "left",
    "since": "2026-09-24T08:13:16",
    "why": "upgrade squad skill once: blocked",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "test1",
+   "task": "joint_team_daily_quest",
+   "kind": "left",
+   "since": "2026-09-24T11:51:29",
+   "why": "upgrade squad skill once: claimable; enhance any artifact once: todo",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
   },
@@ -12165,22 +12210,10 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-24",
-   "summary": "2 of 14 dailies done · 2 switched off",
-   "done": 2,
+   "summary": "5 of 14 dailies done · 2 switched off",
+   "done": 5,
    "owed": 14,
    "open": [
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
     {
      "task": "home",
      "state": "still to do"
@@ -12218,7 +12251,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "11:51",
+     "why": "finished, but left open: upgrade squad skill once: claimable; enhance any artifact once: todo",
+     "frame": null
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -12273,7 +12313,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 3,
+     "done": 5,
      "failed": 0
     }
    ]
