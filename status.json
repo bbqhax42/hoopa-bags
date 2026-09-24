@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T10:44:43.454261",
+ "generatedAt": "2026-09-24T10:46:47.005972",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": null,
-  "mode": null,
-  "since": null
+  "account": "fake6",
+  "mode": "collect_hoopa_keys",
+  "since": "10:46:43"
  },
  "grid": {
   "tasks": [
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "💤"
     ]
    },
    {
@@ -258,7 +258,7 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 129,
-  "todo": 102,
+  "done": 130,
+  "todo": 100,
   "gaveUp": 3,
   "unavailable": 3,
   "windowed": 38
@@ -625,6 +625,14 @@
  ],
  "islandChallenge": [
   {
+   "account": "chris",
+   "fights": 0,
+   "stamina": 9,
+   "staminaMax": 9,
+   "staminaAt": "2026-09-24T10:46:38",
+   "nextAt": "2026-09-24T13:52:43"
+  },
+  {
    "account": "jeff",
    "fights": 2,
    "stamina": 26,
@@ -634,6 +642,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-24T13:52",
   "jeff|island_challenge": "2026-09-24T11:39"
  },
  "ownerOnline": [],
@@ -704,11 +713,48 @@
   }
  },
  "session": {
-  "label": "fake6",
-  "at": "2026-09-24T10:36:11.654093",
+  "label": "chris",
+  "at": "2026-09-24T10:46:22.691063",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T10:46:43",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 12,
+   "stats": {
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 9,
+    "fights_today": 0
+   },
+   "dir": "debug_runs/20260924_104630_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-24T10:46:08",
+   "script": "paradise",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 273,
+   "stats": {
+    "marginal_paradise_hub": 3,
+    "explore_clicks": 139,
+    "pass_claims": 7,
+    "upgraded_energy_drink": 2,
+    "upgraded_small_radar": 2,
+    "upgraded_sports_gloves": 1,
+    "dex_milestones": 2,
+    "dex_activated": 6,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_104134_paradise_fake6"
+  },
   {
    "ts": "2026-09-24T10:41:32",
    "script": "victory_road",
@@ -7450,43 +7496,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260923_092321_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-23T09:22:45",
-   "script": "faction",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 131,
-   "stats": {
-    "auto_formation": 20,
-    "skip_retry": 15,
-    "floors_grass": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_092033_faction_smurf"
-  },
-  {
-   "ts": "2026-09-23T09:20:29",
-   "script": "sky_pillar",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 34,
-   "stats": {
-    "stage_lost": 1,
-    "sky_pillar_loss": 1,
-    "sweep_presses": 4
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_091954_sky_pillar_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 38683,
+  "now": 38807,
   "segments": [
    {
     "b": 29498,
@@ -9061,8 +9076,36 @@
     "s": "paradise",
     "login": null,
     "handoff": 38494,
+    "rc": 0,
+    "e": 38768,
+    "secs": 273,
+    "why": ""
+   },
+   {
+    "b": 38768,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     38769,
+     38782
+    ],
+    "handoff": 38790,
+    "rc": 5,
+    "e": 38803,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 38803,
+    "a": "fake6",
+    "s": "collect_hoopa_keys",
+    "login": [
+     38804,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 38683
+    "e": 38807
    }
   ],
   "idle": []
@@ -9134,9 +9177,9 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 14,
-  "relogMinutes": 5.9,
-  "retries": 8,
+  "switches": 16,
+  "relogMinutes": 6.2,
+  "retries": 9,
   "tasks": {
    "dailyclaim": {
     "runs": 11,
@@ -9174,8 +9217,8 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 10,
-    "minutes": 44.9,
+    "runs": 11,
+    "minutes": 49.4,
     "failed": 0
    },
    "run_pvp_ranked": {
@@ -9209,9 +9252,9 @@
     "failed": 1
    },
    "island_challenge": {
-    "runs": 2,
-    "minutes": 0.8,
-    "failed": 2
+    "runs": 3,
+    "minutes": 1.0,
+    "failed": 3
    },
    "misty_woods": {
     "runs": 2,
@@ -9406,79 +9449,79 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-24T10:45"
-   },
-   {
-    "account": "fake6",
-    "task": "paradise",
-    "startsIn": 1.2,
-    "eta": "2026-09-24T10:45"
-   },
-   {
     "account": "fake6",
     "task": "collect_hoopa_keys",
-    "startsIn": 5.7,
-    "eta": "2026-09-24T10:50"
+    "startsIn": 0.0,
+    "eta": "2026-09-24T10:46"
    },
    {
     "account": "fake6",
     "task": "sky_pillar",
-    "startsIn": 5.8,
-    "eta": "2026-09-24T10:50"
+    "startsIn": 0.1,
+    "eta": "2026-09-24T10:46"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 7.1,
-    "eta": "2026-09-24T10:51"
+    "startsIn": 1.4,
+    "eta": "2026-09-24T10:48"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 8.9,
-    "eta": "2026-09-24T10:53"
+    "startsIn": 3.2,
+    "eta": "2026-09-24T10:50"
    },
    {
     "account": "fake4",
     "task": "faction",
-    "startsIn": 10.7,
-    "eta": "2026-09-24T10:55"
+    "startsIn": 5.0,
+    "eta": "2026-09-24T10:51"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 12.5,
-    "eta": "2026-09-24T10:57"
+    "startsIn": 6.8,
+    "eta": "2026-09-24T10:53"
    },
    {
     "account": "fake7",
     "task": "dailyclaim",
-    "startsIn": 14.3,
-    "eta": "2026-09-24T10:59"
+    "startsIn": 8.6,
+    "eta": "2026-09-24T10:55"
    },
    {
     "account": "fake7",
     "task": "mail",
-    "startsIn": 14.7,
-    "eta": "2026-09-24T10:59"
+    "startsIn": 9.0,
+    "eta": "2026-09-24T10:55"
    },
    {
     "account": "fake7",
     "task": "joint_team_daily_quest",
-    "startsIn": 14.8,
-    "eta": "2026-09-24T10:59"
+    "startsIn": 9.1,
+    "eta": "2026-09-24T10:55"
    },
    {
     "account": "fake7",
     "task": "joint_battle",
-    "startsIn": 15.6,
-    "eta": "2026-09-24T11:00"
+    "startsIn": 9.9,
+    "eta": "2026-09-24T10:56"
+   },
+   {
+    "account": "fake7",
+    "task": "daily_dungeon",
+    "startsIn": 11.9,
+    "eta": "2026-09-24T10:58"
+   },
+   {
+    "account": "fake7",
+    "task": "pokemon_home",
+    "startsIn": 12.2,
+    "eta": "2026-09-24T10:59"
    }
   ],
-  "more": 90,
+  "more": 88,
   "fillers": [
    {
     "account": "smurf",
@@ -9512,11 +9555,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 14,
-   "medianSec": 17.0,
+   "n": 15,
+   "medianSec": 17,
    "picker": {
-    "n": 14,
-    "medianSec": 17.0,
+    "n": 15,
+    "medianSec": 17,
     "jumps": 9
    },
    "typed": {
@@ -9583,8 +9626,8 @@
    "pillar": "floor 148 stage 8"
   },
   "chris": {
-   "islandFights": 18,
-   "islandStamina": 0,
+   "islandFights": 0,
+   "islandStamina": 9,
    "mailUnread": 0,
    "paradiseStamina": "9/19",
    "rank": 1,
@@ -10117,7 +10160,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "asks again later"
     }
    ],
    "issues": [],
@@ -10135,8 +10178,8 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "islandFights": 18,
-    "islandStamina": 0,
+    "islandFights": 0,
+    "islandStamina": 9,
     "mailUnread": 0,
     "paradiseStamina": "9/19",
     "rank": 1,
@@ -10742,17 +10785,13 @@
   "fake6": {
    "name": "Bigpp123",
    "day": "2026-09-24",
-   "summary": "8 of 14 dailies done · 2 switched off",
-   "done": 8,
+   "summary": "9 of 14 dailies done · 2 switched off",
+   "done": 9,
    "owed": 14,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "paradise",
-     "state": "still to do"
     },
     {
      "task": "guildBoss",
@@ -10827,7 +10866,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 8,
+     "done": 9,
      "failed": 0
     }
    ]
