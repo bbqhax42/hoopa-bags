@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T11:38:17.708556",
+ "generatedAt": "2026-09-24T11:40:21.479452",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "joint_team_daily_quest",
-  "since": "11:37:34"
+  "mode": "daily_dungeon",
+  "since": "11:40:14"
  },
  "grid": {
   "tasks": [
@@ -371,8 +371,8 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 169,
-  "todo": 61,
+  "done": 171,
+  "todo": 59,
   "gaveUp": 2,
   "unavailable": 4,
   "windowed": 38
@@ -637,13 +637,13 @@
    "fights": 2,
    "stamina": 26,
    "staminaMax": 28,
-   "staminaAt": "2026-09-24T10:27:08",
-   "nextAt": "2026-09-24T11:39:13"
+   "staminaAt": "2026-09-24T11:40:06",
+   "nextAt": "2026-09-24T12:52:14"
   }
  ],
  "snoozed": {
   "chris|island_challenge": "2026-09-24T13:52",
-  "jeff|island_challenge": "2026-09-24T11:39"
+  "jeff|island_challenge": "2026-09-24T12:52"
  },
  "ownerOnline": [],
  "keys": {
@@ -713,11 +713,45 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-24T11:36:55.575922",
+  "label": "jeff",
+  "at": "2026-09-24T11:39:50.986814",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T11:40:14",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 14,
+   "stats": {
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 26,
+    "fights_today": 2
+   },
+   "dir": "debug_runs/20260924_113959_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-24T11:38:23",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 48,
+   "stats": {
+    "panel_swipes": 8,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1,
+    "rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "left": "neen eee: todo"
+   },
+   "dir": "debug_runs/20260924_113734_joint_team_daily_quest_lucifer1"
+  },
   {
    "ts": "2026-09-24T11:37:33",
    "script": "mail",
@@ -7502,43 +7536,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260923_100955_mail_fake5"
-  },
-  {
-   "ts": "2026-09-23T10:09:54",
-   "script": "dailyclaim",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:78 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260923_100931_dailyclaim_fake5"
-  },
-  {
-   "ts": "2026-09-23T10:09:06",
-   "script": "collect_hoopa_keys",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_100900_collect_hoopa_keys_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 41898,
+  "now": 42021,
   "segments": [
    {
     "b": 29498,
@@ -9644,8 +9647,45 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 41854,
+    "rc": 0,
+    "e": 41903,
+    "secs": 48,
+    "why": ""
+   },
+   {
+    "b": 41903,
+    "a": "lucifer1",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 41905,
     "rc": null,
-    "e": 41898
+    "e": 41975
+   },
+   {
+    "b": 41975,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     41975,
+     41990
+    ],
+    "handoff": 41999,
+    "rc": 5,
+    "e": 42014,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 42014,
+    "a": "lucifer1",
+    "s": "daily_dungeon",
+    "login": [
+     42015,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 42021
    }
   ],
   "idle": []
@@ -9753,9 +9793,9 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 23,
-  "relogMinutes": 9.7,
-  "retries": 13,
+  "switches": 25,
+  "relogMinutes": 10.1,
+  "retries": 14,
   "tasks": {
    "dailyclaim": {
     "runs": 17,
@@ -9768,8 +9808,8 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 14,
-    "minutes": 10.9,
+    "runs": 15,
+    "minutes": 11.7,
     "failed": 2
    },
    "daily_dungeon": {
@@ -9828,9 +9868,9 @@
     "failed": 1
    },
    "island_challenge": {
-    "runs": 3,
-    "minutes": 1.0,
-    "failed": 3
+    "runs": 4,
+    "minutes": 1.2,
+    "failed": 4
    },
    "misty_woods": {
     "runs": 2,
@@ -10032,78 +10072,78 @@
   "next": [
    {
     "account": "lucifer1",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-24T11:38"
-   },
-   {
-    "account": "lucifer1",
-    "task": "joint_battle",
-    "startsIn": 0.8,
-    "eta": "2026-09-24T11:39"
-   },
-   {
-    "account": "lucifer1",
     "task": "daily_dungeon",
-    "startsIn": 2.8,
-    "eta": "2026-09-24T11:41"
+    "startsIn": 0.0,
+    "eta": "2026-09-24T11:40"
    },
    {
     "account": "lucifer1",
     "task": "pokemon_home",
-    "startsIn": 3.1,
-    "eta": "2026-09-24T11:41"
+    "startsIn": 0.3,
+    "eta": "2026-09-24T11:40"
    },
    {
     "account": "lucifer1",
     "task": "combat_daily",
-    "startsIn": 3.9,
-    "eta": "2026-09-24T11:42"
+    "startsIn": 1.1,
+    "eta": "2026-09-24T11:41"
    },
    {
     "account": "lucifer1",
     "task": "victory_road",
-    "startsIn": 5.6,
+    "startsIn": 2.8,
     "eta": "2026-09-24T11:43"
    },
    {
     "account": "lucifer1",
     "task": "paradise",
-    "startsIn": 5.8,
-    "eta": "2026-09-24T11:44"
+    "startsIn": 3.0,
+    "eta": "2026-09-24T11:43"
    },
    {
     "account": "lucifer1",
     "task": "run_pvp_ranked",
-    "startsIn": 10.2,
-    "eta": "2026-09-24T11:48"
+    "startsIn": 7.4,
+    "eta": "2026-09-24T11:47"
    },
    {
     "account": "lucifer1",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.6,
+    "startsIn": 8.8,
     "eta": "2026-09-24T11:49"
    },
    {
     "account": "lucifer1",
     "task": "sky_pillar",
-    "startsIn": 11.7,
+    "startsIn": 8.9,
     "eta": "2026-09-24T11:49"
    },
    {
     "account": "lucifer1",
     "task": "weekend_bash",
-    "startsIn": 13.1,
-    "eta": "2026-09-24T11:51"
+    "startsIn": 10.4,
+    "eta": "2026-09-24T11:50"
    },
    {
     "account": "fake5",
     "task": "daily_dungeon",
-    "startsIn": 13.5,
+    "startsIn": 10.8,
     "eta": "2026-09-24T11:51"
+   },
+   {
+    "account": "fake5",
+    "task": "faction",
+    "startsIn": 11.1,
+    "eta": "2026-09-24T11:51"
+   },
+   {
+    "account": "sprite",
+    "task": "collect_hoopa_keys",
+    "startsIn": 13.1,
+    "eta": "2026-09-24T11:53"
    }
   ],
-  "more": 49,
+  "more": 47,
   "fillers": [
    {
     "account": "smurf",
@@ -10137,11 +10177,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 23,
-   "medianSec": 18,
+   "n": 24,
+   "medianSec": 17.5,
    "picker": {
-    "n": 19,
-    "medianSec": 17,
+    "n": 20,
+    "medianSec": 16.5,
     "jumps": 11
    },
    "typed": {
@@ -10384,6 +10424,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-24T11:38:23",
+   "account": "lucifer1",
+   "task": "joint_team_daily_quest",
+   "left": "neen eee: todo"
+  },
+  {
    "ts": "2026-09-24T11:11:04",
    "account": "fake7",
    "task": "joint_team_daily_quest",
@@ -10475,6 +10521,15 @@
    "kind": "left",
    "since": "2026-09-24T11:11:04",
    "why": "enhance any artifact once: todo",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "lucifer1",
+   "task": "joint_team_daily_quest",
+   "kind": "left",
+   "since": "2026-09-24T11:38:23",
+   "why": "neen eee: todo",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
   },
@@ -11834,18 +11889,10 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-24",
-   "summary": "2 of 15 dailies done",
-   "done": 2,
+   "summary": "4 of 15 dailies done",
+   "done": 4,
    "owed": 15,
    "open": [
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
     {
      "task": "dungeon",
      "state": "still to do"
@@ -11891,7 +11938,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "11:38",
+     "why": "finished, but left open: neen eee: todo",
+     "frame": null
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
@@ -11938,7 +11992,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 3,
+     "done": 4,
      "failed": 0
     }
    ]
