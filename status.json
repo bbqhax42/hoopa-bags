@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-24T13:39:46.000159",
+ "generatedAt": "2026-09-24T13:41:49.214293",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "rank_match",
-  "since": "13:39:36"
+  "account": "fake5",
+  "mode": "daily_dungeon",
+  "since": "13:41:42"
  },
  "grid": {
   "tasks": [
@@ -41,9 +41,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 213,
-  "todo": 54,
+  "done": 215,
+  "todo": 52,
   "gaveUp": 2,
   "unavailable": 4,
   "windowed": 0
@@ -718,6 +718,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-24T13:41:41",
+   "script": "guild_war",
+   "account": "nova",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "near_miss_vr_rank": 3,
+    "marginal_last_hit": 3,
+    "near_miss_last_hit": 2,
+    "marginal_battle_victory": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260924_134037_guild_war_nova"
+  },
+  {
+   "ts": "2026-09-24T13:40:36",
+   "script": "rank_match",
+   "account": "nova",
+   "rc": 0,
+   "secs": 57,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260924_133938_rank_match_nova"
+  },
   {
    "ts": "2026-09-24T12:54:53",
    "script": "rift",
@@ -7545,47 +7585,12 @@
     "rail_badges": "0.190:77 0.275:0 0.345:52 0.428:7 0.500:0"
    },
    "dir": "debug_runs/20260923_105824_dailyclaim_lucifer1"
-  },
-  {
-   "ts": "2026-09-23T10:57:58",
-   "script": "paradise",
-   "account": "exou",
-   "rc": 0,
-   "secs": 231,
-   "stats": {
-    "marginal_paradise_hub": 4,
-    "explore_clicks": 119,
-    "pass_claims": 6,
-    "upgraded_energy_drink": 4,
-    "dex_milestones": 2,
-    "dex_activated": 7,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "16/16"
-   },
-   "dir": "debug_runs/20260923_105407_paradise_exou"
-  },
-  {
-   "ts": "2026-09-23T10:54:05",
-   "script": "victory_road",
-   "account": "exou",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_105357_victory_road_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-24T00:00",
   "since": 28800.0,
-  "now": 49186,
+  "now": 49309,
   "segments": [
    {
     "b": 29498,
@@ -10322,8 +10327,33 @@
     "s": "rank_match",
     "login": null,
     "handoff": 49178,
+    "rc": 0,
+    "e": 49237,
+    "secs": 57,
+    "why": ""
+   },
+   {
+    "b": 49237,
+    "a": "nova",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 49237,
+    "rc": 0,
+    "e": 49302,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 49302,
+    "a": "fake5",
+    "s": "daily_dungeon",
+    "login": [
+     49302,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 49186
+    "e": 49309
    }
   ],
   "idle": []
@@ -10440,7 +10470,7 @@
  ],
  "day": {
   "since": "2026-09-24T08:00",
-  "switches": 42,
+  "switches": 43,
   "relogMinutes": 18.3,
   "retries": 16,
   "tasks": {
@@ -10525,14 +10555,19 @@
     "failed": 1
    },
    "guild_war": {
-    "runs": 8,
-    "minutes": 8.7,
+    "runs": 9,
+    "minutes": 9.7,
     "failed": 0
    },
    "rift": {
     "runs": 2,
     "minutes": 0.8,
     "failed": 1
+   },
+   "rank_match": {
+    "runs": 1,
+    "minutes": 1.0,
+    "failed": 0
    }
   }
  },
@@ -10734,79 +10769,79 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
-    "task": "rank_match",
+    "account": "fake5",
+    "task": "daily_dungeon",
     "startsIn": 0.0,
-    "eta": "2026-09-24T13:39"
-   },
-   {
-    "account": "nova",
-    "task": "guild_war",
-    "startsIn": 2.0,
     "eta": "2026-09-24T13:41"
    },
    {
     "account": "fake5",
-    "task": "daily_dungeon",
-    "startsIn": 3.5,
-    "eta": "2026-09-24T13:43"
-   },
-   {
-    "account": "fake5",
     "task": "rank_match",
-    "startsIn": 3.8,
-    "eta": "2026-09-24T13:43"
+    "startsIn": 0.3,
+    "eta": "2026-09-24T13:42"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 5.8,
+    "startsIn": 1.3,
+    "eta": "2026-09-24T13:43"
+   },
+   {
+    "account": "jeff",
+    "task": "rank_match",
+    "startsIn": 3.3,
     "eta": "2026-09-24T13:45"
    },
    {
     "account": "jeff",
+    "task": "guild_war",
+    "startsIn": 4.3,
+    "eta": "2026-09-24T13:46"
+   },
+   {
+    "account": "chris",
     "task": "rank_match",
-    "startsIn": 7.8,
+    "startsIn": 5.8,
     "eta": "2026-09-24T13:47"
    },
    {
-    "account": "jeff",
+    "account": "chris",
     "task": "guild_war",
-    "startsIn": 9.8,
-    "eta": "2026-09-24T13:49"
+    "startsIn": 6.8,
+    "eta": "2026-09-24T13:48"
    },
    {
-    "account": "chris",
+    "account": "smurf",
     "task": "rank_match",
-    "startsIn": 11.3,
+    "startsIn": 8.3,
+    "eta": "2026-09-24T13:50"
+   },
+   {
+    "account": "smurf",
+    "task": "guild_war",
+    "startsIn": 9.3,
     "eta": "2026-09-24T13:51"
-   },
-   {
-    "account": "chris",
-    "task": "guild_war",
-    "startsIn": 13.3,
-    "eta": "2026-09-24T13:53"
-   },
-   {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 14.8,
-    "eta": "2026-09-24T13:54"
-   },
-   {
-    "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 16.8,
-    "eta": "2026-09-24T13:56"
    },
    {
     "account": "fake1",
     "task": "rank_match",
-    "startsIn": 18.3,
-    "eta": "2026-09-24T13:58"
+    "startsIn": 10.7,
+    "eta": "2026-09-24T13:52"
+   },
+   {
+    "account": "fake1",
+    "task": "guild_war",
+    "startsIn": 11.7,
+    "eta": "2026-09-24T13:53"
+   },
+   {
+    "account": "fake2",
+    "task": "rank_match",
+    "startsIn": 13.2,
+    "eta": "2026-09-24T13:55"
    }
   ],
-  "more": 42,
+  "more": 40,
   "fillers": [
    {
     "account": "smurf",
@@ -10858,10 +10893,6 @@
   }
  },
  "progress": {
-  "exou": {
-   "paradiseStamina": "16/16",
-   "mailUnread": 0
-  },
   "lucifer1": {
    "mailUnread": 0,
    "paradiseStamina": "9/19",
@@ -10953,6 +10984,9 @@
    "rank": 1,
    "pillar": "floor 20 stage 1"
   },
+  "exou": {
+   "mailUnread": 0
+  },
   "smurf": {
    "mailUnread": 0,
    "paradiseStamina": "19/13",
@@ -10962,6 +10996,16 @@
   }
  },
  "ledger": {
+  "nova": {
+   "guild war attempts": 1,
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "dre": {
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -11088,15 +11132,6 @@
   },
   "jeff": {
    "island fights": 39,
-   "pillar/story stages cleared": 3,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
-  },
-  "nova": {
    "pillar/story stages cleared": 3,
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -11389,19 +11424,10 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-24",
-   "summary": "13 of 15 dailies done",
-   "done": 13,
+   "summary": "15 of 15 dailies done",
+   "done": 15,
    "owed": 15,
-   "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
-    }
-   ],
+   "open": [],
    "issues": [
     {
      "task": "worldboss",
@@ -11413,6 +11439,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "pillar/story stages cleared": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -11459,7 +11486,7 @@
     },
     {
      "day": "2026-09-24",
-     "done": 13,
+     "done": 15,
      "failed": 1
     }
    ]
@@ -12473,7 +12500,6 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "paradiseStamina": "16/16",
     "mailUnread": 0
    },
    "history": [
