@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T14:04:14.813441",
+ "generatedAt": "2026-09-25T14:06:18.206269",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "combat_daily",
-  "since": "14:04:07"
+  "account": "smurf",
+  "mode": "rank_match",
+  "since": "14:06:00"
  },
  "grid": {
   "tasks": [
@@ -90,7 +90,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "·",
      "✓",
@@ -111,8 +111,8 @@
      "⊘",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "✓",
      "·",
      "✓",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 217,
-  "todo": 51,
+  "done": 220,
+  "todo": 48,
   "gaveUp": 3,
   "unavailable": 3,
   "windowed": 0
@@ -713,11 +713,60 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-25T14:03:46.324988",
+  "label": "smurf",
+  "at": "2026-09-25T14:05:31.813741",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T14:05:59",
+   "script": "combat_daily",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 8,
+   "stats": {
+    "title_reread_named": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_140551_combat_daily_smurf"
+  },
+  {
+   "ts": "2026-09-25T14:05:50",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "tickets": 40
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 800,
+    "tickets": 40
+   },
+   "dir": "debug_runs/20260925_140537_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-09-25T14:05:14",
+   "script": "rank_match",
+   "account": "chris",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 2,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260925_140415_rank_match_chris"
+  },
   {
    "ts": "2026-09-25T14:04:14",
    "script": "combat_daily",
@@ -7507,61 +7556,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260924_115224_pokemon_home_test1"
-  },
-  {
-   "ts": "2026-09-24T11:52:22",
-   "script": "daily_dungeon",
-   "account": "test1",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_115208_daily_dungeon_test1"
-  },
-  {
-   "ts": "2026-09-24T11:51:29",
-   "script": "joint_team_daily_quest",
-   "account": "test1",
-   "rc": 0,
-   "secs": 55,
-   "stats": {
-    "panel_swipes": 8,
-    "artifact_none_owned": 1,
-    "guild_base_by_back": 1,
-    "rows_left": 2
-   },
-   "incomplete": [],
-   "values": {
-    "artifact": "none owned — nothing to enhance",
-    "left": "upgrade squad skill once: claimable; enhance any artifact once: todo"
-   },
-   "dir": "debug_runs/20260924_115034_joint_team_daily_quest_test1"
-  },
-  {
-   "ts": "2026-09-24T11:50:33",
-   "script": "mail",
-   "account": "test1",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 4,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260924_115030_mail_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 50655,
+  "now": 50778,
   "segments": [
    {
     "b": 28904,
@@ -10535,9 +10535,45 @@
     "a": "chris",
     "s": "rank_match",
     "login": null,
-    "handoff": null,
+    "handoff": 50655,
+    "rc": 0,
+    "e": 50714,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 50714,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": [
+     50715,
+     50731
+    ],
+    "handoff": 50737,
+    "rc": 0,
+    "e": 50750,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 50750,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 50751,
+    "rc": 0,
+    "e": 50760,
+    "secs": 8,
+    "why": ""
+   },
+   {
+    "b": 50760,
+    "a": "smurf",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 50760,
     "rc": null,
-    "e": 50655
+    "e": 50778
    }
   ],
   "idle": []
@@ -10654,8 +10690,8 @@
  ],
  "day": {
   "since": "2026-09-25T08:00",
-  "switches": 43,
-  "relogMinutes": 17.2,
+  "switches": 44,
+  "relogMinutes": 17.6,
   "retries": 16,
   "tasks": {
    "pokemon_home": {
@@ -10684,8 +10720,8 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 24,
-    "minutes": 39.0,
+    "runs": 25,
+    "minutes": 39.1,
     "failed": 1
    },
    "victory_road": {
@@ -10724,8 +10760,8 @@
     "failed": 2
    },
    "weekend_bash": {
-    "runs": 9,
-    "minutes": 0.8,
+    "runs": 10,
+    "minutes": 0.9,
     "failed": 0
    },
    "championship": {
@@ -10749,8 +10785,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 3,
-    "minutes": 2.9,
+    "runs": 4,
+    "minutes": 3.9,
     "failed": 0
    }
   }
@@ -10947,79 +10983,79 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
+    "account": "smurf",
     "task": "rank_match",
     "startsIn": 0.0,
-    "eta": "2026-09-25T14:04"
+    "eta": "2026-09-25T14:06"
    },
    {
-    "account": "chris",
+    "account": "smurf",
     "task": "guild_war",
     "startsIn": 1.0,
-    "eta": "2026-09-25T14:05"
+    "eta": "2026-09-25T14:07"
    },
    {
-    "account": "smurf",
+    "account": "skosmurf",
     "task": "weekend_bash",
     "startsIn": 2.2,
-    "eta": "2026-09-25T14:06"
-   },
-   {
-    "account": "smurf",
-    "task": "combat_daily",
-    "startsIn": 2.3,
-    "eta": "2026-09-25T14:06"
-   },
-   {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 3.9,
     "eta": "2026-09-25T14:08"
    },
    {
-    "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 4.9,
-    "eta": "2026-09-25T14:09"
-   },
-   {
-    "account": "skosmurf",
-    "task": "weekend_bash",
-    "startsIn": 6.1,
-    "eta": "2026-09-25T14:10"
-   },
-   {
     "account": "skosmurf",
     "task": "combat_daily",
-    "startsIn": 6.2,
-    "eta": "2026-09-25T14:10"
+    "startsIn": 2.3,
+    "eta": "2026-09-25T14:08"
    },
    {
     "account": "skosmurf",
     "task": "rank_match",
-    "startsIn": 7.8,
-    "eta": "2026-09-25T14:12"
+    "startsIn": 3.9,
+    "eta": "2026-09-25T14:10"
    },
    {
     "account": "skosmurf",
     "task": "guild_war",
-    "startsIn": 8.8,
-    "eta": "2026-09-25T14:13"
+    "startsIn": 4.8,
+    "eta": "2026-09-25T14:11"
    },
    {
     "account": "skosmurf",
     "task": "misty_woods",
-    "startsIn": 9.6,
-    "eta": "2026-09-25T14:13"
+    "startsIn": 5.7,
+    "eta": "2026-09-25T14:11"
    },
    {
     "account": "lucifer1",
     "task": "weekend_bash",
-    "startsIn": 11.3,
+    "startsIn": 7.4,
+    "eta": "2026-09-25T14:13"
+   },
+   {
+    "account": "lucifer1",
+    "task": "combat_daily",
+    "startsIn": 7.4,
+    "eta": "2026-09-25T14:13"
+   },
+   {
+    "account": "lucifer1",
+    "task": "rank_match",
+    "startsIn": 9.0,
     "eta": "2026-09-25T14:15"
+   },
+   {
+    "account": "lucifer1",
+    "task": "run_pvp_ranked",
+    "startsIn": 10.0,
+    "eta": "2026-09-25T14:16"
+   },
+   {
+    "account": "lucifer1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 11.5,
+    "eta": "2026-09-25T14:17"
    }
   ],
-  "more": 39,
+  "more": 36,
   "fillers": [
    {
     "account": "smurf",
@@ -11053,12 +11089,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 43,
-   "medianSec": 17,
+   "n": 44,
+   "medianSec": 16.5,
    "picker": {
-    "n": 33,
-    "medianSec": 16,
-    "jumps": 22
+    "n": 34,
+    "medianSec": 16.0,
+    "jumps": 23
    },
    "typed": {
     "n": 0,
@@ -11760,14 +11796,10 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-25",
-   "summary": "15 of 18 dailies done",
-   "done": 15,
+   "summary": "16 of 18 dailies done",
+   "done": 16,
    "owed": 18,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
     {
      "task": "guildBoss",
      "state": "still to do"
@@ -11837,7 +11869,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 18,
+     "done": 19,
      "failed": 0
     }
    ]
@@ -11845,21 +11877,13 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-25",
-   "summary": "11 of 17 dailies done · 2 switched off · 2 not available today",
-   "done": 11,
+   "summary": "13 of 17 dailies done · 2 switched off · 2 not available today",
+   "done": 13,
    "owed": 17,
    "open": [
     {
      "task": "JointB",
      "state": "not available today"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
-    },
-    {
-     "task": "dailies",
-     "state": "still to do"
     },
     {
      "task": "victoryRank",
@@ -11958,7 +11982,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 14,
+     "done": 16,
      "failed": 3
     }
    ]
