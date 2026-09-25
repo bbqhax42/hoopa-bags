@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T09:54:58.335751",
+ "generatedAt": "2026-09-25T09:57:02.102215",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "sky_pillar",
-  "since": "09:54:01"
+  "mode": "misty_woods",
+  "since": "09:56:13"
  },
  "grid": {
   "tasks": [
@@ -118,8 +118,8 @@
      "⏰",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "·",
      "·",
      "-",
@@ -489,10 +489,10 @@
   ]
  },
  "counts": {
-  "done": 63,
-  "todo": 171,
+  "done": 64,
+  "todo": 169,
   "gaveUp": 1,
-  "unavailable": 1,
+  "unavailable": 2,
   "windowed": 38
  },
  "disabled": [
@@ -718,6 +718,44 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T09:56:12",
+   "script": "faction",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 47,
+   "stats": {
+    "auto_formation": 5,
+    "skip_retry": 5,
+    "incomplete": 1,
+    "lost_fire": 1,
+    "faction_disabled": 1,
+    "floors_fire": 4,
+    "sweeps_used": 2
+   },
+   "incomplete": [
+    "faction: fire tower: lost the battle after 4 win(s) — the team needs adjusting"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260925_095525_faction_smurf"
+  },
+  {
+   "ts": "2026-09-25T09:55:20",
+   "script": "sky_pillar",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 78,
+   "stats": {
+    "stages_cleared": 3,
+    "challenge_refused": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 19,
+    "stage": 1
+   },
+   "dir": "debug_runs/20260925_095402_sky_pillar_smurf"
+  },
   {
    "ts": "2026-09-25T09:54:00",
    "script": "collect_hoopa_keys",
@@ -7493,40 +7531,12 @@
     "rail_badges": "0.190:78 0.275:8 0.345:53 0.428:7 0.500:0"
    },
    "dir": "debug_runs/20260924_082604_dailyclaim_nova"
-  },
-  {
-   "ts": "2026-09-24T08:25:39",
-   "script": "weekend_bash",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_082539_weekend_bash_lucifer2"
-  },
-  {
-   "ts": "2026-09-24T08:25:34",
-   "script": "sky_pillar",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 86,
-    "stage": 10
-   },
-   "dir": "debug_runs/20260924_082424_sky_pillar_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 35698,
+  "now": 35822,
   "segments": [
    {
     "b": 28904,
@@ -8432,13 +8442,44 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 35641,
+    "rc": 0,
+    "e": 35721,
+    "secs": 78,
+    "why": ""
+   },
+   {
+    "b": 35721,
+    "a": "smurf",
+    "s": "faction",
+    "login": null,
+    "handoff": 35725,
+    "rc": 1,
+    "e": 35773,
+    "secs": 47,
+    "why": "faction: fire tower: lost the battle after 4 win(s) — the team needs adjusting"
+   },
+   {
+    "b": 35773,
+    "a": "smurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": 35807,
     "rc": null,
-    "e": 35698
+    "e": 35822
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-25T09:56:12",
+   "account": "smurf",
+   "task": "faction",
+   "rc": 1,
+   "secs": 47,
+   "why": "faction: fire tower: lost the battle after 4 win(s) — the team needs adjusting",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_095525_faction_smurf__KEEP_0054_095603_faction_lost_fire.png"
+  },
   {
    "ts": "2026-09-25T09:32:14",
    "account": "nova",
@@ -8462,7 +8503,7 @@
   "since": "2026-09-25T08:00",
   "switches": 10,
   "relogMinutes": 3.7,
-  "retries": 4,
+  "retries": 5,
   "tasks": {
    "pokemon_home": {
     "runs": 6,
@@ -8520,14 +8561,14 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 4,
-    "minutes": 3.6,
+    "runs": 5,
+    "minutes": 4.9,
     "failed": 0
    },
    "faction": {
-    "runs": 1,
-    "minutes": 2.1,
-    "failed": 0
+    "runs": 2,
+    "minutes": 2.9,
+    "failed": 1
    },
    "weekend_bash": {
     "runs": 4,
@@ -8542,6 +8583,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "smurf",
+   "task": "faction",
+   "why": null,
+   "at": null
+  },
   {
    "account": "smurf",
    "task": "joint_battle",
@@ -8716,78 +8763,78 @@
   "next": [
    {
     "account": "smurf",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-25T09:54"
-   },
-   {
-    "account": "smurf",
-    "task": "faction",
-    "startsIn": 0.9,
-    "eta": "2026-09-25T09:55"
-   },
-   {
-    "account": "smurf",
     "task": "misty_woods",
-    "startsIn": 3.0,
+    "startsIn": 0.0,
     "eta": "2026-09-25T09:57"
    },
    {
     "account": "smurf",
     "task": "weekend_bash",
-    "startsIn": 5.0,
+    "startsIn": 2.0,
     "eta": "2026-09-25T09:59"
    },
    {
     "account": "chris",
     "task": "joint_team_daily_quest",
-    "startsIn": 5.4,
-    "eta": "2026-09-25T10:00"
+    "startsIn": 2.4,
+    "eta": "2026-09-25T09:59"
    },
    {
     "account": "fake1",
     "task": "dailyclaim",
-    "startsIn": 6.6,
-    "eta": "2026-09-25T10:01"
+    "startsIn": 3.6,
+    "eta": "2026-09-25T10:00"
    },
    {
     "account": "fake1",
     "task": "mail",
-    "startsIn": 7.0,
+    "startsIn": 4.0,
     "eta": "2026-09-25T10:01"
    },
    {
     "account": "fake1",
     "task": "joint_team_daily_quest",
-    "startsIn": 7.0,
-    "eta": "2026-09-25T10:02"
+    "startsIn": 4.0,
+    "eta": "2026-09-25T10:01"
    },
    {
     "account": "fake1",
     "task": "joint_battle",
-    "startsIn": 7.8,
-    "eta": "2026-09-25T10:02"
+    "startsIn": 4.8,
+    "eta": "2026-09-25T10:01"
    },
    {
     "account": "fake1",
     "task": "daily_dungeon",
-    "startsIn": 9.8,
-    "eta": "2026-09-25T10:04"
+    "startsIn": 6.8,
+    "eta": "2026-09-25T10:03"
    },
    {
     "account": "fake1",
     "task": "pokemon_home",
-    "startsIn": 10.1,
-    "eta": "2026-09-25T10:05"
+    "startsIn": 7.1,
+    "eta": "2026-09-25T10:04"
    },
    {
     "account": "fake1",
     "task": "combat_daily",
-    "startsIn": 11.6,
-    "eta": "2026-09-25T10:06"
+    "startsIn": 8.6,
+    "eta": "2026-09-25T10:05"
+   },
+   {
+    "account": "fake1",
+    "task": "victory_road",
+    "startsIn": 10.4,
+    "eta": "2026-09-25T10:07"
+   },
+   {
+    "account": "fake1",
+    "task": "paradise",
+    "startsIn": 10.5,
+    "eta": "2026-09-25T10:07"
    }
   ],
-  "more": 159,
+  "more": 157,
   "fillers": [
    {
     "account": "smurf",
@@ -8839,12 +8886,6 @@
   }
  },
  "progress": {
-  "lucifer2": {
-   "pillar": "floor 87 stage 6",
-   "mailUnread": 0,
-   "paradiseStamina": "1/20",
-   "rank": 7
-  },
   "nova": {
    "mailUnread": 0,
    "rank": 4,
@@ -8871,7 +8912,7 @@
    "mailUnread": 0,
    "paradiseStamina": "1/15",
    "rank": 1,
-   "pillar": "floor 18 stage 8",
+   "pillar": "floor 19 stage 1",
    "misty": "step 4"
   },
   "fake1": {
@@ -8938,10 +8979,18 @@
    "mailUnread": 0,
    "paradiseStamina": "20/20",
    "rank": 2
+  },
+  "lucifer2": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/20",
+   "rank": 7,
+   "pillar": "floor 87 stage 6"
   }
  },
  "ledger": {
   "smurf": {
+   "faction sweeps": 2,
+   "pillar/story stages cleared": 3,
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "daily claims": 1
@@ -9471,8 +9520,8 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-25",
-   "summary": "10 of 17 dailies done · 2 switched off · 1 not available today",
-   "done": 10,
+   "summary": "11 of 17 dailies done · 2 switched off · 2 not available today",
+   "done": 11,
    "owed": 17,
    "open": [
     {
@@ -9488,12 +9537,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "misty",
@@ -9504,7 +9549,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "faction",
+     "at": "09:56",
+     "why": "faction: fire tower: lost the battle after 4 win(s) — the team needs adjusting",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_095525_faction_smurf__KEEP_0054_095603_faction_lost_fire.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -9519,11 +9571,17 @@
    ],
    "unavailable": [
     {
+     "task": "faction",
+     "why": null
+    },
+    {
      "task": "joint_battle",
      "why": null
     }
    ],
    "spent": {
+    "faction sweeps": 2,
+    "pillar/story stages cleared": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "daily claims": 1
@@ -9532,7 +9590,7 @@
     "mailUnread": 0,
     "paradiseStamina": "1/15",
     "rank": 1,
-    "pillar": "floor 18 stage 8",
+    "pillar": "floor 19 stage 1",
     "misty": "step 4"
    },
    "history": [
@@ -9568,8 +9626,8 @@
     },
     {
      "day": "2026-09-25",
-     "done": 11,
-     "failed": 0
+     "done": 12,
+     "failed": 1
     }
    ]
   },
@@ -10889,10 +10947,10 @@
     "Home creations": 50
    },
    "progress": {
-    "pillar": "floor 87 stage 6",
     "mailUnread": 0,
     "paradiseStamina": "1/20",
-    "rank": 7
+    "rank": 7,
+    "pillar": "floor 87 stage 6"
    },
    "history": [
     {
