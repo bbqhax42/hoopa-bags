@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T12:15:09.720571",
+ "generatedAt": "2026-09-25T12:17:13.377494",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "guild_war",
-  "since": "12:14:29"
+  "account": "test1",
+  "mode": "joint_team_daily_quest",
+  "since": "12:16:49"
  },
  "grid": {
   "tasks": [
@@ -379,7 +379,7 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -417,8 +417,8 @@
    {
     "account": "test1",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 182,
-  "todo": 65,
+  "done": 185,
+  "todo": 62,
   "gaveUp": 2,
   "unavailable": 3,
   "windowed": 19
@@ -713,11 +713,65 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-25T12:14:44.181550",
+  "label": "test1",
+  "at": "2026-09-25T12:16:15.150052",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T12:16:48",
+   "script": "mail",
+   "account": "test1",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 3,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260925_121645_mail_test1"
+  },
+  {
+   "ts": "2026-09-25T12:16:43",
+   "script": "dailyclaim",
+   "account": "test1",
+   "rc": 0,
+   "secs": 23,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:76 0.275:8 0.345:52 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260925_121620_dailyclaim_test1"
+  },
+  {
+   "ts": "2026-09-25T12:15:56",
+   "script": "guild_war",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "near_miss_vr_rank": 3,
+    "near_miss_last_hit": 2,
+    "marginal_last_hit": 2,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_121452_guild_war_lucifer1"
+  },
   {
    "ts": "2026-09-25T12:14:28",
    "script": "guild_war",
@@ -7532,63 +7586,12 @@
     "left": "enhance any artifact once: todo"
    },
    "dir": "debug_runs/20260924_105054_joint_team_daily_quest_fake7"
-  },
-  {
-   "ts": "2026-09-24T10:50:53",
-   "script": "mail",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260924_105050_mail_fake7"
-  },
-  {
-   "ts": "2026-09-24T10:50:49",
-   "script": "dailyclaim",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 23,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:76 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260924_105025_dailyclaim_fake7"
-  },
-  {
-   "ts": "2026-09-24T10:49:59",
-   "script": "sky_pillar",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 161,
-   "stats": {
-    "stage_lost": 1,
-    "sky_pillar_loss": 1,
-    "sweep_presses": 3,
-    "marginal_sky_pillar": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_104717_sky_pillar_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 44110,
+  "now": 44233,
   "segments": [
    {
     "b": 28904,
@@ -9963,8 +9966,44 @@
      44084
     ],
     "handoff": 44092,
+    "rc": 0,
+    "e": 44156,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 44156,
+    "a": "test1",
+    "s": "dailyclaim",
+    "login": [
+     44157,
+     44175
+    ],
+    "handoff": 44180,
+    "rc": 0,
+    "e": 44204,
+    "secs": 23,
+    "why": ""
+   },
+   {
+    "b": 44204,
+    "a": "test1",
+    "s": "mail",
+    "login": null,
+    "handoff": 44204,
+    "rc": 0,
+    "e": 44209,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 44209,
+    "a": "test1",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 44209,
     "rc": null,
-    "e": 44110
+    "e": 44233
    }
   ],
   "idle": []
@@ -10063,8 +10102,8 @@
  ],
  "day": {
   "since": "2026-09-25T08:00",
-  "switches": 32,
-  "relogMinutes": 12.6,
+  "switches": 33,
+  "relogMinutes": 12.9,
   "retries": 14,
   "tasks": {
    "pokemon_home": {
@@ -10073,12 +10112,12 @@
     "failed": 3
    },
    "dailyclaim": {
-    "runs": 16,
-    "minutes": 6.3,
+    "runs": 17,
+    "minutes": 6.7,
     "failed": 0
    },
    "mail": {
-    "runs": 16,
+    "runs": 17,
     "minutes": 0.8,
     "failed": 0
    },
@@ -10148,8 +10187,8 @@
     "failed": 2
    },
    "guild_war": {
-    "runs": 7,
-    "minutes": 5.6,
+    "runs": 8,
+    "minutes": 6.7,
     "failed": 0
    }
   }
@@ -10340,79 +10379,79 @@
  "queue": {
   "next": [
    {
-    "account": "lucifer1",
-    "task": "guild_war",
+    "account": "test1",
+    "task": "joint_team_daily_quest",
     "startsIn": 0.0,
-    "eta": "2026-09-25T12:15"
+    "eta": "2026-09-25T12:17"
    },
    {
-    "account": "lucifer1",
-    "task": "run_pvp_ranked",
+    "account": "test1",
+    "task": "joint_battle",
     "startsIn": 0.8,
-    "eta": "2026-09-25T12:15"
-   },
-   {
-    "account": "lucifer1",
-    "task": "collect_hoopa_keys",
-    "startsIn": 2.3,
-    "eta": "2026-09-25T12:17"
-   },
-   {
-    "account": "lucifer1",
-    "task": "sky_pillar",
-    "startsIn": 2.4,
-    "eta": "2026-09-25T12:17"
-   },
-   {
-    "account": "lucifer1",
-    "task": "weekend_bash",
-    "startsIn": 3.8,
     "eta": "2026-09-25T12:18"
+   },
+   {
+    "account": "test1",
+    "task": "daily_dungeon",
+    "startsIn": 2.8,
+    "eta": "2026-09-25T12:20"
+   },
+   {
+    "account": "test1",
+    "task": "pokemon_home",
+    "startsIn": 3.1,
+    "eta": "2026-09-25T12:20"
+   },
+   {
+    "account": "test1",
+    "task": "combat_daily",
+    "startsIn": 4.0,
+    "eta": "2026-09-25T12:21"
+   },
+   {
+    "account": "test1",
+    "task": "victory_road",
+    "startsIn": 5.9,
+    "eta": "2026-09-25T12:23"
+   },
+   {
+    "account": "test1",
+    "task": "paradise",
+    "startsIn": 6.0,
+    "eta": "2026-09-25T12:23"
+   },
+   {
+    "account": "test1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 10.0,
+    "eta": "2026-09-25T12:27"
+   },
+   {
+    "account": "test1",
+    "task": "sky_pillar",
+    "startsIn": 10.1,
+    "eta": "2026-09-25T12:27"
+   },
+   {
+    "account": "test1",
+    "task": "faction",
+    "startsIn": 11.5,
+    "eta": "2026-09-25T12:28"
    },
    {
     "account": "nova",
     "task": "guild_war",
-    "startsIn": 4.2,
-    "eta": "2026-09-25T12:19"
+    "startsIn": 13.5,
+    "eta": "2026-09-25T12:30"
    },
    {
     "account": "jeff",
     "task": "guild_war",
-    "startsIn": 5.4,
-    "eta": "2026-09-25T12:20"
-   },
-   {
-    "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 6.6,
-    "eta": "2026-09-25T12:21"
-   },
-   {
-    "account": "smurf",
-    "task": "misty_woods",
-    "startsIn": 7.4,
-    "eta": "2026-09-25T12:22"
-   },
-   {
-    "account": "sprite",
-    "task": "guild_war",
-    "startsIn": 8.2,
-    "eta": "2026-09-25T12:23"
-   },
-   {
-    "account": "sprite",
-    "task": "collect_hoopa_keys",
-    "startsIn": 9.0,
-    "eta": "2026-09-25T12:24"
-   },
-   {
-    "account": "sprite",
-    "task": "sky_pillar",
-    "startsIn": 9.1,
-    "eta": "2026-09-25T12:24"
+    "startsIn": 14.8,
+    "eta": "2026-09-25T12:31"
    }
   ],
-  "more": 53,
+  "more": 50,
   "fillers": [
    {
     "account": "smurf",
@@ -10446,12 +10485,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 32,
-   "medianSec": 17.0,
+   "n": 33,
+   "medianSec": 17,
    "picker": {
-    "n": 25,
-    "medianSec": 16,
-    "jumps": 16
+    "n": 26,
+    "medianSec": 16.0,
+    "jumps": 17
    },
    "typed": {
     "n": 0,
@@ -10465,9 +10504,9 @@
  },
  "progress": {
   "fake7": {
-   "mailUnread": 0,
    "paradiseStamina": "16/16",
-   "pillar": "floor 2 stage 10"
+   "pillar": "floor 2 stage 10",
+   "mailUnread": 0
   },
   "sprite": {
    "mailUnread": 0,
@@ -10568,6 +10607,18 @@
   }
  },
  "ledger": {
+  "test1": {
+   "mail claimed": 1,
+   "daily claims": 2
+  },
+  "lucifer1": {
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "fake7": {
    "guild war attempts": 1,
    "pillar/story stages cleared": 1,
@@ -10621,13 +10672,6 @@
    "Home creations": 46,
    "mail claimed": 1,
    "daily claims": 2
-  },
-  "lucifer1": {
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
   },
   "skosmurf": {
    "faction sweeps": 2,
@@ -11864,9 +11908,9 @@
     "daily claims": 2
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "16/16",
-    "pillar": "floor 2 stage 10"
+    "pillar": "floor 2 stage 10",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -12158,8 +12202,8 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-25",
-   "summary": "8 of 15 dailies done · gave up on JointQ",
-   "done": 8,
+   "summary": "9 of 15 dailies done · gave up on JointQ",
+   "done": 9,
    "owed": 15,
    "open": [
     {
@@ -12169,10 +12213,6 @@
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     },
     {
      "task": "pvpRank",
@@ -12202,6 +12242,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -12247,7 +12288,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 8,
+     "done": 9,
      "failed": 2
     }
    ]
@@ -12340,18 +12381,10 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-25",
-   "summary": "0 of 14 dailies done · 2 switched off",
-   "done": 0,
+   "summary": "2 of 14 dailies done · 2 switched off",
+   "done": 2,
    "owed": 14,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "still to do"
@@ -12415,7 +12448,10 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 2
+   },
    "progress": {
     "mailUnread": 0
    },
@@ -12452,7 +12488,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
