@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T13:56:00.243601",
+ "generatedAt": "2026-09-25T13:58:03.797223",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "rank_match",
-  "since": "13:55:34"
+  "mode": "run_pvp_ranked",
+  "since": "13:56:34"
  },
  "grid": {
   "tasks": [
@@ -474,10 +474,10 @@
      "✓",
      "✓",
      "✓",
-     "·",
      "✓",
      "✓",
-     "·",
+     "✓",
+     "⇢",
      "·",
      "·",
      "-",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 204,
-  "todo": 65,
+  "done": 205,
+  "todo": 63,
   "gaveUp": 2,
   "unavailable": 3,
   "windowed": 0
@@ -718,6 +718,44 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T13:58:03",
+   "script": "run_pvp_ranked",
+   "account": "dre",
+   "rc": 0,
+   "secs": 88,
+   "stats": {
+    "ranked_fought": 10,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 0
+   },
+   "incomplete": [],
+   "values": {
+    "rank": 6,
+    "daily_goal_claims": 0
+   },
+   "dir": "debug_runs/20260925_135634_run_pvp_ranked_dre"
+  },
+  {
+   "ts": "2026-09-25T13:56:33",
+   "script": "rank_match",
+   "account": "dre",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 2,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260925_135535_rank_match_dre"
+  },
   {
    "ts": "2026-09-25T13:55:34",
    "script": "combat_daily",
@@ -7548,56 +7586,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260924_113225_collect_hoopa_keys_skosmurf"
-  },
-  {
-   "ts": "2026-09-24T11:32:24",
-   "script": "run_pvp_ranked",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 74,
-   "stats": {
-    "ranked_fought": 10,
-    "picker_retry": 3,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 24,
-    "daily_goal_claimed": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 1,
-    "daily_goal_claims": 3
-   },
-   "dir": "debug_runs/20260924_113110_run_pvp_ranked_skosmurf"
-  },
-  {
-   "ts": "2026-09-24T11:31:09",
-   "script": "paradise",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 309,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 165,
-    "pass_claims": 5,
-    "upgraded_sports_gloves": 3,
-    "upgraded_energy_drink": 3,
-    "gear_energy_unreadable": 2,
-    "upgraded_small_radar": 2,
-    "dex_milestones": 1,
-    "dex_activated": 1,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "1/20"
-   },
-   "dir": "debug_runs/20260924_112559_paradise_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 50160,
+  "now": 50284,
   "segments": [
    {
     "b": 28904,
@@ -10398,8 +10392,21 @@
     "s": "rank_match",
     "login": null,
     "handoff": 50135,
-    "rc": null,
-    "e": 50160
+    "rc": 0,
+    "e": 50194,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 50194,
+    "a": "dre",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 50194,
+    "rc": 0,
+    "e": 50284,
+    "secs": 88,
+    "why": ""
    }
   ],
   "idle": []
@@ -10548,8 +10555,8 @@
     "failed": 4
    },
    "run_pvp_ranked": {
-    "runs": 6,
-    "minutes": 8.9,
+    "runs": 7,
+    "minutes": 10.4,
     "failed": 0
    },
    "collect_hoopa_keys": {
@@ -10590,6 +10597,11 @@
    "rift": {
     "runs": 1,
     "minutes": 0.0,
+    "failed": 0
+   },
+   "rank_match": {
+    "runs": 1,
+    "minutes": 1.0,
     "failed": 0
    }
   }
@@ -10787,78 +10799,78 @@
   "next": [
    {
     "account": "dre",
-    "task": "rank_match",
+    "task": "collect_hoopa_keys",
     "startsIn": 0.0,
-    "eta": "2026-09-25T13:56"
-   },
-   {
-    "account": "dre",
-    "task": "run_pvp_ranked",
-    "startsIn": 2.0,
     "eta": "2026-09-25T13:58"
    },
    {
     "account": "dre",
-    "task": "collect_hoopa_keys",
-    "startsIn": 3.5,
-    "eta": "2026-09-25T13:59"
-   },
-   {
-    "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 3.6,
-    "eta": "2026-09-25T13:59"
+    "startsIn": 0.1,
+    "eta": "2026-09-25T13:58"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 5.5,
-    "eta": "2026-09-25T14:01"
+    "startsIn": 2.0,
+    "eta": "2026-09-25T14:00"
    },
    {
     "account": "nova",
     "task": "combat_daily",
-    "startsIn": 5.5,
-    "eta": "2026-09-25T14:01"
+    "startsIn": 2.0,
+    "eta": "2026-09-25T14:00"
    },
    {
     "account": "nova",
     "task": "rank_match",
-    "startsIn": 7.3,
-    "eta": "2026-09-25T14:03"
+    "startsIn": 3.8,
+    "eta": "2026-09-25T14:01"
    },
    {
     "account": "nova",
     "task": "guild_war",
-    "startsIn": 9.3,
-    "eta": "2026-09-25T14:05"
+    "startsIn": 4.8,
+    "eta": "2026-09-25T14:02"
    },
    {
     "account": "jeff",
     "task": "weekend_bash",
-    "startsIn": 10.6,
-    "eta": "2026-09-25T14:06"
+    "startsIn": 6.1,
+    "eta": "2026-09-25T14:04"
    },
    {
     "account": "jeff",
     "task": "combat_daily",
-    "startsIn": 10.6,
-    "eta": "2026-09-25T14:06"
+    "startsIn": 6.1,
+    "eta": "2026-09-25T14:04"
    },
    {
     "account": "jeff",
     "task": "rank_match",
-    "startsIn": 12.5,
+    "startsIn": 8.0,
+    "eta": "2026-09-25T14:06"
+   },
+   {
+    "account": "jeff",
+    "task": "guild_war",
+    "startsIn": 9.0,
+    "eta": "2026-09-25T14:07"
+   },
+   {
+    "account": "chris",
+    "task": "weekend_bash",
+    "startsIn": 10.2,
     "eta": "2026-09-25T14:08"
    },
    {
-    "account": "jeff",
-    "task": "guild_war",
-    "startsIn": 14.5,
-    "eta": "2026-09-25T14:10"
+    "account": "chris",
+    "task": "combat_daily",
+    "startsIn": 10.3,
+    "eta": "2026-09-25T14:08"
    }
   ],
-  "more": 53,
+  "more": 51,
   "fillers": [
    {
     "account": "smurf",
@@ -10911,10 +10923,10 @@
  },
  "progress": {
   "skosmurf": {
-   "paradiseStamina": "0/10",
-   "rank": 1,
    "pillar": "floor 20 stage 9",
-   "mailUnread": 0
+   "mailUnread": 0,
+   "paradiseStamina": "0/10",
+   "rank": 1
   },
   "lucifer1": {
    "mailUnread": 0,
@@ -10943,7 +10955,7 @@
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
-   "rank": 2
+   "rank": 6
   },
   "nova": {
    "mailUnread": 0,
@@ -11014,6 +11026,15 @@
   }
  },
  "ledger": {
+  "dre": {
+   "ranked attempts": 1,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "smurf": {
    "misty battles won": 23,
    "faction sweeps": 2,
@@ -11021,14 +11042,6 @@
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "daily claims": 1
-  },
-  "dre": {
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
   },
   "deno": {
    "guild war attempts": 1,
@@ -12633,10 +12646,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "paradiseStamina": "0/10",
-    "rank": 1,
     "pillar": "floor 20 stage 9",
-    "mailUnread": 0
+    "mailUnread": 0,
+    "paradiseStamina": "0/10",
+    "rank": 1
    },
    "history": [
     {
@@ -13044,17 +13057,13 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-25",
-   "summary": "11 of 15 dailies done",
-   "done": 11,
+   "summary": "12 of 15 dailies done",
+   "done": 12,
    "owed": 15,
    "open": [
     {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
      "task": "pvpRank",
-     "state": "still to do"
+     "state": "waits on another task"
     },
     {
      "task": "hoopa",
@@ -13069,6 +13078,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -13079,7 +13089,7 @@
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "20/20",
-    "rank": 2
+    "rank": 6
    },
    "history": [
     {
@@ -13114,7 +13124,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 12,
+     "done": 14,
      "failed": 0
     }
    ]
