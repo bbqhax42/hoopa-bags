@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T18:40:10.780607",
+ "generatedAt": "2026-09-25T18:42:14.144372",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "jeff",
   "mode": "hoopa",
-  "since": "18:39:59"
+  "since": "18:41:44"
  },
  "grid": {
   "tasks": [
@@ -672,8 +672,8 @@
    "at": "2026-09-25T15:13:12"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-25T17:18:49"
+   "keys": 0,
+   "at": "2026-09-25T18:41:39"
   },
   "lucifer1": {
    "keys": 354,
@@ -733,11 +733,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-25T18:23:56.245445",
+  "label": "jeff",
+  "at": "2026-09-25T18:42:00.169542",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T18:41:40",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 6,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-25T18:25:02",
    "script": "island_challenge",
@@ -7481,23 +7497,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260924_141439_rank_match_lucifer1"
-  },
-  {
-   "ts": "2026-09-24T14:14:15",
-   "script": "weekend_bash",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_141415_weekend_bash_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 67211,
+  "now": 67334,
   "segments": [
    {
     "b": 28904,
@@ -11402,7 +11407,7 @@
     ],
     "handoff": 64262,
     "rc": null,
-    "e": 67211
+    "e": 67334
    }
   ],
   "idle": []
@@ -11564,8 +11569,8 @@
  ],
  "day": {
   "since": "2026-09-25T08:00",
-  "switches": 87,
-  "relogMinutes": 33.6,
+  "switches": 88,
+  "relogMinutes": 34.0,
   "retries": 24,
   "tasks": {
    "pokemon_home": {
@@ -11671,6 +11676,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-25T18:41:40"
+  },
   {
    "account": "fake1",
    "task": "faction",
@@ -11923,10 +11934,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "chris",
-    "mode": "hoopa"
-   },
-   {
     "account": "jeff",
     "mode": "hoopa"
    },
@@ -11950,11 +11957,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 88,
-   "medianSec": 17.0,
+   "n": 89,
+   "medianSec": 17,
    "picker": {
-    "n": 67,
-    "medianSec": 16,
+    "n": 68,
+    "medianSec": 16.0,
     "jumps": 42
    },
    "typed": {
@@ -12676,7 +12683,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-25",
-   "summary": "18 of 19 dailies done",
+   "summary": "18 of 19 dailies done · 1 not available today",
    "done": 18,
    "owed": 19,
    "open": [
@@ -12694,7 +12701,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {
     "guild war attempts": 1,
     "faction sweeps": 2,
