@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T12:17:13.377494",
+ "generatedAt": "2026-09-25T12:19:16.644883",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "joint_team_daily_quest",
-  "since": "12:16:49"
+  "mode": "pokemon_home",
+  "since": "12:18:58"
  },
  "grid": {
   "tasks": [
@@ -419,15 +419,15 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
      "⏰",
      "·",
-     "⇢",
+     "·",
      "-",
      "·",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 185,
-  "todo": 62,
+  "done": 188,
+  "todo": 60,
   "gaveUp": 2,
   "unavailable": 3,
   "windowed": 19
@@ -718,6 +718,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T12:18:57",
+   "script": "daily_dungeon",
+   "account": "test1",
+   "rc": 0,
+   "secs": 31,
+   "stats": {
+    "marginal_dungeon_list": 13,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_121826_daily_dungeon_test1"
+  },
+  {
+   "ts": "2026-09-25T12:17:48",
+   "script": "joint_team_daily_quest",
+   "account": "test1",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "panel_swipes": 8,
+    "artifact_row_found_by_scrolling": 1,
+    "artifact_none_owned": 1,
+    "guild_base_by_back": 1,
+    "rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "artifact": "none owned — nothing to enhance",
+    "left": "enhance any artifact once: todo"
+   },
+   "dir": "debug_runs/20260925_121649_joint_team_daily_quest_test1"
+  },
   {
    "ts": "2026-09-25T12:16:48",
    "script": "mail",
@@ -7543,55 +7579,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260924_105314_daily_dungeon_fake7"
-  },
-  {
-   "ts": "2026-09-24T10:52:18",
-   "script": "joint_team_daily_quest",
-   "account": "fake7",
-   "rc": 1,
-   "secs": 31,
-   "stats": {
-    "panel_swipes": 8,
-    "artifact_never_opened": 1,
-    "incomplete": 2,
-    "rows_left": 2
-   },
-   "incomplete": [
-    "joint_team_daily_quest: artifact quest",
-    "joint_team_daily_quest: still open: enhance any artifact once: todo"
-   ],
-   "values": {
-    "left": "enhance any artifact once: todo; aad pod 4: todo"
-   },
-   "dir": "debug_runs/20260924_105147_joint_team_daily_quest_fake7"
-  },
-  {
-   "ts": "2026-09-24T10:51:45",
-   "script": "joint_team_daily_quest",
-   "account": "fake7",
-   "rc": 1,
-   "secs": 50,
-   "stats": {
-    "panel_swipes": 8,
-    "artifact_never_opened": 1,
-    "incomplete": 2,
-    "guild_base_by_back": 1,
-    "rows_left": 1
-   },
-   "incomplete": [
-    "joint_team_daily_quest: artifact quest",
-    "joint_team_daily_quest: still open: enhance any artifact once: todo"
-   ],
-   "values": {
-    "left": "enhance any artifact once: todo"
-   },
-   "dir": "debug_runs/20260924_105054_joint_team_daily_quest_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 44233,
+  "now": 44357,
   "segments": [
    {
     "b": 28904,
@@ -10002,8 +9995,39 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 44209,
+    "rc": 0,
+    "e": 44268,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 44268,
+    "a": "test1",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 44271,
     "rc": null,
-    "e": 44233
+    "e": 44301
+   },
+   {
+    "b": 44301,
+    "a": "test1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 44305,
+    "rc": 0,
+    "e": 44338,
+    "secs": 31,
+    "why": ""
+   },
+   {
+    "b": 44338,
+    "a": "test1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 44339,
+    "rc": null,
+    "e": 44357
    }
   ],
   "idle": []
@@ -10122,13 +10146,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 15,
-    "minutes": 12.0,
+    "runs": 16,
+    "minutes": 13.0,
     "failed": 2
    },
    "daily_dungeon": {
-    "runs": 16,
-    "minutes": 4.9,
+    "runs": 17,
+    "minutes": 5.4,
     "failed": 0
    },
    "combat_daily": {
@@ -10380,78 +10404,78 @@
   "next": [
    {
     "account": "test1",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-25T12:17"
-   },
-   {
-    "account": "test1",
-    "task": "joint_battle",
-    "startsIn": 0.8,
-    "eta": "2026-09-25T12:18"
-   },
-   {
-    "account": "test1",
-    "task": "daily_dungeon",
-    "startsIn": 2.8,
-    "eta": "2026-09-25T12:20"
-   },
-   {
-    "account": "test1",
     "task": "pokemon_home",
-    "startsIn": 3.1,
-    "eta": "2026-09-25T12:20"
+    "startsIn": 0.0,
+    "eta": "2026-09-25T12:19"
    },
    {
     "account": "test1",
     "task": "combat_daily",
-    "startsIn": 4.0,
-    "eta": "2026-09-25T12:21"
+    "startsIn": 0.9,
+    "eta": "2026-09-25T12:20"
    },
    {
     "account": "test1",
     "task": "victory_road",
-    "startsIn": 5.9,
-    "eta": "2026-09-25T12:23"
+    "startsIn": 2.7,
+    "eta": "2026-09-25T12:22"
    },
    {
     "account": "test1",
     "task": "paradise",
-    "startsIn": 6.0,
-    "eta": "2026-09-25T12:23"
+    "startsIn": 2.9,
+    "eta": "2026-09-25T12:22"
+   },
+   {
+    "account": "test1",
+    "task": "guild_war",
+    "startsIn": 6.9,
+    "eta": "2026-09-25T12:26"
    },
    {
     "account": "test1",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.0,
+    "startsIn": 7.8,
     "eta": "2026-09-25T12:27"
    },
    {
     "account": "test1",
     "task": "sky_pillar",
-    "startsIn": 10.1,
+    "startsIn": 7.9,
     "eta": "2026-09-25T12:27"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 11.5,
+    "startsIn": 9.2,
     "eta": "2026-09-25T12:28"
    },
    {
     "account": "nova",
     "task": "guild_war",
-    "startsIn": 13.5,
+    "startsIn": 11.2,
     "eta": "2026-09-25T12:30"
    },
    {
     "account": "jeff",
     "task": "guild_war",
-    "startsIn": 14.8,
+    "startsIn": 12.5,
     "eta": "2026-09-25T12:31"
+   },
+   {
+    "account": "smurf",
+    "task": "guild_war",
+    "startsIn": 13.7,
+    "eta": "2026-09-25T12:33"
+   },
+   {
+    "account": "smurf",
+    "task": "misty_woods",
+    "startsIn": 14.6,
+    "eta": "2026-09-25T12:33"
    }
   ],
-  "more": 50,
+  "more": 48,
   "fillers": [
    {
     "account": "smurf",
@@ -10739,6 +10763,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-25T12:17:48",
+   "account": "test1",
+   "task": "joint_team_daily_quest",
+   "left": "enhance any artifact once: todo"
+  },
+  {
    "ts": "2026-09-25T11:46:01",
    "account": "skosmurf",
    "task": "combat_daily",
@@ -10869,6 +10899,15 @@
    "kind": "left",
    "since": "2026-09-25T11:46:01",
    "why": "island shop: first item costs 30000 coins, cap 500",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "test1",
+   "task": "joint_team_daily_quest",
+   "kind": "left",
+   "since": "2026-09-25T12:17:48",
+   "why": "enhance any artifact once: todo",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
   },
@@ -12381,22 +12420,10 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-25",
-   "summary": "2 of 14 dailies done · 2 switched off",
-   "done": 2,
+   "summary": "5 of 14 dailies done · 2 switched off",
+   "done": 5,
    "owed": 14,
    "open": [
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
     {
      "task": "home",
      "state": "still to do"
@@ -12419,7 +12446,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -12434,7 +12461,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "12:17",
+     "why": "finished, but left open: enhance any artifact once: todo",
+     "frame": null
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -12488,7 +12522,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 3,
+     "done": 5,
      "failed": 0
     }
    ]
