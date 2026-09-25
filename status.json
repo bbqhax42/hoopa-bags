@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T12:04:51.216753",
+ "generatedAt": "2026-09-25T12:06:54.914055",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "island_challenge",
-  "since": "12:04:45"
+  "account": "fake2",
+  "mode": "guild_war",
+  "since": "12:06:34"
  },
  "grid": {
   "tasks": [
@@ -99,7 +99,7 @@
      "-",
      "✓",
      "✓",
-     "⏳"
+     "💤"
     ]
    },
    {
@@ -139,7 +139,7 @@
      "✓",
      "⏰",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 175,
-  "todo": 72,
+  "done": 176,
+  "todo": 71,
   "gaveUp": 2,
   "unavailable": 3,
   "windowed": 19
@@ -629,8 +629,8 @@
    "fights": 0,
    "stamina": 9,
    "staminaMax": 9,
-   "staminaAt": "2026-09-25T08:56:19",
-   "nextAt": "2026-09-25T12:02:26"
+   "staminaAt": "2026-09-25T12:05:17",
+   "nextAt": "2026-09-25T15:11:24"
   },
   {
    "account": "jeff",
@@ -642,6 +642,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-25T15:11",
   "jeff|island_challenge": "2026-09-25T12:09"
  },
  "ownerOnline": [],
@@ -712,11 +713,46 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-25T11:53:39.559008",
+  "label": "fake2",
+  "at": "2026-09-25T12:06:52.363652",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T12:06:34",
+   "script": "guild_war",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 46,
+   "stats": {
+    "near_miss_battle_over": 1,
+    "near_miss_vr_rank": 3,
+    "marginal_battle_over": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_120548_guild_war_fake1"
+  },
+  {
+   "ts": "2026-09-25T12:05:24",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 14,
+   "stats": {
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 9,
+    "fights_today": 0
+   },
+   "dir": "debug_runs/20260925_120510_island_challenge_chris"
+  },
   {
    "ts": "2026-09-25T12:04:45",
    "script": "paradise",
@@ -7545,46 +7581,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260924_103830_daily_dungeon_fake6"
-  },
-  {
-   "ts": "2026-09-24T10:37:35",
-   "script": "joint_team_daily_quest",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 49,
-   "stats": {
-    "marginal_joint_team_daily_panel": 1,
-    "panel_swipes": 8,
-    "artifact_row_found_by_scrolling": 1,
-    "guild_base_by_back": 1,
-    "squad_unconfirmed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_103646_joint_team_daily_quest_fake6"
-  },
-  {
-   "ts": "2026-09-24T10:36:44",
-   "script": "mail",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260924_103641_mail_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 43491,
+  "now": 43615,
   "segments": [
    {
     "b": 28904,
@@ -9830,11 +9832,39 @@
     "s": "island_challenge",
     "login": [
      43486,
-     null
+     43501
+    ],
+    "handoff": 43509,
+    "rc": 5,
+    "e": 43525,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 43525,
+    "a": "fake1",
+    "s": "guild_war",
+    "login": [
+     43526,
+     43542
+    ],
+    "handoff": 43547,
+    "rc": 0,
+    "e": 43594,
+    "secs": 46,
+    "why": ""
+   },
+   {
+    "b": 43594,
+    "a": "fake2",
+    "s": "guild_war",
+    "login": [
+     43595,
+     43612
     ],
     "handoff": null,
     "rc": null,
-    "e": 43491
+    "e": 43615
    }
   ],
   "idle": []
@@ -9933,9 +9963,9 @@
  ],
  "day": {
   "since": "2026-09-25T08:00",
-  "switches": 23,
-  "relogMinutes": 8.7,
-  "retries": 12,
+  "switches": 25,
+  "relogMinutes": 9.5,
+  "retries": 13,
   "tasks": {
    "pokemon_home": {
     "runs": 18,
@@ -9978,9 +10008,9 @@
     "failed": 0
    },
    "island_challenge": {
-    "runs": 2,
-    "minutes": 0.5,
-    "failed": 2
+    "runs": 3,
+    "minutes": 0.8,
+    "failed": 3
    },
    "run_pvp_ranked": {
     "runs": 6,
@@ -10016,6 +10046,11 @@
     "runs": 2,
     "minutes": 0.9,
     "failed": 2
+   },
+   "guild_war": {
+    "runs": 1,
+    "minutes": 0.8,
+    "failed": 0
    }
   }
  },
@@ -10205,79 +10240,79 @@
  "queue": {
   "next": [
    {
+    "account": "fake2",
+    "task": "guild_war",
+    "startsIn": 0.0,
+    "eta": "2026-09-25T12:06"
+   },
+   {
+    "account": "fake2",
+    "task": "faction",
+    "startsIn": 0.8,
+    "eta": "2026-09-25T12:07"
+   },
+   {
     "account": "nova",
     "task": "guild_war",
-    "startsIn": 0.4,
-    "eta": "2026-09-25T12:05"
+    "startsIn": 2.8,
+    "eta": "2026-09-25T12:09"
    },
    {
     "account": "jeff",
     "task": "guild_war",
-    "startsIn": 2.8,
-    "eta": "2026-09-25T12:07"
+    "startsIn": 4.0,
+    "eta": "2026-09-25T12:10"
    },
    {
     "account": "smurf",
     "task": "guild_war",
     "startsIn": 5.2,
-    "eta": "2026-09-25T12:10"
+    "eta": "2026-09-25T12:12"
    },
    {
     "account": "smurf",
     "task": "misty_woods",
-    "startsIn": 7.2,
+    "startsIn": 6.0,
     "eta": "2026-09-25T12:12"
    },
    {
-    "account": "fake1",
+    "account": "fake3",
     "task": "guild_war",
-    "startsIn": 8.1,
-    "eta": "2026-09-25T12:12"
+    "startsIn": 6.9,
+    "eta": "2026-09-25T12:13"
    },
    {
-    "account": "fake1",
+    "account": "fake3",
     "task": "faction",
-    "startsIn": 10.1,
+    "startsIn": 7.7,
     "eta": "2026-09-25T12:14"
    },
    {
-    "account": "fake2",
+    "account": "fake4",
     "task": "guild_war",
-    "startsIn": 12.1,
+    "startsIn": 9.7,
     "eta": "2026-09-25T12:16"
    },
    {
-    "account": "fake2",
+    "account": "fake4",
     "task": "faction",
-    "startsIn": 14.1,
-    "eta": "2026-09-25T12:18"
+    "startsIn": 10.5,
+    "eta": "2026-09-25T12:17"
    },
    {
-    "account": "fake3",
+    "account": "fake5",
     "task": "guild_war",
-    "startsIn": 16.1,
+    "startsIn": 12.5,
+    "eta": "2026-09-25T12:19"
+   },
+   {
+    "account": "fake5",
+    "task": "faction",
+    "startsIn": 13.3,
     "eta": "2026-09-25T12:20"
-   },
-   {
-    "account": "fake3",
-    "task": "faction",
-    "startsIn": 18.1,
-    "eta": "2026-09-25T12:22"
-   },
-   {
-    "account": "fake4",
-    "task": "guild_war",
-    "startsIn": 20.1,
-    "eta": "2026-09-25T12:24"
-   },
-   {
-    "account": "fake4",
-    "task": "faction",
-    "startsIn": 22.1,
-    "eta": "2026-09-25T12:26"
    }
   ],
-  "more": 60,
+  "more": 59,
   "fillers": [
    {
     "account": "smurf",
@@ -10311,12 +10346,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 22,
-   "medianSec": 17.0,
+   "n": 25,
+   "medianSec": 17,
    "picker": {
-    "n": 16,
-    "medianSec": 16.0,
-    "jumps": 9
+    "n": 19,
+    "medianSec": 16,
+    "jumps": 11
    },
    "typed": {
     "n": 0,
@@ -10433,6 +10468,15 @@
   }
  },
  "ledger": {
+  "fake1": {
+   "guild war attempts": 1,
+   "pillar/story stages cleared": 3,
+   "Island Shop buys (200 coins)": 1,
+   "adventure energy": 1,
+   "Home creations": 46,
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "lucifer1": {
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
@@ -10497,14 +10541,6 @@
   "fake2": {
    "pillar/story stages cleared": 4,
    "Island Shop buys (200 coins)": 1,
-   "mail claimed": 1,
-   "daily claims": 2
-  },
-  "fake1": {
-   "pillar/story stages cleared": 3,
-   "Island Shop buys (200 coins)": 1,
-   "adventure energy": 1,
-   "Home creations": 46,
    "mail claimed": 1,
    "daily claims": 2
   },
@@ -10996,7 +11032,7 @@
     },
     {
      "task": "island",
-     "state": "cooling off"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -11183,17 +11219,13 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-25",
-   "summary": "11 of 14 dailies done · 2 switched off",
-   "done": 11,
+   "summary": "12 of 14 dailies done · 2 switched off",
+   "done": 12,
    "owed": 14,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     },
     {
      "task": "fctn",
@@ -11222,6 +11254,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "pillar/story stages cleared": 3,
     "Island Shop buys (200 coins)": 1,
     "adventure energy": 1,
@@ -11266,7 +11299,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 11,
+     "done": 12,
      "failed": 1
     }
    ]
