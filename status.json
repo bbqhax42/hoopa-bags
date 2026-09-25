@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T21:27:08.543077",
+ "generatedAt": "2026-09-25T21:29:12.105484",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skosmurf",
-  "mode": "championship",
-  "since": "21:25:44"
+  "account": "nova",
+  "mode": "hoopa",
+  "since": "21:27:52"
  },
  "grid": {
   "tasks": [
@@ -733,11 +733,33 @@
   }
  },
  "session": {
-  "label": "skosmurf",
-  "at": "2026-09-25T21:26:04.542451",
+  "label": "nova",
+  "at": "2026-09-25T21:28:09.337818",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T21:27:52",
+   "script": "championship",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 102,
+   "stats": {
+    "skip_tapped": 32,
+    "fights": 30,
+    "skip_retapped": 2,
+    "ladder_stalled": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "championship: the ladder stopped progressing"
+   ],
+   "values": {
+    "fights": 30,
+    "tiers": 1
+   },
+   "dir": "debug_runs/20260925_212610_championship_skosmurf"
+  },
   {
    "ts": "2026-09-25T21:05:11",
    "script": "championship",
@@ -7451,30 +7473,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260924_151001_rift_smurf"
-  },
-  {
-   "ts": "2026-09-24T14:33:41",
-   "script": "guild_war",
-   "account": "chris",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "near_miss_vr_rank": 2,
-    "marginal_battle_over": 2,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_143244_guild_war_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 77228,
+  "now": 77352,
   "segments": [
    {
     "b": 28904,
@@ -11379,12 +11383,21 @@
     ],
     "handoff": 64262,
     "rc": null,
-    "e": 77228
+    "e": 77352
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-25T21:27:52",
+   "account": "skosmurf",
+   "task": "championship",
+   "rc": 1,
+   "secs": 102,
+   "why": "championship: the ladder stopped progressing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_212610_championship_skosmurf__KEEP_0002_212751_ladder_stalled.png"
+  },
   {
    "ts": "2026-09-25T16:56:55",
    "account": "smurf",
@@ -11541,9 +11554,9 @@
  ],
  "day": {
   "since": "2026-09-25T08:00",
-  "switches": 132,
-  "relogMinutes": 57.8,
-  "retries": 25,
+  "switches": 133,
+  "relogMinutes": 58.2,
+  "retries": 26,
   "tasks": {
    "pokemon_home": {
     "runs": 21,
@@ -11616,9 +11629,9 @@
     "failed": 0
    },
    "championship": {
-    "runs": 4,
-    "minutes": 3.0,
-    "failed": 0
+    "runs": 5,
+    "minutes": 4.7,
+    "failed": 1
    },
    "misty_woods": {
     "runs": 5,
@@ -11907,8 +11920,8 @@
    {
     "account": "skosmurf",
     "task": "championship",
-    "startsIn": 0.0,
-    "eta": "2026-09-25T21:27"
+    "startsIn": 0.4,
+    "eta": "2026-09-25T21:29"
    }
   ],
   "more": 0,
@@ -11937,12 +11950,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 133,
-   "medianSec": 16,
+   "n": 134,
+   "medianSec": 16.0,
    "picker": {
-    "n": 104,
-    "medianSec": 16.0,
-    "jumps": 61
+    "n": 105,
+    "medianSec": 16,
+    "jumps": 62
    },
    "typed": {
     "n": 0,
@@ -12063,6 +12076,18 @@
   }
  },
  "ledger": {
+  "skosmurf": {
+   "island fights": 30,
+   "misty battles won": 18,
+   "guild war attempts": 1,
+   "faction sweeps": 2,
+   "pillar/story stages cleared": 2,
+   "ranked attempts": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 2,
+   "Privilege Pack claimed": 1
+  },
   "smurf": {
    "island fights": 50,
    "guild war attempts": 1,
@@ -12154,17 +12179,6 @@
    "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 3,
-   "Privilege Pack claimed": 1
-  },
-  "skosmurf": {
-   "misty battles won": 18,
-   "guild war attempts": 1,
-   "faction sweeps": 2,
-   "pillar/story stages cleared": 2,
-   "ranked attempts": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 2,
    "Privilege Pack claimed": 1
   },
   "jeff": {
@@ -13604,6 +13618,12 @@
    ],
    "issues": [
     {
+     "task": "championship",
+     "at": "21:27",
+     "why": "championship: the ladder stopped progressing",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_212610_championship_skosmurf__KEEP_0002_212751_ladder_stalled.png"
+    },
+    {
      "task": "faction",
      "at": "11:53",
      "why": "faction: fire tower: lost the battle after 15 win(s) — the team needs adjusting",
@@ -13639,6 +13659,7 @@
     }
    ],
    "spent": {
+    "island fights": 30,
     "misty battles won": 18,
     "guild war attempts": 1,
     "faction sweeps": 2,
@@ -13690,7 +13711,7 @@
     {
      "day": "2026-09-25",
      "done": 18,
-     "failed": 1
+     "failed": 2
     }
    ]
   },
