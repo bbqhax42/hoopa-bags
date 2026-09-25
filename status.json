@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T14:41:18.827743",
+ "generatedAt": "2026-09-25T14:43:22.381325",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "sprite",
-  "mode": "rank_match",
-  "since": "14:39:48"
+  "mode": "sky_pillar",
+  "since": "14:42:43"
  },
  "grid": {
   "tasks": [
@@ -306,11 +306,11 @@
      "-",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "-",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 251,
-  "todo": 11,
+  "done": 254,
+  "todo": 8,
   "gaveUp": 3,
   "unavailable": 9,
   "windowed": 0
@@ -718,6 +718,59 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T14:42:43",
+   "script": "collect_hoopa_keys",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_144236_collect_hoopa_keys_sprite"
+  },
+  {
+   "ts": "2026-09-25T14:42:32",
+   "script": "guild_war",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 50,
+   "stats": {
+    "near_miss_vr_rank": 1,
+    "near_miss_battle_over": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_144142_guild_war_sprite"
+  },
+  {
+   "ts": "2026-09-25T14:41:41",
+   "script": "rank_match",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 2,
+    "rank_rewards": 0
+   },
+   "dir": "debug_runs/20260925_144042_rank_match_sprite"
+  },
   {
    "ts": "2026-09-25T14:39:47",
    "script": "faction",
@@ -7435,66 +7488,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260924_134847_rank_match_chris"
-  },
-  {
-   "ts": "2026-09-24T13:48:22",
-   "script": "guild_war",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "near_miss_tips_header": 17,
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_attempts_spent": 1,
-    "assist_already_set": 1,
-    "gw_no_attempts": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_134815_guild_war_jeff"
-  },
-  {
-   "ts": "2026-09-24T13:48:14",
-   "script": "rank_match",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 58,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 8,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260924_134715_rank_match_jeff"
-  },
-  {
-   "ts": "2026-09-24T13:46:51",
-   "script": "faction",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 136,
-   "stats": {
-    "auto_formation": 20,
-    "skip_retry": 20,
-    "floors_water": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_134435_faction_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 52879,
+  "now": 53002,
   "segments": [
    {
     "b": 28904,
@@ -10959,8 +10958,41 @@
      52810
     ],
     "handoff": 52842,
+    "rc": 0,
+    "e": 52901,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 52901,
+    "a": "sprite",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 52902,
+    "rc": 0,
+    "e": 52953,
+    "secs": 50,
+    "why": ""
+   },
+   {
+    "b": 52953,
+    "a": "sprite",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 52956,
+    "rc": 0,
+    "e": 52963,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 52963,
+    "a": "sprite",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 52963,
     "rc": null,
-    "e": 52879
+    "e": 53002
    }
   ],
   "idle": []
@@ -11150,8 +11182,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 18,
-    "minutes": 2.2,
+    "runs": 19,
+    "minutes": 2.3,
     "failed": 1
    },
    "sky_pillar": {
@@ -11180,8 +11212,8 @@
     "failed": 2
    },
    "guild_war": {
-    "runs": 16,
-    "minutes": 13.0,
+    "runs": 17,
+    "minutes": 13.8,
     "failed": 0
    },
    "rift": {
@@ -11190,8 +11222,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 16,
-    "minutes": 13.1,
+    "runs": 17,
+    "minutes": 14.1,
     "failed": 0
    }
   }
@@ -11425,68 +11457,50 @@
   "next": [
    {
     "account": "sprite",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-25T14:41"
-   },
-   {
-    "account": "sprite",
-    "task": "guild_war",
-    "startsIn": 0.8,
-    "eta": "2026-09-25T14:42"
-   },
-   {
-    "account": "sprite",
-    "task": "collect_hoopa_keys",
-    "startsIn": 1.6,
-    "eta": "2026-09-25T14:42"
-   },
-   {
-    "account": "sprite",
     "task": "sky_pillar",
-    "startsIn": 1.8,
+    "startsIn": 0.0,
     "eta": "2026-09-25T14:43"
    },
    {
     "account": "exou",
     "task": "rank_match",
-    "startsIn": 3.4,
-    "eta": "2026-09-25T14:44"
+    "startsIn": 1.6,
+    "eta": "2026-09-25T14:45"
    },
    {
     "account": "exou",
     "task": "guild_war",
-    "startsIn": 4.2,
+    "startsIn": 2.5,
     "eta": "2026-09-25T14:45"
    },
    {
     "account": "exou",
     "task": "collect_hoopa_keys",
-    "startsIn": 5.0,
+    "startsIn": 3.3,
     "eta": "2026-09-25T14:46"
    },
    {
     "account": "exou",
     "task": "sky_pillar",
-    "startsIn": 5.2,
+    "startsIn": 3.4,
     "eta": "2026-09-25T14:46"
    },
    {
     "account": "test1",
     "task": "rank_match",
-    "startsIn": 6.8,
+    "startsIn": 5.1,
     "eta": "2026-09-25T14:48"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 7.6,
-    "eta": "2026-09-25T14:48"
+    "startsIn": 5.9,
+    "eta": "2026-09-25T14:49"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 9.2,
+    "startsIn": 7.5,
     "eta": "2026-09-25T14:50"
    }
   ],
@@ -11542,14 +11556,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 0,
-   "islandStamina": 4,
-   "mailUnread": 0,
-   "paradiseStamina": "14/19",
-   "rank": 1,
-   "pillar": "floor 149 stage 1"
-  },
   "chris": {
    "islandFights": 0,
    "islandStamina": 9,
@@ -11591,6 +11597,14 @@
   "sprite": {
    "pillar": "floor 50 stage 8",
    "mailUnread": 0
+  },
+  "jeff": {
+   "islandFights": 0,
+   "islandStamina": 4,
+   "mailUnread": 0,
+   "paradiseStamina": "14/19",
+   "rank": 1,
+   "pillar": "floor 149 stage 1"
   },
   "exou": {
    "mailUnread": 0,
@@ -11647,6 +11661,13 @@
   }
  },
  "ledger": {
+  "sprite": {
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  },
   "fake4": {
    "faction sweeps": 2,
    "guild war attempts": 1,
@@ -11791,12 +11812,6 @@
   "exou": {
    "Island Shop buys (200 coins)": 1,
    "Home creations": 46,
-   "daily claims": 3,
-   "Privilege Pack claimed": 1
-  },
-  "sprite": {
-   "Island Shop buys (200 coins)": 1,
-   "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
   },
@@ -13018,22 +13033,10 @@
   "sprite": {
    "name": "sprite",
    "day": "2026-09-25",
-   "summary": "7 of 11 dailies done",
-   "done": 7,
+   "summary": "10 of 11 dailies done",
+   "done": 10,
    "owed": 11,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
-    },
     {
      "task": "pillar",
      "state": "still to do"
@@ -13043,6 +13046,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 3,
@@ -13085,7 +13089,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 8,
+     "done": 11,
      "failed": 0
     }
    ]
