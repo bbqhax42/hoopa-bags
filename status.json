@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T10:40:21.320602",
+ "generatedAt": "2026-09-25T10:42:25.075827",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake4",
-  "mode": "daily_dungeon",
-  "since": "10:40:04"
+  "mode": "combat_daily",
+  "since": "10:41:03"
  },
  "grid": {
   "tasks": [
@@ -205,8 +205,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 103,
-  "todo": 130,
+  "done": 105,
+  "todo": 128,
   "gaveUp": 1,
   "unavailable": 2,
   "windowed": 38
@@ -718,6 +718,49 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T10:41:02",
+   "script": "pokemon_home",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 18,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 49
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_104044_pokemon_home_fake4"
+  },
+  {
+   "ts": "2026-09-25T10:40:42",
+   "script": "pokemon_home",
+   "account": "fake4",
+   "rc": 1,
+   "secs": 17,
+   "stats": {
+    "board_not_reached": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260925_104025_pokemon_home_fake4"
+  },
+  {
+   "ts": "2026-09-25T10:40:23",
+   "script": "daily_dungeon",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_104009_daily_dungeon_fake4"
+  },
   {
    "ts": "2026-09-25T10:39:12",
    "script": "joint_team_daily_quest",
@@ -7495,60 +7538,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260924_091720_mail_smurf"
-  },
-  {
-   "ts": "2026-09-24T09:17:19",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 15,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "claims": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:79 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260924_091703_dailyclaim_smurf"
-  },
-  {
-   "ts": "2026-09-24T09:16:39",
-   "script": "championship",
-   "account": "chris",
-   "rc": 0,
-   "secs": 105,
-   "stats": {
-    "skip_tapped": 35,
-    "fights": 30,
-    "skip_retapped": 5,
-    "tier_completed": 1,
-    "event_done": 1
-   },
-   "incomplete": [],
-   "values": {
-    "fights": 30,
-    "tiers": 1
-   },
-   "dir": "debug_runs/20260924_091454_championship_chris"
-  },
-  {
-   "ts": "2026-09-24T09:14:52",
-   "script": "weekend_bash",
-   "account": "chris",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_091452_weekend_bash_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 38421,
+  "now": 38545,
   "segments": [
    {
     "b": 28904,
@@ -8945,13 +8940,55 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 38409,
+    "rc": 0,
+    "e": 38423,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 38423,
+    "a": "fake4",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38424,
+    "rc": 1,
+    "e": 38443,
+    "secs": 17,
+    "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)"
+   },
+   {
+    "b": 38443,
+    "a": "fake4",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38443,
+    "rc": 1,
+    "e": 38463,
+    "secs": 17,
+    "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)"
+   },
+   {
+    "b": 38463,
+    "a": "fake4",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 38467,
     "rc": null,
-    "e": 38421
+    "e": 38545
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-25T10:40:42",
+   "account": "fake4",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 17,
+   "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_104025_pokemon_home_fake4__KEEP_0015_104042_board_not_reached.png"
+  },
   {
    "ts": "2026-09-25T10:04:08",
    "account": "fake1",
@@ -9011,12 +9048,12 @@
   "since": "2026-09-25T08:00",
   "switches": 15,
   "relogMinutes": 5.8,
-  "retries": 8,
+  "retries": 9,
   "tasks": {
    "pokemon_home": {
-    "runs": 9,
-    "minutes": 9.9,
-    "failed": 2
+    "runs": 11,
+    "minutes": 10.5,
+    "failed": 3
    },
    "dailyclaim": {
     "runs": 9,
@@ -9034,8 +9071,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 8,
-    "minutes": 2.7,
+    "runs": 9,
+    "minutes": 3.0,
     "failed": 0
    },
    "combat_daily": {
@@ -9276,78 +9313,78 @@
   "next": [
    {
     "account": "fake4",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-25T10:40"
-   },
-   {
-    "account": "fake4",
-    "task": "pokemon_home",
-    "startsIn": 0.3,
-    "eta": "2026-09-25T10:40"
-   },
-   {
-    "account": "fake4",
     "task": "combat_daily",
-    "startsIn": 1.4,
-    "eta": "2026-09-25T10:41"
+    "startsIn": 0.0,
+    "eta": "2026-09-25T10:42"
    },
    {
     "account": "fake4",
     "task": "victory_road",
-    "startsIn": 3.2,
-    "eta": "2026-09-25T10:43"
+    "startsIn": 1.8,
+    "eta": "2026-09-25T10:44"
    },
    {
     "account": "fake4",
     "task": "paradise",
-    "startsIn": 3.4,
-    "eta": "2026-09-25T10:43"
+    "startsIn": 1.9,
+    "eta": "2026-09-25T10:44"
    },
    {
     "account": "fake4",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.4,
-    "eta": "2026-09-25T10:47"
+    "startsIn": 5.9,
+    "eta": "2026-09-25T10:48"
    },
    {
     "account": "fake4",
     "task": "sky_pillar",
-    "startsIn": 7.5,
-    "eta": "2026-09-25T10:47"
+    "startsIn": 6.0,
+    "eta": "2026-09-25T10:48"
    },
    {
     "account": "fake4",
     "task": "faction",
-    "startsIn": 8.8,
+    "startsIn": 7.4,
     "eta": "2026-09-25T10:49"
    },
    {
     "account": "fake1",
     "task": "faction",
-    "startsIn": 10.7,
+    "startsIn": 9.2,
     "eta": "2026-09-25T10:51"
    },
    {
     "account": "fake2",
     "task": "faction",
-    "startsIn": 12.5,
-    "eta": "2026-09-25T10:52"
+    "startsIn": 11.1,
+    "eta": "2026-09-25T10:53"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 14.4,
-    "eta": "2026-09-25T10:54"
+    "startsIn": 12.9,
+    "eta": "2026-09-25T10:55"
    },
    {
     "account": "smurf",
     "task": "misty_woods",
-    "startsIn": 16.2,
-    "eta": "2026-09-25T10:56"
+    "startsIn": 14.8,
+    "eta": "2026-09-25T10:57"
+   },
+   {
+    "account": "fake5",
+    "task": "dailyclaim",
+    "startsIn": 15.6,
+    "eta": "2026-09-25T10:58"
+   },
+   {
+    "account": "fake5",
+    "task": "mail",
+    "startsIn": 16.0,
+    "eta": "2026-09-25T10:58"
    }
   ],
-  "more": 118,
+  "more": 116,
   "fillers": [
    {
     "account": "smurf",
@@ -9399,14 +9436,6 @@
   }
  },
  "progress": {
-  "chris": {
-   "islandFights": 0,
-   "islandStamina": 9,
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "rank": 1,
-   "pillar": "floor 138 stage 3"
-  },
   "smurf": {
    "mailUnread": 0,
    "paradiseStamina": "1/15",
@@ -9447,6 +9476,14 @@
   },
   "fake6": {
    "mailUnread": 0
+  },
+  "chris": {
+   "islandFights": 0,
+   "islandStamina": 9,
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "rank": 1,
+   "pillar": "floor 138 stage 3"
   },
   "fake7": {
    "mailUnread": 0,
@@ -10428,18 +10465,10 @@
   "fake4": {
    "name": "Random32",
    "day": "2026-09-25",
-   "summary": "4 of 14 dailies done · 2 switched off",
-   "done": 4,
+   "summary": "6 of 14 dailies done · 2 switched off",
+   "done": 6,
    "owed": 14,
    "open": [
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -10473,7 +10502,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "pokemon_home",
+     "at": "10:40",
+     "why": "pokemon_home: the board could not be reached (no Craft row, Trial route did not open)",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_104025_pokemon_home_fake4__KEEP_0015_104042_board_not_reached.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -10529,8 +10565,8 @@
     },
     {
      "day": "2026-09-25",
-     "done": 4,
-     "failed": 0
+     "done": 6,
+     "failed": 1
     }
    ]
   },
