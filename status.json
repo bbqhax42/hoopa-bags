@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T16:55:06.443640",
+ "generatedAt": "2026-09-25T16:57:09.978405",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
   "mode": "ultra_wormhole",
-  "since": "16:54:48"
+  "since": "16:56:56"
  },
  "grid": {
   "tasks": [
@@ -126,7 +126,7 @@
      "✓",
      "⊘",
      "✓",
-     "·",
+     "✗2",
      "-",
      "-"
     ]
@@ -510,8 +510,8 @@
  },
  "counts": {
   "done": 265,
-  "todo": 4,
-  "gaveUp": 3,
+  "todo": 3,
+  "gaveUp": 4,
   "unavailable": 11,
   "windowed": 0
  },
@@ -738,6 +738,27 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T16:56:55",
+   "script": "ultra_wormhole",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 103,
+   "stats": {
+    "hired": 16,
+    "wins": 3,
+    "incomplete": 2,
+    "near_miss_buy_items": 1
+   },
+   "incomplete": [
+    "ultra_wormhole: stuck on an unknown screen",
+    "ultra_wormhole: 5/16 wins after 3 battles"
+   ],
+   "values": {
+    "wins_today": 5
+   },
+   "dir": "debug_runs/20260925_165512_ultra_wormhole_smurf"
+  },
   {
    "ts": "2026-09-25T16:54:48",
    "script": "ultra_wormhole",
@@ -7475,27 +7496,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260924_141017_sky_pillar_exou"
-  },
-  {
-   "ts": "2026-09-24T14:10:16",
-   "script": "collect_hoopa_keys",
-   "account": "exou",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "near_miss_hoopa_vault": 1,
-    "marginal_hoopa_vault": 1,
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_141010_collect_hoopa_keys_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 60906,
+  "now": 61030,
   "segments": [
    {
     "b": 28904,
@@ -11295,14 +11301,36 @@
      60889,
      60906
     ],
-    "handoff": null,
-    "rc": null,
-    "e": 60906
+    "handoff": 60911,
+    "rc": 1,
+    "e": 61016,
+    "secs": 103,
+    "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 5/16 wins after 3 battles"
+   },
+   {
+    "b": 61016,
+    "a": "smurf",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 61017,
+    "rc": 1,
+    "e": 61030,
+    "secs": 103,
+    "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 5/16 wins after 3 battles"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-25T16:56:55",
+   "account": "smurf",
+   "task": "ultra_wormhole",
+   "rc": 1,
+   "secs": 103,
+   "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 5/16 wins after 3 battles",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_165512_ultra_wormhole_smurf__KEEP_0002_165652_stuck_unknown.png"
+  },
   {
    "ts": "2026-09-25T16:21:53",
    "account": "lucifer1",
@@ -11451,8 +11479,8 @@
  "day": {
   "since": "2026-09-25T08:00",
   "switches": 75,
-  "relogMinutes": 29.5,
-  "retries": 22,
+  "relogMinutes": 29.9,
+  "retries": 23,
   "tasks": {
    "pokemon_home": {
     "runs": 21,
@@ -11550,9 +11578,9 @@
     "failed": 0
    },
    "ultra_wormhole": {
-    "runs": 8,
-    "minutes": 33.6,
-    "failed": 2
+    "runs": 9,
+    "minutes": 35.3,
+    "failed": 3
    }
   }
  },
@@ -11807,28 +11835,22 @@
  "queue": {
   "next": [
    {
-    "account": "smurf",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-09-25T16:55"
-   },
-   {
     "account": "skosmurf",
     "task": "ultra_wormhole",
-    "startsIn": 4.6,
-    "eta": "2026-09-25T16:59"
+    "startsIn": 0.4,
+    "eta": "2026-09-25T16:57"
    },
    {
     "account": "deno",
     "task": "ultra_wormhole",
-    "startsIn": 9.2,
-    "eta": "2026-09-25T17:04"
+    "startsIn": 4.7,
+    "eta": "2026-09-25T17:01"
    },
    {
     "account": "dre",
     "task": "ultra_wormhole",
-    "startsIn": 13.8,
-    "eta": "2026-09-25T17:08"
+    "startsIn": 9.0,
+    "eta": "2026-09-25T17:06"
    }
   ],
   "more": 0,
@@ -12665,7 +12687,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-25",
-   "summary": "15 of 18 dailies done · 2 switched off · 3 not available today",
+   "summary": "15 of 18 dailies done · gave up on wormhole · 2 switched off · 3 not available today",
    "done": 15,
    "owed": 18,
    "open": [
@@ -12679,10 +12701,16 @@
     },
     {
      "task": "wormhole",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
+    {
+     "task": "ultra_wormhole",
+     "at": "16:56",
+     "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 5/16 wins after 3 battles",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260925_165512_ultra_wormhole_smurf__KEEP_0002_165652_stuck_unknown.png"
+    },
     {
      "task": "misty_woods",
      "at": "09:57",
@@ -12772,7 +12800,7 @@
     {
      "day": "2026-09-25",
      "done": 18,
-     "failed": 3
+     "failed": 4
     }
    ]
   },
