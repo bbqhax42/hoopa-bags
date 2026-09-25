@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T15:06:00.780859",
+ "generatedAt": "2026-09-25T15:08:04.690369",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "rift",
-  "since": "15:03:49"
+  "account": "lucifer1",
+  "mode": "hoopa",
+  "since": "15:06:09"
  },
  "grid": {
   "tasks": [
@@ -656,8 +656,8 @@
    "at": "2026-09-24T23:51:53"
   },
   "lucifer1": {
-   "keys": 350,
-   "at": "2026-09-25T07:35:14"
+   "keys": 356,
+   "at": "2026-09-25T15:06:37"
   },
   "lucifer2": {
    "keys": 277,
@@ -713,11 +713,26 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-25T15:04:06.259674",
+  "label": "lucifer1",
+  "at": "2026-09-25T15:06:24.663958",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T15:06:08",
+   "script": "rift",
+   "account": "smurf",
+   "rc": 2,
+   "secs": 115,
+   "stats": {
+    "rift_levels": 17,
+    "rift_rerolls": 3,
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260925_150413_rift_smurf"
+  },
   {
    "ts": "2026-09-25T14:48:33",
    "script": "guild_war",
@@ -7446,28 +7461,12 @@
     "rank_rewards": 0
    },
    "dir": "debug_runs/20260924_140025_rank_match_fake4"
-  },
-  {
-   "ts": "2026-09-24T14:00:02",
-   "script": "faction",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 133,
-   "stats": {
-    "auto_formation": 20,
-    "skip_retry": 17,
-    "floors_water": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_135748_faction_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 54361,
+  "now": 54485,
   "segments": [
    {
     "b": 28904,
@@ -11077,8 +11076,22 @@
      54246
     ],
     "handoff": 54253,
+    "rc": 2,
+    "e": 54369,
+    "secs": 115,
+    "why": ""
+   },
+   {
+    "b": 54369,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     54369,
+     54384
+    ],
+    "handoff": 54394,
     "rc": null,
-    "e": 54361
+    "e": 54485
    }
   ],
   "idle": []
@@ -11213,8 +11226,8 @@
  ],
  "day": {
   "since": "2026-09-25T08:00",
-  "switches": 61,
-  "relogMinutes": 25.1,
+  "switches": 62,
+  "relogMinutes": 25.5,
   "retries": 18,
   "tasks": {
    "pokemon_home": {
@@ -11303,8 +11316,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 1,
-    "minutes": 0.0,
+    "runs": 2,
+    "minutes": 1.9,
     "failed": 0
    },
    "rank_match": {
@@ -11374,6 +11387,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "smurf",
+   "task": "rift",
+   "why": "rift_levels, rift_rerolls, rift_finished",
+   "at": "2026-09-25T15:06:08"
   },
   {
    "account": "test1",
@@ -11556,10 +11575,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "smurf",
-    "mode": "rift"
-   },
-   {
     "account": "chris",
     "mode": "hoopa"
    },
@@ -11587,12 +11602,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 61,
-   "medianSec": 17,
+   "n": 62,
+   "medianSec": 17.0,
    "picker": {
-    "n": 45,
-    "medianSec": 16,
-    "jumps": 32
+    "n": 46,
+    "medianSec": 16.0,
+    "jumps": 33
    },
    "typed": {
     "n": 0,
@@ -12391,7 +12406,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-25",
-   "summary": "15 of 17 dailies done · 2 switched off · 2 not available today",
+   "summary": "15 of 17 dailies done · 2 switched off · 3 not available today",
    "done": 15,
    "owed": 17,
    "open": [
@@ -12438,6 +12453,10 @@
     {
      "task": "joint_battle",
      "why": null
+    },
+    {
+     "task": "rift",
+     "why": "rift_levels, rift_rerolls, rift_finished"
     }
    ],
    "spent": {
