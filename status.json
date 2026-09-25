@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-25T08:34:27.672631",
+ "generatedAt": "2026-09-25T08:36:31.312154",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "dailyclaim",
-  "since": "08:34:14"
+  "mode": "joint_battle",
+  "since": "08:35:40"
  },
  "grid": {
   "tasks": [
@@ -393,10 +393,10 @@
    {
     "account": "lucifer2",
     "cells": [
-     "·",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "✓",
      "·",
@@ -489,8 +489,8 @@
   ]
  },
  "counts": {
-  "done": 1,
-  "todo": 235,
+  "done": 5,
+  "todo": 231,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 38
@@ -701,6 +701,61 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-25T08:35:39",
+   "script": "joint_team_daily_quest",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 46,
+   "stats": {
+    "marginal_joint_team_daily_panel": 1,
+    "panel_swipes": 8,
+    "squad_unaffordable": 1,
+    "guild_base_by_back": 1,
+    "rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "squad_points": "not enough for today's skill",
+    "left": "upgrade squad skill once: blocked"
+   },
+   "dir": "debug_runs/20260925_083452_joint_team_daily_quest_lucifer2"
+  },
+  {
+   "ts": "2026-09-25T08:34:51",
+   "script": "mail",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 5,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260925_083448_mail_lucifer2"
+  },
+  {
+   "ts": "2026-09-25T08:34:46",
+   "script": "dailyclaim",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 27,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:78 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260925_083419_dailyclaim_lucifer2"
+  },
   {
    "ts": "2026-09-25T08:27:11",
    "script": "pokemon_home",
@@ -7387,63 +7442,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260923_191052_rank_match_smurf"
-  },
-  {
-   "ts": "2026-09-23T18:50:38",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 40,
-   "stats": {
-    "fights": 3,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 1,
-    "fights_today": 9
-   },
-   "dir": "debug_runs/20260923_184958_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-23T18:49:32",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 33,
-   "stats": {
-    "fights": 2,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 23,
-    "fights_today": 11
-   },
-   "dir": "debug_runs/20260923_184859_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-23T17:20:27",
-   "script": "rift",
-   "account": "skosmurf",
-   "rc": null,
-   "secs": 177,
-   "stats": {
-    "rift_levels": 35,
-    "rift_rerolls": 6,
-    "rift_finished": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260923_171729_rift_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-25T00:00",
   "since": 28800.0,
-  "now": 30868,
+  "now": 30991,
   "segments": [
    {
     "b": 28904,
@@ -7564,8 +7568,41 @@
     "s": "dailyclaim",
     "login": null,
     "handoff": 30858,
+    "rc": 0,
+    "e": 30887,
+    "secs": 27,
+    "why": ""
+   },
+   {
+    "b": 30887,
+    "a": "lucifer2",
+    "s": "mail",
+    "login": null,
+    "handoff": 30887,
+    "rc": 0,
+    "e": 30892,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 30892,
+    "a": "lucifer2",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 30892,
+    "rc": 0,
+    "e": 30940,
+    "secs": 46,
+    "why": ""
+   },
+   {
+    "b": 30940,
+    "a": "lucifer2",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 30943,
     "rc": null,
-    "e": 30868
+    "e": 30991
    }
   ],
   "idle": []
@@ -7580,6 +7617,21 @@
    "pokemon_home": {
     "runs": 1,
     "minutes": 1.6,
+    "failed": 0
+   },
+   "dailyclaim": {
+    "runs": 1,
+    "minutes": 0.5,
+    "failed": 0
+   },
+   "mail": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   },
+   "joint_team_daily_quest": {
+    "runs": 1,
+    "minutes": 0.8,
     "failed": 0
    }
   }
@@ -7752,78 +7804,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "dailyclaim",
+    "task": "daily_dungeon",
     "startsIn": 0.0,
-    "eta": "2026-09-25T08:34"
-   },
-   {
-    "account": "lucifer2",
-    "task": "mail",
-    "startsIn": 2.0,
     "eta": "2026-09-25T08:36"
    },
    {
     "account": "lucifer2",
-    "task": "joint_team_daily_quest",
-    "startsIn": 4.0,
+    "task": "combat_daily",
+    "startsIn": 2.0,
     "eta": "2026-09-25T08:38"
    },
    {
     "account": "lucifer2",
-    "task": "joint_battle",
-    "startsIn": 6.0,
+    "task": "victory_road",
+    "startsIn": 4.0,
     "eta": "2026-09-25T08:40"
    },
    {
     "account": "lucifer2",
-    "task": "daily_dungeon",
-    "startsIn": 8.0,
+    "task": "paradise",
+    "startsIn": 6.0,
     "eta": "2026-09-25T08:42"
    },
    {
     "account": "lucifer2",
-    "task": "combat_daily",
-    "startsIn": 10.0,
+    "task": "run_pvp_ranked",
+    "startsIn": 8.0,
     "eta": "2026-09-25T08:44"
    },
    {
     "account": "lucifer2",
-    "task": "victory_road",
-    "startsIn": 12.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 10.0,
     "eta": "2026-09-25T08:46"
    },
    {
     "account": "lucifer2",
-    "task": "paradise",
-    "startsIn": 14.0,
+    "task": "sky_pillar",
+    "startsIn": 12.0,
     "eta": "2026-09-25T08:48"
    },
    {
     "account": "lucifer2",
-    "task": "run_pvp_ranked",
-    "startsIn": 16.0,
+    "task": "weekend_bash",
+    "startsIn": 14.0,
     "eta": "2026-09-25T08:50"
    },
    {
-    "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 18.0,
+    "account": "nova",
+    "task": "dailyclaim",
+    "startsIn": 16.4,
     "eta": "2026-09-25T08:52"
    },
    {
-    "account": "lucifer2",
-    "task": "sky_pillar",
-    "startsIn": 20.0,
-    "eta": "2026-09-25T08:54"
+    "account": "nova",
+    "task": "mail",
+    "startsIn": 16.9,
+    "eta": "2026-09-25T08:53"
    },
    {
-    "account": "lucifer2",
-    "task": "weekend_bash",
-    "startsIn": 22.0,
-    "eta": "2026-09-25T08:56"
+    "account": "nova",
+    "task": "joint_team_daily_quest",
+    "startsIn": 17.0,
+    "eta": "2026-09-25T08:53"
+   },
+   {
+    "account": "nova",
+    "task": "joint_battle",
+    "startsIn": 17.8,
+    "eta": "2026-09-25T08:54"
    }
   ],
-  "more": 223,
+  "more": 219,
   "fillers": [
    {
     "account": "smurf",
@@ -7875,13 +7927,8 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 2,
-   "islandStamina": 4,
-   "mailUnread": 0,
-   "paradiseStamina": "9/19",
-   "rank": 1,
-   "pillar": "floor 148 stage 8"
+  "exou": {
+   "mailUnread": 0
   },
   "chris": {
    "islandFights": 0,
@@ -7891,8 +7938,13 @@
    "rank": 1,
    "pillar": "floor 137 stage 10"
   },
-  "exou": {
-   "mailUnread": 0
+  "jeff": {
+   "islandFights": 2,
+   "islandStamina": 4,
+   "mailUnread": 0,
+   "paradiseStamina": "9/19",
+   "rank": 1,
+   "pillar": "floor 148 stage 8"
   },
   "nova": {
    "mailUnread": 0,
@@ -7977,11 +8029,21 @@
  },
  "ledger": {
   "lucifer2": {
+   "mail claimed": 1,
+   "daily claims": 3,
+   "Privilege Pack claimed": 1,
    "Home creations": 50
   }
  },
  "paused": null,
- "warnings": [],
+ "warnings": [
+  {
+   "ts": "2026-09-25T08:35:39",
+   "account": "lucifer2",
+   "task": "joint_team_daily_quest",
+   "left": "upgrade squad skill once: blocked"
+  }
+ ],
  "needsYou": [
   {
    "account": "fake1",
@@ -8054,6 +8116,15 @@
    "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "lucifer2",
+   "task": "joint_team_daily_quest",
+   "kind": "left",
+   "since": "2026-09-25T08:35:39",
+   "why": "upgrade squad skill once: blocked",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
   },
   {
    "account": "fake1",
@@ -9974,26 +10045,10 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-25",
-   "summary": "1 of 15 dailies done · 1 switched off",
-   "done": 1,
+   "summary": "5 of 15 dailies done · 1 switched off",
+   "done": 5,
    "owed": 15,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
     {
      "task": "dungeon",
      "state": "still to do"
@@ -10035,7 +10090,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "joint_team_daily_quest",
+     "at": "08:35",
+     "why": "finished, but left open: upgrade squad skill once: blocked",
+     "frame": null
+    }
+   ],
    "off": [
     {
      "task": "story",
@@ -10045,6 +10107,9 @@
    ],
    "unavailable": [],
    "spent": {
+    "mail claimed": 1,
+    "daily claims": 3,
+    "Privilege Pack claimed": 1,
     "Home creations": 50
    },
    "progress": {
@@ -10086,7 +10151,7 @@
     },
     {
      "day": "2026-09-25",
-     "done": 2,
+     "done": 5,
      "failed": 0
     }
    ]
