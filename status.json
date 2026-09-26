@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T13:57:42.219312",
+ "generatedAt": "2026-09-26T13:59:45.924841",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
-  "mode": "guild_war",
-  "since": "13:57:20"
+  "account": "fake3",
+  "mode": "rank_match",
+  "since": "13:58:53"
  },
  "grid": {
   "tasks": [
@@ -170,7 +170,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 222,
-  "todo": 57,
+  "done": 223,
+  "todo": 56,
   "gaveUp": 5,
   "unavailable": 6,
   "windowed": 0
@@ -716,11 +716,50 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-26T13:56:05.636994",
+  "label": "fake3",
+  "at": "2026-09-26T13:59:10.711928",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T13:58:52",
+   "script": "combat_daily",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 17,
+   "stats": {
+    "title_reread_named": 1,
+    "near_miss_pokemon_upgrade": 2,
+    "upgrade_skip_resonating": 1,
+    "upgrade_list_turned": 1,
+    "upgrade_list_exhausted": 1,
+    "upgrade_all_unlevellable": 1,
+    "outstanding_reread_after_toast": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "left": "upgrade a pokemon"
+   },
+   "dir": "debug_runs/20260926_135835_combat_daily_lucifer2"
+  },
+  {
+   "ts": "2026-09-26T13:58:06",
+   "script": "guild_war",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 45,
+   "stats": {
+    "near_miss_vr_rank": 2,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_135721_guild_war_fake2"
+  },
   {
    "ts": "2026-09-26T13:57:19",
    "script": "rank_match",
@@ -7722,41 +7761,12 @@
     "gacha_one_cost": "free"
    },
    "dir": "debug_runs/20260925_123705_combat_daily_deno"
-  },
-  {
-   "ts": "2026-09-25T12:37:00",
-   "script": "pokemon_home",
-   "account": "deno",
-   "rc": 0,
-   "secs": 105,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "merge_moved_instead": 2,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_123514_pokemon_home_deno"
-  },
-  {
-   "ts": "2026-09-25T12:35:12",
-   "script": "daily_dungeon",
-   "account": "deno",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_123459_daily_dungeon_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 50262,
+  "now": 50386,
   "segments": [
    {
     "b": 29659,
@@ -10578,13 +10588,50 @@
     "s": "guild_war",
     "login": null,
     "handoff": 50240,
+    "rc": 0,
+    "e": 50286,
+    "secs": 45,
+    "why": ""
+   },
+   {
+    "b": 50286,
+    "a": "lucifer2",
+    "s": "combat_daily",
+    "login": [
+     50287,
+     50306
+    ],
+    "handoff": 50314,
+    "rc": 1,
+    "e": 50333,
+    "secs": 17,
+    "why": ""
+   },
+   {
+    "b": 50333,
+    "a": "fake3",
+    "s": "rank_match",
+    "login": [
+     50333,
+     50350
+    ],
+    "handoff": 50355,
     "rc": null,
-    "e": 50262
+    "e": 50386
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T13:58:52",
+   "account": "lucifer2",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 17,
+   "why": "left: upgrade a pokemon",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_135835_combat_daily_lucifer2__KEEP_0014_135844_upgrade_unlevellable.png"
+  },
   {
    "ts": "2026-09-26T13:53:38",
    "account": "smurf",
@@ -10840,9 +10887,9 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 24,
-  "relogMinutes": 9.9,
-  "retries": 29,
+  "switches": 26,
+  "relogMinutes": 10.7,
+  "retries": 30,
   "tasks": {
    "dailyclaim": {
     "runs": 17,
@@ -10875,9 +10922,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 21,
-    "minutes": 30.1,
-    "failed": 7
+    "runs": 22,
+    "minutes": 30.4,
+    "failed": 8
    },
    "victory_road": {
     "runs": 16,
@@ -10925,8 +10972,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 10,
-    "minutes": 9.4,
+    "runs": 11,
+    "minutes": 10.1,
     "failed": 0
    },
    "rank_match": {
@@ -12037,79 +12084,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake2",
-    "task": "guild_war",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T13:57"
-   },
-   {
     "account": "fake3",
     "task": "rank_match",
-    "startsIn": 1.3,
+    "startsIn": 0.0,
     "eta": "2026-09-26T13:59"
    },
    {
     "account": "fake3",
     "task": "guild_war",
-    "startsIn": 2.4,
+    "startsIn": 1.0,
     "eta": "2026-09-26T14:00"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 3.7,
-    "eta": "2026-09-26T14:01"
+    "startsIn": 2.4,
+    "eta": "2026-09-26T14:02"
    },
    {
     "account": "fake4",
     "task": "guild_war",
-    "startsIn": 4.8,
-    "eta": "2026-09-26T14:02"
-   },
-   {
-    "account": "fake5",
-    "task": "rank_match",
-    "startsIn": 6.1,
+    "startsIn": 3.4,
     "eta": "2026-09-26T14:03"
    },
    {
     "account": "fake5",
-    "task": "guild_war",
-    "startsIn": 7.2,
+    "task": "rank_match",
+    "startsIn": 4.7,
     "eta": "2026-09-26T14:04"
+   },
+   {
+    "account": "fake5",
+    "task": "guild_war",
+    "startsIn": 5.8,
+    "eta": "2026-09-26T14:05"
    },
    {
     "account": "fake6",
     "task": "rank_match",
-    "startsIn": 8.5,
+    "startsIn": 7.1,
     "eta": "2026-09-26T14:06"
    },
    {
     "account": "fake6",
     "task": "guild_war",
-    "startsIn": 9.5,
+    "startsIn": 8.1,
     "eta": "2026-09-26T14:07"
    },
    {
     "account": "fake7",
     "task": "rank_match",
-    "startsIn": 10.9,
-    "eta": "2026-09-26T14:08"
+    "startsIn": 9.5,
+    "eta": "2026-09-26T14:09"
    },
    {
     "account": "exou",
     "task": "rank_match",
-    "startsIn": 12.3,
+    "startsIn": 10.9,
     "eta": "2026-09-26T14:10"
    },
    {
     "account": "skosmurf",
     "task": "rank_match",
+    "startsIn": 12.3,
+    "eta": "2026-09-26T14:12"
+   },
+   {
+    "account": "test1",
+    "task": "dailyclaim",
     "startsIn": 13.8,
-    "eta": "2026-09-26T14:11"
+    "eta": "2026-09-26T14:13"
    }
   ],
-  "more": 45,
+  "more": 44,
   "fillers": [
    {
     "account": "smurf",
@@ -12143,20 +12190,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 24,
+   "n": 26,
    "medianSec": 17.0,
    "picker": {
-    "n": 19,
-    "medianSec": 16,
-    "jumps": 13
+    "n": 20,
+    "medianSec": 16.0,
+    "jumps": 14
    },
    "typed": {
     "n": 1,
     "medianSec": 29
    },
    "miss": {
-    "n": 4,
-    "medianSec": 21.0
+    "n": 5,
+    "medianSec": 21
    }
   }
  },
@@ -12267,6 +12314,16 @@
   "test1": {}
  },
  "ledger": {
+  "fake2": {
+   "guild war attempts": 1,
+   "faction sweeps": 2,
+   "pillar proofs lost to a refusal": 1,
+   "pillar/story stages cleared": 2,
+   "Island Shop buys (200 coins)": 1,
+   "adventure energy": 1,
+   "mail claimed": 1,
+   "daily claims": 3
+  },
   "fake1": {
    "guild war attempts": 1,
    "pillar/story stages cleared": 3,
@@ -12393,15 +12450,6 @@
    "adventure energy": 1,
    "mail claimed": 1,
    "daily claims": 4
-  },
-  "fake2": {
-   "faction sweeps": 2,
-   "pillar proofs lost to a refusal": 1,
-   "pillar/story stages cleared": 2,
-   "Island Shop buys (200 coins)": 1,
-   "adventure energy": 1,
-   "mail claimed": 1,
-   "daily claims": 3
   },
   "chris": {
    "island fights": 80,
@@ -13173,17 +13221,13 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-26",
-   "summary": "12 of 14 dailies done · gave up on dungeon · 2 switched off",
-   "done": 12,
+   "summary": "13 of 14 dailies done · gave up on dungeon · 2 switched off",
+   "done": 13,
    "owed": 14,
    "open": [
     {
      "task": "dungeon",
      "state": "gave up"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -13220,6 +13264,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar proofs lost to a refusal": 1,
     "pillar/story stages cleared": 2,
@@ -13266,7 +13311,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 11,
+     "done": 12,
      "failed": 3
     }
    ]
@@ -14082,9 +14127,9 @@
    "issues": [
     {
      "task": "combat_daily",
-     "at": "13:41",
+     "at": "13:58",
      "why": "left: upgrade a pokemon",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_134046_combat_daily_lucifer2__KEEP_0024_134102_upgrade_unlevellable.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_135835_combat_daily_lucifer2__KEEP_0014_135844_upgrade_unlevellable.png"
     },
     {
      "task": "paradise",
@@ -14167,7 +14212,7 @@
     {
      "day": "2026-09-26",
      "done": 13,
-     "failed": 6
+     "failed": 7
     }
    ]
   },
