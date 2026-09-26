@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T22:45:30.629036",
+ "generatedAt": "2026-09-26T22:47:34.136611",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "hoopa",
-  "since": "22:41:31"
+  "account": "nova",
+  "mode": "dynamax",
+  "since": "22:47:11"
  },
  "grid": {
   "tasks": [
@@ -518,6 +518,12 @@
  "disabled": [
   {
    "account": "fake1",
+   "task": "hoopa",
+   "since": "2026-09-26T22:45:41",
+   "why": "lost a fight while climbing — the result card says the fight was lost"
+  },
+  {
+   "account": "fake1",
    "task": "story",
    "since": "2026-09-20T02:53:34",
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable"
@@ -662,11 +668,24 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-26T22:38:18.387109",
+  "label": "nova",
+  "at": "2026-09-26T22:47:27.514431",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T22:45:41",
+   "script": "hoopa",
+   "account": "fake1",
+   "rc": 2,
+   "secs": 231,
+   "stats": {},
+   "incomplete": [
+    "lost a fight while climbing — the result card says the fight was lost"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-26T22:20:53",
    "script": "hoopa",
@@ -7733,27 +7752,12 @@
     "stage": 4
    },
    "dir": "debug_runs/20260925_144525_sky_pillar_exou"
-  },
-  {
-   "ts": "2026-09-25T14:45:24",
-   "script": "collect_hoopa_keys",
-   "account": "exou",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "near_miss_hoopa_vault": 1,
-    "marginal_hoopa_vault": 1,
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_144517_collect_hoopa_keys_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 81931,
+  "now": 82054,
   "segments": [
    {
     "b": 29659,
@@ -12571,8 +12575,22 @@
     "s": "hoopa",
     "login": null,
     "handoff": 81709,
+    "rc": 2,
+    "e": 82031,
+    "secs": 231,
+    "why": "lost a fight while climbing — the result card says the fight was lost"
+   },
+   {
+    "b": 82031,
+    "a": "nova",
+    "s": "dynamax",
+    "login": [
+     82032,
+     82047
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 81931
+    "e": 82054
    }
   ],
   "idle": [
@@ -12653,7 +12671,9 @@
    81121,
    81121,
    81481,
-   81691
+   81691,
+   81941,
+   81941
   ]
  },
  "failures": [
@@ -12930,7 +12950,7 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 101,
+  "switches": 102,
   "relogMinutes": 42.5,
   "retries": 31,
   "tasks": {
@@ -13054,6 +13074,12 @@
    "task": "faction",
    "why": "FCTN Tower is not unlocked on this account — its card opened nothing",
    "at": "2026-09-26T10:34:29"
+  },
+  {
+   "account": "fake1",
+   "task": "hoopa",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "at": "2026-09-26T22:45:41"
   },
   {
    "account": "fake4",
@@ -14027,10 +14053,6 @@
     "mode": "hoopa"
    },
    {
-    "account": "fake1",
-    "mode": "hoopa"
-   },
-   {
     "account": "fake2",
     "mode": "hoopa"
    },
@@ -14041,6 +14063,10 @@
    {
     "account": "fake4",
     "mode": "hoopa"
+   },
+   {
+    "account": "fake5",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -14050,12 +14076,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 101,
-   "medianSec": 17,
+   "n": 102,
+   "medianSec": 16.5,
    "picker": {
-    "n": 81,
-    "medianSec": 16,
-    "jumps": 52
+    "n": 82,
+    "medianSec": 16.0,
+    "jumps": 53
    },
    "typed": {
     "n": 1,
@@ -14584,6 +14610,15 @@
    "enable": false
   },
   {
+   "account": "fake1",
+   "task": "hoopa",
+   "kind": "climb",
+   "since": "2026-09-26T22:45:41",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
+   "enable": true
+  },
+  {
    "account": "fake6",
    "task": "hoopa",
    "kind": "climb",
@@ -14982,7 +15017,7 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-26",
-   "summary": "13 of 14 dailies done · 1 switched off · 1 not available today",
+   "summary": "13 of 14 dailies done · 2 switched off · 2 not available today",
    "done": 13,
    "owed": 14,
    "open": [
@@ -15007,6 +15042,11 @@
    ],
    "off": [
     {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-26T22:45:41"
+    },
+    {
      "task": "story",
      "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
      "since": "2026-09-20T02:53:34"
@@ -15016,6 +15056,10 @@
     {
      "task": "faction",
      "why": "FCTN Tower is not unlocked on this account — its card opened nothing"
+    },
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost"
     }
    ],
    "spent": {
