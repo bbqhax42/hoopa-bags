@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T22:59:56.118620",
+ "generatedAt": "2026-09-26T23:01:59.667430",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "dynamax",
-  "since": "22:59:55"
+  "account": "fake4",
+  "mode": "hoopa",
+  "since": "23:00:23"
  },
  "grid": {
   "tasks": [
@@ -619,8 +619,8 @@
    "at": "2026-09-26T17:53:54"
   },
   "nova": {
-   "keys": 3,
-   "at": "2026-09-26T21:49:42"
+   "keys": 0,
+   "at": "2026-09-26T23:00:22"
   },
   "fake6": {
    "keys": 117,
@@ -639,8 +639,8 @@
    "at": "2026-09-26T22:38:29"
   },
   "fake4": {
-   "keys": 65,
-   "at": "2026-09-18T14:06:52"
+   "keys": 103,
+   "at": "2026-09-26T23:00:53"
   },
   "fake7": {
    "keys": 5,
@@ -668,11 +668,27 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-26T22:58:26.678488",
+  "label": "fake4",
+  "at": "2026-09-26T23:00:41.585910",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T23:00:23",
+   "script": "hoopa",
+   "account": "nova",
+   "rc": 2,
+   "secs": 9,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-26T22:45:41",
    "script": "hoopa",
@@ -7736,28 +7752,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_144700_rank_match_test1"
-  },
-  {
-   "ts": "2026-09-25T14:46:35",
-   "script": "sky_pillar",
-   "account": "exou",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "stages_cleared": 3
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 140,
-    "stage": 4
-   },
-   "dir": "debug_runs/20260925_144525_sky_pillar_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 82796,
+  "now": 82920,
   "segments": [
    {
     "b": 29659,
@@ -12653,7 +12653,30 @@
     "login": null,
     "handoff": null,
     "rc": null,
-    "e": 82796
+    "e": 82808
+   },
+   {
+    "b": 82808,
+    "a": "nova",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 82814,
+    "rc": 2,
+    "e": 82823,
+    "secs": 9,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 82823,
+    "a": "fake4",
+    "s": "hoopa",
+    "login": [
+     82824,
+     82841
+    ],
+    "handoff": 82851,
+    "rc": null,
+    "e": 82920
    }
   ],
   "idle": [
@@ -12740,7 +12763,9 @@
    82175,
    82264,
    82264,
-   82689
+   82689,
+   82807,
+   82823
   ]
  },
  "failures": [
@@ -13017,8 +13042,8 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 105,
-  "relogMinutes": 45.5,
+  "switches": 106,
+  "relogMinutes": 45.9,
   "retries": 31,
   "tasks": {
    "dailyclaim": {
@@ -13191,6 +13216,12 @@
    "at": "2026-09-26T14:18:50"
   },
   {
+   "account": "nova",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-26T23:00:23"
+  },
+  {
    "account": "skosmurf",
    "task": "rift",
    "why": "rift_finished",
@@ -13273,11 +13304,11 @@
    "energy": 1,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-26T22:53:07.340168",
-   "runs": 679,
+   "observed_at": "2026-09-26T23:00:06.901101",
+   "runs": 680,
    "cooldown_until": null,
    "kicks": 0,
-   "last_run_actions": 7
+   "last_run_actions": 1
   }
  },
  "worldBoss": {
@@ -14143,12 +14174,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 105,
-   "medianSec": 16,
+   "n": 106,
+   "medianSec": 16.5,
    "picker": {
-    "n": 85,
-    "medianSec": 16,
-    "jumps": 54
+    "n": 86,
+    "medianSec": 16.0,
+    "jumps": 55
    },
    "typed": {
     "n": 1,
@@ -14161,12 +14192,6 @@
   }
  },
  "progress": {
-  "exou": {
-   "pillar": "floor 140 stage 7",
-   "rank": 4,
-   "mailUnread": 0,
-   "paradiseStamina": "20/20"
-  },
   "chris": {
    "islandFights": 0,
    "islandStamina": 9,
@@ -14264,6 +14289,12 @@
    "mailUnread": 0,
    "paradiseStamina": "1/19",
    "pillar": "floor 51 stage 4"
+  },
+  "exou": {
+   "rank": 4,
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "pillar": "floor 140 stage 7"
   },
   "fake8": {
    "mailUnread": 0,
@@ -14751,7 +14782,7 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-26",
-   "summary": "16 of 16 dailies done",
+   "summary": "16 of 16 dailies done · 1 not available today",
    "done": 16,
    "owed": 16,
    "open": [],
@@ -14764,7 +14795,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {
     "guild war attempts": 1,
     "pillar/story stages cleared": 3,
@@ -15810,10 +15846,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "pillar": "floor 140 stage 7",
     "rank": 4,
     "mailUnread": 0,
-    "paradiseStamina": "20/20"
+    "paradiseStamina": "20/20",
+    "pillar": "floor 140 stage 7"
    },
    "history": [
     {
