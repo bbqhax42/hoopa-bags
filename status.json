@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T08:13:58.422143",
+ "generatedAt": "2026-09-26T08:16:04.461833",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "hoopa",
-  "since": "07:51:18"
+  "mode": "dailyclaim",
+  "since": "08:15:56"
  },
  "grid": {
   "tasks": [
@@ -409,7 +409,7 @@
    {
     "account": "lucifer2",
     "cells": [
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -510,8 +510,8 @@
  },
  "counts": {
   "done": 0,
-  "todo": 255,
-  "gaveUp": 0,
+  "todo": 254,
+  "gaveUp": 1,
   "unavailable": 0,
   "windowed": 38
  },
@@ -721,6 +721,29 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T08:15:55",
+   "script": "dailyclaim",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 76,
+   "stats": {
+    "signed_in": 1,
+    "checkin_retry": 2,
+    "incomplete": 1,
+    "forbidden_first_topup": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "claims": 3
+   },
+   "incomplete": [
+    "dailyclaim: the sign-in milestone could not be checked"
+   ],
+   "values": {
+    "rail_badges": "0.190:76 0.275:8 0.345:54 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260926_081439_dailyclaim_lucifer2"
+  },
   {
    "ts": "2026-09-26T06:56:05",
    "script": "victory_road",
@@ -7452,40 +7475,61 @@
     "fights_today": 0
    },
    "dir": "debug_runs/20260924_202633_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-24T20:25:41",
-   "script": "weekend_bash",
-   "account": "deno",
-   "rc": 0,
-   "secs": 9,
-   "stats": {
-    "near_miss_nav_explore": 1,
-    "diamond_read_mismatch": 1,
-    "tickets": 10
-   },
-   "incomplete": [],
-   "values": {
-    "diamonds_spent": 240,
-    "tickets": 10
-   },
-   "dir": "debug_runs/20260924_202531_weekend_bash_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 29639,
-  "segments": [],
+  "now": 29765,
+  "segments": [
+   {
+    "b": 29659,
+    "a": "lucifer2",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 29678,
+    "rc": 1,
+    "e": 29756,
+    "secs": 76,
+    "why": "dailyclaim: the sign-in milestone could not be checked"
+   },
+   {
+    "b": 29756,
+    "a": "lucifer2",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 29756,
+    "rc": 1,
+    "e": 29765,
+    "secs": 76,
+    "why": "dailyclaim: the sign-in milestone could not be checked"
+   }
+  ],
   "idle": []
  },
- "failures": [],
+ "failures": [
+  {
+   "ts": "2026-09-26T08:15:55",
+   "account": "lucifer2",
+   "task": "dailyclaim",
+   "rc": 1,
+   "secs": 76,
+   "why": "dailyclaim: the sign-in milestone could not be checked",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_081439_dailyclaim_lucifer2__KEEP_0009_081555_home_at_exit.png"
+  }
+ ],
  "day": {
   "since": "2026-09-26T08:00",
   "switches": 0,
   "relogMinutes": 0.0,
-  "retries": 0,
-  "tasks": {}
+  "retries": 1,
+  "tasks": {
+   "dailyclaim": {
+    "runs": 1,
+    "minutes": 1.3,
+    "failed": 1
+   }
+  }
  },
  "unavailable": [],
  "windows": {
@@ -7931,6 +7975,12 @@
   "held": 5
  },
  "changes": [
+  {
+   "sha": "e616ac4",
+   "ts": "2026-09-26T08:15:07",
+   "area": "daytime",
+   "subject": "a filler slot ends by the 08:00 daily reset"
+  },
   {
    "sha": "2d8db60",
    "ts": "2026-09-26T07:53:00",
@@ -8432,78 +8482,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "dailyclaim",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T08:13"
-   },
-   {
-    "account": "lucifer2",
     "task": "mail",
-    "startsIn": 2.0,
-    "eta": "2026-09-26T08:15"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T08:16"
    },
    {
     "account": "lucifer2",
     "task": "joint_team_daily_quest",
-    "startsIn": 4.0,
-    "eta": "2026-09-26T08:17"
+    "startsIn": 2.0,
+    "eta": "2026-09-26T08:18"
    },
    {
     "account": "lucifer2",
     "task": "joint_battle",
-    "startsIn": 6.0,
-    "eta": "2026-09-26T08:19"
+    "startsIn": 4.0,
+    "eta": "2026-09-26T08:20"
    },
    {
     "account": "lucifer2",
     "task": "daily_dungeon",
-    "startsIn": 8.0,
-    "eta": "2026-09-26T08:21"
+    "startsIn": 6.0,
+    "eta": "2026-09-26T08:22"
    },
    {
     "account": "lucifer2",
     "task": "pokemon_home",
-    "startsIn": 10.0,
-    "eta": "2026-09-26T08:23"
+    "startsIn": 8.0,
+    "eta": "2026-09-26T08:24"
    },
    {
     "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 12.0,
-    "eta": "2026-09-26T08:25"
+    "startsIn": 10.0,
+    "eta": "2026-09-26T08:26"
    },
    {
     "account": "lucifer2",
     "task": "combat_daily",
-    "startsIn": 14.0,
-    "eta": "2026-09-26T08:27"
+    "startsIn": 12.0,
+    "eta": "2026-09-26T08:28"
    },
    {
     "account": "lucifer2",
     "task": "victory_road",
-    "startsIn": 16.0,
-    "eta": "2026-09-26T08:29"
+    "startsIn": 14.0,
+    "eta": "2026-09-26T08:30"
    },
    {
     "account": "lucifer2",
     "task": "paradise",
-    "startsIn": 18.0,
-    "eta": "2026-09-26T08:31"
+    "startsIn": 16.0,
+    "eta": "2026-09-26T08:32"
    },
    {
     "account": "lucifer2",
     "task": "run_pvp_ranked",
-    "startsIn": 20.0,
-    "eta": "2026-09-26T08:33"
+    "startsIn": 18.0,
+    "eta": "2026-09-26T08:34"
    },
    {
     "account": "lucifer2",
     "task": "collect_hoopa_keys",
+    "startsIn": 20.0,
+    "eta": "2026-09-26T08:36"
+   },
+   {
+    "account": "lucifer2",
+    "task": "sky_pillar",
     "startsIn": 22.0,
-    "eta": "2026-09-26T08:35"
+    "eta": "2026-09-26T08:38"
    }
   ],
-  "more": 243,
+  "more": 242,
   "fillers": [
    {
     "account": "smurf",
@@ -8555,12 +8605,6 @@
   }
  },
  "progress": {
-  "deno": {
-   "mailUnread": 0,
-   "paradiseStamina": "8/18",
-   "rank": 10,
-   "pillar": "floor 28 stage 8"
-  },
   "chris": {
    "islandFights": 0,
    "islandStamina": 9,
@@ -8656,13 +8700,24 @@
    "mailUnread": 0,
    "paradiseStamina": "1/20"
   },
+  "deno": {
+   "mailUnread": 0,
+   "paradiseStamina": "8/18",
+   "rank": 10,
+   "pillar": "floor 28 stage 8"
+  },
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
    "rank": 6
   }
  },
- "ledger": {},
+ "ledger": {
+  "lucifer2": {
+   "daily claims": 3,
+   "Privilege Pack claimed": 1
+  }
+ },
  "paused": null,
  "warnings": [],
  "needsYou": [
@@ -10732,13 +10787,13 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-26",
-   "summary": "0 of 16 dailies done · 1 switched off",
+   "summary": "0 of 16 dailies done · gave up on claims · 1 switched off",
    "done": 0,
    "owed": 16,
    "open": [
     {
      "task": "claims",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "mail",
@@ -10801,7 +10856,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "dailyclaim",
+     "at": "08:15",
+     "why": "dailyclaim: the sign-in milestone could not be checked",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_081439_dailyclaim_lucifer2__KEEP_0009_081555_home_at_exit.png"
+    }
+   ],
    "off": [
     {
      "task": "story",
@@ -10810,7 +10872,10 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "daily claims": 3,
+    "Privilege Pack claimed": 1
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "1/20",
@@ -10851,7 +10916,7 @@
     {
      "day": "2026-09-26",
      "done": 1,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
