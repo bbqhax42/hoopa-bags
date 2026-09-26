@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T08:18:10.627584",
+ "generatedAt": "2026-09-26T08:20:15.009549",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "joint_battle",
-  "since": "08:17:25"
+  "mode": "pokemon_home",
+  "since": "08:19:57"
  },
  "grid": {
   "tasks": [
@@ -412,8 +412,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 3,
-  "todo": 252,
+  "done": 5,
+  "todo": 250,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 38
@@ -721,6 +721,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T08:19:56",
+   "script": "daily_dungeon",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_081943_daily_dungeon_lucifer2"
+  },
+  {
+   "ts": "2026-09-26T08:19:37",
+   "script": "daily_dungeon",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 50,
+   "stats": {
+    "marginal_dungeon_list": 7,
+    "refused_banner_next": 4,
+    "refused_banner_expand": 3,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "daily_dungeon: 1 dungeon(s) swept nothing"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260926_081847_daily_dungeon_lucifer2"
+  },
   {
    "ts": "2026-09-26T08:17:23",
    "script": "joint_team_daily_quest",
@@ -7459,40 +7490,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260924_214926_rift_smurf"
-  },
-  {
-   "ts": "2026-09-24T21:49:20",
-   "script": "rift",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 265,
-   "stats": {
-    "rift_levels": 51,
-    "rift_rerolls": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_214455_rift_smurf"
-  },
-  {
-   "ts": "2026-09-24T20:45:19",
-   "script": "rift",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 244,
-   "stats": {
-    "rift_levels": 48,
-    "rift_rerolls": 10
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_204114_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 29891,
+  "now": 30015,
   "segments": [
    {
     "b": 29659,
@@ -7545,12 +7548,52 @@
     "login": null,
     "handoff": 29847,
     "rc": null,
-    "e": 29891
+    "e": 29922
+   },
+   {
+    "b": 29922,
+    "a": "lucifer2",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 29926,
+    "rc": 1,
+    "e": 29978,
+    "secs": 50,
+    "why": "daily_dungeon: 1 dungeon(s) swept nothing"
+   },
+   {
+    "b": 29978,
+    "a": "lucifer2",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 29983,
+    "rc": 1,
+    "e": 29997,
+    "secs": 50,
+    "why": "daily_dungeon: 1 dungeon(s) swept nothing"
+   },
+   {
+    "b": 29997,
+    "a": "lucifer2",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 29998,
+    "rc": null,
+    "e": 30015
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T08:19:37",
+   "account": "lucifer2",
+   "task": "daily_dungeon",
+   "rc": 1,
+   "secs": 50,
+   "why": "daily_dungeon: 1 dungeon(s) swept nothing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_081847_daily_dungeon_lucifer2__KEEP_0008_081857_sweep_no_reward.png"
+  },
   {
    "ts": "2026-09-26T08:15:55",
    "account": "lucifer2",
@@ -7565,7 +7608,7 @@
   "since": "2026-09-26T08:00",
   "switches": 0,
   "relogMinutes": 0.0,
-  "retries": 1,
+  "retries": 2,
   "tasks": {
    "dailyclaim": {
     "runs": 2,
@@ -7581,6 +7624,11 @@
     "runs": 1,
     "minutes": 0.9,
     "failed": 0
+   },
+   "daily_dungeon": {
+    "runs": 2,
+    "minutes": 1.1,
+    "failed": 1
    }
   }
  },
@@ -8541,78 +8589,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "joint_battle",
+    "task": "pokemon_home",
     "startsIn": 0.0,
-    "eta": "2026-09-26T08:18"
-   },
-   {
-    "account": "lucifer2",
-    "task": "daily_dungeon",
-    "startsIn": 2.0,
     "eta": "2026-09-26T08:20"
    },
    {
     "account": "lucifer2",
-    "task": "pokemon_home",
-    "startsIn": 4.0,
+    "task": "weekend_bash",
+    "startsIn": 2.0,
     "eta": "2026-09-26T08:22"
    },
    {
     "account": "lucifer2",
-    "task": "weekend_bash",
-    "startsIn": 6.0,
+    "task": "combat_daily",
+    "startsIn": 4.0,
     "eta": "2026-09-26T08:24"
    },
    {
     "account": "lucifer2",
-    "task": "combat_daily",
-    "startsIn": 8.0,
+    "task": "victory_road",
+    "startsIn": 6.0,
     "eta": "2026-09-26T08:26"
    },
    {
     "account": "lucifer2",
-    "task": "victory_road",
-    "startsIn": 10.0,
+    "task": "paradise",
+    "startsIn": 8.0,
     "eta": "2026-09-26T08:28"
    },
    {
     "account": "lucifer2",
-    "task": "paradise",
-    "startsIn": 12.0,
+    "task": "run_pvp_ranked",
+    "startsIn": 10.0,
     "eta": "2026-09-26T08:30"
    },
    {
     "account": "lucifer2",
-    "task": "run_pvp_ranked",
-    "startsIn": 14.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 12.0,
     "eta": "2026-09-26T08:32"
    },
    {
     "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 16.0,
+    "task": "sky_pillar",
+    "startsIn": 14.0,
     "eta": "2026-09-26T08:34"
    },
    {
     "account": "lucifer2",
-    "task": "sky_pillar",
-    "startsIn": 18.0,
-    "eta": "2026-09-26T08:36"
-   },
-   {
-    "account": "lucifer2",
     "task": "ultra_wormhole",
-    "startsIn": 20.0,
-    "eta": "2026-09-26T08:38"
+    "startsIn": 16.0,
+    "eta": "2026-09-26T08:36"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 22.4,
-    "eta": "2026-09-26T08:40"
+    "startsIn": 18.4,
+    "eta": "2026-09-26T08:38"
+   },
+   {
+    "account": "nova",
+    "task": "mail",
+    "startsIn": 19.2,
+    "eta": "2026-09-26T08:39"
+   },
+   {
+    "account": "nova",
+    "task": "joint_team_daily_quest",
+    "startsIn": 19.3,
+    "eta": "2026-09-26T08:39"
    }
   ],
-  "more": 240,
+  "more": 238,
   "fillers": [
    {
     "account": "smurf",
@@ -10863,18 +10911,10 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-26",
-   "summary": "3 of 16 dailies done · 1 switched off",
-   "done": 3,
+   "summary": "5 of 16 dailies done · 1 switched off",
+   "done": 5,
    "owed": 16,
    "open": [
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
     {
      "task": "home",
      "state": "still to do"
@@ -10921,6 +10961,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "daily_dungeon",
+     "at": "08:19",
+     "why": "daily_dungeon: 1 dungeon(s) swept nothing",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_081847_daily_dungeon_lucifer2__KEEP_0008_081857_sweep_no_reward.png"
+    },
     {
      "task": "dailyclaim",
      "at": "08:15",
@@ -10986,8 +11032,8 @@
     },
     {
      "day": "2026-09-26",
-     "done": 4,
-     "failed": 1
+     "done": 5,
+     "failed": 2
     }
    ]
   },
