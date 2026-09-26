@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T17:32:11.839449",
+ "generatedAt": "2026-09-26T17:34:15.336883",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "jeff",
   "mode": "hoopa",
-  "since": "15:15:15"
+  "since": "17:33:47"
  },
  "grid": {
   "tasks": [
@@ -716,11 +716,24 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-26T15:15:31.654060",
+  "label": "jeff",
+  "at": "2026-09-26T17:34:02.365487",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T17:33:46",
+   "script": "rift",
+   "account": "smurf",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_173345_rift_smurf"
+  },
   {
    "ts": "2026-09-26T15:15:14",
    "script": "rift",
@@ -7826,25 +7839,12 @@
     "stage": 8
    },
    "dir": "debug_runs/20260925_142505_sky_pillar_deno"
-  },
-  {
-   "ts": "2026-09-25T14:25:03",
-   "script": "collect_hoopa_keys",
-   "account": "deno",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_142457_collect_hoopa_keys_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 63132,
+  "now": 63255,
   "segments": [
    {
     "b": 29659,
@@ -11368,7 +11368,33 @@
     ],
     "handoff": 54943,
     "rc": null,
-    "e": 63132
+    "e": 63197
+   },
+   {
+    "b": 63197,
+    "a": "smurf",
+    "s": "rift",
+    "login": [
+     63198,
+     63216
+    ],
+    "handoff": 63225,
+    "rc": 2,
+    "e": 63227,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 63227,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": [
+     63228,
+     63242
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 63255
    }
   ],
   "idle": []
@@ -11647,8 +11673,8 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 38,
-  "relogMinutes": 16.1,
+  "switches": 40,
+  "relogMinutes": 16.6,
   "retries": 31,
   "tasks": {
    "dailyclaim": {
@@ -11742,8 +11768,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 1,
-    "minutes": 0.0,
+    "runs": 2,
+    "minutes": 0.1,
     "failed": 0
    }
   }
@@ -11808,6 +11834,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "smurf",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-09-26T17:33:46"
   },
   {
    "account": "sprite",
@@ -12886,10 +12918,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "smurf",
-    "mode": "rift"
-   },
-   {
     "account": "chris",
     "mode": "hoopa"
    },
@@ -12917,12 +12945,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 38,
+   "n": 40,
    "medianSec": 17.0,
    "picker": {
-    "n": 26,
+    "n": 28,
     "medianSec": 17.0,
-    "jumps": 19
+    "jumps": 20
    },
    "typed": {
     "n": 1,
@@ -13225,9 +13253,9 @@
   }
  },
  "paused": {
-  "since": "2026-09-26T15:22:17",
-  "by": "jeff",
-  "why": "from the dashboard"
+  "since": "2026-09-26T17:34:07",
+  "by": "cli",
+  "why": "live: activate fake8's first artifact (owner-approved, 3. yes)"
  },
  "warnings": [
   {
@@ -13834,7 +13862,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-26",
-   "summary": "17 of 19 dailies done · gave up on champ · 2 switched off · 1 not available today",
+   "summary": "17 of 19 dailies done · gave up on champ · 2 switched off · 2 not available today",
    "done": 17,
    "owed": 19,
    "open": [
@@ -13871,6 +13899,10 @@
     {
      "task": "joint_battle",
      "why": null
+    },
+    {
+     "task": "rift",
+     "why": "rift_finished"
     }
    ],
    "spent": {
