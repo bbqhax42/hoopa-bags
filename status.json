@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T14:22:28.527193",
+ "generatedAt": "2026-09-26T14:24:32.229856",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "paradise",
-  "since": "14:18:51"
+  "mode": "collect_hoopa_keys",
+  "since": "14:24:25"
  },
  "grid": {
   "tasks": [
@@ -444,8 +444,8 @@
      "✓",
      "✓",
      "⊘",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 241,
-  "todo": 37,
+  "done": 243,
+  "todo": 35,
   "gaveUp": 5,
   "unavailable": 8,
   "windowed": 0
@@ -721,6 +721,48 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T14:24:25",
+   "script": "guild_war",
+   "account": "test1",
+   "rc": 0,
+   "secs": 46,
+   "stats": {
+    "near_miss_vr_rank": 5,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_142338_guild_war_test1"
+  },
+  {
+   "ts": "2026-09-26T14:23:37",
+   "script": "paradise",
+   "account": "test1",
+   "rc": 0,
+   "secs": 285,
+   "stats": {
+    "marginal_paradise_hub": 4,
+    "explore_clicks": 167,
+    "pass_claims": 5,
+    "gear_maxed": 1,
+    "gear_energy_maxed": 6,
+    "upgraded_small_radar": 3,
+    "upgraded_sports_gloves": 3,
+    "dex_collection": 2,
+    "dex_milestones": 4,
+    "dex_activated": 11,
+    "shop_saved": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": "20/20"
+   },
+   "dir": "debug_runs/20260926_141852_paradise_test1"
+  },
   {
    "ts": "2026-09-26T14:18:50",
    "script": "rank_match",
@@ -7751,43 +7793,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_135813_sky_pillar_dre"
-  },
-  {
-   "ts": "2026-09-25T13:58:11",
-   "script": "collect_hoopa_keys",
-   "account": "dre",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_135805_collect_hoopa_keys_dre"
-  },
-  {
-   "ts": "2026-09-25T13:58:03",
-   "script": "run_pvp_ranked",
-   "account": "dre",
-   "rc": 0,
-   "secs": 88,
-   "stats": {
-    "ranked_fought": 10,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0
-   },
-   "incomplete": [],
-   "values": {
-    "rank": 6,
-    "daily_goal_claims": 0
-   },
-   "dir": "debug_runs/20260925_135634_run_pvp_ranked_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 51748,
+  "now": 51872,
   "segments": [
    {
     "b": 29659,
@@ -10876,8 +10887,30 @@
     "s": "paradise",
     "login": null,
     "handoff": 51531,
+    "rc": 0,
+    "e": 51818,
+    "secs": 285,
+    "why": ""
+   },
+   {
+    "b": 51818,
+    "a": "test1",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 51818,
+    "rc": 0,
+    "e": 51865,
+    "secs": 46,
+    "why": ""
+   },
+   {
+    "b": 51865,
+    "a": "test1",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 51868,
     "rc": null,
-    "e": 51748
+    "e": 51872
    }
   ],
   "idle": []
@@ -11192,8 +11225,8 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 16,
-    "minutes": 71.8,
+    "runs": 17,
+    "minutes": 76.6,
     "failed": 6
    },
    "run_pvp_ranked": {
@@ -11232,8 +11265,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 15,
-    "minutes": 13.3,
+    "runs": 16,
+    "minutes": 14.1,
     "failed": 0
    },
    "rank_match": {
@@ -11736,6 +11769,12 @@
   "held": 5
  },
  "changes": [
+  {
+   "sha": "c5fa323",
+   "ts": "2026-09-26T14:22:39",
+   "area": "dashboard ledger",
+   "subject": "'proofs_spent_by_refusal' is not a spend"
+  },
   {
    "sha": "66036e6",
    "ts": "2026-09-26T14:13:59",
@@ -12329,12 +12368,6 @@
    "ts": "2026-09-25T19:43:32",
    "area": "paradise",
    "subject": "read each account's event end off the pass header and empty the Shop on its last two days"
-  },
-  {
-   "sha": "d4d681e",
-   "ts": "2026-09-25T19:31:27",
-   "area": "paradise",
-   "subject": "a pass list is claimed through a row riding up (dre stopped at 2 of 8); the Dex is known open by its header, not OCR"
   }
  ],
  "phase": {
@@ -12357,78 +12390,78 @@
   "next": [
    {
     "account": "test1",
-    "task": "paradise",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T14:22"
-   },
-   {
-    "account": "test1",
-    "task": "guild_war",
-    "startsIn": 4.5,
-    "eta": "2026-09-26T14:26"
-   },
-   {
-    "account": "test1",
     "task": "collect_hoopa_keys",
-    "startsIn": 5.4,
-    "eta": "2026-09-26T14:27"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T14:24"
    },
    {
     "account": "test1",
     "task": "sky_pillar",
-    "startsIn": 5.5,
-    "eta": "2026-09-26T14:27"
+    "startsIn": 0.1,
+    "eta": "2026-09-26T14:24"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 6.9,
-    "eta": "2026-09-26T14:29"
+    "startsIn": 1.5,
+    "eta": "2026-09-26T14:26"
    },
    {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 8.8,
-    "eta": "2026-09-26T14:31"
+    "startsIn": 3.4,
+    "eta": "2026-09-26T14:27"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 9.3,
-    "eta": "2026-09-26T14:31"
+    "startsIn": 3.9,
+    "eta": "2026-09-26T14:28"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 9.3,
-    "eta": "2026-09-26T14:31"
+    "startsIn": 4.0,
+    "eta": "2026-09-26T14:28"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 10.2,
-    "eta": "2026-09-26T14:32"
+    "startsIn": 4.9,
+    "eta": "2026-09-26T14:29"
    },
    {
     "account": "deno",
     "task": "daily_dungeon",
-    "startsIn": 12.2,
-    "eta": "2026-09-26T14:34"
+    "startsIn": 6.9,
+    "eta": "2026-09-26T14:31"
    },
    {
     "account": "deno",
     "task": "pokemon_home",
-    "startsIn": 13.0,
-    "eta": "2026-09-26T14:35"
+    "startsIn": 7.6,
+    "eta": "2026-09-26T14:32"
    },
    {
     "account": "deno",
     "task": "weekend_bash",
-    "startsIn": 13.7,
-    "eta": "2026-09-26T14:36"
+    "startsIn": 8.3,
+    "eta": "2026-09-26T14:32"
+   },
+   {
+    "account": "deno",
+    "task": "combat_daily",
+    "startsIn": 8.5,
+    "eta": "2026-09-26T14:33"
+   },
+   {
+    "account": "deno",
+    "task": "victory_road",
+    "startsIn": 9.9,
+    "eta": "2026-09-26T14:34"
    }
   ],
-  "more": 25,
+  "more": 23,
   "fillers": [
    {
     "account": "smurf",
@@ -12480,9 +12513,6 @@
   }
  },
  "progress": {
-  "dre": {
-   "rank": 6
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -12574,17 +12604,20 @@
    "mailUnread": 0,
    "paradiseStamina": "20/20"
   },
+  "dre": {},
   "fake7": {
    "mailUnread": 0,
    "paradiseStamina": "7/17",
    "pillar": "floor 3 stage 5"
   },
   "test1": {
-   "mailUnread": 0
+   "mailUnread": 0,
+   "paradiseStamina": "20/20"
   }
  },
  "ledger": {
   "test1": {
+   "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "adventure energy": 1,
    "mail claimed": 1,
@@ -12611,7 +12644,6 @@
    "guild war attempts": 1,
    "faction sweeps": 2,
    "pillar/story stages cleared": 3,
-   "pillar proofs lost to a refusal": 1,
    "Island Shop buys (200 coins)": 1,
    "adventure energy": 1,
    "mail claimed": 1,
@@ -12629,7 +12661,6 @@
   "fake2": {
    "guild war attempts": 1,
    "faction sweeps": 2,
-   "pillar proofs lost to a refusal": 1,
    "pillar/story stages cleared": 2,
    "Island Shop buys (200 coins)": 1,
    "adventure energy": 1,
@@ -12662,7 +12693,6 @@
   },
   "nova": {
    "guild war attempts": 1,
-   "pillar proofs lost to a refusal": 1,
    "pillar/story stages cleared": 3,
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -13123,7 +13153,6 @@
    "unavailable": [],
    "spent": {
     "guild war attempts": 1,
-    "pillar proofs lost to a refusal": 1,
     "pillar/story stages cleared": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -13575,7 +13604,6 @@
    "spent": {
     "guild war attempts": 1,
     "faction sweeps": 2,
-    "pillar proofs lost to a refusal": 1,
     "pillar/story stages cleared": 2,
     "Island Shop buys (200 coins)": 1,
     "adventure energy": 1,
@@ -13753,7 +13781,6 @@
     "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar/story stages cleared": 3,
-    "pillar proofs lost to a refusal": 1,
     "Island Shop buys (200 coins)": 1,
     "adventure energy": 1,
     "mail claimed": 1,
@@ -14493,21 +14520,13 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-26",
-   "summary": "8 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 8,
+   "summary": "10 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 10,
    "owed": 14,
    "open": [
     {
      "task": "victoryRank",
      "state": "not available today"
-    },
-    {
-     "task": "paradise",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -14555,13 +14574,15 @@
     }
    ],
    "spent": {
+    "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "adventure energy": 1,
     "mail claimed": 1,
     "daily claims": 4
    },
    "progress": {
-    "mailUnread": 0
+    "mailUnread": 0,
+    "paradiseStamina": "20/20"
    },
    "history": [
     {
@@ -14596,7 +14617,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 8,
+     "done": 10,
      "failed": 0
     }
    ]
@@ -14795,9 +14816,7 @@
    "off": [],
    "unavailable": [],
    "spent": {},
-   "progress": {
-    "rank": 6
-   },
+   "progress": {},
    "history": [
     {
      "day": "2026-09-20",
