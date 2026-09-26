@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T14:26:35.902356",
+ "generatedAt": "2026-09-26T14:28:39.512654",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
   "mode": "sky_pillar",
-  "since": "14:24:34"
+  "since": "14:27:14"
  },
  "grid": {
   "tasks": [
@@ -448,7 +448,7 @@
      "✓",
      "-",
      "✓",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 244,
-  "todo": 34,
+  "done": 245,
+  "todo": 33,
   "gaveUp": 5,
   "unavailable": 8,
   "windowed": 0
@@ -721,6 +721,23 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T14:27:13",
+   "script": "sky_pillar",
+   "account": "test1",
+   "rc": 1,
+   "secs": 158,
+   "stats": {
+    "floor_reward_claimed": 1,
+    "no_result": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "sky_pillar: stage 1 did not complete"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260926_142435_sky_pillar_test1"
+  },
   {
    "ts": "2026-09-26T14:24:34",
    "script": "collect_hoopa_keys",
@@ -7778,26 +7795,12 @@
     "tickets": 40
    },
    "dir": "debug_runs/20260925_135912_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-25T13:58:43",
-   "script": "sky_pillar",
-   "account": "dre",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "marginal_sky_pillar": 1,
-    "pillar_blocked": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_135830_sky_pillar_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 51996,
+  "now": 52119,
   "segments": [
    {
     "b": 29659,
@@ -10919,13 +10922,35 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 51875,
-    "rc": null,
-    "e": 51996
+    "rc": 1,
+    "e": 52034,
+    "secs": 158,
+    "why": "sky_pillar: stage 1 did not complete"
+   },
+   {
+    "b": 52034,
+    "a": "test1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 52048,
+    "rc": 1,
+    "e": 52119,
+    "secs": 158,
+    "why": "sky_pillar: stage 1 did not complete"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T14:27:13",
+   "account": "test1",
+   "task": "sky_pillar",
+   "rc": 1,
+   "secs": 158,
+   "why": "sky_pillar: stage 1 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_142435_sky_pillar_test1__KEEP_0005_142713_no_result_1.png"
+  },
   {
    "ts": "2026-09-26T13:58:52",
    "account": "lucifer2",
@@ -11192,7 +11217,7 @@
   "since": "2026-09-26T08:00",
   "switches": 33,
   "relogMinutes": 13.7,
-  "retries": 30,
+  "retries": 31,
   "tasks": {
    "dailyclaim": {
     "runs": 18,
@@ -11255,9 +11280,9 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 16,
-    "minutes": 23.0,
-    "failed": 1
+    "runs": 17,
+    "minutes": 25.6,
+    "failed": 2
    },
    "championship": {
     "runs": 9,
@@ -12400,78 +12425,78 @@
   "next": [
    {
     "account": "test1",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T14:26"
-   },
-   {
-    "account": "test1",
     "task": "faction",
-    "startsIn": 1.4,
+    "startsIn": 0.0,
     "eta": "2026-09-26T14:28"
    },
    {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 3.4,
-    "eta": "2026-09-26T14:29"
+    "startsIn": 1.9,
+    "eta": "2026-09-26T14:30"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 3.8,
-    "eta": "2026-09-26T14:30"
+    "startsIn": 2.4,
+    "eta": "2026-09-26T14:31"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 3.9,
-    "eta": "2026-09-26T14:30"
+    "startsIn": 2.4,
+    "eta": "2026-09-26T14:31"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 4.8,
+    "startsIn": 3.3,
     "eta": "2026-09-26T14:31"
    },
    {
     "account": "deno",
     "task": "daily_dungeon",
-    "startsIn": 6.8,
+    "startsIn": 5.3,
     "eta": "2026-09-26T14:33"
    },
    {
     "account": "deno",
     "task": "pokemon_home",
-    "startsIn": 7.5,
+    "startsIn": 6.1,
     "eta": "2026-09-26T14:34"
    },
    {
     "account": "deno",
     "task": "weekend_bash",
-    "startsIn": 8.3,
-    "eta": "2026-09-26T14:34"
+    "startsIn": 6.8,
+    "eta": "2026-09-26T14:35"
    },
    {
     "account": "deno",
     "task": "combat_daily",
-    "startsIn": 8.4,
+    "startsIn": 7.0,
     "eta": "2026-09-26T14:35"
    },
    {
     "account": "deno",
     "task": "victory_road",
-    "startsIn": 9.8,
-    "eta": "2026-09-26T14:36"
+    "startsIn": 8.4,
+    "eta": "2026-09-26T14:37"
    },
    {
     "account": "deno",
     "task": "rank_match",
-    "startsIn": 10.0,
-    "eta": "2026-09-26T14:36"
+    "startsIn": 8.5,
+    "eta": "2026-09-26T14:37"
+   },
+   {
+    "account": "deno",
+    "task": "paradise",
+    "startsIn": 9.5,
+    "eta": "2026-09-26T14:38"
    }
   ],
-  "more": 22,
+  "more": 21,
   "fillers": [
    {
     "account": "smurf",
@@ -14530,8 +14555,8 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-26",
-   "summary": "11 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 11,
+   "summary": "12 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 12,
    "owed": 14,
    "open": [
     {
@@ -14539,15 +14564,17 @@
      "state": "not available today"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "fctn",
      "state": "still to do"
     }
    ],
    "issues": [
+    {
+     "task": "sky_pillar",
+     "at": "14:27",
+     "why": "sky_pillar: stage 1 did not complete",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_142435_sky_pillar_test1__KEEP_0005_142713_no_result_1.png"
+    },
     {
      "task": "combat_daily",
      "at": "14:18",
@@ -14624,7 +14651,7 @@
     {
      "day": "2026-09-26",
      "done": 11,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
