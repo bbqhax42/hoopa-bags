@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T08:28:34.214746",
+ "generatedAt": "2026-09-26T08:30:38.468304",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "paradise",
-  "since": "08:24:10"
+  "mode": "collect_hoopa_keys",
+  "since": "08:30:32"
  },
  "grid": {
   "tasks": [
@@ -419,9 +419,9 @@
      "✗2",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 8,
-  "todo": 246,
+  "done": 10,
+  "todo": 244,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 38
@@ -721,6 +721,56 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T08:30:31",
+   "script": "run_pvp_ranked",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 93,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_lost": 9,
+    "ranked_won": 1,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 0,
+    "daily_goal_claimed": 8
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 1,
+    "rank": 9,
+    "daily_goal_claims": 8
+   },
+   "dir": "debug_runs/20260926_082858_run_pvp_ranked_lucifer2"
+  },
+  {
+   "ts": "2026-09-26T08:28:56",
+   "script": "paradise",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 283,
+   "stats": {
+    "marginal_paradise_hub": 10,
+    "explore_clicks": 152,
+    "pass_claims": 4,
+    "gear_maxed": 1,
+    "gear_energy_unreadable": 6,
+    "upgraded_sports_gloves": 6,
+    "dex_collection": 1,
+    "incomplete": 2,
+    "dex_activated": 3,
+    "shop_saved": 1
+   },
+   "incomplete": [
+    "paradise: an Engram milestone reward would not claim",
+    "paradise: Dex tab(s) still badged: Drop Item"
+   ],
+   "values": {
+    "stamina": "20/20",
+    "left": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Drop Item"
+   },
+   "dir": "debug_runs/20260926_082412_paradise_lucifer2"
+  },
   {
    "ts": "2026-09-26T08:24:09",
    "script": "victory_road",
@@ -7472,44 +7522,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260925_020002_worldboss_chris"
-  },
-  {
-   "ts": "2026-09-25T01:48:05",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 14,
-   "stats": {
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 4,
-    "fights_today": 2
-   },
-   "dir": "debug_runs/20260925_014751_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-25T00:33:55",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 14,
-   "stats": {
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 28,
-    "fights_today": 2
-   },
-   "dir": "debug_runs/20260925_003340_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 30514,
+  "now": 30639,
   "segments": [
    {
     "b": 29659,
@@ -7647,13 +7665,44 @@
     "s": "paradise",
     "login": null,
     "handoff": 30251,
+    "rc": 1,
+    "e": 30537,
+    "secs": 283,
+    "why": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Drop Item"
+   },
+   {
+    "b": 30537,
+    "a": "lucifer2",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 30537,
+    "rc": 0,
+    "e": 30632,
+    "secs": 93,
+    "why": ""
+   },
+   {
+    "b": 30632,
+    "a": "lucifer2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": null,
     "rc": null,
-    "e": 30514
+    "e": 30639
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T08:28:56",
+   "account": "lucifer2",
+   "task": "paradise",
+   "rc": 1,
+   "secs": 283,
+   "why": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Drop Item",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_082412_paradise_lucifer2__KEEP_0004_082853_paradise_dex_badges_left.png"
+  },
   {
    "ts": "2026-09-26T08:24:01",
    "account": "lucifer2",
@@ -7695,7 +7744,7 @@
   "since": "2026-09-26T08:00",
   "switches": 0,
   "relogMinutes": 0.0,
-  "retries": 4,
+  "retries": 5,
   "tasks": {
    "dailyclaim": {
     "runs": 2,
@@ -7735,6 +7784,16 @@
    "victory_road": {
     "runs": 1,
     "minutes": 0.1,
+    "failed": 0
+   },
+   "paradise": {
+    "runs": 1,
+    "minutes": 4.7,
+    "failed": 1
+   },
+   "run_pvp_ranked": {
+    "runs": 1,
+    "minutes": 1.6,
     "failed": 0
    }
   }
@@ -8696,78 +8755,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "paradise",
+    "task": "collect_hoopa_keys",
     "startsIn": 0.0,
-    "eta": "2026-09-26T08:28"
-   },
-   {
-    "account": "lucifer2",
-    "task": "run_pvp_ranked",
-    "startsIn": 2.0,
     "eta": "2026-09-26T08:30"
    },
    {
     "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 4.0,
+    "task": "sky_pillar",
+    "startsIn": 2.0,
     "eta": "2026-09-26T08:32"
    },
    {
     "account": "lucifer2",
-    "task": "sky_pillar",
-    "startsIn": 6.0,
-    "eta": "2026-09-26T08:34"
-   },
-   {
-    "account": "lucifer2",
     "task": "ultra_wormhole",
-    "startsIn": 8.0,
-    "eta": "2026-09-26T08:36"
+    "startsIn": 4.0,
+    "eta": "2026-09-26T08:34"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 10.4,
-    "eta": "2026-09-26T08:38"
+    "startsIn": 6.4,
+    "eta": "2026-09-26T08:37"
    },
    {
     "account": "nova",
     "task": "mail",
-    "startsIn": 11.2,
-    "eta": "2026-09-26T08:39"
+    "startsIn": 7.2,
+    "eta": "2026-09-26T08:37"
    },
    {
     "account": "nova",
     "task": "joint_team_daily_quest",
-    "startsIn": 11.3,
-    "eta": "2026-09-26T08:39"
+    "startsIn": 7.3,
+    "eta": "2026-09-26T08:37"
    },
    {
     "account": "nova",
     "task": "joint_battle",
-    "startsIn": 12.2,
-    "eta": "2026-09-26T08:40"
+    "startsIn": 8.2,
+    "eta": "2026-09-26T08:38"
    },
    {
     "account": "nova",
     "task": "daily_dungeon",
-    "startsIn": 14.2,
-    "eta": "2026-09-26T08:42"
+    "startsIn": 10.2,
+    "eta": "2026-09-26T08:40"
    },
    {
     "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 14.8,
-    "eta": "2026-09-26T08:43"
+    "startsIn": 10.8,
+    "eta": "2026-09-26T08:41"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 16.2,
+    "startsIn": 12.2,
+    "eta": "2026-09-26T08:42"
+   },
+   {
+    "account": "nova",
+    "task": "combat_daily",
+    "startsIn": 12.3,
+    "eta": "2026-09-26T08:43"
+   },
+   {
+    "account": "nova",
+    "task": "victory_road",
+    "startsIn": 13.5,
     "eta": "2026-09-26T08:44"
    }
   ],
-  "more": 234,
+  "more": 232,
   "fillers": [
    {
     "account": "smurf",
@@ -8819,14 +8878,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 0,
-   "islandStamina": 4,
-   "mailUnread": 0,
-   "paradiseStamina": "14/19",
-   "rank": 1,
-   "pillar": "floor 149 stage 1"
-  },
   "chris": {
    "islandFights": 0,
    "islandStamina": 9,
@@ -8834,6 +8885,14 @@
    "paradiseStamina": "20/20",
    "rank": 1,
    "pillar": "floor 138 stage 3"
+  },
+  "jeff": {
+   "islandFights": 0,
+   "islandStamina": 4,
+   "mailUnread": 0,
+   "paradiseStamina": "14/19",
+   "rank": 1,
+   "pillar": "floor 149 stage 1"
   },
   "nova": {
    "mailUnread": 0,
@@ -8906,8 +8965,8 @@
   },
   "lucifer2": {
    "mailUnread": 0,
-   "paradiseStamina": "1/20",
-   "rank": 7,
+   "paradiseStamina": "20/20",
+   "rank": 9,
    "pillar": "floor 87 stage 6"
   },
   "test1": {
@@ -8928,6 +8987,7 @@
  },
  "ledger": {
   "lucifer2": {
+   "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
@@ -11020,8 +11080,8 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-26",
-   "summary": "8 of 16 dailies done · gave up on dailies · 1 switched off",
-   "done": 8,
+   "summary": "10 of 16 dailies done · gave up on dailies · 1 switched off",
+   "done": 10,
    "owed": 16,
    "open": [
     {
@@ -11033,16 +11093,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "paradise",
-     "state": "still to do"
-    },
-    {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -11058,6 +11110,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "paradise",
+     "at": "08:28",
+     "why": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Drop Item",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_082412_paradise_lucifer2__KEEP_0004_082853_paradise_dex_badges_left.png"
+    },
     {
      "task": "combat_daily",
      "at": "08:24",
@@ -11092,6 +11150,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -11100,8 +11159,8 @@
    },
    "progress": {
     "mailUnread": 0,
-    "paradiseStamina": "1/20",
-    "rank": 7,
+    "paradiseStamina": "20/20",
+    "rank": 9,
     "pillar": "floor 87 stage 6"
    },
    "history": [
@@ -11137,8 +11196,8 @@
     },
     {
      "day": "2026-09-26",
-     "done": 8,
-     "failed": 4
+     "done": 9,
+     "failed": 5
     }
    ]
   },
