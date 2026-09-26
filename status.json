@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T11:22:40.930312",
+ "generatedAt": "2026-09-26T11:24:45.222147",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake4",
-  "mode": "faction",
-  "since": "11:22:06"
+  "account": "fake5",
+  "mode": "dailyclaim",
+  "since": "11:24:18"
  },
  "grid": {
   "tasks": [
@@ -224,7 +224,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 116,
-  "todo": 133,
+  "done": 117,
+  "todo": 132,
   "gaveUp": 3,
   "unavailable": 3,
   "windowed": 38
@@ -716,11 +716,27 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-09-26T11:07:51.214674",
+  "label": "fake5",
+  "at": "2026-09-26T11:24:39.476838",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T11:24:18",
+   "script": "faction",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 128,
+   "stats": {
+    "auto_formation": 20,
+    "skip_retry": 20,
+    "floors_grass": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_112209_faction_fake4"
+  },
   {
    "ts": "2026-09-26T11:22:05",
    "script": "sky_pillar",
@@ -7658,28 +7674,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_101614_pokemon_home_fake2"
-  },
-  {
-   "ts": "2026-09-25T10:16:12",
-   "script": "daily_dungeon",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "marginal_dungeon_list": 9,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_101541_daily_dungeon_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 40961,
+  "now": 41085,
   "segments": [
    {
     "b": 29659,
@@ -9141,8 +9141,22 @@
     "s": "faction",
     "login": null,
     "handoff": 40929,
+    "rc": 0,
+    "e": 41058,
+    "secs": 128,
+    "why": ""
+   },
+   {
+    "b": 41058,
+    "a": "fake5",
+    "s": "dailyclaim",
+    "login": [
+     41059,
+     41079
+    ],
+    "handoff": 41085,
     "rc": null,
-    "e": 40961
+    "e": 41085
    }
   ],
   "idle": []
@@ -9304,8 +9318,8 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 8,
-  "relogMinutes": 3.4,
+  "switches": 9,
+  "relogMinutes": 3.9,
   "retries": 18,
   "tasks": {
    "dailyclaim": {
@@ -9379,8 +9393,8 @@
     "failed": 3
    },
    "faction": {
-    "runs": 5,
-    "minutes": 8.5,
+    "runs": 6,
+    "minutes": 10.7,
     "failed": 0
    },
    "misty_woods": {
@@ -9853,6 +9867,12 @@
   "held": 5
  },
  "changes": [
+  {
+   "sha": "a73d7e9",
+   "ts": "2026-09-26T11:23:48",
+   "area": "daily dungeon",
+   "subject": "a dungeon with no attempts left is done, not blocked"
+  },
   {
    "sha": "24b1c1c",
    "ts": "2026-09-26T11:20:33",
@@ -10407,79 +10427,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake4",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T11:22"
-   },
-   {
     "account": "fake5",
     "task": "dailyclaim",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-26T11:24"
    },
    {
     "account": "fake5",
     "task": "mail",
-    "startsIn": 2.6,
+    "startsIn": 0.5,
     "eta": "2026-09-26T11:25"
    },
    {
     "account": "fake5",
     "task": "joint_team_daily_quest",
-    "startsIn": 2.6,
+    "startsIn": 0.5,
     "eta": "2026-09-26T11:25"
    },
    {
     "account": "fake5",
     "task": "joint_battle",
-    "startsIn": 3.5,
+    "startsIn": 1.4,
     "eta": "2026-09-26T11:26"
    },
    {
     "account": "fake5",
     "task": "daily_dungeon",
-    "startsIn": 5.5,
+    "startsIn": 3.4,
     "eta": "2026-09-26T11:28"
    },
    {
     "account": "fake5",
     "task": "pokemon_home",
-    "startsIn": 6.2,
+    "startsIn": 4.1,
     "eta": "2026-09-26T11:28"
    },
    {
     "account": "fake5",
     "task": "combat_daily",
-    "startsIn": 7.2,
+    "startsIn": 5.1,
     "eta": "2026-09-26T11:29"
    },
    {
     "account": "fake5",
     "task": "victory_road",
-    "startsIn": 8.7,
+    "startsIn": 6.6,
     "eta": "2026-09-26T11:31"
    },
    {
     "account": "fake5",
     "task": "paradise",
-    "startsIn": 8.8,
+    "startsIn": 6.7,
     "eta": "2026-09-26T11:31"
    },
    {
     "account": "fake5",
     "task": "collect_hoopa_keys",
-    "startsIn": 13.3,
+    "startsIn": 11.2,
     "eta": "2026-09-26T11:35"
    },
    {
     "account": "fake5",
     "task": "sky_pillar",
-    "startsIn": 13.4,
+    "startsIn": 11.3,
     "eta": "2026-09-26T11:36"
+   },
+   {
+    "account": "fake5",
+    "task": "faction",
+    "startsIn": 12.7,
+    "eta": "2026-09-26T11:37"
    }
   ],
-  "more": 120,
+  "more": 119,
   "fillers": [
    {
     "account": "smurf",
@@ -10518,12 +10538,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 8,
-   "medianSec": 17.0,
+   "n": 9,
+   "medianSec": 17,
    "picker": {
-    "n": 7,
-    "medianSec": 17,
-    "jumps": 5
+    "n": 8,
+    "medianSec": 17.0,
+    "jumps": 6
    },
    "typed": {
     "n": 1,
@@ -10645,6 +10665,7 @@
  },
  "ledger": {
   "fake4": {
+   "faction sweeps": 2,
    "pillar/story stages cleared": 3,
    "pillar proofs lost to a refusal": 1,
    "Island Shop buys (200 coins)": 1,
@@ -11644,8 +11665,8 @@
   "fake4": {
    "name": "Random32",
    "day": "2026-09-26",
-   "summary": "10 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 10,
+   "summary": "11 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 11,
    "owed": 14,
    "open": [
     {
@@ -11659,10 +11680,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "fctn",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -11698,6 +11715,7 @@
     }
    ],
    "spent": {
+    "faction sweeps": 2,
     "pillar/story stages cleared": 3,
     "pillar proofs lost to a refusal": 1,
     "Island Shop buys (200 coins)": 1,
@@ -11743,7 +11761,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 10,
+     "done": 11,
      "failed": 2
     }
    ]
