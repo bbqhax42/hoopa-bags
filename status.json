@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T23:28:47.672599",
+ "generatedAt": "2026-09-26T23:30:51.160178",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
+  "account": "fake3",
   "mode": "hoopa",
-  "since": "23:27:50"
+  "since": "23:30:14"
  },
  "grid": {
   "tasks": [
@@ -566,6 +566,12 @@
   },
   {
    "account": "fake7",
+   "task": "hoopa",
+   "since": "2026-09-26T23:30:14",
+   "why": "lost a fight while climbing — the result card says the fight was lost"
+  },
+  {
+   "account": "fake7",
    "task": "story",
    "since": "2026-09-20T06:30:36",
    "why": "Unlocked after clearing Victory Road  a Fuchsia Gym — clear that by hand, then re-enable"
@@ -668,11 +674,24 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-26T23:24:50.219768",
+  "label": "fake3",
+  "at": "2026-09-26T23:30:38.150789",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T23:30:14",
+   "script": "hoopa",
+   "account": "fake7",
+   "rc": 2,
+   "secs": 142,
+   "stats": {},
+   "incomplete": [
+    "lost a fight while climbing — the result card says the fight was lost"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-26T23:00:23",
    "script": "hoopa",
@@ -7738,26 +7757,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_144712_faction_test1"
-  },
-  {
-   "ts": "2026-09-25T14:47:11",
-   "script": "rank_match",
-   "account": "fake8",
-   "rc": 2,
-   "secs": 11,
-   "stats": {
-    "near_miss_go_button": 3,
-    "rank_locked": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_144700_rank_match_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 84528,
+  "now": 84651,
   "segments": [
    {
     "b": 29659,
@@ -12762,8 +12767,22 @@
     "s": "hoopa",
     "login": null,
     "handoff": 84471,
+    "rc": 2,
+    "e": 84614,
+    "secs": 142,
+    "why": "lost a fight while climbing — the result card says the fight was lost"
+   },
+   {
+    "b": 84614,
+    "a": "fake3",
+    "s": "hoopa",
+    "login": [
+     84614,
+     84638
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 84528
+    "e": 84651
    }
   ],
   "idle": [
@@ -12857,7 +12876,8 @@
    83694,
    83694,
    84270,
-   84470
+   84470,
+   84614
   ]
  },
  "failures": [
@@ -13134,7 +13154,7 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 111,
+  "switches": 112,
   "relogMinutes": 46.4,
   "retries": 31,
   "tasks": {
@@ -13288,6 +13308,12 @@
    "task": "faction",
    "why": "FCTN Tower is not unlocked on this account — its card opened nothing",
    "at": "2026-09-26T12:08:20"
+  },
+  {
+   "account": "fake7",
+   "task": "hoopa",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "at": "2026-09-26T23:30:14"
   },
   {
    "account": "fake7",
@@ -14271,12 +14297,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 111,
-   "medianSec": 16,
+   "n": 112,
+   "medianSec": 16.5,
    "picker": {
-    "n": 90,
-    "medianSec": 16.0,
-    "jumps": 57
+    "n": 91,
+    "medianSec": 16,
+    "jumps": 58
    },
    "typed": {
     "n": 1,
@@ -14818,6 +14844,15 @@
    "task": "hoopa",
    "kind": "climb",
    "since": "2026-09-26T22:20:53",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
+   "enable": true
+  },
+  {
+   "account": "fake7",
+   "task": "hoopa",
+   "kind": "climb",
+   "since": "2026-09-26T23:30:14",
    "why": "lost a fight while climbing — the result card says the fight was lost",
    "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
    "enable": true
@@ -15733,7 +15768,7 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-26",
-   "summary": "12 of 14 dailies done · 1 switched off · 2 not available today",
+   "summary": "12 of 14 dailies done · 2 switched off · 3 not available today",
    "done": 12,
    "owed": 14,
    "open": [
@@ -15756,6 +15791,11 @@
    ],
    "off": [
     {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-26T23:30:14"
+    },
+    {
      "task": "story",
      "why": "Unlocked after clearing Victory Road  a Fuchsia Gym — clear that by hand, then re-enable",
      "since": "2026-09-20T06:30:36"
@@ -15765,6 +15805,10 @@
     {
      "task": "faction",
      "why": "FCTN Tower is not unlocked on this account — its card opened nothing"
+    },
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost"
     },
     {
      "task": "rank_match",
