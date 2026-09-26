@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T08:53:27.570674",
+ "generatedAt": "2026-09-26T08:55:31.863849",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "paradise",
-  "since": "08:49:33"
+  "mode": "collect_hoopa_keys",
+  "since": "08:55:24"
  },
  "grid": {
   "tasks": [
@@ -44,9 +44,9 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 22,
-  "todo": 232,
+  "done": 24,
+  "todo": 230,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 38
@@ -721,6 +721,55 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T08:55:23",
+   "script": "run_pvp_ranked",
+   "account": "nova",
+   "rc": 0,
+   "secs": 84,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_lost": 10,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 0,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 0,
+    "rank": 4,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260926_085359_run_pvp_ranked_nova"
+  },
+  {
+   "ts": "2026-09-26T08:53:57",
+   "script": "paradise",
+   "account": "nova",
+   "rc": 1,
+   "secs": 262,
+   "stats": {
+    "marginal_paradise_hub": 9,
+    "explore_clicks": 146,
+    "pass_claims": 5,
+    "gear_maxed": 1,
+    "gear_energy_unreadable": 4,
+    "upgraded_small_radar": 3,
+    "upgraded_sports_gloves": 1,
+    "incomplete": 2,
+    "dex_activated": 10,
+    "shop_saved": 1
+   },
+   "incomplete": [
+    "paradise: an Engram milestone reward would not claim",
+    "paradise: Dex tab(s) still badged: Traces"
+   ],
+   "values": {
+    "stamina": "20/20",
+    "left": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Traces"
+   },
+   "dir": "debug_runs/20260926_084935_paradise_nova"
+  },
   {
    "ts": "2026-09-26T08:49:32",
    "script": "victory_road",
@@ -7504,42 +7553,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260925_021150_worldboss_exou"
-  },
-  {
-   "ts": "2026-09-25T02:11:50",
-   "script": "worldboss",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 57,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260925_021053_worldboss_sprite"
-  },
-  {
-   "ts": "2026-09-25T02:10:52",
-   "script": "worldboss",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 59,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260925_020953_worldboss_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 32008,
+  "now": 32132,
   "segments": [
    {
     "b": 29659,
@@ -7830,13 +7849,44 @@
     "s": "paradise",
     "login": null,
     "handoff": 31774,
+    "rc": 1,
+    "e": 32038,
+    "secs": 262,
+    "why": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Traces"
+   },
+   {
+    "b": 32038,
+    "a": "nova",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 32038,
+    "rc": 0,
+    "e": 32124,
+    "secs": 84,
+    "why": ""
+   },
+   {
+    "b": 32124,
+    "a": "nova",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 32124,
     "rc": null,
-    "e": 32008
+    "e": 32132
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T08:53:57",
+   "account": "nova",
+   "task": "paradise",
+   "rc": 1,
+   "secs": 262,
+   "why": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Traces",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_084935_paradise_nova__KEEP_0001_085354_paradise_dex_badges_left.png"
+  },
   {
    "ts": "2026-09-26T08:28:56",
    "account": "lucifer2",
@@ -7887,7 +7937,7 @@
   "since": "2026-09-26T08:00",
   "switches": 1,
   "relogMinutes": 0.5,
-  "retries": 5,
+  "retries": 6,
   "tasks": {
    "dailyclaim": {
     "runs": 3,
@@ -7930,13 +7980,13 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 1,
-    "minutes": 4.7,
-    "failed": 1
+    "runs": 2,
+    "minutes": 9.1,
+    "failed": 2
    },
    "run_pvp_ranked": {
-    "runs": 1,
-    "minutes": 1.6,
+    "runs": 2,
+    "minutes": 3.0,
     "failed": 0
    },
    "collect_hoopa_keys": {
@@ -8908,78 +8958,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "paradise",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T08:53"
-   },
-   {
-    "account": "nova",
-    "task": "run_pvp_ranked",
-    "startsIn": 4.7,
-    "eta": "2026-09-26T08:58"
-   },
-   {
-    "account": "nova",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.3,
-    "eta": "2026-09-26T08:59"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T08:55"
    },
    {
     "account": "nova",
     "task": "sky_pillar",
-    "startsIn": 6.4,
-    "eta": "2026-09-26T08:59"
+    "startsIn": 0.1,
+    "eta": "2026-09-26T08:55"
    },
    {
     "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 8.4,
-    "eta": "2026-09-26T09:01"
+    "startsIn": 2.1,
+    "eta": "2026-09-26T08:57"
    },
    {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 13.1,
-    "eta": "2026-09-26T09:06"
+    "startsIn": 6.8,
+    "eta": "2026-09-26T09:02"
    },
    {
     "account": "jeff",
     "task": "mail",
-    "startsIn": 13.8,
-    "eta": "2026-09-26T09:07"
+    "startsIn": 7.5,
+    "eta": "2026-09-26T09:03"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 13.8,
-    "eta": "2026-09-26T09:07"
+    "startsIn": 7.6,
+    "eta": "2026-09-26T09:03"
    },
    {
     "account": "jeff",
     "task": "joint_battle",
-    "startsIn": 14.8,
-    "eta": "2026-09-26T09:08"
+    "startsIn": 8.5,
+    "eta": "2026-09-26T09:03"
    },
    {
     "account": "jeff",
     "task": "daily_dungeon",
-    "startsIn": 16.8,
-    "eta": "2026-09-26T09:10"
+    "startsIn": 10.5,
+    "eta": "2026-09-26T09:05"
    },
    {
     "account": "jeff",
     "task": "pokemon_home",
-    "startsIn": 17.2,
-    "eta": "2026-09-26T09:10"
+    "startsIn": 10.9,
+    "eta": "2026-09-26T09:06"
    },
    {
     "account": "jeff",
     "task": "weekend_bash",
-    "startsIn": 18.6,
-    "eta": "2026-09-26T09:12"
+    "startsIn": 12.3,
+    "eta": "2026-09-26T09:07"
+   },
+   {
+    "account": "jeff",
+    "task": "combat_daily",
+    "startsIn": 12.5,
+    "eta": "2026-09-26T09:08"
+   },
+   {
+    "account": "jeff",
+    "task": "victory_road",
+    "startsIn": 13.8,
+    "eta": "2026-09-26T09:09"
    }
   ],
-  "more": 220,
+  "more": 218,
   "fillers": [
    {
     "account": "smurf",
@@ -9031,15 +9081,6 @@
   }
  },
  "progress": {
-  "fake7": {
-   "mailUnread": 0,
-   "pillar": "floor 2 stage 10"
-  },
-  "sprite": {
-   "mailUnread": 0,
-   "pillar": "floor 51 stage 1",
-   "rank": 349
-  },
   "exou": {
    "mailUnread": 0,
    "paradiseStamina": "1/20",
@@ -9098,7 +9139,7 @@
   },
   "nova": {
    "mailUnread": 0,
-   "paradiseStamina": "1/20",
+   "paradiseStamina": "20/20",
    "rank": 4,
    "pillar": "floor 100 stage 8"
   },
@@ -9136,10 +9177,20 @@
   "fake6": {
    "mailUnread": 0,
    "paradiseStamina": "1/20"
+  },
+  "fake7": {
+   "mailUnread": 0,
+   "pillar": "floor 2 stage 10"
+  },
+  "sprite": {
+   "mailUnread": 0,
+   "pillar": "floor 51 stage 1",
+   "rank": 349
   }
  },
  "ledger": {
   "nova": {
+   "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
@@ -9384,8 +9435,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-26",
-   "summary": "9 of 16 dailies done",
-   "done": 9,
+   "summary": "11 of 16 dailies done",
+   "done": 11,
    "owed": 16,
    "open": [
     {
@@ -9393,16 +9444,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "paradise",
-     "state": "still to do"
-    },
-    {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -9417,10 +9460,18 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "paradise",
+     "at": "08:53",
+     "why": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Traces",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_084935_paradise_nova__KEEP_0001_085354_paradise_dex_badges_left.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -9429,7 +9480,7 @@
    },
    "progress": {
     "mailUnread": 0,
-    "paradiseStamina": "1/20",
+    "paradiseStamina": "20/20",
     "rank": 4,
     "pillar": "floor 100 stage 8"
    },
@@ -9466,8 +9517,8 @@
     },
     {
      "day": "2026-09-26",
-     "done": 9,
-     "failed": 0
+     "done": 10,
+     "failed": 1
     }
    ]
   },
