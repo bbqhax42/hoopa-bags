@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T04:25:37.685926",
+ "generatedAt": "2026-09-27T04:27:41.278968",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake4",
+  "account": "lucifer1",
   "mode": "hoopa",
-  "since": "04:23:04"
+  "since": "04:27:26"
  },
  "grid": {
   "tasks": [
@@ -548,6 +548,12 @@
   },
   {
    "account": "fake4",
+   "task": "hoopa",
+   "since": "2026-09-27T04:27:26",
+   "why": "lost a fight while climbing — the result card says the fight was lost"
+  },
+  {
+   "account": "fake4",
    "task": "story",
    "since": "2026-09-20T06:12:36",
    "why": "Unlocked after clearing Victory Road  Goldenrod Gym — clear that by hand, then re-enable"
@@ -703,6 +709,19 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T04:27:26",
+   "script": "hoopa",
+   "account": "fake4",
+   "rc": 2,
+   "secs": 260,
+   "stats": {},
+   "incomplete": [
+    "lost a fight while climbing — the result card says the fight was lost"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-27T04:05:24",
    "script": "hoopa",
@@ -7712,27 +7731,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260925_200211_worldboss_nova"
-  },
-  {
-   "ts": "2026-09-25T20:02:10",
-   "script": "worldboss",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 61,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260925_200109_worldboss_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 102338,
+  "now": 102461,
   "segments": [
    {
     "b": 29659,
@@ -14095,8 +14099,22 @@
     "s": "hoopa",
     "login": null,
     "handoff": 102185,
+    "rc": 2,
+    "e": 102446,
+    "secs": 260,
+    "why": "lost a fight while climbing — the result card says the fight was lost"
+   },
+   {
+    "b": 102446,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     102447,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 102338
+    "e": 102461
    }
   ],
   "idle": [
@@ -14283,7 +14301,8 @@
    101124,
    101514,
    101877,
-   102184
+   102184,
+   102446
   ]
  },
  "failures": [
@@ -14560,7 +14579,7 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 181,
+  "switches": 182,
   "relogMinutes": 58.2,
   "retries": 31,
   "tasks": {
@@ -14696,6 +14715,12 @@
    "task": "hoopa",
    "why": "lost a fight while climbing — the result card says the fight was lost",
    "at": "2026-09-27T04:05:24"
+  },
+  {
+   "account": "fake4",
+   "task": "hoopa",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "at": "2026-09-27T04:27:26"
   },
   {
    "account": "fake4",
@@ -15725,10 +15750,6 @@
     "mode": "hoopa"
    },
    {
-    "account": "fake4",
-    "mode": "hoopa"
-   },
-   {
     "account": "lucifer1",
     "mode": "hoopa"
    },
@@ -15762,14 +15783,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 0,
-   "islandStamina": 4,
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "rank": 1,
-   "pillar": "floor 149 stage 4"
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -15869,6 +15882,14 @@
    "paradiseStamina": "20/20",
    "rank": 1,
    "pillar": "floor 138 stage 6"
+  },
+  "jeff": {
+   "islandFights": 0,
+   "islandStamina": 4,
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "rank": 1,
+   "pillar": "floor 149 stage 4"
   }
  },
  "ledger": {},
@@ -15961,6 +15982,15 @@
    "task": "hoopa",
    "kind": "climb",
    "since": "2026-09-27T04:05:24",
+   "why": "lost a fight while climbing — the result card says the fight was lost",
+   "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
+   "enable": true
+  },
+  {
+   "account": "fake4",
+   "task": "hoopa",
+   "kind": "climb",
+   "since": "2026-09-27T04:27:26",
    "why": "lost a fight while climbing — the result card says the fight was lost",
    "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
    "enable": true
@@ -16660,7 +16690,7 @@
   "fake4": {
    "name": "Random32",
    "day": "2026-09-26",
-   "summary": "13 of 14 dailies done · 1 switched off · 1 not available today",
+   "summary": "13 of 14 dailies done · 2 switched off · 2 not available today",
    "done": 13,
    "owed": 14,
    "open": [
@@ -16685,12 +16715,21 @@
    ],
    "off": [
     {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost",
+     "since": "2026-09-27T04:27:26"
+    },
+    {
      "task": "story",
      "why": "Unlocked after clearing Victory Road  Goldenrod Gym — clear that by hand, then re-enable",
      "since": "2026-09-20T06:12:36"
     }
    ],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "lost a fight while climbing — the result card says the fight was lost"
+    },
     {
      "task": "pokemon_home",
      "why": "nothing possible on this board: 50 charge(s) held, every tile taken and no pair among them — unavailable today"
