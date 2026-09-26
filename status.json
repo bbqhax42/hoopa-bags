@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T12:28:55.329531",
+ "generatedAt": "2026-09-26T12:30:59.446020",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "exou",
-  "mode": "pokemon_home",
-  "since": "12:28:38"
+  "mode": "combat_daily",
+  "since": "12:30:08"
  },
  "grid": {
   "tasks": [
@@ -340,7 +340,7 @@
      "-",
      "✓",
      "✗2",
-     "·",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 167,
-  "todo": 93,
+  "done": 168,
+  "todo": 92,
   "gaveUp": 3,
   "unavailable": 6,
   "windowed": 19
@@ -721,6 +721,35 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T12:30:07",
+   "script": "weekend_bash",
+   "account": "exou",
+   "rc": 0,
+   "secs": 7,
+   "stats": {},
+   "incomplete": [],
+   "values": {
+    "tickets": 0
+   },
+   "dir": "debug_runs/20260926_123000_weekend_bash_exou"
+  },
+  {
+   "ts": "2026-09-26T12:29:41",
+   "script": "pokemon_home",
+   "account": "exou",
+   "rc": 1,
+   "secs": 44,
+   "stats": {
+    "marginal_daily_dungeon": 1,
+    "refused_combat_tab": 1,
+    "refused_daily_rail": 1,
+    "wrong_panel": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_122856_pokemon_home_exou"
+  },
   {
    "ts": "2026-09-26T12:28:38",
    "script": "pokemon_home",
@@ -7662,45 +7691,12 @@
     "stage": 10
    },
    "dir": "debug_runs/20260925_112317_sky_pillar_fake7"
-  },
-  {
-   "ts": "2026-09-25T11:23:16",
-   "script": "collect_hoopa_keys",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_112310_collect_hoopa_keys_fake7"
-  },
-  {
-   "ts": "2026-09-25T11:23:09",
-   "script": "paradise",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 207,
-   "stats": {
-    "marginal_paradise_hub": 3,
-    "explore_clicks": 108,
-    "pass_claims": 5,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 2,
-    "upgraded_energy_drink": 1,
-    "dex_activated": 3,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_111941_paradise_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 44935,
+  "now": 45059,
   "segments": [
    {
     "b": 29659,
@@ -9808,16 +9804,45 @@
     "a": "exou",
     "s": "pokemon_home",
     "login": null,
-    "handoff": null,
+    "handoff": 44936,
     "rc": 1,
-    "e": 44935,
+    "e": 44982,
     "secs": 44,
     "why": ""
+   },
+   {
+    "b": 44982,
+    "a": "exou",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 44999,
+    "rc": 0,
+    "e": 45008,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 45008,
+    "a": "exou",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 45008,
+    "rc": null,
+    "e": 45059
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T12:29:41",
+   "account": "exou",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 44,
+   "why": "marginal_daily_dungeon, refused_combat_tab, refused_daily_rail, wrong_panel",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_122856_pokemon_home_exou__KEEP_0004_122910_trial_no_pet_home.png"
+  },
   {
    "ts": "2026-09-26T12:28:38",
    "account": "exou",
@@ -10012,7 +10037,7 @@
   "since": "2026-09-26T08:00",
   "switches": 13,
   "relogMinutes": 5.6,
-  "retries": 22,
+  "retries": 23,
   "tasks": {
    "dailyclaim": {
     "runs": 15,
@@ -10035,13 +10060,13 @@
     "failed": 3
    },
    "pokemon_home": {
-    "runs": 15,
-    "minutes": 11.0,
-    "failed": 3
+    "runs": 16,
+    "minutes": 11.8,
+    "failed": 4
    },
    "weekend_bash": {
-    "runs": 6,
-    "minutes": 0.8,
+    "runs": 7,
+    "minutes": 1.0,
     "failed": 0
    },
    "combat_daily": {
@@ -11191,78 +11216,78 @@
   "next": [
    {
     "account": "exou",
-    "task": "weekend_bash",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T12:28"
-   },
-   {
-    "account": "exou",
     "task": "combat_daily",
-    "startsIn": 0.1,
-    "eta": "2026-09-26T12:29"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T12:31"
    },
    {
     "account": "exou",
     "task": "victory_road",
-    "startsIn": 1.6,
-    "eta": "2026-09-26T12:30"
+    "startsIn": 1.5,
+    "eta": "2026-09-26T12:32"
    },
    {
     "account": "exou",
     "task": "paradise",
-    "startsIn": 1.8,
-    "eta": "2026-09-26T12:30"
+    "startsIn": 1.6,
+    "eta": "2026-09-26T12:32"
    },
    {
     "account": "exou",
     "task": "guild_war",
-    "startsIn": 6.4,
-    "eta": "2026-09-26T12:35"
+    "startsIn": 6.2,
+    "eta": "2026-09-26T12:37"
    },
    {
     "account": "exou",
     "task": "run_pvp_ranked",
-    "startsIn": 7.2,
-    "eta": "2026-09-26T12:36"
-   },
-   {
-    "account": "exou",
-    "task": "collect_hoopa_keys",
-    "startsIn": 8.5,
-    "eta": "2026-09-26T12:37"
-   },
-   {
-    "account": "exou",
-    "task": "sky_pillar",
-    "startsIn": 8.6,
-    "eta": "2026-09-26T12:37"
-   },
-   {
-    "account": "exou",
-    "task": "ultra_wormhole",
-    "startsIn": 10.0,
+    "startsIn": 7.0,
     "eta": "2026-09-26T12:38"
    },
    {
     "account": "exou",
+    "task": "collect_hoopa_keys",
+    "startsIn": 8.4,
+    "eta": "2026-09-26T12:39"
+   },
+   {
+    "account": "exou",
+    "task": "sky_pillar",
+    "startsIn": 8.5,
+    "eta": "2026-09-26T12:39"
+   },
+   {
+    "account": "exou",
+    "task": "ultra_wormhole",
+    "startsIn": 9.9,
+    "eta": "2026-09-26T12:40"
+   },
+   {
+    "account": "exou",
     "task": "championship",
-    "startsIn": 14.5,
-    "eta": "2026-09-26T12:43"
+    "startsIn": 14.3,
+    "eta": "2026-09-26T12:45"
    },
    {
     "account": "skosmurf",
     "task": "dailyclaim",
-    "startsIn": 17.8,
-    "eta": "2026-09-26T12:46"
+    "startsIn": 17.6,
+    "eta": "2026-09-26T12:48"
    },
    {
     "account": "skosmurf",
     "task": "mail",
+    "startsIn": 18.1,
+    "eta": "2026-09-26T12:49"
+   },
+   {
+    "account": "skosmurf",
+    "task": "daily_dungeon",
     "startsIn": 18.2,
-    "eta": "2026-09-26T12:47"
+    "eta": "2026-09-26T12:49"
    }
   ],
-  "more": 67,
+  "more": 66,
   "fillers": [
    {
     "account": "smurf",
@@ -11290,31 +11315,11 @@
    }
   ],
   "held": {
-   "fake6": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "chris": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "jeff": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "lucifer2": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "smurf": {
+   "fake1": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11322,7 +11327,11 @@
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "nova": {
+   "jeff": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11330,7 +11339,23 @@
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake1": {
+   "chris": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "smurf": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "nova": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake3": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake6": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -13006,17 +13031,13 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-26",
-   "summary": "3 of 15 dailies done · gave up on home",
-   "done": 3,
+   "summary": "4 of 15 dailies done · gave up on home",
+   "done": 4,
    "owed": 15,
    "open": [
     {
      "task": "home",
      "state": "gave up"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -13062,9 +13083,9 @@
    "issues": [
     {
      "task": "pokemon_home",
-     "at": "12:28",
+     "at": "12:29",
      "why": "refused combat tab, refused daily rail, wrong panel",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_122753_pokemon_home_exou__KEEP_0004_122808_trial_no_pet_home.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_122856_pokemon_home_exou__KEEP_0004_122910_trial_no_pet_home.png"
     }
    ],
    "off": [],
@@ -13103,8 +13124,8 @@
     },
     {
      "day": "2026-09-26",
-     "done": 4,
-     "failed": 1
+     "done": 5,
+     "failed": 2
     }
    ]
   },
