@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T10:45:22.058528",
+ "generatedAt": "2026-09-26T10:47:26.057944",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake2",
-  "mode": "paradise",
-  "since": "10:42:19"
+  "mode": "sky_pillar",
+  "since": "10:47:05"
  },
  "grid": {
   "tasks": [
@@ -169,10 +169,10 @@
      "✓",
      "✓",
      "⏰",
-     "·",
+     "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 90,
-  "todo": 160,
+  "done": 92,
+  "todo": 158,
   "gaveUp": 3,
   "unavailable": 2,
   "windowed": 38
@@ -721,6 +721,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T10:47:04",
+   "script": "collect_hoopa_keys",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_104659_collect_hoopa_keys_fake2"
+  },
+  {
+   "ts": "2026-09-26T10:46:57",
+   "script": "paradise",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 276,
+   "stats": {
+    "marginal_paradise_hub": 2,
+    "explore_clicks": 146,
+    "pass_claims": 6,
+    "gear_maxed": 1,
+    "gear_energy_unreadable": 5,
+    "upgraded_sports_gloves": 3,
+    "upgraded_small_radar": 2,
+    "dex_milestones": 4,
+    "incomplete": 1,
+    "dex_activated": 6,
+    "shop_saved": 1
+   },
+   "incomplete": [
+    "paradise: Dex tab(s) still badged: Footprint"
+   ],
+   "values": {
+    "stamina": "20/20",
+    "left": "paradise: Dex tab(s) still badged: Footprint"
+   },
+   "dir": "debug_runs/20260926_104220_paradise_fake2"
+  },
   {
    "ts": "2026-09-26T10:42:18",
    "script": "victory_road",
@@ -7604,48 +7645,12 @@
     "gacha_one_cost": "free"
    },
    "dir": "debug_runs/20260925_094746_combat_daily_smurf"
-  },
-  {
-   "ts": "2026-09-25T09:47:40",
-   "script": "pokemon_home",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 139,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "merge_refused": 1,
-    "grid_refit": 1,
-    "merge_moved_instead": 1,
-    "balls_unsettled_opened": 1,
-    "phantom_creations": 5,
-    "charges_left_unspent": 20
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_094520_pokemon_home_smurf"
-  },
-  {
-   "ts": "2026-09-25T09:45:18",
-   "script": "daily_dungeon",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "marginal_dungeon_list": 9,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_094447_daily_dungeon_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 38722,
+  "now": 38846,
   "segments": [
    {
     "b": 29659,
@@ -8786,13 +8791,44 @@
     "s": "paradise",
     "login": null,
     "handoff": 38540,
+    "rc": 1,
+    "e": 38818,
+    "secs": 276,
+    "why": "paradise: Dex tab(s) still badged: Footprint"
+   },
+   {
+    "b": 38818,
+    "a": "fake2",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 38818,
+    "rc": 0,
+    "e": 38825,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 38825,
+    "a": "fake2",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 38825,
     "rc": null,
-    "e": 38722
+    "e": 38846
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T10:46:57",
+   "account": "fake2",
+   "task": "paradise",
+   "rc": 1,
+   "secs": 276,
+   "why": "paradise: Dex tab(s) still badged: Footprint",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_104220_paradise_fake2__KEEP_0003_104656_paradise_dex_badges_left.png"
+  },
   {
    "ts": "2026-09-26T10:39:59",
    "account": "fake2",
@@ -8915,7 +8951,7 @@
   "since": "2026-09-26T08:00",
   "switches": 6,
   "relogMinutes": 2.4,
-  "retries": 14,
+  "retries": 15,
   "tasks": {
    "dailyclaim": {
     "runs": 8,
@@ -8958,9 +8994,9 @@
     "failed": 0
    },
    "paradise": {
-    "runs": 6,
-    "minutes": 26.8,
-    "failed": 4
+    "runs": 7,
+    "minutes": 31.4,
+    "failed": 5
    },
    "run_pvp_ranked": {
     "runs": 5,
@@ -8968,8 +9004,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 6,
-    "minutes": 0.6,
+    "runs": 7,
+    "minutes": 0.7,
     "failed": 0
    },
    "ultra_wormhole": {
@@ -9963,78 +9999,78 @@
   "next": [
    {
     "account": "fake2",
-    "task": "paradise",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T10:45"
-   },
-   {
-    "account": "fake2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 4.5,
-    "eta": "2026-09-26T10:49"
-   },
-   {
-    "account": "fake2",
     "task": "sky_pillar",
-    "startsIn": 4.6,
-    "eta": "2026-09-26T10:49"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T10:47"
    },
    {
     "account": "fake2",
     "task": "faction",
-    "startsIn": 6.0,
-    "eta": "2026-09-26T10:51"
+    "startsIn": 1.4,
+    "eta": "2026-09-26T10:48"
    },
    {
     "account": "fake3",
     "task": "dailyclaim",
-    "startsIn": 7.9,
-    "eta": "2026-09-26T10:53"
+    "startsIn": 3.3,
+    "eta": "2026-09-26T10:50"
    },
    {
     "account": "fake3",
     "task": "mail",
-    "startsIn": 8.3,
-    "eta": "2026-09-26T10:53"
+    "startsIn": 3.8,
+    "eta": "2026-09-26T10:51"
    },
    {
     "account": "fake3",
     "task": "joint_team_daily_quest",
-    "startsIn": 8.4,
-    "eta": "2026-09-26T10:53"
+    "startsIn": 3.8,
+    "eta": "2026-09-26T10:51"
    },
    {
     "account": "fake3",
     "task": "joint_battle",
-    "startsIn": 9.2,
-    "eta": "2026-09-26T10:54"
+    "startsIn": 4.6,
+    "eta": "2026-09-26T10:52"
    },
    {
     "account": "fake3",
     "task": "daily_dungeon",
-    "startsIn": 11.2,
-    "eta": "2026-09-26T10:56"
+    "startsIn": 6.6,
+    "eta": "2026-09-26T10:54"
    },
    {
     "account": "fake3",
     "task": "pokemon_home",
-    "startsIn": 11.8,
-    "eta": "2026-09-26T10:57"
+    "startsIn": 7.3,
+    "eta": "2026-09-26T10:54"
    },
    {
     "account": "fake3",
     "task": "combat_daily",
-    "startsIn": 13.0,
-    "eta": "2026-09-26T10:58"
+    "startsIn": 8.4,
+    "eta": "2026-09-26T10:55"
    },
    {
     "account": "fake3",
     "task": "victory_road",
-    "startsIn": 14.5,
-    "eta": "2026-09-26T10:59"
+    "startsIn": 10.0,
+    "eta": "2026-09-26T10:57"
+   },
+   {
+    "account": "fake3",
+    "task": "paradise",
+    "startsIn": 10.1,
+    "eta": "2026-09-26T10:57"
+   },
+   {
+    "account": "fake3",
+    "task": "collect_hoopa_keys",
+    "startsIn": 14.6,
+    "eta": "2026-09-26T11:02"
    }
   ],
-  "more": 147,
+  "more": 145,
   "fillers": [
    {
     "account": "smurf",
@@ -10105,7 +10141,7 @@
   },
   "fake2": {
    "mailUnread": 0,
-   "paradiseStamina": "1/20",
+   "paradiseStamina": "20/20",
    "pillar": "floor 4 stage 9"
   },
   "fake3": {
@@ -10972,8 +11008,8 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-26",
-   "summary": "7 of 14 dailies done · gave up on dungeon · 2 switched off",
-   "done": 7,
+   "summary": "9 of 14 dailies done · gave up on dungeon · 2 switched off",
+   "done": 9,
    "owed": 14,
    "open": [
     {
@@ -10985,16 +11021,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "paradise",
-     "state": "still to do"
-    },
-    {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
     },
     {
      "task": "pillar",
@@ -11006,6 +11034,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "paradise",
+     "at": "10:46",
+     "why": "paradise: Dex tab(s) still badged: Footprint",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_104220_paradise_fake2__KEEP_0003_104656_paradise_dex_badges_left.png"
+    },
     {
      "task": "daily_dungeon",
      "at": "10:39",
@@ -11040,7 +11074,7 @@
    },
    "progress": {
     "mailUnread": 0,
-    "paradiseStamina": "1/20",
+    "paradiseStamina": "20/20",
     "pillar": "floor 4 stage 9"
    },
    "history": [
@@ -11076,8 +11110,8 @@
     },
     {
      "day": "2026-09-26",
-     "done": 7,
-     "failed": 2
+     "done": 8,
+     "failed": 3
     }
    ]
   },
