@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T10:24:39.797833",
+ "generatedAt": "2026-09-26T10:26:43.806818",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake1",
-  "mode": "combat_daily",
-  "since": "10:24:16"
+  "mode": "paradise",
+  "since": "10:26:18"
  },
  "grid": {
   "tasks": [
@@ -141,8 +141,8 @@
      "✓",
      "✓",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 78,
-  "todo": 174,
+  "done": 80,
+  "todo": 172,
   "gaveUp": 2,
   "unavailable": 1,
   "windowed": 38
@@ -721,6 +721,49 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T10:26:16",
+   "script": "victory_road",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 11,
+   "stats": {
+    "near_miss_go_button": 11,
+    "claimed": 1,
+    "quest_claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_102605_victory_road_fake1"
+  },
+  {
+   "ts": "2026-09-26T10:26:03",
+   "script": "combat_daily",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 102,
+   "stats": {
+    "marginal_battle_victory_confirm": 2,
+    "near_miss_vr_rank": 5,
+    "near_miss_go_button": 1,
+    "title_reread_named": 1,
+    "pokemon_upgraded": 1,
+    "island_shop_bought": 1,
+    "marginal_premium_gacha": 1,
+    "gacha_free": 1,
+    "outstanding_reread_after_toast": 1,
+    "other_task_rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 o ac",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "free",
+    "left": "dungeon row still open (for daily_dungeon)"
+   },
+   "dir": "debug_runs/20260926_102420_combat_daily_fake1"
+  },
   {
    "ts": "2026-09-26T10:24:15",
    "script": "pokemon_home",
@@ -7577,42 +7620,12 @@
    ],
    "values": {},
    "dir": "debug_runs/20260925_093138_pokemon_home_nova"
-  },
-  {
-   "ts": "2026-09-25T09:31:35",
-   "script": "daily_dungeon",
-   "account": "nova",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_093121_daily_dungeon_nova"
-  },
-  {
-   "ts": "2026-09-25T09:29:58",
-   "script": "joint_team_daily_quest",
-   "account": "nova",
-   "rc": 0,
-   "secs": 54,
-   "stats": {
-    "panel_swipes": 8,
-    "artifact_row_found_by_scrolling": 1,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1,
-    "squad_unconfirmed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_092904_joint_team_daily_quest_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 37480,
+  "now": 37604,
   "segments": [
    {
     "b": 29659,
@@ -8587,8 +8600,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 37460,
+    "rc": 0,
+    "e": 37564,
+    "secs": 102,
+    "why": ""
+   },
+   {
+    "b": 37564,
+    "a": "fake1",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 37565,
+    "rc": 0,
+    "e": 37578,
+    "secs": 11,
+    "why": ""
+   },
+   {
+    "b": 37578,
+    "a": "fake1",
+    "s": "paradise",
+    "login": null,
+    "handoff": 37578,
     "rc": null,
-    "e": 37480
+    "e": 37604
    }
   ],
   "idle": []
@@ -8722,13 +8757,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 6,
-    "minutes": 8.7,
+    "runs": 7,
+    "minutes": 10.4,
     "failed": 2
    },
    "victory_road": {
-    "runs": 5,
-    "minutes": 0.5,
+    "runs": 6,
+    "minutes": 0.7,
     "failed": 0
    },
    "paradise": {
@@ -9731,78 +9766,78 @@
   "next": [
    {
     "account": "fake1",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T10:24"
-   },
-   {
-    "account": "fake1",
-    "task": "victory_road",
-    "startsIn": 1.4,
-    "eta": "2026-09-26T10:26"
-   },
-   {
-    "account": "fake1",
     "task": "paradise",
-    "startsIn": 1.6,
+    "startsIn": 0.0,
     "eta": "2026-09-26T10:26"
    },
    {
     "account": "fake1",
     "task": "collect_hoopa_keys",
-    "startsIn": 5.9,
-    "eta": "2026-09-26T10:30"
+    "startsIn": 4.3,
+    "eta": "2026-09-26T10:31"
    },
    {
     "account": "fake1",
     "task": "sky_pillar",
-    "startsIn": 6.0,
-    "eta": "2026-09-26T10:30"
+    "startsIn": 4.4,
+    "eta": "2026-09-26T10:31"
    },
    {
     "account": "fake1",
     "task": "faction",
-    "startsIn": 7.1,
-    "eta": "2026-09-26T10:31"
+    "startsIn": 5.5,
+    "eta": "2026-09-26T10:32"
    },
    {
     "account": "fake2",
     "task": "dailyclaim",
-    "startsIn": 9.6,
+    "startsIn": 8.0,
     "eta": "2026-09-26T10:34"
    },
    {
     "account": "fake2",
     "task": "mail",
-    "startsIn": 10.1,
-    "eta": "2026-09-26T10:34"
-   },
-   {
-    "account": "fake2",
-    "task": "joint_team_daily_quest",
-    "startsIn": 10.1,
-    "eta": "2026-09-26T10:34"
-   },
-   {
-    "account": "fake2",
-    "task": "joint_battle",
-    "startsIn": 10.9,
+    "startsIn": 8.5,
     "eta": "2026-09-26T10:35"
    },
    {
     "account": "fake2",
+    "task": "joint_team_daily_quest",
+    "startsIn": 8.6,
+    "eta": "2026-09-26T10:35"
+   },
+   {
+    "account": "fake2",
+    "task": "joint_battle",
+    "startsIn": 9.4,
+    "eta": "2026-09-26T10:36"
+   },
+   {
+    "account": "fake2",
     "task": "daily_dungeon",
-    "startsIn": 12.9,
-    "eta": "2026-09-26T10:37"
+    "startsIn": 11.4,
+    "eta": "2026-09-26T10:38"
    },
    {
     "account": "fake2",
     "task": "pokemon_home",
-    "startsIn": 13.5,
+    "startsIn": 12.0,
     "eta": "2026-09-26T10:38"
+   },
+   {
+    "account": "fake2",
+    "task": "combat_daily",
+    "startsIn": 13.3,
+    "eta": "2026-09-26T10:39"
+   },
+   {
+    "account": "fake2",
+    "task": "victory_road",
+    "startsIn": 14.7,
+    "eta": "2026-09-26T10:41"
    }
   ],
-  "more": 161,
+  "more": 159,
   "fillers": [
    {
     "account": "smurf",
@@ -9967,6 +10002,7 @@
  },
  "ledger": {
   "fake1": {
+   "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 4
   },
@@ -10017,6 +10053,12 @@
  },
  "paused": null,
  "warnings": [
+  {
+   "ts": "2026-09-26T10:26:03",
+   "account": "fake1",
+   "task": "combat_daily",
+   "left": "dungeon row still open (for daily_dungeon)"
+  },
   {
    "ts": "2026-09-26T08:17:23",
    "account": "lucifer2",
@@ -10096,6 +10138,15 @@
    "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "fake1",
+   "task": "combat_daily",
+   "kind": "left",
+   "since": "2026-09-26T10:26:03",
+   "why": "dungeon row still open (for daily_dungeon)",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
   },
   {
    "account": "lucifer2",
@@ -10600,18 +10651,10 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-26",
-   "summary": "6 of 14 dailies done · 2 switched off",
-   "done": 6,
+   "summary": "8 of 14 dailies done · 2 switched off",
+   "done": 8,
    "owed": 14,
    "open": [
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
-    },
     {
      "task": "victoryRank",
      "state": "waits for its window"
@@ -10637,7 +10680,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "10:26",
+     "why": "finished, but left open: dungeon row still open (for daily_dungeon)",
+     "frame": null
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -10652,6 +10702,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 4
    },
@@ -10692,7 +10743,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 6,
+     "done": 8,
      "failed": 0
     }
    ]
