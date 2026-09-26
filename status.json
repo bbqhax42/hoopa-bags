@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T13:53:34.744425",
+ "generatedAt": "2026-09-26T13:55:38.357802",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "championship",
-  "since": "13:51:57"
+  "account": "fake1",
+  "mode": "guild_war",
+  "since": "13:55:01"
  },
  "grid": {
   "tasks": [
@@ -143,7 +143,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "·",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 219,
-  "todo": 60,
+  "done": 220,
+  "todo": 59,
   "gaveUp": 5,
   "unavailable": 6,
   "windowed": 0
@@ -716,11 +716,55 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-26T13:49:42.168511",
+  "label": "fake1",
+  "at": "2026-09-26T13:53:55.728388",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T13:55:00",
+   "script": "rank_match",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "near_miss_go_button": 2,
+    "skip_tapped": 6,
+    "matches": 6,
+    "rank_panel_scroll": 2,
+    "rank_reward_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 0,
+    "rank_rewards": 3
+   },
+   "dir": "debug_runs/20260926_135401_rank_match_fake1"
+  },
+  {
+   "ts": "2026-09-26T13:53:38",
+   "script": "championship",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 97,
+   "stats": {
+    "skip_tapped": 30,
+    "fights": 29,
+    "skip_retapped": 1,
+    "ladder_stalled": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "championship: the ladder stopped progressing"
+   ],
+   "values": {
+    "fights": 29,
+    "tiers": 1
+   },
+   "dir": "debug_runs/20260926_135201_championship_smurf"
+  },
   {
    "ts": "2026-09-26T13:51:57",
    "script": "guild_war",
@@ -7703,46 +7747,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260925_123258_mail_deno"
-  },
-  {
-   "ts": "2026-09-25T12:32:57",
-   "script": "dailyclaim",
-   "account": "deno",
-   "rc": 0,
-   "secs": 26,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:80 0.275:8 0.345:52 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260925_123230_dailyclaim_deno"
-  },
-  {
-   "ts": "2026-09-25T12:31:59",
-   "script": "sky_pillar",
-   "account": "test1",
-   "rc": 0,
-   "secs": 160,
-   "stats": {
-    "stage_lost": 1,
-    "sky_pillar_loss": 1,
-    "sweep_presses": 3,
-    "marginal_sky_pillar": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_122919_sky_pillar_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 50015,
+  "now": 50138,
   "segments": [
    {
     "b": 29659,
@@ -10514,13 +10524,47 @@
     "s": "championship",
     "login": null,
     "handoff": 49920,
+    "rc": 1,
+    "e": 50019,
+    "secs": 97,
+    "why": "championship: the ladder stopped progressing"
+   },
+   {
+    "b": 50019,
+    "a": "fake1",
+    "s": "rank_match",
+    "login": [
+     50019,
+     50035
+    ],
+    "handoff": 50040,
+    "rc": 0,
+    "e": 50101,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 50101,
+    "a": "fake1",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 50101,
     "rc": null,
-    "e": 50015
+    "e": 50138
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-26T13:53:38",
+   "account": "smurf",
+   "task": "championship",
+   "rc": 1,
+   "secs": 97,
+   "why": "championship: the ladder stopped progressing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_135201_championship_smurf__KEEP_0000_135336_ladder_stalled.png"
+  },
   {
    "ts": "2026-09-26T13:41:08",
    "account": "lucifer2",
@@ -10767,9 +10811,9 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 22,
-  "relogMinutes": 9.2,
-  "retries": 28,
+  "switches": 23,
+  "relogMinutes": 9.5,
+  "retries": 29,
   "tasks": {
    "dailyclaim": {
     "runs": 17,
@@ -10837,9 +10881,9 @@
     "failed": 1
    },
    "championship": {
-    "runs": 8,
-    "minutes": 16.0,
-    "failed": 5
+    "runs": 9,
+    "minutes": 17.6,
+    "failed": 6
    },
    "faction": {
     "runs": 10,
@@ -10857,8 +10901,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 7,
-    "minutes": 7.3,
+    "runs": 8,
+    "minutes": 8.3,
     "failed": 0
    }
   }
@@ -11965,78 +12009,78 @@
   "next": [
    {
     "account": "fake1",
-    "task": "rank_match",
-    "startsIn": 0.4,
-    "eta": "2026-09-26T13:53"
-   },
-   {
-    "account": "fake1",
     "task": "guild_war",
-    "startsIn": 1.4,
+    "startsIn": 0.0,
     "eta": "2026-09-26T13:55"
    },
    {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 2.8,
-    "eta": "2026-09-26T13:56"
+    "startsIn": 1.4,
+    "eta": "2026-09-26T13:57"
    },
    {
     "account": "fake2",
     "task": "guild_war",
-    "startsIn": 3.8,
-    "eta": "2026-09-26T13:57"
-   },
-   {
-    "account": "fake3",
-    "task": "rank_match",
-    "startsIn": 5.2,
+    "startsIn": 2.4,
     "eta": "2026-09-26T13:58"
    },
    {
     "account": "fake3",
-    "task": "guild_war",
-    "startsIn": 6.2,
+    "task": "rank_match",
+    "startsIn": 3.7,
     "eta": "2026-09-26T13:59"
+   },
+   {
+    "account": "fake3",
+    "task": "guild_war",
+    "startsIn": 4.8,
+    "eta": "2026-09-26T14:00"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 7.6,
+    "startsIn": 6.1,
     "eta": "2026-09-26T14:01"
    },
    {
     "account": "fake4",
     "task": "guild_war",
-    "startsIn": 8.6,
+    "startsIn": 7.2,
     "eta": "2026-09-26T14:02"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 10.0,
-    "eta": "2026-09-26T14:03"
+    "startsIn": 8.5,
+    "eta": "2026-09-26T14:04"
    },
    {
     "account": "fake5",
     "task": "guild_war",
-    "startsIn": 11.0,
-    "eta": "2026-09-26T14:04"
-   },
-   {
-    "account": "fake6",
-    "task": "rank_match",
-    "startsIn": 12.4,
+    "startsIn": 9.6,
     "eta": "2026-09-26T14:05"
    },
    {
     "account": "fake6",
+    "task": "rank_match",
+    "startsIn": 10.9,
+    "eta": "2026-09-26T14:06"
+   },
+   {
+    "account": "fake6",
     "task": "guild_war",
-    "startsIn": 13.4,
+    "startsIn": 12.0,
     "eta": "2026-09-26T14:07"
+   },
+   {
+    "account": "fake7",
+    "task": "rank_match",
+    "startsIn": 13.3,
+    "eta": "2026-09-26T14:08"
    }
   ],
-  "more": 48,
+  "more": 47,
   "fillers": [
    {
     "account": "smurf",
@@ -12070,12 +12114,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 22,
-   "medianSec": 17.0,
+   "n": 23,
+   "medianSec": 17,
    "picker": {
-    "n": 17,
-    "medianSec": 16,
-    "jumps": 11
+    "n": 18,
+    "medianSec": 16.0,
+    "jumps": 12
    },
    "typed": {
     "n": 1,
@@ -12196,8 +12240,8 @@
  },
  "ledger": {
   "smurf": {
+   "island fights": 124,
    "guild war attempts": 1,
-   "island fights": 95,
    "faction sweeps": 2,
    "pillar/story stages cleared": 3,
    "ranked attempts": 1,
@@ -12924,9 +12968,9 @@
    "issues": [
     {
      "task": "championship",
-     "at": "10:19",
+     "at": "13:53",
      "why": "championship: the ladder stopped progressing",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_101802_championship_smurf__KEEP_0000_101912_ladder_stalled.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_135201_championship_smurf__KEEP_0000_135336_ladder_stalled.png"
     }
    ],
    "off": [
@@ -12948,8 +12992,8 @@
     }
    ],
    "spent": {
+    "island fights": 124,
     "guild war attempts": 1,
-    "island fights": 95,
     "faction sweeps": 2,
     "pillar/story stages cleared": 3,
     "ranked attempts": 1,
@@ -12999,21 +13043,17 @@
     {
      "day": "2026-09-26",
      "done": 18,
-     "failed": 2
+     "failed": 3
     }
    ]
   },
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-26",
-   "summary": "11 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 11,
+   "summary": "12 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 12,
    "owed": 14,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
     {
      "task": "guildBoss",
      "state": "still to do"
@@ -13099,7 +13139,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 10,
+     "done": 11,
      "failed": 1
     }
    ]
