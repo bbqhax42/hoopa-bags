@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T13:18:29.624194",
+ "generatedAt": "2026-09-26T13:20:33.876518",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "joint_battle",
-  "since": "13:18:27"
+  "mode": "pokemon_home",
+  "since": "13:20:17"
  },
  "grid": {
   "tasks": [
@@ -387,15 +387,15 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
      "·",
      "⏰",
      "·",
-     "⇢",
+     "·",
      "·",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 195,
-  "todo": 66,
+  "done": 197,
+  "todo": 65,
   "gaveUp": 3,
   "unavailable": 6,
   "windowed": 19
@@ -721,6 +721,19 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T13:20:17",
+   "script": "daily_dungeon",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_132004_daily_dungeon_lucifer1"
+  },
   {
    "ts": "2026-09-26T13:18:26",
    "script": "joint_team_daily_quest",
@@ -7705,27 +7718,12 @@
     "gacha_one_cost": "ticket"
    },
    "dir": "debug_runs/20260925_115806_combat_daily_lucifer1"
-  },
-  {
-   "ts": "2026-09-25T11:58:01",
-   "script": "pokemon_home",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 96,
-   "stats": {
-    "title_reread_named": 1,
-    "reached_via_trial": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_115625_pokemon_home_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 47910,
+  "now": 48034,
   "segments": [
    {
     "b": 29659,
@@ -10207,7 +10205,27 @@
     "login": null,
     "handoff": 47909,
     "rc": null,
-    "e": 47910
+    "e": 47999
+   },
+   {
+    "b": 47999,
+    "a": "lucifer1",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 48003,
+    "rc": 0,
+    "e": 48017,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 48017,
+    "a": "lucifer1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 48018,
+    "rc": null,
+    "e": 48034
    }
   ],
   "idle": []
@@ -10237,7 +10255,7 @@
    "task": "combat_daily",
    "rc": 1,
    "secs": 22,
-   "why": "qc_not_free, title_reread_named, gacha_free, gacha_rare_reveal, left_outstanding",
+   "why": "left: quick combat",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_125121_combat_daily_skosmurf__0033_125144_panel_back__AFTER__town.png"
   },
   {
@@ -10246,7 +10264,7 @@
    "task": "combat_daily",
    "rc": 1,
    "secs": 100,
-   "why": "title_reread_named, near_miss_afk_rewards, qc_not_free, near_miss_battle_victory_confirm, near_miss_vr_rank, marginal_battle_victory_confirm, near_miss_adventur",
+   "why": "left: quick combat, premium gacha (free spin)",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_124939_combat_daily_skosmurf__KEEP_0149_125104_buy_before_1.png"
   },
   {
@@ -10255,7 +10273,7 @@
    "task": "pokemon_home",
    "rc": 1,
    "secs": 44,
-   "why": "marginal_daily_dungeon, refused_combat_tab, refused_daily_rail, wrong_panel",
+   "why": "could not reach Pokémon's Home",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_122856_pokemon_home_exou__KEEP_0004_122910_trial_no_pet_home.png"
   },
   {
@@ -10264,7 +10282,7 @@
    "task": "pokemon_home",
    "rc": 1,
    "secs": 44,
-   "why": "marginal_daily_dungeon, near_miss_nav_explore, refused_combat_tab, refused_daily_rail, wrong_panel",
+   "why": "could not reach Pokémon's Home",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_122753_pokemon_home_exou__KEEP_0004_122808_trial_no_pet_home.png"
   },
   {
@@ -10273,7 +10291,7 @@
    "task": "pokemon_home",
    "rc": 1,
    "secs": 44,
-   "why": "marginal_daily_dungeon, refused_combat_tab, refused_daily_rail, wrong_panel",
+   "why": "could not reach Pokémon's Home",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_121033_pokemon_home_sprite__KEEP_0004_121047_trial_no_pet_home.png"
   },
   {
@@ -10282,7 +10300,7 @@
    "task": "pokemon_home",
    "rc": 1,
    "secs": 43,
-   "why": "marginal_daily_dungeon, refused_combat_tab, refused_daily_rail, wrong_panel",
+   "why": "could not reach Pokémon's Home",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_120931_pokemon_home_sprite__KEEP_0004_120945_trial_no_pet_home.png"
   },
   {
@@ -10291,7 +10309,7 @@
    "task": "combat_daily",
    "rc": 1,
    "secs": 112,
-   "why": "near_miss_afk_rewards, refused_quick_bar, near_miss_vr_rank, near_miss_go_button, marginal_pokemon_upgrade, pokemon_upgraded, gacha_free, title_reread_named, is",
+   "why": "left: guild donations (gold)",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_114408_combat_daily_fake6__KEEP_0139_114549_buy_before_1.png"
   },
   {
@@ -10309,7 +10327,7 @@
    "task": "combat_daily",
    "rc": 1,
    "secs": 105,
-   "why": "refused_quick_bar, near_miss_vr_rank, marginal_battle_victory_confirm, near_miss_battle_victory_confirm, adv_energy_spent, upgrade_blocked_by_first_topup, pokem",
+   "why": "left: quick combat; craft row still open (for pokemon_home)",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_111309_combat_daily_fake4__KEEP_0137_111440_buy_before_1.png"
   },
   {
@@ -10417,7 +10435,7 @@
    "task": "combat_daily",
    "rc": 1,
    "secs": 17,
-   "why": "marginal_pokemon_upgrade, upgrade_skip_resonating, upgrade_all_unlevellable, title_reread_named, left_outstanding",
+   "why": "left: upgrade a pokemon",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_082344_combat_daily_lucifer2__KEEP_0012_082354_upgrade_unlevellable.png"
   },
   {
@@ -10426,7 +10444,7 @@
    "task": "combat_daily",
    "rc": 1,
    "secs": 119,
-   "why": "title_reread_named, near_miss_afk_rewards, marginal_battle_victory_confirm, refused_quick_bar, near_miss_vr_rank, upgrade_blocked_by_first_topup, upgrade_skip_r",
+   "why": "left: upgrade a pokemon",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_082142_combat_daily_lucifer2__KEEP_0156_082329_buy_before_1.png"
   },
   {
@@ -10470,8 +10488,8 @@
     "failed": 1
    },
    "daily_dungeon": {
-    "runs": 17,
-    "minutes": 12.9,
+    "runs": 18,
+    "minutes": 13.1,
     "failed": 3
    },
    "pokemon_home": {
@@ -10545,25 +10563,25 @@
   {
    "account": "fake1",
    "task": "faction",
-   "why": "tower_locked",
+   "why": "FCTN Tower is not unlocked on this account — its card opened nothing",
    "at": "2026-09-26T10:34:29"
   },
   {
    "account": "fake4",
    "task": "pokemon_home",
-   "why": "reached_via_trial, board_stuck",
+   "why": "nothing possible on this board: 50 charge(s) held, every tile taken and no pair among them — unavailable today",
    "at": "2026-09-26T11:13:03"
   },
   {
    "account": "fake6",
    "task": "faction",
-   "why": "tower_locked",
+   "why": "FCTN Tower is not unlocked on this account — its card opened nothing",
    "at": "2026-09-26T11:52:54"
   },
   {
    "account": "fake7",
    "task": "faction",
-   "why": "tower_locked",
+   "why": "FCTN Tower is not unlocked on this account — its card opened nothing",
    "at": "2026-09-26T12:08:20"
   },
   {
@@ -10575,7 +10593,7 @@
   {
    "account": "sprite",
    "task": "championship",
-   "why": "no_icon",
+   "why": "no World Championship icon on the strip",
    "at": "2026-09-26T12:26:29"
   }
  ],
@@ -11022,6 +11040,12 @@
   "held": 5
  },
  "changes": [
+  {
+   "sha": "50cf995",
+   "ts": "2026-09-26T13:19:28",
+   "area": "dashboard",
+   "subject": "a failed run's reason in its own words, not its counter names"
+  },
   {
    "sha": "557ee08",
    "ts": "2026-09-26T12:45:48",
@@ -11615,12 +11639,6 @@
    "ts": "2026-09-25T13:11:42",
    "area": "misty woods",
    "subject": "read the markers only once the map has stopped scrolling"
-  },
-  {
-   "sha": "8491b28",
-   "ts": "2026-09-25T10:02:15",
-   "area": "misty woods",
-   "subject": "probe the tile under a chevron whenever the chevron gives no fight or heal, and retry a step a picker came over"
   }
  ],
  "phase": {
@@ -11643,78 +11661,78 @@
   "next": [
    {
     "account": "lucifer1",
-    "task": "joint_battle",
+    "task": "pokemon_home",
     "startsIn": 0.0,
-    "eta": "2026-09-26T13:18"
-   },
-   {
-    "account": "lucifer1",
-    "task": "daily_dungeon",
-    "startsIn": 2.0,
     "eta": "2026-09-26T13:20"
    },
    {
     "account": "lucifer1",
-    "task": "pokemon_home",
-    "startsIn": 2.8,
+    "task": "weekend_bash",
+    "startsIn": 0.8,
     "eta": "2026-09-26T13:21"
    },
    {
     "account": "lucifer1",
-    "task": "weekend_bash",
-    "startsIn": 3.5,
-    "eta": "2026-09-26T13:22"
-   },
-   {
-    "account": "lucifer1",
     "task": "combat_daily",
-    "startsIn": 3.7,
-    "eta": "2026-09-26T13:22"
+    "startsIn": 0.9,
+    "eta": "2026-09-26T13:21"
    },
    {
     "account": "lucifer1",
     "task": "victory_road",
-    "startsIn": 5.1,
-    "eta": "2026-09-26T13:23"
+    "startsIn": 2.4,
+    "eta": "2026-09-26T13:22"
    },
    {
     "account": "lucifer1",
     "task": "paradise",
-    "startsIn": 5.3,
+    "startsIn": 2.5,
     "eta": "2026-09-26T13:23"
    },
    {
     "account": "lucifer1",
+    "task": "guild_war",
+    "startsIn": 7.1,
+    "eta": "2026-09-26T13:27"
+   },
+   {
+    "account": "lucifer1",
     "task": "run_pvp_ranked",
-    "startsIn": 9.8,
+    "startsIn": 7.9,
     "eta": "2026-09-26T13:28"
    },
    {
     "account": "lucifer1",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.2,
+    "startsIn": 9.3,
     "eta": "2026-09-26T13:29"
    },
    {
     "account": "lucifer1",
     "task": "sky_pillar",
-    "startsIn": 11.3,
+    "startsIn": 9.4,
     "eta": "2026-09-26T13:29"
    },
    {
     "account": "lucifer1",
     "task": "ultra_wormhole",
-    "startsIn": 12.6,
+    "startsIn": 10.8,
     "eta": "2026-09-26T13:31"
    },
    {
     "account": "test1",
     "task": "dailyclaim",
-    "startsIn": 17.5,
+    "startsIn": 15.6,
+    "eta": "2026-09-26T13:36"
+   },
+   {
+    "account": "test1",
+    "task": "mail",
+    "startsIn": 16.1,
     "eta": "2026-09-26T13:36"
    }
   ],
-  "more": 39,
+  "more": 38,
   "fillers": [
    {
     "account": "smurf",
@@ -11746,39 +11764,7 @@
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "smurf": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake1": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "lucifer2": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "nova": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake2": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "fake3": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake5": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "chris": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11786,7 +11772,39 @@
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
+   "nova": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake5": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "chris": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake1": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "smurf": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake2": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
    "fake6": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "lucifer2": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12798,7 +12816,7 @@
    "unavailable": [
     {
      "task": "faction",
-     "why": "tower_locked"
+     "why": "FCTN Tower is not unlocked on this account — its card opened nothing"
     }
    ],
    "spent": {
@@ -13073,7 +13091,7 @@
     {
      "task": "combat_daily",
      "at": "11:14",
-     "why": "refused quick bar, adv energy spent, upgrade blocked by first topup",
+     "why": "left: quick combat; craft row still open (for pokemon_home)",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_111309_combat_daily_fake4__KEEP_0137_111440_buy_before_1.png"
     }
    ],
@@ -13092,7 +13110,7 @@
    "unavailable": [
     {
      "task": "pokemon_home",
-     "why": "reached_via_trial, board_stuck"
+     "why": "nothing possible on this board: 50 charge(s) held, every tile taken and no pair among them — unavailable today"
     }
    ],
    "spent": {
@@ -13252,7 +13270,7 @@
     {
      "task": "combat_daily",
      "at": "11:46",
-     "why": "refused quick bar, pokemon upgraded, gacha free",
+     "why": "left: guild donations (gold)",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_114408_combat_daily_fake6__KEEP_0139_114549_buy_before_1.png"
     }
    ],
@@ -13271,7 +13289,7 @@
    "unavailable": [
     {
      "task": "faction",
-     "why": "tower_locked"
+     "why": "FCTN Tower is not unlocked on this account — its card opened nothing"
     }
    ],
    "spent": {
@@ -13362,7 +13380,7 @@
    "unavailable": [
     {
      "task": "faction",
-     "why": "tower_locked"
+     "why": "FCTN Tower is not unlocked on this account — its card opened nothing"
     }
    ],
    "spent": {
@@ -13441,7 +13459,7 @@
     {
      "task": "pokemon_home",
      "at": "12:11",
-     "why": "refused combat tab, refused daily rail, wrong panel",
+     "why": "could not reach Pokémon's Home",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_121033_pokemon_home_sprite__KEEP_0004_121047_trial_no_pet_home.png"
     },
     {
@@ -13455,7 +13473,7 @@
    "unavailable": [
     {
      "task": "championship",
-     "why": "no_icon"
+     "why": "no World Championship icon on the strip"
     }
    ],
    "spent": {
@@ -13527,7 +13545,7 @@
     {
      "task": "pokemon_home",
      "at": "12:29",
-     "why": "refused combat tab, refused daily rail, wrong panel",
+     "why": "could not reach Pokémon's Home",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_122856_pokemon_home_exou__KEEP_0004_122910_trial_no_pet_home.png"
     },
     {
@@ -13612,7 +13630,7 @@
     {
      "task": "combat_daily",
      "at": "12:51",
-     "why": "qc not free, title reread named, gacha free",
+     "why": "left: quick combat",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_125121_combat_daily_skosmurf__0033_125144_panel_back__AFTER__town.png"
     }
    ],
@@ -13690,18 +13708,10 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-26",
-   "summary": "3 of 16 dailies done",
-   "done": 3,
+   "summary": "5 of 16 dailies done",
+   "done": 5,
    "owed": 16,
    "open": [
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
     {
      "task": "home",
      "state": "still to do"
@@ -13728,7 +13738,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "pvpRank",
@@ -13801,7 +13811,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 4,
+     "done": 5,
      "failed": 0
     }
    ]
@@ -13836,7 +13846,7 @@
     {
      "task": "combat_daily",
      "at": "08:24",
-     "why": "upgrade skip resonating, upgrade all unlevellable, title reread named",
+     "why": "left: upgrade a pokemon",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_082344_combat_daily_lucifer2__KEEP_0012_082354_upgrade_unlevellable.png"
     },
     {
