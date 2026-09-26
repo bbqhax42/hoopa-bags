@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T14:18:21.381351",
+ "generatedAt": "2026-09-26T14:20:24.890972",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "combat_daily",
-  "since": "14:16:32"
+  "mode": "paradise",
+  "since": "14:18:51"
  },
  "grid": {
   "tasks": [
@@ -441,9 +441,9 @@
      "✓",
      "✓",
      "-",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "⊘",
      "·",
      "·",
      "-",
@@ -509,10 +509,10 @@
   ]
  },
  "counts": {
-  "done": 239,
-  "todo": 40,
+  "done": 241,
+  "todo": 37,
   "gaveUp": 5,
-  "unavailable": 7,
+  "unavailable": 8,
   "windowed": 0
  },
  "disabled": [
@@ -721,6 +721,68 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T14:18:50",
+   "script": "rank_match",
+   "account": "test1",
+   "rc": 2,
+   "secs": 10,
+   "stats": {
+    "rank_locked": 1,
+    "rank_locked_week": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_141839_rank_match_test1"
+  },
+  {
+   "ts": "2026-09-26T14:18:38",
+   "script": "victory_road",
+   "account": "test1",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "near_miss_rift_exit_guardian": 7,
+    "claimed": 1,
+    "quest_claimed": 1,
+    "target_claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_141824_victory_road_test1"
+  },
+  {
+   "ts": "2026-09-26T14:18:23",
+   "script": "combat_daily",
+   "account": "test1",
+   "rc": 0,
+   "secs": 106,
+   "stats": {
+    "marginal_afk_rewards": 3,
+    "marginal_battle_victory_confirm": 2,
+    "near_miss_vr_rank": 6,
+    "title_reread_named": 3,
+    "near_miss_vr_rank_reward": 2,
+    "near_miss_battle_victory_confirm": 1,
+    "adv_at_top": 1,
+    "adv_energy_spent": 1,
+    "near_miss_pokemon_upgrade": 2,
+    "pokemon_upgraded": 1,
+    "gacha_free": 1,
+    "island_shop_bought": 1,
+    "outstanding_reread_after_toast": 1,
+    "other_task_rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 so a",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "free",
+    "left": "craft row still open (for pokemon_home)"
+   },
+   "dir": "debug_runs/20260926_141636_combat_daily_test1"
+  },
   {
    "ts": "2026-09-26T14:16:31",
    "script": "pokemon_home",
@@ -7720,59 +7782,12 @@
     "daily_goal_claims": 0
    },
    "dir": "debug_runs/20260925_135634_run_pvp_ranked_dre"
-  },
-  {
-   "ts": "2026-09-25T13:56:33",
-   "script": "rank_match",
-   "account": "dre",
-   "rc": 0,
-   "secs": 58,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 2,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260925_135535_rank_match_dre"
-  },
-  {
-   "ts": "2026-09-25T13:55:34",
-   "script": "combat_daily",
-   "account": "dre",
-   "rc": 0,
-   "secs": 7,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_135526_combat_daily_dre"
-  },
-  {
-   "ts": "2026-09-25T13:55:25",
-   "script": "weekend_bash",
-   "account": "dre",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "tickets": 40
-   },
-   "incomplete": [],
-   "values": {
-    "diamonds_spent": 800,
-    "tickets": 40
-   },
-   "dir": "debug_runs/20260925_135512_weekend_bash_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 51501,
+  "now": 51625,
   "segments": [
    {
     "b": 29659,
@@ -10828,8 +10843,41 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 51396,
+    "rc": 0,
+    "e": 51504,
+    "secs": 106,
+    "why": ""
+   },
+   {
+    "b": 51504,
+    "a": "test1",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 51504,
+    "rc": 0,
+    "e": 51518,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 51518,
+    "a": "test1",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 51519,
+    "rc": 2,
+    "e": 51531,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 51531,
+    "a": "test1",
+    "s": "paradise",
+    "login": null,
+    "handoff": 51531,
     "rc": null,
-    "e": 51501
+    "e": 51625
    }
   ],
   "idle": []
@@ -11134,13 +11182,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 22,
-    "minutes": 30.4,
+    "runs": 23,
+    "minutes": 32.2,
     "failed": 8
    },
    "victory_road": {
-    "runs": 16,
-    "minutes": 2.2,
+    "runs": 17,
+    "minutes": 2.4,
     "failed": 0
    },
    "paradise": {
@@ -11189,8 +11237,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 16,
-    "minutes": 16.4,
+    "runs": 17,
+    "minutes": 16.6,
     "failed": 0
    }
   }
@@ -11237,6 +11285,12 @@
    "task": "championship",
    "why": "no World Championship icon on the strip",
    "at": "2026-09-26T12:26:29"
+  },
+  {
+   "account": "test1",
+   "task": "rank_match",
+   "why": "the Rank tab does nothing here — not unlocked on this account",
+   "at": "2026-09-26T14:18:50"
   }
  ],
  "windows": {
@@ -12303,78 +12357,78 @@
   "next": [
    {
     "account": "test1",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T14:18"
-   },
-   {
-    "account": "test1",
-    "task": "victory_road",
-    "startsIn": 1.4,
-    "eta": "2026-09-26T14:19"
-   },
-   {
-    "account": "test1",
-    "task": "rank_match",
-    "startsIn": 1.5,
-    "eta": "2026-09-26T14:19"
-   },
-   {
-    "account": "test1",
     "task": "paradise",
-    "startsIn": 2.5,
+    "startsIn": 0.0,
     "eta": "2026-09-26T14:20"
    },
    {
     "account": "test1",
     "task": "guild_war",
-    "startsIn": 7.0,
-    "eta": "2026-09-26T14:25"
+    "startsIn": 4.5,
+    "eta": "2026-09-26T14:24"
    },
    {
     "account": "test1",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.9,
-    "eta": "2026-09-26T14:26"
+    "startsIn": 5.4,
+    "eta": "2026-09-26T14:25"
    },
    {
     "account": "test1",
     "task": "sky_pillar",
-    "startsIn": 8.0,
-    "eta": "2026-09-26T14:26"
+    "startsIn": 5.5,
+    "eta": "2026-09-26T14:25"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 9.4,
+    "startsIn": 6.9,
     "eta": "2026-09-26T14:27"
    },
    {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 11.4,
+    "startsIn": 8.8,
     "eta": "2026-09-26T14:29"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 11.8,
-    "eta": "2026-09-26T14:30"
+    "startsIn": 9.3,
+    "eta": "2026-09-26T14:29"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 11.9,
-    "eta": "2026-09-26T14:30"
+    "startsIn": 9.3,
+    "eta": "2026-09-26T14:29"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 12.8,
-    "eta": "2026-09-26T14:31"
+    "startsIn": 10.2,
+    "eta": "2026-09-26T14:30"
+   },
+   {
+    "account": "deno",
+    "task": "daily_dungeon",
+    "startsIn": 12.2,
+    "eta": "2026-09-26T14:32"
+   },
+   {
+    "account": "deno",
+    "task": "pokemon_home",
+    "startsIn": 13.0,
+    "eta": "2026-09-26T14:33"
+   },
+   {
+    "account": "deno",
+    "task": "weekend_bash",
+    "startsIn": 13.7,
+    "eta": "2026-09-26T14:34"
    }
   ],
-  "more": 28,
+  "more": 25,
   "fillers": [
    {
     "account": "smurf",
@@ -12531,6 +12585,8 @@
  },
  "ledger": {
   "test1": {
+   "Island Shop buys (200 coins)": 1,
+   "adventure energy": 1,
    "mail claimed": 1,
    "daily claims": 4
   },
@@ -12689,6 +12745,12 @@
  },
  "paused": null,
  "warnings": [
+  {
+   "ts": "2026-09-26T14:18:23",
+   "account": "test1",
+   "task": "combat_daily",
+   "left": "craft row still open (for pokemon_home)"
+  },
   {
    "ts": "2026-09-26T14:13:56",
    "account": "test1",
@@ -12885,6 +12947,15 @@
    "task": "combat_daily",
    "kind": "left",
    "since": "2026-09-26T12:13:44",
+   "why": "craft row still open (for pokemon_home)",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "test1",
+   "task": "combat_daily",
+   "kind": "left",
+   "since": "2026-09-26T14:18:23",
    "why": "craft row still open (for pokemon_home)",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
@@ -14422,21 +14493,13 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-26",
-   "summary": "6 of 14 dailies done · 2 switched off",
-   "done": 6,
+   "summary": "8 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 8,
    "owed": 14,
    "open": [
     {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
-    },
-    {
      "task": "victoryRank",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "paradise",
@@ -14461,6 +14524,12 @@
    ],
    "issues": [
     {
+     "task": "combat_daily",
+     "at": "14:18",
+     "why": "finished, but left open: craft row still open (for pokemon_home)",
+     "frame": null
+    },
+    {
      "task": "joint_team_daily_quest",
      "at": "14:13",
      "why": "finished, but left open: enhance any artifact once: todo",
@@ -14479,8 +14548,15 @@
      "since": "2026-09-20T02:52:29"
     }
    ],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rank_match",
+     "why": "the Rank tab does nothing here — not unlocked on this account"
+    }
+   ],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
+    "adventure energy": 1,
     "mail claimed": 1,
     "daily claims": 4
    },
@@ -14520,7 +14596,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 6,
+     "done": 8,
      "failed": 0
     }
    ]
