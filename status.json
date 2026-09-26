@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T14:16:17.460549",
+ "generatedAt": "2026-09-26T14:18:21.381351",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "test1",
-  "mode": "daily_dungeon",
-  "since": "14:15:04"
+  "mode": "combat_daily",
+  "since": "14:16:32"
  },
  "grid": {
   "tasks": [
@@ -438,14 +438,14 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "·",
      "·",
      "·",
      "·",
-     "⇢",
+     "·",
      "-",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 237,
-  "todo": 41,
+  "done": 239,
+  "todo": 40,
   "gaveUp": 5,
   "unavailable": 7,
   "windowed": 0
@@ -721,6 +721,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T14:16:31",
+   "script": "pokemon_home",
+   "account": "test1",
+   "rc": 0,
+   "secs": 9,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "grid_cache_implausible": 1,
+    "charges_left_by_cap": 49
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_141621_pokemon_home_test1"
+  },
+  {
+   "ts": "2026-09-26T14:16:20",
+   "script": "daily_dungeon",
+   "account": "test1",
+   "rc": 0,
+   "secs": 70,
+   "stats": {
+    "marginal_dungeon_list": 33,
+    "rank_chest_claimed": 14
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_141509_daily_dungeon_test1"
+  },
   {
    "ts": "2026-09-26T14:13:56",
    "script": "joint_team_daily_quest",
@@ -7737,54 +7767,12 @@
     "tickets": 40
    },
    "dir": "debug_runs/20260925_135512_weekend_bash_dre"
-  },
-  {
-   "ts": "2026-09-25T13:16:06",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 235,
-   "stats": {
-    "runes_claimed": 18,
-    "battles_won": 18,
-    "fountain_taken": 6,
-    "portals": 3,
-    "near_miss_popup_close": 1,
-    "portal_fork": 1,
-    "infernal_confirmed": 1,
-    "path_exhausted": 1,
-    "wins": 18
-   },
-   "incomplete": [],
-   "values": {
-    "stage": 1
-   },
-   "dir": "debug_runs/20260925_131210_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-25T13:09:39",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 2,
-   "secs": 23,
-   "stats": {
-    "fountain_taken": 1,
-    "runes_claimed": 1,
-    "battles_won": 1,
-    "no_allowed_tile": 1,
-    "wins": 1
-   },
-   "incomplete": [],
-   "values": {
-    "left": "nothing the rules allow at step 3, 1 win(s)"
-   },
-   "dir": "debug_runs/20260925_130915_misty_woods_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 51377,
+  "now": 51501,
   "segments": [
    {
     "b": 29659,
@@ -10818,8 +10806,30 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 51308,
+    "rc": 0,
+    "e": 51380,
+    "secs": 70,
+    "why": ""
+   },
+   {
+    "b": 51380,
+    "a": "test1",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 51381,
+    "rc": 0,
+    "e": 51392,
+    "secs": 9,
+    "why": ""
+   },
+   {
+    "b": 51392,
+    "a": "test1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 51396,
     "rc": null,
-    "e": 51377
+    "e": 51501
    }
   ],
   "idle": []
@@ -11109,13 +11119,13 @@
     "failed": 1
    },
    "daily_dungeon": {
-    "runs": 18,
-    "minutes": 13.1,
+    "runs": 19,
+    "minutes": 14.3,
     "failed": 3
    },
    "pokemon_home": {
-    "runs": 20,
-    "minutes": 15.4,
+    "runs": 21,
+    "minutes": 15.6,
     "failed": 4
    },
    "weekend_bash": {
@@ -12293,78 +12303,78 @@
   "next": [
    {
     "account": "test1",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T14:16"
-   },
-   {
-    "account": "test1",
-    "task": "pokemon_home",
-    "startsIn": 0.7,
-    "eta": "2026-09-26T14:17"
-   },
-   {
-    "account": "test1",
     "task": "combat_daily",
-    "startsIn": 1.5,
-    "eta": "2026-09-26T14:17"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T14:18"
    },
    {
     "account": "test1",
     "task": "victory_road",
-    "startsIn": 2.9,
+    "startsIn": 1.4,
     "eta": "2026-09-26T14:19"
    },
    {
     "account": "test1",
     "task": "rank_match",
-    "startsIn": 3.0,
+    "startsIn": 1.5,
     "eta": "2026-09-26T14:19"
    },
    {
     "account": "test1",
     "task": "paradise",
-    "startsIn": 4.0,
+    "startsIn": 2.5,
     "eta": "2026-09-26T14:20"
    },
    {
     "account": "test1",
+    "task": "guild_war",
+    "startsIn": 7.0,
+    "eta": "2026-09-26T14:25"
+   },
+   {
+    "account": "test1",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.5,
-    "eta": "2026-09-26T14:24"
+    "startsIn": 7.9,
+    "eta": "2026-09-26T14:26"
    },
    {
     "account": "test1",
     "task": "sky_pillar",
-    "startsIn": 8.6,
-    "eta": "2026-09-26T14:24"
+    "startsIn": 8.0,
+    "eta": "2026-09-26T14:26"
    },
    {
     "account": "test1",
     "task": "faction",
-    "startsIn": 10.1,
-    "eta": "2026-09-26T14:26"
+    "startsIn": 9.4,
+    "eta": "2026-09-26T14:27"
    },
    {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 12.0,
-    "eta": "2026-09-26T14:28"
+    "startsIn": 11.4,
+    "eta": "2026-09-26T14:29"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 12.4,
-    "eta": "2026-09-26T14:28"
+    "startsIn": 11.8,
+    "eta": "2026-09-26T14:30"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 12.5,
-    "eta": "2026-09-26T14:28"
+    "startsIn": 11.9,
+    "eta": "2026-09-26T14:30"
+   },
+   {
+    "account": "deno",
+    "task": "joint_battle",
+    "startsIn": 12.8,
+    "eta": "2026-09-26T14:31"
    }
   ],
-  "more": 29,
+  "more": 28,
   "fillers": [
    {
     "account": "smurf",
@@ -12416,13 +12426,6 @@
   }
  },
  "progress": {
-  "smurf": {
-   "misty": "step 1",
-   "mailUnread": 0,
-   "paradiseStamina": "0/15",
-   "rank": 1,
-   "pillar": "floor 19 stage 4"
-  },
   "dre": {
    "rank": 6
   },
@@ -12447,6 +12450,12 @@
    "paradiseStamina": "20/20",
    "rank": 1,
    "pillar": "floor 138 stage 6"
+  },
+  "smurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/15",
+   "rank": 1,
+   "pillar": "floor 19 stage 4"
   },
   "skosmurf": {
    "misty": "step 1",
@@ -13310,7 +13319,6 @@
     "daily claims": 1
    },
    "progress": {
-    "misty": "step 1",
     "mailUnread": 0,
     "paradiseStamina": "0/15",
     "rank": 1,
@@ -14414,18 +14422,10 @@
   "test1": {
    "name": "Asdggfyd",
    "day": "2026-09-26",
-   "summary": "4 of 14 dailies done · 2 switched off",
-   "done": 4,
+   "summary": "6 of 14 dailies done · 2 switched off",
+   "done": 6,
    "owed": 14,
    "open": [
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -14444,7 +14444,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -14520,7 +14520,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 4,
+     "done": 6,
      "failed": 0
     }
    ]
