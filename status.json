@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T08:20:15.009549",
+ "generatedAt": "2026-09-26T08:22:20.339452",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "pokemon_home",
-  "since": "08:19:57"
+  "mode": "combat_daily",
+  "since": "08:21:41"
  },
  "grid": {
   "tasks": [
@@ -414,8 +414,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 5,
-  "todo": 250,
+  "done": 7,
+  "todo": 248,
   "gaveUp": 0,
   "unavailable": 0,
   "windowed": 38
@@ -721,6 +721,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T08:21:40",
+   "script": "weekend_bash",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "tickets": 40
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 1200,
+    "tickets": 40
+   },
+   "dir": "debug_runs/20260926_082127_weekend_bash_lucifer2"
+  },
+  {
+   "ts": "2026-09-26T08:21:21",
+   "script": "pokemon_home",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 83,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_081958_pokemon_home_lucifer2"
+  },
   {
    "ts": "2026-09-26T08:19:56",
    "script": "daily_dungeon",
@@ -7461,41 +7491,12 @@
     "fights_today": 2
    },
    "dir": "debug_runs/20260924_232040_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-24T22:06:25",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 14,
-   "stats": {
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 26,
-    "fights_today": 2
-   },
-   "dir": "debug_runs/20260924_220611_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-24T21:49:33",
-   "script": "rift",
-   "account": "smurf",
-   "rc": 2,
-   "secs": 7,
-   "stats": {
-    "rift_levels": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260924_214926_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 30015,
+  "now": 30141,
   "segments": [
    {
     "b": 29659,
@@ -7578,8 +7579,30 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 29998,
+    "rc": 0,
+    "e": 30083,
+    "secs": 83,
+    "why": ""
+   },
+   {
+    "b": 30083,
+    "a": "lucifer2",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 30087,
+    "rc": 0,
+    "e": 30101,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 30101,
+    "a": "lucifer2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30102,
     "rc": null,
-    "e": 30015
+    "e": 30141
    }
   ],
   "idle": []
@@ -7629,6 +7652,16 @@
     "runs": 2,
     "minutes": 1.1,
     "failed": 1
+   },
+   "pokemon_home": {
+    "runs": 1,
+    "minutes": 1.4,
+    "failed": 0
+   },
+   "weekend_bash": {
+    "runs": 1,
+    "minutes": 0.2,
+    "failed": 0
    }
   }
  },
@@ -8076,6 +8109,12 @@
   "held": 5
  },
  "changes": [
+  {
+   "sha": "16241b1",
+   "ts": "2026-09-26T08:21:34",
+   "area": "daily dungeon",
+   "subject": "a sweep's late reward card is a sweep, not a new difficulty"
+  },
   {
    "sha": "846621a",
    "ts": "2026-09-26T08:18:10",
@@ -8589,78 +8628,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "pokemon_home",
+    "task": "combat_daily",
     "startsIn": 0.0,
-    "eta": "2026-09-26T08:20"
-   },
-   {
-    "account": "lucifer2",
-    "task": "weekend_bash",
-    "startsIn": 2.0,
     "eta": "2026-09-26T08:22"
    },
    {
     "account": "lucifer2",
-    "task": "combat_daily",
-    "startsIn": 4.0,
+    "task": "victory_road",
+    "startsIn": 2.0,
     "eta": "2026-09-26T08:24"
    },
    {
     "account": "lucifer2",
-    "task": "victory_road",
-    "startsIn": 6.0,
+    "task": "paradise",
+    "startsIn": 4.0,
     "eta": "2026-09-26T08:26"
    },
    {
     "account": "lucifer2",
-    "task": "paradise",
-    "startsIn": 8.0,
+    "task": "run_pvp_ranked",
+    "startsIn": 6.0,
     "eta": "2026-09-26T08:28"
    },
    {
     "account": "lucifer2",
-    "task": "run_pvp_ranked",
-    "startsIn": 10.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 8.0,
     "eta": "2026-09-26T08:30"
    },
    {
     "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 12.0,
+    "task": "sky_pillar",
+    "startsIn": 10.0,
     "eta": "2026-09-26T08:32"
    },
    {
     "account": "lucifer2",
-    "task": "sky_pillar",
-    "startsIn": 14.0,
-    "eta": "2026-09-26T08:34"
-   },
-   {
-    "account": "lucifer2",
     "task": "ultra_wormhole",
-    "startsIn": 16.0,
-    "eta": "2026-09-26T08:36"
+    "startsIn": 12.0,
+    "eta": "2026-09-26T08:34"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 18.4,
-    "eta": "2026-09-26T08:38"
+    "startsIn": 14.4,
+    "eta": "2026-09-26T08:36"
    },
    {
     "account": "nova",
     "task": "mail",
-    "startsIn": 19.2,
-    "eta": "2026-09-26T08:39"
+    "startsIn": 15.2,
+    "eta": "2026-09-26T08:37"
    },
    {
     "account": "nova",
     "task": "joint_team_daily_quest",
-    "startsIn": 19.3,
-    "eta": "2026-09-26T08:39"
+    "startsIn": 15.3,
+    "eta": "2026-09-26T08:37"
+   },
+   {
+    "account": "nova",
+    "task": "joint_battle",
+    "startsIn": 16.2,
+    "eta": "2026-09-26T08:38"
+   },
+   {
+    "account": "nova",
+    "task": "daily_dungeon",
+    "startsIn": 18.2,
+    "eta": "2026-09-26T08:40"
    }
   ],
-  "more": 238,
+  "more": 236,
   "fillers": [
    {
     "account": "smurf",
@@ -8821,6 +8860,7 @@
  },
  "ledger": {
   "lucifer2": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
@@ -10911,18 +10951,10 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-26",
-   "summary": "5 of 16 dailies done · 1 switched off",
-   "done": 5,
+   "summary": "7 of 16 dailies done · 1 switched off",
+   "done": 7,
    "owed": 16,
    "open": [
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -10989,6 +11021,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1
@@ -11032,7 +11065,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 5,
+     "done": 7,
      "failed": 2
     }
    ]
