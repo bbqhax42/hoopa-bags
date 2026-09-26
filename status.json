@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T21:02:19.272698",
+ "generatedAt": "2026-09-26T21:04:24.358869",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "fake8",
   "mode": "hoopa",
-  "since": "21:02:12"
+  "since": "21:02:22"
  },
  "grid": {
   "tasks": [
@@ -595,8 +595,8 @@
    "at": "2026-09-26T20:47:58"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-26T18:24:21"
+   "keys": 0,
+   "at": "2026-09-26T21:02:21"
   },
   "lucifer1": {
    "keys": 3343,
@@ -635,8 +635,8 @@
    "at": "2026-09-18T01:37:23"
   },
   "fake8": {
-   "keys": 50,
-   "at": "2026-09-18T11:51:27"
+   "keys": 89,
+   "at": "2026-09-26T21:02:53"
   },
   "fake3": {
    "keys": 78,
@@ -656,11 +656,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-26T20:54:13.501293",
+  "label": "fake8",
+  "at": "2026-09-26T21:02:42.101340",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T21:02:22",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 9,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-26T20:19:00",
    "script": "worldboss",
@@ -7731,32 +7747,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_144505_guild_war_exou"
-  },
-  {
-   "ts": "2026-09-25T14:45:04",
-   "script": "rank_match",
-   "account": "exou",
-   "rc": 0,
-   "secs": 57,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260925_144407_rank_match_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 75739,
+  "now": 75865,
   "segments": [
    {
     "b": 29659,
@@ -12150,8 +12146,22 @@
     "s": "hoopa",
     "login": null,
     "handoff": 75732,
+    "rc": 2,
+    "e": 75742,
+    "secs": 9,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 75742,
+    "a": "fake8",
+    "s": "hoopa",
+    "login": [
+     75743,
+     75762
+    ],
+    "handoff": 75771,
     "rc": null,
-    "e": 75739
+    "e": 75865
    }
   ],
   "idle": [
@@ -12199,7 +12209,8 @@
    75457,
    75579,
    75636,
-   75732
+   75732,
+   75742
   ]
  },
  "failures": [
@@ -12476,8 +12487,8 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 78,
-  "relogMinutes": 31.5,
+  "switches": 79,
+  "relogMinutes": 31.9,
   "retries": 31,
   "tasks": {
    "dailyclaim": {
@@ -12588,6 +12599,12 @@
    "task": "championship",
    "why": "no World Championship icon on the strip",
    "at": "2026-09-26T15:14:43"
+  },
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-26T21:02:22"
   },
   {
    "account": "fake1",
@@ -13579,12 +13596,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 78,
-   "medianSec": 17.0,
+   "n": 79,
+   "medianSec": 17,
    "picker": {
-    "n": 58,
-    "medianSec": 16.0,
-    "jumps": 39
+    "n": 59,
+    "medianSec": 16,
+    "jumps": 40
    },
    "typed": {
     "n": 1,
@@ -14307,7 +14324,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-26",
-   "summary": "17 of 19 dailies done · 1 not available today",
+   "summary": "17 of 19 dailies done · 2 not available today",
    "done": 17,
    "owed": 19,
    "open": [
@@ -14339,6 +14356,10 @@
     {
      "task": "championship",
      "why": "no World Championship icon on the strip"
+    },
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
     }
    ],
    "spent": {
