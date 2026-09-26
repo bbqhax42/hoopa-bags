@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T20:00:27.383740",
+ "generatedAt": "2026-09-26T20:02:31.030611",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "nova",
   "mode": "worldboss",
-  "since": "20:00:15"
+  "since": "20:01:58"
  },
  "grid": {
   "tasks": [
@@ -656,11 +656,42 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-26T19:41:54.169096",
+  "label": "nova",
+  "at": "2026-09-26T20:02:14.368079",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T20:01:58",
+   "script": "worldboss",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 65,
+   "stats": {
+    "wb_skip_again": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260926_200052_worldboss_jeff"
+  },
+  {
+   "ts": "2026-09-26T20:00:52",
+   "script": "worldboss",
+   "account": "chris",
+   "rc": 0,
+   "secs": 37,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "dir": "debug_runs/20260926_200015_worldboss_chris"
+  },
   {
    "ts": "2026-09-26T17:33:46",
    "script": "rift",
@@ -7741,50 +7772,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_142711_faction_fake1"
-  },
-  {
-   "ts": "2026-09-25T14:27:10",
-   "script": "rank_match",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "near_miss_go_button": 2,
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 2,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260925_142614_rank_match_fake1"
-  },
-  {
-   "ts": "2026-09-25T14:25:51",
-   "script": "sky_pillar",
-   "account": "deno",
-   "rc": 0,
-   "secs": 46,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 28,
-    "stage": 8
-   },
-   "dir": "debug_runs/20260925_142505_sky_pillar_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 72027,
+  "now": 72151,
   "segments": [
    {
     "b": 29659,
@@ -11702,8 +11695,36 @@
     "s": "worldboss",
     "login": null,
     "handoff": null,
+    "rc": 0,
+    "e": 72052,
+    "secs": 37,
+    "why": ""
+   },
+   {
+    "b": 72052,
+    "a": "jeff",
+    "s": "worldboss",
+    "login": [
+     72053,
+     72068
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72118,
+    "secs": 65,
+    "why": ""
+   },
+   {
+    "b": 72118,
+    "a": "nova",
+    "s": "worldboss",
+    "login": [
+     72118,
+     72134
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 72027
+    "e": 72151
    }
   ],
   "idle": [
@@ -12010,7 +12031,7 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 52,
+  "switches": 54,
   "relogMinutes": 21.0,
   "retries": 31,
   "tasks": {
@@ -12107,6 +12128,11 @@
    "rift": {
     "runs": 2,
     "minutes": 0.1,
+    "failed": 0
+   },
+   "worldboss": {
+    "runs": 2,
+    "minutes": 1.7,
     "failed": 0
    }
   }
@@ -12251,27 +12277,6 @@
   }
  },
  "worldBoss": {
-  "2026-09-24_20:00": [
-   "chris",
-   "jeff",
-   "nova",
-   "smurf",
-   "fake1",
-   "fake2",
-   "fake3",
-   "fake4",
-   "fake5",
-   "fake6",
-   "fake7",
-   "sprite",
-   "exou",
-   "skosmurf",
-   "lucifer1",
-   "lucifer2",
-   "fake8",
-   "deno",
-   "dre"
-  ],
   "2026-09-25_02:00": [
    "chris",
    "jeff",
@@ -12334,6 +12339,10 @@
    "fake8",
    "deno",
    "dre"
+  ],
+  "2026-09-26_20:00": [
+   "chris",
+   "jeff"
   ]
  },
  "worldBossSkipped": {},
@@ -12450,6 +12459,12 @@
  },
  "night": null,
  "changes": [
+  {
+   "sha": "c1ce87d",
+   "ts": "2026-09-26T20:01:36",
+   "area": "dynamax",
+   "subject": "a long fight is waited out while its bar is up; the town is not a battle"
+  },
   {
    "sha": "95ad20e",
    "ts": "2026-09-26T15:57:31",
@@ -13043,12 +13058,6 @@
    "ts": "2026-09-25T21:07:16",
    "area": "sky pillar",
    "subject": "a \"Failed\" card ends the battle wait too -- every loss sat the full 150 s"
-  },
-  {
-   "sha": "c5e34fb",
-   "ts": "2026-09-25T21:01:09",
-   "area": "check_anchors",
-   "subject": "\\bL.find -- ISL.find (island_challenge's own) was flagged as a missing launcher anchor on every run"
   }
  ],
  "phase": {
@@ -13103,12 +13112,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 52,
+   "n": 54,
    "medianSec": 17.0,
    "picker": {
-    "n": 39,
+    "n": 41,
     "medianSec": 16,
-    "jumps": 26
+    "jumps": 27
    },
    "typed": {
     "n": 1,
@@ -13121,17 +13130,6 @@
   }
  },
  "progress": {
-  "deno": {
-   "pillar": "floor 29 stage 1",
-   "mailUnread": 0,
-   "paradiseStamina": "2/20",
-   "rank": 10
-  },
-  "fake1": {
-   "mailUnread": 0,
-   "paradiseStamina": "1/20",
-   "pillar": "floor 5 stage 5"
-  },
   "fake2": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -13214,11 +13212,22 @@
    "pillar": "floor 21 stage 5",
    "misty": "step 1"
   },
+  "deno": {
+   "mailUnread": 0,
+   "paradiseStamina": "2/20",
+   "rank": 10,
+   "pillar": "floor 29 stage 1"
+  },
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "0/12",
    "rank": 6,
    "pillar": "floor 84 stage 6"
+  },
+  "fake1": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/20",
+   "pillar": "floor 5 stage 5"
   },
   "fake7": {
    "mailUnread": 0,
@@ -13823,7 +13832,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 17,
+     "done": 18,
      "failed": 0
     }
    ]
@@ -13918,7 +13927,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 16,
+     "done": 17,
      "failed": 2
     }
    ]
@@ -15163,10 +15172,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "pillar": "floor 29 stage 1",
     "mailUnread": 0,
     "paradiseStamina": "2/20",
-    "rank": 10
+    "rank": 10,
+    "pillar": "floor 29 stage 1"
    },
    "history": [
     {
