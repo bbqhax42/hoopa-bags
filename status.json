@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T08:59:41.837986",
+ "generatedAt": "2026-09-26T09:01:46.030385",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "ultra_wormhole",
-  "since": "08:56:36"
+  "account": "jeff",
+  "mode": "mail",
+  "since": "09:01:43"
  },
  "grid": {
   "tasks": [
@@ -51,7 +51,7 @@
      "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -59,7 +59,7 @@
    {
     "account": "jeff",
     "cells": [
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 26,
-  "todo": 228,
+  "done": 28,
+  "todo": 226,
   "gaveUp": 1,
   "unavailable": 0,
   "windowed": 38
@@ -716,11 +716,46 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-26T08:42:43.281656",
+  "label": "jeff",
+  "at": "2026-09-26T09:01:14.020492",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T09:01:42",
+   "script": "dailyclaim",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 20,
+   "stats": {
+    "sign_in_already": 1,
+    "privpack_already": 1,
+    "claims": 0
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:77 0.275:0 0.345:54 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260926_090121_dailyclaim_jeff"
+  },
+  {
+   "ts": "2026-09-26T09:00:57",
+   "script": "ultra_wormhole",
+   "account": "nova",
+   "rc": 0,
+   "secs": 258,
+   "stats": {
+    "hired": 69,
+    "wins": 16,
+    "losses": 1,
+    "rewards_claimed": 5
+   },
+   "incomplete": [],
+   "values": {
+    "wins_today": 16
+   },
+   "dir": "debug_runs/20260926_085639_ultra_wormhole_nova"
+  },
   {
    "ts": "2026-09-26T08:56:35",
    "script": "sky_pillar",
@@ -7529,42 +7564,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260925_021607_worldboss_test1"
-  },
-  {
-   "ts": "2026-09-25T02:16:07",
-   "script": "worldboss",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260925_021501_worldboss_lucifer2"
-  },
-  {
-   "ts": "2026-09-25T02:15:01",
-   "script": "worldboss",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 61,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260925_021400_worldboss_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 32382,
+  "now": 32506,
   "segments": [
    {
     "b": 29659,
@@ -7899,8 +7904,33 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 32199,
+    "rc": 0,
+    "e": 32459,
+    "secs": 258,
+    "why": ""
+   },
+   {
+    "b": 32459,
+    "a": "jeff",
+    "s": "dailyclaim",
+    "login": [
+     32459,
+     32474
+    ],
+    "handoff": 32481,
+    "rc": 0,
+    "e": 32503,
+    "secs": 20,
+    "why": ""
+   },
+   {
+    "b": 32503,
+    "a": "jeff",
+    "s": "mail",
+    "login": null,
+    "handoff": 32503,
     "rc": null,
-    "e": 32382
+    "e": 32506
    }
   ],
   "idle": []
@@ -7963,13 +7993,13 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 1,
-  "relogMinutes": 0.5,
+  "switches": 2,
+  "relogMinutes": 0.8,
   "retries": 6,
   "tasks": {
    "dailyclaim": {
-    "runs": 3,
-    "minutes": 2.1,
+    "runs": 4,
+    "minutes": 2.4,
     "failed": 1
    },
    "mail": {
@@ -8023,8 +8053,8 @@
     "failed": 0
    },
    "ultra_wormhole": {
-    "runs": 1,
-    "minutes": 4.3,
+    "runs": 2,
+    "minutes": 8.6,
     "failed": 0
    },
    "sky_pillar": {
@@ -8990,79 +9020,79 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T08:59"
-   },
-   {
-    "account": "jeff",
-    "task": "dailyclaim",
-    "startsIn": 4.7,
-    "eta": "2026-09-26T09:04"
-   },
-   {
     "account": "jeff",
     "task": "mail",
-    "startsIn": 5.4,
-    "eta": "2026-09-26T09:05"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T09:01"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 5.5,
-    "eta": "2026-09-26T09:05"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T09:01"
    },
    {
     "account": "jeff",
     "task": "joint_battle",
-    "startsIn": 6.4,
-    "eta": "2026-09-26T09:06"
+    "startsIn": 0.9,
+    "eta": "2026-09-26T09:02"
    },
    {
     "account": "jeff",
     "task": "daily_dungeon",
-    "startsIn": 8.4,
-    "eta": "2026-09-26T09:08"
+    "startsIn": 2.9,
+    "eta": "2026-09-26T09:04"
    },
    {
     "account": "jeff",
     "task": "pokemon_home",
-    "startsIn": 8.8,
-    "eta": "2026-09-26T09:08"
+    "startsIn": 3.4,
+    "eta": "2026-09-26T09:05"
    },
    {
     "account": "jeff",
     "task": "weekend_bash",
-    "startsIn": 10.2,
-    "eta": "2026-09-26T09:09"
+    "startsIn": 4.8,
+    "eta": "2026-09-26T09:06"
    },
    {
     "account": "jeff",
     "task": "combat_daily",
-    "startsIn": 10.4,
-    "eta": "2026-09-26T09:10"
+    "startsIn": 5.0,
+    "eta": "2026-09-26T09:06"
    },
    {
     "account": "jeff",
     "task": "victory_road",
-    "startsIn": 11.7,
-    "eta": "2026-09-26T09:11"
+    "startsIn": 6.3,
+    "eta": "2026-09-26T09:08"
    },
    {
     "account": "jeff",
     "task": "paradise",
-    "startsIn": 11.8,
-    "eta": "2026-09-26T09:11"
+    "startsIn": 6.4,
+    "eta": "2026-09-26T09:08"
    },
    {
     "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 16.4,
-    "eta": "2026-09-26T09:16"
+    "startsIn": 10.9,
+    "eta": "2026-09-26T09:12"
+   },
+   {
+    "account": "jeff",
+    "task": "collect_hoopa_keys",
+    "startsIn": 12.4,
+    "eta": "2026-09-26T09:14"
+   },
+   {
+    "account": "jeff",
+    "task": "sky_pillar",
+    "startsIn": 12.5,
+    "eta": "2026-09-26T09:14"
    }
   ],
-  "more": 216,
+  "more": 214,
   "fillers": [
    {
     "account": "smurf",
@@ -9096,11 +9126,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 1,
-   "medianSec": 16,
+   "n": 2,
+   "medianSec": 15.5,
    "picker": {
-    "n": 1,
-    "medianSec": 16,
+    "n": 2,
+    "medianSec": 15.5,
     "jumps": 1
    },
    "typed": {
@@ -9114,18 +9144,6 @@
   }
  },
  "progress": {
-  "lucifer1": {
-   "mailUnread": 0,
-   "paradiseStamina": "1/20",
-   "rank": 7,
-   "pillar": "floor 93 stage 3"
-  },
-  "lucifer2": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "rank": 9,
-   "pillar": "floor 87 stage 6"
-  },
   "test1": {
    "mailUnread": 0,
    "paradiseStamina": "1/20"
@@ -9156,6 +9174,12 @@
    "paradiseStamina": "14/19",
    "rank": 1,
    "pillar": "floor 149 stage 1"
+  },
+  "lucifer2": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "rank": 9,
+   "pillar": "floor 87 stage 6"
   },
   "nova": {
    "mailUnread": 0,
@@ -9219,6 +9243,12 @@
    "rank": 1,
    "pillar": "floor 20 stage 9",
    "misty": "step 1"
+  },
+  "lucifer1": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/20",
+   "rank": 7,
+   "pillar": "floor 93 stage 3"
   }
  },
  "ledger": {
@@ -9470,8 +9500,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-26",
-   "summary": "13 of 16 dailies done",
-   "done": 13,
+   "summary": "14 of 16 dailies done",
+   "done": 14,
    "owed": 16,
    "open": [
     {
@@ -9481,10 +9511,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "wormhole",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -9546,7 +9572,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 12,
+     "done": 13,
      "failed": 1
     }
    ]
@@ -9554,14 +9580,10 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-26",
-   "summary": "0 of 18 dailies done",
-   "done": 0,
+   "summary": "1 of 18 dailies done",
+   "done": 1,
    "owed": 18,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
     {
      "task": "mail",
      "state": "still to do"
@@ -9676,7 +9698,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
