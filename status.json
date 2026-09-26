@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T11:51:41.431244",
+ "generatedAt": "2026-09-26T11:53:45.423802",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake6",
-  "mode": "sky_pillar",
-  "since": "11:51:26"
+  "account": "fake7",
+  "mode": "dailyclaim",
+  "since": "11:52:55"
  },
  "grid": {
   "tasks": [
@@ -273,8 +273,8 @@
      "⏰",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "-",
      "-",
@@ -509,10 +509,10 @@
   ]
  },
  "counts": {
-  "done": 139,
-  "todo": 110,
+  "done": 140,
+  "todo": 108,
   "gaveUp": 3,
-  "unavailable": 3,
+  "unavailable": 4,
   "windowed": 38
  },
  "disabled": [
@@ -716,11 +716,45 @@
   }
  },
  "session": {
-  "label": "fake6",
-  "at": "2026-09-26T11:39:35.648529",
+  "label": "fake7",
+  "at": "2026-09-26T11:53:16.469420",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T11:52:54",
+   "script": "faction",
+   "account": "fake6",
+   "rc": 2,
+   "secs": 10,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_115243_faction_fake6"
+  },
+  {
+   "ts": "2026-09-26T11:52:39",
+   "script": "sky_pillar",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 72,
+   "stats": {
+    "floor_reward_claimed": 9,
+    "stage_lost": 1,
+    "sky_pillar_loss": 1,
+    "sweep_presses": 3,
+    "marginal_sky_pillar": 2,
+    "floor_backlog_floor": 3,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor_backlog_claims": 8
+   },
+   "dir": "debug_runs/20260926_115126_sky_pillar_fake6"
+  },
   {
    "ts": "2026-09-26T11:51:25",
    "script": "collect_hoopa_keys",
@@ -7642,50 +7676,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_104306_victory_road_fake4"
-  },
-  {
-   "ts": "2026-09-25T10:43:04",
-   "script": "combat_daily",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 116,
-   "stats": {
-    "title_reread_named": 8,
-    "marginal_afk_rewards": 1,
-    "near_miss_vr_rank": 6,
-    "adv_overflow": 1,
-    "near_miss_pokemon_upgrade": 1,
-    "pokemon_upgraded": 1,
-    "gacha_free": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free"
-   },
-   "dir": "debug_runs/20260925_104108_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-25T10:41:02",
-   "script": "pokemon_home",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 18,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 49
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_104044_pokemon_home_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 42701,
+  "now": 42825,
   "segments": [
    {
     "b": 29659,
@@ -9413,8 +9409,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 42686,
+    "rc": 0,
+    "e": 42760,
+    "secs": 72,
+    "why": ""
+   },
+   {
+    "b": 42760,
+    "a": "fake6",
+    "s": "faction",
+    "login": null,
+    "handoff": 42763,
+    "rc": 2,
+    "e": 42775,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 42775,
+    "a": "fake7",
+    "s": "dailyclaim",
+    "login": [
+     42775,
+     42796
+    ],
+    "handoff": 42801,
     "rc": null,
-    "e": 42701
+    "e": 42825
    }
   ],
   "idle": []
@@ -9585,8 +9606,8 @@
  ],
  "day": {
   "since": "2026-09-26T08:00",
-  "switches": 10,
-  "relogMinutes": 4.2,
+  "switches": 11,
+  "relogMinutes": 4.7,
   "retries": 19,
   "tasks": {
    "dailyclaim": {
@@ -9650,8 +9671,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 10,
-    "minutes": 13.8,
+    "runs": 11,
+    "minutes": 15.0,
     "failed": 1
    },
    "championship": {
@@ -9660,8 +9681,8 @@
     "failed": 3
    },
    "faction": {
-    "runs": 7,
-    "minutes": 12.7,
+    "runs": 8,
+    "minutes": 12.9,
     "failed": 0
    },
    "misty_woods": {
@@ -9683,6 +9704,12 @@
    "task": "pokemon_home",
    "why": "reached_via_trial, board_stuck",
    "at": "2026-09-26T11:13:03"
+  },
+  {
+   "account": "fake6",
+   "task": "faction",
+   "why": "tower_locked",
+   "at": "2026-09-26T11:52:54"
   },
   {
    "account": "smurf",
@@ -10712,79 +10739,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake6",
-    "task": "sky_pillar",
+    "account": "fake7",
+    "task": "dailyclaim",
     "startsIn": 0.0,
-    "eta": "2026-09-26T11:51"
-   },
-   {
-    "account": "fake6",
-    "task": "faction",
-    "startsIn": 1.4,
     "eta": "2026-09-26T11:53"
    },
    {
     "account": "fake7",
-    "task": "dailyclaim",
-    "startsIn": 3.6,
-    "eta": "2026-09-26T11:55"
-   },
-   {
-    "account": "fake7",
     "task": "mail",
-    "startsIn": 4.1,
-    "eta": "2026-09-26T11:55"
+    "startsIn": 0.5,
+    "eta": "2026-09-26T11:54"
    },
    {
     "account": "fake7",
     "task": "joint_team_daily_quest",
-    "startsIn": 4.1,
-    "eta": "2026-09-26T11:55"
+    "startsIn": 0.5,
+    "eta": "2026-09-26T11:54"
    },
    {
     "account": "fake7",
     "task": "joint_battle",
-    "startsIn": 5.0,
-    "eta": "2026-09-26T11:56"
+    "startsIn": 1.4,
+    "eta": "2026-09-26T11:55"
    },
    {
     "account": "fake7",
     "task": "daily_dungeon",
-    "startsIn": 7.0,
-    "eta": "2026-09-26T11:58"
+    "startsIn": 3.4,
+    "eta": "2026-09-26T11:57"
    },
    {
     "account": "fake7",
     "task": "pokemon_home",
-    "startsIn": 7.8,
-    "eta": "2026-09-26T11:59"
+    "startsIn": 4.2,
+    "eta": "2026-09-26T11:57"
    },
    {
     "account": "fake7",
     "task": "combat_daily",
-    "startsIn": 8.6,
-    "eta": "2026-09-26T12:00"
+    "startsIn": 5.0,
+    "eta": "2026-09-26T11:58"
    },
    {
     "account": "fake7",
     "task": "victory_road",
-    "startsIn": 10.0,
-    "eta": "2026-09-26T12:01"
+    "startsIn": 6.4,
+    "eta": "2026-09-26T12:00"
    },
    {
     "account": "fake7",
     "task": "paradise",
-    "startsIn": 10.2,
-    "eta": "2026-09-26T12:01"
+    "startsIn": 6.6,
+    "eta": "2026-09-26T12:00"
    },
    {
     "account": "fake7",
     "task": "collect_hoopa_keys",
-    "startsIn": 14.7,
+    "startsIn": 11.1,
+    "eta": "2026-09-26T12:04"
+   },
+   {
+    "account": "fake7",
+    "task": "sky_pillar",
+    "startsIn": 11.2,
+    "eta": "2026-09-26T12:05"
+   },
+   {
+    "account": "fake7",
+    "task": "faction",
+    "startsIn": 12.6,
     "eta": "2026-09-26T12:06"
    }
   ],
-  "more": 97,
+  "more": 95,
   "fillers": [
    {
     "account": "smurf",
@@ -10823,8 +10850,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 10,
-   "medianSec": 17.5,
+   "n": 11,
+   "medianSec": 18,
    "picker": {
     "n": 9,
     "medianSec": 17,
@@ -10835,8 +10862,8 @@
     "medianSec": 29
    },
    "miss": {
-    "n": 0,
-    "medianSec": null
+    "n": 1,
+    "medianSec": 21
    }
   }
  },
@@ -10950,6 +10977,7 @@
  },
  "ledger": {
   "fake6": {
+   "pillar proofs swept": 3,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 46,
    "mail claimed": 1,
@@ -12149,8 +12177,8 @@
   "fake6": {
    "name": "Bigpp123",
    "day": "2026-09-26",
-   "summary": "10 of 14 dailies done · 2 switched off",
-   "done": 10,
+   "summary": "11 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 11,
    "owed": 14,
    "open": [
     {
@@ -12162,12 +12190,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
    "issues": [
@@ -12190,8 +12214,14 @@
      "since": "2026-09-20T01:38:41"
     }
    ],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "tower_locked"
+    }
+   ],
    "spent": {
+    "pillar proofs swept": 3,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 46,
     "mail claimed": 1,
@@ -12234,7 +12264,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 11,
+     "done": 12,
      "failed": 1
     }
    ]
