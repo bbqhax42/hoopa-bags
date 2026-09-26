@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T10:08:05.408777",
+ "generatedAt": "2026-09-26T10:10:09.739789",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "faction",
-  "since": "10:06:37"
+  "mode": "ultra_wormhole",
+  "since": "10:09:13"
  },
  "grid": {
   "tasks": [
@@ -124,8 +124,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "-"
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 69,
-  "todo": 183,
+  "done": 71,
+  "todo": 181,
   "gaveUp": 1,
   "unavailable": 1,
   "windowed": 38
@@ -722,6 +722,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T10:09:12",
+   "script": "misty_woods",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "path_exhausted": 1,
+    "wins": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_100906_misty_woods_smurf"
+  },
+  {
+   "ts": "2026-09-26T10:08:47",
+   "script": "faction",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 126,
+   "stats": {
+    "auto_formation": 20,
+    "skip_retry": 17,
+    "floors_grass": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_100641_faction_smurf"
+  },
   {
    "ts": "2026-09-26T10:06:36",
    "script": "sky_pillar",
@@ -7555,42 +7585,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_091632_weekend_bash_jeff"
-  },
-  {
-   "ts": "2026-09-25T09:16:28",
-   "script": "sky_pillar",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 149,
-    "stage": 1
-   },
-   "dir": "debug_runs/20260925_091521_sky_pillar_jeff"
-  },
-  {
-   "ts": "2026-09-25T09:15:19",
-   "script": "collect_hoopa_keys",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_091512_collect_hoopa_keys_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 36486,
+  "now": 36610,
   "segments": [
    {
     "b": 29659,
@@ -8443,8 +8443,30 @@
     "s": "faction",
     "login": null,
     "handoff": 36400,
+    "rc": 0,
+    "e": 36528,
+    "secs": 126,
+    "why": ""
+   },
+   {
+    "b": 36528,
+    "a": "smurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": 36546,
+    "rc": 0,
+    "e": 36553,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 36553,
+    "a": "smurf",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 36556,
     "rc": null,
-    "e": 36486
+    "e": 36610
    }
   ],
   "idle": []
@@ -8600,8 +8622,13 @@
     "failed": 1
    },
    "faction": {
+    "runs": 2,
+    "minutes": 4.2,
+    "failed": 0
+   },
+   "misty_woods": {
     "runs": 1,
-    "minutes": 2.1,
+    "minutes": 0.1,
     "failed": 0
    }
   }
@@ -9564,78 +9591,78 @@
   "next": [
    {
     "account": "smurf",
-    "task": "faction",
+    "task": "ultra_wormhole",
     "startsIn": 0.0,
-    "eta": "2026-09-26T10:08"
-   },
-   {
-    "account": "smurf",
-    "task": "misty_woods",
-    "startsIn": 2.1,
     "eta": "2026-09-26T10:10"
    },
    {
     "account": "smurf",
-    "task": "ultra_wormhole",
-    "startsIn": 4.1,
-    "eta": "2026-09-26T10:12"
-   },
-   {
-    "account": "smurf",
     "task": "championship",
-    "startsIn": 8.5,
-    "eta": "2026-09-26T10:16"
+    "startsIn": 4.4,
+    "eta": "2026-09-26T10:14"
    },
    {
     "account": "fake1",
     "task": "dailyclaim",
-    "startsIn": 13.5,
-    "eta": "2026-09-26T10:21"
+    "startsIn": 9.4,
+    "eta": "2026-09-26T10:19"
    },
    {
     "account": "fake1",
     "task": "mail",
-    "startsIn": 14.0,
-    "eta": "2026-09-26T10:22"
+    "startsIn": 9.9,
+    "eta": "2026-09-26T10:20"
    },
    {
     "account": "fake1",
     "task": "joint_team_daily_quest",
-    "startsIn": 14.1,
-    "eta": "2026-09-26T10:22"
+    "startsIn": 10.0,
+    "eta": "2026-09-26T10:20"
    },
    {
     "account": "fake1",
     "task": "joint_battle",
-    "startsIn": 14.8,
-    "eta": "2026-09-26T10:22"
+    "startsIn": 10.7,
+    "eta": "2026-09-26T10:20"
    },
    {
     "account": "fake1",
     "task": "daily_dungeon",
-    "startsIn": 16.8,
-    "eta": "2026-09-26T10:24"
+    "startsIn": 12.7,
+    "eta": "2026-09-26T10:22"
    },
    {
     "account": "fake1",
     "task": "pokemon_home",
-    "startsIn": 17.3,
-    "eta": "2026-09-26T10:25"
+    "startsIn": 13.2,
+    "eta": "2026-09-26T10:23"
    },
    {
     "account": "fake1",
     "task": "combat_daily",
-    "startsIn": 18.8,
-    "eta": "2026-09-26T10:26"
+    "startsIn": 14.7,
+    "eta": "2026-09-26T10:24"
    },
    {
     "account": "fake1",
     "task": "victory_road",
-    "startsIn": 20.2,
-    "eta": "2026-09-26T10:28"
+    "startsIn": 16.1,
+    "eta": "2026-09-26T10:26"
+   },
+   {
+    "account": "fake1",
+    "task": "paradise",
+    "startsIn": 16.2,
+    "eta": "2026-09-26T10:26"
+   },
+   {
+    "account": "fake1",
+    "task": "collect_hoopa_keys",
+    "startsIn": 20.6,
+    "eta": "2026-09-26T10:30"
    }
   ],
-  "more": 171,
+  "more": 169,
   "fillers": [
    {
     "account": "smurf",
@@ -9688,12 +9715,12 @@
  },
  "progress": {
   "jeff": {
-   "pillar": "floor 149 stage 4",
    "paradiseStamina": "20/20",
    "islandFights": 0,
    "islandStamina": 4,
    "mailUnread": 0,
-   "rank": 1
+   "rank": 1,
+   "pillar": "floor 149 stage 4"
   },
   "lucifer2": {
    "pillar": "floor 87 stage 6",
@@ -9796,6 +9823,7 @@
  },
  "ledger": {
   "smurf": {
+   "faction sweeps": 2,
    "pillar/story stages cleared": 3,
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -10173,12 +10201,12 @@
     "Home creations": 50
    },
    "progress": {
-    "pillar": "floor 149 stage 4",
     "paradiseStamina": "20/20",
     "islandFights": 0,
     "islandStamina": 4,
     "mailUnread": 0,
-    "rank": 1
+    "rank": 1,
+    "pillar": "floor 149 stage 4"
    },
    "history": [
     {
@@ -10318,8 +10346,8 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-26",
-   "summary": "12 of 19 dailies done · 2 switched off · 1 not available today",
-   "done": 12,
+   "summary": "14 of 19 dailies done · 2 switched off · 1 not available today",
+   "done": 14,
    "owed": 19,
    "open": [
     {
@@ -10333,14 +10361,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "fctn",
-     "state": "still to do"
-    },
-    {
-     "task": "misty",
-     "state": "still to do"
     },
     {
      "task": "wormhole",
@@ -10371,6 +10391,7 @@
     }
    ],
    "spent": {
+    "faction sweeps": 2,
     "pillar/story stages cleared": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -10418,7 +10439,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 13,
+     "done": 15,
      "failed": 0
     }
    ]
