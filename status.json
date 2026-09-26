@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T14:45:09.794673",
+ "generatedAt": "2026-09-26T14:47:13.165519",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "run_pvp_ranked",
-  "since": "14:44:13"
+  "mode": "ultra_wormhole",
+  "since": "14:46:42"
  },
  "grid": {
   "tasks": [
@@ -471,9 +471,9 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 257,
-  "todo": 21,
+  "done": 260,
+  "todo": 18,
   "gaveUp": 5,
   "unavailable": 9,
   "windowed": 0
@@ -721,6 +721,62 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T14:46:41",
+   "script": "sky_pillar",
+   "account": "deno",
+   "rc": 0,
+   "secs": 62,
+   "stats": {
+    "floor_reward_claimed": 10,
+    "stages_cleared": 3,
+    "floor_backlog_floor": 4,
+    "marginal_sky_pillar": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 29,
+    "stage": 1,
+    "floor_backlog_claims": 8
+   },
+   "dir": "debug_runs/20260926_144539_sky_pillar_deno"
+  },
+  {
+   "ts": "2026-09-26T14:45:38",
+   "script": "collect_hoopa_keys",
+   "account": "deno",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_144533_collect_hoopa_keys_deno"
+  },
+  {
+   "ts": "2026-09-26T14:45:32",
+   "script": "run_pvp_ranked",
+   "account": "deno",
+   "rc": 0,
+   "secs": 74,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_lost": 1,
+    "ranked_won": 9,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 0,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 9,
+    "rank": 10,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260926_144417_run_pvp_ranked_deno"
+  },
   {
    "ts": "2026-09-26T14:44:13",
    "script": "guild_war",
@@ -7767,68 +7823,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260925_140843_combat_daily_skosmurf"
-  },
-  {
-   "ts": "2026-09-25T14:08:42",
-   "script": "weekend_bash",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "tickets": 40
-   },
-   "incomplete": [],
-   "values": {
-    "diamonds_spent": 800,
-    "tickets": 40
-   },
-   "dir": "debug_runs/20260925_140829_weekend_bash_skosmurf"
-  },
-  {
-   "ts": "2026-09-25T14:08:02",
-   "script": "guild_war",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 63,
-   "stats": {
-    "near_miss_last_hit": 4,
-    "near_miss_vr_rank": 1,
-    "marginal_last_hit": 2,
-    "near_miss_battle_victory": 1,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260925_140659_guild_war_smurf"
-  },
-  {
-   "ts": "2026-09-25T14:06:57",
-   "script": "rank_match",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 0
-   },
-   "dir": "debug_runs/20260925_140601_rank_match_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 53110,
+  "now": 53233,
   "segments": [
    {
     "b": 29659,
@@ -11116,8 +11116,41 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 53056,
+    "rc": 0,
+    "e": 53132,
+    "secs": 74,
+    "why": ""
+   },
+   {
+    "b": 53132,
+    "a": "deno",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 53132,
+    "rc": 0,
+    "e": 53138,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 53138,
+    "a": "deno",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 53138,
+    "rc": 0,
+    "e": 53202,
+    "secs": 62,
+    "why": ""
+   },
+   {
+    "b": 53202,
+    "a": "deno",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 53205,
     "rc": null,
-    "e": 53110
+    "e": 53233
    }
   ],
   "idle": []
@@ -11446,13 +11479,13 @@
     "failed": 6
    },
    "run_pvp_ranked": {
-    "runs": 9,
-    "minutes": 12.4,
+    "runs": 10,
+    "minutes": 13.6,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 17,
-    "minutes": 1.5,
+    "runs": 18,
+    "minutes": 1.6,
     "failed": 0
    },
    "ultra_wormhole": {
@@ -11461,8 +11494,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 18,
-    "minutes": 27.0,
+    "runs": 19,
+    "minutes": 28.0,
     "failed": 2
    },
    "championship": {
@@ -11991,6 +12024,18 @@
   "held": 5
  },
  "changes": [
+  {
+   "sha": "4cd96f3",
+   "ts": "2026-09-26T14:46:38",
+   "area": "ultra wormhole",
+   "subject": "the post-hire check reads only the hired card's own slot"
+  },
+  {
+   "sha": "43fd5c9",
+   "ts": "2026-09-26T14:46:11",
+   "area": "combat daily",
+   "subject": "a refused upgrade arrow ends the walk and is not counted as the list's end"
+  },
   {
    "sha": "1ade66c",
    "ts": "2026-09-26T14:41:51",
@@ -12578,18 +12623,6 @@
    "ts": "2026-09-25T20:13:28",
    "area": "daily dungeon",
    "subject": "sweep after the post-battle cooldown, not into it -- ~5 attempts a day were given up"
-  },
-  {
-   "sha": "9a5f54a",
-   "ts": "2026-09-25T20:10:25",
-   "area": "sky pillar",
-   "subject": "arrive on the label OR the Challenge button -- dre's pillar went unrun three days"
-  },
-  {
-   "sha": "1c0c4d1",
-   "ts": "2026-09-25T20:08:03",
-   "area": "dailyclaim",
-   "subject": "read the sign-in milestone on the panel, not off the town -- 14 accounts were owed one"
   }
  ],
  "phase": {
@@ -12612,78 +12645,78 @@
   "next": [
    {
     "account": "deno",
-    "task": "run_pvp_ranked",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T14:45"
-   },
-   {
-    "account": "deno",
-    "task": "collect_hoopa_keys",
-    "startsIn": 1.4,
-    "eta": "2026-09-26T14:46"
-   },
-   {
-    "account": "deno",
-    "task": "sky_pillar",
-    "startsIn": 1.5,
-    "eta": "2026-09-26T14:46"
-   },
-   {
-    "account": "deno",
     "task": "ultra_wormhole",
-    "startsIn": 3.0,
-    "eta": "2026-09-26T14:48"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T14:47"
    },
    {
     "account": "dre",
     "task": "dailyclaim",
-    "startsIn": 7.8,
+    "startsIn": 4.9,
     "eta": "2026-09-26T14:52"
    },
    {
     "account": "dre",
     "task": "mail",
-    "startsIn": 8.3,
-    "eta": "2026-09-26T14:53"
+    "startsIn": 5.3,
+    "eta": "2026-09-26T14:52"
    },
    {
     "account": "dre",
     "task": "joint_team_daily_quest",
-    "startsIn": 8.3,
-    "eta": "2026-09-26T14:53"
+    "startsIn": 5.4,
+    "eta": "2026-09-26T14:52"
    },
    {
     "account": "dre",
     "task": "joint_battle",
-    "startsIn": 9.2,
-    "eta": "2026-09-26T14:54"
+    "startsIn": 6.3,
+    "eta": "2026-09-26T14:53"
    },
    {
     "account": "dre",
     "task": "daily_dungeon",
-    "startsIn": 11.2,
-    "eta": "2026-09-26T14:56"
+    "startsIn": 8.3,
+    "eta": "2026-09-26T14:55"
    },
    {
     "account": "dre",
     "task": "pokemon_home",
-    "startsIn": 11.9,
-    "eta": "2026-09-26T14:57"
+    "startsIn": 9.0,
+    "eta": "2026-09-26T14:56"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 12.7,
-    "eta": "2026-09-26T14:57"
+    "startsIn": 9.8,
+    "eta": "2026-09-26T14:56"
    },
    {
     "account": "dre",
     "task": "combat_daily",
-    "startsIn": 12.9,
+    "startsIn": 9.9,
+    "eta": "2026-09-26T14:57"
+   },
+   {
+    "account": "dre",
+    "task": "victory_road",
+    "startsIn": 11.3,
     "eta": "2026-09-26T14:58"
+   },
+   {
+    "account": "dre",
+    "task": "rank_match",
+    "startsIn": 11.5,
+    "eta": "2026-09-26T14:58"
+   },
+   {
+    "account": "dre",
+    "task": "paradise",
+    "startsIn": 12.5,
+    "eta": "2026-09-26T14:59"
    }
   ],
-  "more": 9,
+  "more": 6,
   "fillers": [
    {
     "account": "smurf",
@@ -12735,12 +12768,6 @@
   }
  },
  "progress": {
-  "smurf": {
-   "mailUnread": 0,
-   "paradiseStamina": "0/15",
-   "rank": 1,
-   "pillar": "floor 19 stage 4"
-  },
   "skosmurf": {
    "misty": "step 1",
    "mailUnread": 0,
@@ -12761,7 +12788,7 @@
   },
   "deno": {
    "rank": 10,
-   "pillar": "floor 28 stage 8",
+   "pillar": "floor 29 stage 1",
    "mailUnread": 0,
    "paradiseStamina": "2/20"
   },
@@ -12828,6 +12855,12 @@
    "rank": 4,
    "pillar": "floor 101 stage 1"
   },
+  "smurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/15",
+   "rank": 1,
+   "pillar": "floor 19 stage 4"
+  },
   "dre": {},
   "fake7": {
    "mailUnread": 0,
@@ -12841,6 +12874,8 @@
  },
  "ledger": {
   "deno": {
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
@@ -14861,22 +14896,10 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-26",
-   "summary": "12 of 16 dailies done",
-   "done": 12,
+   "summary": "15 of 16 dailies done",
+   "done": 15,
    "owed": 16,
    "open": [
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
-    },
     {
      "task": "wormhole",
      "state": "still to do"
@@ -14886,6 +14909,8 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 3,
+    "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -14895,7 +14920,7 @@
    },
    "progress": {
     "rank": 10,
-    "pillar": "floor 28 stage 8",
+    "pillar": "floor 29 stage 1",
     "mailUnread": 0,
     "paradiseStamina": "2/20"
    },
@@ -14932,7 +14957,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 12,
+     "done": 15,
      "failed": 0
     }
    ]
