@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-26T12:30:59.446020",
+ "generatedAt": "2026-09-26T12:33:04.069647",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "exou",
-  "mode": "combat_daily",
-  "since": "12:30:08"
+  "mode": "paradise",
+  "since": "12:32:03"
  },
  "grid": {
   "tasks": [
@@ -341,8 +341,8 @@
      "✓",
      "✗2",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 168,
-  "todo": 92,
+  "done": 170,
+  "todo": 90,
   "gaveUp": 3,
   "unavailable": 6,
   "windowed": 19
@@ -721,6 +721,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-26T12:32:02",
+   "script": "victory_road",
+   "account": "exou",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260926_123156_victory_road_exou"
+  },
+  {
+   "ts": "2026-09-26T12:31:54",
+   "script": "combat_daily",
+   "account": "exou",
+   "rc": 0,
+   "secs": 105,
+   "stats": {
+    "near_miss_afk_rewards": 1,
+    "marginal_afk_rewards": 3,
+    "marginal_battle_victory_confirm": 2,
+    "refused_quick_bar": 1,
+    "near_miss_vr_rank": 2,
+    "title_reread_named": 2,
+    "gacha_ticket": 1,
+    "shop_topup_card_closed": 1,
+    "island_shop_bought": 1,
+    "other_task_rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 os a",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "ticket",
+    "left": "craft row still open (for pokemon_home)"
+   },
+   "dir": "debug_runs/20260926_123009_combat_daily_exou"
+  },
   {
    "ts": "2026-09-26T12:30:07",
    "script": "weekend_bash",
@@ -7654,49 +7695,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260925_112506_mail_sprite"
-  },
-  {
-   "ts": "2026-09-25T11:25:05",
-   "script": "dailyclaim",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 25,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:79 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260925_112439_dailyclaim_sprite"
-  },
-  {
-   "ts": "2026-09-25T11:24:19",
-   "script": "sky_pillar",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 61,
-   "stats": {
-    "stages_cleared": 1,
-    "stage_lost": 1,
-    "sky_pillar_loss": 1,
-    "sweep_no_dialog": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 2,
-    "stage": 10
-   },
-   "dir": "debug_runs/20260925_112317_sky_pillar_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-26T00:00",
   "since": 28800.0,
-  "now": 45059,
+  "now": 45184,
   "segments": [
    {
     "b": 29659,
@@ -9827,8 +9831,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 45008,
+    "rc": 0,
+    "e": 45115,
+    "secs": 105,
+    "why": ""
+   },
+   {
+    "b": 45115,
+    "a": "exou",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 45115,
+    "rc": 0,
+    "e": 45123,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 45123,
+    "a": "exou",
+    "s": "paradise",
+    "login": null,
+    "handoff": 45123,
     "rc": null,
-    "e": 45059
+    "e": 45184
    }
   ],
   "idle": []
@@ -10070,13 +10096,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 16,
-    "minutes": 24.0,
+    "runs": 17,
+    "minutes": 25.8,
     "failed": 4
    },
    "victory_road": {
-    "runs": 13,
-    "minutes": 1.9,
+    "runs": 14,
+    "minutes": 2.0,
     "failed": 0
    },
    "paradise": {
@@ -10607,6 +10633,12 @@
   "held": 5
  },
  "changes": [
+  {
+   "sha": "7504270",
+   "ts": "2026-09-26T12:31:50",
+   "area": "world map",
+   "subject": "find the Trial building by its label, not a fixed point"
+  },
   {
    "sha": "38cc306",
    "ts": "2026-09-26T12:24:50",
@@ -11216,78 +11248,78 @@
   "next": [
    {
     "account": "exou",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-26T12:31"
-   },
-   {
-    "account": "exou",
-    "task": "victory_road",
-    "startsIn": 1.5,
-    "eta": "2026-09-26T12:32"
-   },
-   {
-    "account": "exou",
     "task": "paradise",
-    "startsIn": 1.6,
-    "eta": "2026-09-26T12:32"
+    "startsIn": 0.0,
+    "eta": "2026-09-26T12:33"
    },
    {
     "account": "exou",
     "task": "guild_war",
-    "startsIn": 6.2,
+    "startsIn": 4.6,
     "eta": "2026-09-26T12:37"
    },
    {
     "account": "exou",
     "task": "run_pvp_ranked",
-    "startsIn": 7.0,
+    "startsIn": 5.4,
     "eta": "2026-09-26T12:38"
    },
    {
     "account": "exou",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.4,
+    "startsIn": 6.8,
     "eta": "2026-09-26T12:39"
    },
    {
     "account": "exou",
     "task": "sky_pillar",
-    "startsIn": 8.5,
+    "startsIn": 6.9,
     "eta": "2026-09-26T12:39"
    },
    {
     "account": "exou",
     "task": "ultra_wormhole",
-    "startsIn": 9.9,
-    "eta": "2026-09-26T12:40"
+    "startsIn": 8.3,
+    "eta": "2026-09-26T12:41"
    },
    {
     "account": "exou",
     "task": "championship",
-    "startsIn": 14.3,
+    "startsIn": 12.7,
     "eta": "2026-09-26T12:45"
    },
    {
     "account": "skosmurf",
     "task": "dailyclaim",
-    "startsIn": 17.6,
-    "eta": "2026-09-26T12:48"
+    "startsIn": 16.0,
+    "eta": "2026-09-26T12:49"
    },
    {
     "account": "skosmurf",
     "task": "mail",
-    "startsIn": 18.1,
+    "startsIn": 16.5,
     "eta": "2026-09-26T12:49"
    },
    {
     "account": "skosmurf",
     "task": "daily_dungeon",
-    "startsIn": 18.2,
+    "startsIn": 16.5,
     "eta": "2026-09-26T12:49"
+   },
+   {
+    "account": "skosmurf",
+    "task": "pokemon_home",
+    "startsIn": 17.3,
+    "eta": "2026-09-26T12:50"
+   },
+   {
+    "account": "skosmurf",
+    "task": "weekend_bash",
+    "startsIn": 18.0,
+    "eta": "2026-09-26T12:51"
    }
   ],
-  "more": 66,
+  "more": 64,
   "fillers": [
    {
     "account": "smurf",
@@ -11315,7 +11347,7 @@
    }
   ],
   "held": {
-   "lucifer2": {
+   "fake6": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11327,19 +11359,7 @@
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "jeff": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "fake4": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake2": {
-    "until": "2026-09-26T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "chris": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11355,7 +11375,19 @@
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake6": {
+   "fake2": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "chris": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "lucifer2": {
+    "until": "2026-09-26T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "jeff": {
     "until": "2026-09-26T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -11384,11 +11416,6 @@
   }
  },
  "progress": {
-  "fake7": {
-   "pillar": "floor 3 stage 5",
-   "mailUnread": 0,
-   "paradiseStamina": "7/17"
-  },
   "sprite": {
    "mailUnread": 0,
    "pillar": "floor 51 stage 4",
@@ -11491,10 +11518,16 @@
   "fake6": {
    "mailUnread": 0,
    "paradiseStamina": "20/20"
+  },
+  "fake7": {
+   "mailUnread": 0,
+   "paradiseStamina": "7/17",
+   "pillar": "floor 3 stage 5"
   }
  },
  "ledger": {
   "exou": {
+   "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
@@ -11612,6 +11645,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-26T12:31:54",
+   "account": "exou",
+   "task": "combat_daily",
+   "left": "craft row still open (for pokemon_home)"
+  },
+  {
    "ts": "2026-09-26T12:13:44",
    "account": "sprite",
    "task": "combat_daily",
@@ -11720,6 +11759,15 @@
    "why": "Unlocked after clearing Victory Road Fuchsia Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "exou",
+   "task": "combat_daily",
+   "kind": "left",
+   "since": "2026-09-26T12:31:54",
+   "why": "craft row still open (for pokemon_home)",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
   },
   {
    "account": "fake1",
@@ -12892,9 +12940,9 @@
     "daily claims": 4
    },
    "progress": {
-    "pillar": "floor 3 stage 5",
     "mailUnread": 0,
-    "paradiseStamina": "7/17"
+    "paradiseStamina": "7/17",
+    "pillar": "floor 3 stage 5"
    },
    "history": [
     {
@@ -13031,21 +13079,13 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-26",
-   "summary": "4 of 15 dailies done · gave up on home",
-   "done": 4,
+   "summary": "6 of 15 dailies done · gave up on home",
+   "done": 6,
    "owed": 15,
    "open": [
     {
      "task": "home",
      "state": "gave up"
-    },
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
     },
     {
      "task": "victoryRank",
@@ -13086,11 +13126,18 @@
      "at": "12:29",
      "why": "refused combat tab, refused daily rail, wrong panel",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260926_122856_pokemon_home_exou__KEEP_0004_122910_trial_no_pet_home.png"
+    },
+    {
+     "task": "combat_daily",
+     "at": "12:31",
+     "why": "finished, but left open: craft row still open (for pokemon_home)",
+     "frame": null
     }
    ],
    "off": [],
    "unavailable": [],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 3,
     "Privilege Pack claimed": 1
@@ -13124,7 +13171,7 @@
     },
     {
      "day": "2026-09-26",
-     "done": 5,
+     "done": 7,
      "failed": 2
     }
    ]
