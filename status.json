@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T11:23:04.628107",
+ "generatedAt": "2026-09-27T11:25:08.357221",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
-  "mode": "joint_battle",
-  "since": "11:21:46"
+  "mode": "combat_daily",
+  "since": "11:24:34"
  },
  "grid": {
   "tasks": [
@@ -288,8 +288,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 145,
-  "todo": 103,
+  "done": 147,
+  "todo": 101,
   "gaveUp": 1,
   "unavailable": 8,
   "windowed": 36
@@ -721,6 +721,38 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T11:24:33",
+   "script": "pokemon_home",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 49
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_112426_pokemon_home_fake7"
+  },
+  {
+   "ts": "2026-09-27T11:24:24",
+   "script": "daily_dungeon",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 66,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "auto_formation": 1,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "rank_chest_claimed": 4,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_112317_daily_dungeon_fake7"
+  },
   {
    "ts": "2026-09-27T11:21:45",
    "script": "joint_team_daily_quest",
@@ -7760,55 +7792,12 @@
     "left": "paradise: Dex tab(s) still badged: Footprint"
    },
    "dir": "debug_runs/20260926_104220_paradise_fake2"
-  },
-  {
-   "ts": "2026-09-26T10:42:18",
-   "script": "victory_road",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_104212_victory_road_fake2"
-  },
-  {
-   "ts": "2026-09-26T10:42:10",
-   "script": "combat_daily",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 112,
-   "stats": {
-    "refused_quick_bar": 1,
-    "near_miss_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 4,
-    "marginal_battle_victory_confirm": 1,
-    "adv_energy_spent": 1,
-    "title_reread_named": 3,
-    "upgrade_blocked_by_first_topup": 1,
-    "pokemon_upgraded": 1,
-    "gacha_free": 1,
-    "island_shop_bought": 1,
-    "outstanding_reread_after_toast": 1,
-    "other_task_rows_left": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free",
-    "left": "craft row still open (for pokemon_home)"
-   },
-   "dir": "debug_runs/20260926_104017_combat_daily_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 40985,
+  "now": 41108,
   "segments": [
    {
     "b": 29029,
@@ -9522,7 +9511,38 @@
     "login": null,
     "handoff": 40908,
     "rc": null,
-    "e": 40985
+    "e": 40992
+   },
+   {
+    "b": 40992,
+    "a": "fake7",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 40997,
+    "rc": 0,
+    "e": 41064,
+    "secs": 66,
+    "why": ""
+   },
+   {
+    "b": 41064,
+    "a": "fake7",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 41065,
+    "rc": 0,
+    "e": 41074,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 41074,
+    "a": "fake7",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 41078,
+    "rc": null,
+    "e": 41108
    }
   ],
   "idle": []
@@ -9605,13 +9625,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 11,
-    "minutes": 6.3,
+    "runs": 12,
+    "minutes": 7.4,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 11,
-    "minutes": 8.9,
+    "runs": 12,
+    "minutes": 9.0,
     "failed": 0
    },
    "weekend_bash": {
@@ -10597,12 +10617,6 @@
    "ts": "2026-09-25T23:25:49",
    "area": "championship",
    "subject": "keep the ladder frame when no Automatic Challenges label is found"
-  },
-  {
-   "sha": "5c5ba57",
-   "ts": "2026-09-25T23:23:39",
-   "area": "launcher",
-   "subject": "the Pokemon Tower, the gacha and the quest panel are known non-wild screens"
   }
  ],
  "phase": {
@@ -10625,78 +10639,78 @@
   "next": [
    {
     "account": "fake7",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T11:23"
-   },
-   {
-    "account": "fake7",
-    "task": "pokemon_home",
-    "startsIn": 0.6,
-    "eta": "2026-09-27T11:23"
-   },
-   {
-    "account": "fake7",
     "task": "combat_daily",
-    "startsIn": 1.4,
-    "eta": "2026-09-27T11:24"
+    "startsIn": 0.0,
+    "eta": "2026-09-27T11:25"
    },
    {
     "account": "fake7",
     "task": "victory_road",
-    "startsIn": 3.2,
+    "startsIn": 1.8,
     "eta": "2026-09-27T11:26"
    },
    {
     "account": "fake7",
     "task": "paradise",
-    "startsIn": 3.3,
-    "eta": "2026-09-27T11:26"
+    "startsIn": 1.9,
+    "eta": "2026-09-27T11:27"
    },
    {
     "account": "fake7",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.4,
-    "eta": "2026-09-27T11:30"
+    "startsIn": 6.0,
+    "eta": "2026-09-27T11:31"
    },
    {
     "account": "fake7",
     "task": "sky_pillar",
-    "startsIn": 7.5,
-    "eta": "2026-09-27T11:30"
+    "startsIn": 6.1,
+    "eta": "2026-09-27T11:31"
    },
    {
     "account": "fake7",
     "task": "faction",
-    "startsIn": 8.7,
-    "eta": "2026-09-27T11:31"
+    "startsIn": 7.3,
+    "eta": "2026-09-27T11:32"
    },
    {
     "account": "sprite",
     "task": "dailyclaim",
-    "startsIn": 12.3,
-    "eta": "2026-09-27T11:35"
+    "startsIn": 10.9,
+    "eta": "2026-09-27T11:36"
    },
    {
     "account": "sprite",
     "task": "mail",
-    "startsIn": 12.7,
-    "eta": "2026-09-27T11:35"
+    "startsIn": 11.3,
+    "eta": "2026-09-27T11:36"
    },
    {
     "account": "sprite",
     "task": "daily_dungeon",
-    "startsIn": 12.7,
-    "eta": "2026-09-27T11:35"
+    "startsIn": 11.3,
+    "eta": "2026-09-27T11:36"
    },
    {
     "account": "sprite",
     "task": "pokemon_home",
-    "startsIn": 13.3,
-    "eta": "2026-09-27T11:36"
+    "startsIn": 11.9,
+    "eta": "2026-09-27T11:37"
+   },
+   {
+    "account": "sprite",
+    "task": "weekend_bash",
+    "startsIn": 12.7,
+    "eta": "2026-09-27T11:37"
+   },
+   {
+    "account": "sprite",
+    "task": "combat_daily",
+    "startsIn": 12.7,
+    "eta": "2026-09-27T11:37"
    }
   ],
-  "more": 91,
+  "more": 89,
   "fillers": [
    {
     "account": "smurf",
@@ -12158,18 +12172,10 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-27",
-   "summary": "4 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 4,
+   "summary": "6 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 6,
    "owed": 14,
    "open": [
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -12263,7 +12269,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 4,
+     "done": 6,
      "failed": 0
     }
    ]
