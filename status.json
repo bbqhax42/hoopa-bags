@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T12:25:06.285913",
+ "generatedAt": "2026-09-27T12:27:10.163142",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skosmurf",
-  "mode": "faction",
-  "since": "12:22:07"
+  "mode": "ultra_wormhole",
+  "since": "12:26:45"
  },
  "grid": {
   "tasks": [
@@ -375,7 +375,7 @@
      "✓",
      "✓",
      "⊘",
-     "·",
+     "✓",
      "·",
      "·",
      "-"
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 189,
-  "todo": 69,
+  "done": 190,
+  "todo": 68,
   "gaveUp": 4,
   "unavailable": 10,
   "windowed": 17
@@ -721,6 +721,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T12:26:45",
+   "script": "misty_woods",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "path_exhausted": 1,
+    "wins": 0
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_122638_misty_woods_skosmurf"
+  },
+  {
+   "ts": "2026-09-27T12:26:19",
+   "script": "faction",
+   "account": "skosmurf",
+   "rc": 1,
+   "secs": 249,
+   "stats": {
+    "auto_formation": 42,
+    "skip_retry": 38,
+    "floors_water": 20,
+    "incomplete": 1,
+    "lost_fire": 1,
+    "faction_disabled": 1,
+    "floors_fire": 1,
+    "floors_grass": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [
+    "faction: fire tower: lost the battle after 1 win(s) — the team needs adjusting"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260927_122210_faction_skosmurf"
+  },
   {
    "ts": "2026-09-27T12:22:06",
    "script": "sky_pillar",
@@ -7701,48 +7738,12 @@
     "left": "enhance any artifact once: todo"
    },
    "dir": "debug_runs/20260926_115355_joint_team_daily_quest_fake7"
-  },
-  {
-   "ts": "2026-09-26T11:53:53",
-   "script": "mail",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260926_115350_mail_fake7"
-  },
-  {
-   "ts": "2026-09-26T11:53:49",
-   "script": "dailyclaim",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 27,
-   "stats": {
-    "signed_in": 1,
-    "milestone_claimed": 2,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "claims": 4
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:78 0.275:8 0.345:54 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260926_115321_dailyclaim_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 44706,
+  "now": 44830,
   "segments": [
    {
     "b": 29029,
@@ -10059,13 +10060,44 @@
     "s": "faction",
     "login": null,
     "handoff": 44530,
+    "rc": 1,
+    "e": 44780,
+    "secs": 249,
+    "why": "faction: fire tower: lost the battle after 1 win(s) — the team needs adjusting"
+   },
+   {
+    "b": 44780,
+    "a": "skosmurf",
+    "s": "misty_woods",
+    "login": null,
+    "handoff": 44798,
+    "rc": 0,
+    "e": 44805,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 44805,
+    "a": "skosmurf",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 44808,
     "rc": null,
-    "e": 44706
+    "e": 44830
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-27T12:26:19",
+   "account": "skosmurf",
+   "task": "faction",
+   "rc": 1,
+   "secs": 249,
+   "why": "faction: fire tower: lost the battle after 1 win(s) — the team needs adjusting",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_122210_faction_skosmurf__KEEP_0224_122419_faction_lost_fire.png"
+  },
   {
    "ts": "2026-09-27T12:10:54",
    "account": "fake7",
@@ -10197,7 +10229,7 @@
   "since": "2026-09-27T08:00",
   "switches": 15,
   "relogMinutes": 7.7,
-  "retries": 14,
+  "retries": 15,
   "tasks": {
    "dailyclaim": {
     "runs": 15,
@@ -10270,13 +10302,13 @@
     "failed": 2
    },
    "faction": {
-    "runs": 9,
-    "minutes": 25.7,
-    "failed": 2
+    "runs": 10,
+    "minutes": 29.9,
+    "failed": 3
    },
    "misty_woods": {
-    "runs": 1,
-    "minutes": 4.6,
+    "runs": 2,
+    "minutes": 4.7,
     "failed": 0
    },
    "guild_war": {
@@ -11240,78 +11272,78 @@
   "next": [
    {
     "account": "skosmurf",
-    "task": "misty_woods",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T12:25"
-   },
-   {
-    "account": "skosmurf",
     "task": "ultra_wormhole",
-    "startsIn": 4.6,
-    "eta": "2026-09-27T12:29"
+    "startsIn": 0.0,
+    "eta": "2026-09-27T12:27"
    },
    {
     "account": "skosmurf",
     "task": "championship",
-    "startsIn": 9.0,
-    "eta": "2026-09-27T12:34"
+    "startsIn": 4.4,
+    "eta": "2026-09-27T12:31"
    },
    {
     "account": "lucifer2",
     "task": "dailyclaim",
-    "startsIn": 9.6,
-    "eta": "2026-09-27T12:34"
+    "startsIn": 5.0,
+    "eta": "2026-09-27T12:32"
    },
    {
     "account": "lucifer2",
     "task": "mail",
-    "startsIn": 10.0,
-    "eta": "2026-09-27T12:35"
+    "startsIn": 5.4,
+    "eta": "2026-09-27T12:32"
    },
    {
     "account": "lucifer2",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.0,
-    "eta": "2026-09-27T12:35"
+    "startsIn": 5.4,
+    "eta": "2026-09-27T12:32"
    },
    {
     "account": "lucifer2",
     "task": "joint_battle",
-    "startsIn": 11.0,
-    "eta": "2026-09-27T12:36"
+    "startsIn": 6.4,
+    "eta": "2026-09-27T12:33"
    },
    {
     "account": "lucifer2",
     "task": "daily_dungeon",
-    "startsIn": 13.0,
-    "eta": "2026-09-27T12:38"
+    "startsIn": 8.4,
+    "eta": "2026-09-27T12:35"
    },
    {
     "account": "lucifer2",
     "task": "pokemon_home",
-    "startsIn": 13.5,
-    "eta": "2026-09-27T12:38"
+    "startsIn": 8.9,
+    "eta": "2026-09-27T12:36"
    },
    {
     "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 14.2,
-    "eta": "2026-09-27T12:39"
+    "startsIn": 9.6,
+    "eta": "2026-09-27T12:36"
    },
    {
     "account": "lucifer2",
     "task": "combat_daily",
-    "startsIn": 14.3,
-    "eta": "2026-09-27T12:39"
+    "startsIn": 9.7,
+    "eta": "2026-09-27T12:36"
    },
    {
     "account": "lucifer2",
     "task": "victory_road",
-    "startsIn": 16.0,
-    "eta": "2026-09-27T12:41"
+    "startsIn": 11.4,
+    "eta": "2026-09-27T12:38"
+   },
+   {
+    "account": "lucifer2",
+    "task": "paradise",
+    "startsIn": 11.5,
+    "eta": "2026-09-27T12:38"
    }
   ],
-  "more": 45,
+  "more": 44,
   "fillers": [
    {
     "account": "smurf",
@@ -11343,7 +11375,15 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake5": {
+   "jeff": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "chris": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "lucifer1": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11351,7 +11391,19 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
+   "fake3": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
    "nova": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake6": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11363,27 +11415,7 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "chris": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "lucifer1": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake6": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "jeff": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
+   "fake5": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -11413,9 +11445,9 @@
  },
  "progress": {
   "fake7": {
-   "mailUnread": 0,
    "paradiseStamina": "1/19",
-   "pillar": "floor 4 stage 2"
+   "pillar": "floor 4 stage 2",
+   "mailUnread": 0
   },
   "sprite": {
    "mailUnread": 0,
@@ -11516,6 +11548,7 @@
  },
  "ledger": {
   "skosmurf": {
+   "faction sweeps": 2,
    "ranked attempts": 1,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -12918,9 +12951,9 @@
     "daily claims": 1
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "1/19",
-    "pillar": "floor 4 stage 2"
+    "pillar": "floor 4 stage 2",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -13121,8 +13154,8 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-27",
-   "summary": "12 of 17 dailies done · 2 switched off · 1 not available today",
-   "done": 12,
+   "summary": "13 of 17 dailies done · 2 switched off · 1 not available today",
+   "done": 13,
    "owed": 17,
    "open": [
     {
@@ -13134,10 +13167,6 @@
      "state": "not available today"
     },
     {
-     "task": "misty",
-     "state": "still to do"
-    },
-    {
      "task": "wormhole",
      "state": "still to do"
     },
@@ -13146,7 +13175,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "faction",
+     "at": "12:26",
+     "why": "faction: fire tower: lost the battle after 1 win(s) — the team needs adjusting",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_122210_faction_skosmurf__KEEP_0224_122419_faction_lost_fire.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -13166,6 +13202,7 @@
     }
    ],
    "spent": {
+    "faction sweeps": 2,
     "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -13214,8 +13251,8 @@
     },
     {
      "day": "2026-09-27",
-     "done": 13,
-     "failed": 0
+     "done": 14,
+     "failed": 1
     }
    ]
   },
