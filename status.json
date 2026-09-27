@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T20:06:52.992015",
+ "generatedAt": "2026-09-27T20:08:56.578510",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
+  "account": "fake5",
   "mode": "worldboss",
-  "since": "20:06:46"
+  "since": "20:08:35"
  },
  "grid": {
   "tasks": [
@@ -686,11 +686,43 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-27T20:06:10.184107",
+  "label": "fake5",
+  "at": "2026-09-27T20:08:53.372520",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T20:08:35",
+   "script": "worldboss",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_200740_worldboss_fake4"
+  },
+  {
+   "ts": "2026-09-27T20:07:40",
+   "script": "worldboss",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_200647_worldboss_fake3"
+  },
   {
    "ts": "2026-09-27T20:06:46",
    "script": "worldboss",
@@ -7585,42 +7617,12 @@
     "floor_backlog_claims": 9
    },
    "dir": "debug_runs/20260926_142728_sky_pillar_test1"
-  },
-  {
-   "ts": "2026-09-26T14:27:13",
-   "script": "sky_pillar",
-   "account": "fake8",
-   "rc": 1,
-   "secs": 158,
-   "stats": {
-    "floor_reward_claimed": 1,
-    "no_result": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "sky_pillar: stage 1 did not complete"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260926_142435_sky_pillar_test1"
-  },
-  {
-   "ts": "2026-09-26T14:24:34",
-   "script": "collect_hoopa_keys",
-   "account": "fake8",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_142429_collect_hoopa_keys_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 72413,
+  "now": 72536,
   "segments": [
    {
     "b": 29029,
@@ -11800,11 +11802,39 @@
     "s": "worldboss",
     "login": [
      72407,
-     null
+     72423
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72460,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 72460,
+    "a": "fake4",
+    "s": "worldboss",
+    "login": [
+     72461,
+     72478
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72515,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 72515,
+    "a": "fake5",
+    "s": "worldboss",
+    "login": [
+     72516,
+     72533
     ],
     "handoff": null,
     "rc": null,
-    "e": 72413
+    "e": 72536
    }
   ],
   "idle": [
@@ -12060,7 +12090,7 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 75,
+  "switches": 77,
   "relogMinutes": 33.2,
   "retries": 23,
   "tasks": {
@@ -12165,8 +12195,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 7,
-    "minutes": 6.7,
+    "runs": 9,
+    "minutes": 8.6,
     "failed": 0
    }
   }
@@ -12399,7 +12429,9 @@
    "nova",
    "smurf",
    "fake1",
-   "fake2"
+   "fake2",
+   "fake3",
+   "fake4"
   ]
  },
  "worldBossSkipped": {},
@@ -12911,12 +12943,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 73,
-   "medianSec": 17,
+   "n": 76,
+   "medianSec": 17.0,
    "picker": {
-    "n": 57,
-    "medianSec": 16,
-    "jumps": 39
+    "n": 60,
+    "medianSec": 16.0,
+    "jumps": 42
    },
    "typed": {
     "n": 0,
@@ -14045,7 +14077,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 14,
+     "done": 15,
      "failed": 0
     }
    ]
@@ -14129,7 +14161,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 15,
+     "done": 16,
      "failed": 0
     }
    ]
