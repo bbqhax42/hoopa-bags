@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T09:25:07.030547",
+ "generatedAt": "2026-09-27T09:27:11.247453",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "joint_team_daily_quest",
-  "since": "09:24:46"
+  "mode": "pokemon_home",
+  "since": "09:27:05"
  },
  "grid": {
   "tasks": [
@@ -111,9 +111,9 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "⊘",
+     "✓",
      "·",
      "·",
      "·",
@@ -509,10 +509,10 @@
   ]
  },
  "counts": {
-  "done": 61,
-  "todo": 194,
+  "done": 63,
+  "todo": 191,
   "gaveUp": 0,
-  "unavailable": 2,
+  "unavailable": 3,
   "windowed": 36
  },
  "disabled": [
@@ -721,6 +721,40 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T09:27:04",
+   "script": "daily_dungeon",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 62,
+   "stats": {
+    "marginal_dungeon_list": 26,
+    "auto_formation": 1,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "rank_chest_claimed": 4,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_092601_daily_dungeon_smurf"
+  },
+  {
+   "ts": "2026-09-27T09:25:38",
+   "script": "joint_team_daily_quest",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 51,
+   "stats": {
+    "marginal_joint_team": 1,
+    "panel_swipes": 15,
+    "guild_base_by_back": 1,
+    "late_claims": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_092446_joint_team_daily_quest_smurf"
+  },
   {
    "ts": "2026-09-27T09:24:45",
    "script": "mail",
@@ -7772,56 +7806,12 @@
     "left": "upgrade a pokemon"
    },
    "dir": "debug_runs/20260926_082344_combat_daily_lucifer2"
-  },
-  {
-   "ts": "2026-09-26T08:23:42",
-   "script": "combat_daily",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 119,
-   "stats": {
-    "title_reread_named": 4,
-    "near_miss_afk_rewards": 1,
-    "marginal_battle_victory_confirm": 1,
-    "refused_quick_bar": 1,
-    "near_miss_vr_rank": 3,
-    "upgrade_blocked_by_first_topup": 1,
-    "upgrade_skip_resonating": 3,
-    "upgrade_all_unlevellable": 1,
-    "gacha_ticket": 1,
-    "island_shop_bought": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 os a",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "ticket",
-    "left": "upgrade a pokemon"
-   },
-   "dir": "debug_runs/20260926_082142_combat_daily_lucifer2"
-  },
-  {
-   "ts": "2026-09-26T08:21:40",
-   "script": "weekend_bash",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "tickets": 40
-   },
-   "incomplete": [],
-   "values": {
-    "diamonds_spent": 1200,
-    "tickets": 40
-   },
-   "dir": "debug_runs/20260926_082127_weekend_bash_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 33907,
+  "now": 34031,
   "segments": [
    {
     "b": 29029,
@@ -8515,8 +8505,39 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 33886,
+    "rc": 0,
+    "e": 33939,
+    "secs": 51,
+    "why": ""
+   },
+   {
+    "b": 33939,
+    "a": "smurf",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 33941,
     "rc": null,
-    "e": 33907
+    "e": 33959
+   },
+   {
+    "b": 33959,
+    "a": "smurf",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 33961,
+    "rc": 0,
+    "e": 34025,
+    "secs": 62,
+    "why": ""
+   },
+   {
+    "b": 34025,
+    "a": "smurf",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 34026,
+    "rc": null,
+    "e": 34031
    }
   ],
   "idle": []
@@ -8549,13 +8570,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 4,
-    "minutes": 3.9,
+    "runs": 5,
+    "minutes": 4.7,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 4,
-    "minutes": 0.9,
+    "runs": 5,
+    "minutes": 1.9,
     "failed": 0
    },
    "pokemon_home": {
@@ -8627,6 +8648,12 @@
    "task": "rank_match",
    "why": "the Rank tab does nothing here — not unlocked on this account",
    "at": "2026-09-26T14:18:50"
+  },
+  {
+   "account": "smurf",
+   "task": "joint_battle",
+   "why": null,
+   "at": null
   }
  ],
  "windows": {
@@ -9647,78 +9674,78 @@
   "next": [
    {
     "account": "smurf",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T09:25"
-   },
-   {
-    "account": "smurf",
-    "task": "joint_battle",
-    "startsIn": 1.0,
-    "eta": "2026-09-27T09:26"
-   },
-   {
-    "account": "smurf",
-    "task": "daily_dungeon",
-    "startsIn": 3.0,
-    "eta": "2026-09-27T09:28"
-   },
-   {
-    "account": "smurf",
     "task": "pokemon_home",
-    "startsIn": 3.2,
-    "eta": "2026-09-27T09:28"
+    "startsIn": 0.0,
+    "eta": "2026-09-27T09:27"
    },
    {
     "account": "smurf",
     "task": "weekend_bash",
-    "startsIn": 4.7,
-    "eta": "2026-09-27T09:29"
+    "startsIn": 1.4,
+    "eta": "2026-09-27T09:28"
    },
    {
     "account": "smurf",
     "task": "combat_daily",
-    "startsIn": 4.7,
-    "eta": "2026-09-27T09:29"
+    "startsIn": 1.4,
+    "eta": "2026-09-27T09:28"
    },
    {
     "account": "smurf",
     "task": "victory_road",
-    "startsIn": 6.5,
-    "eta": "2026-09-27T09:31"
+    "startsIn": 3.3,
+    "eta": "2026-09-27T09:30"
    },
    {
     "account": "smurf",
     "task": "paradise",
-    "startsIn": 6.6,
-    "eta": "2026-09-27T09:31"
+    "startsIn": 3.4,
+    "eta": "2026-09-27T09:30"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 10.7,
-    "eta": "2026-09-27T09:35"
+    "startsIn": 7.5,
+    "eta": "2026-09-27T09:34"
    },
    {
     "account": "smurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 12.3,
-    "eta": "2026-09-27T09:37"
+    "startsIn": 9.1,
+    "eta": "2026-09-27T09:36"
    },
    {
     "account": "smurf",
     "task": "sky_pillar",
-    "startsIn": 12.3,
-    "eta": "2026-09-27T09:37"
+    "startsIn": 9.1,
+    "eta": "2026-09-27T09:36"
    },
    {
     "account": "smurf",
     "task": "faction",
-    "startsIn": 13.2,
-    "eta": "2026-09-27T09:38"
+    "startsIn": 10.0,
+    "eta": "2026-09-27T09:37"
+   },
+   {
+    "account": "smurf",
+    "task": "misty_woods",
+    "startsIn": 15.2,
+    "eta": "2026-09-27T09:42"
+   },
+   {
+    "account": "smurf",
+    "task": "ultra_wormhole",
+    "startsIn": 17.2,
+    "eta": "2026-09-27T09:44"
+   },
+   {
+    "account": "smurf",
+    "task": "championship",
+    "startsIn": 21.9,
+    "eta": "2026-09-27T09:49"
    }
   ],
-  "more": 182,
+  "more": 179,
   "fillers": [
    {
     "account": "smurf",
@@ -10376,21 +10403,13 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-27",
-   "summary": "2 of 19 dailies done · 2 switched off",
-   "done": 2,
+   "summary": "4 of 19 dailies done · 2 switched off · 1 not available today",
+   "done": 4,
    "owed": 19,
    "open": [
     {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
      "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "home",
@@ -10462,7 +10481,12 @@
      "since": "2026-09-20T00:23:12"
     }
    ],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "joint_battle",
+     "why": null
+    }
+   ],
    "spent": {
     "mail claimed": 1,
     "daily claims": 2
@@ -10506,7 +10530,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 3,
+     "done": 5,
      "failed": 0
     }
    ]
