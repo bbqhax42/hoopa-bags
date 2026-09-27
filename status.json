@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T21:12:43.365220",
+ "generatedAt": "2026-09-27T21:14:46.684056",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
+  "account": "fake4",
   "mode": "story",
-  "since": "21:11:16"
+  "since": "21:13:11"
  },
  "grid": {
   "tasks": [
@@ -535,6 +535,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "fake2",
+   "task": "story",
+   "since": "2026-09-27T21:13:11",
+   "why": "Unlocked after clearing Victory Road Cianviood Gym — clear that by hand, then re-enable"
+  },
+  {
    "account": "fake3",
    "task": "hoopa",
    "since": "2026-09-27T04:05:24",
@@ -704,11 +710,45 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-27T21:07:11.698812",
+  "label": "fake4",
+  "at": "2026-09-27T21:13:29.337537",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T21:13:11",
+   "script": "story",
+   "account": "fake2",
+   "rc": 2,
+   "secs": 23,
+   "stats": {
+    "skip_retry": 4,
+    "stage_never_started": 1,
+    "stage_start_retry": 1,
+    "story_locked": 1,
+    "stages_cleared": 3
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260927_211248_story_fake2"
+  },
+  {
+   "ts": "2026-09-27T21:12:47",
+   "script": "story",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 89,
+   "stats": {
+    "skip_retry": 12,
+    "afk_card": 3,
+    "stages_cleared": 12
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260927_211117_story_fake2"
+  },
   {
    "ts": "2026-09-27T21:11:16",
    "script": "story",
@@ -7552,44 +7592,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260926_151513_rift_skosmurf"
-  },
-  {
-   "ts": "2026-09-26T15:14:43",
-   "script": "championship",
-   "account": "chris",
-   "rc": 2,
-   "secs": 4,
-   "stats": {
-    "no_icon": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_151439_championship_chris"
-  },
-  {
-   "ts": "2026-09-26T15:14:35",
-   "script": "guild_war",
-   "account": "chris",
-   "rc": 0,
-   "secs": 46,
-   "stats": {
-    "near_miss_battle_over": 1,
-    "near_miss_vr_rank": 3,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1,
-    "assist_already_set": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_151349_guild_war_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 76363,
+  "now": 76487,
   "segments": [
    {
     "b": 29029,
@@ -12274,9 +12282,32 @@
     "login": null,
     "handoff": 76277,
     "rc": 0,
-    "e": 76363,
+    "e": 76367,
     "secs": 76,
     "why": ""
+   },
+   {
+    "b": 76367,
+    "a": "fake2",
+    "s": "story",
+    "login": null,
+    "handoff": 76367,
+    "rc": 0,
+    "e": 76391,
+    "secs": 89,
+    "why": ""
+   },
+   {
+    "b": 76391,
+    "a": "fake4",
+    "s": "story",
+    "login": [
+     76392,
+     76409
+    ],
+    "handoff": 76416,
+    "rc": null,
+    "e": 76487
    }
   ],
   "idle": [
@@ -12360,7 +12391,9 @@
    76014,
    76122,
    76199,
-   76276
+   76276,
+   76367,
+   76391
   ]
  },
  "failures": [
@@ -12574,8 +12607,8 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 94,
-  "relogMinutes": 46.7,
+  "switches": 95,
+  "relogMinutes": 47.1,
   "retries": 25,
   "tasks": {
    "dailyclaim": {
@@ -12674,8 +12707,8 @@
     "failed": 0
    },
    "story": {
-    "runs": 31,
-    "minutes": 49.3,
+    "runs": 33,
+    "minutes": 51.2,
     "failed": 3
    },
    "worldboss": {
@@ -12697,6 +12730,12 @@
    "task": "faction",
    "why": null,
    "at": null
+  },
+  {
+   "account": "fake2",
+   "task": "story",
+   "why": "stage 4: the map is back and no battle started",
+   "at": "2026-09-27T21:13:11"
   },
   {
    "account": "fake3",
@@ -13416,10 +13455,6 @@
     "mode": "story"
    },
    {
-    "account": "fake2",
-    "mode": "story"
-   },
-   {
     "account": "fake4",
     "mode": "story"
    },
@@ -13434,6 +13469,10 @@
    {
     "account": "lucifer1",
     "mode": "hoopa"
+   },
+   {
+    "account": "lucifer2",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -13443,12 +13482,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 93,
-   "medianSec": 17,
+   "n": 94,
+   "medianSec": 17.0,
    "picker": {
-    "n": 72,
-    "medianSec": 16.0,
-    "jumps": 51
+    "n": 73,
+    "medianSec": 16,
+    "jumps": 52
    },
    "typed": {
     "n": 0,
@@ -13568,7 +13607,7 @@
  },
  "ledger": {
   "fake2": {
-   "pillar/story stages cleared": 49,
+   "pillar/story stages cleared": 64,
    "guild war attempts": 1,
    "faction sweeps": 2,
    "Island Shop buys (200 coins)": 1,
@@ -13781,6 +13820,15 @@
   }
  ],
  "needsYou": [
+  {
+   "account": "fake2",
+   "task": "story",
+   "kind": "gym",
+   "since": "2026-09-27T21:13:11",
+   "why": "Unlocked after clearing Victory Road Cianviood Gym — clear that by hand, then re-enable",
+   "action": "clear that gym by hand, then switch story back on",
+   "enable": true
+  },
   {
    "account": "fake3",
    "task": "story",
@@ -14450,7 +14498,7 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-27",
-   "summary": "13 of 14 dailies done · 1 switched off · 1 not available today",
+   "summary": "13 of 14 dailies done · 2 switched off · 2 not available today",
    "done": 13,
    "owed": 14,
    "open": [
@@ -14472,16 +14520,25 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-27T07:06:21"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Road Cianviood Gym — clear that by hand, then re-enable",
+     "since": "2026-09-27T21:13:11"
     }
    ],
    "unavailable": [
     {
      "task": "faction",
      "why": null
+    },
+    {
+     "task": "story",
+     "why": "stage 4: the map is back and no battle started"
     }
    ],
    "spent": {
-    "pillar/story stages cleared": 49,
+    "pillar/story stages cleared": 64,
     "guild war attempts": 1,
     "faction sweeps": 2,
     "Island Shop buys (200 coins)": 1,
@@ -14526,7 +14583,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 18,
+     "done": 19,
      "failed": 1
     }
    ]
