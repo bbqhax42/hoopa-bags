@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T12:12:41.444048",
+ "generatedAt": "2026-09-27T12:14:46.686842",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skosmurf",
-  "mode": "pokemon_home",
-  "since": "12:12:07"
+  "mode": "combat_daily",
+  "since": "12:14:13"
  },
  "grid": {
   "tasks": [
@@ -364,8 +364,8 @@
      "-",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 180,
-  "todo": 79,
+  "done": 182,
+  "todo": 77,
   "gaveUp": 4,
   "unavailable": 9,
   "windowed": 17
@@ -721,6 +721,35 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T12:14:12",
+   "script": "weekend_bash",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_121412_weekend_bash_skosmurf"
+  },
+  {
+   "ts": "2026-09-27T12:14:07",
+   "script": "pokemon_home",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 118,
+   "stats": {
+    "marginal_daily_dungeon": 1,
+    "reached_via_trial": 1,
+    "merge_refused": 2,
+    "merge_no_progress": 1,
+    "grid_refit": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_121208_pokemon_home_skosmurf"
+  },
   {
    "ts": "2026-09-27T12:12:06",
    "script": "daily_dungeon",
@@ -7703,44 +7732,12 @@
     "left": "guild donations (gold)"
    },
    "dir": "debug_runs/20260926_114408_combat_daily_fake6"
-  },
-  {
-   "ts": "2026-09-26T11:44:02",
-   "script": "pokemon_home",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "reached_via_trial": 1,
-    "phantom_creations": 0,
-    "charges_spent": 46
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_114354_pokemon_home_fake6"
-  },
-  {
-   "ts": "2026-09-26T11:43:52",
-   "script": "daily_dungeon",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 60,
-   "stats": {
-    "marginal_dungeon_list": 22,
-    "rank_chest_claimed": 4,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_114252_daily_dungeon_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 43961,
+  "now": 44087,
   "segments": [
    {
     "b": 29029,
@@ -9958,8 +9955,30 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 43927,
+    "rc": 0,
+    "e": 44047,
+    "secs": 118,
+    "why": ""
+   },
+   {
+    "b": 44047,
+    "a": "skosmurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 44052,
+    "rc": 0,
+    "e": 44053,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 44053,
+    "a": "skosmurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 44053,
     "rc": null,
-    "e": 43961
+    "e": 44087
    }
   ],
   "idle": []
@@ -10119,12 +10138,12 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 14,
-    "minutes": 9.2,
+    "runs": 15,
+    "minutes": 11.2,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 8,
+    "runs": 9,
     "minutes": 0.5,
     "failed": 2
    },
@@ -11133,78 +11152,78 @@
   "next": [
    {
     "account": "skosmurf",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T12:12"
-   },
-   {
-    "account": "skosmurf",
-    "task": "weekend_bash",
-    "startsIn": 0.7,
-    "eta": "2026-09-27T12:13"
-   },
-   {
-    "account": "skosmurf",
     "task": "combat_daily",
-    "startsIn": 0.7,
-    "eta": "2026-09-27T12:13"
+    "startsIn": 0.0,
+    "eta": "2026-09-27T12:14"
    },
    {
     "account": "skosmurf",
     "task": "victory_road",
-    "startsIn": 2.4,
-    "eta": "2026-09-27T12:15"
+    "startsIn": 1.7,
+    "eta": "2026-09-27T12:16"
    },
    {
     "account": "skosmurf",
     "task": "paradise",
-    "startsIn": 2.5,
-    "eta": "2026-09-27T12:15"
+    "startsIn": 1.8,
+    "eta": "2026-09-27T12:16"
    },
    {
     "account": "skosmurf",
     "task": "guild_war",
-    "startsIn": 6.7,
-    "eta": "2026-09-27T12:19"
+    "startsIn": 6.0,
+    "eta": "2026-09-27T12:20"
    },
    {
     "account": "skosmurf",
     "task": "run_pvp_ranked",
-    "startsIn": 7.2,
-    "eta": "2026-09-27T12:19"
+    "startsIn": 6.4,
+    "eta": "2026-09-27T12:21"
    },
    {
     "account": "skosmurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.7,
-    "eta": "2026-09-27T12:21"
-   },
-   {
-    "account": "skosmurf",
-    "task": "sky_pillar",
-    "startsIn": 8.7,
-    "eta": "2026-09-27T12:21"
-   },
-   {
-    "account": "skosmurf",
-    "task": "faction",
-    "startsIn": 10.1,
+    "startsIn": 7.9,
     "eta": "2026-09-27T12:22"
    },
    {
     "account": "skosmurf",
+    "task": "sky_pillar",
+    "startsIn": 8.0,
+    "eta": "2026-09-27T12:22"
+   },
+   {
+    "account": "skosmurf",
+    "task": "faction",
+    "startsIn": 9.4,
+    "eta": "2026-09-27T12:24"
+   },
+   {
+    "account": "skosmurf",
     "task": "misty_woods",
-    "startsIn": 12.9,
-    "eta": "2026-09-27T12:25"
+    "startsIn": 12.2,
+    "eta": "2026-09-27T12:27"
    },
    {
     "account": "skosmurf",
     "task": "ultra_wormhole",
-    "startsIn": 17.5,
-    "eta": "2026-09-27T12:30"
+    "startsIn": 16.8,
+    "eta": "2026-09-27T12:31"
+   },
+   {
+    "account": "skosmurf",
+    "task": "championship",
+    "startsIn": 21.2,
+    "eta": "2026-09-27T12:36"
+   },
+   {
+    "account": "lucifer2",
+    "task": "dailyclaim",
+    "startsIn": 21.8,
+    "eta": "2026-09-27T12:36"
    }
   ],
-  "more": 55,
+  "more": 53,
   "fillers": [
    {
     "account": "smurf",
@@ -11232,6 +11251,22 @@
    }
   ],
   "held": {
+   "jeff": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake2": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "nova": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake3": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
    "fake1": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
@@ -11240,7 +11275,11 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "smurf": {
+   "sprite": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake5": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11248,11 +11287,7 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "nova": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake2": {
+   "smurf": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11260,23 +11295,7 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "sprite": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "lucifer1": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "jeff": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake5": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -11409,6 +11428,7 @@
  },
  "ledger": {
   "skosmurf": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 2,
    "Privilege Pack claimed": 1
@@ -13010,18 +13030,10 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-27",
-   "summary": "3 of 17 dailies done · 2 switched off",
-   "done": 3,
+   "summary": "5 of 17 dailies done · 2 switched off",
+   "done": 5,
    "owed": 17,
    "open": [
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -13086,6 +13098,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 2,
     "Privilege Pack claimed": 1
@@ -13130,7 +13143,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 4,
+     "done": 6,
      "failed": 0
     }
    ]
