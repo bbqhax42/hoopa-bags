@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T13:06:23.738738",
+ "generatedAt": "2026-09-27T13:08:27.274829",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "pokemon_home",
-  "since": "13:05:33"
+  "mode": "combat_daily",
+  "since": "13:07:25"
  },
  "grid": {
   "tasks": [
@@ -464,8 +464,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 222,
-  "todo": 36,
+  "done": 224,
+  "todo": 34,
   "gaveUp": 6,
   "unavailable": 11,
   "windowed": 17
@@ -721,6 +721,34 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T13:07:25",
+   "script": "weekend_bash",
+   "account": "deno",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_130725_weekend_bash_deno"
+  },
+  {
+   "ts": "2026-09-27T13:07:19",
+   "script": "pokemon_home",
+   "account": "deno",
+   "rc": 0,
+   "secs": 105,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "balls_unsettled_opened": 1,
+    "ball_tiles_not_merged": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_130534_pokemon_home_deno"
+  },
   {
    "ts": "2026-09-27T13:05:32",
    "script": "daily_dungeon",
@@ -7673,51 +7701,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260926_123859_collect_hoopa_keys_exou"
-  },
-  {
-   "ts": "2026-09-26T12:38:57",
-   "script": "run_pvp_ranked",
-   "account": "exou",
-   "rc": 0,
-   "secs": 91,
-   "stats": {
-    "ranked_fought": 10,
-    "ranked_lost": 3,
-    "ranked_won": 7,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0,
-    "daily_goal_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "ranked_wins": 7,
-    "rank": 4,
-    "daily_goal_claims": 2
-   },
-   "dir": "debug_runs/20260926_123726_run_pvp_ranked_exou"
-  },
-  {
-   "ts": "2026-09-26T12:37:22",
-   "script": "guild_war",
-   "account": "exou",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "marginal_battle_over": 3,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_123629_guild_war_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 47184,
+  "now": 47307,
   "segments": [
    {
     "b": 29029,
@@ -10466,8 +10455,30 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 47133,
+    "rc": 0,
+    "e": 47240,
+    "secs": 105,
+    "why": ""
+   },
+   {
+    "b": 47240,
+    "a": "deno",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 47244,
+    "rc": 0,
+    "e": 47245,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 47245,
+    "a": "deno",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 47246,
     "rc": null,
-    "e": 47184
+    "e": 47307
    }
   ],
   "idle": []
@@ -10672,12 +10683,12 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 17,
-    "minutes": 12.7,
+    "runs": 18,
+    "minutes": 14.5,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 10,
+    "runs": 11,
     "minutes": 0.5,
     "failed": 2
    },
@@ -11698,78 +11709,78 @@
   "next": [
    {
     "account": "deno",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T13:06"
-   },
-   {
-    "account": "deno",
-    "task": "weekend_bash",
-    "startsIn": 0.7,
-    "eta": "2026-09-27T13:07"
-   },
-   {
-    "account": "deno",
     "task": "combat_daily",
-    "startsIn": 0.8,
-    "eta": "2026-09-27T13:07"
-   },
-   {
-    "account": "deno",
-    "task": "victory_road",
-    "startsIn": 2.5,
+    "startsIn": 0.0,
     "eta": "2026-09-27T13:08"
    },
    {
     "account": "deno",
+    "task": "victory_road",
+    "startsIn": 1.7,
+    "eta": "2026-09-27T13:10"
+   },
+   {
+    "account": "deno",
     "task": "paradise",
-    "startsIn": 2.6,
-    "eta": "2026-09-27T13:09"
+    "startsIn": 1.8,
+    "eta": "2026-09-27T13:10"
    },
    {
     "account": "deno",
     "task": "guild_war",
-    "startsIn": 6.6,
-    "eta": "2026-09-27T13:13"
+    "startsIn": 5.8,
+    "eta": "2026-09-27T13:14"
    },
    {
     "account": "deno",
     "task": "run_pvp_ranked",
-    "startsIn": 7.2,
-    "eta": "2026-09-27T13:13"
+    "startsIn": 6.4,
+    "eta": "2026-09-27T13:14"
    },
    {
     "account": "deno",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.7,
-    "eta": "2026-09-27T13:15"
+    "startsIn": 7.9,
+    "eta": "2026-09-27T13:16"
    },
    {
     "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 8.7,
-    "eta": "2026-09-27T13:15"
+    "startsIn": 7.9,
+    "eta": "2026-09-27T13:16"
    },
    {
     "account": "deno",
     "task": "ultra_wormhole",
-    "startsIn": 10.1,
-    "eta": "2026-09-27T13:16"
+    "startsIn": 9.3,
+    "eta": "2026-09-27T13:17"
    },
    {
     "account": "dre",
     "task": "dailyclaim",
-    "startsIn": 14.9,
-    "eta": "2026-09-27T13:21"
+    "startsIn": 14.1,
+    "eta": "2026-09-27T13:22"
    },
    {
     "account": "dre",
     "task": "mail",
-    "startsIn": 15.2,
-    "eta": "2026-09-27T13:21"
+    "startsIn": 14.5,
+    "eta": "2026-09-27T13:22"
+   },
+   {
+    "account": "dre",
+    "task": "joint_team_daily_quest",
+    "startsIn": 14.5,
+    "eta": "2026-09-27T13:22"
+   },
+   {
+    "account": "dre",
+    "task": "joint_battle",
+    "startsIn": 15.4,
+    "eta": "2026-09-27T13:23"
    }
   ],
-  "more": 12,
+  "more": 10,
   "fillers": [
    {
     "account": "smurf",
@@ -11797,39 +11808,7 @@
    }
   ],
   "held": {
-   "fake4": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "chris": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "sprite": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake6": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "fake5": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "lucifer1": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "smurf": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake1": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11837,7 +11816,39 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
+   "fake3": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "smurf": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake1": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "lucifer1": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake6": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
    "jeff": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "chris": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -11871,10 +11882,10 @@
  },
  "progress": {
   "exou": {
-   "rank": 4,
    "pillar": "floor 141 stage 1",
    "mailUnread": 0,
-   "paradiseStamina": "20/20"
+   "paradiseStamina": "20/20",
+   "rank": 4
   },
   "skosmurf": {
    "mailUnread": 0,
@@ -11979,6 +11990,7 @@
  },
  "ledger": {
   "deno": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 3,
    "Privilege Pack claimed": 1
@@ -13567,10 +13579,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 4,
     "pillar": "floor 141 stage 1",
     "mailUnread": 0,
-    "paradiseStamina": "20/20"
+    "paradiseStamina": "20/20",
+    "rank": 4
    },
    "history": [
     {
@@ -13969,18 +13981,10 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-27",
-   "summary": "5 of 16 dailies done",
-   "done": 5,
+   "summary": "7 of 16 dailies done",
+   "done": 7,
    "owed": 16,
    "open": [
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -14022,6 +14026,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 3,
     "Privilege Pack claimed": 1
@@ -14065,7 +14070,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 5,
+     "done": 7,
      "failed": 0
     }
    ]
