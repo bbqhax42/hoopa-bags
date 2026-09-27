@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T02:03:30.847784",
+ "generatedAt": "2026-09-28T02:05:34.399016",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "fake2",
   "mode": "worldboss",
-  "since": "02:02:36"
+  "since": "02:05:22"
  },
  "grid": {
   "tasks": [
@@ -722,11 +722,59 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-28T02:02:52.480037",
+  "label": "fake1",
+  "at": "2026-09-28T02:04:46.421479",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T02:05:22",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 52,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_020429_worldboss_fake1"
+  },
+  {
+   "ts": "2026-09-28T02:04:29",
+   "script": "worldboss",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_020335_worldboss_smurf"
+  },
+  {
+   "ts": "2026-09-28T02:03:34",
+   "script": "worldboss",
+   "account": "nova",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_020236_worldboss_nova"
+  },
   {
    "ts": "2026-09-28T02:02:36",
    "script": "worldboss",
@@ -7588,54 +7636,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-26T23:00:23",
-   "script": "hoopa",
-   "account": "nova",
-   "rc": 2,
-   "secs": 9,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-26T22:45:41",
-   "script": "hoopa",
-   "account": "fake1",
-   "rc": 2,
-   "secs": 231,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-26T22:20:53",
-   "script": "hoopa",
-   "account": "fake6",
-   "rc": 2,
-   "secs": 41,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 93811,
+  "now": 93934,
   "segments": [
    {
     "b": 29029,
@@ -14074,8 +14080,50 @@
      93772
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 93814,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 93814,
+    "a": "smurf",
+    "s": "worldboss",
+    "login": [
+     93815,
+     93831
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 93869,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 93869,
+    "a": "fake1",
+    "s": "worldboss",
+    "login": [
+     93870,
+     93886
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 93922,
+    "secs": 52,
+    "why": ""
+   },
+   {
+    "b": 93922,
+    "a": "fake2",
+    "s": "worldboss",
+    "login": [
+     93922,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 93811
+    "e": 93934
    }
   ],
   "idle": [
@@ -14549,7 +14597,7 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 128,
+  "switches": 131,
   "relogMinutes": 60.5,
   "retries": 25,
   "tasks": {
@@ -14654,8 +14702,8 @@
     "failed": 3
    },
    "worldboss": {
-    "runs": 22,
-    "minutes": 21.4,
+    "runs": 25,
+    "minutes": 24.1,
     "failed": 0
    }
   }
@@ -14932,7 +14980,10 @@
   "2026-09-28_02:00": [
    "lucifer1",
    "chris",
-   "jeff"
+   "jeff",
+   "nova",
+   "smurf",
+   "fake1"
   ]
  },
  "worldBossSkipped": {},
@@ -15259,12 +15310,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 128,
-   "medianSec": 17.0,
+   "n": 130,
+   "medianSec": 16.5,
    "picker": {
-    "n": 103,
+    "n": 105,
     "medianSec": 16,
-    "jumps": 72
+    "jumps": 74
    },
    "typed": {
     "n": 0,
@@ -15663,6 +15714,11 @@
      "day": "2026-09-27",
      "done": 17,
      "failed": 0
+    },
+    {
+     "day": "2026-09-28",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -15916,6 +15972,11 @@
      "day": "2026-09-27",
      "done": 18,
      "failed": 3
+    },
+    {
+     "day": "2026-09-28",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -16000,7 +16061,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 3,
+     "done": 4,
      "failed": 0
     }
    ]
