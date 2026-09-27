@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T20:15:06.754487",
+ "generatedAt": "2026-09-27T20:17:09.952243",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
+  "account": "deno",
   "mode": "worldboss",
-  "since": "20:14:29"
+  "since": "20:16:41"
  },
  "grid": {
   "tasks": [
@@ -625,6 +625,13 @@
    "held": true,
    "heldUntil": "2026-09-27T20:24:29",
    "deferredUntil": "2026-09-27T20:24:41"
+  },
+  {
+   "account": "lucifer2",
+   "since": "2026-09-27T20:15:38",
+   "held": true,
+   "heldUntil": "2026-09-27T20:25:38",
+   "deferredUntil": "2026-09-27T20:25:50"
   }
  ],
  "keys": {
@@ -694,11 +701,45 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-09-27T20:14:48.614677",
+  "label": "deno",
+  "at": "2026-09-27T20:17:01.289925",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T20:16:41",
+   "script": "worldboss",
+   "account": "fake8",
+   "rc": 0,
+   "secs": 57,
+   "stats": {
+    "wb_skip_again": 1,
+    "marginal_home_guild_label": 3,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_201544_worldboss_fake8"
+  },
+  {
+   "ts": "2026-09-27T20:15:44",
+   "script": "worldboss",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 74,
+   "stats": {
+    "owner_online": 3
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_201429_worldboss_lucifer2"
+  },
   {
    "ts": "2026-09-27T20:14:29",
    "script": "worldboss",
@@ -7593,43 +7634,12 @@
     "gacha_one_cost": "free"
    },
    "dir": "debug_runs/20260926_143434_combat_daily_deno"
-  },
-  {
-   "ts": "2026-09-26T14:34:33",
-   "script": "weekend_bash",
-   "account": "deno",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "tickets": 40
-   },
-   "incomplete": [],
-   "values": {
-    "diamonds_spent": 1200,
-    "tickets": 40
-   },
-   "dir": "debug_runs/20260926_143420_weekend_bash_deno"
-  },
-  {
-   "ts": "2026-09-26T14:34:15",
-   "script": "pokemon_home",
-   "account": "deno",
-   "rc": 0,
-   "secs": 90,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_143244_pokemon_home_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 72907,
+  "now": 73030,
   "segments": [
    {
     "b": 29029,
@@ -11924,8 +11934,36 @@
      72888
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 72944,
+    "secs": 74,
+    "why": ""
+   },
+   {
+    "b": 72944,
+    "a": "fake8",
+    "s": "worldboss",
+    "login": [
+     72944,
+     72961
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 73001,
+    "secs": 57,
+    "why": ""
+   },
+   {
+    "b": 73001,
+    "a": "deno",
+    "s": "worldboss",
+    "login": [
+     73002,
+     73021
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 72907
+    "e": 73030
    }
   ],
   "idle": [
@@ -12181,7 +12219,7 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 83,
+  "switches": 85,
   "relogMinutes": 33.2,
   "retries": 23,
   "tasks": {
@@ -12286,8 +12324,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 15,
-    "minutes": 14.4,
+    "runs": 17,
+    "minutes": 16.6,
     "failed": 0
    }
   }
@@ -12528,7 +12566,9 @@
    "sprite",
    "exou",
    "skosmurf",
-   "lucifer1"
+   "lucifer1",
+   "lucifer2",
+   "fake8"
   ]
  },
  "worldBossSkipped": {},
@@ -12980,12 +13020,6 @@
    "ts": "2026-09-26T08:18:10",
    "area": "dailyclaim",
    "subject": "the check-in title template is the words only (mascot-proof)"
-  },
-  {
-   "sha": "e616ac4",
-   "ts": "2026-09-26T08:15:07",
-   "area": "daytime",
-   "subject": "a filler slot ends by the 08:00 daily reset"
   }
  ],
  "phase": {
@@ -13040,20 +13074,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 82,
+   "n": 84,
    "medianSec": 17.0,
    "picker": {
-    "n": 63,
-    "medianSec": 16,
-    "jumps": 44
+    "n": 64,
+    "medianSec": 16.0,
+    "jumps": 45
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 19,
-    "medianSec": 19
+    "n": 20,
+    "medianSec": 19.0
    }
   }
  },
@@ -13402,6 +13436,15 @@
    "since": "2026-09-27T20:14:29",
    "why": "someone is playing on it",
    "action": "left alone until 20:24",
+   "enable": false
+  },
+  {
+   "account": "lucifer2",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-27T20:15:38",
+   "why": "someone is playing on it",
+   "action": "left alone until 20:25",
    "enable": false
   },
   {
@@ -14937,7 +14980,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 17,
+     "done": 18,
      "failed": 0
     }
    ]
@@ -15032,7 +15075,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 12,
+     "done": 13,
      "failed": 2
     }
    ]
