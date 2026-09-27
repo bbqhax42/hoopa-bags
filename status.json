@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T11:25:08.357221",
+ "generatedAt": "2026-09-27T11:27:13.660703",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake7",
-  "mode": "combat_daily",
-  "since": "11:24:34"
+  "mode": "victory_road",
+  "since": "11:27:09"
  },
  "grid": {
   "tasks": [
@@ -291,7 +291,7 @@
      "✓",
      "✓",
      "-",
-     "·",
+     "✓",
      "·",
      "⊘",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 147,
-  "todo": 101,
+  "done": 148,
+  "todo": 100,
   "gaveUp": 1,
   "unavailable": 8,
   "windowed": 36
@@ -721,6 +721,48 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T11:27:08",
+   "script": "combat_daily",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 49,
+   "stats": {
+    "marginal_battle_victory_confirm": 2,
+    "near_miss_vr_rank": 3,
+    "title_reread_named": 2,
+    "other_task_rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "left": "dungeon row still open (for daily_dungeon)"
+   },
+   "dir": "debug_runs/20260927_112618_combat_daily_fake7"
+  },
+  {
+   "ts": "2026-09-27T11:26:17",
+   "script": "combat_daily",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 98,
+   "stats": {
+    "title_reread_named": 4,
+    "marginal_afk_rewards": 3,
+    "near_miss_go_button": 2,
+    "near_miss_vr_rank": 3,
+    "arena_slot_unavailable": 1,
+    "outstanding_reread_after_toast": 1,
+    "other_task_rows_left": 1,
+    "left_outstanding": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 os a",
+    "quick_combat_cost": "free free",
+    "left": "arena challenges; dungeon row still open (for daily_dungeon)"
+   },
+   "dir": "debug_runs/20260927_112439_combat_daily_fake7"
+  },
   {
    "ts": "2026-09-27T11:24:33",
    "script": "pokemon_home",
@@ -7751,53 +7793,12 @@
     "floor_backlog_claims": 9
    },
    "dir": "debug_runs/20260926_104705_sky_pillar_fake2"
-  },
-  {
-   "ts": "2026-09-26T10:47:04",
-   "script": "collect_hoopa_keys",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_104659_collect_hoopa_keys_fake2"
-  },
-  {
-   "ts": "2026-09-26T10:46:57",
-   "script": "paradise",
-   "account": "fake2",
-   "rc": 1,
-   "secs": 276,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 146,
-    "pass_claims": 6,
-    "gear_maxed": 1,
-    "gear_energy_unreadable": 5,
-    "upgraded_sports_gloves": 3,
-    "upgraded_small_radar": 2,
-    "dex_milestones": 4,
-    "incomplete": 1,
-    "dex_activated": 6,
-    "shop_saved": 1
-   },
-   "incomplete": [
-    "paradise: Dex tab(s) still badged: Footprint"
-   ],
-   "values": {
-    "stamina": "20/20",
-    "left": "paradise: Dex tab(s) still badged: Footprint"
-   },
-   "dir": "debug_runs/20260926_104220_paradise_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 41108,
+  "now": 41234,
   "segments": [
    {
     "b": 29029,
@@ -9541,13 +9542,44 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 41078,
+    "rc": 1,
+    "e": 41178,
+    "secs": 98,
+    "why": ""
+   },
+   {
+    "b": 41178,
+    "a": "fake7",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 41178,
+    "rc": 1,
+    "e": 41229,
+    "secs": 98,
+    "why": ""
+   },
+   {
+    "b": 41229,
+    "a": "fake7",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 41229,
     "rc": null,
-    "e": 41108
+    "e": 41234
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-27T11:26:17",
+   "account": "fake7",
+   "task": "combat_daily",
+   "rc": 1,
+   "secs": 98,
+   "why": "left: arena challenges; dungeon row still open (for daily_dungeon)",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_112439_combat_daily_fake7__KEEP_0064_112530_arena_slot_unavailable.png"
+  },
   {
    "ts": "2026-09-27T11:04:50",
    "account": "fake5",
@@ -9607,7 +9639,7 @@
   "since": "2026-09-27T08:00",
   "switches": 11,
   "relogMinutes": 5.8,
-  "retries": 6,
+  "retries": 7,
   "tasks": {
    "dailyclaim": {
     "runs": 12,
@@ -9640,9 +9672,9 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 11,
-    "minutes": 20.1,
-    "failed": 0
+    "runs": 13,
+    "minutes": 22.5,
+    "failed": 1
    },
    "victory_road": {
     "runs": 11,
@@ -10611,12 +10643,6 @@
    "ts": "2026-09-26T03:37:49",
    "area": "publish_status",
    "subject": "the night's own handouts -- 'now', the phase and a full-day timeline"
-  },
-  {
-   "sha": "24e4ac7",
-   "ts": "2026-09-25T23:25:49",
-   "area": "championship",
-   "subject": "keep the ladder frame when no Automatic Challenges label is found"
   }
  ],
  "phase": {
@@ -10639,78 +10665,78 @@
   "next": [
    {
     "account": "fake7",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T11:25"
-   },
-   {
-    "account": "fake7",
     "task": "victory_road",
-    "startsIn": 1.8,
-    "eta": "2026-09-27T11:26"
+    "startsIn": 0.0,
+    "eta": "2026-09-27T11:27"
    },
    {
     "account": "fake7",
     "task": "paradise",
-    "startsIn": 1.9,
+    "startsIn": 0.1,
     "eta": "2026-09-27T11:27"
    },
    {
     "account": "fake7",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.0,
+    "startsIn": 4.2,
     "eta": "2026-09-27T11:31"
    },
    {
     "account": "fake7",
     "task": "sky_pillar",
-    "startsIn": 6.1,
+    "startsIn": 4.3,
     "eta": "2026-09-27T11:31"
    },
    {
     "account": "fake7",
     "task": "faction",
-    "startsIn": 7.3,
+    "startsIn": 5.5,
     "eta": "2026-09-27T11:32"
    },
    {
     "account": "sprite",
     "task": "dailyclaim",
-    "startsIn": 10.9,
+    "startsIn": 9.1,
     "eta": "2026-09-27T11:36"
    },
    {
     "account": "sprite",
     "task": "mail",
-    "startsIn": 11.3,
+    "startsIn": 9.4,
     "eta": "2026-09-27T11:36"
    },
    {
     "account": "sprite",
     "task": "daily_dungeon",
-    "startsIn": 11.3,
+    "startsIn": 9.5,
     "eta": "2026-09-27T11:36"
    },
    {
     "account": "sprite",
     "task": "pokemon_home",
-    "startsIn": 11.9,
+    "startsIn": 10.1,
     "eta": "2026-09-27T11:37"
    },
    {
     "account": "sprite",
     "task": "weekend_bash",
-    "startsIn": 12.7,
-    "eta": "2026-09-27T11:37"
+    "startsIn": 10.9,
+    "eta": "2026-09-27T11:38"
    },
    {
     "account": "sprite",
     "task": "combat_daily",
-    "startsIn": 12.7,
-    "eta": "2026-09-27T11:37"
+    "startsIn": 10.9,
+    "eta": "2026-09-27T11:38"
+   },
+   {
+    "account": "sprite",
+    "task": "victory_road",
+    "startsIn": 12.6,
+    "eta": "2026-09-27T11:39"
    }
   ],
-  "more": 89,
+  "more": 88,
   "fillers": [
    {
     "account": "smurf",
@@ -10763,9 +10789,9 @@
  },
  "progress": {
   "fake2": {
-   "paradiseStamina": "20/20",
    "pillar": "floor 5 stage 5",
-   "mailUnread": 0
+   "mailUnread": 0,
+   "paradiseStamina": "20/20"
   },
   "fake3": {
    "mailUnread": 0,
@@ -10959,6 +10985,12 @@
  "paused": null,
  "warnings": [
   {
+   "ts": "2026-09-27T11:27:08",
+   "account": "fake7",
+   "task": "combat_daily",
+   "left": "dungeon row still open (for daily_dungeon)"
+  },
+  {
    "ts": "2026-09-27T11:15:09",
    "account": "fake6",
    "task": "combat_daily",
@@ -11110,6 +11142,15 @@
    "kind": "left",
    "since": "2026-09-27T11:15:09",
    "why": "craft row still open (for pokemon_home)",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "fake7",
+   "task": "combat_daily",
+   "kind": "left",
+   "since": "2026-09-27T11:27:08",
+   "why": "dungeon row still open (for daily_dungeon)",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
   },
@@ -11758,9 +11799,9 @@
     "daily claims": 3
    },
    "progress": {
-    "paradiseStamina": "20/20",
     "pillar": "floor 5 stage 5",
-    "mailUnread": 0
+    "mailUnread": 0,
+    "paradiseStamina": "20/20"
    },
    "history": [
     {
@@ -12172,14 +12213,10 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-27",
-   "summary": "6 of 14 dailies done · 2 switched off · 1 not available today",
-   "done": 6,
+   "summary": "7 of 14 dailies done · 2 switched off · 1 not available today",
+   "done": 7,
    "owed": 14,
    "open": [
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
     {
      "task": "victory",
      "state": "still to do"
@@ -12209,7 +12246,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "11:26",
+     "why": "left: arena challenges; dungeon row still open (for daily_dungeon)",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_112439_combat_daily_fake7__KEEP_0064_112530_arena_slot_unavailable.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -12269,8 +12313,8 @@
     },
     {
      "day": "2026-09-27",
-     "done": 6,
-     "failed": 0
+     "done": 7,
+     "failed": 1
     }
    ]
   },
