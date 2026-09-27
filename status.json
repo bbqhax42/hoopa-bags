@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-27T20:31:33.622115",
+ "generatedAt": "2026-09-27T20:33:37.214326",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -559,6 +559,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "fake5",
+   "task": "story",
+   "since": "2026-09-27T20:32:52",
+   "why": "lost at stage 9 after 8 clear(s) — the next stage needs a stronger team"
+  },
+  {
    "account": "fake6",
    "task": "hoopa",
    "since": "2026-09-26T22:20:53",
@@ -622,6 +628,7 @@
  "islandChallenge": [],
  "snoozed": {
   "chris|island_challenge": "2026-09-28T08:05",
+  "fake5|story": "2026-09-27T20:47",
   "jeff|island_challenge": "2026-09-28T08:05"
  },
  "ownerOnline": [],
@@ -692,11 +699,31 @@
   }
  },
  "session": {
-  "label": "fake8",
-  "at": "2026-09-27T20:24:40.032351",
+  "label": "fake5",
+  "at": "2026-09-27T20:31:35.547757",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T20:32:52",
+   "script": "story",
+   "account": "fake5",
+   "rc": 1,
+   "secs": 67,
+   "stats": {
+    "skip_retry": 9,
+    "afk_card": 1,
+    "incomplete": 1,
+    "story_disabled": 1,
+    "stages_cleared": 8
+   },
+   "incomplete": [
+    "story: lost at stage 9 after 8 clear(s) — the next stage needs a stronger team"
+   ],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260927_203144_story_fake5"
+  },
   {
    "ts": "2026-09-27T20:31:17",
    "script": "story",
@@ -7580,30 +7607,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260926_145231_mail_dre"
-  },
-  {
-   "ts": "2026-09-26T14:52:30",
-   "script": "dailyclaim",
-   "account": "dre",
-   "rc": 0,
-   "secs": 25,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:76 0.275:0 0.345:54 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260926_145205_dailyclaim_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 73893,
+  "now": 74017,
   "segments": [
    {
     "b": 29029,
@@ -12041,11 +12050,13 @@
     "s": "story",
     "login": [
      73878,
-     null
+     73895
     ],
-    "handoff": null,
-    "rc": null,
-    "e": 73893
+    "handoff": 73904,
+    "rc": 1,
+    "e": 74017,
+    "secs": 67,
+    "why": "story: lost at stage 9 after 8 clear(s) — the next stage needs a stronger team"
    }
   ],
   "idle": [
@@ -12105,10 +12116,21 @@
    73707,
    73798,
    73876,
-   73877
+   73877,
+   73972,
+   73972
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-27T20:32:52",
+   "account": "fake5",
+   "task": "story",
+   "rc": 1,
+   "secs": 67,
+   "why": "story: lost at stage 9 after 8 clear(s) — the next stage needs a stronger team",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_203144_story_fake5__KEEP_0058_203252_final.png"
+  },
   {
    "ts": "2026-09-27T13:44:57",
    "account": "dre",
@@ -12311,8 +12333,8 @@
  "day": {
   "since": "2026-09-27T08:00",
   "switches": 89,
-  "relogMinutes": 33.6,
-  "retries": 24,
+  "relogMinutes": 34.0,
+  "retries": 25,
   "tasks": {
    "dailyclaim": {
     "runs": 19,
@@ -12410,9 +12432,9 @@
     "failed": 0
    },
    "story": {
-    "runs": 17,
-    "minutes": 31.9,
-    "failed": 2
+    "runs": 18,
+    "minutes": 33.0,
+    "failed": 3
    },
    "worldboss": {
     "runs": 19,
@@ -12785,6 +12807,12 @@
  "night": null,
  "changes": [
   {
+   "sha": "068210d",
+   "ts": "2026-09-27T20:32:35",
+   "area": "accounts",
+   "subject": "max_layer_window, a dated layer window (smurf into inner tonight)"
+  },
+  {
    "sha": "99266e8",
    "ts": "2026-09-27T19:58:15",
    "area": "guild war",
@@ -13142,15 +13170,15 @@
     "mode": "story"
    },
    {
-    "account": "fake5",
-    "mode": "story"
-   },
-   {
     "account": "fake6",
     "mode": "story"
    },
    {
     "account": "chris",
+    "mode": "hoopa"
+   },
+   {
+    "account": "jeff",
     "mode": "hoopa"
    }
   ],
@@ -13161,12 +13189,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 87,
-   "medianSec": 17,
+   "n": 88,
+   "medianSec": 17.0,
    "picker": {
-    "n": 66,
-    "medianSec": 16.0,
-    "jumps": 47
+    "n": 67,
+    "medianSec": 16,
+    "jumps": 48
    },
    "typed": {
     "n": 0,
@@ -13285,6 +13313,13 @@
   }
  },
  "ledger": {
+  "fake5": {
+   "pillar/story stages cleared": 26,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "fake8": {
    "pillar/story stages cleared": 60,
    "guild war attempts": 1,
@@ -13311,13 +13346,6 @@
    "pillar/story stages cleared": 12,
    "guild war attempts": 1,
    "pillar proofs swept": 3,
-   "Island Shop buys (200 coins)": 1,
-   "mail claimed": 1,
-   "daily claims": 2
-  },
-  "fake5": {
-   "pillar/story stages cleared": 18,
-   "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 2
@@ -13677,6 +13705,15 @@
    "since": "2026-09-27T00:12:04",
    "why": "lost a fight while climbing — the result card says the fight was lost",
    "action": "the hoopa climb stopped at a lost fight — switch it on to try again",
+   "enable": true
+  },
+  {
+   "account": "fake5",
+   "task": "story",
+   "kind": "story",
+   "since": "2026-09-27T20:32:52",
+   "why": "lost at stage 9 after 8 clear(s) — the next stage needs a stronger team",
+   "action": "story stopped at a lost stage — needs a stronger team",
    "enable": true
   },
   {
@@ -14397,11 +14434,17 @@
   "fake5": {
    "name": "Random77",
    "day": "2026-09-27",
-   "summary": "14 of 14 dailies done · 1 switched off",
+   "summary": "14 of 14 dailies done · 2 switched off",
    "done": 14,
    "owed": 14,
    "open": [],
    "issues": [
+    {
+     "task": "story",
+     "at": "20:32",
+     "why": "story: lost at stage 9 after 8 clear(s) — the next stage needs a stronger team",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_203144_story_fake5__KEEP_0058_203252_final.png"
+    },
     {
      "task": "sky_pillar",
      "at": "11:04",
@@ -14420,11 +14463,16 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-27T03:34:23"
+    },
+    {
+     "task": "story",
+     "why": "lost at stage 9 after 8 clear(s) — the next stage needs a stronger team",
+     "since": "2026-09-27T20:32:52"
     }
    ],
    "unavailable": [],
    "spent": {
-    "pillar/story stages cleared": 18,
+    "pillar/story stages cleared": 26,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
@@ -14469,7 +14517,7 @@
     {
      "day": "2026-09-27",
      "done": 16,
-     "failed": 1
+     "failed": 2
     }
    ]
   },
