@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T18:40:26.131921",
+ "generatedAt": "2026-09-27T18:42:29.542842",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
+  "account": "fake4",
   "mode": "story",
-  "since": "18:37:35"
+  "since": "18:41:59"
  },
  "grid": {
   "tasks": [
@@ -571,6 +571,12 @@
    "why": "lost a fight while climbing — the result card says the fight was lost"
   },
   {
+   "account": "fake7",
+   "task": "story",
+   "since": "2026-09-27T18:41:58",
+   "why": "Unlocked after clearing Victory Roac a Saffron Gym — clear that by hand, then re-enable"
+  },
+  {
    "account": "fake8",
    "task": "hoopa",
    "since": "2026-09-27T00:49:42",
@@ -680,11 +686,28 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-27T18:31:24.984889",
+  "label": "fake4",
+  "at": "2026-09-27T18:42:16.963359",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T18:41:58",
+   "script": "story",
+   "account": "fake7",
+   "rc": 2,
+   "secs": 245,
+   "stats": {
+    "skip_retry": 18,
+    "afk_card": 1,
+    "story_locked": 1,
+    "stages_cleared": 6
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260927_183753_story_fake7"
+  },
   {
    "ts": "2026-09-27T18:37:34",
    "script": "story",
@@ -7613,34 +7636,12 @@
     "rail_badges": "0.190:78 0.275:8 0.345:53 0.428:8 0.500:0"
    },
    "dir": "debug_runs/20260926_141236_dailyclaim_test1"
-  },
-  {
-   "ts": "2026-09-26T14:12:11",
-   "script": "rank_match",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 68,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_panel_scroll": 4,
-    "rank_reward_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260926_141103_rank_match_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 67226,
+  "now": 67349,
   "segments": [
    {
     "b": 29029,
@@ -11351,14 +11352,27 @@
     "login": null,
     "handoff": 67073,
     "rc": 143,
-    "e": 67226,
+    "e": 67319,
     "secs": 360,
     "why": ""
+   },
+   {
+    "b": 67319,
+    "a": "fake4",
+    "s": "story",
+    "login": [
+     67319,
+     67336
+    ],
+    "handoff": 67345,
+    "rc": null,
+    "e": 67349
    }
   ],
   "idle": [
    66665,
-   67054
+   67054,
+   67318
   ]
  },
  "failures": [
@@ -11563,8 +11577,8 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 59,
-  "relogMinutes": 25.2,
+  "switches": 60,
+  "relogMinutes": 25.7,
   "retries": 23,
   "tasks": {
    "dailyclaim": {
@@ -11663,8 +11677,8 @@
     "failed": 0
    },
    "story": {
-    "runs": 8,
-    "minutes": 18.4,
+    "runs": 9,
+    "minutes": 22.5,
     "failed": 1
    }
   }
@@ -11711,6 +11725,12 @@
    "task": "rank_match",
    "why": null,
    "at": null
+  },
+  {
+   "account": "fake7",
+   "task": "story",
+   "why": "skip_retry, afk_card, story_locked, stages_cleared",
+   "at": "2026-09-27T18:41:58"
   },
   {
    "account": "fake8",
@@ -12427,10 +12447,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "fake7",
-    "mode": "story"
-   },
-   {
     "account": "fake1",
     "mode": "story"
    },
@@ -12449,6 +12465,10 @@
    {
     "account": "fake6",
     "mode": "story"
+   },
+   {
+    "account": "fake8",
+    "mode": "story"
    }
   ],
   "held": {}
@@ -12458,12 +12478,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 58,
-   "medianSec": 17.0,
+   "n": 59,
+   "medianSec": 17,
    "picker": {
-    "n": 42,
-    "medianSec": 16.0,
-    "jumps": 30
+    "n": 43,
+    "medianSec": 16,
+    "jumps": 31
    },
    "typed": {
     "n": 0,
@@ -12476,11 +12496,6 @@
   }
  },
  "progress": {
-  "skosmurf": {
-   "mailUnread": 0,
-   "paradiseStamina": "19/13",
-   "rank": 1
-  },
   "fake8": {
    "mailUnread": 0,
    "paradiseStamina": "20/20"
@@ -12568,6 +12583,11 @@
    "rank": 4,
    "pillar": "floor 141 stage 1"
   },
+  "skosmurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "19/13",
+   "rank": 1
+  },
   "lucifer1": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -12582,6 +12602,10 @@
   }
  },
  "ledger": {
+  "fake7": {
+   "pillar/story stages cleared": 26,
+   "daily claims": 1
+  },
   "fake8": {
    "pillar/story stages cleared": 12,
    "pillar proofs swept": 6,
@@ -12620,10 +12644,6 @@
    "adventure energy": 1,
    "mail claimed": 1,
    "daily claims": 2
-  },
-  "fake7": {
-   "pillar/story stages cleared": 20,
-   "daily claims": 1
   },
   "chris": {
    "guild war attempts": 1,
@@ -12800,6 +12820,15 @@
    "kind": "gym",
    "since": "2026-09-27T14:49:08",
    "why": "Unlocked after clearing Victory Road   Goldenrod Gym — clear that by hand, then re-enable",
+   "action": "clear that gym by hand, then switch story back on",
+   "enable": true
+  },
+  {
+   "account": "fake7",
+   "task": "story",
+   "kind": "gym",
+   "since": "2026-09-27T18:41:58",
+   "why": "Unlocked after clearing Victory Roac a Saffron Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
   },
@@ -13836,7 +13865,7 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-27",
-   "summary": "11 of 14 dailies done · gave up on guildBoss · 1 switched off · 2 not available today",
+   "summary": "11 of 14 dailies done · gave up on guildBoss · 2 switched off · 3 not available today",
    "done": 11,
    "owed": 14,
    "open": [
@@ -13872,6 +13901,11 @@
      "task": "hoopa",
      "why": "lost a fight while climbing — the result card says the fight was lost",
      "since": "2026-09-26T23:30:14"
+    },
+    {
+     "task": "story",
+     "why": "Unlocked after clearing Victory Roac a Saffron Gym — clear that by hand, then re-enable",
+     "since": "2026-09-27T18:41:58"
     }
    ],
    "unavailable": [
@@ -13882,10 +13916,14 @@
     {
      "task": "rank_match",
      "why": null
+    },
+    {
+     "task": "story",
+     "why": "skip_retry, afk_card, story_locked, stages_cleared"
     }
    ],
    "spent": {
-    "pillar/story stages cleared": 20,
+    "pillar/story stages cleared": 26,
     "daily claims": 1
    },
    "progress": {
