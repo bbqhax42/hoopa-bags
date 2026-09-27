@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T14:22:40.755983",
+ "generatedAt": "2026-09-27T14:24:44.244816",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "rank_match",
-  "since": "14:21:25"
+  "account": "skosmurf",
+  "mode": "rift",
+  "since": "14:24:16"
  },
  "grid": {
   "tasks": [
@@ -95,7 +95,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -468,7 +468,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 272,
-  "todo": 2,
+  "done": 274,
+  "todo": 0,
   "gaveUp": 7,
   "unavailable": 11,
   "windowed": 0
@@ -674,11 +674,54 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-27T14:21:45.152208",
+  "label": "skosmurf",
+  "at": "2026-09-27T14:24:35.899662",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T14:24:15",
+   "script": "guild_war",
+   "account": "chris",
+   "rc": 0,
+   "secs": 42,
+   "stats": {
+    "marginal_battle_over": 1,
+    "near_miss_vr_rank": 2,
+    "near_miss_tips_header": 23,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1,
+    "assist_already_set": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260927_142332_guild_war_chris"
+  },
+  {
+   "ts": "2026-09-27T14:23:06",
+   "script": "rank_match",
+   "account": "deno",
+   "rc": 0,
+   "secs": 67,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_panel_scroll": 4,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_142159_rank_match_deno"
+  },
   {
    "ts": "2026-09-27T14:21:25",
    "script": "rank_match",
@@ -7628,51 +7671,12 @@
     "rank_rewards": 6
    },
    "dir": "debug_runs/20260926_135916_rank_match_fake3"
-  },
-  {
-   "ts": "2026-09-26T13:58:52",
-   "script": "combat_daily",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 17,
-   "stats": {
-    "title_reread_named": 1,
-    "near_miss_pokemon_upgrade": 2,
-    "upgrade_skip_resonating": 1,
-    "upgrade_list_turned": 1,
-    "upgrade_list_exhausted": 1,
-    "upgrade_all_unlevellable": 1,
-    "outstanding_reread_after_toast": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "left": "upgrade a pokemon"
-   },
-   "dir": "debug_runs/20260926_135835_combat_daily_lucifer2"
-  },
-  {
-   "ts": "2026-09-26T13:58:06",
-   "script": "guild_war",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 45,
-   "stats": {
-    "near_miss_vr_rank": 2,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_135721_guild_war_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 51761,
+  "now": 51884,
   "segments": [
    {
     "b": 29029,
@@ -11121,8 +11125,36 @@
      51705
     ],
     "handoff": 51718,
+    "rc": 0,
+    "e": 51787,
+    "secs": 67,
+    "why": ""
+   },
+   {
+    "b": 51787,
+    "a": "chris",
+    "s": "guild_war",
+    "login": [
+     51787,
+     51801
+    ],
+    "handoff": 51812,
+    "rc": 0,
+    "e": 51856,
+    "secs": 42,
+    "why": ""
+   },
+   {
+    "b": 51856,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     51856,
+     51875
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 51761
+    "e": 51884
    }
   ],
   "idle": []
@@ -11329,8 +11361,8 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 40,
-  "relogMinutes": 18.4,
+  "switches": 42,
+  "relogMinutes": 18.9,
   "retries": 22,
   "tasks": {
    "dailyclaim": {
@@ -11414,13 +11446,13 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 20,
-    "minutes": 15.0,
+    "runs": 21,
+    "minutes": 15.7,
     "failed": 4
    },
    "rank_match": {
-    "runs": 16,
-    "minutes": 17.3,
+    "runs": 17,
+    "minutes": 18.5,
     "failed": 0
    }
   }
@@ -12388,20 +12420,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "deno",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T14:22"
-   },
-   {
-    "account": "chris",
-    "task": "guild_war",
-    "startsIn": 1.5,
-    "eta": "2026-09-27T14:24"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -12436,11 +12455,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 39,
+   "n": 41,
    "medianSec": 18,
    "picker": {
-    "n": 26,
-    "medianSec": 16.0,
+    "n": 27,
+    "medianSec": 16,
     "jumps": 19
    },
    "typed": {
@@ -12448,18 +12467,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 13,
-    "medianSec": 19
+    "n": 14,
+    "medianSec": 19.0
    }
   }
  },
  "progress": {
-  "lucifer2": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "rank": 9,
-   "pillar": "floor 88 stage 5"
-  },
   "fake3": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -12557,9 +12570,25 @@
    "paradiseStamina": "20/20",
    "rank": 6,
    "pillar": "floor 94 stage 1"
+  },
+  "lucifer2": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "rank": 9,
+   "pillar": "floor 88 stage 5"
   }
  },
  "ledger": {
+  "chris": {
+   "guild war attempts": 1,
+   "faction sweeps": 2,
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "daily claims": 4,
+   "Privilege Pack claimed": 1
+  },
   "sprite": {
    "guild war attempts": 1,
    "pillar/story stages cleared": 3,
@@ -12703,15 +12732,6 @@
   "fake7": {
    "pillar/story stages cleared": 8,
    "daily claims": 1
-  },
-  "chris": {
-   "faction sweeps": 2,
-   "pillar/story stages cleared": 3,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "daily claims": 4,
-   "Privilege Pack claimed": 1
   },
   "nova": {
    "pillar/story stages cleared": 3,
@@ -13118,14 +13138,10 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-27",
-   "summary": "17 of 19 dailies done",
-   "done": 17,
+   "summary": "18 of 19 dailies done",
+   "done": 18,
    "owed": 19,
    "open": [
-    {
-     "task": "guildBoss",
-     "state": "still to do"
-    },
     {
      "task": "island",
      "state": "asks again later"
@@ -13135,6 +13151,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar/story stages cleared": 3,
     "ranked attempts": 1,
@@ -13182,7 +13199,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 17,
+     "done": 18,
      "failed": 0
     }
    ]
@@ -14382,15 +14399,10 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-27",
-   "summary": "15 of 16 dailies done",
-   "done": 15,
+   "summary": "16 of 16 dailies done",
+   "done": 16,
    "owed": 16,
-   "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    }
-   ],
+   "open": [],
    "issues": [],
    "off": [],
    "unavailable": [],
@@ -14443,7 +14455,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 15,
+     "done": 16,
      "failed": 0
     }
    ]
