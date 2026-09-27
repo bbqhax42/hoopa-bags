@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T09:27:11.247453",
+ "generatedAt": "2026-09-27T09:29:15.669713",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "pokemon_home",
-  "since": "09:27:05"
+  "mode": "combat_daily",
+  "since": "09:29:11"
  },
  "grid": {
   "tasks": [
@@ -114,8 +114,8 @@
      "✓",
      "⊘",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 63,
-  "todo": 191,
+  "done": 65,
+  "todo": 189,
   "gaveUp": 0,
   "unavailable": 3,
   "windowed": 36
@@ -721,6 +721,35 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T09:29:10",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_092910_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-09-27T09:29:04",
+   "script": "pokemon_home",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 117,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "merge_refused": 3,
+    "counter_misread": 1,
+    "phantom_creations": 0,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_092706_pokemon_home_smurf"
+  },
   {
    "ts": "2026-09-27T09:27:04",
    "script": "daily_dungeon",
@@ -7773,45 +7802,12 @@
     "left": "paradise: an Engram milestone reward would not claim; paradise: Dex tab(s) still badged: Drop Item"
    },
    "dir": "debug_runs/20260926_082412_paradise_lucifer2"
-  },
-  {
-   "ts": "2026-09-26T08:24:09",
-   "script": "victory_road",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_082402_victory_road_lucifer2"
-  },
-  {
-   "ts": "2026-09-26T08:24:01",
-   "script": "combat_daily",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 17,
-   "stats": {
-    "marginal_pokemon_upgrade": 2,
-    "upgrade_skip_resonating": 3,
-    "upgrade_all_unlevellable": 1,
-    "title_reread_named": 1,
-    "left_outstanding": 1
-   },
-   "incomplete": [],
-   "values": {
-    "left": "upgrade a pokemon"
-   },
-   "dir": "debug_runs/20260926_082344_combat_daily_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 34031,
+  "now": 34156,
   "segments": [
    {
     "b": 29029,
@@ -8536,8 +8532,30 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 34026,
+    "rc": 0,
+    "e": 34145,
+    "secs": 117,
+    "why": ""
+   },
+   {
+    "b": 34145,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 34149,
+    "rc": 0,
+    "e": 34151,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 34151,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34151,
     "rc": null,
-    "e": 34031
+    "e": 34156
    }
   ],
   "idle": []
@@ -8580,12 +8598,12 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 4,
-    "minutes": 5.8,
+    "runs": 5,
+    "minutes": 7.8,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 0.0,
     "failed": 0
    },
@@ -9674,78 +9692,78 @@
   "next": [
    {
     "account": "smurf",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T09:27"
-   },
-   {
-    "account": "smurf",
-    "task": "weekend_bash",
-    "startsIn": 1.4,
-    "eta": "2026-09-27T09:28"
-   },
-   {
-    "account": "smurf",
     "task": "combat_daily",
-    "startsIn": 1.4,
-    "eta": "2026-09-27T09:28"
+    "startsIn": 0.0,
+    "eta": "2026-09-27T09:29"
    },
    {
     "account": "smurf",
     "task": "victory_road",
-    "startsIn": 3.3,
-    "eta": "2026-09-27T09:30"
+    "startsIn": 1.9,
+    "eta": "2026-09-27T09:31"
    },
    {
     "account": "smurf",
     "task": "paradise",
-    "startsIn": 3.4,
-    "eta": "2026-09-27T09:30"
+    "startsIn": 2.0,
+    "eta": "2026-09-27T09:31"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 7.5,
-    "eta": "2026-09-27T09:34"
+    "startsIn": 6.0,
+    "eta": "2026-09-27T09:35"
    },
    {
     "account": "smurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 9.1,
+    "startsIn": 7.6,
     "eta": "2026-09-27T09:36"
    },
    {
     "account": "smurf",
     "task": "sky_pillar",
-    "startsIn": 9.1,
+    "startsIn": 7.7,
     "eta": "2026-09-27T09:36"
    },
    {
     "account": "smurf",
     "task": "faction",
-    "startsIn": 10.0,
+    "startsIn": 8.5,
     "eta": "2026-09-27T09:37"
    },
    {
     "account": "smurf",
     "task": "misty_woods",
-    "startsIn": 15.2,
+    "startsIn": 13.7,
     "eta": "2026-09-27T09:42"
    },
    {
     "account": "smurf",
     "task": "ultra_wormhole",
-    "startsIn": 17.2,
+    "startsIn": 15.7,
     "eta": "2026-09-27T09:44"
    },
    {
     "account": "smurf",
     "task": "championship",
-    "startsIn": 21.9,
+    "startsIn": 20.5,
     "eta": "2026-09-27T09:49"
+   },
+   {
+    "account": "fake1",
+    "task": "dailyclaim",
+    "startsIn": 21.0,
+    "eta": "2026-09-27T09:50"
+   },
+   {
+    "account": "fake1",
+    "task": "mail",
+    "startsIn": 21.4,
+    "eta": "2026-09-27T09:50"
    }
   ],
-  "more": 179,
+  "more": 177,
   "fillers": [
    {
     "account": "smurf",
@@ -9903,6 +9921,7 @@
  },
  "ledger": {
   "smurf": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 2
   },
@@ -10403,21 +10422,13 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-27",
-   "summary": "4 of 19 dailies done · 2 switched off · 1 not available today",
-   "done": 4,
+   "summary": "6 of 19 dailies done · 2 switched off · 1 not available today",
+   "done": 6,
    "owed": 19,
    "open": [
     {
      "task": "JointB",
      "state": "not available today"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -10488,6 +10499,7 @@
     }
    ],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 2
    },
@@ -10530,7 +10542,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 5,
+     "done": 7,
      "failed": 0
     }
    ]
