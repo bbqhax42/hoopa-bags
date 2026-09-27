@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T02:01:27.437028",
+ "generatedAt": "2026-09-28T02:03:30.847784",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "nova",
   "mode": "worldboss",
-  "since": "02:00:34"
+  "since": "02:02:36"
  },
  "grid": {
   "tasks": [
@@ -722,11 +722,44 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-28T02:00:50.291062",
+  "label": "nova",
+  "at": "2026-09-28T02:02:52.480037",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T02:02:36",
+   "script": "worldboss",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_020136_worldboss_jeff"
+  },
+  {
+   "ts": "2026-09-28T02:01:36",
+   "script": "worldboss",
+   "account": "chris",
+   "rc": 0,
+   "secs": 61,
+   "stats": {
+    "wb_skip_again": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_020034_worldboss_chris"
+  },
   {
    "ts": "2026-09-28T02:00:34",
    "script": "worldboss",
@@ -7597,43 +7630,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-26T21:02:22",
-   "script": "hoopa",
-   "account": "chris",
-   "rc": 2,
-   "secs": 9,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-26T20:19:00",
-   "script": "worldboss",
-   "account": "dre",
-   "rc": 0,
-   "secs": 68,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260926_201752_worldboss_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 93687,
+  "now": 93811,
   "segments": [
    {
     "b": 29029,
@@ -14044,8 +14046,36 @@
      93650
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 93696,
+    "secs": 61,
+    "why": ""
+   },
+   {
+    "b": 93696,
+    "a": "jeff",
+    "s": "worldboss",
+    "login": [
+     93697,
+     93712
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 93756,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 93756,
+    "a": "nova",
+    "s": "worldboss",
+    "login": [
+     93757,
+     93772
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 93687
+    "e": 93811
    }
   ],
   "idle": [
@@ -14519,7 +14549,7 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 126,
+  "switches": 128,
   "relogMinutes": 60.5,
   "retries": 25,
   "tasks": {
@@ -14624,8 +14654,8 @@
     "failed": 3
    },
    "worldboss": {
-    "runs": 20,
-    "minutes": 19.3,
+    "runs": 22,
+    "minutes": 21.4,
     "failed": 0
    }
   }
@@ -14900,7 +14930,9 @@
    "dre"
   ],
   "2026-09-28_02:00": [
-   "lucifer1"
+   "lucifer1",
+   "chris",
+   "jeff"
   ]
  },
  "worldBossSkipped": {},
@@ -15189,12 +15221,6 @@
    "ts": "2026-09-26T14:07:25",
    "area": "combat daily",
    "subject": "an upgrade list walked end to end with nothing to level is left open, not retried"
-  },
-  {
-   "sha": "bc6770e",
-   "ts": "2026-09-26T14:03:12",
-   "area": "paradise",
-   "subject": "a second look at the event's end before giving up, and the header kept when neither reads"
   }
  ],
  "phase": {
@@ -15233,12 +15259,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 126,
+   "n": 128,
    "medianSec": 17.0,
    "picker": {
-    "n": 101,
+    "n": 103,
     "medianSec": 16,
-    "jumps": 71
+    "jumps": 72
    },
    "typed": {
     "n": 0,
@@ -15251,12 +15277,6 @@
   }
  },
  "progress": {
-  "dre": {
-   "mailUnread": 0,
-   "paradiseStamina": "1/13",
-   "rank": 6,
-   "pillar": "floor 86 stage 2"
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -15354,6 +15374,12 @@
    "paradiseStamina": "20/20",
    "rank": 10,
    "pillar": "floor 29 stage 3"
+  },
+  "dre": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/13",
+   "rank": 6,
+   "pillar": "floor 86 stage 2"
   }
  },
  "ledger": {
@@ -15709,6 +15735,11 @@
      "day": "2026-09-27",
      "done": 19,
      "failed": 1
+    },
+    {
+     "day": "2026-09-28",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -15773,6 +15804,11 @@
     {
      "day": "2026-09-27",
      "done": 19,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-28",
+     "done": 1,
      "failed": 0
     }
    ]
