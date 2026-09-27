@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T01:09:56.079346",
+ "generatedAt": "2026-09-28T01:12:00.405311",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake1",
   "mode": "story",
-  "since": "01:09:28"
+  "since": "01:11:09"
  },
  "grid": {
   "tasks": [
@@ -721,6 +721,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T01:11:09",
+   "script": "story",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 77,
+   "stats": {
+    "skip_retry": 13,
+    "afk_card": 1,
+    "stages_cleared": 12
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_010952_story_fake1"
+  },
   {
    "ts": "2026-09-28T00:08:58",
    "script": "hoopa",
@@ -7603,28 +7619,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260926_201341_worldboss_lucifer1"
-  },
-  {
-   "ts": "2026-09-26T20:13:41",
-   "script": "worldboss",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 72,
-   "stats": {
-    "wb_skip_again": 1,
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260926_201228_worldboss_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 90596,
+  "now": 90720,
   "segments": [
    {
     "b": 29029,
@@ -13722,8 +13722,21 @@
      90584
     ],
     "handoff": 90591,
-    "rc": null,
-    "e": 90596
+    "rc": 0,
+    "e": 90669,
+    "secs": 77,
+    "why": ""
+   },
+   {
+    "b": 90669,
+    "a": "fake1",
+    "s": "story",
+    "login": null,
+    "handoff": 90669,
+    "rc": 0,
+    "e": 90720,
+    "secs": 77,
+    "why": ""
    }
   ],
   "idle": [
@@ -13949,7 +13962,8 @@
    90133,
    90229,
    90305,
-   90568
+   90568,
+   90669
   ]
  },
  "failures": [
@@ -14263,8 +14277,8 @@
     "failed": 0
    },
    "story": {
-    "runs": 46,
-    "minutes": 68.1,
+    "runs": 47,
+    "minutes": 69.4,
     "failed": 3
    },
    "worldboss": {
@@ -14935,11 +14949,6 @@
   }
  },
  "progress": {
-  "skosmurf": {
-   "mailUnread": 0,
-   "paradiseStamina": "19/13",
-   "rank": 1
-  },
   "lucifer1": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -15038,9 +15047,18 @@
    "paradiseStamina": "20/20",
    "rank": 4,
    "pillar": "floor 141 stage 1"
+  },
+  "skosmurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "19/13",
+   "rank": 1
   }
  },
- "ledger": {},
+ "ledger": {
+  "fake1": {
+   "pillar/story stages cleared": 12
+  }
+ },
  "paused": null,
  "warnings": [],
  "needsYou": [
@@ -15580,7 +15598,9 @@
      "why": "reported unavailable"
     }
    ],
-   "spent": {},
+   "spent": {
+    "pillar/story stages cleared": 12
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "20/20",
@@ -15620,6 +15640,11 @@
     {
      "day": "2026-09-27",
      "done": 22,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-28",
+     "done": 1,
      "failed": 0
     }
    ]
