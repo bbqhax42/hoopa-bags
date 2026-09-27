@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T13:14:38.339194",
+ "generatedAt": "2026-09-27T13:16:42.300623",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "guild_war",
-  "since": "13:14:08"
+  "mode": "sky_pillar",
+  "since": "13:16:27"
  },
  "grid": {
   "tasks": [
@@ -470,9 +470,9 @@
      "✓",
      "⏰",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "-",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 223,
-  "todo": 35,
+  "done": 226,
+  "todo": 32,
   "gaveUp": 6,
   "unavailable": 11,
   "windowed": 17
@@ -721,6 +721,59 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T13:16:27",
+   "script": "collect_hoopa_keys",
+   "account": "deno",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_131622_collect_hoopa_keys_deno"
+  },
+  {
+   "ts": "2026-09-27T13:16:21",
+   "script": "run_pvp_ranked",
+   "account": "deno",
+   "rc": 0,
+   "secs": 75,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_lost": 1,
+    "ranked_won": 9,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 0,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 9,
+    "rank": 10,
+    "daily_goal_claims": 3
+   },
+   "dir": "debug_runs/20260927_131505_run_pvp_ranked_deno"
+  },
+  {
+   "ts": "2026-09-27T13:15:01",
+   "script": "guild_war",
+   "account": "deno",
+   "rc": 0,
+   "secs": 52,
+   "stats": {
+    "near_miss_vr_rank": 3,
+    "near_miss_battle_over": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_131409_guild_war_deno"
+  },
   {
    "ts": "2026-09-27T13:14:08",
    "script": "paradise",
@@ -7670,60 +7723,12 @@
     "unread_after": 0
    },
    "dir": "debug_runs/20260926_124608_mail_skosmurf"
-  },
-  {
-   "ts": "2026-09-26T12:46:07",
-   "script": "dailyclaim",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 18,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:78 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260926_124548_dailyclaim_skosmurf"
-  },
-  {
-   "ts": "2026-09-26T12:45:19",
-   "script": "championship",
-   "account": "exou",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "event_done": 1
-   },
-   "incomplete": [],
-   "values": {
-    "fights": 0,
-    "tiers": 0
-   },
-   "dir": "debug_runs/20260926_124514_championship_exou"
-  },
-  {
-   "ts": "2026-09-26T12:45:09",
-   "script": "pokemon_home",
-   "account": "exou",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "charges_left_by_cap": 49
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_124500_pokemon_home_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 47678,
+  "now": 47802,
   "segments": [
    {
     "b": 29029,
@@ -10527,8 +10532,41 @@
     "s": "guild_war",
     "login": null,
     "handoff": 47649,
+    "rc": 0,
+    "e": 47702,
+    "secs": 52,
+    "why": ""
+   },
+   {
+    "b": 47702,
+    "a": "deno",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 47705,
+    "rc": 0,
+    "e": 47781,
+    "secs": 75,
+    "why": ""
+   },
+   {
+    "b": 47781,
+    "a": "deno",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 47782,
+    "rc": 0,
+    "e": 47787,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 47787,
+    "a": "deno",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 47788,
     "rc": null,
-    "e": 47678
+    "e": 47802
    }
   ],
   "idle": []
@@ -10758,13 +10796,13 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 9,
-    "minutes": 13.2,
+    "runs": 10,
+    "minutes": 14.4,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 17,
-    "minutes": 1.4,
+    "runs": 18,
+    "minutes": 1.5,
     "failed": 0
    },
    "sky_pillar": {
@@ -10793,8 +10831,8 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 7,
-    "minutes": 3.9,
+    "runs": 8,
+    "minutes": 4.8,
     "failed": 4
    }
   }
@@ -11765,78 +11803,78 @@
   "next": [
    {
     "account": "deno",
-    "task": "guild_war",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T13:14"
-   },
-   {
-    "account": "deno",
-    "task": "run_pvp_ranked",
-    "startsIn": 0.6,
-    "eta": "2026-09-27T13:15"
-   },
-   {
-    "account": "deno",
-    "task": "collect_hoopa_keys",
-    "startsIn": 2.0,
-    "eta": "2026-09-27T13:16"
-   },
-   {
-    "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 2.1,
+    "startsIn": 0.0,
     "eta": "2026-09-27T13:16"
    },
    {
     "account": "deno",
     "task": "ultra_wormhole",
-    "startsIn": 3.5,
+    "startsIn": 1.4,
     "eta": "2026-09-27T13:18"
    },
    {
     "account": "jeff",
     "task": "guild_war",
-    "startsIn": 8.2,
+    "startsIn": 6.1,
     "eta": "2026-09-27T13:22"
    },
    {
     "account": "jeff",
     "task": "ultra_wormhole",
-    "startsIn": 8.8,
+    "startsIn": 6.7,
     "eta": "2026-09-27T13:23"
    },
    {
     "account": "lucifer1",
     "task": "guild_war",
-    "startsIn": 13.5,
+    "startsIn": 11.5,
     "eta": "2026-09-27T13:28"
    },
    {
     "account": "lucifer1",
     "task": "ultra_wormhole",
-    "startsIn": 14.1,
+    "startsIn": 12.1,
     "eta": "2026-09-27T13:28"
    },
    {
     "account": "skosmurf",
     "task": "ultra_wormhole",
-    "startsIn": 18.9,
+    "startsIn": 16.8,
     "eta": "2026-09-27T13:33"
    },
    {
     "account": "lucifer2",
     "task": "ultra_wormhole",
-    "startsIn": 23.6,
+    "startsIn": 21.6,
     "eta": "2026-09-27T13:38"
    },
    {
     "account": "dre",
     "task": "dailyclaim",
-    "startsIn": 28.4,
+    "startsIn": 26.3,
     "eta": "2026-09-27T13:43"
+   },
+   {
+    "account": "dre",
+    "task": "mail",
+    "startsIn": 26.7,
+    "eta": "2026-09-27T13:43"
+   },
+   {
+    "account": "dre",
+    "task": "joint_team_daily_quest",
+    "startsIn": 26.8,
+    "eta": "2026-09-27T13:43"
+   },
+   {
+    "account": "dre",
+    "task": "joint_battle",
+    "startsIn": 27.7,
+    "eta": "2026-09-27T13:44"
    }
   ],
-  "more": 13,
+  "more": 10,
   "fillers": [
    {
     "account": "smurf",
@@ -11864,6 +11902,30 @@
    }
   ],
   "held": {
+   "fake6": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake2": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake1": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake5": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "smurf": {
+    "until": "2026-09-27T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
    "fake3": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
@@ -11872,35 +11934,11 @@
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake2": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake5": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "smurf": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake1": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "fake4": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "sprite": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "nova": {
-    "until": "2026-09-27T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake6": {
     "until": "2026-09-27T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -11929,12 +11967,6 @@
   }
  },
  "progress": {
-  "exou": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "rank": 4,
-   "pillar": "floor 141 stage 1"
-  },
   "skosmurf": {
    "mailUnread": 0,
    "paradiseStamina": "19/13",
@@ -12014,6 +12046,12 @@
    "mailUnread": 0,
    "paradiseStamina": "20/20"
   },
+  "exou": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "rank": 4,
+   "pillar": "floor 141 stage 1"
+  },
   "fake8": {
    "mailUnread": 0,
    "paradiseStamina": "20/20"
@@ -12038,6 +12076,8 @@
  },
  "ledger": {
   "deno": {
+   "ranked attempts": 1,
+   "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
@@ -14046,25 +14086,13 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-27",
-   "summary": "10 of 16 dailies done",
-   "done": 10,
+   "summary": "13 of 16 dailies done",
+   "done": 13,
    "owed": 16,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
     },
     {
      "task": "pillar",
@@ -14079,6 +14107,8 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
+    "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -14124,7 +14154,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 10,
+     "done": 13,
      "failed": 0
     }
    ]
