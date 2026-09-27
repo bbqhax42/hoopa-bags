@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T11:10:40.179156",
+ "generatedAt": "2026-09-27T11:12:44.282823",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake6",
-  "mode": "joint_team_daily_quest",
-  "since": "11:09:56"
+  "mode": "daily_dungeon",
+  "since": "11:12:02"
  },
  "grid": {
   "tasks": [
@@ -261,8 +261,8 @@
     "cells": [
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "-",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 132,
-  "todo": 117,
+  "done": 134,
+  "todo": 115,
   "gaveUp": 1,
   "unavailable": 7,
   "windowed": 36
@@ -721,6 +721,21 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T11:10:50",
+   "script": "joint_team_daily_quest",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "panel_swipes": 8,
+    "guild_base_by_back": 1,
+    "near_miss_joint_team_daily_panel": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_110956_joint_team_daily_quest_fake6"
+  },
   {
    "ts": "2026-09-27T11:09:55",
    "script": "mail",
@@ -7801,39 +7816,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260926_102605_victory_road_fake1"
-  },
-  {
-   "ts": "2026-09-26T10:26:03",
-   "script": "combat_daily",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 102,
-   "stats": {
-    "marginal_battle_victory_confirm": 2,
-    "near_miss_vr_rank": 5,
-    "near_miss_go_button": 1,
-    "title_reread_named": 1,
-    "pokemon_upgraded": 1,
-    "island_shop_bought": 1,
-    "marginal_premium_gacha": 1,
-    "gacha_free": 1,
-    "outstanding_reread_after_toast": 1,
-    "other_task_rows_left": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 o ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free",
-    "left": "dungeon row still open (for daily_dungeon)"
-   },
-   "dir": "debug_runs/20260926_102420_combat_daily_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 40240,
+  "now": 40364,
   "segments": [
    {
     "b": 29029,
@@ -9402,8 +9390,28 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 40196,
+    "rc": 0,
+    "e": 40251,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 40251,
+    "a": "fake6",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 40253,
     "rc": null,
-    "e": 40240
+    "e": 40322
+   },
+   {
+    "b": 40322,
+    "a": "fake6",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 40326,
+    "rc": null,
+    "e": 40364
    }
   ],
   "idle": []
@@ -9481,8 +9489,8 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 10,
-    "minutes": 9.0,
+    "runs": 11,
+    "minutes": 9.9,
     "failed": 0
    },
    "daily_dungeon": {
@@ -10490,18 +10498,6 @@
    "ts": "2026-09-25T23:18:23",
    "area": "combat daily",
    "subject": "Quick Combat stops waiting once its results card is up"
-  },
-  {
-   "sha": "de9ef68",
-   "ts": "2026-09-25T23:12:33",
-   "area": "sky pillar",
-   "subject": "claim the Floor Rewards on arrival as well as at the end"
-  },
-  {
-   "sha": "77387ea",
-   "ts": "2026-09-25T23:10:41",
-   "area": "sky pillar",
-   "subject": "Floor Rewards are claimed on the Target Reward panel (walked through live on dre)"
   }
  ],
  "phase": {
@@ -10524,78 +10520,78 @@
   "next": [
    {
     "account": "fake6",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T11:10"
-   },
-   {
-    "account": "fake6",
-    "task": "joint_battle",
-    "startsIn": 0.9,
-    "eta": "2026-09-27T11:11"
-   },
-   {
-    "account": "fake6",
     "task": "daily_dungeon",
-    "startsIn": 2.9,
-    "eta": "2026-09-27T11:13"
+    "startsIn": 0.0,
+    "eta": "2026-09-27T11:12"
    },
    {
     "account": "fake6",
     "task": "pokemon_home",
-    "startsIn": 3.4,
-    "eta": "2026-09-27T11:14"
+    "startsIn": 0.5,
+    "eta": "2026-09-27T11:13"
    },
    {
     "account": "fake6",
     "task": "combat_daily",
-    "startsIn": 4.3,
+    "startsIn": 1.4,
     "eta": "2026-09-27T11:14"
    },
    {
     "account": "fake6",
     "task": "victory_road",
-    "startsIn": 6.1,
-    "eta": "2026-09-27T11:16"
+    "startsIn": 3.2,
+    "eta": "2026-09-27T11:15"
    },
    {
     "account": "fake6",
     "task": "paradise",
-    "startsIn": 6.2,
+    "startsIn": 3.3,
     "eta": "2026-09-27T11:16"
    },
    {
     "account": "fake6",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.4,
-    "eta": "2026-09-27T11:21"
+    "startsIn": 7.5,
+    "eta": "2026-09-27T11:20"
    },
    {
     "account": "fake6",
     "task": "sky_pillar",
-    "startsIn": 10.5,
-    "eta": "2026-09-27T11:21"
+    "startsIn": 7.6,
+    "eta": "2026-09-27T11:20"
    },
    {
     "account": "fake6",
     "task": "faction",
-    "startsIn": 11.7,
-    "eta": "2026-09-27T11:22"
+    "startsIn": 8.8,
+    "eta": "2026-09-27T11:21"
    },
    {
     "account": "fake7",
     "task": "dailyclaim",
-    "startsIn": 15.8,
-    "eta": "2026-09-27T11:26"
+    "startsIn": 12.9,
+    "eta": "2026-09-27T11:25"
    },
    {
     "account": "fake7",
     "task": "mail",
-    "startsIn": 16.2,
+    "startsIn": 13.3,
+    "eta": "2026-09-27T11:26"
+   },
+   {
+    "account": "fake7",
+    "task": "joint_team_daily_quest",
+    "startsIn": 13.3,
+    "eta": "2026-09-27T11:26"
+   },
+   {
+    "account": "fake7",
+    "task": "joint_battle",
+    "startsIn": 14.2,
     "eta": "2026-09-27T11:26"
    }
   ],
-  "more": 105,
+  "more": 103,
   "fillers": [
    {
     "account": "smurf",
@@ -11943,18 +11939,10 @@
   "fake6": {
    "name": "Bigpp123",
    "day": "2026-09-27",
-   "summary": "2 of 14 dailies done · 2 switched off",
-   "done": 2,
+   "summary": "4 of 14 dailies done · 2 switched off",
+   "done": 4,
    "owed": 14,
    "open": [
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
     {
      "task": "dungeon",
      "state": "still to do"
@@ -12051,7 +12039,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 3,
+     "done": 4,
      "failed": 0
     }
    ]
