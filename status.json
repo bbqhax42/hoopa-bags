@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T20:04:49.644207",
+ "generatedAt": "2026-09-27T20:06:52.992015",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "fake3",
   "mode": "worldboss",
-  "since": "20:04:03"
+  "since": "20:06:46"
  },
  "grid": {
   "tasks": [
@@ -686,11 +686,59 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-27T20:04:19.824366",
+  "label": "fake2",
+  "at": "2026-09-27T20:06:10.184107",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T20:06:46",
+   "script": "worldboss",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_200553_worldboss_fake2"
+  },
+  {
+   "ts": "2026-09-27T20:05:52",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_200459_worldboss_fake1"
+  },
+  {
+   "ts": "2026-09-27T20:04:59",
+   "script": "worldboss",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260927_200403_worldboss_smurf"
+  },
   {
    "ts": "2026-09-27T20:04:03",
    "script": "worldboss",
@@ -7567,68 +7615,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260926_142429_collect_hoopa_keys_test1"
-  },
-  {
-   "ts": "2026-09-26T14:24:25",
-   "script": "guild_war",
-   "account": "fake8",
-   "rc": 0,
-   "secs": 46,
-   "stats": {
-    "near_miss_vr_rank": 5,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_142338_guild_war_test1"
-  },
-  {
-   "ts": "2026-09-26T14:23:37",
-   "script": "paradise",
-   "account": "fake8",
-   "rc": 0,
-   "secs": 285,
-   "stats": {
-    "marginal_paradise_hub": 4,
-    "explore_clicks": 167,
-    "pass_claims": 5,
-    "gear_maxed": 1,
-    "gear_energy_maxed": 6,
-    "upgraded_small_radar": 3,
-    "upgraded_sports_gloves": 3,
-    "dex_collection": 2,
-    "dex_milestones": 4,
-    "dex_activated": 11,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "20/20"
-   },
-   "dir": "debug_runs/20260926_141852_paradise_test1"
-  },
-  {
-   "ts": "2026-09-26T14:18:50",
-   "script": "rank_match",
-   "account": "fake8",
-   "rc": 2,
-   "secs": 10,
-   "stats": {
-    "rank_locked": 1,
-    "rank_locked_week": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_141839_rank_match_test1"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 72290,
+  "now": 72413,
   "segments": [
    {
     "b": 29029,
@@ -11769,8 +11761,50 @@
      72259
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 72299,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 72299,
+    "a": "fake1",
+    "s": "worldboss",
+    "login": [
+     72299,
+     72315
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72353,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 72353,
+    "a": "fake2",
+    "s": "worldboss",
+    "login": [
+     72353,
+     72370
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72406,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 72406,
+    "a": "fake3",
+    "s": "worldboss",
+    "login": [
+     72407,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 72290
+    "e": 72413
    }
   ],
   "idle": [
@@ -12026,7 +12060,7 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 72,
+  "switches": 75,
   "relogMinutes": 33.2,
   "retries": 23,
   "tasks": {
@@ -12131,8 +12165,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 4,
-    "minutes": 4.0,
+    "runs": 7,
+    "minutes": 6.7,
     "failed": 0
    }
   }
@@ -12195,8 +12229,8 @@
   {
    "account": "fake8",
    "task": "rank_match",
-   "why": "the Rank tab does nothing here — not unlocked on this account",
-   "at": "2026-09-26T14:18:50"
+   "why": null,
+   "at": null
   },
   {
    "account": "skosmurf",
@@ -12362,7 +12396,10 @@
    "fake7",
    "chris",
    "jeff",
-   "nova"
+   "nova",
+   "smurf",
+   "fake1",
+   "fake2"
   ]
  },
  "worldBossSkipped": {},
@@ -12874,12 +12911,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 71,
+   "n": 73,
    "medianSec": 17,
    "picker": {
-    "n": 55,
+    "n": 57,
     "medianSec": 16,
-    "jumps": 37
+    "jumps": 39
    },
    "typed": {
     "n": 0,
@@ -12893,8 +12930,8 @@
  },
  "progress": {
   "fake8": {
-   "paradiseStamina": "20/20",
-   "mailUnread": 0
+   "mailUnread": 0,
+   "paradiseStamina": "20/20"
   },
   "deno": {
    "mailUnread": 0,
@@ -13756,7 +13793,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 17,
+     "done": 18,
      "failed": 3
     }
    ]
@@ -13840,7 +13877,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 14,
+     "done": 15,
      "failed": 0
     }
    ]
@@ -13924,7 +13961,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 14,
+     "done": 15,
      "failed": 1
     }
    ]
@@ -14809,7 +14846,7 @@
     },
     {
      "task": "rank_match",
-     "why": "the Rank tab does nothing here — not unlocked on this account"
+     "why": null
     }
    ],
    "spent": {
@@ -14821,8 +14858,8 @@
     "daily claims": 2
    },
    "progress": {
-    "paradiseStamina": "20/20",
-    "mailUnread": 0
+    "mailUnread": 0,
+    "paradiseStamina": "20/20"
    },
    "history": [
     {
