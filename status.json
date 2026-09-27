@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T06:25:11.895527",
+ "generatedAt": "2026-09-28T06:27:16.011306",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "exou",
-  "mode": "sky_pillar",
-  "since": "06:24:51"
+  "account": "lucifer2",
+  "mode": "hoopa",
+  "since": "06:26:46"
  },
  "grid": {
   "tasks": [
@@ -348,7 +348,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "-",
      "-",
      "✓",
@@ -510,8 +510,8 @@
  },
  "counts": {
   "done": 277,
-  "todo": 1,
-  "gaveUp": 3,
+  "todo": 0,
+  "gaveUp": 4,
   "unavailable": 11,
   "windowed": 0
  },
@@ -722,11 +722,32 @@
   }
  },
  "session": {
-  "label": "exou",
-  "at": "2026-09-28T06:25:11.235767",
+  "label": "lucifer2",
+  "at": "2026-09-28T06:27:06.121728",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T06:26:46",
+   "script": "sky_pillar",
+   "account": "exou",
+   "rc": 1,
+   "secs": 19,
+   "stats": {
+    "confirm_refused_with_proofs": 1,
+    "auto_formation": 1,
+    "challenge_refused": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "sky_pillar: 2 proof(s) left unspent"
+   ],
+   "values": {
+    "proofs_spent": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_062626_sky_pillar_exou"
+  },
   {
    "ts": "2026-09-28T06:05:43",
    "script": "sky_pillar",
@@ -7668,27 +7689,12 @@
     "attempts_left": 3
    },
    "dir": "debug_runs/20260927_021226_worldboss_skosmurf"
-  },
-  {
-   "ts": "2026-09-27T02:12:26",
-   "script": "worldboss",
-   "account": "exou",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "dir": "debug_runs/20260927_021120_worldboss_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 109512,
+  "now": 109636,
   "segments": [
    {
     "b": 29029,
@@ -15217,7 +15223,30 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 109512
+    "e": 109583
+   },
+   {
+    "b": 109583,
+    "a": "exou",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 109586,
+    "rc": 1,
+    "e": 109606,
+    "secs": 19,
+    "why": "sky_pillar: 2 proof(s) left unspent"
+   },
+   {
+    "b": 109606,
+    "a": "lucifer2",
+    "s": "hoopa",
+    "login": [
+     109607,
+     109626
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 109636
    }
   ],
   "idle": [
@@ -15750,9 +15779,9 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 184,
-  "relogMinutes": 67.5,
-  "retries": 26,
+  "switches": 185,
+  "relogMinutes": 69.1,
+  "retries": 27,
   "tasks": {
    "dailyclaim": {
     "runs": 19,
@@ -15810,9 +15839,9 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 25,
-    "minutes": 36.4,
-    "failed": 7
+    "runs": 26,
+    "minutes": 36.7,
+    "failed": 8
    },
    "ultra_wormhole": {
     "runs": 15,
@@ -16522,14 +16551,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "exou",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T06:25"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -16548,8 +16570,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 185,
-   "medianSec": 16,
+   "n": 186,
+   "medianSec": 16.0,
    "picker": {
     "n": 143,
     "medianSec": 16,
@@ -16560,18 +16582,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 42,
-    "medianSec": 19.0
+    "n": 43,
+    "medianSec": 19
    }
   }
  },
  "progress": {
-  "exou": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "rank": 4,
-   "pillar": "floor 141 stage 1"
-  },
   "skosmurf": {
    "mailUnread": 0,
    "paradiseStamina": "19/13",
@@ -16669,6 +16685,12 @@
    "paradiseStamina": "9/19",
    "rank": 22,
    "pillar": "floor 51 stage 7"
+  },
+  "exou": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "rank": 4,
+   "pillar": "floor 141 stage 1"
   }
  },
  "ledger": {
@@ -17903,7 +17925,7 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-27",
-   "summary": "13 of 15 dailies done · 1 switched off",
+   "summary": "13 of 15 dailies done · gave up on pillar · 1 switched off",
    "done": 13,
    "owed": 15,
    "open": [
@@ -17913,7 +17935,7 @@
     },
     {
      "task": "pillar",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
@@ -17979,7 +18001,7 @@
     {
      "day": "2026-09-28",
      "done": 1,
-     "failed": 1
+     "failed": 2
     }
    ]
   },
