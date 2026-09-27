@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T13:53:49.941587",
+ "generatedAt": "2026-09-27T13:55:53.347746",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "chris",
   "mode": "rank_match",
-  "since": "13:53:31"
+  "since": "13:55:03"
  },
  "grid": {
   "tasks": [
@@ -68,7 +68,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "✓",
@@ -344,7 +344,7 @@
      "✓",
      "✓",
      "·",
-     "✓",
+     "⏸",
      "✓",
      "✓",
      "✓",
@@ -510,12 +510,18 @@
  },
  "counts": {
   "done": 251,
-  "todo": 24,
+  "todo": 23,
   "gaveUp": 7,
   "unavailable": 11,
   "windowed": 0
  },
  "disabled": [
+  {
+   "account": "exou",
+   "task": "paradise",
+   "since": "2026-09-27T13:55:12",
+   "why": "owner 2026-09-27: remove exou from paradise"
+  },
   {
    "account": "fake1",
    "task": "hoopa",
@@ -716,11 +722,33 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-27T13:53:44.891473",
+  "label": "chris",
+  "at": "2026-09-27T13:55:19.743151",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T13:55:03",
+   "script": "rank_match",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 67,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_panel_scroll": 4,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "dir": "debug_runs/20260927_135356_rank_match_jeff"
+  },
   {
    "ts": "2026-09-27T13:52:36",
    "script": "guild_war",
@@ -7672,32 +7700,12 @@
     "daily_goal_claims": 3
    },
    "dir": "debug_runs/20260926_132857_run_pvp_ranked_lucifer1"
-  },
-  {
-   "ts": "2026-09-26T13:28:53",
-   "script": "guild_war",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 58,
-   "stats": {
-    "near_miss_last_hit": 2,
-    "near_miss_vr_rank": 1,
-    "marginal_battle_victory": 1,
-    "marginal_last_hit": 2,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_132755_guild_war_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 50030,
+  "now": 50153,
   "segments": [
    {
     "b": 29029,
@@ -10861,9 +10869,23 @@
      50011,
      50024
     ],
-    "handoff": null,
+    "handoff": 50035,
+    "rc": 0,
+    "e": 50103,
+    "secs": 67,
+    "why": ""
+   },
+   {
+    "b": 50103,
+    "a": "chris",
+    "s": "rank_match",
+    "login": [
+     50104,
+     50119
+    ],
+    "handoff": 50130,
     "rc": null,
-    "e": 50030
+    "e": 50153
    }
   ],
   "idle": []
@@ -11070,8 +11092,8 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 26,
-  "relogMinutes": 11.9,
+  "switches": 27,
+  "relogMinutes": 12.8,
   "retries": 22,
   "tasks": {
    "dailyclaim": {
@@ -11160,8 +11182,8 @@
     "failed": 4
    },
    "rank_match": {
-    "runs": 2,
-    "minutes": 2.3,
+    "runs": 3,
+    "minutes": 3.4,
     "failed": 0
    }
   }
@@ -12131,79 +12153,79 @@
  "queue": {
   "next": [
    {
-    "account": "jeff",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T13:53"
-   },
-   {
     "account": "chris",
     "task": "rank_match",
-    "startsIn": 1.5,
+    "startsIn": 0.0,
     "eta": "2026-09-27T13:55"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 2.7,
-    "eta": "2026-09-27T13:56"
-   },
-   {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 3.8,
+    "startsIn": 1.1,
     "eta": "2026-09-27T13:57"
    },
    {
     "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 5.0,
+    "task": "rank_match",
+    "startsIn": 2.2,
     "eta": "2026-09-27T13:58"
    },
    {
-    "account": "fake1",
-    "task": "rank_match",
-    "startsIn": 6.1,
+    "account": "smurf",
+    "task": "guild_war",
+    "startsIn": 3.4,
     "eta": "2026-09-27T13:59"
    },
    {
     "account": "fake1",
+    "task": "rank_match",
+    "startsIn": 4.5,
+    "eta": "2026-09-27T14:00"
+   },
+   {
+    "account": "fake1",
     "task": "guild_war",
-    "startsIn": 7.2,
+    "startsIn": 5.6,
     "eta": "2026-09-27T14:01"
    },
    {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 8.3,
+    "startsIn": 6.7,
     "eta": "2026-09-27T14:02"
    },
    {
     "account": "fake2",
     "task": "guild_war",
-    "startsIn": 9.5,
+    "startsIn": 7.9,
     "eta": "2026-09-27T14:03"
    },
    {
     "account": "fake3",
     "task": "rank_match",
-    "startsIn": 10.6,
+    "startsIn": 9.0,
     "eta": "2026-09-27T14:04"
    },
    {
     "account": "fake3",
     "task": "guild_war",
-    "startsIn": 11.7,
-    "eta": "2026-09-27T14:05"
+    "startsIn": 10.1,
+    "eta": "2026-09-27T14:06"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 12.8,
-    "eta": "2026-09-27T14:06"
+    "startsIn": 11.2,
+    "eta": "2026-09-27T14:07"
+   },
+   {
+    "account": "fake4",
+    "task": "guild_war",
+    "startsIn": 12.3,
+    "eta": "2026-09-27T14:08"
    }
   ],
-  "more": 12,
+  "more": 11,
   "fillers": [
    {
     "account": "smurf",
@@ -12237,11 +12259,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 25,
-   "medianSec": 18,
+   "n": 26,
+   "medianSec": 18.0,
    "picker": {
-    "n": 16,
-    "medianSec": 16.5,
+    "n": 17,
+    "medianSec": 16,
     "jumps": 11
    },
    "typed": {
@@ -12813,6 +12835,15 @@
    "why": "lost at stage 11 after 10 clear(s) — the next stage needs a stronger team",
    "action": "story stopped at a lost stage — needs a stronger team",
    "enable": true
+  },
+  {
+   "account": "exou",
+   "task": "paradise",
+   "kind": "other",
+   "since": "2026-09-27T13:55:12",
+   "why": "owner 2026-09-27: remove exou from paradise",
+   "action": "switched off — needs a look",
+   "enable": true
   }
  ],
  "commands": [],
@@ -12898,14 +12929,10 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-27",
-   "summary": "16 of 18 dailies done",
-   "done": 16,
+   "summary": "17 of 18 dailies done",
+   "done": 17,
    "owed": 18,
    "open": [
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
     {
      "task": "island",
      "state": "asks again later"
@@ -12970,7 +12997,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 17,
+     "done": 18,
      "failed": 1
     }
    ]
@@ -13916,13 +13943,17 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-27",
-   "summary": "13 of 15 dailies done · gave up on pillar",
-   "done": 13,
+   "summary": "12 of 15 dailies done · gave up on pillar · 1 switched off",
+   "done": 12,
    "owed": 15,
    "open": [
     {
      "task": "victoryRank",
      "state": "still to do"
+    },
+    {
+     "task": "paradise",
+     "state": "switched off"
     },
     {
      "task": "pillar",
@@ -13943,7 +13974,13 @@
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_115504_combat_daily_exou__KEEP_0142_115635_buy_before_1.png"
     }
    ],
-   "off": [],
+   "off": [
+    {
+     "task": "paradise",
+     "why": "owner 2026-09-27: remove exou from paradise",
+     "since": "2026-09-27T13:55:12"
+    }
+   ],
    "unavailable": [],
    "spent": {
     "pillar/story stages cleared": 1,
