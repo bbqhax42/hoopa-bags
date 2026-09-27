@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T14:55:39.080496",
+ "generatedAt": "2026-09-27T14:57:42.329112",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
-  "mode": "rift",
-  "since": "14:55:26"
+  "account": "jeff",
+  "mode": "hoopa",
+  "since": "14:55:53"
  },
  "grid": {
   "tasks": [
@@ -680,11 +680,25 @@
   }
  },
  "session": {
-  "label": "fake8",
-  "at": "2026-09-27T14:53:44.700529",
+  "label": "jeff",
+  "at": "2026-09-27T14:56:08.017210",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T14:55:53",
+   "script": "rift",
+   "account": "smurf",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260927_145551_rift_smurf"
+  },
   {
    "ts": "2026-09-27T14:55:25",
    "script": "story",
@@ -7628,27 +7642,12 @@
     "rank_rewards": 1
    },
    "dir": "debug_runs/20260926_140929_rank_match_exou"
-  },
-  {
-   "ts": "2026-09-26T14:08:57",
-   "script": "rank_match",
-   "account": "fake7",
-   "rc": 2,
-   "secs": 10,
-   "stats": {
-    "near_miss_go_button": 3,
-    "rank_locked": 1,
-    "rank_locked_week": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_140846_rank_match_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 53739,
+  "now": 53862,
   "segments": [
    {
     "b": 29029,
@@ -11246,11 +11245,25 @@
     "s": "rift",
     "login": [
      53726,
-     null
+     53742
     ],
-    "handoff": null,
+    "handoff": 53751,
+    "rc": 2,
+    "e": 53753,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 53753,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": [
+     53754,
+     53768
+    ],
+    "handoff": 53781,
     "rc": null,
-    "e": 53739
+    "e": 53862
    }
   ],
   "idle": []
@@ -11457,8 +11470,8 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 51,
-  "relogMinutes": 22.9,
+  "switches": 52,
+  "relogMinutes": 23.8,
   "retries": 22,
   "tasks": {
    "dailyclaim": {
@@ -11552,8 +11565,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 1,
-    "minutes": 0.0,
+    "runs": 2,
+    "minutes": 0.1,
     "failed": 0
    },
    "story": {
@@ -11603,8 +11616,8 @@
   {
    "account": "fake7",
    "task": "rank_match",
-   "why": "the Rank tab does nothing here — not unlocked on this account",
-   "at": "2026-09-26T14:08:57"
+   "why": null,
+   "at": null
   },
   {
    "account": "fake8",
@@ -11641,6 +11654,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "smurf",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-09-27T14:55:53"
   }
  ],
  "windows": {
@@ -11804,9 +11823,9 @@
     "last": "2026-09-27T08:02:47"
    },
    "jeff": {
-    "runs": 12,
+    "runs": 13,
     "targets": 0,
-    "last": "2026-09-27T14:39:49"
+    "last": "2026-09-27T14:57:12"
    }
   },
   "targets": [
@@ -12584,12 +12603,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 49,
-   "medianSec": 18,
+   "n": 51,
+   "medianSec": 17,
    "picker": {
-    "n": 34,
-    "medianSec": 17.0,
-    "jumps": 25
+    "n": 36,
+    "medianSec": 16.5,
+    "jumps": 26
    },
    "typed": {
     "n": 0,
@@ -13347,7 +13366,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-27",
-   "summary": "16 of 19 dailies done · gave up on champ · 2 switched off · 2 not available today",
+   "summary": "16 of 19 dailies done · gave up on champ · 2 switched off · 3 not available today",
    "done": 16,
    "owed": 19,
    "open": [
@@ -13398,6 +13417,10 @@
     {
      "task": "joint_battle",
      "why": null
+    },
+    {
+     "task": "rift",
+     "why": "rift_finished"
     }
    ],
    "spent": {
@@ -14003,7 +14026,7 @@
     },
     {
      "task": "rank_match",
-     "why": "the Rank tab does nothing here — not unlocked on this account"
+     "why": null
     }
    ],
    "spent": {
