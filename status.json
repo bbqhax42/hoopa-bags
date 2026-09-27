@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T10:16:52.150379",
+ "generatedAt": "2026-09-27T10:18:56.893773",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake2",
-  "mode": "faction",
-  "since": "10:16:29"
+  "account": "fake3",
+  "mode": "joint_team_daily_quest",
+  "since": "10:18:28"
  },
  "grid": {
   "tasks": [
@@ -184,8 +184,8 @@
    {
     "account": "fake3",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 95,
-  "todo": 155,
+  "done": 97,
+  "todo": 153,
   "gaveUp": 1,
   "unavailable": 6,
   "windowed": 36
@@ -716,11 +716,73 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-09-27T10:03:51.668226",
+  "label": "fake3",
+  "at": "2026-09-27T10:17:52.454433",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T10:18:27",
+   "script": "mail",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "dir": "debug_runs/20260927_101824_mail_fake3"
+  },
+  {
+   "ts": "2026-09-27T10:18:22",
+   "script": "dailyclaim",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 22,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {
+    "rail_badges": "0.190:79 0.275:8 0.345:54 0.428:7 0.500:0"
+   },
+   "dir": "debug_runs/20260927_101800_dailyclaim_fake3"
+  },
+  {
+   "ts": "2026-09-27T10:17:33",
+   "script": "faction",
+   "account": "fake2",
+   "rc": 1,
+   "secs": 60,
+   "stats": {
+    "auto_formation": 8,
+    "skip_retry": 7,
+    "incomplete": 3,
+    "lost_water": 1,
+    "faction_disabled": 3,
+    "floors_water": 1,
+    "lost_fire": 1,
+    "floors_fire": 0,
+    "lost_grass": 1,
+    "floors_grass": 4,
+    "sweeps_used": 2
+   },
+   "incomplete": [
+    "faction: water tower: lost the battle after 1 win(s) — the team needs adjusting",
+    "faction: fire tower: lost the battle after 0 win(s) — the team needs adjusting",
+    "faction: grass tower: lost the battle after 4 win(s) — the team needs adjusting"
+   ],
+   "values": {},
+   "dir": "debug_runs/20260927_101632_faction_fake2"
+  },
   {
    "ts": "2026-09-27T10:16:28",
    "script": "sky_pillar",
@@ -7776,62 +7838,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260926_093230_daily_dungeon_chris"
-  },
-  {
-   "ts": "2026-09-26T09:31:26",
-   "script": "joint_team_daily_quest",
-   "account": "chris",
-   "rc": 0,
-   "secs": 27,
-   "stats": {
-    "panel_swipes": 8
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_093059_joint_team_daily_quest_chris"
-  },
-  {
-   "ts": "2026-09-26T09:30:57",
-   "script": "joint_team_daily_quest",
-   "account": "chris",
-   "rc": 1,
-   "secs": 57,
-   "stats": {
-    "near_miss_joint_team_daily_panel": 2,
-    "marginal_joint_team_daily_panel": 2,
-    "panel_swipes": 8,
-    "incomplete": 1,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [
-    "joint_team_daily_quest: artifact quest"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260926_093000_joint_team_daily_quest_chris"
-  },
-  {
-   "ts": "2026-09-26T09:29:58",
-   "script": "mail",
-   "account": "chris",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260926_092955_mail_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 37012,
+  "now": 37137,
   "segments": [
    {
     "b": 29029,
@@ -8954,13 +8966,58 @@
     "s": "faction",
     "login": null,
     "handoff": 36992,
+    "rc": 1,
+    "e": 37054,
+    "secs": 60,
+    "why": "faction: water tower: lost the battle after 1 win(s) — the team needs adjusting; faction: fire tower: lost the battle after 0 win(s) — the team needs adjusting;"
+   },
+   {
+    "b": 37054,
+    "a": "fake3",
+    "s": "dailyclaim",
+    "login": [
+     37054,
+     37072
+    ],
+    "handoff": 37080,
+    "rc": 0,
+    "e": 37103,
+    "secs": 22,
+    "why": ""
+   },
+   {
+    "b": 37103,
+    "a": "fake3",
+    "s": "mail",
+    "login": null,
+    "handoff": 37103,
+    "rc": 0,
+    "e": 37108,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 37108,
+    "a": "fake3",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 37108,
     "rc": null,
-    "e": 37012
+    "e": 37137
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-27T10:17:33",
+   "account": "fake2",
+   "task": "faction",
+   "rc": 1,
+   "secs": 60,
+   "why": "faction: water tower: lost the battle after 1 win(s) — the team needs adjusting; faction: fire tower: lost the battle after 0 win(s) — the team needs adjusting; faction: grass tower: lost the battle after 4 win(s) — the team needs adjusting",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_101632_faction_fake2__KEEP_0086_101724_faction_lost_grass.png"
+  },
   {
    "ts": "2026-09-27T09:51:14",
    "account": "smurf",
@@ -9000,18 +9057,18 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 6,
-  "relogMinutes": 3.5,
-  "retries": 4,
+  "switches": 7,
+  "relogMinutes": 3.9,
+  "retries": 5,
   "tasks": {
    "dailyclaim": {
-    "runs": 7,
-    "minutes": 2.8,
+    "runs": 8,
+    "minutes": 3.2,
     "failed": 0
    },
    "mail": {
-    "runs": 7,
-    "minutes": 0.3,
+    "runs": 8,
+    "minutes": 0.4,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -9075,9 +9132,9 @@
     "failed": 2
    },
    "faction": {
-    "runs": 3,
-    "minutes": 9.5,
-    "failed": 1
+    "runs": 4,
+    "minutes": 10.5,
+    "failed": 2
    },
    "misty_woods": {
     "runs": 1,
@@ -10100,78 +10157,78 @@
   "next": [
    {
     "account": "fake3",
-    "task": "dailyclaim",
-    "startsIn": 0.4,
-    "eta": "2026-09-27T10:17"
-   },
-   {
-    "account": "fake3",
-    "task": "mail",
-    "startsIn": 0.8,
-    "eta": "2026-09-27T10:17"
-   },
-   {
-    "account": "fake3",
     "task": "joint_team_daily_quest",
-    "startsIn": 0.8,
-    "eta": "2026-09-27T10:17"
-   },
-   {
-    "account": "fake3",
-    "task": "joint_battle",
-    "startsIn": 1.8,
+    "startsIn": 0.0,
     "eta": "2026-09-27T10:18"
    },
    {
     "account": "fake3",
-    "task": "daily_dungeon",
-    "startsIn": 3.8,
-    "eta": "2026-09-27T10:20"
+    "task": "joint_battle",
+    "startsIn": 0.9,
+    "eta": "2026-09-27T10:19"
    },
    {
     "account": "fake3",
-    "task": "pokemon_home",
-    "startsIn": 4.2,
+    "task": "daily_dungeon",
+    "startsIn": 2.9,
     "eta": "2026-09-27T10:21"
    },
    {
     "account": "fake3",
-    "task": "combat_daily",
-    "startsIn": 5.3,
+    "task": "pokemon_home",
+    "startsIn": 3.3,
     "eta": "2026-09-27T10:22"
    },
    {
     "account": "fake3",
+    "task": "combat_daily",
+    "startsIn": 4.5,
+    "eta": "2026-09-27T10:23"
+   },
+   {
+    "account": "fake3",
     "task": "victory_road",
-    "startsIn": 7.2,
-    "eta": "2026-09-27T10:24"
+    "startsIn": 6.3,
+    "eta": "2026-09-27T10:25"
    },
    {
     "account": "fake3",
     "task": "paradise",
-    "startsIn": 7.3,
-    "eta": "2026-09-27T10:24"
+    "startsIn": 6.5,
+    "eta": "2026-09-27T10:25"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.4,
-    "eta": "2026-09-27T10:28"
+    "startsIn": 10.6,
+    "eta": "2026-09-27T10:29"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 11.5,
-    "eta": "2026-09-27T10:28"
+    "startsIn": 10.7,
+    "eta": "2026-09-27T10:29"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 12.7,
-    "eta": "2026-09-27T10:29"
+    "startsIn": 11.9,
+    "eta": "2026-09-27T10:30"
+   },
+   {
+    "account": "fake4",
+    "task": "dailyclaim",
+    "startsIn": 14.9,
+    "eta": "2026-09-27T10:33"
+   },
+   {
+    "account": "fake4",
+    "task": "mail",
+    "startsIn": 15.3,
+    "eta": "2026-09-27T10:34"
    }
   ],
-  "more": 143,
+  "more": 141,
   "fillers": [
    {
     "account": "smurf",
@@ -10205,12 +10262,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 6,
-   "medianSec": 16.0,
+   "n": 7,
+   "medianSec": 16,
    "picker": {
-    "n": 6,
-    "medianSec": 16.0,
-    "jumps": 4
+    "n": 7,
+    "medianSec": 16,
+    "jumps": 5
    },
    "typed": {
     "n": 0,
@@ -10224,10 +10281,10 @@
  },
  "progress": {
   "chris": {
-   "mailUnread": 0,
    "paradiseStamina": "20/20",
    "rank": 1,
-   "pillar": "floor 138 stage 9"
+   "pillar": "floor 138 stage 9",
+   "mailUnread": 0
   },
   "smurf": {
    "mailUnread": 0,
@@ -10326,7 +10383,12 @@
   }
  },
  "ledger": {
+  "fake3": {
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "fake2": {
+   "faction sweeps": 2,
    "pillar/story stages cleared": 4,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
@@ -10816,10 +10878,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "20/20",
     "rank": 1,
-    "pillar": "floor 138 stage 9"
+    "pillar": "floor 138 stage 9",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -11095,7 +11157,14 @@
      "state": "not available today"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "faction",
+     "at": "10:17",
+     "why": "faction: water tower: lost the battle after 1 win(s) — the team needs adjusting; faction: fire tower: lost the battle after 0 win(s) — the team needs adjusting; faction: grass tower: lost the battle after 4 win(s) — the team needs adjusting",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260927_101632_faction_fake2__KEEP_0086_101724_faction_lost_grass.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -11115,6 +11184,7 @@
     }
    ],
    "spent": {
+    "faction sweeps": 2,
     "pillar/story stages cleared": 4,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
@@ -11159,25 +11229,17 @@
     {
      "day": "2026-09-27",
      "done": 11,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
   "fake3": {
    "name": "Random999",
    "day": "2026-09-27",
-   "summary": "0 of 14 dailies done · 2 switched off",
-   "done": 0,
+   "summary": "2 of 14 dailies done · 2 switched off",
+   "done": 2,
    "owed": 14,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "still to do"
@@ -11241,7 +11303,10 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 2
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "20/20",
@@ -11280,7 +11345,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
