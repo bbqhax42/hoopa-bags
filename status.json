@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T21:06:32.113344",
+ "generatedAt": "2026-09-27T21:08:35.472177",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "hoopa",
-  "since": "21:05:20"
+  "account": "fake2",
+  "mode": "story",
+  "since": "21:06:54"
  },
  "grid": {
   "tasks": [
@@ -639,8 +639,8 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 3,
-   "at": "2026-09-27T20:45:01"
+   "keys": 0,
+   "at": "2026-09-27T21:06:53"
   },
   "chris": {
    "keys": 5,
@@ -704,11 +704,27 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-27T21:00:36.500145",
+  "label": "fake2",
+  "at": "2026-09-27T21:07:11.698812",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T21:06:54",
+   "script": "hoopa",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 9,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-27T20:58:51",
    "script": "story",
@@ -7573,34 +7589,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260926_150613_collect_hoopa_keys_dre"
-  },
-  {
-   "ts": "2026-09-26T15:06:12",
-   "script": "run_pvp_ranked",
-   "account": "dre",
-   "rc": 0,
-   "secs": 90,
-   "stats": {
-    "ranked_fought": 10,
-    "ranked_lost": 3,
-    "ranked_won": 7,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0,
-    "daily_goal_claimed": 2
-   },
-   "incomplete": [],
-   "values": {
-    "ranked_wins": 7,
-    "rank": 6,
-    "daily_goal_claims": 2
-   },
-   "dir": "debug_runs/20260926_150441_run_pvp_ranked_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 75992,
+  "now": 76115,
   "segments": [
    {
     "b": 29029,
@@ -12229,7 +12223,30 @@
     "login": null,
     "handoff": 75920,
     "rc": null,
-    "e": 75992
+    "e": 76004
+   },
+   {
+    "b": 76004,
+    "a": "jeff",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 76005,
+    "rc": 2,
+    "e": 76014,
+    "secs": 9,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 76014,
+    "a": "fake2",
+    "s": "story",
+    "login": [
+     76015,
+     76031
+    ],
+    "handoff": 76039,
+    "rc": null,
+    "e": 76115
    }
   ],
   "idle": [
@@ -12308,7 +12325,9 @@
    75664,
    75746,
    75824,
-   75920
+   75920,
+   76004,
+   76014
   ]
  },
  "failures": [
@@ -12522,8 +12541,8 @@
  ],
  "day": {
   "since": "2026-09-27T08:00",
-  "switches": 93,
-  "relogMinutes": 46.3,
+  "switches": 94,
+  "relogMinutes": 46.7,
   "retries": 25,
   "tasks": {
    "dailyclaim": {
@@ -12705,6 +12724,12 @@
    "task": "story",
    "why": "story_locked",
    "at": "2026-09-27T20:31:17"
+  },
+  {
+   "account": "jeff",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-27T21:06:54"
   },
   {
    "account": "skosmurf",
@@ -12898,9 +12923,9 @@
     "last": "2026-09-27T17:56:48"
    },
    "jeff": {
-    "runs": 28,
-    "targets": 3,
-    "last": "2026-09-27T21:05:19"
+    "runs": 29,
+    "targets": 4,
+    "last": "2026-09-27T21:06:44"
    },
    "nova": {
     "runs": 13,
@@ -12914,6 +12939,13 @@
    }
   },
   "targets": [
+   {
+    "ts": "2026-09-27T21:06:44",
+    "runner": "jeff",
+    "items": [
+     "Choice Band"
+    ]
+   },
    {
     "ts": "2026-09-27T21:02:25",
     "runner": "jeff",
@@ -12989,13 +13021,6 @@
     "runner": "lucifer2",
     "items": [
      "Rocky Helmet"
-    ]
-   },
-   {
-    "ts": "2026-09-27T03:37:24",
-    "runner": "lucifer2",
-    "items": [
-     "Grip Claw"
     ]
    }
   ]
@@ -13370,11 +13395,11 @@
     "mode": "hoopa"
    },
    {
-    "account": "jeff",
+    "account": "nova",
     "mode": "hoopa"
    },
    {
-    "account": "nova",
+    "account": "lucifer1",
     "mode": "hoopa"
    }
   ],
@@ -13385,12 +13410,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 92,
-   "medianSec": 17.0,
+   "n": 93,
+   "medianSec": 17,
    "picker": {
-    "n": 71,
-    "medianSec": 16,
-    "jumps": 50
+    "n": 72,
+    "medianSec": 16.0,
+    "jumps": 51
    },
    "typed": {
     "n": 0,
@@ -13404,10 +13429,10 @@
  },
  "progress": {
   "dre": {
-   "rank": 6,
    "pillar": "floor 86 stage 2",
    "mailUnread": 0,
-   "paradiseStamina": "1/13"
+   "paradiseStamina": "1/13",
+   "rank": 6
   },
   "chris": {
    "mailUnread": 0,
@@ -14041,7 +14066,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-27",
-   "summary": "17 of 18 dailies done",
+   "summary": "17 of 18 dailies done · 1 not available today",
    "done": 17,
    "owed": 18,
    "open": [
@@ -14059,7 +14084,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    }
+   ],
    "spent": {
     "guild war attempts": 1,
     "pillar/story stages cleared": 3,
@@ -15530,10 +15560,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 6,
     "pillar": "floor 86 stage 2",
     "mailUnread": 0,
-    "paradiseStamina": "1/13"
+    "paradiseStamina": "1/13",
+    "rank": 6
    },
    "history": [
     {
