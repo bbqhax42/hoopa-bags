@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-27T10:23:05.715167",
+ "generatedAt": "2026-09-27T10:25:09.746554",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake3",
-  "mode": "combat_daily",
-  "since": "10:21:47"
+  "mode": "paradise",
+  "since": "10:23:56"
  },
  "grid": {
   "tasks": [
@@ -191,8 +191,8 @@
      "✓",
      "✓",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -509,8 +509,8 @@
   ]
  },
  "counts": {
-  "done": 101,
-  "todo": 149,
+  "done": 103,
+  "todo": 147,
   "gaveUp": 1,
   "unavailable": 6,
   "windowed": 36
@@ -721,6 +721,49 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-27T10:23:55",
+   "script": "victory_road",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "dir": "debug_runs/20260927_102348_victory_road_fake3"
+  },
+  {
+   "ts": "2026-09-27T10:23:47",
+   "script": "combat_daily",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 114,
+   "stats": {
+    "marginal_battle_victory_confirm": 1,
+    "near_miss_vr_rank": 8,
+    "near_miss_battle_victory_confirm": 2,
+    "title_reread_named": 3,
+    "near_miss_pokemon_upgrade": 2,
+    "upgrade_skip_maxed": 1,
+    "pokemon_upgraded": 1,
+    "gacha_ticket": 1,
+    "gacha_rare_reveal": 1,
+    "island_shop_bought": 1,
+    "outstanding_reread_after_toast": 1,
+    "other_task_rows_left": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 2/2 o ac",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "ticket",
+    "left": "craft row still open (for pokemon_home)"
+   },
+   "dir": "debug_runs/20260927_102152_combat_daily_fake3"
+  },
   {
    "ts": "2026-09-27T10:21:46",
    "script": "pokemon_home",
@@ -7801,54 +7844,12 @@
     "left": "paradise: an Engram milestone reward would not claim"
    },
    "dir": "debug_runs/20260926_093612_paradise_chris"
-  },
-  {
-   "ts": "2026-09-26T09:36:09",
-   "script": "victory_road",
-   "account": "chris",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260926_093603_victory_road_chris"
-  },
-  {
-   "ts": "2026-09-26T09:36:01",
-   "script": "combat_daily",
-   "account": "chris",
-   "rc": 0,
-   "secs": 103,
-   "stats": {
-    "near_miss_afk_rewards": 1,
-    "marginal_afk_rewards": 3,
-    "title_reread_named": 4,
-    "marginal_battle_victory_confirm": 1,
-    "refused_quick_bar": 1,
-    "adv_overflow": 1,
-    "near_miss_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 5,
-    "marginal_adventure_event": 1,
-    "gacha_free": 1,
-    "island_shop_bought": 1,
-    "marginal_guild_donation": 2
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 8/8 + ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free"
-   },
-   "dir": "debug_runs/20260926_093418_combat_daily_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-27T00:00",
   "since": 28800.0,
-  "now": 37386,
+  "now": 37510,
   "segments": [
    {
     "b": 29029,
@@ -9049,8 +9050,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 37312,
+    "rc": 0,
+    "e": 37428,
+    "secs": 114,
+    "why": ""
+   },
+   {
+    "b": 37428,
+    "a": "fake3",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 37428,
+    "rc": 0,
+    "e": 37436,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 37436,
+    "a": "fake3",
+    "s": "paradise",
+    "login": null,
+    "handoff": 37437,
     "rc": null,
-    "e": 37386
+    "e": 37510
    }
   ],
   "idle": []
@@ -9139,13 +9162,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 7,
-    "minutes": 12.9,
+    "runs": 8,
+    "minutes": 14.8,
     "failed": 0
    },
    "victory_road": {
-    "runs": 7,
-    "minutes": 0.8,
+    "runs": 8,
+    "minutes": 0.9,
     "failed": 0
    },
    "paradise": {
@@ -10198,78 +10221,78 @@
   "next": [
    {
     "account": "fake3",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-27T10:23"
-   },
-   {
-    "account": "fake3",
-    "task": "victory_road",
-    "startsIn": 1.8,
-    "eta": "2026-09-27T10:24"
-   },
-   {
-    "account": "fake3",
     "task": "paradise",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-09-27T10:25"
    },
    {
     "account": "fake3",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.1,
+    "startsIn": 4.1,
     "eta": "2026-09-27T10:29"
    },
    {
     "account": "fake3",
     "task": "sky_pillar",
-    "startsIn": 6.2,
+    "startsIn": 4.2,
     "eta": "2026-09-27T10:29"
    },
    {
     "account": "fake3",
     "task": "faction",
-    "startsIn": 7.4,
+    "startsIn": 5.4,
     "eta": "2026-09-27T10:30"
    },
    {
     "account": "fake4",
     "task": "dailyclaim",
-    "startsIn": 10.4,
+    "startsIn": 8.4,
     "eta": "2026-09-27T10:33"
    },
    {
     "account": "fake4",
     "task": "mail",
-    "startsIn": 10.8,
-    "eta": "2026-09-27T10:33"
+    "startsIn": 8.8,
+    "eta": "2026-09-27T10:34"
    },
    {
     "account": "fake4",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.8,
-    "eta": "2026-09-27T10:33"
+    "startsIn": 8.9,
+    "eta": "2026-09-27T10:34"
    },
    {
     "account": "fake4",
     "task": "joint_battle",
-    "startsIn": 11.7,
+    "startsIn": 9.8,
     "eta": "2026-09-27T10:34"
    },
    {
     "account": "fake4",
     "task": "daily_dungeon",
-    "startsIn": 13.7,
+    "startsIn": 11.8,
     "eta": "2026-09-27T10:36"
    },
    {
     "account": "fake4",
     "task": "pokemon_home",
-    "startsIn": 14.2,
+    "startsIn": 12.3,
     "eta": "2026-09-27T10:37"
+   },
+   {
+    "account": "fake4",
+    "task": "combat_daily",
+    "startsIn": 13.3,
+    "eta": "2026-09-27T10:38"
+   },
+   {
+    "account": "fake4",
+    "task": "victory_road",
+    "startsIn": 15.2,
+    "eta": "2026-09-27T10:40"
    }
   ],
-  "more": 137,
+  "more": 135,
   "fillers": [
    {
     "account": "smurf",
@@ -10425,6 +10448,7 @@
  },
  "ledger": {
   "fake3": {
+   "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 2
   },
@@ -10492,6 +10516,12 @@
  },
  "paused": null,
  "warnings": [
+  {
+   "ts": "2026-09-27T10:23:47",
+   "account": "fake3",
+   "task": "combat_daily",
+   "left": "craft row still open (for pokemon_home)"
+  },
   {
    "ts": "2026-09-27T09:56:35",
    "account": "fake1",
@@ -10583,6 +10613,15 @@
    "task": "combat_daily",
    "kind": "left",
    "since": "2026-09-27T09:56:35",
+   "why": "craft row still open (for pokemon_home)",
+   "action": "finished, but these rows were still open on its panel",
+   "enable": false
+  },
+  {
+   "account": "fake3",
+   "task": "combat_daily",
+   "kind": "left",
+   "since": "2026-09-27T10:23:47",
    "why": "craft row still open (for pokemon_home)",
    "action": "finished, but these rows were still open on its panel",
    "enable": false
@@ -11277,18 +11316,10 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-09-27",
-   "summary": "6 of 14 dailies done · 2 switched off",
-   "done": 6,
+   "summary": "8 of 14 dailies done · 2 switched off",
+   "done": 8,
    "owed": 14,
    "open": [
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
-    },
     {
      "task": "victoryRank",
      "state": "waits for its window"
@@ -11314,7 +11345,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "combat_daily",
+     "at": "10:23",
+     "why": "finished, but left open: craft row still open (for pokemon_home)",
+     "frame": null
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -11329,6 +11367,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 2
    },
@@ -11370,7 +11409,7 @@
     },
     {
      "day": "2026-09-27",
-     "done": 6,
+     "done": 8,
      "failed": 0
     }
    ]
