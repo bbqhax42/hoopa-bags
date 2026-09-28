@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T06:04:03.654765",
+ "generatedAt": "2026-09-29T06:06:07.680435",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "lucifer1",
   "mode": "hoopa",
-  "since": "06:00:00"
+  "since": "06:04:26"
  },
  "grid": {
   "tasks": [
@@ -716,8 +716,8 @@
    "at": "2026-09-28T03:58:42"
   },
   "nova": {
-   "keys": 2,
-   "at": "2026-09-29T05:42:36"
+   "keys": 0,
+   "at": "2026-09-29T06:04:25"
   },
   "fake6": {
    "keys": 117,
@@ -765,11 +765,27 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-29T05:42:24.144775",
+  "label": "lucifer1",
+  "at": "2026-09-29T06:04:43.802915",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T06:04:26",
+   "script": "hoopa",
+   "account": "nova",
+   "rc": 2,
+   "secs": 265,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-29T05:42:07",
    "script": "island_challenge",
@@ -8028,26 +8044,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_085752_pokemon_home_jeff"
-  },
-  {
-   "ts": "2026-09-28T08:57:50",
-   "script": "daily_dungeon",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_085736_daily_dungeon_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 108244,
+  "now": 108368,
   "segments": [
    {
     "b": 30174,
@@ -8346,10 +8348,8 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 32256,
-    "rc": 0,
-    "e": 32271,
-    "secs": 13,
-    "why": ""
+    "rc": null,
+    "e": 32271
    },
    {
     "b": 32271,
@@ -14116,8 +14116,22 @@
     "s": "hoopa",
     "login": null,
     "handoff": 108000,
+    "rc": 2,
+    "e": 108266,
+    "secs": 265,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 108266,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     108267,
+     108283
+    ],
+    "handoff": 108294,
     "rc": null,
-    "e": 108244
+    "e": 108368
    }
   ],
   "idle": [
@@ -14479,8 +14493,8 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 257,
-  "relogMinutes": 83.7,
+  "switches": 258,
+  "relogMinutes": 84.2,
   "retries": 121,
   "tasks": {
    "island_challenge": {
@@ -14774,6 +14788,12 @@
   },
   {
    "account": "nova",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-29T06:04:26"
+  },
+  {
+   "account": "nova",
    "task": "teamshop",
    "why": null,
    "at": null
@@ -14954,9 +14974,9 @@
   "since": "2026-09-28T08:00",
   "runners": {
    "nova": {
-    "runs": 93,
-    "targets": 2,
-    "last": "2026-09-29T06:03:07"
+    "runs": 94,
+    "targets": 3,
+    "last": "2026-09-29T06:04:17"
    },
    "chris": {
     "runs": 73,
@@ -14969,12 +14989,20 @@
     "last": "2026-09-29T00:24:12"
    },
    "lucifer1": {
-    "runs": 212,
+    "runs": 213,
     "targets": 17,
-    "last": "2026-09-29T05:41:22"
+    "last": "2026-09-29T06:05:46"
    }
   },
   "targets": [
+   {
+    "ts": "2026-09-29T06:04:17",
+    "runner": "nova",
+    "items": [
+     "Choice Band",
+     "Rocky Helmet"
+    ]
+   },
    {
     "ts": "2026-09-29T05:15:22",
     "runner": "lucifer1",
@@ -15050,13 +15078,6 @@
     "runner": "lucifer1",
     "items": [
      "Black Sludge"
-    ]
-   },
-   {
-    "ts": "2026-09-28T23:47:35",
-    "runner": "lucifer1",
-    "items": [
-     "Leftover Fruit"
     ]
    }
   ]
@@ -15468,10 +15489,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "nova",
-    "mode": "hoopa"
-   },
-   {
     "account": "lucifer1",
     "mode": "hoopa"
    }
@@ -15483,12 +15500,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 227,
-   "medianSec": 16,
+   "n": 228,
+   "medianSec": 16.0,
    "picker": {
-    "n": 180,
-    "medianSec": 16.0,
-    "jumps": 106
+    "n": 181,
+    "medianSec": 16,
+    "jumps": 107
    },
    "typed": {
     "n": 0,
@@ -15840,7 +15857,7 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-28",
-   "summary": "15 of 17 dailies done · gave up on JointB · 1 not available today",
+   "summary": "15 of 17 dailies done · gave up on JointB · 2 not available today",
    "done": 15,
    "owed": 17,
    "open": [
@@ -15856,6 +15873,10 @@
    "issues": [],
    "off": [],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "teamshop",
      "why": null
