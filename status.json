@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T14:36:49.200074",
+ "generatedAt": "2026-09-28T14:38:53.365434",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff1",
   "mode": "dailyclaim",
-  "since": "14:36:34"
+  "since": "14:38:35"
  },
  "grid": {
   "tasks": [
@@ -81,7 +81,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -712,7 +712,7 @@
  },
  "counts": {
   "done": 246,
-  "todo": 87,
+  "todo": 86,
   "gaveUp": 10,
   "unavailable": 22,
   "windowed": 0
@@ -954,11 +954,35 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-28T14:36:17.221802",
+  "label": "chris",
+  "at": "2026-09-28T14:38:12.229201",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T14:38:34",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 12,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_143821_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-28T14:37:56",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_143743_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-28T14:36:33",
    "script": "run_pvp_ranked",
@@ -8258,44 +8282,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260927_201122_worldboss_exou"
-  },
-  {
-   "ts": "2026-09-27T20:11:22",
-   "script": "worldboss",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 55,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260927_201027_worldboss_sprite"
-  },
-  {
-   "ts": "2026-09-27T20:10:26",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 55,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260927_200931_worldboss_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 52609,
+  "now": 52733,
   "segments": [
    {
     "b": 30174,
@@ -12397,12 +12389,70 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 52609
+    "e": 52638
+   },
+   {
+    "b": 52638,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     52638,
+     52653
+    ],
+    "handoff": 52663,
+    "rc": 1,
+    "e": 52677,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 52677,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     52678,
+     52692
+    ],
+    "handoff": 52701,
+    "rc": 1,
+    "e": 52715,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 52715,
+    "a": "jeff1",
+    "s": "dailyclaim",
+    "login": [
+     52716,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 52733
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-28T14:38:34",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 12,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_143821_island_challenge_chris__KEEP_0004_143834_final.png"
+  },
+  {
+   "ts": "2026-09-28T14:37:56",
+   "account": "jeff",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_143743_island_challenge_jeff__KEEP_0004_143756_final.png"
+  },
   {
    "ts": "2026-09-28T14:27:10",
    "account": "dre",
@@ -12739,14 +12789,14 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 94,
-  "relogMinutes": 40.1,
-  "retries": 78,
+  "switches": 97,
+  "relogMinutes": 40.9,
+  "retries": 80,
   "tasks": {
    "island_challenge": {
-    "runs": 24,
-    "minutes": 5.2,
-    "failed": 24
+    "runs": 26,
+    "minutes": 5.6,
+    "failed": 26
    },
    "dailyclaim": {
     "runs": 19,
@@ -13472,79 +13522,79 @@
  "queue": {
   "next": [
    {
-    "account": "jeff",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-28T14:37"
-   },
-   {
     "account": "jeff1",
     "task": "dailyclaim",
-    "startsIn": 1.0,
-    "eta": "2026-09-28T14:37"
+    "startsIn": 0.0,
+    "eta": "2026-09-28T14:38"
    },
    {
     "account": "jeff1",
     "task": "mail",
-    "startsIn": 1.5,
-    "eta": "2026-09-28T14:38"
-   },
-   {
-    "account": "jeff1",
-    "task": "joint_team_daily_quest",
-    "startsIn": 1.6,
-    "eta": "2026-09-28T14:38"
-   },
-   {
-    "account": "jeff1",
-    "task": "joint_battle",
-    "startsIn": 2.5,
+    "startsIn": 0.5,
     "eta": "2026-09-28T14:39"
    },
    {
     "account": "jeff1",
+    "task": "joint_team_daily_quest",
+    "startsIn": 0.6,
+    "eta": "2026-09-28T14:39"
+   },
+   {
+    "account": "jeff1",
+    "task": "joint_battle",
+    "startsIn": 1.5,
+    "eta": "2026-09-28T14:40"
+   },
+   {
+    "account": "jeff1",
     "task": "daily_dungeon",
-    "startsIn": 4.5,
-    "eta": "2026-09-28T14:41"
-   },
-   {
-    "account": "jeff1",
-    "task": "pokemon_home",
-    "startsIn": 4.8,
-    "eta": "2026-09-28T14:41"
-   },
-   {
-    "account": "jeff1",
-    "task": "combat_daily",
-    "startsIn": 5.7,
+    "startsIn": 3.5,
     "eta": "2026-09-28T14:42"
    },
    {
     "account": "jeff1",
+    "task": "pokemon_home",
+    "startsIn": 3.8,
+    "eta": "2026-09-28T14:42"
+   },
+   {
+    "account": "jeff1",
+    "task": "combat_daily",
+    "startsIn": 4.6,
+    "eta": "2026-09-28T14:43"
+   },
+   {
+    "account": "jeff1",
     "task": "victory_road",
-    "startsIn": 7.5,
-    "eta": "2026-09-28T14:44"
-   },
-   {
-    "account": "jeff1",
-    "task": "rank_match",
-    "startsIn": 7.6,
-    "eta": "2026-09-28T14:44"
-   },
-   {
-    "account": "jeff1",
-    "task": "paradise",
-    "startsIn": 8.6,
+    "startsIn": 6.4,
     "eta": "2026-09-28T14:45"
    },
    {
     "account": "jeff1",
+    "task": "rank_match",
+    "startsIn": 6.6,
+    "eta": "2026-09-28T14:45"
+   },
+   {
+    "account": "jeff1",
+    "task": "paradise",
+    "startsIn": 7.6,
+    "eta": "2026-09-28T14:46"
+   },
+   {
+    "account": "jeff1",
     "task": "collect_hoopa_keys",
-    "startsIn": 13.4,
-    "eta": "2026-09-28T14:50"
+    "startsIn": 12.4,
+    "eta": "2026-09-28T14:51"
+   },
+   {
+    "account": "jeff1",
+    "task": "sky_pillar",
+    "startsIn": 12.5,
+    "eta": "2026-09-28T14:51"
    }
   ],
-  "more": 75,
+  "more": 74,
   "fillers": [
    {
     "account": "smurf",
@@ -13578,10 +13628,10 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 93,
+   "n": 95,
    "medianSec": 16,
    "picker": {
-    "n": 75,
+    "n": 77,
     "medianSec": 15,
     "jumps": 37
    },
@@ -13596,15 +13646,6 @@
   }
  },
  "progress": {
-  "fake6": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20"
-  },
-  "sprite": {
-   "mailUnread": 0,
-   "paradiseStamina": "1/20",
-   "pillar": "floor 51 stage 10"
-  },
   "exou": {
    "mailUnread": 0
   },
@@ -13684,10 +13725,19 @@
    "paradiseStamina": "20/20",
    "pillar": "floor 7 stage 4"
   },
+  "fake6": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20"
+  },
   "fake7": {
    "mailUnread": 0,
    "paradiseStamina": "2/12",
    "pillar": "floor 4 stage 6"
+  },
+  "sprite": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/20",
+   "pillar": "floor 51 stage 10"
   }
  },
  "ledger": {
@@ -14242,15 +14292,15 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [
     {
      "task": "island_challenge",
-     "at": "14:07",
+     "at": "14:37",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_140710_island_challenge_jeff__KEEP_0004_140723_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_143743_island_challenge_jeff__KEEP_0004_143756_final.png"
     }
    ],
    "off": [],
@@ -14307,7 +14357,7 @@
     {
      "day": "2026-09-28",
      "done": 16,
-     "failed": 12
+     "failed": 13
     }
    ]
   },
@@ -14338,9 +14388,9 @@
    "issues": [
     {
      "task": "island_challenge",
-     "at": "14:08",
+     "at": "14:38",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_140749_island_challenge_chris__KEEP_0004_140802_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_143821_island_challenge_chris__KEEP_0004_143834_final.png"
     },
     {
      "task": "combat_daily",
@@ -14403,7 +14453,7 @@
     {
      "day": "2026-09-28",
      "done": 16,
-     "failed": 13
+     "failed": 14
     }
    ]
   },
