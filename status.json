@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T13:36:42.957461",
+ "generatedAt": "2026-09-28T13:38:47.169632",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "island_challenge",
-  "since": "13:36:12"
+  "account": "chris",
+  "mode": "rank_match",
+  "since": "13:37:30"
  },
  "grid": {
   "tasks": [
@@ -107,7 +107,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -438,7 +438,7 @@
      "·",
      "✓",
      "✓",
-     "💤",
+     "·",
      "✓",
      "✓",
      "-",
@@ -873,7 +873,6 @@
   "fake6|teamshop": "2026-09-28T14:42",
   "fake8|joint_team_daily_quest": "2026-09-28T16:29",
   "fake8|teamshop": "2026-09-28T14:43",
-  "lucifer2|run_pvp_ranked": "2026-09-28T13:37",
   "nova|joint_team_daily_quest": "2026-09-28T16:29",
   "nova|teamshop": "2026-09-28T15:29"
  },
@@ -945,11 +944,35 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-28T13:36:27.083082",
+  "label": "chris",
+  "at": "2026-09-28T13:37:07.417536",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T13:37:29",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 12,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_133716_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-28T13:36:51",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_133638_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-28T13:36:11",
    "script": "combat_daily",
@@ -8206,44 +8229,12 @@
     "stage": 2
    },
    "dir": "debug_runs/20260927_134210_sky_pillar_dre"
-  },
-  {
-   "ts": "2026-09-27T13:42:06",
-   "script": "sky_pillar",
-   "account": "dre",
-   "rc": 1,
-   "secs": 148,
-   "stats": {
-    "stages_cleared": 8,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "sky_pillar: 89 proof(s) left unspent"
-   ],
-   "values": {
-    "floor": 85,
-    "stage": 4
-   },
-   "dir": "debug_runs/20260927_133937_sky_pillar_dre"
-  },
-  {
-   "ts": "2026-09-27T13:39:36",
-   "script": "collect_hoopa_keys",
-   "account": "dre",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_133931_collect_hoopa_keys_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 49003,
+  "now": 49127,
   "segments": [
    {
     "b": 30174,
@@ -11669,13 +11660,56 @@
      48987
     ],
     "handoff": 48998,
+    "rc": 1,
+    "e": 49012,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 49012,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     49013,
+     49027
+    ],
+    "handoff": 49036,
+    "rc": 1,
+    "e": 49050,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 49050,
+    "a": "chris",
+    "s": "rank_match",
+    "login": null,
+    "handoff": 49085,
     "rc": null,
-    "e": 49003
+    "e": 49127
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-28T13:37:29",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 12,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_133716_island_challenge_chris__KEEP_0004_133729_final.png"
+  },
+  {
+   "ts": "2026-09-28T13:36:51",
+   "account": "jeff",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_133638_island_challenge_jeff__KEEP_0004_133651_final.png"
+  },
   {
    "ts": "2026-09-28T13:06:33",
    "account": "chris",
@@ -11967,14 +12001,14 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 70,
-  "relogMinutes": 30.1,
-  "retries": 59,
+  "switches": 71,
+  "relogMinutes": 30.5,
+  "retries": 61,
   "tasks": {
    "island_challenge": {
-    "runs": 20,
-    "minutes": 4.3,
-    "failed": 20
+    "runs": 22,
+    "minutes": 4.8,
+    "failed": 22
    },
    "dailyclaim": {
     "runs": 18,
@@ -12690,75 +12724,75 @@
   "next": [
    {
     "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-28T13:37"
-   },
-   {
-    "account": "jeff",
     "task": "rank_match",
-    "startsIn": 1.0,
-    "eta": "2026-09-28T13:37"
+    "startsIn": 0.0,
+    "eta": "2026-09-28T13:38"
    },
    {
-    "account": "jeff",
+    "account": "chris",
+    "task": "guild_war",
+    "startsIn": 2.0,
+    "eta": "2026-09-28T13:40"
+   },
+   {
+    "account": "chris",
     "task": "run_pvp_ranked",
-    "startsIn": 3.0,
-    "eta": "2026-09-28T13:39"
+    "startsIn": 2.0,
+    "eta": "2026-09-28T13:40"
    },
    {
     "account": "deno",
     "task": "victory_road",
-    "startsIn": 3.5,
-    "eta": "2026-09-28T13:40"
+    "startsIn": 2.5,
+    "eta": "2026-09-28T13:41"
    },
    {
     "account": "deno",
     "task": "rank_match",
-    "startsIn": 3.6,
-    "eta": "2026-09-28T13:40"
+    "startsIn": 2.6,
+    "eta": "2026-09-28T13:41"
    },
    {
     "account": "deno",
     "task": "paradise",
-    "startsIn": 5.6,
-    "eta": "2026-09-28T13:42"
+    "startsIn": 4.6,
+    "eta": "2026-09-28T13:43"
    },
    {
     "account": "deno",
     "task": "guild_war",
-    "startsIn": 10.4,
-    "eta": "2026-09-28T13:47"
+    "startsIn": 9.3,
+    "eta": "2026-09-28T13:48"
    },
    {
     "account": "deno",
     "task": "run_pvp_ranked",
-    "startsIn": 10.4,
-    "eta": "2026-09-28T13:47"
+    "startsIn": 9.3,
+    "eta": "2026-09-28T13:48"
    },
    {
     "account": "deno",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.4,
-    "eta": "2026-09-28T13:47"
+    "startsIn": 9.4,
+    "eta": "2026-09-28T13:48"
    },
    {
     "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 10.5,
-    "eta": "2026-09-28T13:47"
+    "startsIn": 9.5,
+    "eta": "2026-09-28T13:48"
    },
    {
     "account": "deno",
     "task": "ultra_wormhole",
-    "startsIn": 12.1,
-    "eta": "2026-09-28T13:48"
+    "startsIn": 11.1,
+    "eta": "2026-09-28T13:49"
    },
    {
     "account": "nova",
     "task": "rank_match",
-    "startsIn": 16.6,
-    "eta": "2026-09-28T13:53"
+    "startsIn": 15.6,
+    "eta": "2026-09-28T13:54"
    }
   ],
   "more": 120,
@@ -12795,11 +12829,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 70,
-   "medianSec": 16.0,
+   "n": 71,
+   "medianSec": 16,
    "picker": {
-    "n": 58,
-    "medianSec": 15.0,
+    "n": 59,
+    "medianSec": 15,
     "jumps": 26
    },
    "typed": {
@@ -13463,9 +13497,9 @@
    "issues": [
     {
      "task": "island_challenge",
-     "at": "13:05",
+     "at": "13:36",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_130541_island_challenge_jeff__KEEP_0004_130554_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_133638_island_challenge_jeff__KEEP_0004_133651_final.png"
     }
    ],
    "off": [],
@@ -13522,7 +13556,7 @@
     {
      "day": "2026-09-28",
      "done": 15,
-     "failed": 10
+     "failed": 11
     }
    ]
   },
@@ -13551,15 +13585,15 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [
     {
      "task": "island_challenge",
-     "at": "13:06",
+     "at": "13:37",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_130620_island_challenge_chris__KEEP_0004_130633_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_133716_island_challenge_chris__KEEP_0004_133729_final.png"
     },
     {
      "task": "combat_daily",
@@ -13622,7 +13656,7 @@
     {
      "day": "2026-09-28",
      "done": 15,
-     "failed": 11
+     "failed": 12
     }
    ]
   },
@@ -14810,7 +14844,7 @@
     },
     {
      "task": "pvpRank",
-     "state": "asks again later"
+     "state": "still to do"
     }
    ],
    "issues": [],
