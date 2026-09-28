@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T13:51:14.784713",
+ "generatedAt": "2026-09-28T13:53:19.212176",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "ultra_wormhole",
-  "since": "13:48:45"
+  "account": "nova",
+  "mode": "rank_match",
+  "since": "13:53:15"
  },
  "grid": {
   "tasks": [
@@ -495,7 +495,7 @@
      "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -711,8 +711,8 @@
   ]
  },
  "counts": {
-  "done": 217,
-  "todo": 124,
+  "done": 218,
+  "todo": 123,
   "gaveUp": 10,
   "unavailable": 21,
   "windowed": 0
@@ -950,6 +950,31 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T13:53:14",
+   "script": "ultra_wormhole",
+   "account": "deno",
+   "rc": 0,
+   "secs": 265,
+   "stats": {
+    "hired": 74,
+    "wins": 16,
+    "losses": 2,
+    "rewards_claimed": 5
+   },
+   "incomplete": [],
+   "values": {
+    "rewards_claimed": 5,
+    "wins_today": 16
+   },
+   "values_all": {
+    "rewards_claimed": [
+     0,
+     5
+    ]
+   },
+   "dir": "debug_runs/20260928_134848_ultra_wormhole_deno"
+  },
   {
    "ts": "2026-09-28T13:48:44",
    "script": "sky_pillar",
@@ -8205,35 +8230,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260927_140035_guild_war_fake1"
-  },
-  {
-   "ts": "2026-09-27T14:00:34",
-   "script": "rank_match",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 60,
-   "stats": {
-    "formation_set": 1,
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2,
-    "rank_panel_scroll": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "dir": "debug_runs/20260927_135933_rank_match_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 49875,
+  "now": 49999,
   "segments": [
    {
     "b": 30174,
@@ -11775,8 +11777,22 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 49728,
+    "rc": 0,
+    "e": 49995,
+    "secs": 265,
+    "why": ""
+   },
+   {
+    "b": 49995,
+    "a": "nova",
+    "s": "rank_match",
+    "login": [
+     49995,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 49875
+    "e": 49999
    }
   ],
   "idle": []
@@ -12091,7 +12107,7 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 72,
+  "switches": 73,
   "relogMinutes": 31.0,
   "retries": 62,
   "tasks": {
@@ -12161,8 +12177,8 @@
     "failed": 30
    },
    "ultra_wormhole": {
-    "runs": 10,
-    "minutes": 41.0,
+    "runs": 11,
+    "minutes": 45.4,
     "failed": 1
    },
    "championship": {
@@ -12818,79 +12834,79 @@
  "queue": {
   "next": [
    {
-    "account": "deno",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T13:51"
-   },
-   {
     "account": "nova",
     "task": "rank_match",
-    "startsIn": 4.5,
-    "eta": "2026-09-28T13:55"
+    "startsIn": 0.0,
+    "eta": "2026-09-28T13:53"
    },
    {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 5.6,
+    "startsIn": 1.1,
+    "eta": "2026-09-28T13:54"
+   },
+   {
+    "account": "jeff",
+    "task": "rank_match",
+    "startsIn": 1.6,
+    "eta": "2026-09-28T13:54"
+   },
+   {
+    "account": "jeff",
+    "task": "run_pvp_ranked",
+    "startsIn": 2.7,
     "eta": "2026-09-28T13:56"
    },
    {
-    "account": "jeff",
+    "account": "smurf",
     "task": "rank_match",
-    "startsIn": 6.1,
+    "startsIn": 3.2,
+    "eta": "2026-09-28T13:56"
+   },
+   {
+    "account": "smurf",
+    "task": "run_pvp_ranked",
+    "startsIn": 4.3,
     "eta": "2026-09-28T13:57"
-   },
-   {
-    "account": "jeff",
-    "task": "run_pvp_ranked",
-    "startsIn": 7.2,
-    "eta": "2026-09-28T13:58"
-   },
-   {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 7.7,
-    "eta": "2026-09-28T13:58"
-   },
-   {
-    "account": "smurf",
-    "task": "run_pvp_ranked",
-    "startsIn": 8.8,
-    "eta": "2026-09-28T14:00"
    },
    {
     "account": "fake1",
     "task": "rank_match",
-    "startsIn": 9.2,
-    "eta": "2026-09-28T14:00"
+    "startsIn": 4.7,
+    "eta": "2026-09-28T13:58"
    },
    {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 10.7,
-    "eta": "2026-09-28T14:02"
+    "startsIn": 6.2,
+    "eta": "2026-09-28T13:59"
    },
    {
     "account": "fake3",
     "task": "rank_match",
-    "startsIn": 12.2,
-    "eta": "2026-09-28T14:03"
+    "startsIn": 7.7,
+    "eta": "2026-09-28T14:01"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 13.7,
-    "eta": "2026-09-28T14:05"
+    "startsIn": 9.2,
+    "eta": "2026-09-28T14:02"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 15.2,
-    "eta": "2026-09-28T14:06"
+    "startsIn": 10.7,
+    "eta": "2026-09-28T14:04"
+   },
+   {
+    "account": "fake6",
+    "task": "rank_match",
+    "startsIn": 12.2,
+    "eta": "2026-09-28T14:05"
    }
   ],
-  "more": 112,
+  "more": 111,
   "fillers": [
    {
     "account": "smurf",
@@ -12942,11 +12958,6 @@
   }
  },
  "progress": {
-  "fake1": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "pillar": "floor 6 stage 1"
-  },
   "fake2": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -13024,6 +13035,11 @@
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "pillar": "floor 19 stage 10"
+  },
+  "fake1": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "pillar": "floor 6 stage 1"
   },
   "fake8": {
    "mailUnread": 0,
@@ -15126,8 +15142,8 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-28",
-   "summary": "13 of 16 dailies done · 1 not available today",
-   "done": 13,
+   "summary": "14 of 16 dailies done · 1 not available today",
+   "done": 14,
    "owed": 16,
    "open": [
     {
@@ -15137,10 +15153,6 @@
     {
      "task": "pvpRank",
      "state": "asks again later"
-    },
-    {
-     "task": "wormhole",
-     "state": "still to do"
     }
    ],
    "issues": [],
@@ -15197,7 +15209,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 14,
+     "done": 15,
      "failed": 0
     }
    ]
