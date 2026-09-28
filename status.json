@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T02:10:55.843977",
+ "generatedAt": "2026-09-29T02:12:59.664836",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
+  "account": "exou",
   "mode": "worldboss",
-  "since": "02:10:01"
+  "since": "02:11:50"
  },
  "grid": {
   "tasks": [
@@ -765,11 +765,44 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-29T02:10:20.614621",
+  "label": "exou",
+  "at": "2026-09-29T02:12:17.135139",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T02:11:50",
+   "script": "worldboss",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 51,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_021058_worldboss_sprite"
+  },
+  {
+   "ts": "2026-09-29T02:10:58",
+   "script": "worldboss",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 57,
+   "stats": {
+    "wb_skip_again": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_021001_worldboss_fake7"
+  },
   {
    "ts": "2026-09-29T02:10:01",
    "script": "worldboss",
@@ -8005,42 +8038,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_084737_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-28T08:47:31",
-   "script": "pokemon_home",
-   "account": "nova",
-   "rc": 0,
-   "secs": 85,
-   "stats": {
-    "reached_via_trial": 1,
-    "merge_moved_instead": 3,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_084605_pokemon_home_nova"
-  },
-  {
-   "ts": "2026-09-28T08:46:02",
-   "script": "daily_dungeon",
-   "account": "nova",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_084548_daily_dungeon_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 94256,
+  "now": 94380,
   "segments": [
    {
     "b": 30174,
@@ -8225,10 +8228,8 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 31548,
-    "rc": 0,
-    "e": 31564,
-    "secs": 14,
-    "why": ""
+    "rc": null,
+    "e": 31564
    },
    {
     "b": 31564,
@@ -8236,10 +8237,8 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 31565,
-    "rc": 0,
-    "e": 31653,
-    "secs": 85,
-    "why": ""
+    "rc": null,
+    "e": 31653
    },
    {
     "b": 31653,
@@ -13950,8 +13949,36 @@
      94220
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 94258,
+    "secs": 57,
+    "why": ""
+   },
+   {
+    "b": 94258,
+    "a": "sprite",
+    "s": "worldboss",
+    "login": [
+     94259,
+     94272
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 94310,
+    "secs": 51,
+    "why": ""
+   },
+   {
+    "b": 94310,
+    "a": "exou",
+    "s": "worldboss",
+    "login": [
+     94310,
+     94337
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 94256
+    "e": 94380
    }
   ],
   "idle": []
@@ -14329,7 +14356,7 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 241,
+  "switches": 243,
   "relogMinutes": 80.3,
   "retries": 118,
   "tasks": {
@@ -14429,8 +14456,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 31,
-    "minutes": 29.0,
+    "runs": 34,
+    "minutes": 32.0,
     "failed": 1
    }
   }
@@ -14788,7 +14815,10 @@
    "fake3",
    "fake4",
    "fake5",
-   "fake6"
+   "fake6",
+   "fake7",
+   "sprite",
+   "exou"
   ]
  },
  "worldBossSkipped": {},
@@ -15062,11 +15092,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 211,
+   "n": 213,
    "medianSec": 16,
    "picker": {
-    "n": 169,
-    "medianSec": 16,
+    "n": 170,
+    "medianSec": 16.0,
     "jumps": 99
    },
    "typed": {
@@ -15074,8 +15104,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 42,
-    "medianSec": 19.0
+    "n": 43,
+    "medianSec": 19
    }
   }
  },
@@ -16466,6 +16496,11 @@
      "day": "2026-09-28",
      "done": 13,
      "failed": 2
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -16520,6 +16555,11 @@
     {
      "day": "2026-09-28",
      "done": 17,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
      "failed": 0
     }
    ]
@@ -16591,6 +16631,11 @@
      "day": "2026-09-28",
      "done": 15,
      "failed": 3
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
