@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T10:04:52.884683",
+ "generatedAt": "2026-09-28T10:06:57.427095",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
-  "mode": "faction",
-  "since": "10:03:48"
+  "account": "fake2",
+  "mode": "mail",
+  "since": "10:06:53"
  },
  "grid": {
   "tasks": [
@@ -155,7 +155,7 @@
      "-",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -165,9 +165,9 @@
    {
     "account": "fake2",
     "cells": [
-     "·",
+     "✓",
      "💤",
-     "·",
+     "✓",
      "⊘",
      "·",
      "·",
@@ -711,8 +711,8 @@
   ]
  },
  "counts": {
-  "done": 61,
-  "todo": 252,
+  "done": 64,
+  "todo": 249,
   "gaveUp": 3,
   "unavailable": 12,
   "windowed": 50
@@ -948,11 +948,68 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-28T10:02:01.964558",
+  "label": "fake2",
+  "at": "2026-09-28T10:06:17.647972",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T10:06:56",
+   "script": "mail",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "reward_card_closed": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 17,
+    "reward_cards": 1,
+    "unread_after": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_100653_mail_fake2"
+  },
+  {
+   "ts": "2026-09-28T10:06:51",
+   "script": "dailyclaim",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 27,
+   "stats": {
+    "signed_in": 1,
+    "privpack_paid_only": 1,
+    "logingift_claimed": 1,
+    "claims": 2
+   },
+   "incomplete": [],
+   "values": {
+    "golden_egg": "already used",
+    "rail_badges": "0.190:77 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_100624_dailyclaim_fake2"
+  },
+  {
+   "ts": "2026-09-28T10:05:59",
+   "script": "faction",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 126,
+   "stats": {
+    "auto_formation": 20,
+    "skip_retry": 19,
+    "floors_water": 20,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_100352_faction_fake1"
+  },
   {
    "ts": "2026-09-28T10:03:47",
    "script": "sky_pillar",
@@ -7988,75 +8045,12 @@
     "tiers": 1
    },
    "dir": "debug_runs/20260927_095023_championship_smurf"
-  },
-  {
-   "ts": "2026-09-27T09:50:21",
-   "script": "ultra_wormhole",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 238,
-   "stats": {
-    "hired": 68,
-    "wins": 16,
-    "losses": 1,
-    "rewards_claimed": 5
-   },
-   "incomplete": [],
-   "values": {
-    "wins_today": 16
-   },
-   "dir": "debug_runs/20260927_094623_ultra_wormhole_smurf"
-  },
-  {
-   "ts": "2026-09-27T09:46:18",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 277,
-   "stats": {
-    "runes_claimed": 23,
-    "battles_won": 23,
-    "fountain_taken": 7,
-    "portals": 3,
-    "portal_fork": 1,
-    "infernal_confirmed": 1,
-    "path_exhausted": 1,
-    "wins": 23
-   },
-   "incomplete": [],
-   "values": {
-    "stage": 1
-   },
-   "dir": "debug_runs/20260927_094141_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-27T09:41:22",
-   "script": "faction",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 260,
-   "stats": {
-    "auto_formation": 45,
-    "skip_retry": 33,
-    "floors_water": 20,
-    "incomplete": 1,
-    "lost_fire": 1,
-    "faction_disabled": 1,
-    "floors_fire": 4,
-    "floors_grass": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [
-    "faction: fire tower: lost the battle after 4 win(s) — the team needs adjusting"
-   ],
-   "values": {},
-   "dir": "debug_runs/20260927_093702_faction_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 36293,
+  "now": 36418,
   "segments": [
    {
     "b": 30174,
@@ -9055,8 +9049,35 @@
     "s": "faction",
     "login": null,
     "handoff": 36232,
-    "rc": null,
-    "e": 36293
+    "rc": 0,
+    "e": 36360,
+    "secs": 126,
+    "why": ""
+   },
+   {
+    "b": 36360,
+    "a": "fake2",
+    "s": "dailyclaim",
+    "login": [
+     36361,
+     36377
+    ],
+    "handoff": 36383,
+    "rc": 0,
+    "e": 36413,
+    "secs": 27,
+    "why": ""
+   },
+   {
+    "b": 36413,
+    "a": "fake2",
+    "s": "mail",
+    "login": null,
+    "handoff": 36413,
+    "rc": 0,
+    "e": 36418,
+    "secs": 3,
+    "why": ""
    }
   ],
   "idle": []
@@ -9191,8 +9212,8 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 16,
-  "relogMinutes": 6.9,
+  "switches": 17,
+  "relogMinutes": 7.2,
   "retries": 19,
   "tasks": {
    "island_challenge": {
@@ -9201,13 +9222,13 @@
     "failed": 8
    },
    "dailyclaim": {
-    "runs": 5,
-    "minutes": 2.5,
+    "runs": 6,
+    "minutes": 3.0,
     "failed": 0
    },
    "mail": {
-    "runs": 5,
-    "minutes": 0.2,
+    "runs": 6,
+    "minutes": 0.3,
     "failed": 0
    },
    "joint_team_daily_quest": {
@@ -9271,8 +9292,8 @@
     "failed": 2
    },
    "faction": {
-    "runs": 2,
-    "minutes": 4.1,
+    "runs": 3,
+    "minutes": 6.2,
     "failed": 0
    },
    "misty_woods": {
@@ -9866,79 +9887,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake1",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T10:04"
-   },
-   {
-    "account": "fake2",
-    "task": "dailyclaim",
-    "startsIn": 2.4,
-    "eta": "2026-09-28T10:07"
-   },
-   {
-    "account": "fake2",
-    "task": "mail",
-    "startsIn": 2.9,
-    "eta": "2026-09-28T10:07"
-   },
-   {
     "account": "fake2",
     "task": "joint_battle",
-    "startsIn": 3.0,
-    "eta": "2026-09-28T10:07"
+    "startsIn": 0.0,
+    "eta": "2026-09-28T10:06"
    },
    {
     "account": "fake2",
     "task": "daily_dungeon",
-    "startsIn": 5.0,
-    "eta": "2026-09-28T10:09"
+    "startsIn": 2.0,
+    "eta": "2026-09-28T10:08"
    },
    {
     "account": "fake2",
     "task": "pokemon_home",
-    "startsIn": 5.2,
-    "eta": "2026-09-28T10:10"
+    "startsIn": 2.2,
+    "eta": "2026-09-28T10:09"
    },
    {
     "account": "fake2",
     "task": "combat_daily",
-    "startsIn": 6.5,
-    "eta": "2026-09-28T10:11"
+    "startsIn": 3.5,
+    "eta": "2026-09-28T10:10"
    },
    {
     "account": "fake2",
     "task": "victory_road",
-    "startsIn": 8.1,
-    "eta": "2026-09-28T10:13"
+    "startsIn": 5.1,
+    "eta": "2026-09-28T10:12"
    },
    {
     "account": "fake2",
     "task": "paradise",
-    "startsIn": 8.2,
-    "eta": "2026-09-28T10:13"
+    "startsIn": 5.2,
+    "eta": "2026-09-28T10:12"
    },
    {
     "account": "fake2",
     "task": "collect_hoopa_keys",
-    "startsIn": 12.7,
-    "eta": "2026-09-28T10:17"
+    "startsIn": 9.7,
+    "eta": "2026-09-28T10:16"
    },
    {
     "account": "fake2",
     "task": "sky_pillar",
-    "startsIn": 12.8,
-    "eta": "2026-09-28T10:17"
+    "startsIn": 9.8,
+    "eta": "2026-09-28T10:16"
    },
    {
     "account": "fake2",
     "task": "faction",
+    "startsIn": 10.9,
+    "eta": "2026-09-28T10:17"
+   },
+   {
+    "account": "fake3",
+    "task": "dailyclaim",
+    "startsIn": 13.3,
+    "eta": "2026-09-28T10:20"
+   },
+   {
+    "account": "fake3",
+    "task": "mail",
     "startsIn": 13.8,
-    "eta": "2026-09-28T10:18"
+    "eta": "2026-09-28T10:20"
+   },
+   {
+    "account": "fake3",
+    "task": "joint_battle",
+    "startsIn": 13.9,
+    "eta": "2026-09-28T10:20"
    }
   ],
-  "more": 240,
+  "more": 237,
   "fillers": [
    {
     "account": "smurf",
@@ -9972,12 +9993,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 16,
-   "medianSec": 15.0,
+   "n": 17,
+   "medianSec": 15,
    "picker": {
-    "n": 16,
-    "medianSec": 15.0,
-    "jumps": 5
+    "n": 17,
+    "medianSec": 15,
+    "jumps": 6
    },
    "typed": {
     "n": 0,
@@ -9991,7 +10012,6 @@
  },
  "progress": {
   "smurf": {
-   "misty": "step 1",
    "mailUnread": 0,
    "paradiseStamina": "16/16",
    "pillar": "floor 19 stage 10"
@@ -10087,7 +10107,12 @@
   }
  },
  "ledger": {
+  "fake2": {
+   "mail claimed": 1,
+   "daily claims": 2
+  },
   "fake1": {
+   "faction sweeps": 2,
    "pillar/story stages cleared": 47,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
@@ -10710,7 +10735,6 @@
     "daily claims": 2
    },
    "progress": {
-    "misty": "step 1",
     "mailUnread": 0,
     "paradiseStamina": "16/16",
     "pillar": "floor 19 stage 10"
@@ -10756,8 +10780,8 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-28",
-   "summary": "9 of 15 dailies done · gave up on JointB · 2 switched off · 1 not available today",
-   "done": 9,
+   "summary": "10 of 15 dailies done · gave up on JointB · 2 switched off · 1 not available today",
+   "done": 10,
    "owed": 15,
    "open": [
     {
@@ -10779,10 +10803,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "fctn",
-     "state": "still to do"
     }
    ],
    "issues": [],
@@ -10805,6 +10825,7 @@
     }
    ],
    "spent": {
+    "faction sweeps": 2,
     "pillar/story stages cleared": 47,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
@@ -10848,7 +10869,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 13,
+     "done": 14,
      "failed": 0
     }
    ]
@@ -10856,21 +10877,13 @@
   "fake2": {
    "name": "Random713",
    "day": "2026-09-28",
-   "summary": "0 of 15 dailies done · 2 switched off · 1 not available today",
-   "done": 0,
+   "summary": "2 of 15 dailies done · 2 switched off · 1 not available today",
+   "done": 2,
    "owed": 15,
    "open": [
     {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
      "task": "tshop",
      "state": "asks again later"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
     },
     {
      "task": "JointQ",
@@ -10940,7 +10953,10 @@
      "why": null
     }
    ],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 2
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "20/20",
@@ -10979,7 +10995,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
