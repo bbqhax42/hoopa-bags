@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T08:47:56.924736",
+ "generatedAt": "2026-09-28T08:50:02.080974",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "combat_daily",
-  "since": "08:47:49"
+  "mode": "paradise",
+  "since": "08:49:51"
  },
  "grid": {
   "tasks": [
@@ -41,8 +41,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -684,8 +684,8 @@
   ]
  },
  "counts": {
-  "done": 16,
-  "todo": 294,
+  "done": 18,
+  "todo": 292,
   "gaveUp": 1,
   "unavailable": 3,
   "windowed": 61
@@ -914,6 +914,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T08:49:50",
+   "script": "victory_road",
+   "account": "nova",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_084942_victory_road_nova"
+  },
+  {
+   "ts": "2026-09-28T08:49:40",
+   "script": "combat_daily",
+   "account": "nova",
+   "rc": 0,
+   "secs": 109,
+   "stats": {
+    "title_reread_named": 5,
+    "near_miss_vr_rank": 4,
+    "marginal_battle_victory_confirm": 1,
+    "gacha_free": 1,
+    "island_shop_bought": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 10/10 + ",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "free"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_084750_combat_daily_nova"
+  },
   {
    "ts": "2026-09-28T08:47:48",
    "script": "weekend_bash",
@@ -7894,46 +7931,12 @@
     "daily_goal_claims": 3
    },
    "dir": "debug_runs/20260927_081338_run_pvp_ranked_lucifer1"
-  },
-  {
-   "ts": "2026-09-27T08:13:36",
-   "script": "paradise",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 210,
-   "stats": {
-    "marginal_paradise_hub": 1,
-    "explore_clicks": 91,
-    "pass_claims": 5,
-    "gear_maxed": 3,
-    "dex_activated": 0,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "20/20"
-   },
-   "dir": "debug_runs/20260927_081005_paradise_lucifer1"
-  },
-  {
-   "ts": "2026-09-27T08:10:03",
-   "script": "victory_road",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_080957_victory_road_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 31677,
+  "now": 31802,
   "segments": [
    {
     "b": 30174,
@@ -8183,8 +8186,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 31670,
+    "rc": 0,
+    "e": 31782,
+    "secs": 109,
+    "why": ""
+   },
+   {
+    "b": 31782,
+    "a": "nova",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 31782,
+    "rc": 0,
+    "e": 31791,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 31791,
+    "a": "nova",
+    "s": "paradise",
+    "login": null,
+    "handoff": 31793,
     "rc": null,
-    "e": 31677
+    "e": 31802
    }
   ],
   "idle": []
@@ -8278,13 +8303,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 2,
-    "minutes": 2.6,
+    "runs": 3,
+    "minutes": 4.5,
     "failed": 1
    },
    "victory_road": {
-    "runs": 1,
-    "minutes": 0.1,
+    "runs": 2,
+    "minutes": 0.2,
     "failed": 0
    },
    "paradise": {
@@ -8800,12 +8825,6 @@
    "ts": "2026-09-26T22:09:35",
    "area": "dynamax",
    "subject": "a fight's kind comes off its pre-fight frame, not _PENDING_KIND"
-  },
-  {
-   "sha": "0a3edf8",
-   "ts": "2026-09-26T20:48:37",
-   "area": "dynamax",
-   "subject": "relog out of an Ultra fight projected to run long"
   }
  ],
  "phase": {
@@ -8828,78 +8847,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T08:47"
-   },
-   {
-    "account": "nova",
-    "task": "victory_road",
-    "startsIn": 1.3,
-    "eta": "2026-09-28T08:49"
-   },
-   {
-    "account": "nova",
     "task": "paradise",
-    "startsIn": 1.4,
-    "eta": "2026-09-28T08:49"
+    "startsIn": 0.0,
+    "eta": "2026-09-28T08:50"
    },
    {
     "account": "nova",
     "task": "collect_hoopa_keys",
-    "startsIn": 5.5,
-    "eta": "2026-09-28T08:53"
+    "startsIn": 4.1,
+    "eta": "2026-09-28T08:54"
    },
    {
     "account": "nova",
     "task": "sky_pillar",
-    "startsIn": 5.6,
-    "eta": "2026-09-28T08:53"
+    "startsIn": 4.2,
+    "eta": "2026-09-28T08:54"
    },
    {
     "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 6.3,
+    "startsIn": 4.9,
     "eta": "2026-09-28T08:54"
    },
    {
     "account": "chris",
     "task": "faction",
-    "startsIn": 8.7,
-    "eta": "2026-09-28T08:56"
+    "startsIn": 7.3,
+    "eta": "2026-09-28T08:57"
    },
    {
     "account": "chris",
     "task": "ultra_wormhole",
-    "startsIn": 10.7,
-    "eta": "2026-09-28T08:58"
+    "startsIn": 9.3,
+    "eta": "2026-09-28T08:59"
    },
    {
     "account": "chris",
     "task": "championship",
-    "startsIn": 12.7,
-    "eta": "2026-09-28T09:00"
+    "startsIn": 11.3,
+    "eta": "2026-09-28T09:01"
    },
    {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 15.1,
+    "startsIn": 13.7,
     "eta": "2026-09-28T09:03"
    },
    {
     "account": "jeff",
     "task": "mail",
-    "startsIn": 15.7,
-    "eta": "2026-09-28T09:03"
+    "startsIn": 14.3,
+    "eta": "2026-09-28T09:04"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 15.7,
-    "eta": "2026-09-28T09:03"
+    "startsIn": 14.3,
+    "eta": "2026-09-28T09:04"
+   },
+   {
+    "account": "jeff",
+    "task": "joint_battle",
+    "startsIn": 15.4,
+    "eta": "2026-09-28T09:05"
+   },
+   {
+    "account": "jeff",
+    "task": "daily_dungeon",
+    "startsIn": 17.4,
+    "eta": "2026-09-28T09:07"
    }
   ],
-  "more": 282,
+  "more": 280,
   "fillers": [
    {
     "account": "smurf",
@@ -8952,7 +8971,6 @@
  },
  "progress": {
   "lucifer1": {
-   "paradiseStamina": "20/20",
    "rank": 6,
    "pillar": "floor 94 stage 1"
   },
@@ -9057,6 +9075,7 @@
  },
  "ledger": {
   "nova": {
+   "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
@@ -9307,8 +9326,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-28",
-   "summary": "5 of 16 dailies done · gave up on JointB",
-   "done": 5,
+   "summary": "7 of 16 dailies done · gave up on JointB",
+   "done": 7,
    "owed": 16,
    "open": [
     {
@@ -9318,14 +9337,6 @@
     {
      "task": "JointB",
      "state": "gave up"
-    },
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
     },
     {
      "task": "victoryRank",
@@ -9360,6 +9371,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
@@ -9404,7 +9416,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 6,
+     "done": 8,
      "failed": 0
     }
    ]
@@ -11116,7 +11128,6 @@
    "unavailable": [],
    "spent": {},
    "progress": {
-    "paradiseStamina": "20/20",
     "rank": 6,
     "pillar": "floor 94 stage 1"
    },
