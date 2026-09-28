@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T02:08:51.954641",
+ "generatedAt": "2026-09-29T02:10:55.843977",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
+  "account": "fake7",
   "mode": "worldboss",
-  "since": "02:08:14"
+  "since": "02:10:01"
  },
  "grid": {
   "tasks": [
@@ -765,11 +765,43 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-29T02:08:32.736612",
+  "label": "fake7",
+  "at": "2026-09-29T02:10:20.614621",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T02:10:01",
+   "script": "worldboss",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 52,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_020908_worldboss_fake6"
+  },
+  {
+   "ts": "2026-09-29T02:09:07",
+   "script": "worldboss",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 52,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_020815_worldboss_fake5"
+  },
   {
    "ts": "2026-09-29T02:08:14",
    "script": "worldboss",
@@ -8003,53 +8035,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_084548_daily_dungeon_nova"
-  },
-  {
-   "ts": "2026-09-28T08:44:48",
-   "script": "mail",
-   "account": "nova",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "reward_card_closed": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 17,
-    "reward_cards": 1,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_084445_mail_nova"
-  },
-  {
-   "ts": "2026-09-28T08:44:42",
-   "script": "dailyclaim",
-   "account": "nova",
-   "rc": 0,
-   "secs": 33,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 4
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:79 0.275:8 0.345:54 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_084409_dailyclaim_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 94132,
+  "now": 94256,
   "segments": [
    {
     "b": 30174,
@@ -8198,10 +8189,8 @@
     "s": "dailyclaim",
     "login": null,
     "handoff": 31448,
-    "rc": 0,
-    "e": 31484,
-    "secs": 33,
-    "why": ""
+    "rc": null,
+    "e": 31484
    },
    {
     "b": 31484,
@@ -8209,10 +8198,8 @@
     "s": "mail",
     "login": null,
     "handoff": 31484,
-    "rc": 0,
-    "e": 31489,
-    "secs": 3,
-    "why": ""
+    "rc": null,
+    "e": 31489
    },
    {
     "b": 31489,
@@ -13935,8 +13922,36 @@
      94112
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 94148,
+    "secs": 52,
+    "why": ""
+   },
+   {
+    "b": 94148,
+    "a": "fake6",
+    "s": "worldboss",
+    "login": [
+     94148,
+     94166
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 94201,
+    "secs": 52,
+    "why": ""
+   },
+   {
+    "b": 94201,
+    "a": "fake7",
+    "s": "worldboss",
+    "login": [
+     94201,
+     94220
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 94132
+    "e": 94256
    }
   ],
   "idle": []
@@ -14314,7 +14329,7 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 239,
+  "switches": 241,
   "relogMinutes": 80.3,
   "retries": 118,
   "tasks": {
@@ -14414,8 +14429,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 29,
-    "minutes": 27.3,
+    "runs": 31,
+    "minutes": 29.0,
     "failed": 1
    }
   }
@@ -14771,7 +14786,9 @@
    "fake1",
    "fake2",
    "fake3",
-   "fake4"
+   "fake4",
+   "fake5",
+   "fake6"
   ]
  },
  "worldBossSkipped": {},
@@ -15045,26 +15062,25 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 209,
+   "n": 211,
    "medianSec": 16,
    "picker": {
-    "n": 168,
-    "medianSec": 16.0,
-    "jumps": 98
+    "n": 169,
+    "medianSec": 16,
+    "jumps": 99
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 41,
-    "medianSec": 19
+    "n": 42,
+    "medianSec": 19.0
    }
   }
  },
  "progress": {
   "nova": {
-   "mailUnread": 0,
    "paradiseStamina": "20/20",
    "pillar": "floor 101 stage 10",
    "rank": 347
@@ -15428,7 +15444,6 @@
    ],
    "spent": {},
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "20/20",
     "pillar": "floor 101 stage 10",
     "rank": 347
@@ -16243,6 +16258,11 @@
      "day": "2026-09-28",
      "done": 15,
      "failed": 0
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -16328,6 +16348,11 @@
     {
      "day": "2026-09-28",
      "done": 15,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
      "failed": 0
     }
    ]
