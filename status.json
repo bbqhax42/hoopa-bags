@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T00:23:36.683158",
+ "generatedAt": "2026-09-29T00:25:40.300196",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "hoopa",
-  "since": "00:15:14"
+  "account": "skosmurf",
+  "mode": "rift",
+  "since": "00:25:30"
  },
  "grid": {
   "tasks": [
@@ -698,11 +698,19 @@
   "jeff|island_challenge": "2026-09-29T03:57",
   "lucifer1|hoopa": "2026-09-29T00:29"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "nova",
+   "since": "2026-09-29T00:25:30",
+   "held": true,
+   "heldUntil": "2026-09-29T00:35:30",
+   "deferredUntil": "2026-09-29T00:35:42"
+  }
+ ],
  "keys": {
   "jeff": {
-   "keys": 2,
-   "at": "2026-09-29T00:15:56"
+   "keys": 0,
+   "at": "2026-09-29T00:24:20"
   },
   "chris": {
    "keys": 0,
@@ -766,11 +774,27 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-29T00:14:27.544289",
-  "why": "login accepted"
+  "label": null,
+  "at": "2026-09-29T00:25:30.123756",
+  "why": "taken over elsewhere"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T00:24:21",
+   "script": "hoopa",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 507,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-29T00:15:14",
    "script": "island_challenge",
@@ -8054,29 +8078,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_082520_joint_team_daily_quest_chris"
-  },
-  {
-   "ts": "2026-09-28T08:25:18",
-   "script": "mail",
-   "account": "chris",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 0,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_082515_mail_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 87817,
+  "now": 87940,
   "segments": [
    {
     "b": 30174,
@@ -8117,10 +8124,8 @@
     "s": "mail",
     "login": null,
     "handoff": 30314,
-    "rc": 0,
-    "e": 30319,
-    "secs": 3,
-    "why": ""
+    "rc": null,
+    "e": 30319
    },
    {
     "b": 30319,
@@ -13802,8 +13807,34 @@
     "s": "hoopa",
     "login": null,
     "handoff": 87354,
+    "rc": 2,
+    "e": 87861,
+    "secs": 507,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 87861,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     87862,
+     87878
+    ],
+    "handoff": 87891,
     "rc": null,
-    "e": 87817
+    "e": 87930
+   },
+   {
+    "b": 87930,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     87930,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 87940
    }
   ],
   "idle": []
@@ -14190,8 +14221,8 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 226,
-  "relogMinutes": 78.6,
+  "switches": 228,
+  "relogMinutes": 79.0,
   "retries": 117,
   "tasks": {
    "island_challenge": {
@@ -14461,6 +14492,12 @@
   },
   {
    "account": "jeff",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-29T00:24:21"
+  },
+  {
+   "account": "jeff",
    "task": "joint_battle",
    "why": null,
    "at": null
@@ -14663,9 +14700,9 @@
     "last": "2026-09-28T23:34:21"
    },
    "jeff": {
-    "runs": 64,
-    "targets": 2,
-    "last": "2026-09-29T00:22:34"
+    "runs": 65,
+    "targets": 3,
+    "last": "2026-09-29T00:24:12"
    },
    "lucifer1": {
     "runs": 99,
@@ -14674,6 +14711,13 @@
    }
   },
   "targets": [
+   {
+    "ts": "2026-09-29T00:24:12",
+    "runner": "jeff",
+    "items": [
+     "Leftover Fruit"
+    ]
+   },
    {
     "ts": "2026-09-29T00:02:30",
     "runner": "lucifer1",
@@ -14749,13 +14793,6 @@
     "runner": "chris",
     "items": [
      "Muscle Band"
-    ]
-   },
-   {
-    "ts": "2026-09-28T19:35:46",
-    "runner": "jeff",
-    "items": [
-     "Choice Band"
     ]
    }
   ]
@@ -14912,14 +14949,6 @@
    {
     "account": "skosmurf",
     "mode": "rift"
-   },
-   {
-    "account": "jeff",
-    "mode": "hoopa"
-   },
-   {
-    "account": "nova",
-    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -14929,12 +14958,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 196,
-   "medianSec": 16.0,
+   "n": 197,
+   "medianSec": 16,
    "picker": {
-    "n": 156,
-    "medianSec": 16.0,
-    "jumps": 89
+    "n": 157,
+    "medianSec": 16,
+    "jumps": 90
    },
    "typed": {
     "n": 0,
@@ -14948,7 +14977,6 @@
  },
  "progress": {
   "chris": {
-   "mailUnread": 0,
    "paradiseStamina": "20/20",
    "pillar": "floor 139 stage 2",
    "rank": 348,
@@ -15123,6 +15151,15 @@
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "nova",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-29T00:25:30",
+   "why": "someone is playing on it",
+   "action": "left alone until 00:35",
+   "enable": false
   },
   {
    "account": "fake1",
@@ -15358,7 +15395,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-28",
-   "summary": "16 of 18 dailies done · 1 not available today",
+   "summary": "16 of 18 dailies done · 2 not available today",
    "done": 16,
    "owed": 18,
    "open": [
@@ -15381,6 +15418,10 @@
    ],
    "off": [],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "joint_battle",
      "why": null
@@ -15478,7 +15519,6 @@
    ],
    "spent": {},
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "20/20",
     "pillar": "floor 139 stage 2",
     "rank": 348,
