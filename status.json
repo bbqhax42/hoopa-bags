@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T10:00:42.785672",
+ "generatedAt": "2026-09-28T10:02:47.684485",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "island_challenge",
-  "since": "10:00:23"
+  "account": "fake1",
+  "mode": "sky_pillar",
+  "since": "10:02:16"
  },
  "grid": {
   "tasks": [
@@ -107,7 +107,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -153,7 +153,7 @@
      "✓",
      "⏰",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "-",
@@ -711,8 +711,8 @@
   ]
  },
  "counts": {
-  "done": 59,
-  "todo": 255,
+  "done": 60,
+  "todo": 253,
   "gaveUp": 3,
   "unavailable": 12,
   "windowed": 50
@@ -948,11 +948,51 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-28T10:00:40.500991",
+  "label": "fake1",
+  "at": "2026-09-28T10:02:01.964558",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T10:02:14",
+   "script": "collect_hoopa_keys",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_100209_collect_hoopa_keys_fake1"
+  },
+  {
+   "ts": "2026-09-28T10:01:43",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_100130_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-28T10:01:04",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_100050_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-28T10:00:21",
    "script": "paradise",
@@ -7998,69 +8038,12 @@
     "floor_backlog_claims": 3
    },
    "dir": "debug_runs/20260927_093555_sky_pillar_smurf"
-  },
-  {
-   "ts": "2026-09-27T09:35:53",
-   "script": "collect_hoopa_keys",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_093548_collect_hoopa_keys_smurf"
-  },
-  {
-   "ts": "2026-09-27T09:35:46",
-   "script": "run_pvp_ranked",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 71,
-   "stats": {
-    "ranked_fought": 10,
-    "ranked_won": 10,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0,
-    "daily_goal_claimed": 3
-   },
-   "incomplete": [],
-   "values": {
-    "ranked_wins": 10,
-    "rank": 1,
-    "daily_goal_claims": 3
-   },
-   "dir": "debug_runs/20260927_093434_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-09-27T09:34:32",
-   "script": "paradise",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 199,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 100,
-    "pass_claims": 7,
-    "upgraded_energy_drink": 2,
-    "upgraded_small_radar": 1,
-    "upgraded_sports_gloves": 1,
-    "dex_milestones": 3,
-    "dex_activated": 5,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "35/15"
-   },
-   "dir": "debug_runs/20260927_093113_paradise_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 36043,
+  "now": 36168,
   "segments": [
    {
     "b": 30174,
@@ -9008,14 +8991,71 @@
      36023,
      36040
     ],
-    "handoff": null,
+    "handoff": 36050,
+    "rc": 1,
+    "e": 36065,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 36065,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     36066,
+     36080
+    ],
+    "handoff": 36090,
+    "rc": 1,
+    "e": 36105,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 36105,
+    "a": "fake1",
+    "s": "collect_hoopa_keys",
+    "login": [
+     36105,
+     36121
+    ],
+    "handoff": 36129,
+    "rc": 0,
+    "e": 36136,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 36136,
+    "a": "fake1",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 36136,
     "rc": null,
-    "e": 36043
+    "e": 36168
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-28T10:01:43",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_100130_island_challenge_chris__KEEP_0004_100143_final.png"
+  },
+  {
+   "ts": "2026-09-28T10:01:04",
+   "account": "jeff",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_100050_island_challenge_jeff__KEEP_0004_100104_final.png"
+  },
   {
    "ts": "2026-09-28T09:49:05",
    "account": "smurf",
@@ -9127,14 +9167,14 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 14,
-  "relogMinutes": 5.6,
-  "retries": 17,
+  "switches": 16,
+  "relogMinutes": 6.9,
+  "retries": 19,
   "tasks": {
    "island_challenge": {
-    "runs": 6,
-    "minutes": 1.3,
-    "failed": 6
+    "runs": 8,
+    "minutes": 1.7,
+    "failed": 8
    },
    "dailyclaim": {
     "runs": 5,
@@ -9182,8 +9222,8 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 4,
-    "minutes": 0.3,
+    "runs": 5,
+    "minutes": 0.4,
     "failed": 0
    },
    "sky_pillar": {
@@ -9802,79 +9842,79 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-28T10:01"
-   },
-   {
-    "account": "fake1",
-    "task": "collect_hoopa_keys",
-    "startsIn": 1.0,
-    "eta": "2026-09-28T10:01"
-   },
-   {
     "account": "fake1",
     "task": "sky_pillar",
-    "startsIn": 1.1,
-    "eta": "2026-09-28T10:01"
+    "startsIn": 0.0,
+    "eta": "2026-09-28T10:02"
    },
    {
     "account": "fake1",
     "task": "faction",
-    "startsIn": 2.1,
-    "eta": "2026-09-28T10:02"
+    "startsIn": 1.0,
+    "eta": "2026-09-28T10:03"
    },
    {
     "account": "fake2",
     "task": "dailyclaim",
-    "startsIn": 4.5,
-    "eta": "2026-09-28T10:05"
+    "startsIn": 3.4,
+    "eta": "2026-09-28T10:06"
    },
    {
     "account": "fake2",
     "task": "mail",
-    "startsIn": 5.0,
-    "eta": "2026-09-28T10:05"
+    "startsIn": 3.9,
+    "eta": "2026-09-28T10:06"
    },
    {
     "account": "fake2",
     "task": "joint_battle",
-    "startsIn": 5.1,
-    "eta": "2026-09-28T10:05"
+    "startsIn": 4.0,
+    "eta": "2026-09-28T10:06"
    },
    {
     "account": "fake2",
     "task": "daily_dungeon",
-    "startsIn": 7.1,
-    "eta": "2026-09-28T10:07"
+    "startsIn": 6.0,
+    "eta": "2026-09-28T10:08"
    },
    {
     "account": "fake2",
     "task": "pokemon_home",
-    "startsIn": 7.3,
+    "startsIn": 6.2,
     "eta": "2026-09-28T10:08"
    },
    {
     "account": "fake2",
     "task": "combat_daily",
-    "startsIn": 8.6,
-    "eta": "2026-09-28T10:09"
-   },
-   {
-    "account": "fake2",
-    "task": "victory_road",
-    "startsIn": 10.2,
+    "startsIn": 7.5,
     "eta": "2026-09-28T10:10"
    },
    {
     "account": "fake2",
-    "task": "paradise",
-    "startsIn": 10.3,
+    "task": "victory_road",
+    "startsIn": 9.1,
     "eta": "2026-09-28T10:11"
+   },
+   {
+    "account": "fake2",
+    "task": "paradise",
+    "startsIn": 9.2,
+    "eta": "2026-09-28T10:12"
+   },
+   {
+    "account": "fake2",
+    "task": "collect_hoopa_keys",
+    "startsIn": 13.7,
+    "eta": "2026-09-28T10:16"
+   },
+   {
+    "account": "fake2",
+    "task": "sky_pillar",
+    "startsIn": 13.7,
+    "eta": "2026-09-28T10:16"
    }
   ],
-  "more": 243,
+  "more": 241,
   "fillers": [
    {
     "account": "smurf",
@@ -9908,12 +9948,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 14,
+   "n": 16,
    "medianSec": 15.0,
    "picker": {
-    "n": 14,
+    "n": 16,
     "medianSec": 15.0,
-    "jumps": 4
+    "jumps": 5
    },
    "typed": {
     "n": 0,
@@ -9927,11 +9967,10 @@
  },
  "progress": {
   "smurf": {
-   "paradiseStamina": "16/16",
-   "rank": 1,
    "pillar": "floor 19 stage 10",
    "misty": "step 1",
-   "mailUnread": 0
+   "mailUnread": 0,
+   "paradiseStamina": "16/16"
   },
   "fake1": {
    "mailUnread": 0,
@@ -10413,9 +10452,9 @@
    "issues": [
     {
      "task": "island_challenge",
-     "at": "09:27",
+     "at": "10:01",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_092710_island_challenge_jeff__KEEP_0004_092723_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_100050_island_challenge_jeff__KEEP_0004_100104_final.png"
     }
    ],
    "off": [],
@@ -10472,7 +10511,7 @@
     {
      "day": "2026-09-28",
      "done": 14,
-     "failed": 3
+     "failed": 4
     }
    ]
   },
@@ -10501,15 +10540,15 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [
     {
      "task": "island_challenge",
-     "at": "09:26",
+     "at": "10:01",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_092629_island_challenge_chris__KEEP_0004_092642_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_100130_island_challenge_chris__KEEP_0004_100143_final.png"
     },
     {
      "task": "combat_daily",
@@ -10572,7 +10611,7 @@
     {
      "day": "2026-09-28",
      "done": 15,
-     "failed": 4
+     "failed": 5
     }
    ]
   },
@@ -10647,11 +10686,10 @@
     "daily claims": 2
    },
    "progress": {
-    "paradiseStamina": "16/16",
-    "rank": 1,
     "pillar": "floor 19 stage 10",
     "misty": "step 1",
-    "mailUnread": 0
+    "mailUnread": 0,
+    "paradiseStamina": "16/16"
    },
    "history": [
     {
@@ -10694,8 +10732,8 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-28",
-   "summary": "7 of 15 dailies done · gave up on JointB · 2 switched off · 1 not available today",
-   "done": 7,
+   "summary": "8 of 15 dailies done · gave up on JointB · 2 switched off · 1 not available today",
+   "done": 8,
    "owed": 15,
    "open": [
     {
@@ -10717,10 +10755,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
     },
     {
      "task": "pillar",
@@ -10794,7 +10828,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 11,
+     "done": 12,
      "failed": 0
     }
    ]
