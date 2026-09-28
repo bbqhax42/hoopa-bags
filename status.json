@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T10:36:04.259138",
+ "generatedAt": "2026-09-28T10:38:08.928104",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake4",
-  "mode": "joint_battle",
-  "since": "10:35:39"
+  "mode": "combat_daily",
+  "since": "10:36:45"
  },
  "grid": {
   "tasks": [
@@ -222,8 +222,8 @@
      "✓",
      "⊘",
      "✗2",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "·",
      "·",
@@ -711,10 +711,10 @@
   ]
  },
  "counts": {
-  "done": 82,
-  "todo": 226,
+  "done": 83,
+  "todo": 224,
   "gaveUp": 6,
-  "unavailable": 14,
+  "unavailable": 15,
   "windowed": 50
  },
  "disabled": [
@@ -953,6 +953,35 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T10:36:43",
+   "script": "pokemon_home",
+   "account": "fake4",
+   "rc": 2,
+   "secs": 18,
+   "stats": {
+    "reached_via_trial": 1,
+    "board_stuck": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_103624_pokemon_home_fake4"
+  },
+  {
+   "ts": "2026-09-28T10:36:22",
+   "script": "daily_dungeon",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_103609_daily_dungeon_fake4"
+  },
   {
    "ts": "2026-09-28T10:35:06",
    "script": "mail",
@@ -8029,44 +8058,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260927_102136_pokemon_home_fake3"
-  },
-  {
-   "ts": "2026-09-27T10:21:34",
-   "script": "daily_dungeon",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 62,
-   "stats": {
-    "marginal_dungeon_list": 24,
-    "auto_formation": 1,
-    "near_miss_vr_rank": 1,
-    "sweep_dead_after_clear": 1,
-    "rank_chest_claimed": 4,
-    "dungeon_unrankable": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_102032_daily_dungeon_fake3"
-  },
-  {
-   "ts": "2026-09-27T10:19:19",
-   "script": "joint_team_daily_quest",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 50,
-   "stats": {
-    "panel_swipes": 8,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_101828_joint_team_daily_quest_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 38165,
+  "now": 38289,
   "segments": [
    {
     "b": 30174,
@@ -9454,7 +9451,38 @@
     "login": null,
     "handoff": 38141,
     "rc": null,
-    "e": 38165
+    "e": 38167
+   },
+   {
+    "b": 38167,
+    "a": "fake4",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 38169,
+    "rc": 0,
+    "e": 38183,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 38183,
+    "a": "fake4",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38184,
+    "rc": 2,
+    "e": 38205,
+    "secs": 18,
+    "why": ""
+   },
+   {
+    "b": 38205,
+    "a": "fake4",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 38209,
+    "rc": null,
+    "e": 38289
    }
   ],
   "idle": []
@@ -9650,13 +9678,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 7,
-    "minutes": 1.6,
+    "runs": 8,
+    "minutes": 1.8,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 7,
-    "minutes": 6.8,
+    "runs": 8,
+    "minutes": 7.1,
     "failed": 0
    },
    "weekend_bash": {
@@ -9758,6 +9786,12 @@
    "task": "joint_team_daily_quest",
    "why": null,
    "at": null
+  },
+  {
+   "account": "fake4",
+   "task": "pokemon_home",
+   "why": "nothing possible on this board: 50 charge(s) held, every tile taken and no pair among them — unavailable today",
+   "at": "2026-09-28T10:36:43"
   },
   {
    "account": "fake5",
@@ -10301,78 +10335,78 @@
   "next": [
    {
     "account": "fake4",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T10:36"
-   },
-   {
-    "account": "fake4",
-    "task": "pokemon_home",
-    "startsIn": 0.2,
-    "eta": "2026-09-28T10:36"
-   },
-   {
-    "account": "fake4",
     "task": "combat_daily",
-    "startsIn": 1.2,
-    "eta": "2026-09-28T10:37"
-   },
-   {
-    "account": "fake4",
-    "task": "victory_road",
-    "startsIn": 2.9,
+    "startsIn": 0.0,
     "eta": "2026-09-28T10:38"
    },
    {
     "account": "fake4",
+    "task": "victory_road",
+    "startsIn": 1.7,
+    "eta": "2026-09-28T10:39"
+   },
+   {
+    "account": "fake4",
     "task": "paradise",
-    "startsIn": 3.0,
+    "startsIn": 1.8,
     "eta": "2026-09-28T10:39"
    },
    {
     "account": "fake4",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.6,
-    "eta": "2026-09-28T10:43"
+    "startsIn": 6.4,
+    "eta": "2026-09-28T10:44"
    },
    {
     "account": "fake4",
     "task": "sky_pillar",
-    "startsIn": 7.7,
-    "eta": "2026-09-28T10:43"
+    "startsIn": 6.5,
+    "eta": "2026-09-28T10:44"
    },
    {
     "account": "fake4",
     "task": "faction",
-    "startsIn": 8.9,
+    "startsIn": 7.7,
     "eta": "2026-09-28T10:45"
    },
    {
     "account": "fake5",
     "task": "dailyclaim",
-    "startsIn": 10.8,
-    "eta": "2026-09-28T10:46"
+    "startsIn": 9.6,
+    "eta": "2026-09-28T10:47"
    },
    {
     "account": "fake5",
     "task": "mail",
-    "startsIn": 11.3,
-    "eta": "2026-09-28T10:47"
+    "startsIn": 10.1,
+    "eta": "2026-09-28T10:48"
    },
    {
     "account": "fake5",
     "task": "joint_battle",
-    "startsIn": 11.4,
-    "eta": "2026-09-28T10:47"
+    "startsIn": 10.2,
+    "eta": "2026-09-28T10:48"
    },
    {
     "account": "fake5",
     "task": "daily_dungeon",
-    "startsIn": 13.4,
-    "eta": "2026-09-28T10:49"
+    "startsIn": 12.2,
+    "eta": "2026-09-28T10:50"
+   },
+   {
+    "account": "fake5",
+    "task": "pokemon_home",
+    "startsIn": 12.4,
+    "eta": "2026-09-28T10:50"
+   },
+   {
+    "account": "fake5",
+    "task": "combat_daily",
+    "startsIn": 13.3,
+    "eta": "2026-09-28T10:51"
    }
   ],
-  "more": 214,
+  "more": 212,
   "fillers": [
    {
     "account": "smurf",
@@ -11532,8 +11566,8 @@
   "fake4": {
    "name": "Random32",
    "day": "2026-09-28",
-   "summary": "2 of 15 dailies done · gave up on JointB · 2 switched off · 1 not available today",
-   "done": 2,
+   "summary": "3 of 15 dailies done · gave up on JointB · 2 switched off · 2 not available today",
+   "done": 3,
    "owed": 15,
    "open": [
     {
@@ -11549,12 +11583,8 @@
      "state": "gave up"
     },
     {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
      "task": "home",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "dailies",
@@ -11606,6 +11636,10 @@
     {
      "task": "joint_team_daily_quest",
      "why": null
+    },
+    {
+     "task": "pokemon_home",
+     "why": "nothing possible on this board: 50 charge(s) held, every tile taken and no pair among them — unavailable today"
     }
    ],
    "spent": {
@@ -11650,7 +11684,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 3,
+     "done": 4,
      "failed": 0
     }
    ]
