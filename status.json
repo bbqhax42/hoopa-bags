@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T17:15:55.425711",
+ "generatedAt": "2026-09-28T17:17:59.251361",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "island_challenge",
-  "since": "17:15:24"
+  "account": "chris",
+  "mode": "run_pvp_ranked",
+  "since": "17:16:44"
  },
  "grid": {
   "tasks": [
@@ -107,7 +107,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -556,7 +556,7 @@
  },
  "counts": {
   "done": 249,
-  "todo": 24,
+  "todo": 23,
   "gaveUp": 10,
   "unavailable": 23,
   "windowed": 0
@@ -779,11 +779,37 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-28T17:15:38.485966",
+  "label": "chris",
+  "at": "2026-09-28T17:16:20.416125",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T17:16:44",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_171631_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-28T17:15:59",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 10,
+   "stats": {
+    "no_island_card": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_171548_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-28T16:07:58",
    "script": "run_pvp_ranked",
@@ -7988,44 +8014,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260927_220538_story_fake1"
-  },
-  {
-   "ts": "2026-09-27T22:05:37",
-   "script": "story",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 75,
-   "stats": {
-    "skip_retry": 12,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260927_220421_story_fake1"
-  },
-  {
-   "ts": "2026-09-27T21:25:18",
-   "script": "story",
-   "account": "fake4",
-   "rc": 2,
-   "secs": 6,
-   "stats": {
-    "skip_retry": 1,
-    "story_locked": 1,
-    "stages_cleared": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260927_212511_story_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 62155,
+  "now": 62279,
   "segments": [
    {
     "b": 30174,
@@ -13082,13 +13076,56 @@
      62138
     ],
     "handoff": 62148,
+    "rc": 1,
+    "e": 62160,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 62160,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     62160,
+     62180
+    ],
+    "handoff": 62190,
+    "rc": 1,
+    "e": 62204,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 62204,
+    "a": "chris",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 62211,
     "rc": null,
-    "e": 62155
+    "e": 62279
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-28T17:16:44",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_171631_island_challenge_chris__KEEP_0004_171644_final.png"
+  },
+  {
+   "ts": "2026-09-28T17:15:59",
+   "account": "jeff",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 10,
+   "why": "no Island Challenge card on the Trial list",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_171548_island_challenge_jeff__KEEP_0003_171559_final.png"
+  },
   {
    "ts": "2026-09-28T15:58:48",
    "account": "chris",
@@ -13479,14 +13516,14 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 165,
-  "relogMinutes": 59.6,
-  "retries": 109,
+  "switches": 166,
+  "relogMinutes": 60.1,
+  "retries": 111,
   "tasks": {
    "island_challenge": {
-    "runs": 30,
-    "minutes": 6.5,
-    "failed": 30
+    "runs": 32,
+    "minutes": 6.9,
+    "failed": 32
    },
    "dailyclaim": {
     "runs": 19,
@@ -14243,78 +14280,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-28T17:16"
+    "task": "run_pvp_ranked",
+    "startsIn": 0.0,
+    "eta": "2026-09-28T17:17"
+   },
+   {
+    "account": "nova",
+    "task": "run_pvp_ranked",
+    "startsIn": 0.5,
+    "eta": "2026-09-28T17:18"
    },
    {
     "account": "jeff",
     "task": "run_pvp_ranked",
     "startsIn": 1.0,
-    "eta": "2026-09-28T17:16"
-   },
-   {
-    "account": "nova",
-    "task": "run_pvp_ranked",
-    "startsIn": 1.5,
-    "eta": "2026-09-28T17:17"
-   },
-   {
-    "account": "chris",
-    "task": "run_pvp_ranked",
-    "startsIn": 2.0,
-    "eta": "2026-09-28T17:17"
+    "eta": "2026-09-28T17:18"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 2.5,
-    "eta": "2026-09-28T17:18"
+    "startsIn": 1.4,
+    "eta": "2026-09-28T17:19"
    },
    {
     "account": "sprite",
     "task": "run_pvp_ranked",
-    "startsIn": 2.9,
-    "eta": "2026-09-28T17:18"
+    "startsIn": 1.9,
+    "eta": "2026-09-28T17:19"
    },
    {
     "account": "exou",
     "task": "run_pvp_ranked",
-    "startsIn": 3.4,
-    "eta": "2026-09-28T17:19"
+    "startsIn": 2.4,
+    "eta": "2026-09-28T17:20"
    },
    {
     "account": "skosmurf",
     "task": "run_pvp_ranked",
-    "startsIn": 3.9,
-    "eta": "2026-09-28T17:19"
+    "startsIn": 2.9,
+    "eta": "2026-09-28T17:20"
    },
    {
     "account": "lucifer1",
     "task": "run_pvp_ranked",
-    "startsIn": 4.4,
-    "eta": "2026-09-28T17:20"
+    "startsIn": 3.4,
+    "eta": "2026-09-28T17:21"
    },
    {
     "account": "lucifer2",
     "task": "run_pvp_ranked",
-    "startsIn": 4.9,
-    "eta": "2026-09-28T17:20"
+    "startsIn": 3.8,
+    "eta": "2026-09-28T17:21"
    },
    {
     "account": "deno",
     "task": "run_pvp_ranked",
-    "startsIn": 5.3,
-    "eta": "2026-09-28T17:21"
+    "startsIn": 4.3,
+    "eta": "2026-09-28T17:22"
    },
    {
     "account": "dre",
     "task": "run_pvp_ranked",
-    "startsIn": 5.8,
-    "eta": "2026-09-28T17:21"
+    "startsIn": 4.8,
+    "eta": "2026-09-28T17:22"
+   },
+   {
+    "account": "jeff2",
+    "task": "dailyclaim",
+    "startsIn": 5.3,
+    "eta": "2026-09-28T17:23"
    }
   ],
-  "more": 12,
+  "more": 11,
   "fillers": [
    {
     "account": "smurf",
@@ -14348,11 +14385,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 137,
-   "medianSec": 16,
+   "n": 138,
+   "medianSec": 16.0,
    "picker": {
-    "n": 108,
-    "medianSec": 15.0,
+    "n": 109,
+    "medianSec": 15,
     "jumps": 56
    },
    "typed": {
@@ -15015,9 +15052,9 @@
    "issues": [
     {
      "task": "island_challenge",
-     "at": "15:58",
-     "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_155755_island_challenge_jeff__KEEP_0004_155808_final.png"
+     "at": "17:15",
+     "why": "no Island Challenge card on the Trial list",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_171548_island_challenge_jeff__KEEP_0003_171559_final.png"
     }
    ],
    "off": [],
@@ -15074,7 +15111,7 @@
     {
      "day": "2026-09-28",
      "done": 16,
-     "failed": 15
+     "failed": 16
     }
    ]
   },
@@ -15095,15 +15132,15 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [
     {
      "task": "island_challenge",
-     "at": "15:58",
+     "at": "17:16",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_155835_island_challenge_chris__KEEP_0004_155848_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_171631_island_challenge_chris__KEEP_0004_171644_final.png"
     },
     {
      "task": "combat_daily",
@@ -15166,7 +15203,7 @@
     {
      "day": "2026-09-28",
      "done": 17,
-     "failed": 16
+     "failed": 17
     }
    ]
   },
