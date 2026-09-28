@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T15:57:23.504186",
+ "generatedAt": "2026-09-28T15:59:27.401523",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake8",
-  "mode": "teamshop",
-  "since": "15:52:32"
+  "account": "nova",
+  "mode": "run_pvp_ranked",
+  "since": "15:59:14"
  },
  "grid": {
   "tasks": [
@@ -81,7 +81,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -100,14 +100,14 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "💤",
      "✓",
      "✓",
      "✓",
      "-",
      "✓",
      "✓",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -452,7 +452,7 @@
     "account": "fake8",
     "cells": [
      "✓",
-     "⏳",
+     "💤",
      "✓",
      "⊘",
      "✗2",
@@ -556,7 +556,7 @@
  },
  "counts": {
   "done": 247,
-  "todo": 25,
+  "todo": 22,
   "gaveUp": 10,
   "unavailable": 22,
   "windowed": 0
@@ -703,6 +703,7 @@
  ],
  "islandChallenge": [],
  "snoozed": {
+  "chris|run_pvp_ranked": "2026-09-28T16:29",
   "fake1|joint_team_daily_quest": "2026-09-28T16:29",
   "fake1|teamshop": "2026-09-28T20:51",
   "fake2|joint_team_daily_quest": "2026-09-28T16:29",
@@ -716,6 +717,7 @@
   "fake6|joint_team_daily_quest": "2026-09-28T16:29",
   "fake6|teamshop": "2026-09-28T21:53",
   "fake8|joint_team_daily_quest": "2026-09-28T16:29",
+  "fake8|teamshop": "2026-09-28T21:58",
   "nova|joint_team_daily_quest": "2026-09-28T16:29",
   "nova|teamshop": "2026-09-28T16:01"
  },
@@ -787,11 +789,49 @@
   }
  },
  "session": {
-  "label": "fake8",
-  "at": "2026-09-28T15:54:13.576798",
+  "label": "chris",
+  "at": "2026-09-28T15:58:23.631507",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T15:59:14",
+   "script": "run_pvp_ranked",
+   "account": "chris",
+   "rc": 5,
+   "secs": 4,
+   "stats": {
+    "off_season": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_155909_run_pvp_ranked_chris"
+  },
+  {
+   "ts": "2026-09-28T15:58:48",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 12,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_155835_island_challenge_chris"
+  },
+  {
+   "ts": "2026-09-28T15:58:08",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_155755_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-28T15:57:13",
    "script": "joint_team_daily_quest",
@@ -8020,60 +8060,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260927_210843_story_fake2"
-  },
-  {
-   "ts": "2026-09-27T21:08:42",
-   "script": "story",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 82,
-   "stats": {
-    "skip_retry": 12,
-    "afk_card": 2,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260927_210719_story_fake2"
-  },
-  {
-   "ts": "2026-09-27T21:06:54",
-   "script": "hoopa",
-   "account": "jeff",
-   "rc": 2,
-   "secs": 9,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-27T20:58:51",
-   "script": "story",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 76,
-   "stats": {
-    "skip_retry": 13,
-    "afk_card": 1,
-    "stages_cleared": 12
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260927_205735_story_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 57443,
+  "now": 57567,
   "segments": [
    {
     "b": 30174,
@@ -12762,12 +12754,81 @@
     ],
     "handoff": 57177,
     "rc": null,
-    "e": 57443
+    "e": 57448
+   },
+   {
+    "b": 57448,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     57448,
+     57463
+    ],
+    "handoff": 57475,
+    "rc": 1,
+    "e": 57489,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 57489,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     57489,
+     57503
+    ],
+    "handoff": 57515,
+    "rc": 1,
+    "e": 57528,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 57528,
+    "a": "chris",
+    "s": "run_pvp_ranked",
+    "login": null,
+    "handoff": 57549,
+    "rc": 5,
+    "e": 57554,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 57554,
+    "a": "nova",
+    "s": "run_pvp_ranked",
+    "login": [
+     57555,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 57567
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-28T15:58:48",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 12,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_155835_island_challenge_chris__KEEP_0004_155848_final.png"
+  },
+  {
+   "ts": "2026-09-28T15:58:08",
+   "account": "jeff",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_155755_island_challenge_jeff__KEEP_0004_155808_final.png"
+  },
   {
    "ts": "2026-09-28T15:09:17",
    "account": "chris",
@@ -13140,14 +13201,14 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 139,
-  "relogMinutes": 53.4,
-  "retries": 96,
+  "switches": 142,
+  "relogMinutes": 54.2,
+  "retries": 99,
   "tasks": {
    "island_challenge": {
-    "runs": 28,
-    "minutes": 6.1,
-    "failed": 28
+    "runs": 30,
+    "minutes": 6.5,
+    "failed": 30
    },
    "dailyclaim": {
     "runs": 19,
@@ -13205,9 +13266,9 @@
     "failed": 1
    },
    "run_pvp_ranked": {
-    "runs": 57,
-    "minutes": 4.6,
-    "failed": 57
+    "runs": 58,
+    "minutes": 4.7,
+    "failed": 58
    },
    "ultra_wormhole": {
     "runs": 12,
@@ -13891,79 +13952,79 @@
  "queue": {
   "next": [
    {
-    "account": "jeff",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-28T15:57"
-   },
-   {
-    "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 1.0,
-    "eta": "2026-09-28T15:58"
-   },
-   {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 1.6,
+    "startsIn": 0.0,
     "eta": "2026-09-28T15:59"
    },
    {
     "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 2.1,
+    "startsIn": 0.5,
     "eta": "2026-09-28T15:59"
-   },
-   {
-    "account": "chris",
-    "task": "run_pvp_ranked",
-    "startsIn": 2.6,
-    "eta": "2026-09-28T16:00"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 3.1,
+    "startsIn": 1.0,
     "eta": "2026-09-28T16:00"
    },
    {
     "account": "sprite",
     "task": "run_pvp_ranked",
-    "startsIn": 3.6,
+    "startsIn": 1.4,
     "eta": "2026-09-28T16:00"
    },
    {
     "account": "exou",
     "task": "run_pvp_ranked",
-    "startsIn": 4.0,
+    "startsIn": 1.9,
     "eta": "2026-09-28T16:01"
    },
    {
     "account": "skosmurf",
     "task": "run_pvp_ranked",
-    "startsIn": 4.5,
+    "startsIn": 2.4,
     "eta": "2026-09-28T16:01"
    },
    {
     "account": "lucifer1",
     "task": "run_pvp_ranked",
-    "startsIn": 5.0,
+    "startsIn": 2.9,
     "eta": "2026-09-28T16:02"
    },
    {
     "account": "lucifer2",
     "task": "run_pvp_ranked",
-    "startsIn": 5.5,
+    "startsIn": 3.4,
     "eta": "2026-09-28T16:02"
    },
    {
     "account": "deno",
     "task": "run_pvp_ranked",
-    "startsIn": 6.0,
+    "startsIn": 3.8,
     "eta": "2026-09-28T16:03"
+   },
+   {
+    "account": "dre",
+    "task": "run_pvp_ranked",
+    "startsIn": 4.3,
+    "eta": "2026-09-28T16:03"
+   },
+   {
+    "account": "jeff1",
+    "task": "dailyclaim",
+    "startsIn": 4.8,
+    "eta": "2026-09-28T16:04"
+   },
+   {
+    "account": "jeff1",
+    "task": "mail",
+    "startsIn": 5.3,
+    "eta": "2026-09-28T16:04"
    }
   ],
-  "more": 13,
+  "more": 10,
   "fillers": [
    {
     "account": "smurf",
@@ -13997,10 +14058,10 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 123,
+   "n": 125,
    "medianSec": 16,
    "picker": {
-    "n": 99,
+    "n": 101,
     "medianSec": 15,
     "jumps": 52
    },
@@ -14661,15 +14722,15 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [
     {
      "task": "island_challenge",
-     "at": "15:08",
+     "at": "15:58",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_150823_island_challenge_jeff__KEEP_0004_150836_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_155755_island_challenge_jeff__KEEP_0004_155808_final.png"
     }
    ],
    "off": [],
@@ -14726,7 +14787,7 @@
     {
      "day": "2026-09-28",
      "done": 16,
-     "failed": 14
+     "failed": 15
     }
    ]
   },
@@ -14743,19 +14804,19 @@
     },
     {
      "task": "pvpRank",
-     "state": "still to do"
+     "state": "asks again later"
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [
     {
      "task": "island_challenge",
-     "at": "15:09",
+     "at": "15:58",
      "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_150904_island_challenge_chris__KEEP_0004_150917_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_155835_island_challenge_chris__KEEP_0004_155848_final.png"
     },
     {
      "task": "combat_daily",
@@ -14818,7 +14879,7 @@
     {
      "day": "2026-09-28",
      "done": 17,
-     "failed": 15
+     "failed": 16
     }
    ]
   },
@@ -16040,7 +16101,7 @@
    "open": [
     {
      "task": "tshop",
-     "state": "cooling off"
+     "state": "asks again later"
     },
     {
      "task": "JointQ",
