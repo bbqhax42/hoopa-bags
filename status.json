@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T08:43:47.798951",
+ "generatedAt": "2026-09-28T08:45:52.512718",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "sky_pillar",
-  "since": "08:35:45"
+  "account": "nova",
+  "mode": "daily_dungeon",
+  "since": "08:45:46"
  },
  "grid": {
   "tasks": [
@@ -34,10 +34,10 @@
    {
     "account": "nova",
     "cells": [
-     "·",
-     "·",
+     "✓",
+     "✓",
      "💤",
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -684,9 +684,9 @@
   ]
  },
  "counts": {
-  "done": 11,
-  "todo": 300,
-  "gaveUp": 0,
+  "done": 13,
+  "todo": 297,
+  "gaveUp": 1,
   "unavailable": 3,
   "windowed": 61
  },
@@ -914,6 +914,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T08:44:48",
+   "script": "mail",
+   "account": "nova",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "reward_card_closed": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 17,
+    "reward_cards": 1,
+    "unread_after": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_084445_mail_nova"
+  },
+  {
+   "ts": "2026-09-28T08:44:42",
+   "script": "dailyclaim",
+   "account": "nova",
+   "rc": 0,
+   "secs": 33,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "egg_smashed": 1,
+    "claims": 4
+   },
+   "incomplete": [],
+   "values": {
+    "golden_egg": "smashed",
+    "rail_badges": "0.190:79 0.275:8 0.345:54 0.428:7 0.500:0"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_084409_dailyclaim_nova"
+  },
   {
    "ts": "2026-09-28T08:36:28",
    "script": "sky_pillar",
@@ -7894,44 +7935,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260927_080616_pokemon_home_lucifer1"
-  },
-  {
-   "ts": "2026-09-27T08:06:14",
-   "script": "daily_dungeon",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_080601_daily_dungeon_lucifer1"
-  },
-  {
-   "ts": "2026-09-27T08:05:17",
-   "script": "joint_team_daily_quest",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 45,
-   "stats": {
-    "panel_swipes": 8,
-    "artifact_unaffordable": 1,
-    "near_miss_squad_panel": 1,
-    "near_miss_rift_exit_guardian": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {
-    "artifact": "not enough Relic Tablet to level it"
-   },
-   "dir": "debug_runs/20260927_080432_joint_team_daily_quest_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 31428,
+  "now": 31553,
   "segments": [
    {
     "b": 30174,
@@ -8098,9 +8107,58 @@
     "login": null,
     "handoff": 30945,
     "rc": 0,
-    "e": 31428,
+    "e": 31448,
     "secs": 41,
     "why": ""
+   },
+   {
+    "b": 31448,
+    "a": "nova",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 31448,
+    "rc": 0,
+    "e": 31484,
+    "secs": 33,
+    "why": ""
+   },
+   {
+    "b": 31484,
+    "a": "nova",
+    "s": "mail",
+    "login": null,
+    "handoff": 31484,
+    "rc": 0,
+    "e": 31489,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 31489,
+    "a": "nova",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 31491,
+    "rc": null,
+    "e": 31518
+   },
+   {
+    "b": 31518,
+    "a": "nova",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 31520,
+    "rc": null,
+    "e": 31546
+   },
+   {
+    "b": 31546,
+    "a": "nova",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 31548,
+    "rc": null,
+    "e": 31553
    }
   ],
   "idle": []
@@ -8164,12 +8222,12 @@
     "failed": 2
    },
    "dailyclaim": {
-    "runs": 1,
-    "minutes": 0.5,
+    "runs": 2,
+    "minutes": 1.1,
     "failed": 0
    },
    "mail": {
-    "runs": 1,
+    "runs": 2,
     "minutes": 0.1,
     "failed": 0
    },
@@ -8640,6 +8698,12 @@
  },
  "changes": [
   {
+   "sha": "674e59a",
+   "ts": "2026-09-28T08:44:35",
+   "area": "teamshop",
+   "subject": "the fakes do their Joint Team daily quests while in Yoo"
+  },
+  {
    "sha": "a2a85c0",
    "ts": "2026-09-28T08:22:45",
    "area": "dailyclaim",
@@ -8737,79 +8801,79 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T08:43"
-   },
-   {
-    "account": "chris",
-    "task": "ultra_wormhole",
-    "startsIn": 2.0,
-    "eta": "2026-09-28T08:45"
-   },
-   {
-    "account": "chris",
-    "task": "championship",
-    "startsIn": 4.0,
-    "eta": "2026-09-28T08:47"
-   },
-   {
-    "account": "nova",
-    "task": "dailyclaim",
-    "startsIn": 6.4,
-    "eta": "2026-09-28T08:50"
-   },
-   {
-    "account": "nova",
-    "task": "mail",
-    "startsIn": 6.9,
-    "eta": "2026-09-28T08:50"
-   },
-   {
-    "account": "nova",
-    "task": "joint_battle",
-    "startsIn": 7.0,
-    "eta": "2026-09-28T08:50"
-   },
-   {
     "account": "nova",
     "task": "daily_dungeon",
-    "startsIn": 9.0,
-    "eta": "2026-09-28T08:52"
+    "startsIn": 0.0,
+    "eta": "2026-09-28T08:45"
    },
    {
     "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 9.2,
-    "eta": "2026-09-28T08:53"
+    "startsIn": 0.2,
+    "eta": "2026-09-28T08:46"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 10.6,
-    "eta": "2026-09-28T08:54"
+    "startsIn": 1.6,
+    "eta": "2026-09-28T08:47"
    },
    {
     "account": "nova",
     "task": "combat_daily",
-    "startsIn": 10.8,
-    "eta": "2026-09-28T08:54"
+    "startsIn": 1.8,
+    "eta": "2026-09-28T08:47"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 12.1,
-    "eta": "2026-09-28T08:55"
+    "startsIn": 3.1,
+    "eta": "2026-09-28T08:48"
    },
    {
     "account": "nova",
     "task": "paradise",
-    "startsIn": 12.2,
+    "startsIn": 3.2,
+    "eta": "2026-09-28T08:49"
+   },
+   {
+    "account": "nova",
+    "task": "collect_hoopa_keys",
+    "startsIn": 7.3,
+    "eta": "2026-09-28T08:53"
+   },
+   {
+    "account": "nova",
+    "task": "sky_pillar",
+    "startsIn": 7.4,
+    "eta": "2026-09-28T08:53"
+   },
+   {
+    "account": "nova",
+    "task": "ultra_wormhole",
+    "startsIn": 8.1,
+    "eta": "2026-09-28T08:53"
+   },
+   {
+    "account": "chris",
+    "task": "faction",
+    "startsIn": 10.5,
     "eta": "2026-09-28T08:56"
+   },
+   {
+    "account": "chris",
+    "task": "ultra_wormhole",
+    "startsIn": 12.5,
+    "eta": "2026-09-28T08:58"
+   },
+   {
+    "account": "chris",
+    "task": "championship",
+    "startsIn": 14.5,
+    "eta": "2026-09-28T09:00"
    }
   ],
-  "more": 288,
+  "more": 285,
   "fillers": [
    {
     "account": "smurf",
@@ -8966,6 +9030,11 @@
   }
  },
  "ledger": {
+  "nova": {
+   "mail claimed": 1,
+   "daily claims": 4,
+   "Privilege Pack claimed": 1
+  },
   "chris": {
    "pillar/story stages cleared": 3,
    "Island Shop buys (200 coins)": 1,
@@ -8980,11 +9049,7 @@
    "pillar/story stages cleared": 44
   }
  },
- "paused": {
-  "since": "2026-09-28T08:36:19",
-  "by": "teamshop",
-  "why": "Monday team shop: the leave pass"
- },
+ "paused": null,
  "warnings": [],
  "needsYou": [
   {
@@ -9215,25 +9280,17 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-28",
-   "summary": "0 of 16 dailies done",
-   "done": 0,
+   "summary": "2 of 16 dailies done · gave up on JointB",
+   "done": 2,
    "owed": 16,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "asks again later"
     },
     {
      "task": "JointB",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dungeon",
@@ -9287,7 +9344,11 @@
    "issues": [],
    "off": [],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 4,
+    "Privilege Pack claimed": 1
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "20/20",
@@ -9327,7 +9388,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
