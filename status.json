@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T23:34:00.996180",
+ "generatedAt": "2026-09-28T23:36:04.676061",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "lucifer1",
   "mode": "hoopa",
-  "since": "23:07:48"
+  "since": "23:35:25"
  },
  "grid": {
   "tasks": [
@@ -696,6 +696,7 @@
  "snoozed": {
   "chris|island_challenge": "2026-09-29T00:42",
   "jeff|island_challenge": "2026-09-28T23:57",
+  "nova|hoopa": "2026-09-28T23:38",
   "skosmurf|rift": "2026-09-29T00:05",
   "smurf|rift": "2026-09-29T00:05"
  },
@@ -706,8 +707,8 @@
    "at": "2026-09-28T17:52:23"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-28T17:44:04"
+   "keys": 0,
+   "at": "2026-09-28T23:34:29"
   },
   "lucifer1": {
    "keys": 340,
@@ -767,11 +768,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-28T23:08:04.159961",
+  "label": "lucifer1",
+  "at": "2026-09-28T23:35:42.751909",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T23:34:30",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 1574,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-28T21:06:29",
    "script": "island_challenge",
@@ -8052,24 +8069,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_082440_dailyclaim_chris"
-  },
-  {
-   "ts": "2026-09-28T08:24:18",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 1,
-   "secs": 13,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_082405_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 84841,
+  "now": 84965,
   "segments": [
    {
     "b": 30174,
@@ -8092,10 +8097,8 @@
      30234
     ],
     "handoff": 30244,
-    "rc": 1,
-    "e": 30260,
-    "secs": 13,
-    "why": ""
+    "rc": null,
+    "e": 30260
    },
    {
     "b": 30260,
@@ -13764,8 +13767,34 @@
      83284
     ],
     "handoff": 83295,
+    "rc": 2,
+    "e": 84870,
+    "secs": 1574,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 84870,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     84871,
+     84890
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 84841
+    "e": 84925
+   },
+   {
+    "b": 84925,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     84926,
+     84942
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 84965
    }
   ],
   "idle": []
@@ -14148,20 +14177,11 @@
    "secs": 100,
    "why": "left: arena challenges, shop purchase (Island Shop)",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_082842_combat_daily_chris__KEEP_0154_083022_final.png"
-  },
-  {
-   "ts": "2026-09-28T08:24:18",
-   "account": "chris",
-   "task": "island_challenge",
-   "rc": 1,
-   "secs": 13,
-   "why": "the stage map did not open",
-   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_082405_island_challenge_chris__KEEP_0004_082418_final.png"
   }
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 223,
+  "switches": 225,
   "relogMinutes": 76.7,
   "retries": 116,
   "tasks": {
@@ -14268,6 +14288,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-28T23:34:30"
+  },
   {
    "account": "chris",
    "task": "joint_battle",
@@ -14623,9 +14649,9 @@
     "last": "2026-09-28T22:15:18"
    },
    "chris": {
-    "runs": 72,
-    "targets": 3,
-    "last": "2026-09-28T23:33:23"
+    "runs": 73,
+    "targets": 4,
+    "last": "2026-09-28T23:34:21"
    },
    "jeff": {
     "runs": 59,
@@ -14639,6 +14665,13 @@
    }
   },
   "targets": [
+   {
+    "ts": "2026-09-28T23:34:21",
+    "runner": "chris",
+    "items": [
+     "Grip Claw"
+    ]
+   },
    {
     "ts": "2026-09-28T23:00:30",
     "runner": "lucifer1",
@@ -14714,13 +14747,6 @@
     "runner": "lucifer1",
     "items": [
      "Muscle Band"
-    ]
-   },
-   {
-    "ts": "2026-09-28T18:20:07",
-    "runner": "chris",
-    "items": [
-     "Choice Band"
     ]
    }
   ]
@@ -14875,15 +14901,7 @@
   "more": 0,
   "fillers": [
    {
-    "account": "chris",
-    "mode": "hoopa"
-   },
-   {
     "account": "jeff",
-    "mode": "hoopa"
-   },
-   {
-    "account": "nova",
     "mode": "hoopa"
    },
    {
@@ -14898,12 +14916,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 193,
+   "n": 195,
    "medianSec": 16,
    "picker": {
-    "n": 153,
+    "n": 155,
     "medianSec": 16,
-    "jumps": 87
+    "jumps": 89
    },
    "typed": {
     "n": 0,
@@ -15652,7 +15670,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-28",
-   "summary": "17 of 19 dailies done · 1 not available today",
+   "summary": "17 of 19 dailies done · 2 not available today",
    "done": 17,
    "owed": 19,
    "open": [
@@ -15681,6 +15699,10 @@
    ],
    "off": [],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "joint_battle",
      "why": null
