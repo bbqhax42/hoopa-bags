@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T11:30:05.067092",
+ "generatedAt": "2026-09-28T11:32:10.255341",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
-  "mode": "sky_pillar",
-  "since": "11:28:48"
+  "account": "jeff",
+  "mode": "run_pvp_ranked",
+  "since": "11:31:48"
  },
  "grid": {
   "tasks": [
@@ -48,7 +48,7 @@
      "⏰",
      "✓",
      "⏰",
-     "·",
+     "💤",
      "✓",
      "✓",
      "-",
@@ -310,8 +310,8 @@
      "⏰",
      "-",
      "✓",
-     "✗2",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "-",
      "-",
@@ -711,10 +711,10 @@
   ]
  },
  "counts": {
-  "done": 118,
-  "todo": 188,
-  "gaveUp": 9,
-  "unavailable": 16,
+  "done": 119,
+  "todo": 186,
+  "gaveUp": 8,
+  "unavailable": 17,
   "windowed": 50
  },
  "disabled": [
@@ -875,6 +875,7 @@
   "fake8|joint_team_daily_quest": "2026-09-28T16:29",
   "fake8|teamshop": "2026-09-28T14:43",
   "nova|joint_team_daily_quest": "2026-09-28T16:29",
+  "nova|run_pvp_ranked": "2026-09-28T12:01",
   "nova|teamshop": "2026-09-28T15:29"
  },
  "ownerOnline": [],
@@ -945,11 +946,71 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-28T11:18:35.726244",
+  "label": "jeff",
+  "at": "2026-09-28T11:32:02.964100",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T11:31:46",
+   "script": "run_pvp_ranked",
+   "account": "nova",
+   "rc": 5,
+   "secs": 4,
+   "stats": {
+    "off_season": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_113142_run_pvp_ranked_nova"
+  },
+  {
+   "ts": "2026-09-28T11:31:12",
+   "script": "faction",
+   "account": "fake7",
+   "rc": 2,
+   "secs": 10,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_113102_faction_fake7"
+  },
+  {
+   "ts": "2026-09-28T11:30:57",
+   "script": "sky_pillar",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 126,
+   "stats": {
+    "stages_cleared": 2,
+    "floor_reward_claimed": 2,
+    "marginal_sky_pillar": 2,
+    "floor_backlog_floor": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 4,
+    "stage": 6,
+    "proofs_spent": 2,
+    "floor_backlog_claims": 1
+   },
+   "values_all": {
+    "floor": [
+     4,
+     4
+    ],
+    "stage": [
+     5,
+     6
+    ]
+   },
+   "dir": "debug_runs/20260928_112851_sky_pillar_fake7"
+  },
   {
    "ts": "2026-09-28T11:28:46",
    "script": "sky_pillar",
@@ -8078,58 +8139,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260927_112043_joint_team_daily_quest_fake7"
-  },
-  {
-   "ts": "2026-09-27T11:20:42",
-   "script": "mail",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "marginal_home_guild_label": 1,
-    "claim_all_tapped": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 0,
-    "unread_after": 0
-   },
-   "dir": "debug_runs/20260927_112039_mail_fake7"
-  },
-  {
-   "ts": "2026-09-27T11:20:37",
-   "script": "dailyclaim",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 17,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingifts_coming_soon": 1,
-    "claims": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rail_badges": "0.190:79 0.275:8 0.345:53 0.428:7 0.500:0"
-   },
-   "dir": "debug_runs/20260927_112020_dailyclaim_fake7"
-  },
-  {
-   "ts": "2026-09-27T11:19:47",
-   "script": "faction",
-   "account": "fake6",
-   "rc": 2,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_111947_faction_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 41405,
+  "now": 41531,
   "segments": [
    {
     "b": 30174,
@@ -10051,9 +10066,46 @@
     "login": null,
     "handoff": 41331,
     "rc": 1,
-    "e": 41405,
+    "e": 41458,
     "secs": 105,
     "why": "sky_pillar: 3 proof(s) left unspent"
+   },
+   {
+    "b": 41458,
+    "a": "fake7",
+    "s": "faction",
+    "login": null,
+    "handoff": 41461,
+    "rc": 2,
+    "e": 41474,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 41474,
+    "a": "nova",
+    "s": "run_pvp_ranked",
+    "login": [
+     41474,
+     41491
+    ],
+    "handoff": 41501,
+    "rc": 5,
+    "e": 41508,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 41508,
+    "a": "jeff",
+    "s": "run_pvp_ranked",
+    "login": [
+     41508,
+     41522
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 41531
    }
   ],
   "idle": []
@@ -10251,9 +10303,9 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 30,
-  "relogMinutes": 12.7,
-  "retries": 32,
+  "switches": 32,
+  "relogMinutes": 13.2,
+  "retries": 33,
   "tasks": {
    "island_challenge": {
     "runs": 12,
@@ -10311,14 +10363,14 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 11,
-    "minutes": 14.6,
+    "runs": 12,
+    "minutes": 16.7,
     "failed": 1
    },
    "run_pvp_ranked": {
-    "runs": 13,
+    "runs": 14,
     "minutes": 1.1,
-    "failed": 13
+    "failed": 14
    },
    "ultra_wormhole": {
     "runs": 5,
@@ -10331,8 +10383,8 @@
     "failed": 2
    },
    "faction": {
-    "runs": 8,
-    "minutes": 13.7,
+    "runs": 9,
+    "minutes": 13.9,
     "failed": 2
    },
    "misty_woods": {
@@ -10402,6 +10454,12 @@
    "task": "joint_team_daily_quest",
    "why": null,
    "at": null
+  },
+  {
+   "account": "fake7",
+   "task": "faction",
+   "why": "FCTN Tower is not unlocked on this account — its card opened nothing",
+   "at": "2026-09-28T11:31:12"
   },
   {
    "account": "fake7",
@@ -10938,79 +10996,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake7",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T11:30"
-   },
-   {
-    "account": "nova",
-    "task": "run_pvp_ranked",
-    "startsIn": 2.1,
-    "eta": "2026-09-28T11:32"
-   },
-   {
     "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 2.6,
+    "startsIn": 0.0,
     "eta": "2026-09-28T11:32"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 3.1,
-    "eta": "2026-09-28T11:33"
+    "startsIn": 0.5,
+    "eta": "2026-09-28T11:32"
    },
    {
     "account": "sprite",
     "task": "dailyclaim",
-    "startsIn": 3.6,
+    "startsIn": 1.0,
     "eta": "2026-09-28T11:33"
    },
    {
     "account": "sprite",
     "task": "mail",
-    "startsIn": 4.1,
-    "eta": "2026-09-28T11:34"
+    "startsIn": 1.5,
+    "eta": "2026-09-28T11:33"
    },
    {
     "account": "sprite",
     "task": "daily_dungeon",
-    "startsIn": 4.1,
-    "eta": "2026-09-28T11:34"
+    "startsIn": 1.5,
+    "eta": "2026-09-28T11:33"
    },
    {
     "account": "sprite",
     "task": "pokemon_home",
-    "startsIn": 4.3,
-    "eta": "2026-09-28T11:34"
+    "startsIn": 1.7,
+    "eta": "2026-09-28T11:33"
    },
    {
     "account": "sprite",
     "task": "weekend_bash",
-    "startsIn": 5.0,
-    "eta": "2026-09-28T11:35"
+    "startsIn": 2.4,
+    "eta": "2026-09-28T11:34"
    },
    {
     "account": "sprite",
     "task": "combat_daily",
-    "startsIn": 5.2,
-    "eta": "2026-09-28T11:35"
+    "startsIn": 2.6,
+    "eta": "2026-09-28T11:34"
    },
    {
     "account": "sprite",
     "task": "victory_road",
-    "startsIn": 7.0,
-    "eta": "2026-09-28T11:37"
+    "startsIn": 4.3,
+    "eta": "2026-09-28T11:36"
    },
    {
     "account": "sprite",
     "task": "paradise",
-    "startsIn": 7.1,
-    "eta": "2026-09-28T11:37"
+    "startsIn": 4.5,
+    "eta": "2026-09-28T11:36"
+   },
+   {
+    "account": "sprite",
+    "task": "run_pvp_ranked",
+    "startsIn": 9.2,
+    "eta": "2026-09-28T11:41"
+   },
+   {
+    "account": "sprite",
+    "task": "collect_hoopa_keys",
+    "startsIn": 9.3,
+    "eta": "2026-09-28T11:41"
    }
   ],
-  "more": 176,
+  "more": 174,
   "fillers": [
    {
     "account": "smurf",
@@ -11044,12 +11102,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 30,
+   "n": 32,
    "medianSec": 16.0,
    "picker": {
-    "n": 29,
+    "n": 31,
     "medianSec": 16,
-    "jumps": 13
+    "jumps": 14
    },
    "typed": {
     "n": 0,
@@ -11063,9 +11121,9 @@
  },
  "progress": {
   "fake7": {
-   "mailUnread": 0,
    "paradiseStamina": "2/12",
-   "pillar": "floor 4 stage 3"
+   "pillar": "floor 4 stage 6",
+   "mailUnread": 0
   },
   "sprite": {
    "mailUnread": 0,
@@ -11159,8 +11217,8 @@
  },
  "ledger": {
   "fake7": {
+   "pillar/story stages cleared": 3,
    "pillar proofs swept": 3,
-   "pillar/story stages cleared": 1,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 3
@@ -11536,7 +11594,7 @@
     },
     {
      "task": "pvpRank",
-     "state": "still to do"
+     "state": "asks again later"
     }
    ],
    "issues": [],
@@ -12532,8 +12590,8 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-28",
-   "summary": "9 of 14 dailies done · gave up on pillar · 2 switched off · 2 not available today",
-   "done": 9,
+   "summary": "10 of 14 dailies done · 2 switched off · 3 not available today",
+   "done": 10,
    "owed": 14,
    "open": [
     {
@@ -12549,12 +12607,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "pillar",
-     "state": "gave up"
-    },
-    {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
    "issues": [
@@ -12585,6 +12639,10 @@
    ],
    "unavailable": [
     {
+     "task": "faction",
+     "why": "FCTN Tower is not unlocked on this account — its card opened nothing"
+    },
+    {
      "task": "joint_battle",
      "why": null
     },
@@ -12594,16 +12652,16 @@
     }
    ],
    "spent": {
+    "pillar/story stages cleared": 3,
     "pillar proofs swept": 3,
-    "pillar/story stages cleared": 1,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 3
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "2/12",
-    "pillar": "floor 4 stage 3"
+    "pillar": "floor 4 stage 6",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -12638,7 +12696,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 10,
+     "done": 11,
      "failed": 1
     }
    ]
