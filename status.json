@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T13:15:56.325866",
+ "generatedAt": "2026-09-28T13:18:01.231754",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake8",
-  "mode": "daily_dungeon",
-  "since": "13:15:49"
+  "mode": "combat_daily",
+  "since": "13:16:17"
  },
  "grid": {
   "tasks": [
@@ -412,7 +412,7 @@
      "⏰",
      "✓",
      "✓",
-     "💤",
+     "·",
      "✓",
      "✓",
      "-",
@@ -456,14 +456,14 @@
      "✓",
      "⊘",
      "✗2",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "·",
      "·",
      "⊘",
      "·",
-     "⇢",
+     "·",
      "-",
      "·",
      "·",
@@ -711,7 +711,7 @@
   ]
  },
  "counts": {
-  "done": 195,
+  "done": 197,
   "todo": 119,
   "gaveUp": 10,
   "unavailable": 19,
@@ -874,7 +874,6 @@
   "fake8|joint_team_daily_quest": "2026-09-28T16:29",
   "fake8|teamshop": "2026-09-28T14:43",
   "jeff|run_pvp_ranked": "2026-09-28T13:23",
-  "lucifer1|run_pvp_ranked": "2026-09-28T13:17",
   "lucifer2|run_pvp_ranked": "2026-09-28T13:37",
   "nova|joint_team_daily_quest": "2026-09-28T16:29",
   "nova|run_pvp_ranked": "2026-09-28T13:23",
@@ -953,6 +952,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T13:16:16",
+   "script": "pokemon_home",
+   "account": "fake8",
+   "rc": 0,
+   "secs": 9,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "charges_left_by_cap": 49
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_131607_pokemon_home_fake8"
+  },
+  {
+   "ts": "2026-09-28T13:16:04",
+   "script": "daily_dungeon",
+   "account": "fake8",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_131552_daily_dungeon_fake8"
+  },
   {
    "ts": "2026-09-28T13:14:49",
    "script": "mail",
@@ -8167,48 +8196,12 @@
     "wins_today": 17
    },
    "dir": "debug_runs/20260927_132527_ultra_wormhole_skosmurf"
-  },
-  {
-   "ts": "2026-09-27T13:24:55",
-   "script": "ultra_wormhole",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 16,
-   "stats": {
-    "rewards_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rewards_claimed": 0,
-    "wins_today": 16
-   },
-   "dir": "debug_runs/20260927_132439_ultra_wormhole_lucifer1"
-  },
-  {
-   "ts": "2026-09-27T13:24:35",
-   "script": "guild_war",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 57,
-   "stats": {
-    "near_miss_last_hit": 6,
-    "near_miss_vr_rank": 3,
-    "marginal_last_hit": 10,
-    "near_miss_battle_victory": 1,
-    "near_miss_tips_header": 20,
-    "refused_setform_confirm": 2,
-    "refused_auto_formation": 1,
-    "gw_attempts_spent": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_132337_guild_war_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 47756,
+  "now": 47881,
   "segments": [
    {
     "b": 30174,
@@ -11443,8 +11436,30 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 47751,
+    "rc": 0,
+    "e": 47765,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 47765,
+    "a": "fake8",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 47766,
+    "rc": 0,
+    "e": 47777,
+    "secs": 9,
+    "why": ""
+   },
+   {
+    "b": 47777,
+    "a": "fake8",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 47782,
     "rc": null,
-    "e": 47756
+    "e": 47881
    }
   ],
   "idle": []
@@ -11766,13 +11781,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 17,
-    "minutes": 5.6,
+    "runs": 18,
+    "minutes": 5.8,
     "failed": 1
    },
    "pokemon_home": {
-    "runs": 16,
-    "minutes": 12.7,
+    "runs": 17,
+    "minutes": 12.8,
     "failed": 0
    },
    "weekend_bash": {
@@ -12452,78 +12467,78 @@
   "next": [
    {
     "account": "fake8",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T13:15"
-   },
-   {
-    "account": "fake8",
-    "task": "pokemon_home",
-    "startsIn": 0.3,
-    "eta": "2026-09-28T13:16"
-   },
-   {
-    "account": "fake8",
     "task": "combat_daily",
-    "startsIn": 1.1,
-    "eta": "2026-09-28T13:17"
-   },
-   {
-    "account": "fake8",
-    "task": "victory_road",
-    "startsIn": 2.9,
+    "startsIn": 0.0,
     "eta": "2026-09-28T13:18"
    },
    {
     "account": "fake8",
-    "task": "paradise",
-    "startsIn": 3.0,
+    "task": "victory_road",
+    "startsIn": 1.8,
     "eta": "2026-09-28T13:19"
    },
    {
     "account": "fake8",
+    "task": "paradise",
+    "startsIn": 1.9,
+    "eta": "2026-09-28T13:19"
+   },
+   {
+    "account": "fake8",
+    "task": "guild_war",
+    "startsIn": 6.7,
+    "eta": "2026-09-28T13:24"
+   },
+   {
+    "account": "fake8",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.8,
-    "eta": "2026-09-28T13:23"
+    "startsIn": 6.7,
+    "eta": "2026-09-28T13:24"
    },
    {
     "account": "fake8",
     "task": "sky_pillar",
-    "startsIn": 7.9,
-    "eta": "2026-09-28T13:23"
+    "startsIn": 6.8,
+    "eta": "2026-09-28T13:24"
    },
    {
     "account": "fake8",
     "task": "faction",
-    "startsIn": 9.2,
-    "eta": "2026-09-28T13:25"
+    "startsIn": 8.0,
+    "eta": "2026-09-28T13:26"
    },
    {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 11.2,
-    "eta": "2026-09-28T13:27"
+    "startsIn": 10.1,
+    "eta": "2026-09-28T13:28"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 11.7,
-    "eta": "2026-09-28T13:27"
+    "startsIn": 10.6,
+    "eta": "2026-09-28T13:28"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 11.7,
-    "eta": "2026-09-28T13:27"
+    "startsIn": 10.6,
+    "eta": "2026-09-28T13:28"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 12.7,
-    "eta": "2026-09-28T13:28"
+    "startsIn": 11.6,
+    "eta": "2026-09-28T13:29"
+   },
+   {
+    "account": "deno",
+    "task": "daily_dungeon",
+    "startsIn": 13.6,
+    "eta": "2026-09-28T13:31"
    }
   ],
-  "more": 101,
+  "more": 100,
   "fillers": [
    {
     "account": "smurf",
@@ -12551,15 +12566,11 @@
    }
   ],
   "held": {
-   "sprite": {
-    "until": "2026-09-28T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "smurf": {
     "until": "2026-09-28T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "exou": {
+   "skosmurf": {
     "until": "2026-09-28T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12567,7 +12578,15 @@
     "until": "2026-09-28T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "skosmurf": {
+   "lucifer1": {
+    "until": "2026-09-28T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-09-28T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "exou": {
     "until": "2026-09-28T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12596,11 +12615,6 @@
   }
  },
  "progress": {
-  "lucifer1": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "pillar": "floor 94 stage 8"
-  },
   "skosmurf": {
    "mailUnread": 0,
    "paradiseStamina": "1/15",
@@ -12674,6 +12688,11 @@
   },
   "exou": {
    "mailUnread": 0
+  },
+  "lucifer1": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "pillar": "floor 94 stage 8"
   },
   "deno": {},
   "fake7": {
@@ -14488,7 +14507,7 @@
     },
     {
      "task": "pvpRank",
-     "state": "asks again later"
+     "state": "still to do"
     }
    ],
    "issues": [],
@@ -14643,8 +14662,8 @@
   "fake8": {
    "name": "Asdggfyd",
    "day": "2026-09-28",
-   "summary": "2 of 15 dailies done · gave up on JointB · 2 switched off · 2 not available today",
-   "done": 2,
+   "summary": "4 of 15 dailies done · gave up on JointB · 2 switched off · 2 not available today",
+   "done": 4,
    "owed": 15,
    "open": [
     {
@@ -14658,14 +14677,6 @@
     {
      "task": "JointB",
      "state": "gave up"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -14685,7 +14696,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -14763,7 +14774,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 3,
+     "done": 5,
      "failed": 0
     }
    ]
