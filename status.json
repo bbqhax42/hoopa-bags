@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T02:06:48.253752",
+ "generatedAt": "2026-09-29T02:08:51.954641",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
+  "account": "fake5",
   "mode": "worldboss",
-  "since": "02:06:29"
+  "since": "02:08:14"
  },
  "grid": {
   "tasks": [
@@ -765,11 +765,43 @@
   }
  },
  "session": {
-  "label": "fake3",
-  "at": "2026-09-29T02:06:46.986121",
+  "label": "fake5",
+  "at": "2026-09-29T02:08:32.736612",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T02:08:14",
+   "script": "worldboss",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_020721_worldboss_fake4"
+  },
+  {
+   "ts": "2026-09-29T02:07:21",
+   "script": "worldboss",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 51,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_020629_worldboss_fake3"
+  },
   {
    "ts": "2026-09-29T02:06:29",
    "script": "worldboss",
@@ -8012,55 +8044,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_084409_dailyclaim_nova"
-  },
-  {
-   "ts": "2026-09-28T08:36:28",
-   "script": "sky_pillar",
-   "account": "chris",
-   "rc": 0,
-   "secs": 41,
-   "stats": {
-    "stages_cleared": 3
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 139,
-    "stage": 2,
-    "proofs_spent": 3
-   },
-   "values_all": {
-    "floor": [
-     138,
-     139,
-     139
-    ],
-    "stage": [
-     10,
-     1,
-     2
-    ]
-   },
-   "dir": "debug_runs/20260928_083546_sky_pillar_chris"
-  },
-  {
-   "ts": "2026-09-28T08:35:43",
-   "script": "collect_hoopa_keys",
-   "account": "chris",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_083539_collect_hoopa_keys_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 94008,
+  "now": 94132,
   "segments": [
    {
     "b": 30174,
@@ -8191,10 +8180,8 @@
     "s": "collect_hoopa_keys",
     "login": null,
     "handoff": 30938,
-    "rc": 0,
-    "e": 30945,
-    "secs": 4,
-    "why": ""
+    "rc": null,
+    "e": 30945
    },
    {
     "b": 30945,
@@ -8202,10 +8189,8 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 30945,
-    "rc": 0,
-    "e": 31448,
-    "secs": 41,
-    "why": ""
+    "rc": null,
+    "e": 31448
    },
    {
     "b": 31448,
@@ -13922,8 +13907,36 @@
      94006
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 94041,
+    "secs": 51,
+    "why": ""
+   },
+   {
+    "b": 94041,
+    "a": "fake4",
+    "s": "worldboss",
+    "login": [
+     94042,
+     94059
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 94094,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 94094,
+    "a": "fake5",
+    "s": "worldboss",
+    "login": [
+     94095,
+     94112
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 94008
+    "e": 94132
    }
   ],
   "idle": []
@@ -14301,7 +14314,7 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 237,
+  "switches": 239,
   "relogMinutes": 80.3,
   "retries": 118,
   "tasks": {
@@ -14401,8 +14414,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 27,
-    "minutes": 25.5,
+    "runs": 29,
+    "minutes": 27.3,
     "failed": 1
    }
   }
@@ -14756,7 +14769,9 @@
    "nova",
    "smurf",
    "fake1",
-   "fake2"
+   "fake2",
+   "fake3",
+   "fake4"
   ]
  },
  "worldBossSkipped": {},
@@ -15030,12 +15045,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 207,
+   "n": 209,
    "medianSec": 16,
    "picker": {
-    "n": 166,
+    "n": 168,
     "medianSec": 16.0,
-    "jumps": 96
+    "jumps": 98
    },
    "typed": {
     "n": 0,
@@ -15048,12 +15063,6 @@
   }
  },
  "progress": {
-  "chris": {
-   "pillar": "floor 139 stage 2",
-   "rank": 348,
-   "islandFights": 6,
-   "islandStamina": 7
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -15067,6 +15076,11 @@
    "rank": 339,
    "islandFights": 9,
    "islandStamina": 3
+  },
+  "chris": {
+   "rank": 348,
+   "islandFights": 6,
+   "islandStamina": 7
   },
   "smurf": {
    "mailUnread": 0,
@@ -15590,7 +15604,6 @@
     "island fights": 3
    },
    "progress": {
-    "pillar": "floor 139 stage 2",
     "rank": 348,
     "islandFights": 6,
     "islandStamina": 7
@@ -16038,6 +16051,11 @@
      "day": "2026-09-28",
      "done": 14,
      "failed": 1
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -16132,6 +16150,11 @@
     {
      "day": "2026-09-28",
      "done": 14,
+     "failed": 0
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
      "failed": 0
     }
    ]
