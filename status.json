@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T20:05:22.431637",
+ "generatedAt": "2026-09-28T20:07:25.823676",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
+  "account": "fake3",
   "mode": "worldboss",
-  "since": "20:04:50"
+  "since": "20:06:42"
  },
  "grid": {
   "tasks": [
@@ -773,11 +773,44 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-28T20:05:07.388651",
+  "label": "fake3",
+  "at": "2026-09-28T20:06:59.439851",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T20:06:42",
+   "script": "worldboss",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "wb_skip_again": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_200542_worldboss_fake2"
+  },
+  {
+   "ts": "2026-09-28T20:05:41",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 51,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_200450_worldboss_fake1"
+  },
   {
    "ts": "2026-09-28T20:04:50",
    "script": "worldboss",
@@ -8045,44 +8078,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_020616_worldboss_fake3"
-  },
-  {
-   "ts": "2026-09-28T02:06:15",
-   "script": "worldboss",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_020522_worldboss_fake2"
-  },
-  {
-   "ts": "2026-09-28T02:05:22",
-   "script": "worldboss",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 52,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_020429_worldboss_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 72322,
+  "now": 72446,
   "segments": [
    {
     "b": 30174,
@@ -13507,8 +13508,36 @@
      72307
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 72341,
+    "secs": 51,
+    "why": ""
+   },
+   {
+    "b": 72341,
+    "a": "fake2",
+    "s": "worldboss",
+    "login": [
+     72342,
+     72365
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72402,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 72402,
+    "a": "fake3",
+    "s": "worldboss",
+    "login": [
+     72403,
+     72419
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 72322
+    "e": 72446
    }
   ],
   "idle": []
@@ -13922,7 +13951,7 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 189,
+  "switches": 191,
   "relogMinutes": 69.1,
   "retries": 113,
   "tasks": {
@@ -14022,8 +14051,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 4,
-    "minutes": 3.6,
+    "runs": 6,
+    "minutes": 5.5,
     "failed": 0
    }
   }
@@ -14314,7 +14343,9 @@
    "jeff",
    "chris",
    "nova",
-   "smurf"
+   "smurf",
+   "fake1",
+   "fake2"
   ]
  },
  "worldBossSkipped": {},
@@ -14586,7 +14617,7 @@
     "account": "jeff",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-09-28T20:05"
+    "eta": "2026-09-28T20:07"
    }
   ],
   "more": 0,
@@ -14615,12 +14646,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 159,
+   "n": 161,
    "medianSec": 16,
    "picker": {
-    "n": 126,
+    "n": 128,
     "medianSec": 15.0,
-    "jumps": 65
+    "jumps": 67
    },
    "typed": {
     "n": 0,
@@ -14633,16 +14664,6 @@
   }
  },
  "progress": {
-  "fake1": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "pillar": "floor 6 stage 1"
-  },
-  "fake2": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20",
-   "pillar": "floor 5 stage 8"
-  },
   "fake3": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -14731,6 +14752,16 @@
    "paradiseStamina": "16/16",
    "pillar": "floor 19 stage 10",
    "rank": 343
+  },
+  "fake1": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "pillar": "floor 6 stage 1"
+  },
+  "fake2": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20",
+   "pillar": "floor 5 stage 8"
   },
   "lucifer1": {
    "mailUnread": 0,
@@ -15648,7 +15679,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 17,
+     "done": 18,
      "failed": 0
     }
    ]
@@ -15752,7 +15783,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 13,
+     "done": 14,
      "failed": 1
     }
    ]
