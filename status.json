@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T08:27:09.916357",
+ "generatedAt": "2026-09-28T08:29:14.397704",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "pokemon_home",
-  "since": "08:27:00"
+  "mode": "combat_daily",
+  "since": "08:28:41"
  },
  "grid": {
   "tasks": [
@@ -89,8 +89,8 @@
      "✓",
      "⊘",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -684,8 +684,8 @@
   ]
  },
  "counts": {
-  "done": 4,
-  "todo": 315,
+  "done": 6,
+  "todo": 313,
   "gaveUp": 0,
   "unavailable": 3,
   "windowed": 61
@@ -905,6 +905,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T08:28:39",
+   "script": "weekend_bash",
+   "account": "chris",
+   "rc": 0,
+   "secs": 10,
+   "stats": {
+    "near_miss_nav_explore": 1,
+    "tickets": 10
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 240,
+    "tickets": 10
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_082829_weekend_bash_chris"
+  },
+  {
+   "ts": "2026-09-28T08:28:23",
+   "script": "pokemon_home",
+   "account": "chris",
+   "rc": 0,
+   "secs": 81,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "grid_shrank_rejected": 1,
+    "merge_moved_instead": 2,
+    "balls_unsettled_opened": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_082701_pokemon_home_chris"
+  },
   {
    "ts": "2026-09-28T08:26:58",
    "script": "daily_dungeon",
@@ -7842,41 +7879,12 @@
    ],
    "values": {},
    "dir": ""
-  },
-  {
-   "ts": "2026-09-27T03:34:23",
-   "script": "hoopa",
-   "account": "fake5",
-   "rc": 2,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [
-    "lost a fight while climbing — the result card says the fight was lost"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-27T02:41:58",
-   "script": "hoopa",
-   "account": "jeff",
-   "rc": 2,
-   "secs": 9,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 30430,
+  "now": 30555,
   "segments": [
    {
     "b": 30174,
@@ -7965,8 +7973,30 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 30421,
+    "rc": 0,
+    "e": 30504,
+    "secs": 81,
+    "why": ""
+   },
+   {
+    "b": 30504,
+    "a": "chris",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 30509,
+    "rc": 0,
+    "e": 30521,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 30521,
+    "a": "chris",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30521,
     "rc": null,
-    "e": 30430
+    "e": 30555
    }
   ],
   "idle": []
@@ -8036,6 +8066,16 @@
     "failed": 0
    },
    "daily_dungeon": {
+    "runs": 1,
+    "minutes": 0.2,
+    "failed": 0
+   },
+   "pokemon_home": {
+    "runs": 1,
+    "minutes": 1.4,
+    "failed": 0
+   },
+   "weekend_bash": {
     "runs": 1,
     "minutes": 0.2,
     "failed": 0
@@ -8560,78 +8600,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "pokemon_home",
+    "task": "combat_daily",
     "startsIn": 0.0,
-    "eta": "2026-09-28T08:27"
-   },
-   {
-    "account": "chris",
-    "task": "weekend_bash",
-    "startsIn": 2.0,
     "eta": "2026-09-28T08:29"
    },
    {
     "account": "chris",
-    "task": "combat_daily",
-    "startsIn": 4.0,
+    "task": "victory_road",
+    "startsIn": 2.0,
     "eta": "2026-09-28T08:31"
    },
    {
     "account": "chris",
-    "task": "victory_road",
-    "startsIn": 6.0,
+    "task": "paradise",
+    "startsIn": 4.0,
     "eta": "2026-09-28T08:33"
    },
    {
     "account": "chris",
-    "task": "paradise",
-    "startsIn": 8.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 6.0,
     "eta": "2026-09-28T08:35"
    },
    {
     "account": "chris",
-    "task": "collect_hoopa_keys",
-    "startsIn": 10.0,
+    "task": "sky_pillar",
+    "startsIn": 8.0,
     "eta": "2026-09-28T08:37"
    },
    {
     "account": "chris",
-    "task": "sky_pillar",
-    "startsIn": 12.0,
+    "task": "faction",
+    "startsIn": 10.0,
     "eta": "2026-09-28T08:39"
    },
    {
     "account": "chris",
-    "task": "faction",
-    "startsIn": 14.0,
+    "task": "ultra_wormhole",
+    "startsIn": 12.0,
     "eta": "2026-09-28T08:41"
    },
    {
     "account": "chris",
-    "task": "ultra_wormhole",
-    "startsIn": 16.0,
-    "eta": "2026-09-28T08:43"
-   },
-   {
-    "account": "chris",
     "task": "championship",
-    "startsIn": 18.0,
-    "eta": "2026-09-28T08:45"
+    "startsIn": 14.0,
+    "eta": "2026-09-28T08:43"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 20.4,
-    "eta": "2026-09-28T08:47"
+    "startsIn": 16.4,
+    "eta": "2026-09-28T08:45"
    },
    {
     "account": "nova",
     "task": "mail",
-    "startsIn": 20.9,
-    "eta": "2026-09-28T08:48"
+    "startsIn": 16.9,
+    "eta": "2026-09-28T08:46"
+   },
+   {
+    "account": "nova",
+    "task": "joint_team_daily_quest",
+    "startsIn": 17.0,
+    "eta": "2026-09-28T08:46"
+   },
+   {
+    "account": "nova",
+    "task": "joint_battle",
+    "startsIn": 18.1,
+    "eta": "2026-09-28T08:47"
    }
   ],
-  "more": 303,
+  "more": 301,
   "fillers": [
    {
     "account": "smurf",
@@ -8790,6 +8830,7 @@
  },
  "ledger": {
   "chris": {
+   "Home creations": 50,
    "daily claims": 4,
    "Privilege Pack claimed": 1
   },
@@ -9286,21 +9327,13 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-28",
-   "summary": "4 of 19 dailies done · 1 not available today",
-   "done": 4,
+   "summary": "6 of 19 dailies done · 1 not available today",
+   "done": 6,
    "owed": 19,
    "open": [
     {
      "task": "JointB",
      "state": "not available today"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -9367,6 +9400,7 @@
     }
    ],
    "spent": {
+    "Home creations": 50,
     "daily claims": 4,
     "Privilege Pack claimed": 1
    },
@@ -9409,7 +9443,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 5,
+     "done": 7,
      "failed": 1
     }
    ]
