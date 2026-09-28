@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T09:00:24.708907",
+ "generatedAt": "2026-09-28T09:02:29.232584",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "combat_daily",
-  "since": "08:59:37"
+  "mode": "paradise",
+  "since": "09:01:29"
  },
  "grid": {
   "tasks": [
@@ -69,8 +69,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "⏰",
@@ -711,8 +711,8 @@
   ]
  },
  "counts": {
-  "done": 25,
-  "todo": 295,
+  "done": 27,
+  "todo": 293,
   "gaveUp": 1,
   "unavailable": 11,
   "windowed": 50
@@ -949,6 +949,44 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T09:01:27",
+   "script": "victory_road",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_090121_victory_road_jeff"
+  },
+  {
+   "ts": "2026-09-28T09:01:19",
+   "script": "combat_daily",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 100,
+   "stats": {
+    "title_reread_named": 4,
+    "marginal_battle_victory_confirm": 2,
+    "refused_quick_bar": 1,
+    "near_miss_vr_rank": 4,
+    "gacha_ticket": 1,
+    "island_shop_bought": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 + ac",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "ticket"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_085938_combat_daily_jeff"
+  },
   {
    "ts": "2026-09-28T08:59:36",
    "script": "weekend_bash",
@@ -7936,47 +7974,12 @@
    "incomplete": [],
    "values": {},
    "dir": "debug_runs/20260927_082848_victory_road_nova"
-  },
-  {
-   "ts": "2026-09-27T08:28:46",
-   "script": "combat_daily",
-   "account": "nova",
-   "rc": 0,
-   "secs": 103,
-   "stats": {
-    "title_reread_named": 6,
-    "near_miss_afk_rewards": 1,
-    "marginal_afk_rewards": 3,
-    "near_miss_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 5,
-    "marginal_battle_victory_confirm": 2,
-    "gacha_free": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accclerations left: 10/10 +)",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free"
-   },
-   "dir": "debug_runs/20260927_082703_combat_daily_nova"
-  },
-  {
-   "ts": "2026-09-27T08:27:01",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "dir": "debug_runs/20260927_082701_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 32425,
+  "now": 32550,
   "segments": [
    {
     "b": 30174,
@@ -8362,8 +8365,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 32378,
+    "rc": 0,
+    "e": 32480,
+    "secs": 100,
+    "why": ""
+   },
+   {
+    "b": 32480,
+    "a": "jeff",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 32481,
+    "rc": 0,
+    "e": 32489,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 32489,
+    "a": "jeff",
+    "s": "paradise",
+    "login": null,
+    "handoff": 32490,
     "rc": null,
-    "e": 32425
+    "e": 32550
    }
   ],
   "idle": []
@@ -8475,13 +8500,13 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 3,
-    "minutes": 4.5,
+    "runs": 4,
+    "minutes": 6.1,
     "failed": 1
    },
    "victory_road": {
-    "runs": 2,
-    "minutes": 0.2,
+    "runs": 3,
+    "minutes": 0.3,
     "failed": 0
    },
    "paradise": {
@@ -8970,6 +8995,12 @@
  },
  "changes": [
   {
+   "sha": "63dae78",
+   "ts": "2026-09-28T09:01:32",
+   "area": "teamshop",
+   "subject": "the Monday rotation runs as the bot's own task, no pause"
+  },
+  {
    "sha": "674e59a",
    "ts": "2026-09-28T08:44:35",
    "area": "teamshop",
@@ -9068,78 +9099,78 @@
   "next": [
    {
     "account": "jeff",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-28T09:00"
-   },
-   {
-    "account": "jeff",
-    "task": "victory_road",
-    "startsIn": 1.5,
-    "eta": "2026-09-28T09:01"
-   },
-   {
-    "account": "jeff",
     "task": "paradise",
-    "startsIn": 1.6,
+    "startsIn": 0.0,
     "eta": "2026-09-28T09:02"
    },
    {
     "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 5.8,
+    "startsIn": 4.2,
     "eta": "2026-09-28T09:06"
    },
    {
     "account": "jeff",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.8,
+    "startsIn": 6.2,
     "eta": "2026-09-28T09:08"
    },
    {
     "account": "jeff",
     "task": "sky_pillar",
-    "startsIn": 7.8,
+    "startsIn": 6.2,
     "eta": "2026-09-28T09:08"
    },
    {
     "account": "jeff",
     "task": "ultra_wormhole",
-    "startsIn": 8.5,
-    "eta": "2026-09-28T09:08"
+    "startsIn": 7.0,
+    "eta": "2026-09-28T09:09"
    },
    {
     "account": "jeff",
     "task": "championship",
-    "startsIn": 10.5,
-    "eta": "2026-09-28T09:10"
+    "startsIn": 8.9,
+    "eta": "2026-09-28T09:11"
    },
    {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 12.9,
+    "startsIn": 11.3,
     "eta": "2026-09-28T09:13"
    },
    {
     "account": "nova",
     "task": "collect_hoopa_keys",
-    "startsIn": 14.9,
+    "startsIn": 13.3,
     "eta": "2026-09-28T09:15"
    },
    {
     "account": "nova",
     "task": "sky_pillar",
-    "startsIn": 15.0,
+    "startsIn": 13.4,
     "eta": "2026-09-28T09:15"
    },
    {
     "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 15.7,
+    "startsIn": 14.1,
     "eta": "2026-09-28T09:16"
+   },
+   {
+    "account": "chris",
+    "task": "run_pvp_ranked",
+    "startsIn": 16.5,
+    "eta": "2026-09-28T09:19"
+   },
+   {
+    "account": "chris",
+    "task": "faction",
+    "startsIn": 18.5,
+    "eta": "2026-09-28T09:21"
    }
   ],
-  "more": 283,
+  "more": 281,
   "fillers": [
    {
     "account": "smurf",
@@ -9293,6 +9324,7 @@
  },
  "ledger": {
   "jeff": {
+   "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
@@ -9648,21 +9680,13 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-28",
-   "summary": "6 of 18 dailies done · 1 not available today",
-   "done": 6,
+   "summary": "8 of 18 dailies done · 1 not available today",
+   "done": 8,
    "owed": 18,
    "open": [
     {
      "task": "JointB",
      "state": "not available today"
-    },
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
     },
     {
      "task": "victoryRank",
@@ -9717,6 +9741,7 @@
     }
    ],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
@@ -9761,7 +9786,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 7,
+     "done": 9,
      "failed": 2
     }
    ]
