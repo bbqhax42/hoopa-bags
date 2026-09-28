@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-28T20:09:29.256629",
+ "generatedAt": "2026-09-28T20:11:33.012991",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake6",
+  "account": "sprite",
   "mode": "worldboss",
-  "since": "20:09:24"
+  "since": "20:11:14"
  },
  "grid": {
   "tasks": [
@@ -773,11 +773,43 @@
   }
  },
  "session": {
-  "label": "fake5",
-  "at": "2026-09-28T20:08:49.419204",
+  "label": "sprite",
+  "at": "2026-09-28T20:11:30.472318",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-28T20:11:14",
+   "script": "worldboss",
+   "account": "fake7",
+   "rc": 1,
+   "secs": 54,
+   "stats": {
+    "connection_retry": 1,
+    "connection_retry_stuck": 1,
+    "connection_lost": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260928_201019_worldboss_fake7"
+  },
+  {
+   "ts": "2026-09-28T20:10:19",
+   "script": "worldboss",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260928_200925_worldboss_fake6"
+  },
   {
    "ts": "2026-09-28T20:09:24",
    "script": "worldboss",
@@ -8046,45 +8078,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_021052_worldboss_sprite"
-  },
-  {
-   "ts": "2026-09-28T02:10:51",
-   "script": "worldboss",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 59,
-   "stats": {
-    "wb_skip_again": 1,
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_020952_worldboss_fake7"
-  },
-  {
-   "ts": "2026-09-28T02:09:51",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 54,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_020857_worldboss_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 72569,
+  "now": 72693,
   "segments": [
    {
     "b": 30174,
@@ -13576,16 +13575,53 @@
     "s": "worldboss",
     "login": [
      72565,
-     null
+     72583
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72619,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 72619,
+    "a": "fake7",
+    "s": "worldboss",
+    "login": [
+     72619,
+     72639
+    ],
+    "handoff": null,
+    "rc": 1,
+    "e": 72674,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 72674,
+    "a": "sprite",
+    "s": "worldboss",
+    "login": [
+     72675,
+     72690
     ],
     "handoff": null,
     "rc": null,
-    "e": 72569
+    "e": 72693
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-28T20:11:14",
+   "account": "fake7",
+   "task": "worldboss",
+   "rc": 1,
+   "secs": 54,
+   "why": "could not get past the startup screens",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_201019_worldboss_fake7__KEEP_0004_201114_final.png"
+  },
   {
    "ts": "2026-09-28T17:16:44",
    "account": "chris",
@@ -13994,9 +14030,9 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 194,
+  "switches": 196,
   "relogMinutes": 69.1,
-  "retries": 113,
+  "retries": 114,
   "tasks": {
    "island_challenge": {
     "runs": 34,
@@ -14094,9 +14130,9 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 9,
-    "minutes": 8.1,
-    "failed": 0
+    "runs": 11,
+    "minutes": 9.9,
+    "failed": 1
    }
   }
  },
@@ -14391,7 +14427,8 @@
    "fake2",
    "fake3",
    "fake4",
-   "fake5"
+   "fake5",
+   "fake6"
   ]
  },
  "worldBossSkipped": {},
@@ -14663,7 +14700,7 @@
     "account": "jeff",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-09-28T20:09"
+    "eta": "2026-09-28T20:11"
    }
   ],
   "more": 0,
@@ -14692,33 +14729,24 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 163,
-   "medianSec": 16,
+   "n": 166,
+   "medianSec": 16.0,
    "picker": {
-    "n": 130,
+    "n": 132,
     "medianSec": 15.0,
-    "jumps": 69
+    "jumps": 70
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 33,
-    "medianSec": 19
+    "n": 34,
+    "medianSec": 19.0
    }
   }
  },
  "progress": {
-  "fake6": {
-   "mailUnread": 0,
-   "paradiseStamina": "20/20"
-  },
-  "fake7": {
-   "mailUnread": 0,
-   "paradiseStamina": "2/12",
-   "pillar": "floor 4 stage 6"
-  },
   "sprite": {
    "mailUnread": 0,
    "paradiseStamina": "1/20",
@@ -14808,6 +14836,15 @@
    "mailUnread": 0,
    "paradiseStamina": "20/20",
    "pillar": "floor 7 stage 4"
+  },
+  "fake6": {
+   "mailUnread": 0,
+   "paradiseStamina": "20/20"
+  },
+  "fake7": {
+   "mailUnread": 0,
+   "paradiseStamina": "2/12",
+   "pillar": "floor 4 stage 6"
   },
   "lucifer1": {
    "mailUnread": 0,
@@ -16217,7 +16254,7 @@
     },
     {
      "day": "2026-09-28",
-     "done": 14,
+     "done": 15,
      "failed": 0
     }
    ]
@@ -16247,6 +16284,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "worldboss",
+     "at": "20:11",
+     "why": "could not get past the startup screens",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260928_201019_worldboss_fake7__KEEP_0004_201114_final.png"
+    },
     {
      "task": "sky_pillar",
      "at": "11:28",
@@ -16336,7 +16379,7 @@
     {
      "day": "2026-09-28",
      "done": 12,
-     "failed": 1
+     "failed": 2
     }
    ]
   },
