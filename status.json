@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T02:04:44.500237",
+ "generatedAt": "2026-09-29T02:06:48.253752",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
+  "account": "fake3",
   "mode": "worldboss",
-  "since": "02:04:21"
+  "since": "02:06:29"
  },
  "grid": {
   "tasks": [
@@ -765,11 +765,43 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-29T02:04:37.706589",
+  "label": "fake3",
+  "at": "2026-09-29T02:06:46.986121",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T02:06:29",
+   "script": "worldboss",
+   "account": "fake2",
+   "rc": 0,
+   "secs": 52,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_020537_worldboss_fake2"
+  },
+  {
+   "ts": "2026-09-29T02:05:36",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 75,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_020421_worldboss_fake1"
+  },
   {
    "ts": "2026-09-29T02:04:21",
    "script": "worldboss",
@@ -8023,52 +8055,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_083539_collect_hoopa_keys_chris"
-  },
-  {
-   "ts": "2026-09-28T08:35:36",
-   "script": "paradise",
-   "account": "chris",
-   "rc": 0,
-   "secs": 243,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 106,
-    "pass_claims": 2,
-    "gear_maxed": 3,
-    "dex_activated": 0,
-    "shop_sold_out_skipped": 18,
-    "shop_buys": 5,
-    "shop_spend_confirmed": 6550
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "20/20",
-    "event_end": "2026-09-29",
-    "shop_window": "empty"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_083133_paradise_chris"
-  },
-  {
-   "ts": "2026-09-28T08:31:30",
-   "script": "victory_road",
-   "account": "chris",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_083123_victory_road_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-28T00:00",
   "since": 28800.0,
-  "now": 93884,
+  "now": 94008,
   "segments": [
    {
     "b": 30174,
@@ -8181,10 +8173,8 @@
     "s": "victory_road",
     "login": null,
     "handoff": 30683,
-    "rc": 0,
-    "e": 30692,
-    "secs": 6,
-    "why": ""
+    "rc": null,
+    "e": 30692
    },
    {
     "b": 30692,
@@ -8192,10 +8182,8 @@
     "s": "paradise",
     "login": null,
     "handoff": 30692,
-    "rc": 0,
-    "e": 30938,
-    "secs": 243,
-    "why": ""
+    "rc": null,
+    "e": 30938
    },
    {
     "b": 30938,
@@ -13906,8 +13894,36 @@
      93877
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 93936,
+    "secs": 75,
+    "why": ""
+   },
+   {
+    "b": 93936,
+    "a": "fake2",
+    "s": "worldboss",
+    "login": [
+     93937,
+     93953
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 93989,
+    "secs": 52,
+    "why": ""
+   },
+   {
+    "b": 93989,
+    "a": "fake3",
+    "s": "worldboss",
+    "login": [
+     93990,
+     94006
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 93884
+    "e": 94008
    }
   ],
   "idle": []
@@ -14285,7 +14301,7 @@
  ],
  "day": {
   "since": "2026-09-28T08:00",
-  "switches": 235,
+  "switches": 237,
   "relogMinutes": 80.3,
   "retries": 118,
   "tasks": {
@@ -14385,8 +14401,8 @@
     "failed": 0
    },
    "worldboss": {
-    "runs": 25,
-    "minutes": 23.4,
+    "runs": 27,
+    "minutes": 25.5,
     "failed": 1
    }
   }
@@ -14738,7 +14754,9 @@
    "chris",
    "jeff",
    "nova",
-   "smurf"
+   "smurf",
+   "fake1",
+   "fake2"
   ]
  },
  "worldBossSkipped": {},
@@ -15012,12 +15030,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 205,
+   "n": 207,
    "medianSec": 16,
    "picker": {
-    "n": 164,
+    "n": 166,
     "medianSec": 16.0,
-    "jumps": 94
+    "jumps": 96
    },
    "typed": {
     "n": 0,
@@ -15031,7 +15049,6 @@
  },
  "progress": {
   "chris": {
-   "paradiseStamina": "20/20",
    "pillar": "floor 139 stage 2",
    "rank": 348,
    "islandFights": 6,
@@ -15573,7 +15590,6 @@
     "island fights": 3
    },
    "progress": {
-    "paradiseStamina": "20/20",
     "pillar": "floor 139 stage 2",
     "rank": 348,
     "islandFights": 6,
@@ -15808,6 +15824,11 @@
      "day": "2026-09-28",
      "done": 18,
      "failed": 0
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -15910,6 +15931,11 @@
      "day": "2026-09-28",
      "done": 14,
      "failed": 1
+    },
+    {
+     "day": "2026-09-29",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
