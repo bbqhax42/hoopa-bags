@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T02:55:15.549446",
+ "generatedAt": "2026-09-30T02:57:19.370100",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
-  "mode": "worldboss",
-  "since": "02:55:14"
+  "account": "nova",
+  "mode": "dynamax",
+  "since": "02:57:06"
  },
  "grid": {
   "tasks": [
@@ -784,11 +784,44 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-09-30T02:54:54.632969",
+  "label": "fake6",
+  "at": "2026-09-30T02:56:29.182799",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T02:57:06",
+   "script": "worldboss",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_025610_worldboss_fake6"
+  },
+  {
+   "ts": "2026-09-30T02:56:09",
+   "script": "worldboss",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "wb_skip_again": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_025514_worldboss_fake5"
+  },
   {
    "ts": "2026-09-30T02:55:14",
    "script": "worldboss",
@@ -8445,52 +8478,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_094611_combat_daily_chris"
-  },
-  {
-   "ts": "2026-09-29T09:46:09",
-   "script": "weekend_bash",
-   "account": "chris",
-   "rc": 0,
-   "secs": 16,
-   "stats": {
-    "near_miss_nav_explore": 2,
-    "tickets": 25
-   },
-   "incomplete": [],
-   "values": {
-    "diamonds_spent": 140,
-    "tickets": 25
-   },
-   "values_all": {
-    "diamonds_spent": [
-     735,
-     140
-    ]
-   },
-   "dir": "debug_runs/20260929_094553_weekend_bash_chris"
-  },
-  {
-   "ts": "2026-09-29T09:45:47",
-   "script": "pokemon_home",
-   "account": "chris",
-   "rc": 0,
-   "secs": 79,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "grid_shrank_rejected": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_094427_pokemon_home_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 96915,
+  "now": 97039,
   "segments": [
    {
     "b": 34830,
@@ -8558,10 +8551,8 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 35067,
-    "rc": 0,
-    "e": 35148,
-    "secs": 79,
-    "why": ""
+    "rc": null,
+    "e": 35148
    },
    {
     "b": 35148,
@@ -8569,10 +8560,8 @@
     "s": "weekend_bash",
     "login": null,
     "handoff": 35153,
-    "rc": 0,
-    "e": 35170,
-    "secs": 16,
-    "why": ""
+    "rc": null,
+    "e": 35170
    },
    {
     "b": 35170,
@@ -14895,11 +14884,39 @@
     "s": "worldboss",
     "login": [
      96914,
+     96931
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 96969,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 96969,
+    "a": "fake6",
+    "s": "worldboss",
+    "login": [
+     96970,
+     96989
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 97026,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 97026,
+    "a": "nova",
+    "s": "dynamax",
+    "login": [
+     97026,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 96915
+    "e": 97039
    }
   ],
   "idle": [
@@ -15396,7 +15413,7 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 299,
+  "switches": 301,
   "relogMinutes": 82.2,
   "retries": 79,
   "tasks": {
@@ -15506,8 +15523,8 @@
     "failed": 8
    },
    "worldboss": {
-    "runs": 57,
-    "minutes": 55.5,
+    "runs": 59,
+    "minutes": 57.4,
     "failed": 32
    }
   }
@@ -15804,7 +15821,11 @@
    "fake1",
    "fake2",
    "fake3",
-   "fake4"
+   "fake4",
+   "fake5",
+   "fake6",
+   "fake7",
+   "fake8"
   ]
  },
  "worldBossSkipped": {},
@@ -16070,12 +16091,12 @@
   "restarts": 0,
   "downtimeMin": 2.1,
   "switches": {
-   "n": 155,
+   "n": 157,
    "medianSec": 16,
    "picker": {
-    "n": 124,
+    "n": 126,
     "medianSec": 16.0,
-    "jumps": 76
+    "jumps": 78
    },
    "typed": {
     "n": 1,
@@ -17246,7 +17267,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 0,
+     "done": 1,
      "failed": 3
     }
    ]
@@ -17325,7 +17346,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 0,
+     "done": 1,
      "failed": 2
     }
    ]
