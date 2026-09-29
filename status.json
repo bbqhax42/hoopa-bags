@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T09:43:16.659332",
+ "generatedAt": "2026-09-29T09:45:21.039422",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "joint_team_daily_quest",
-  "since": "09:43:12"
+  "mode": "pokemon_home",
+  "since": "09:44:26"
  },
  "grid": {
   "tasks": [
@@ -90,9 +90,9 @@
      "✓",
      "-",
      "✓",
-     "·",
+     "✓",
      "⏰",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -529,8 +529,8 @@
   ]
  },
  "counts": {
-  "done": 2,
-  "todo": 232,
+  "done": 4,
+  "todo": 230,
   "gaveUp": 0,
   "unavailable": 11,
   "windowed": 52
@@ -784,6 +784,38 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T09:44:24",
+   "script": "daily_dungeon",
+   "account": "chris",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_094412_daily_dungeon_chris"
+  },
+  {
+   "ts": "2026-09-29T09:44:08",
+   "script": "joint_team_daily_quest",
+   "account": "chris",
+   "rc": 0,
+   "secs": 55,
+   "stats": {
+    "near_miss_joint_team_daily_panel": 1,
+    "marginal_joint_team_daily_panel": 3,
+    "panel_swipes": 8,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_094313_joint_team_daily_quest_chris"
+  },
   {
    "ts": "2026-09-29T09:43:11",
    "script": "mail",
@@ -8024,51 +8056,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_090650_collect_hoopa_keys_jeff"
-  },
-  {
-   "ts": "2026-09-28T09:06:45",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_090641_run_pvp_ranked_jeff"
-  },
-  {
-   "ts": "2026-09-28T09:06:39",
-   "script": "paradise",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 308,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 172,
-    "pass_claims": 3,
-    "gear_maxed": 3,
-    "dex_activated": 0,
-    "shop_sold_out_skipped": 17,
-    "shop_buys": 4,
-    "shop_spend_confirmed": 2950
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "20/20",
-    "event_end": "2026-09-29",
-    "shop_window": "empty"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_090130_paradise_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 34997,
+  "now": 35121,
   "segments": [
    {
     "b": 34830,
@@ -8126,8 +8119,30 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 34992,
+    "rc": 0,
+    "e": 35049,
+    "secs": 55,
+    "why": ""
+   },
+   {
+    "b": 35049,
+    "a": "chris",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 35051,
+    "rc": 0,
+    "e": 35066,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 35066,
+    "a": "chris",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 35067,
     "rc": null,
-    "e": 34997
+    "e": 35121
    }
   ],
   "idle": []
@@ -8152,6 +8167,16 @@
    "mail": {
     "runs": 1,
     "minutes": 0.1,
+    "failed": 0
+   },
+   "joint_team_daily_quest": {
+    "runs": 1,
+    "minutes": 0.9,
+    "failed": 0
+   },
+   "daily_dungeon": {
+    "runs": 1,
+    "minutes": 0.2,
     "failed": 0
    }
   }
@@ -8850,78 +8875,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "joint_team_daily_quest",
+    "task": "pokemon_home",
     "startsIn": 0.0,
-    "eta": "2026-09-29T09:43"
-   },
-   {
-    "account": "chris",
-    "task": "daily_dungeon",
-    "startsIn": 2.0,
     "eta": "2026-09-29T09:45"
    },
    {
     "account": "chris",
-    "task": "pokemon_home",
-    "startsIn": 4.0,
+    "task": "weekend_bash",
+    "startsIn": 2.0,
     "eta": "2026-09-29T09:47"
    },
    {
     "account": "chris",
-    "task": "weekend_bash",
-    "startsIn": 6.0,
+    "task": "combat_daily",
+    "startsIn": 4.0,
     "eta": "2026-09-29T09:49"
    },
    {
     "account": "chris",
-    "task": "combat_daily",
-    "startsIn": 8.0,
+    "task": "victory_road",
+    "startsIn": 6.0,
     "eta": "2026-09-29T09:51"
    },
    {
     "account": "chris",
-    "task": "victory_road",
-    "startsIn": 10.0,
+    "task": "paradise",
+    "startsIn": 8.0,
     "eta": "2026-09-29T09:53"
    },
    {
     "account": "chris",
-    "task": "paradise",
-    "startsIn": 12.0,
+    "task": "run_pvp_ranked",
+    "startsIn": 10.0,
     "eta": "2026-09-29T09:55"
    },
    {
     "account": "chris",
-    "task": "run_pvp_ranked",
-    "startsIn": 14.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 12.0,
     "eta": "2026-09-29T09:57"
    },
    {
     "account": "chris",
-    "task": "collect_hoopa_keys",
-    "startsIn": 16.0,
+    "task": "sky_pillar",
+    "startsIn": 14.0,
     "eta": "2026-09-29T09:59"
    },
    {
     "account": "chris",
-    "task": "sky_pillar",
-    "startsIn": 18.0,
+    "task": "faction",
+    "startsIn": 16.0,
     "eta": "2026-09-29T10:01"
    },
    {
     "account": "chris",
-    "task": "faction",
-    "startsIn": 20.0,
+    "task": "ultra_wormhole",
+    "startsIn": 18.0,
     "eta": "2026-09-29T10:03"
    },
    {
     "account": "chris",
-    "task": "ultra_wormhole",
-    "startsIn": 22.0,
+    "task": "championship",
+    "startsIn": 20.0,
     "eta": "2026-09-29T10:05"
+   },
+   {
+    "account": "nova",
+    "task": "dailyclaim",
+    "startsIn": 22.4,
+    "eta": "2026-09-29T10:07"
    }
   ],
-  "more": 220,
+  "more": 218,
   "fillers": [
    {
     "account": "smurf",
@@ -8958,7 +8983,6 @@
  },
  "progress": {
   "jeff": {
-   "paradiseStamina": "20/20",
    "pillar": "floor 149 stage 10",
    "rank": 339,
    "islandFights": 0,
@@ -9511,7 +9535,6 @@
     "island fights": 6
    },
    "progress": {
-    "paradiseStamina": "20/20",
     "pillar": "floor 149 stage 10",
     "rank": 339,
     "islandFights": 0,
@@ -9558,21 +9581,13 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-29",
-   "summary": "2 of 19 dailies done",
-   "done": 2,
+   "summary": "4 of 19 dailies done",
+   "done": 4,
    "owed": 19,
    "open": [
     {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
     },
     {
      "task": "home",
@@ -9679,7 +9694,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 3,
+     "done": 5,
      "failed": 0
     }
    ]
