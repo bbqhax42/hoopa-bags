@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T20:59:07.097339",
+ "generatedAt": "2026-09-29T21:01:10.700967",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "rift",
-  "since": "20:55:05"
+  "account": "nova",
+  "mode": "dynamax",
+  "since": "21:01:00"
  },
  "grid": {
   "tasks": [
@@ -790,6 +790,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T20:59:21",
+   "script": "rift",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 253,
+   "stats": {
+    "rift_levels": 43,
+    "rift_rerolls": 17,
+    "progress_gift_claimed": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_205507_rift_lucifer1"
+  },
   {
    "ts": "2026-09-29T20:53:35",
    "script": "ring_battle",
@@ -8653,29 +8669,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_200642_worldboss_fake3"
-  },
-  {
-   "ts": "2026-09-28T20:06:42",
-   "script": "worldboss",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 60,
-   "stats": {
-    "wb_skip_again": 1,
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_200542_worldboss_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 75547,
+  "now": 75671,
   "segments": [
    {
     "b": 34830,
@@ -13442,8 +13441,31 @@
     "s": "rift",
     "login": null,
     "handoff": 75307,
+    "rc": 0,
+    "e": 75561,
+    "secs": 253,
+    "why": ""
+   },
+   {
+    "b": 75561,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 75565,
     "rc": null,
-    "e": 75547
+    "e": 75660
+   },
+   {
+    "b": 75660,
+    "a": "nova",
+    "s": "dynamax",
+    "login": [
+     75660,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 75671
    }
   ],
   "idle": [
@@ -13504,7 +13526,8 @@
    75002,
    75144,
    75215,
-   75305
+   75305,
+   75561
   ]
  },
  "failures": [
@@ -13835,7 +13858,7 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 120,
+  "switches": 121,
   "relogMinutes": 62.7,
   "retries": 45,
   "tasks": {
@@ -13935,8 +13958,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 25,
-    "minutes": 87.2,
+    "runs": 26,
+    "minutes": 91.5,
     "failed": 1
    },
    "ring_battle": {
@@ -14264,9 +14287,9 @@
     "last": "2026-09-29T19:42:22"
    },
    "lucifer1": {
-    "runs": 1,
+    "runs": 2,
     "targets": 0,
-    "last": "2026-09-29T20:55:04"
+    "last": "2026-09-29T21:01:00"
    }
   },
   "targets": [
@@ -14481,46 +14504,46 @@
  "queue": {
   "next": [
    {
+    "account": "nova",
+    "task": "ring_battle",
+    "startsIn": 0.0,
+    "eta": "2026-09-29T21:01"
+   },
+   {
     "account": "lucifer2",
     "task": "joint_battle",
-    "startsIn": 0.4,
-    "eta": "2026-09-29T20:59"
+    "startsIn": 1.2,
+    "eta": "2026-09-29T21:02"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 2.4,
-    "eta": "2026-09-29T21:01"
+    "startsIn": 3.2,
+    "eta": "2026-09-29T21:04"
    },
    {
     "account": "fake8",
     "task": "joint_battle",
-    "startsIn": 3.6,
-    "eta": "2026-09-29T21:02"
+    "startsIn": 4.4,
+    "eta": "2026-09-29T21:05"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 6.0,
-    "eta": "2026-09-29T21:05"
-   },
-   {
-    "account": "dre",
-    "task": "joint_battle",
-    "startsIn": 8.4,
+    "startsIn": 6.8,
     "eta": "2026-09-29T21:07"
    },
    {
     "account": "dre",
-    "task": "ring_battle",
-    "startsIn": 10.4,
-    "eta": "2026-09-29T21:09"
+    "task": "joint_battle",
+    "startsIn": 9.2,
+    "eta": "2026-09-29T21:10"
    },
    {
-    "account": "nova",
+    "account": "dre",
     "task": "ring_battle",
-    "startsIn": 11.6,
-    "eta": "2026-09-29T21:10"
+    "startsIn": 11.2,
+    "eta": "2026-09-29T21:12"
    }
   ],
   "more": 0,
@@ -14575,11 +14598,6 @@
   }
  },
  "progress": {
-  "fake2": {
-   "mailUnread": 0,
-   "paradiseStamina": "0/12",
-   "pillar": "floor 6 stage 1"
-  },
   "fake3": {
    "mailUnread": 0,
    "paradiseStamina": "0/12",
@@ -14676,6 +14694,11 @@
    "mailUnread": 0,
    "paradiseStamina": "2/12",
    "pillar": "floor 6 stage 4"
+  },
+  "fake2": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/12",
+   "pillar": "floor 6 stage 1"
   }
  },
  "ledger": {
@@ -16550,7 +16573,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 17,
+     "done": 18,
      "failed": 3
     }
    ]
