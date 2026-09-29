@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-29T17:55:28.671045",
+ "generatedAt": "2026-09-29T17:57:32.681903",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -799,11 +799,23 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-29T17:54:05.380424",
+  "label": "dre",
+  "at": "2026-09-29T17:55:48.599714",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:56:19",
+   "script": "ring_battle",
+   "account": "dre",
+   "rc": 1,
+   "secs": 18,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_175600_ring_battle_dre"
+  },
   {
    "ts": "2026-09-29T17:55:25",
    "script": "ring_battle",
@@ -8704,28 +8716,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_160430_guild_war_nova"
-  },
-  {
-   "ts": "2026-09-28T16:04:29",
-   "script": "joint_team_daily_quest",
-   "account": "nova",
-   "rc": 0,
-   "secs": 47,
-   "stats": {
-    "panel_swipes": 8,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_160341_joint_team_daily_quest_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 64529,
+  "now": 64653,
   "segments": [
    {
     "b": 34830,
@@ -12600,11 +12596,13 @@
     "s": "ring_battle",
     "login": [
      64526,
-     null
+     64548
     ],
-    "handoff": null,
-    "rc": null,
-    "e": 64529
+    "handoff": 64560,
+    "rc": 1,
+    "e": 64653,
+    "secs": 18,
+    "why": ""
    }
   ],
   "idle": [
@@ -12614,6 +12612,15 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-29T17:56:19",
+   "account": "dre",
+   "task": "ring_battle",
+   "rc": 1,
+   "secs": 18,
+   "why": "back on the lobby three times without a fight — stopping",
+   "frame": null
+  },
   {
    "ts": "2026-09-29T17:53:32",
    "account": "lucifer2",
@@ -12924,8 +12931,8 @@
  "day": {
   "since": "2026-09-29T08:00",
   "switches": 74,
-  "relogMinutes": 31.8,
-  "retries": 41,
+  "relogMinutes": 32.4,
+  "retries": 42,
   "tasks": {
    "island_challenge": {
     "runs": 9,
@@ -13028,9 +13035,9 @@
     "failed": 1
    },
    "ring_battle": {
-    "runs": 8,
-    "minutes": 6.9,
-    "failed": 6
+    "runs": 9,
+    "minutes": 7.2,
+    "failed": 7
    }
   }
  },
@@ -13821,7 +13828,7 @@
     "account": "dre",
     "task": "ring_battle",
     "startsIn": 0.0,
-    "eta": "2026-09-29T17:55"
+    "eta": "2026-09-29T17:57"
    }
   ],
   "more": 0,
@@ -13850,8 +13857,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 72,
-   "medianSec": 17.0,
+   "n": 73,
+   "medianSec": 17,
    "picker": {
     "n": 54,
     "medianSec": 16.0,
@@ -13862,8 +13869,8 @@
     "medianSec": 26
    },
    "miss": {
-    "n": 17,
-    "medianSec": 20
+    "n": 18,
+    "medianSec": 20.0
    }
   }
  },
@@ -16196,7 +16203,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "ring_battle",
+     "at": "17:56",
+     "why": "back on the lobby three times without a fight — stopping",
+     "frame": null
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
@@ -16247,7 +16261,7 @@
     {
      "day": "2026-09-29",
      "done": 15,
-     "failed": 0
+     "failed": 1
     }
    ]
   }
