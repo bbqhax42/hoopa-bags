@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-29T17:10:02.011889",
+ "generatedAt": "2026-09-29T17:12:06.609123",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -711,7 +711,15 @@
   "skosmurf|hoopa": "2026-09-29T17:59",
   "smurf|hoopa": "2026-09-29T17:59"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "nova",
+   "since": "2026-09-29T17:10:30",
+   "held": true,
+   "heldUntil": "2026-09-29T17:20:30",
+   "deferredUntil": "2026-09-29T17:20:42"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 0,
@@ -779,11 +787,25 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-29T17:04:46.354945",
-  "why": "login accepted"
+  "label": null,
+  "at": "2026-09-29T17:10:30.158775",
+  "why": "taken over elsewhere"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:10:30",
+   "script": "rift",
+   "account": "nova",
+   "rc": 1,
+   "secs": 48,
+   "stats": {
+    "rift_no_result": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_170941_rift_nova"
+  },
   {
    "ts": "2026-09-29T17:09:36",
    "script": "rift",
@@ -8675,26 +8697,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_151302_run_pvp_ranked_exou"
-  },
-  {
-   "ts": "2026-09-28T15:12:30",
-   "script": "run_pvp_ranked",
-   "account": "lucifer1",
-   "rc": 5,
-   "secs": 5,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_151225_run_pvp_ranked_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 61802,
+  "now": 61927,
   "segments": [
    {
     "b": 34830,
@@ -12395,16 +12403,26 @@
     "login": null,
     "handoff": 61781,
     "rc": 0,
-    "e": 61802,
+    "e": 61927,
     "secs": 279,
     "why": ""
    }
   ],
   "idle": [
-   58038
+   58038,
+   61830
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-29T17:10:30",
+   "account": "nova",
+   "task": "rift",
+   "rc": 1,
+   "secs": 48,
+   "why": "level 1: no result after 45s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_170941_rift_nova__KEEP_0001_171030_final.png"
+  },
   {
    "ts": "2026-09-29T14:49:33",
    "account": "deno",
@@ -12635,7 +12653,7 @@
   "since": "2026-09-29T08:00",
   "switches": 66,
   "relogMinutes": 28.5,
-  "retries": 33,
+  "retries": 34,
   "tasks": {
    "island_challenge": {
     "runs": 8,
@@ -12733,9 +12751,9 @@
     "failed": 0
    },
    "rift": {
-    "runs": 23,
-    "minutes": 85.1,
-    "failed": 0
+    "runs": 24,
+    "minutes": 85.9,
+    "failed": 1
    }
   }
  },
@@ -13498,12 +13516,7 @@
  "queue": {
   "next": [],
   "more": 0,
-  "fillers": [
-   {
-    "account": "nova",
-    "mode": "rift"
-   }
-  ],
+  "fillers": [],
   "held": {}
  },
  "health": {
@@ -13899,6 +13912,15 @@
    "enable": true
   },
   {
+   "account": "nova",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-29T17:10:30",
+   "why": "someone is playing on it",
+   "action": "left alone until 17:20",
+   "enable": false
+  },
+  {
    "account": "exou",
    "task": "combat_daily",
    "kind": "left",
@@ -14122,6 +14144,12 @@
    ],
    "issues": [
     {
+     "task": "rift",
+     "at": "17:10",
+     "why": "level 1: no result after 45s",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_170941_rift_nova__KEEP_0001_171030_final.png"
+    },
+    {
      "task": "guild_war",
      "at": "13:57",
      "why": "guild war: no attempts landed",
@@ -14190,7 +14218,7 @@
     {
      "day": "2026-09-29",
      "done": 19,
-     "failed": 3
+     "failed": 4
     }
    ]
   },
