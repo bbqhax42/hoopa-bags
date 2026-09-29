@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T20:21:59.280075",
+ "generatedAt": "2026-09-29T20:24:03.215218",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "worldboss",
-  "since": "20:20:12"
+  "account": "chris",
+  "mode": "dynamax",
+  "since": "20:23:09"
  },
  "grid": {
   "tasks": [
@@ -84,7 +84,7 @@
      "✓",
      "✓",
      "✓",
-     "⏳"
+     "💤"
     ]
    },
    {
@@ -706,15 +706,16 @@
   },
   {
    "account": "jeff",
-   "fights": 8,
+   "fights": 9,
    "stamina": 5,
-   "staminaMax": 5,
-   "staminaAt": "2026-09-29T20:21:59",
-   "nextAt": null
+   "staminaMax": 6,
+   "staminaAt": "2026-09-29T20:22:07",
+   "nextAt": "2026-09-29T23:46:12"
   }
  ],
  "snoozed": {
-  "chris|island_challenge": "2026-09-29T20:44"
+  "chris|island_challenge": "2026-09-29T20:44",
+  "jeff|island_challenge": "2026-09-29T23:46"
  },
  "ownerOnline": [],
  "keys": {
@@ -784,11 +785,36 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-29T20:21:25.040919",
+  "label": "chris",
+  "at": "2026-09-29T20:23:24.032407",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T20:22:12",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 37,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 5,
+    "fights_today": 9
+   },
+   "values_all": {
+    "stamina": [
+     44,
+     5,
+     5,
+     5
+    ]
+   },
+   "dir": "debug_runs/20260929_202134_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-29T20:21:10",
    "script": "worldboss",
@@ -8636,29 +8662,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_200256_worldboss_nova"
-  },
-  {
-   "ts": "2026-09-28T20:02:56",
-   "script": "worldboss",
-   "account": "chris",
-   "rc": 0,
-   "secs": 62,
-   "stats": {
-    "wb_skip_again": 1,
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_200153_worldboss_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 73319,
+  "now": 73443,
   "segments": [
    {
     "b": 34830,
@@ -13261,9 +13270,30 @@
     ],
     "handoff": 73294,
     "rc": 0,
-    "e": 73319,
+    "e": 73332,
     "secs": 57,
     "why": ""
+   },
+   {
+    "b": 73332,
+    "a": "jeff",
+    "s": "dynamax",
+    "login": null,
+    "handoff": null,
+    "rc": null,
+    "e": 73389
+   },
+   {
+    "b": 73389,
+    "a": "chris",
+    "s": "dynamax",
+    "login": [
+     73389,
+     73404
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 73443
    }
   ],
   "idle": [
@@ -13641,14 +13671,14 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 111,
+  "switches": 112,
   "relogMinutes": 58.5,
-  "retries": 43,
+  "retries": 44,
   "tasks": {
    "island_challenge": {
-    "runs": 9,
-    "minutes": 4.4,
-    "failed": 9
+    "runs": 10,
+    "minutes": 5.0,
+    "failed": 10
    },
    "dailyclaim": {
     "runs": 19,
@@ -13924,20 +13954,20 @@
  "maxHandouts": 2,
  "energy": {
   "jeff": {
-   "energy": 27,
-   "needs": 4,
-   "cost": 4,
-   "observed_at": "2026-09-29T19:50:27.801290",
-   "runs": 678,
+   "energy": 29,
+   "needs": 110,
+   "cost": 3,
+   "observed_at": "2026-09-29T20:23:08.013624",
+   "runs": 679,
    "cooldown_until": "2026-09-26T03:18:41.225384",
    "kicks": 1,
-   "last_run_actions": 41
+   "last_run_actions": 1
   },
   "chris": {
-   "energy": 0,
+   "energy": 30,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-29T19:39:02.929529",
+   "observed_at": "2026-09-29T20:23:39.835137",
    "runs": 631,
    "cooldown_until": "2026-09-19T19:38:42.844486",
    "kicks": 1,
@@ -14267,12 +14297,6 @@
    "ts": "2026-09-28T08:44:35",
    "area": "teamshop",
    "subject": "the fakes do their Joint Team daily quests while in Yoo"
-  },
-  {
-   "sha": "a2a85c0",
-   "ts": "2026-09-28T08:22:45",
-   "area": "dailyclaim",
-   "subject": "the Golden Egg's one free smash a day"
   }
  ],
  "phase": {
@@ -14297,73 +14321,73 @@
     "account": "fake6",
     "task": "joint_battle",
     "startsIn": 0.4,
-    "eta": "2026-09-29T20:22"
+    "eta": "2026-09-29T20:24"
    },
    {
     "account": "fake7",
     "task": "joint_battle",
     "startsIn": 2.8,
-    "eta": "2026-09-29T20:24"
+    "eta": "2026-09-29T20:26"
    },
    {
     "account": "lucifer1",
     "task": "joint_battle",
     "startsIn": 5.2,
-    "eta": "2026-09-29T20:27"
+    "eta": "2026-09-29T20:29"
    },
    {
     "account": "lucifer1",
     "task": "ring_battle",
     "startsIn": 7.2,
-    "eta": "2026-09-29T20:29"
+    "eta": "2026-09-29T20:31"
    },
    {
     "account": "lucifer2",
     "task": "joint_battle",
     "startsIn": 8.4,
-    "eta": "2026-09-29T20:30"
+    "eta": "2026-09-29T20:32"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
     "startsIn": 10.4,
-    "eta": "2026-09-29T20:32"
+    "eta": "2026-09-29T20:34"
    },
    {
     "account": "fake8",
     "task": "joint_battle",
     "startsIn": 11.6,
-    "eta": "2026-09-29T20:33"
+    "eta": "2026-09-29T20:35"
    },
    {
     "account": "deno",
     "task": "joint_battle",
     "startsIn": 14.0,
-    "eta": "2026-09-29T20:35"
+    "eta": "2026-09-29T20:38"
    },
    {
     "account": "dre",
     "task": "joint_battle",
     "startsIn": 16.4,
-    "eta": "2026-09-29T20:38"
+    "eta": "2026-09-29T20:40"
    },
    {
     "account": "dre",
     "task": "ring_battle",
     "startsIn": 18.4,
-    "eta": "2026-09-29T20:40"
+    "eta": "2026-09-29T20:42"
    },
    {
     "account": "nova",
     "task": "ring_battle",
     "startsIn": 19.6,
-    "eta": "2026-09-29T20:41"
+    "eta": "2026-09-29T20:43"
    },
    {
     "account": "smurf",
     "task": "ring_battle",
     "startsIn": 20.8,
-    "eta": "2026-09-29T20:42"
+    "eta": "2026-09-29T20:44"
    }
   ],
   "more": 0,
@@ -14400,11 +14424,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 110,
-   "medianSec": 17.0,
+   "n": 111,
+   "medianSec": 17,
    "picker": {
-    "n": 85,
-    "medianSec": 16,
+    "n": 86,
+    "medianSec": 16.0,
     "jumps": 54
    },
    "typed": {
@@ -14418,14 +14442,6 @@
   }
  },
  "progress": {
-  "chris": {
-   "islandFights": 11,
-   "islandStamina": 9,
-   "mailUnread": 0,
-   "paradiseStamina": "0/12",
-   "rank": 187,
-   "pillar": "floor 139 stage 5"
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "2/12",
@@ -14513,15 +14529,32 @@
    "paradiseStamina": "12/12"
   },
   "jeff": {
-   "islandFights": 6,
-   "islandStamina": 0,
+   "islandFights": 9,
+   "islandStamina": 5,
    "mailUnread": 0,
    "paradiseStamina": "0/10",
    "rank": 191,
    "pillar": "floor 150 stage 4"
+  },
+  "chris": {
+   "islandFights": 11,
+   "islandStamina": 9,
+   "mailUnread": 0,
+   "paradiseStamina": "0/12",
+   "rank": 187,
+   "pillar": "floor 139 stage 5"
   }
  },
  "ledger": {
+  "jeff": {
+   "island fights": 15,
+   "guild war attempts": 1,
+   "pillar/story stages cleared": 4,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "daily claims": 3
+  },
   "chris": {
    "island fights": 17,
    "guild war attempts": 1,
@@ -14533,15 +14566,6 @@
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
-  },
-  "jeff": {
-   "island fights": 12,
-   "guild war attempts": 1,
-   "pillar/story stages cleared": 4,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "daily claims": 3
   },
   "dre": {
    "pillar/story stages cleared": 8,
@@ -15107,7 +15131,7 @@
    "open": [
     {
      "task": "island",
-     "state": "cooling off"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -15138,7 +15162,7 @@
     }
    ],
    "spent": {
-    "island fights": 12,
+    "island fights": 15,
     "guild war attempts": 1,
     "pillar/story stages cleared": 4,
     "ranked attempts": 1,
@@ -15147,8 +15171,8 @@
     "daily claims": 3
    },
    "progress": {
-    "islandFights": 6,
-    "islandStamina": 0,
+    "islandFights": 9,
+    "islandStamina": 5,
     "mailUnread": 0,
     "paradiseStamina": "0/10",
     "rank": 191,
