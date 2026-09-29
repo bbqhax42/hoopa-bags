@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T17:03:49.920257",
+ "generatedAt": "2026-09-29T17:05:53.910838",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "nova",
   "mode": "rift",
-  "since": "17:00:34"
+  "since": "17:04:30"
  },
  "grid": {
   "tasks": [
@@ -779,11 +779,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-29T17:00:49.323313",
+  "label": "nova",
+  "at": "2026-09-29T17:04:46.354945",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:04:29",
+   "script": "rift",
+   "account": "chris",
+   "rc": 2,
+   "secs": 208,
+   "stats": {
+    "rift_levels": 39,
+    "rift_rerolls": 7,
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_170100_rift_chris"
+  },
   {
    "ts": "2026-09-29T17:00:33",
    "script": "rift",
@@ -8672,26 +8688,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_151150_run_pvp_ranked_skosmurf"
-  },
-  {
-   "ts": "2026-09-28T15:11:20",
-   "script": "run_pvp_ranked",
-   "account": "sprite",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_151115_run_pvp_ranked_sprite"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 61430,
+  "now": 61554,
   "segments": [
    {
     "b": 34830,
@@ -12366,8 +12368,22 @@
      61249
     ],
     "handoff": 61260,
+    "rc": 2,
+    "e": 61470,
+    "secs": 208,
+    "why": ""
+   },
+   {
+    "b": 61470,
+    "a": "nova",
+    "s": "rift",
+    "login": [
+     61470,
+     61486
+    ],
+    "handoff": 61497,
     "rc": null,
-    "e": 61430
+    "e": 61554
    }
   ],
   "idle": [
@@ -12603,8 +12619,8 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 65,
-  "relogMinutes": 28.1,
+  "switches": 66,
+  "relogMinutes": 28.5,
   "retries": 33,
   "tasks": {
    "island_challenge": {
@@ -12703,13 +12719,19 @@
     "failed": 0
    },
    "rift": {
-    "runs": 21,
-    "minutes": 77.0,
+    "runs": 22,
+    "minutes": 80.5,
     "failed": 0
    }
   }
  },
  "unavailable": [
+  {
+   "account": "chris",
+   "task": "rift",
+   "why": "rift_levels, rift_rerolls, rift_finished",
+   "at": "2026-09-29T17:04:29"
+  },
   {
    "account": "fake1",
    "task": "teamshop",
@@ -13464,10 +13486,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "chris",
-    "mode": "rift"
-   },
-   {
     "account": "nova",
     "mode": "rift"
    }
@@ -13479,12 +13497,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 64,
-   "medianSec": 17.0,
+   "n": 65,
+   "medianSec": 17,
    "picker": {
-    "n": 49,
-    "medianSec": 16,
-    "jumps": 30
+    "n": 50,
+    "medianSec": 16.0,
+    "jumps": 31
    },
    "typed": {
     "n": 1,
@@ -14251,7 +14269,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-29",
-   "summary": "17 of 19 dailies done",
+   "summary": "17 of 19 dailies done · 1 not available today",
    "done": 17,
    "owed": 19,
    "open": [
@@ -14266,7 +14284,12 @@
    ],
    "issues": [],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rift",
+     "why": "rift_levels, rift_rerolls, rift_finished"
+    }
+   ],
    "spent": {
     "island fights": 15,
     "guild war attempts": 1,
