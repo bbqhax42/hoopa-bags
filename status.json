@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T09:51:40.596193",
+ "generatedAt": "2026-09-29T09:53:45.058832",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "run_pvp_ranked",
-  "since": "09:51:29"
+  "mode": "sky_pillar",
+  "since": "09:53:00"
  },
  "grid": {
   "tasks": [
@@ -100,8 +100,8 @@
      "⏰",
      "✓",
      "⏰",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "-",
@@ -529,8 +529,8 @@
   ]
  },
  "counts": {
-  "done": 9,
-  "todo": 225,
+  "done": 11,
+  "todo": 223,
   "gaveUp": 0,
   "unavailable": 11,
   "windowed": 52
@@ -784,6 +784,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T09:52:58",
+   "script": "collect_hoopa_keys",
+   "account": "chris",
+   "rc": 0,
+   "secs": 4,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_095254_collect_hoopa_keys_chris"
+  },
+  {
+   "ts": "2026-09-29T09:52:52",
+   "script": "run_pvp_ranked",
+   "account": "chris",
+   "rc": 0,
+   "secs": 82,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_won": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 161,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 10,
+    "rank": 187,
+    "daily_goal_claims": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_095130_run_pvp_ranked_chris"
+  },
   {
    "ts": "2026-09-29T09:51:28",
    "script": "paradise",
@@ -8035,45 +8072,12 @@
     ]
    },
    "dir": "debug_runs/20260928_091430_ultra_wormhole_nova"
-  },
-  {
-   "ts": "2026-09-28T09:14:25",
-   "script": "sky_pillar",
-   "account": "nova",
-   "rc": 0,
-   "secs": 17,
-   "stats": {
-    "stages_cleared": 1,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 101,
-    "stage": 10,
-    "proofs_spent": 1
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_091407_sky_pillar_nova"
-  },
-  {
-   "ts": "2026-09-28T09:14:05",
-   "script": "collect_hoopa_keys",
-   "account": "nova",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_091400_collect_hoopa_keys_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 35501,
+  "now": 35625,
   "segments": [
    {
     "b": 34830,
@@ -8208,8 +8212,30 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 35489,
+    "rc": 0,
+    "e": 35573,
+    "secs": 82,
+    "why": ""
+   },
+   {
+    "b": 35573,
+    "a": "chris",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 35573,
+    "rc": 0,
+    "e": 35580,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 35580,
+    "a": "chris",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 35580,
     "rc": null,
-    "e": 35501
+    "e": 35625
    }
   ],
   "idle": []
@@ -8269,6 +8295,16 @@
    "paradise": {
     "runs": 1,
     "minutes": 3.4,
+    "failed": 0
+   },
+   "run_pvp_ranked": {
+    "runs": 1,
+    "minutes": 1.4,
+    "failed": 0
+   },
+   "collect_hoopa_keys": {
+    "runs": 1,
+    "minutes": 0.1,
     "failed": 0
    }
   }
@@ -8967,78 +9003,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "run_pvp_ranked",
+    "task": "sky_pillar",
     "startsIn": 0.0,
-    "eta": "2026-09-29T09:51"
-   },
-   {
-    "account": "chris",
-    "task": "collect_hoopa_keys",
-    "startsIn": 2.0,
     "eta": "2026-09-29T09:53"
    },
    {
     "account": "chris",
-    "task": "sky_pillar",
-    "startsIn": 4.0,
+    "task": "faction",
+    "startsIn": 2.0,
     "eta": "2026-09-29T09:55"
    },
    {
     "account": "chris",
-    "task": "faction",
-    "startsIn": 6.0,
+    "task": "ultra_wormhole",
+    "startsIn": 4.0,
     "eta": "2026-09-29T09:57"
    },
    {
     "account": "chris",
-    "task": "ultra_wormhole",
-    "startsIn": 8.0,
-    "eta": "2026-09-29T09:59"
-   },
-   {
-    "account": "chris",
     "task": "championship",
-    "startsIn": 10.0,
-    "eta": "2026-09-29T10:01"
+    "startsIn": 6.0,
+    "eta": "2026-09-29T09:59"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 12.4,
-    "eta": "2026-09-29T10:04"
+    "startsIn": 8.4,
+    "eta": "2026-09-29T10:02"
    },
    {
     "account": "nova",
     "task": "mail",
-    "startsIn": 12.9,
-    "eta": "2026-09-29T10:04"
+    "startsIn": 8.9,
+    "eta": "2026-09-29T10:02"
    },
    {
     "account": "nova",
     "task": "joint_team_daily_quest",
-    "startsIn": 13.0,
-    "eta": "2026-09-29T10:04"
+    "startsIn": 9.0,
+    "eta": "2026-09-29T10:02"
    },
    {
     "account": "nova",
     "task": "daily_dungeon",
-    "startsIn": 13.9,
-    "eta": "2026-09-29T10:05"
+    "startsIn": 9.9,
+    "eta": "2026-09-29T10:03"
    },
    {
     "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 14.1,
-    "eta": "2026-09-29T10:05"
+    "startsIn": 10.1,
+    "eta": "2026-09-29T10:03"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 15.4,
+    "startsIn": 11.4,
+    "eta": "2026-09-29T10:05"
+   },
+   {
+    "account": "nova",
+    "task": "combat_daily",
+    "startsIn": 11.7,
+    "eta": "2026-09-29T10:05"
+   },
+   {
+    "account": "nova",
+    "task": "victory_road",
+    "startsIn": 13.4,
     "eta": "2026-09-29T10:07"
    }
   ],
-  "more": 213,
+  "more": 211,
   "fillers": [
    {
     "account": "smurf",
@@ -9075,11 +9111,10 @@
  },
  "progress": {
   "nova": {
-   "pillar": "floor 101 stage 10",
    "rank": 347
   },
   "chris": {
-   "rank": 348,
+   "rank": 187,
    "islandFights": 3,
    "islandStamina": 10,
    "mailUnread": 0,
@@ -9176,6 +9211,7 @@
  },
  "ledger": {
   "chris": {
+   "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
@@ -9501,7 +9537,6 @@
    ],
    "spent": {},
    "progress": {
-    "pillar": "floor 101 stage 10",
     "rank": 347
    },
    "history": [
@@ -9674,8 +9709,8 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-29",
-   "summary": "9 of 19 dailies done",
-   "done": 9,
+   "summary": "11 of 19 dailies done",
+   "done": 11,
    "owed": 19,
    "open": [
     {
@@ -9689,14 +9724,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
     },
     {
      "task": "pillar",
@@ -9723,6 +9750,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -9731,7 +9759,7 @@
     "island fights": 9
    },
    "progress": {
-    "rank": 348,
+    "rank": 187,
     "islandFights": 3,
     "islandStamina": 10,
     "mailUnread": 0,
@@ -9770,7 +9798,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 10,
+     "done": 12,
      "failed": 0
     }
    ]
