@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T17:43:04.638356",
+ "generatedAt": "2026-09-29T17:45:08.547919",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "rift",
-  "since": "17:38:08"
+  "mode": "ring_battle",
+  "since": "17:44:54"
  },
  "grid": {
   "tasks": [
@@ -55,7 +55,7 @@
      "-",
      "-",
      "✓",
-     "·",
+     "✗2",
      "-",
      "-"
     ]
@@ -550,8 +550,8 @@
  },
  "counts": {
   "done": 253,
-  "todo": 7,
-  "gaveUp": 9,
+  "todo": 6,
+  "gaveUp": 10,
   "unavailable": 17,
   "windowed": 16
  },
@@ -804,6 +804,18 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:44:53",
+   "script": "ring_battle",
+   "account": "nova",
+   "rc": 1,
+   "secs": 71,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_174342_ring_battle_nova"
+  },
   {
    "ts": "2026-09-29T17:39:53",
    "script": "rift",
@@ -8701,29 +8713,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_155755_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-28T15:57:13",
-   "script": "joint_team_daily_quest",
-   "account": "fake8",
-   "rc": 0,
-   "secs": 83,
-   "stats": {
-    "joint_level_claims": 5,
-    "panel_swipes": 14,
-    "guild_base_by_back": 1,
-    "second_claim_pass": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_155549_joint_team_daily_quest_fake8"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 63785,
+  "now": 63909,
   "segments": [
    {
     "b": 34830,
@@ -12452,8 +12447,30 @@
     ],
     "handoff": 63514,
     "rc": 2,
-    "e": 63785,
+    "e": 63820,
     "secs": 78,
+    "why": ""
+   },
+   {
+    "b": 63820,
+    "a": "nova",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 63822,
+    "rc": 1,
+    "e": 63894,
+    "secs": 71,
+    "why": ""
+   },
+   {
+    "b": 63894,
+    "a": "nova",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 63909,
+    "secs": 71,
     "why": ""
    }
   ],
@@ -12464,6 +12481,15 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-29T17:44:53",
+   "account": "nova",
+   "task": "ring_battle",
+   "rc": 1,
+   "secs": 71,
+   "why": "match 1: no result card after 60s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174342_ring_battle_nova__KEEP_0002_174453_final.png"
+  },
   {
    "ts": "2026-09-29T17:33:27",
    "account": "jeff",
@@ -12721,7 +12747,7 @@
   "since": "2026-09-29T08:00",
   "switches": 68,
   "relogMinutes": 29.4,
-  "retries": 35,
+  "retries": 36,
   "tasks": {
    "island_challenge": {
     "runs": 9,
@@ -12821,6 +12847,11 @@
    "rift": {
     "runs": 25,
     "minutes": 87.2,
+    "failed": 1
+   },
+   "ring_battle": {
+    "runs": 1,
+    "minutes": 1.2,
     "failed": 1
    }
   }
@@ -13580,7 +13611,7 @@
  ],
  "phase": {
   "kind": "day",
-  "since": "16:18:30",
+  "since": "17:43:39",
   "until": "18:00"
  },
  "names": {
@@ -13597,46 +13628,40 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
-    "task": "ring_battle",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T17:43"
-   },
-   {
     "account": "smurf",
     "task": "ring_battle",
-    "startsIn": 2.4,
+    "startsIn": 0.4,
     "eta": "2026-09-29T17:45"
    },
    {
     "account": "skosmurf",
     "task": "ring_battle",
-    "startsIn": 4.8,
+    "startsIn": 2.0,
     "eta": "2026-09-29T17:47"
    },
    {
     "account": "lucifer1",
     "task": "ring_battle",
-    "startsIn": 7.2,
-    "eta": "2026-09-29T17:50"
+    "startsIn": 3.6,
+    "eta": "2026-09-29T17:48"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 9.6,
-    "eta": "2026-09-29T17:52"
+    "startsIn": 5.2,
+    "eta": "2026-09-29T17:50"
    },
    {
     "account": "deno",
     "task": "ring_battle",
-    "startsIn": 12.0,
-    "eta": "2026-09-29T17:55"
+    "startsIn": 6.8,
+    "eta": "2026-09-29T17:51"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 14.4,
-    "eta": "2026-09-29T17:57"
+    "startsIn": 8.4,
+    "eta": "2026-09-29T17:53"
    }
   ],
   "more": 0,
@@ -14253,7 +14278,7 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-29",
-   "summary": "13 of 18 dailies done · gave up on bash, guildBoss · 2 not available today",
+   "summary": "13 of 18 dailies done · gave up on bash, guildBoss, ring · 2 not available today",
    "done": 13,
    "owed": 18,
    "open": [
@@ -14275,10 +14300,16 @@
     },
     {
      "task": "ring",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
+    {
+     "task": "ring_battle",
+     "at": "17:44",
+     "why": "match 1: no result card after 60s",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174342_ring_battle_nova__KEEP_0002_174453_final.png"
+    },
     {
      "task": "rift",
      "at": "17:10",
@@ -14358,7 +14389,7 @@
     {
      "day": "2026-09-29",
      "done": 19,
-     "failed": 4
+     "failed": 5
     }
    ]
   },
