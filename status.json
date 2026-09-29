@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T17:51:21.117126",
+ "generatedAt": "2026-09-29T17:53:25.033229",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skosmurf",
+  "account": "lucifer2",
   "mode": "ring_battle",
-  "since": "17:49:56"
+  "since": "17:52:34"
  },
  "grid": {
   "tasks": [
@@ -406,7 +406,7 @@
      "⊘",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✗2",
      "-"
     ]
@@ -433,7 +433,7 @@
      "-",
      "-",
      "✓",
-     "·",
+     "✗2",
      "-",
      "-"
     ]
@@ -549,9 +549,9 @@
   ]
  },
  "counts": {
-  "done": 253,
-  "todo": 5,
-  "gaveUp": 11,
+  "done": 254,
+  "todo": 3,
+  "gaveUp": 12,
   "unavailable": 17,
   "windowed": 16
  },
@@ -799,11 +799,41 @@
   }
  },
  "session": {
-  "label": "skosmurf",
-  "at": "2026-09-29T17:50:17.247265",
+  "label": "lucifer2",
+  "at": "2026-09-29T17:52:53.161480",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:52:20",
+   "script": "ring_battle",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 23,
+   "stats": {
+    "ring_auto_formation": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_175157_ring_battle_lucifer1"
+  },
+  {
+   "ts": "2026-09-29T17:51:29",
+   "script": "ring_battle",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 62,
+   "stats": {
+    "ring_auto_formation": 1,
+    "ring_wins": 6,
+    "ring_chests": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_175027_ring_battle_skosmurf"
+  },
   {
    "ts": "2026-09-29T17:49:56",
    "script": "ring_battle",
@@ -8687,40 +8717,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_160044_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-09-28T16:00:19",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 5,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_160014_run_pvp_ranked_jeff"
-  },
-  {
-   "ts": "2026-09-28T15:59:47",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 5,
-   "secs": 5,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_155942_run_pvp_ranked_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 64281,
+  "now": 64405,
   "segments": [
    {
     "b": 34830,
@@ -12520,8 +12522,47 @@
      64217
     ],
     "handoff": 64227,
+    "rc": 0,
+    "e": 64290,
+    "secs": 62,
+    "why": ""
+   },
+   {
+    "b": 64290,
+    "a": "lucifer1",
+    "s": "ring_battle",
+    "login": [
+     64290,
+     64305
+    ],
+    "handoff": 64316,
+    "rc": 1,
+    "e": 64341,
+    "secs": 23,
+    "why": ""
+   },
+   {
+    "b": 64341,
+    "a": "lucifer1",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 64354,
+    "secs": 23,
+    "why": ""
+   },
+   {
+    "b": 64354,
+    "a": "lucifer2",
+    "s": "ring_battle",
+    "login": [
+     64354,
+     64373
+    ],
+    "handoff": 64386,
     "rc": null,
-    "e": 64281
+    "e": 64405
    }
   ],
   "idle": [
@@ -12531,6 +12572,15 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-29T17:52:20",
+   "account": "lucifer1",
+   "task": "ring_battle",
+   "rc": 1,
+   "secs": 23,
+   "why": "match 1: the fight never started after 3 Confirms",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_175157_ring_battle_lucifer1__KEEP_0001_175220_final.png"
+  },
   {
    "ts": "2026-09-29T17:49:56",
    "account": "smurf",
@@ -12822,9 +12872,9 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 70,
-  "relogMinutes": 30.3,
-  "retries": 39,
+  "switches": 72,
+  "relogMinutes": 31.3,
+  "retries": 40,
   "tasks": {
    "island_challenge": {
     "runs": 9,
@@ -12927,9 +12977,9 @@
     "failed": 1
    },
    "ring_battle": {
-    "runs": 4,
-    "minutes": 3.9,
-    "failed": 4
+    "runs": 6,
+    "minutes": 5.3,
+    "failed": 5
    }
   }
  },
@@ -13584,6 +13634,12 @@
  },
  "changes": [
   {
+   "sha": "efb661d",
+   "ts": "2026-09-29T17:52:45",
+   "area": "ring_battle",
+   "subject": "tell our team screen from the pre-battle screen; trust the lobby and Victory only once settled"
+  },
+  {
    "sha": "ef9bb3e",
    "ts": "2026-09-29T17:42:33",
    "area": "ring_battle",
@@ -13705,34 +13761,22 @@
  "queue": {
   "next": [
    {
-    "account": "skosmurf",
-    "task": "ring_battle",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T17:51"
-   },
-   {
-    "account": "lucifer1",
-    "task": "ring_battle",
-    "startsIn": 1.4,
-    "eta": "2026-09-29T17:52"
-   },
-   {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 2.8,
-    "eta": "2026-09-29T17:54"
+    "startsIn": 0.0,
+    "eta": "2026-09-29T17:53"
    },
    {
     "account": "deno",
     "task": "ring_battle",
-    "startsIn": 4.1,
-    "eta": "2026-09-29T17:55"
+    "startsIn": 1.3,
+    "eta": "2026-09-29T17:54"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 5.5,
-    "eta": "2026-09-29T17:56"
+    "startsIn": 2.6,
+    "eta": "2026-09-29T17:55"
    }
   ],
   "more": 0,
@@ -13761,20 +13805,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 69,
+   "n": 71,
    "medianSec": 17,
    "picker": {
-    "n": 53,
-    "medianSec": 16,
-    "jumps": 33
+    "n": 54,
+    "medianSec": 16.0,
+    "jumps": 34
    },
    "typed": {
     "n": 1,
     "medianSec": 26
    },
    "miss": {
-    "n": 15,
-    "medianSec": 20
+    "n": 16,
+    "medianSec": 20.0
    }
   }
  },
@@ -15598,8 +15642,8 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-29",
-   "summary": "14 of 18 dailies done · gave up on bash, champ · 2 switched off · 2 not available today",
-   "done": 14,
+   "summary": "15 of 18 dailies done · gave up on bash, champ · 2 switched off · 2 not available today",
+   "done": 15,
    "owed": 18,
    "open": [
     {
@@ -15609,10 +15653,6 @@
     {
      "task": "fctn",
      "state": "not available today"
-    },
-    {
-     "task": "ring",
-     "state": "still to do"
     },
     {
      "task": "champ",
@@ -15712,7 +15752,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 19,
+     "done": 20,
      "failed": 5
     }
    ]
@@ -15720,7 +15760,7 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-29",
-   "summary": "14 of 17 dailies done · gave up on bash",
+   "summary": "14 of 17 dailies done · gave up on bash, ring",
    "done": 14,
    "owed": 17,
    "open": [
@@ -15734,10 +15774,16 @@
     },
     {
      "task": "ring",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
+    {
+     "task": "ring_battle",
+     "at": "17:52",
+     "why": "match 1: the fight never started after 3 Confirms",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_175157_ring_battle_lucifer1__KEEP_0001_175220_final.png"
+    },
     {
      "task": "weekend_bash",
      "at": "13:15",
@@ -15797,7 +15843,7 @@
     {
      "day": "2026-09-29",
      "done": 15,
-     "failed": 2
+     "failed": 3
     }
    ]
   },
