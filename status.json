@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T15:04:05.404717",
+ "generatedAt": "2026-09-29T15:06:09.415976",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "daily_dungeon",
-  "since": "15:03:51"
+  "mode": "combat_daily",
+  "since": "15:05:51"
  },
  "grid": {
   "tasks": [
@@ -508,14 +508,14 @@
      "✓",
      "✓",
      "⏰",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
      "·",
      "·",
-     "·",
-     "·",
-     "⇢",
      "-",
      "·",
      "·",
@@ -529,8 +529,8 @@
   ]
  },
  "counts": {
-  "done": 239,
-  "todo": 11,
+  "done": 242,
+  "todo": 9,
   "gaveUp": 9,
   "unavailable": 17,
   "windowed": 16
@@ -784,6 +784,60 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T15:05:50",
+   "script": "weekend_bash",
+   "account": "dre",
+   "rc": 0,
+   "secs": 17,
+   "stats": {
+    "near_miss_nav_explore": 1,
+    "tickets": 25
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 140,
+    "tickets": 25
+   },
+   "values_all": {
+    "diamonds_spent": [
+     735,
+     140
+    ]
+   },
+   "dir": "debug_runs/20260929_150533_weekend_bash_dre"
+  },
+  {
+   "ts": "2026-09-29T15:05:28",
+   "script": "pokemon_home",
+   "account": "dre",
+   "rc": 0,
+   "secs": 78,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "merge_moved_instead": 4,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_150409_pokemon_home_dre"
+  },
+  {
+   "ts": "2026-09-29T15:04:08",
+   "script": "daily_dungeon",
+   "account": "dre",
+   "rc": 0,
+   "secs": 14,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_150354_daily_dungeon_dre"
+  },
   {
    "ts": "2026-09-29T15:03:51",
    "script": "joint_team_daily_quest",
@@ -8564,70 +8618,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_141716_mail_dre"
-  },
-  {
-   "ts": "2026-09-28T14:17:14",
-   "script": "dailyclaim",
-   "account": "dre",
-   "rc": 0,
-   "secs": 32,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 4
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:76 0.275:0 0.345:54 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_141642_dailyclaim_dre"
-  },
-  {
-   "ts": "2026-09-28T14:16:10",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_141606_run_pvp_ranked_lucifer2"
-  },
-  {
-   "ts": "2026-09-28T14:16:04",
-   "script": "rank_match",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 63,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2,
-    "rank_panel_scroll": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_141501_rank_match_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 54245,
+  "now": 54369,
   "segments": [
    {
     "b": 34830,
@@ -11837,8 +11833,41 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 54233,
+    "rc": 0,
+    "e": 54248,
+    "secs": 14,
+    "why": ""
+   },
+   {
+    "b": 54248,
+    "a": "dre",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 54249,
+    "rc": 0,
+    "e": 54328,
+    "secs": 78,
+    "why": ""
+   },
+   {
+    "b": 54328,
+    "a": "dre",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 54333,
+    "rc": 0,
+    "e": 54351,
+    "secs": 17,
+    "why": ""
+   },
+   {
+    "b": 54351,
+    "a": "dre",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 54351,
     "rc": null,
-    "e": 54245
+    "e": 54369
    }
   ],
   "idle": []
@@ -12097,18 +12126,18 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 18,
-    "minutes": 5.5,
+    "runs": 19,
+    "minutes": 5.8,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 20,
-    "minutes": 14.7,
+    "runs": 21,
+    "minutes": 16.0,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 16,
-    "minutes": 4.2,
+    "runs": 17,
+    "minutes": 4.5,
     "failed": 12
    },
    "combat_daily": {
@@ -12909,69 +12938,57 @@
   "next": [
    {
     "account": "dre",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T15:04"
-   },
-   {
-    "account": "dre",
-    "task": "pokemon_home",
-    "startsIn": 0.3,
-    "eta": "2026-09-29T15:04"
-   },
-   {
-    "account": "dre",
-    "task": "weekend_bash",
-    "startsIn": 1.0,
-    "eta": "2026-09-29T15:05"
-   },
-   {
-    "account": "dre",
     "task": "combat_daily",
-    "startsIn": 1.3,
-    "eta": "2026-09-29T15:05"
+    "startsIn": 0.0,
+    "eta": "2026-09-29T15:06"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 3.0,
+    "startsIn": 1.7,
     "eta": "2026-09-29T15:07"
    },
    {
     "account": "dre",
     "task": "rank_match",
-    "startsIn": 3.1,
-    "eta": "2026-09-29T15:07"
-   },
-   {
-    "account": "dre",
-    "task": "paradise",
-    "startsIn": 4.3,
+    "startsIn": 1.8,
     "eta": "2026-09-29T15:08"
    },
    {
     "account": "dre",
+    "task": "paradise",
+    "startsIn": 3.0,
+    "eta": "2026-09-29T15:09"
+   },
+   {
+    "account": "dre",
+    "task": "guild_war",
+    "startsIn": 6.4,
+    "eta": "2026-09-29T15:12"
+   },
+   {
+    "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.7,
-    "eta": "2026-09-29T15:11"
+    "startsIn": 7.3,
+    "eta": "2026-09-29T15:13"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 7.8,
-    "eta": "2026-09-29T15:11"
+    "startsIn": 7.3,
+    "eta": "2026-09-29T15:13"
    },
    {
     "account": "dre",
     "task": "ultra_wormhole",
-    "startsIn": 9.0,
-    "eta": "2026-09-29T15:13"
+    "startsIn": 8.6,
+    "eta": "2026-09-29T15:14"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 14.5,
-    "eta": "2026-09-29T15:18"
+    "startsIn": 14.1,
+    "eta": "2026-09-29T15:20"
    }
   ],
   "more": 0,
@@ -13010,12 +13027,6 @@
   }
  },
  "progress": {
-  "lucifer2": {
-   "rank": 217,
-   "mailUnread": 0,
-   "paradiseStamina": "2/12",
-   "pillar": "floor 89 stage 7"
-  },
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "19/13",
@@ -13067,6 +13078,12 @@
    "paradiseStamina": "0/12",
    "pillar": "floor 95 stage 1"
   },
+  "lucifer2": {
+   "rank": 217,
+   "mailUnread": 0,
+   "paradiseStamina": "2/12",
+   "pillar": "floor 89 stage 7"
+  },
   "fake1": {
    "mailUnread": 0,
    "paradiseStamina": "2/12",
@@ -13116,6 +13133,7 @@
  },
  "ledger": {
   "dre": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
@@ -15242,25 +15260,13 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-29",
-   "summary": "3 of 15 dailies done",
-   "done": 3,
+   "summary": "6 of 15 dailies done",
+   "done": 6,
    "owed": 15,
    "open": [
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -15280,7 +15286,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -15299,6 +15305,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1
@@ -15341,7 +15348,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 4,
+     "done": 7,
      "failed": 0
     }
    ]
