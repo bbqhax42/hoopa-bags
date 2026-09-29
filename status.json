@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T15:55:40.568668",
+ "generatedAt": "2026-09-29T15:57:45.172430",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "skosmurf",
   "mode": "rift",
-  "since": "15:52:17"
+  "since": "15:56:47"
  },
  "grid": {
   "tasks": [
@@ -81,7 +81,7 @@
      "-",
      "✓",
      "✓",
-     "·"
+     "💤"
     ]
    },
    {
@@ -530,7 +530,7 @@
  },
  "counts": {
   "done": 251,
-  "todo": 1,
+  "todo": 0,
   "gaveUp": 9,
   "unavailable": 17,
   "windowed": 16
@@ -686,11 +686,11 @@
   },
   {
    "account": "jeff",
-   "fights": 3,
+   "fights": 6,
    "stamina": 0,
    "staminaMax": 0,
-   "staminaAt": "2026-09-29T11:54:26",
-   "nextAt": "2026-09-29T15:54:31"
+   "staminaAt": "2026-09-29T15:56:41",
+   "nextAt": "2026-09-29T19:56:46"
   }
  ],
  "snoozed": {
@@ -705,6 +705,7 @@
   "fake7|hoopa": "2026-09-29T17:59",
   "fake8|hoopa": "2026-09-29T17:59",
   "jeff|hoopa": "2026-09-29T17:59",
+  "jeff|island_challenge": "2026-09-29T19:56",
   "lucifer1|hoopa": "2026-09-29T17:59",
   "nova|hoopa": "2026-09-29T17:59",
   "skosmurf|hoopa": "2026-09-29T17:59",
@@ -778,11 +779,51 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-29T15:52:33.566657",
+  "label": "skosmurf",
+  "at": "2026-09-29T15:57:07.477429",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T15:56:46",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 37,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 0,
+    "fights_today": 6
+   },
+   "values_all": {
+    "stamina": [
+     40,
+     0,
+     0,
+     0
+    ]
+   },
+   "dir": "debug_runs/20260929_155609_island_challenge_jeff"
+  },
+  {
+   "ts": "2026-09-29T15:55:44",
+   "script": "rift",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 184,
+   "stats": {
+    "rift_levels": 37,
+    "rift_rerolls": 7
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_155240_rift_smurf"
+  },
   {
    "ts": "2026-09-29T15:52:16",
    "script": "rift",
@@ -8611,40 +8652,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_143743_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-28T14:36:33",
-   "script": "run_pvp_ranked",
-   "account": "deno",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_143628_run_pvp_ranked_deno"
-  },
-  {
-   "ts": "2026-09-28T14:35:56",
-   "script": "run_pvp_ranked",
-   "account": "smurf",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_143551_run_pvp_ranked_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 57340,
+  "now": 57465,
   "segments": [
    {
     "b": 34830,
@@ -12090,8 +12103,36 @@
      57153
     ],
     "handoff": 57160,
+    "rc": 0,
+    "e": 57345,
+    "secs": 184,
+    "why": ""
+   },
+   {
+    "b": 57345,
+    "a": "jeff",
+    "s": "island_challenge",
+    "login": [
+     57345,
+     57360
+    ],
+    "handoff": 57369,
+    "rc": 5,
+    "e": 57407,
+    "secs": 37,
+    "why": ""
+   },
+   {
+    "b": 57407,
+    "a": "skosmurf",
+    "s": "rift",
+    "login": [
+     57407,
+     57427
+    ],
+    "handoff": 57435,
     "rc": null,
-    "e": 57340
+    "e": 57465
    }
   ],
   "idle": []
@@ -12325,14 +12366,14 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 51,
-  "relogMinutes": 21.5,
-  "retries": 30,
+  "switches": 53,
+  "relogMinutes": 22.4,
+  "retries": 31,
   "tasks": {
    "island_challenge": {
-    "runs": 5,
-    "minutes": 2.5,
-    "failed": 5
+    "runs": 6,
+    "minutes": 3.1,
+    "failed": 6
    },
    "dailyclaim": {
     "runs": 19,
@@ -12425,8 +12466,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 7,
-    "minutes": 28.2,
+    "runs": 8,
+    "minutes": 31.3,
     "failed": 0
    }
   }
@@ -13164,14 +13205,7 @@
   "skosmurf": "SkoSmurf"
  },
  "queue": {
-  "next": [
-   {
-    "account": "jeff",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-29T15:56"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -13190,11 +13224,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 50,
+   "n": 52,
    "medianSec": 18.0,
    "picker": {
-    "n": 37,
-    "medianSec": 17,
+    "n": 38,
+    "medianSec": 17.0,
     "jumps": 26
    },
    "typed": {
@@ -13202,8 +13236,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 13,
-    "medianSec": 20
+    "n": 14,
+    "medianSec": 20.0
    }
   }
  },
@@ -13224,7 +13258,7 @@
   },
   "jeff": {
    "rank": 191,
-   "islandFights": 3,
+   "islandFights": 6,
    "islandStamina": 0,
    "mailUnread": 0,
    "paradiseStamina": "0/10",
@@ -13313,6 +13347,15 @@
   }
  },
  "ledger": {
+  "jeff": {
+   "island fights": 12,
+   "guild war attempts": 1,
+   "pillar/story stages cleared": 4,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "daily claims": 3
+  },
   "chris": {
    "guild war attempts": 1,
    "island fights": 13,
@@ -13403,15 +13446,6 @@
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
-   "daily claims": 3
-  },
-  "jeff": {
-   "guild war attempts": 1,
-   "island fights": 9,
-   "pillar/story stages cleared": 4,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
    "daily claims": 3
   },
   "lucifer2": {
@@ -13886,7 +13920,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -13900,8 +13934,8 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "island fights": 12,
     "guild war attempts": 1,
-    "island fights": 9,
     "pillar/story stages cleared": 4,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -13910,7 +13944,7 @@
    },
    "progress": {
     "rank": 191,
-    "islandFights": 3,
+    "islandFights": 6,
     "islandStamina": 0,
     "mailUnread": 0,
     "paradiseStamina": "0/10",
@@ -14140,7 +14174,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 20,
+     "done": 21,
      "failed": 4
     }
    ]
