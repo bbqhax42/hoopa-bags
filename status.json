@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T02:51:07.509044",
+ "generatedAt": "2026-09-30T02:53:11.399133",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "fake2",
   "mode": "worldboss",
-  "since": "02:50:56"
+  "since": "02:52:50"
  },
  "grid": {
   "tasks": [
@@ -784,11 +784,43 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-30T02:50:28.866516",
+  "label": "fake2",
+  "at": "2026-09-30T02:53:06.891602",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T02:52:50",
+   "script": "worldboss",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_025156_worldboss_fake1"
+  },
+  {
+   "ts": "2026-09-30T02:51:56",
+   "script": "worldboss",
+   "account": "nova",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_025056_worldboss_nova"
+  },
   {
    "ts": "2026-09-30T02:50:56",
    "script": "worldboss",
@@ -8454,58 +8486,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_094307_mail_chris"
-  },
-  {
-   "ts": "2026-09-29T09:43:05",
-   "script": "dailyclaim",
-   "account": "chris",
-   "rc": 0,
-   "secs": 32,
-   "stats": {
-    "signed_in": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 4
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:78 0.275:0 0.345:53 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_094233_dailyclaim_chris"
-  },
-  {
-   "ts": "2026-09-29T09:42:17",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 39,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 10,
-    "fights_today": 3
-   },
-   "values_all": {
-    "stamina": [
-     50,
-     10,
-     10,
-     10
-    ]
-   },
-   "dir": "debug_runs/20260929_094137_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 96667,
+  "now": 96791,
   "segments": [
    {
     "b": 34830,
@@ -8528,10 +8514,8 @@
      34887
     ],
     "handoff": 34897,
-    "rc": 5,
-    "e": 34938,
-    "secs": 39,
-    "why": ""
+    "rc": null,
+    "e": 34938
    },
    {
     "b": 34938,
@@ -8539,10 +8523,8 @@
     "s": "dailyclaim",
     "login": null,
     "handoff": 34953,
-    "rc": 0,
-    "e": 34987,
-    "secs": 32,
-    "why": ""
+    "rc": null,
+    "e": 34987
    },
    {
     "b": 34987,
@@ -14850,11 +14832,39 @@
     "s": "worldboss",
     "login": [
      96657,
-     null
+     96672
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 96716,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 96716,
+    "a": "fake1",
+    "s": "worldboss",
+    "login": [
+     96717,
+     96733
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 96770,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 96770,
+    "a": "fake2",
+    "s": "worldboss",
+    "login": [
+     96770,
+     96786
     ],
     "handoff": null,
     "rc": null,
-    "e": 96667
+    "e": 96791
    }
   ],
   "idle": [
@@ -15351,7 +15361,7 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 294,
+  "switches": 296,
   "relogMinutes": 82.2,
   "retries": 79,
   "tasks": {
@@ -15461,8 +15471,8 @@
     "failed": 8
    },
    "worldboss": {
-    "runs": 52,
-    "minutes": 51.3,
+    "runs": 54,
+    "minutes": 53.1,
     "failed": 32
    }
   }
@@ -15754,7 +15764,9 @@
    "dre",
    "chris",
    "smurf",
-   "jeff"
+   "jeff",
+   "nova",
+   "fake1"
   ]
  },
  "worldBossSkipped": {},
@@ -16020,12 +16032,12 @@
   "restarts": 0,
   "downtimeMin": 2.1,
   "switches": {
-   "n": 150,
-   "medianSec": 16.0,
+   "n": 153,
+   "medianSec": 16,
    "picker": {
-    "n": 119,
-    "medianSec": 16,
-    "jumps": 71
+    "n": 122,
+    "medianSec": 16.0,
+    "jumps": 74
    },
    "typed": {
     "n": 1,
@@ -16039,12 +16051,12 @@
  },
  "progress": {
   "chris": {
-   "islandFights": 18,
-   "islandStamina": 20,
    "mailUnread": 0,
    "paradiseStamina": "0/12",
    "rank": 187,
-   "pillar": "floor 139 stage 5"
+   "pillar": "floor 139 stage 5",
+   "islandFights": 18,
+   "islandStamina": 20
   },
   "nova": {
    "mailUnread": 0,
@@ -16476,7 +16488,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 0,
+     "done": 1,
      "failed": 1
     }
    ]
@@ -16601,12 +16613,12 @@
     "island fights": 3
    },
    "progress": {
-    "islandFights": 18,
-    "islandStamina": 20,
     "mailUnread": 0,
     "paradiseStamina": "0/12",
     "rank": 187,
-    "pillar": "floor 139 stage 5"
+    "pillar": "floor 139 stage 5",
+    "islandFights": 18,
+    "islandStamina": 20
    },
    "history": [
     {
@@ -16848,7 +16860,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 0,
+     "done": 1,
      "failed": 1
     }
    ]
