@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T17:45:08.547919",
+ "generatedAt": "2026-09-29T17:47:13.261073",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "smurf",
   "mode": "ring_battle",
-  "since": "17:44:54"
+  "since": "17:46:25"
  },
  "grid": {
   "tasks": [
@@ -799,11 +799,23 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-29T17:38:24.205401",
+  "label": "smurf",
+  "at": "2026-09-29T17:46:42.266621",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:46:24",
+   "script": "ring_battle",
+   "account": "nova",
+   "rc": 1,
+   "secs": 71,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_174513_ring_battle_nova"
+  },
   {
    "ts": "2026-09-29T17:44:53",
    "script": "ring_battle",
@@ -8701,24 +8713,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_155835_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-28T15:58:08",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 1,
-   "secs": 13,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_155755_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 63909,
+  "now": 64033,
   "segments": [
    {
     "b": 34830,
@@ -12467,11 +12467,23 @@
     "a": "nova",
     "s": "ring_battle",
     "login": null,
-    "handoff": null,
+    "handoff": 63913,
     "rc": 1,
-    "e": 63909,
+    "e": 63985,
     "secs": 71,
     "why": ""
+   },
+   {
+    "b": 63985,
+    "a": "smurf",
+    "s": "ring_battle",
+    "login": [
+     63985,
+     64002
+    ],
+    "handoff": 64010,
+    "rc": null,
+    "e": 64033
    }
   ],
   "idle": [
@@ -12481,6 +12493,15 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-29T17:46:24",
+   "account": "nova",
+   "task": "ring_battle",
+   "rc": 1,
+   "secs": 71,
+   "why": "match 1: no result card after 60s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174513_ring_battle_nova__KEEP_0002_174624_final.png"
+  },
   {
    "ts": "2026-09-29T17:44:53",
    "account": "nova",
@@ -12745,9 +12766,9 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 68,
-  "relogMinutes": 29.4,
-  "retries": 36,
+  "switches": 69,
+  "relogMinutes": 29.8,
+  "retries": 37,
   "tasks": {
    "island_challenge": {
     "runs": 9,
@@ -12850,9 +12871,9 @@
     "failed": 1
    },
    "ring_battle": {
-    "runs": 1,
-    "minutes": 1.2,
-    "failed": 1
+    "runs": 2,
+    "minutes": 2.4,
+    "failed": 2
    }
   }
  },
@@ -13630,38 +13651,38 @@
    {
     "account": "smurf",
     "task": "ring_battle",
-    "startsIn": 0.4,
-    "eta": "2026-09-29T17:45"
+    "startsIn": 0.0,
+    "eta": "2026-09-29T17:47"
    },
    {
     "account": "skosmurf",
     "task": "ring_battle",
-    "startsIn": 2.0,
-    "eta": "2026-09-29T17:47"
+    "startsIn": 1.6,
+    "eta": "2026-09-29T17:48"
    },
    {
     "account": "lucifer1",
     "task": "ring_battle",
-    "startsIn": 3.6,
-    "eta": "2026-09-29T17:48"
+    "startsIn": 3.2,
+    "eta": "2026-09-29T17:50"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 5.2,
-    "eta": "2026-09-29T17:50"
+    "startsIn": 4.8,
+    "eta": "2026-09-29T17:52"
    },
    {
     "account": "deno",
     "task": "ring_battle",
-    "startsIn": 6.8,
-    "eta": "2026-09-29T17:51"
+    "startsIn": 6.4,
+    "eta": "2026-09-29T17:53"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 8.4,
-    "eta": "2026-09-29T17:53"
+    "startsIn": 8.0,
+    "eta": "2026-09-29T17:55"
    }
   ],
   "more": 0,
@@ -13690,12 +13711,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 67,
-   "medianSec": 17,
+   "n": 68,
+   "medianSec": 17.0,
    "picker": {
-    "n": 52,
-    "medianSec": 16.0,
-    "jumps": 32
+    "n": 53,
+    "medianSec": 16,
+    "jumps": 33
    },
    "typed": {
     "n": 1,
@@ -13986,7 +14007,11 @@
    "Privilege Pack claimed": 1
   }
  },
- "paused": null,
+ "paused": {
+  "since": "2026-09-29T17:46:40",
+  "by": "cli",
+  "why": "ring_battle fix: team Set Form vs pre-battle (nova 17:44)"
+ },
  "warnings": [
   {
    "ts": "2026-09-29T12:42:32",
@@ -14306,9 +14331,9 @@
    "issues": [
     {
      "task": "ring_battle",
-     "at": "17:44",
+     "at": "17:46",
      "why": "match 1: no result card after 60s",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174342_ring_battle_nova__KEEP_0002_174453_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174513_ring_battle_nova__KEEP_0002_174624_final.png"
     },
     {
      "task": "rift",
@@ -14389,7 +14414,7 @@
     {
      "day": "2026-09-29",
      "done": 19,
-     "failed": 5
+     "failed": 6
     }
    ]
   },
