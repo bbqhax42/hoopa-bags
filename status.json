@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T16:22:31.147582",
+ "generatedAt": "2026-09-29T16:24:36.175298",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "chris",
   "mode": "rift",
-  "since": "16:22:28"
+  "since": "16:22:58"
  },
  "grid": {
   "tasks": [
@@ -780,10 +780,24 @@
  },
  "session": {
   "label": "chris",
-  "at": "2026-09-29T16:18:52.085144",
+  "at": "2026-09-29T16:23:14.294826",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T16:22:58",
+   "script": "rift",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_162256_rift_jeff"
+  },
   {
    "ts": "2026-09-29T16:22:27",
    "script": "island_challenge",
@@ -8656,26 +8670,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_144837_joint_team_daily_quest_fake1"
-  },
-  {
-   "ts": "2026-09-28T14:42:51",
-   "script": "run_pvp_ranked",
-   "account": "chris",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_144246_run_pvp_ranked_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 58951,
+  "now": 59076,
   "segments": [
    {
     "b": 34830,
@@ -12210,11 +12210,25 @@
     "s": "rift",
     "login": [
      58948,
-     null
+     58963
     ],
-    "handoff": null,
+    "handoff": 58976,
+    "rc": 2,
+    "e": 58978,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 58978,
+    "a": "chris",
+    "s": "rift",
+    "login": [
+     58979,
+     58994
+    ],
+    "handoff": 59005,
     "rc": null,
-    "e": 58951
+    "e": 59076
    }
   ],
   "idle": [
@@ -12450,8 +12464,8 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 56,
-  "relogMinutes": 23.3,
+  "switches": 57,
+  "relogMinutes": 24.2,
   "retries": 32,
   "tasks": {
    "island_challenge": {
@@ -12550,7 +12564,7 @@
     "failed": 0
    },
    "rift": {
-    "runs": 12,
+    "runs": 13,
     "minutes": 43.9,
     "failed": 0
    }
@@ -12640,6 +12654,12 @@
    "task": "teamshop",
    "why": null,
    "at": null
+  },
+  {
+   "account": "jeff",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-09-29T16:22:58"
   },
   {
    "account": "nova",
@@ -13309,10 +13329,6 @@
     "mode": "rift"
    },
    {
-    "account": "jeff",
-    "mode": "rift"
-   },
-   {
     "account": "nova",
     "mode": "rift"
    }
@@ -13324,11 +13340,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 54,
-   "medianSec": 18.0,
+   "n": 56,
+   "medianSec": 17.5,
    "picker": {
-    "n": 40,
-    "medianSec": 16.5,
+    "n": 42,
+    "medianSec": 16.0,
     "jumps": 27
    },
    "typed": {
@@ -14010,7 +14026,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-29",
-   "summary": "16 of 18 dailies done",
+   "summary": "16 of 18 dailies done · 1 not available today",
    "done": 16,
    "owed": 18,
    "open": [
@@ -14032,7 +14048,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rift",
+     "why": "rift_finished"
+    }
+   ],
    "spent": {
     "island fights": 12,
     "guild war attempts": 1,
