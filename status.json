@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T10:55:58.546038",
+ "generatedAt": "2026-09-29T10:58:02.862502",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "ultra_wormhole",
-  "since": "10:52:53"
+  "mode": "championship",
+  "since": "10:57:55"
  },
  "grid": {
   "tasks": [
@@ -131,8 +131,8 @@
      "✓",
      "⊘",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "-"
     ]
    },
@@ -529,9 +529,9 @@
   ]
  },
  "counts": {
-  "done": 54,
-  "todo": 178,
-  "gaveUp": 1,
+  "done": 55,
+  "todo": 176,
+  "gaveUp": 2,
   "unavailable": 12,
   "windowed": 52
  },
@@ -784,6 +784,53 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T10:57:54",
+   "script": "championship",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 22,
+   "stats": {
+    "skip_tapped": 6,
+    "fights": 6,
+    "ladder_stalled": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "championship: the ladder stopped progressing"
+   ],
+   "values": {
+    "fights": 6,
+    "tiers": 1
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_105732_championship_smurf"
+  },
+  {
+   "ts": "2026-09-29T10:57:30",
+   "script": "ultra_wormhole",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 273,
+   "stats": {
+    "hired": 70,
+    "wins": 17,
+    "losses": 1,
+    "rewards_claimed": 5
+   },
+   "incomplete": [],
+   "values": {
+    "rewards_claimed": 5,
+    "wins_today": 17
+   },
+   "values_all": {
+    "rewards_claimed": [
+     0,
+     5
+    ]
+   },
+   "dir": "debug_runs/20260929_105257_ultra_wormhole_smurf"
+  },
   {
    "ts": "2026-09-29T10:52:52",
    "script": "misty_woods",
@@ -8120,57 +8167,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_101752_faction_fake2"
-  },
-  {
-   "ts": "2026-09-28T10:17:47",
-   "script": "sky_pillar",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 98,
-   "stats": {
-    "stages_cleared": 3,
-    "challenge_refused": 1,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 5,
-    "stage": 8,
-    "proofs_spent": 3
-   },
-   "values_all": {
-    "floor": [
-     5,
-     5,
-     5
-    ],
-    "stage": [
-     6,
-     7,
-     8
-    ]
-   },
-   "dir": "debug_runs/20260928_101608_sky_pillar_fake2"
-  },
-  {
-   "ts": "2026-09-28T10:16:06",
-   "script": "collect_hoopa_keys",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_101601_collect_hoopa_keys_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 39359,
+  "now": 39483,
   "segments": [
    {
     "b": 34830,
@@ -8853,13 +8855,46 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 39176,
-    "rc": null,
-    "e": 39359
+    "rc": 0,
+    "e": 39451,
+    "secs": 273,
+    "why": ""
+   },
+   {
+    "b": 39451,
+    "a": "smurf",
+    "s": "championship",
+    "login": null,
+    "handoff": 39452,
+    "rc": 1,
+    "e": 39475,
+    "secs": 22,
+    "why": "championship: the ladder stopped progressing"
+   },
+   {
+    "b": 39475,
+    "a": "smurf",
+    "s": "championship",
+    "login": null,
+    "handoff": 39476,
+    "rc": 1,
+    "e": 39483,
+    "secs": 22,
+    "why": "championship: the ladder stopped progressing"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-29T10:57:54",
+   "account": "smurf",
+   "task": "championship",
+   "rc": 1,
+   "secs": 22,
+   "why": "championship: the ladder stopped progressing",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_105732_championship_smurf__KEEP_0003_105754_final.png"
+  },
   {
    "ts": "2026-09-29T10:49:46",
    "account": "smurf",
@@ -8901,7 +8936,7 @@
   "since": "2026-09-29T08:00",
   "switches": 5,
   "relogMinutes": 2.0,
-  "retries": 6,
+  "retries": 7,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -8974,14 +9009,14 @@
     "failed": 1
    },
    "ultra_wormhole": {
-    "runs": 3,
-    "minutes": 12.6,
+    "runs": 4,
+    "minutes": 17.1,
     "failed": 0
    },
    "championship": {
-    "runs": 2,
-    "minutes": 0.2,
-    "failed": 0
+    "runs": 3,
+    "minutes": 0.5,
+    "failed": 1
    },
    "misty_woods": {
     "runs": 2,
@@ -9689,79 +9724,79 @@
  "queue": {
   "next": [
    {
-    "account": "smurf",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T10:55"
-   },
-   {
-    "account": "smurf",
-    "task": "championship",
-    "startsIn": 4.2,
-    "eta": "2026-09-29T11:00"
-   },
-   {
     "account": "fake1",
     "task": "dailyclaim",
-    "startsIn": 4.7,
-    "eta": "2026-09-29T11:00"
+    "startsIn": 0.4,
+    "eta": "2026-09-29T10:58"
    },
    {
     "account": "fake1",
     "task": "mail",
-    "startsIn": 5.2,
-    "eta": "2026-09-29T11:01"
+    "startsIn": 0.9,
+    "eta": "2026-09-29T10:58"
    },
    {
     "account": "fake1",
     "task": "joint_team_daily_quest",
-    "startsIn": 5.2,
-    "eta": "2026-09-29T11:01"
+    "startsIn": 1.0,
+    "eta": "2026-09-29T10:59"
    },
    {
     "account": "fake1",
     "task": "daily_dungeon",
-    "startsIn": 6.1,
-    "eta": "2026-09-29T11:02"
+    "startsIn": 1.8,
+    "eta": "2026-09-29T10:59"
    },
    {
     "account": "fake1",
     "task": "pokemon_home",
-    "startsIn": 6.3,
-    "eta": "2026-09-29T11:02"
+    "startsIn": 2.0,
+    "eta": "2026-09-29T11:00"
    },
    {
     "account": "fake1",
     "task": "combat_daily",
-    "startsIn": 7.9,
-    "eta": "2026-09-29T11:03"
+    "startsIn": 3.6,
+    "eta": "2026-09-29T11:01"
    },
    {
     "account": "fake1",
     "task": "victory_road",
-    "startsIn": 9.7,
-    "eta": "2026-09-29T11:05"
+    "startsIn": 5.4,
+    "eta": "2026-09-29T11:03"
    },
    {
     "account": "fake1",
     "task": "paradise",
-    "startsIn": 9.8,
-    "eta": "2026-09-29T11:05"
+    "startsIn": 5.5,
+    "eta": "2026-09-29T11:03"
    },
    {
     "account": "fake1",
     "task": "collect_hoopa_keys",
-    "startsIn": 13.1,
-    "eta": "2026-09-29T11:09"
+    "startsIn": 8.8,
+    "eta": "2026-09-29T11:06"
    },
    {
     "account": "fake1",
     "task": "sky_pillar",
-    "startsIn": 13.2,
+    "startsIn": 8.9,
+    "eta": "2026-09-29T11:06"
+   },
+   {
+    "account": "fake1",
+    "task": "faction",
+    "startsIn": 10.1,
+    "eta": "2026-09-29T11:08"
+   },
+   {
+    "account": "fake2",
+    "task": "dailyclaim",
+    "startsIn": 11.8,
     "eta": "2026-09-29T11:09"
    }
   ],
-  "more": 166,
+  "more": 164,
   "fillers": [
    {
     "account": "smurf",
@@ -9797,9 +9832,6 @@
   }
  },
  "progress": {
-  "fake2": {
-   "pillar": "floor 5 stage 8"
-  },
   "fake3": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -9891,6 +9923,7 @@
    "misty": "step 1"
   },
   "fake1": {},
+  "fake2": {},
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "19/13",
@@ -9899,6 +9932,7 @@
  },
  "ledger": {
   "smurf": {
+   "island fights": 6,
    "misty battles won": 23,
    "faction sweeps": 2,
    "pillar/story stages cleared": 6,
@@ -10452,8 +10486,8 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-29",
-   "summary": "13 of 19 dailies done · 2 switched off · 1 not available today",
-   "done": 13,
+   "summary": "14 of 19 dailies done · gave up on champ · 2 switched off · 1 not available today",
+   "done": 14,
    "owed": 19,
    "open": [
     {
@@ -10473,15 +10507,17 @@
      "state": "not available today"
     },
     {
-     "task": "wormhole",
-     "state": "still to do"
-    },
-    {
      "task": "champ",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
+    {
+     "task": "championship",
+     "at": "10:57",
+     "why": "championship: the ladder stopped progressing",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_105732_championship_smurf__KEEP_0003_105754_final.png"
+    },
     {
      "task": "misty_woods",
      "at": "10:49",
@@ -10514,6 +10550,7 @@
     }
    ],
    "spent": {
+    "island fights": 6,
     "misty battles won": 23,
     "faction sweeps": 2,
     "pillar/story stages cleared": 6,
@@ -10562,8 +10599,8 @@
     },
     {
      "day": "2026-09-29",
-     "done": 14,
-     "failed": 2
+     "done": 15,
+     "failed": 3
     }
    ]
   },
@@ -10782,9 +10819,7 @@
     }
    ],
    "spent": {},
-   "progress": {
-    "pillar": "floor 5 stage 8"
-   },
+   "progress": {},
    "history": [
     {
      "day": "2026-09-23",
