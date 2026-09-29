@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T17:36:52.718207",
+ "generatedAt": "2026-09-29T17:38:56.521978",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
   "mode": "rift",
-  "since": "17:09:36"
+  "since": "17:38:08"
  },
  "grid": {
   "tasks": [
@@ -28,7 +28,7 @@
    "fctn",
    "misty",
    "wormhole",
-   "arena",
+   "ring",
    "champ",
    "island"
   ],
@@ -111,7 +111,7 @@
      "✓",
      "✓",
      "✓",
-     "·"
+     "💤"
     ]
    },
    {
@@ -550,7 +550,7 @@
  },
  "counts": {
   "done": 253,
-  "todo": 2,
+  "todo": 1,
   "gaveUp": 9,
   "unavailable": 17,
   "windowed": 16
@@ -698,11 +698,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 9,
-   "stamina": 2,
-   "staminaMax": 38,
-   "staminaAt": "2026-09-29T16:55:29",
-   "nextAt": "2026-09-29T17:10:33"
+   "fights": 11,
+   "stamina": 9,
+   "staminaMax": 9,
+   "staminaAt": "2026-09-29T17:38:02",
+   "nextAt": "2026-09-29T20:44:07"
   },
   {
    "account": "jeff",
@@ -715,6 +715,7 @@
  ],
  "snoozed": {
   "chris|hoopa": "2026-09-29T17:59",
+  "chris|island_challenge": "2026-09-29T20:44",
   "fake1|hoopa": "2026-09-29T17:59",
   "fake2|hoopa": "2026-09-29T17:59",
   "fake3|hoopa": "2026-09-29T17:59",
@@ -798,11 +799,36 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-29T17:32:10.956144",
+  "label": "nova",
+  "at": "2026-09-29T17:38:24.205401",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:38:07",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 32,
+   "stats": {
+    "fights": 2,
+    "partial_formation": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 9,
+    "fights_today": 11
+   },
+   "values_all": {
+    "stamina": [
+     9,
+     9,
+     9
+    ]
+   },
+   "dir": "debug_runs/20260929_173735_island_challenge_chris"
+  },
   {
    "ts": "2026-09-29T17:36:46",
    "script": "arena",
@@ -8692,28 +8718,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_155052_joint_team_daily_quest_fake6"
-  },
-  {
-   "ts": "2026-09-28T15:24:35",
-   "script": "joint_team_daily_quest",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 80,
-   "stats": {
-    "joint_level_claims": 7,
-    "panel_swipes": 8,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_152315_joint_team_daily_quest_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 63413,
+  "now": 63536,
   "segments": [
    {
     "b": 34830,
@@ -12414,9 +12424,35 @@
     "login": null,
     "handoff": 61781,
     "rc": 0,
-    "e": 63413,
+    "e": 63427,
     "secs": 279,
     "why": ""
+   },
+   {
+    "b": 63427,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     63427,
+     63444
+    ],
+    "handoff": 63455,
+    "rc": 5,
+    "e": 63488,
+    "secs": 32,
+    "why": ""
+   },
+   {
+    "b": 63488,
+    "a": "nova",
+    "s": "rift",
+    "login": [
+     63488,
+     63504
+    ],
+    "handoff": 63514,
+    "rc": null,
+    "e": 63536
    }
   ],
   "idle": [
@@ -12680,14 +12716,14 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 66,
-  "relogMinutes": 28.5,
-  "retries": 34,
+  "switches": 68,
+  "relogMinutes": 29.4,
+  "retries": 35,
   "tasks": {
    "island_challenge": {
-    "runs": 8,
-    "minutes": 3.8,
-    "failed": 8
+    "runs": 9,
+    "minutes": 4.4,
+    "failed": 9
    },
    "dailyclaim": {
     "runs": 19,
@@ -12934,7 +12970,7 @@
   "faction": "06:00-19:00",
   "misty_woods": "06:00-19:00",
   "ultra_wormhole": "08:05-19:00",
-  "arena": "00:00-24:00",
+  "ring_battle": "00:00-24:00",
   "championship": null,
   "island_challenge": null
  },
@@ -13546,15 +13582,9 @@
  "queue": {
   "next": [
    {
-    "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-29T17:37"
-   },
-   {
     "account": "nova",
-    "task": "arena",
-    "startsIn": 1.3,
+    "task": "ring_battle",
+    "startsIn": 0.0,
     "eta": "2026-09-29T17:38"
    }
   ],
@@ -13572,12 +13602,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 65,
+   "n": 67,
    "medianSec": 17,
    "picker": {
-    "n": 50,
+    "n": 52,
     "medianSec": 16.0,
-    "jumps": 31
+    "jumps": 32
    },
    "typed": {
     "n": 1,
@@ -13592,8 +13622,8 @@
  "progress": {
   "chris": {
    "rank": 187,
-   "islandFights": 9,
-   "islandStamina": 2,
+   "islandFights": 11,
+   "islandStamina": 9,
    "mailUnread": 0,
    "paradiseStamina": "0/12",
    "pillar": "floor 139 stage 5"
@@ -13696,7 +13726,7 @@
  },
  "ledger": {
   "chris": {
-   "island fights": 15,
+   "island fights": 17,
    "guild war attempts": 1,
    "faction sweeps": 2,
    "pillar/story stages cleared": 3,
@@ -13868,11 +13898,7 @@
    "Privilege Pack claimed": 1
   }
  },
- "paused": {
-  "since": "2026-09-29T17:19:16",
-  "by": "cli",
-  "why": "arena: 6 Ring Battle matches on the mains (owner OK 2026-09-29) + recon for arena.py"
- },
+ "paused": null,
  "warnings": [
   {
    "ts": "2026-09-29T12:42:32",
@@ -14185,7 +14211,7 @@
      "state": "gave up"
     },
     {
-     "task": "arena",
+     "task": "ring",
      "state": "still to do"
     }
    ],
@@ -14374,7 +14400,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -14393,7 +14419,7 @@
     }
    ],
    "spent": {
-    "island fights": 15,
+    "island fights": 17,
     "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar/story stages cleared": 3,
@@ -14406,8 +14432,8 @@
    },
    "progress": {
     "rank": 187,
-    "islandFights": 9,
-    "islandStamina": 2,
+    "islandFights": 11,
+    "islandStamina": 9,
     "mailUnread": 0,
     "paradiseStamina": "0/12",
     "pillar": "floor 139 stage 5"
