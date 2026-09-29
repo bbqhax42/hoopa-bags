@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T03:15:53.314617",
+ "generatedAt": "2026-09-30T03:17:57.426978",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "smurf",
   "mode": "dynamax",
-  "since": "03:06:36"
+  "since": "03:17:08"
  },
  "grid": {
   "tasks": [
@@ -84,7 +84,7 @@
      "✓",
      "✓",
      "✓",
-     "⏳"
+     "💤"
     ]
    },
    {
@@ -706,17 +706,26 @@
   },
   {
    "account": "jeff",
-   "fights": 9,
-   "stamina": 5,
-   "staminaMax": 6,
-   "staminaAt": "2026-09-29T20:22:07",
-   "nextAt": "2026-09-29T23:46:12"
+   "fights": 12,
+   "stamina": 20,
+   "staminaMax": 20,
+   "staminaAt": "2026-09-30T03:16:28",
+   "nextAt": "2026-09-30T05:16:33"
   }
  ],
  "snoozed": {
-  "chris|island_challenge": "2026-09-30T04:46"
+  "chris|island_challenge": "2026-09-30T04:46",
+  "jeff|island_challenge": "2026-09-30T05:16"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "chris",
+   "since": "2026-09-30T03:17:07",
+   "held": true,
+   "heldUntil": "2026-09-30T03:27:07",
+   "deferredUntil": "2026-09-30T03:27:19"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 5,
@@ -784,11 +793,36 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-30T03:06:50.885179",
+  "label": "smurf",
+  "at": "2026-09-30T03:17:25.181771",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T03:16:33",
+   "script": "island_challenge",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 37,
+   "stats": {
+    "fights": 3,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 20,
+    "fights_today": 12
+   },
+   "values_all": {
+    "stamina": [
+     60,
+     20,
+     20,
+     20
+    ]
+   },
+   "dir": "debug_runs/20260930_031555_island_challenge_jeff"
+  },
   {
    "ts": "2026-09-30T02:57:06",
    "script": "worldboss",
@@ -8454,36 +8488,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_094756_victory_road_chris"
-  },
-  {
-   "ts": "2026-09-29T09:47:54",
-   "script": "combat_daily",
-   "account": "chris",
-   "rc": 0,
-   "secs": 103,
-   "stats": {
-    "title_reread_named": 2,
-    "near_miss_afk_rewards": 2,
-    "marginal_afk_rewards": 3,
-    "near_miss_vr_rank": 5,
-    "marginal_battle_victory_confirm": 2,
-    "gacha_free": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 8/8 + ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_094611_combat_daily_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 98153,
+  "now": 98277,
   "segments": [
    {
     "b": 34830,
@@ -8569,10 +8579,8 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 35171,
-    "rc": 0,
-    "e": 35275,
-    "secs": 103,
-    "why": ""
+    "rc": null,
+    "e": 35275
    },
    {
     "b": 35275,
@@ -14926,9 +14934,33 @@
      97596,
      97610
     ],
+    "handoff": 98155,
+    "rc": null,
+    "e": 98193
+   },
+   {
+    "b": 98193,
+    "a": "chris",
+    "s": "dynamax",
+    "login": [
+     98194,
+     98208
+    ],
     "handoff": null,
     "rc": null,
-    "e": 98153
+    "e": 98228
+   },
+   {
+    "b": 98228,
+    "a": "smurf",
+    "s": "dynamax",
+    "login": [
+     98229,
+     98245
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 98277
    }
   ],
   "idle": [
@@ -15425,14 +15457,14 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 302,
-  "relogMinutes": 82.2,
-  "retries": 79,
+  "switches": 304,
+  "relogMinutes": 91.5,
+  "retries": 80,
   "tasks": {
    "island_challenge": {
-    "runs": 13,
-    "minutes": 6.6,
-    "failed": 13
+    "runs": 14,
+    "minutes": 7.2,
+    "failed": 14
    },
    "dailyclaim": {
     "runs": 19,
@@ -15724,20 +15756,20 @@
    "last_run_actions": 48
   },
   "chris": {
-   "energy": 93,
+   "energy": 72,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-30T02:49:15.729709",
-   "runs": 645,
-   "cooldown_until": "2026-09-19T19:38:42.844486",
+   "observed_at": "2026-09-30T03:17:01.645997",
+   "runs": 646,
+   "cooldown_until": "2026-09-30T03:27:07.662213",
    "kicks": 1,
-   "last_run_actions": 4
+   "last_run_actions": 0
   },
   "smurf": {
-   "energy": 6,
+   "energy": 120,
    "needs": 45,
    "cost": 2,
-   "observed_at": "2026-09-29T22:41:37.330380",
+   "observed_at": "2026-09-30T03:17:40.622671",
    "runs": 404,
    "cooldown_until": "2026-09-23T20:32:59.737016",
    "kicks": 1,
@@ -16097,12 +16129,12 @@
   "restarts": 0,
   "downtimeMin": 2.1,
   "switches": {
-   "n": 159,
+   "n": 161,
    "medianSec": 16,
    "picker": {
-    "n": 128,
+    "n": 130,
     "medianSec": 16.0,
-    "jumps": 79
+    "jumps": 80
    },
    "typed": {
     "n": 1,
@@ -16133,8 +16165,8 @@
    "paradiseStamina": "0/10",
    "rank": 191,
    "pillar": "floor 150 stage 4",
-   "islandFights": 9,
-   "islandStamina": 5
+   "islandFights": 12,
+   "islandStamina": 20
   },
   "smurf": {
    "mailUnread": 0,
@@ -16218,6 +16250,9 @@
   }
  },
  "ledger": {
+  "jeff": {
+   "island fights": 3
+  },
   "chris": {
    "island fights": 3
   }
@@ -16287,6 +16322,15 @@
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "chris",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-30T03:17:07",
+   "why": "someone is playing on it",
+   "action": "left alone until 03:27",
+   "enable": false
   },
   {
    "account": "fake1",
@@ -16566,7 +16610,7 @@
    "open": [
     {
      "task": "island",
-     "state": "cooling off"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -16590,14 +16634,16 @@
      "why": "rift_finished"
     }
    ],
-   "spent": {},
+   "spent": {
+    "island fights": 3
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "0/10",
     "rank": 191,
     "pillar": "floor 150 stage 4",
-    "islandFights": 9,
-    "islandStamina": 5
+    "islandFights": 12,
+    "islandStamina": 20
    },
    "history": [
     {
