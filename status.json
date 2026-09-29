@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T17:47:13.261073",
+ "generatedAt": "2026-09-29T17:49:16.899367",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
   "mode": "ring_battle",
-  "since": "17:46:25"
+  "since": "17:48:03"
  },
  "grid": {
   "tasks": [
@@ -136,7 +136,7 @@
      "⊘",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "✗2",
      "-"
     ]
@@ -550,8 +550,8 @@
  },
  "counts": {
   "done": 253,
-  "todo": 6,
-  "gaveUp": 10,
+  "todo": 5,
+  "gaveUp": 11,
   "unavailable": 17,
   "windowed": 16
  },
@@ -804,6 +804,18 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T17:48:03",
+   "script": "ring_battle",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 1,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_174801_ring_battle_smurf"
+  },
   {
    "ts": "2026-09-29T17:46:24",
    "script": "ring_battle",
@@ -8701,24 +8713,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_155909_run_pvp_ranked_chris"
-  },
-  {
-   "ts": "2026-09-28T15:58:48",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 1,
-   "secs": 12,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_155835_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 64033,
+  "now": 64157,
   "segments": [
    {
     "b": 34830,
@@ -12482,8 +12482,32 @@
      64002
     ],
     "handoff": 64010,
-    "rc": null,
-    "e": 64033
+    "rc": 1,
+    "e": 64078,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 64078,
+    "a": "smurf",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 64080,
+    "rc": 1,
+    "e": 64083,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 64083,
+    "a": "smurf",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 64104,
+    "rc": 1,
+    "e": 64157,
+    "secs": 1,
+    "why": ""
    }
   ],
   "idle": [
@@ -12493,6 +12517,15 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-29T17:48:03",
+   "account": "smurf",
+   "task": "ring_battle",
+   "rc": 1,
+   "secs": 1,
+   "why": "match 1: not on the lobby — stopping",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174801_ring_battle_smurf__KEEP_0001_174803_final.png"
+  },
   {
    "ts": "2026-09-29T17:46:24",
    "account": "nova",
@@ -12768,7 +12801,7 @@
   "since": "2026-09-29T08:00",
   "switches": 69,
   "relogMinutes": 29.8,
-  "retries": 37,
+  "retries": 38,
   "tasks": {
    "island_challenge": {
     "runs": 9,
@@ -12871,9 +12904,9 @@
     "failed": 1
    },
    "ring_battle": {
-    "runs": 2,
+    "runs": 3,
     "minutes": 2.4,
-    "failed": 2
+    "failed": 3
    }
   }
  },
@@ -13649,40 +13682,34 @@
  "queue": {
   "next": [
    {
-    "account": "smurf",
-    "task": "ring_battle",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T17:47"
-   },
-   {
     "account": "skosmurf",
     "task": "ring_battle",
-    "startsIn": 1.6,
-    "eta": "2026-09-29T17:48"
+    "startsIn": 0.4,
+    "eta": "2026-09-29T17:49"
    },
    {
     "account": "lucifer1",
     "task": "ring_battle",
-    "startsIn": 3.2,
+    "startsIn": 1.6,
     "eta": "2026-09-29T17:50"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 4.8,
+    "startsIn": 2.8,
     "eta": "2026-09-29T17:52"
    },
    {
     "account": "deno",
     "task": "ring_battle",
-    "startsIn": 6.4,
+    "startsIn": 4.0,
     "eta": "2026-09-29T17:53"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 8.0,
-    "eta": "2026-09-29T17:55"
+    "startsIn": 5.2,
+    "eta": "2026-09-29T17:54"
    }
   ],
   "more": 0,
@@ -14007,11 +14034,7 @@
    "Privilege Pack claimed": 1
   }
  },
- "paused": {
-  "since": "2026-09-29T17:46:40",
-  "by": "cli",
-  "why": "ring_battle fix: team Set Form vs pre-battle (nova 17:44)"
- },
+ "paused": null,
  "warnings": [
   {
    "ts": "2026-09-29T12:42:32",
@@ -14602,7 +14625,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-29",
-   "summary": "16 of 20 dailies done · gave up on champ · 2 switched off · 2 not available today",
+   "summary": "16 of 20 dailies done · gave up on ring, champ · 2 switched off · 2 not available today",
    "done": 16,
    "owed": 20,
    "open": [
@@ -14616,7 +14639,7 @@
     },
     {
      "task": "ring",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "champ",
@@ -14624,6 +14647,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "ring_battle",
+     "at": "17:48",
+     "why": "match 1: not on the lobby — stopping",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174801_ring_battle_smurf__KEEP_0001_174803_final.png"
+    },
     {
      "task": "championship",
      "at": "10:59",
@@ -14717,7 +14746,7 @@
     {
      "day": "2026-09-29",
      "done": 22,
-     "failed": 4
+     "failed": 5
     }
    ]
   },
