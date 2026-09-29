@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T13:31:08.411972",
+ "generatedAt": "2026-09-29T13:33:12.096755",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "pokemon_home",
-  "since": "13:30:59"
+  "mode": "combat_daily",
+  "since": "13:32:58"
  },
  "grid": {
   "tasks": [
@@ -431,8 +431,8 @@
      "✓",
      "⏰",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "·",
@@ -529,9 +529,9 @@
   ]
  },
  "counts": {
-  "done": 180,
-  "todo": 71,
-  "gaveUp": 7,
+  "done": 181,
+  "todo": 69,
+  "gaveUp": 8,
   "unavailable": 16,
   "windowed": 16
  },
@@ -784,6 +784,58 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T13:32:57",
+   "script": "weekend_bash",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 14,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_133243_weekend_bash_lucifer2"
+  },
+  {
+   "ts": "2026-09-29T13:32:41",
+   "script": "weekend_bash",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 14,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_133227_weekend_bash_lucifer2"
+  },
+  {
+   "ts": "2026-09-29T13:32:21",
+   "script": "pokemon_home",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 81,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_moved_instead": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_133100_pokemon_home_lucifer2"
+  },
   {
    "ts": "2026-09-29T13:30:59",
    "script": "daily_dungeon",
@@ -8426,59 +8478,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_125805_weekend_bash_lucifer2"
-  },
-  {
-   "ts": "2026-09-28T12:57:59",
-   "script": "pokemon_home",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 82,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_125637_pokemon_home_lucifer2"
-  },
-  {
-   "ts": "2026-09-28T12:56:35",
-   "script": "daily_dungeon",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 14,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_125620_daily_dungeon_lucifer2"
-  },
-  {
-   "ts": "2026-09-28T12:56:06",
-   "script": "joint_team_daily_quest",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 58,
-   "stats": {
-    "marginal_joint_team": 1,
-    "marginal_joint_team_daily_panel": 4,
-    "panel_swipes": 8,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_125507_joint_team_daily_quest_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 48668,
+  "now": 48792,
   "segments": [
    {
     "b": 34830,
@@ -10890,13 +10895,64 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 48660,
+    "rc": 0,
+    "e": 48742,
+    "secs": 81,
+    "why": ""
+   },
+   {
+    "b": 48742,
+    "a": "lucifer2",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 48747,
+    "rc": 1,
+    "e": 48762,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 48762,
+    "a": "lucifer2",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 48762,
+    "rc": 1,
+    "e": 48778,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 48778,
+    "a": "lucifer2",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 48778,
     "rc": null,
-    "e": 48668
+    "e": 48792
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-29T13:32:57",
+   "account": "lucifer2",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 14,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_133243_weekend_bash_lucifer2__KEEP_0001_133257_final.png"
+  },
+  {
+   "ts": "2026-09-29T13:32:41",
+   "account": "lucifer2",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 14,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_133227_weekend_bash_lucifer2__KEEP_0003_133241_final.png"
+  },
   {
    "ts": "2026-09-29T13:15:11",
    "account": "lucifer1",
@@ -11073,7 +11129,7 @@
   "since": "2026-09-29T08:00",
   "switches": 24,
   "relogMinutes": 10.1,
-  "retries": 24,
+  "retries": 26,
   "tasks": {
    "island_challenge": {
     "runs": 5,
@@ -11101,14 +11157,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 17,
-    "minutes": 11.5,
+    "runs": 18,
+    "minutes": 12.9,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 13,
-    "minutes": 3.4,
-    "failed": 10
+    "runs": 15,
+    "minutes": 3.9,
+    "failed": 12
    },
    "combat_daily": {
     "runs": 17,
@@ -11897,78 +11953,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T13:31"
-   },
-   {
-    "account": "lucifer2",
-    "task": "weekend_bash",
-    "startsIn": 0.7,
-    "eta": "2026-09-29T13:31"
-   },
-   {
-    "account": "lucifer2",
     "task": "combat_daily",
-    "startsIn": 0.9,
-    "eta": "2026-09-29T13:32"
+    "startsIn": 0.0,
+    "eta": "2026-09-29T13:33"
    },
    {
     "account": "lucifer2",
     "task": "victory_road",
-    "startsIn": 2.6,
-    "eta": "2026-09-29T13:33"
+    "startsIn": 1.6,
+    "eta": "2026-09-29T13:34"
    },
    {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 2.7,
-    "eta": "2026-09-29T13:33"
+    "startsIn": 1.8,
+    "eta": "2026-09-29T13:34"
    },
    {
     "account": "lucifer2",
     "task": "paradise",
-    "startsIn": 4.7,
-    "eta": "2026-09-29T13:35"
+    "startsIn": 3.8,
+    "eta": "2026-09-29T13:36"
    },
    {
     "account": "lucifer2",
     "task": "guild_war",
-    "startsIn": 8.0,
-    "eta": "2026-09-29T13:39"
-   },
-   {
-    "account": "lucifer2",
-    "task": "run_pvp_ranked",
-    "startsIn": 8.9,
+    "startsIn": 7.1,
     "eta": "2026-09-29T13:40"
    },
    {
     "account": "lucifer2",
-    "task": "collect_hoopa_keys",
-    "startsIn": 10.2,
+    "task": "run_pvp_ranked",
+    "startsIn": 8.0,
     "eta": "2026-09-29T13:41"
+   },
+   {
+    "account": "lucifer2",
+    "task": "collect_hoopa_keys",
+    "startsIn": 9.3,
+    "eta": "2026-09-29T13:42"
    },
    {
     "account": "lucifer2",
     "task": "sky_pillar",
-    "startsIn": 10.3,
-    "eta": "2026-09-29T13:41"
+    "startsIn": 9.4,
+    "eta": "2026-09-29T13:42"
    },
    {
     "account": "lucifer2",
     "task": "ultra_wormhole",
-    "startsIn": 11.5,
-    "eta": "2026-09-29T13:42"
+    "startsIn": 10.6,
+    "eta": "2026-09-29T13:43"
    },
    {
     "account": "nova",
     "task": "rank_match",
-    "startsIn": 16.5,
-    "eta": "2026-09-29T13:47"
+    "startsIn": 15.6,
+    "eta": "2026-09-29T13:48"
+   },
+   {
+    "account": "nova",
+    "task": "guild_war",
+    "startsIn": 17.6,
+    "eta": "2026-09-29T13:50"
+   },
+   {
+    "account": "jeff",
+    "task": "rank_match",
+    "startsIn": 18.9,
+    "eta": "2026-09-29T13:52"
    }
   ],
-  "more": 59,
+  "more": 57,
   "fillers": [
    {
     "account": "smurf",
@@ -12111,6 +12167,7 @@
  },
  "ledger": {
   "lucifer2": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
@@ -13997,8 +14054,8 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-29",
-   "summary": "4 of 16 dailies done · 2 switched off",
-   "done": 4,
+   "summary": "5 of 16 dailies done · gave up on bash · 2 switched off",
+   "done": 5,
    "owed": 16,
    "open": [
     {
@@ -14006,12 +14063,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -14050,7 +14103,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "13:32",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_133243_weekend_bash_lucifer2__KEEP_0001_133257_final.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -14065,6 +14125,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1
@@ -14108,8 +14169,8 @@
     },
     {
      "day": "2026-09-29",
-     "done": 5,
-     "failed": 0
+     "done": 6,
+     "failed": 2
     }
    ]
   },
