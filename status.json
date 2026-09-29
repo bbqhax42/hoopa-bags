@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T06:11:12.613602",
+ "generatedAt": "2026-09-30T06:13:16.406460",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "lucifer1",
   "mode": "hoopa",
-  "since": "06:04:27"
+  "since": "06:13:14"
  },
  "grid": {
   "tasks": [
@@ -720,8 +720,8 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 3,
-   "at": "2026-09-30T03:58:26"
+   "keys": 0,
+   "at": "2026-09-30T06:13:13"
   },
   "chris": {
    "keys": 0,
@@ -790,6 +790,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T06:13:14",
+   "script": "hoopa",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 500,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-30T06:04:27",
    "script": "rift",
@@ -8430,30 +8446,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_100448_weekend_bash_nova"
-  },
-  {
-   "ts": "2026-09-29T10:04:46",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 14,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "weekend_bash: tab 2 did not open"
-   ],
-   "values": {
-    "tickets": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_100432_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 108672,
+  "now": 108796,
   "segments": [
    {
     "b": 34830,
@@ -8668,10 +8666,8 @@
     "s": "weekend_bash",
     "login": null,
     "handoff": 36272,
-    "rc": 1,
-    "e": 36288,
-    "secs": 14,
-    "why": "weekend_bash: tab 2 did not open"
+    "rc": null,
+    "e": 36288
    },
    {
     "b": 36288,
@@ -8681,7 +8677,7 @@
     "handoff": 36288,
     "rc": 1,
     "e": 36303,
-    "secs": 14,
+    "secs": 13,
     "why": "weekend_bash: tab 2 did not open"
    },
    {
@@ -15784,8 +15780,22 @@
      108282
     ],
     "handoff": 108293,
+    "rc": 2,
+    "e": 108794,
+    "secs": 500,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 108794,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     108795,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 108672
+    "e": 108796
    }
   ],
   "idle": [
@@ -16349,20 +16359,11 @@
    "secs": 13,
    "why": "weekend_bash: tab 2 did not open",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_100448_weekend_bash_nova__KEEP_0001_100502_final.png"
-  },
-  {
-   "ts": "2026-09-29T10:04:46",
-   "account": "nova",
-   "task": "weekend_bash",
-   "rc": 1,
-   "secs": 14,
-   "why": "weekend_bash: tab 2 did not open",
-   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_100432_weekend_bash_nova__KEEP_0003_100446_final.png"
   }
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 351,
+  "switches": 352,
   "relogMinutes": 107.0,
   "retries": 84,
   "tasks": {
@@ -16583,6 +16584,12 @@
   },
   {
    "account": "jeff",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-30T06:13:14"
+  },
+  {
+   "account": "jeff",
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-09-29T16:22:58"
@@ -16799,9 +16806,9 @@
     "last": "2026-09-30T05:55:58"
    },
    "jeff": {
-    "runs": 38,
-    "targets": 2,
-    "last": "2026-09-30T06:10:17"
+    "runs": 40,
+    "targets": 3,
+    "last": "2026-09-30T06:13:04"
    },
    "chris": {
     "runs": 24,
@@ -16815,6 +16822,13 @@
    }
   },
   "targets": [
+   {
+    "ts": "2026-09-30T06:13:04",
+    "runner": "jeff",
+    "items": [
+     "Black Sludge"
+    ]
+   },
    {
     "ts": "2026-09-30T04:11:01",
     "runner": "jeff",
@@ -16890,13 +16904,6 @@
     "runner": "lucifer1",
     "items": [
      "Big Root"
-    ]
-   },
-   {
-    "ts": "2026-09-29T06:59:03",
-    "runner": "lucifer1",
-    "items": [
-     "Black Sludge"
     ]
    }
   ]
@@ -17117,10 +17124,6 @@
    {
     "account": "lucifer2",
     "mode": "rift"
-   },
-   {
-    "account": "jeff",
-    "mode": "hoopa"
    },
    {
     "account": "nova",
@@ -17599,7 +17602,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-29",
-   "summary": "18 of 19 dailies done · 1 not available today",
+   "summary": "18 of 19 dailies done · 2 not available today",
    "done": 18,
    "owed": 19,
    "open": [
@@ -17624,6 +17627,10 @@
    ],
    "off": [],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "rift",
      "why": "rift_finished"
