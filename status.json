@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T22:32:18.990424",
+ "generatedAt": "2026-09-29T22:34:23.085144",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "dynamax",
-  "since": "22:31:21"
+  "account": "dre",
+  "mode": "joint_battle",
+  "since": "22:34:19"
  },
  "grid": {
   "tasks": [
@@ -732,8 +732,8 @@
    "at": "2026-09-29T18:45:56"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-29T19:04:50"
+   "keys": 0,
+   "at": "2026-09-29T22:34:18"
   },
   "lucifer1": {
    "keys": 310,
@@ -798,6 +798,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T22:34:19",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 9,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-29T21:48:06",
    "script": "ring_battle",
@@ -8669,28 +8685,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_201019_worldboss_fake7"
-  },
-  {
-   "ts": "2026-09-28T20:10:19",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 54,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_200925_worldboss_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 81139,
+  "now": 81263,
   "segments": [
    {
     "b": 34830,
@@ -14073,7 +14073,30 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 81139
+    "e": 81246
+   },
+   {
+    "b": 81246,
+    "a": "chris",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 81249,
+    "rc": 2,
+    "e": 81259,
+    "secs": 9,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 81259,
+    "a": "dre",
+    "s": "joint_battle",
+    "login": [
+     81260,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 81263
    }
   ],
   "idle": [
@@ -14201,7 +14224,9 @@
    80494,
    80543,
    80601,
-   80601
+   80601,
+   81246,
+   81259
   ]
  },
  "failures": [
@@ -14541,8 +14566,8 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 135,
-  "relogMinutes": 73.7,
+  "switches": 136,
+  "relogMinutes": 76.5,
   "retries": 47,
   "tasks": {
    "island_challenge": {
@@ -14658,6 +14683,12 @@
   }
  },
  "unavailable": [
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-29T22:34:19"
+  },
   {
    "account": "chris",
    "task": "rift",
@@ -14834,14 +14865,14 @@
    "last_run_actions": 27
   },
   "chris": {
-   "energy": 15,
+   "energy": 1,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-29T22:31:51.366850",
-   "runs": 641,
+   "observed_at": "2026-09-29T22:34:04.969901",
+   "runs": 642,
    "cooldown_until": "2026-09-19T19:38:42.844486",
    "kicks": 1,
-   "last_run_actions": 1
+   "last_run_actions": 4
   },
   "smurf": {
    "energy": 19,
@@ -15176,20 +15207,20 @@
    {
     "account": "dre",
     "task": "joint_battle",
-    "startsIn": 0.4,
-    "eta": "2026-09-29T22:32"
+    "startsIn": 0.0,
+    "eta": "2026-09-29T22:34"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 2.4,
-    "eta": "2026-09-29T22:34"
+    "startsIn": 2.0,
+    "eta": "2026-09-29T22:36"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 3.6,
-    "eta": "2026-09-29T22:35"
+    "startsIn": 3.2,
+    "eta": "2026-09-29T22:37"
    }
   ],
   "more": 0,
@@ -15211,11 +15242,11 @@
     "mode": "rift"
    },
    {
-    "account": "chris",
+    "account": "nova",
     "mode": "hoopa"
    },
    {
-    "account": "nova",
+    "account": "lucifer1",
     "mode": "hoopa"
    }
   ],
@@ -15244,10 +15275,6 @@
   }
  },
  "progress": {
-  "fake6": {
-   "mailUnread": 0,
-   "paradiseStamina": "0/12"
-  },
   "sprite": {
    "mailUnread": 0,
    "paradiseStamina": "0/12",
@@ -15345,6 +15372,10 @@
    "mailUnread": 0,
    "paradiseStamina": "2/12",
    "pillar": "floor 7 stage 7"
+  },
+  "fake6": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/12"
   }
  },
  "ledger": {
@@ -16026,7 +16057,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-29",
-   "summary": "19 of 20 dailies done · 1 not available today",
+   "summary": "19 of 20 dailies done · 2 not available today",
    "done": 19,
    "owed": 20,
    "open": [
@@ -16045,6 +16076,10 @@
    ],
    "off": [],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "rift",
      "why": "rift_levels, rift_rerolls, rift_finished"
