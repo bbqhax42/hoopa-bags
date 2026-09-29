@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T21:21:58.858715",
+ "generatedAt": "2026-09-29T21:24:03.071433",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "dynamax",
-  "since": "21:21:10"
+  "mode": "hoopa",
+  "since": "21:23:43"
  },
  "grid": {
   "tasks": [
@@ -790,6 +790,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T21:22:15",
+   "script": "ring_battle",
+   "account": "nova",
+   "rc": 1,
+   "secs": 2,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "ring_battle: unread free match(es) left after the run"
+   ],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_212212_ring_battle_nova"
+  },
   {
    "ts": "2026-09-29T21:18:55",
    "script": "island_challenge",
@@ -8661,28 +8677,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_200831_worldboss_fake5"
-  },
-  {
-   "ts": "2026-09-28T20:08:31",
-   "script": "worldboss",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_200738_worldboss_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 76919,
+  "now": 77043,
   "segments": [
    {
     "b": 34830,
@@ -13602,7 +13602,36 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 76919
+    "e": 76926
+   },
+   {
+    "b": 76926,
+    "a": "nova",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 76932,
+    "rc": 1,
+    "e": 76935,
+    "secs": 2,
+    "why": "ring_battle: unread free match(es) left after the run"
+   },
+   {
+    "b": 76935,
+    "a": "nova",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 76957,
+    "rc": null,
+    "e": 77023
+   },
+   {
+    "b": 77023,
+    "a": "nova",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 77024,
+    "rc": null,
+    "e": 77043
    }
   ],
   "idle": [
@@ -13678,10 +13707,22 @@
    76336,
    76571,
    76780,
-   76780
+   76780,
+   76926,
+   76935,
+   77023
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-29T21:22:15",
+   "account": "nova",
+   "task": "ring_battle",
+   "rc": 1,
+   "secs": 2,
+   "why": "ring_battle: unread free match(es) left after the run",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_212212_ring_battle_nova__KEEP_0001_212215_final.png"
+  },
   {
    "ts": "2026-09-29T20:01:12",
    "account": "jeff",
@@ -14010,8 +14051,8 @@
  "day": {
   "since": "2026-09-29T08:00",
   "switches": 126,
-  "relogMinutes": 64.8,
-  "retries": 46,
+  "relogMinutes": 65.8,
+  "retries": 47,
   "tasks": {
    "island_challenge": {
     "runs": 12,
@@ -14114,9 +14155,9 @@
     "failed": 1
    },
    "ring_battle": {
-    "runs": 11,
+    "runs": 12,
     "minutes": 8.8,
-    "failed": 7
+    "failed": 8
    },
    "worldboss": {
     "runs": 20,
@@ -14322,14 +14363,14 @@
    "last_run_actions": 5
   },
   "nova": {
-   "energy": 13,
+   "energy": 1,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-29T21:21:46.148456",
-   "runs": 720,
+   "observed_at": "2026-09-29T21:22:05.472966",
+   "runs": 721,
    "cooldown_until": "2026-09-29T20:36:04.596183",
    "kicks": 1,
-   "last_run_actions": 5
+   "last_run_actions": 4
   }
  },
  "worldBoss": {
@@ -14423,9 +14464,9 @@
   "since": "2026-09-29T08:00",
   "runners": {
    "nova": {
-    "runs": 5,
+    "runs": 6,
     "targets": 1,
-    "last": "2026-09-29T18:39:15"
+    "last": "2026-09-29T21:23:43"
    },
    "jeff": {
     "runs": 11,
@@ -14621,12 +14662,6 @@
    "ts": "2026-09-28T15:01:07",
    "area": "joint claims",
    "subject": "every squad level's reward, found by colour and scrolled to"
-  },
-  {
-   "sha": "f6f188f",
-   "ts": "2026-09-28T09:22:14",
-   "area": "joint claims",
-   "subject": "keep the Level Details panel as opened and as left"
   }
  ],
  "phase": {
@@ -14651,37 +14686,37 @@
     "account": "nova",
     "task": "ring_battle",
     "startsIn": 0.0,
-    "eta": "2026-09-29T21:21"
+    "eta": "2026-09-29T21:24"
    },
    {
     "account": "fake8",
     "task": "joint_battle",
-    "startsIn": 1.2,
-    "eta": "2026-09-29T21:23"
+    "startsIn": 1.1,
+    "eta": "2026-09-29T21:25"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 3.6,
-    "eta": "2026-09-29T21:25"
-   },
-   {
-    "account": "dre",
-    "task": "joint_battle",
-    "startsIn": 6.0,
+    "startsIn": 3.5,
     "eta": "2026-09-29T21:27"
    },
    {
     "account": "dre",
-    "task": "ring_battle",
-    "startsIn": 8.0,
+    "task": "joint_battle",
+    "startsIn": 5.9,
     "eta": "2026-09-29T21:29"
+   },
+   {
+    "account": "dre",
+    "task": "ring_battle",
+    "startsIn": 7.9,
+    "eta": "2026-09-29T21:31"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 9.2,
-    "eta": "2026-09-29T21:31"
+    "startsIn": 9.1,
+    "eta": "2026-09-29T21:33"
    }
   ],
   "more": 0,
@@ -14736,11 +14771,6 @@
   }
  },
  "progress": {
-  "fake4": {
-   "mailUnread": 0,
-   "paradiseStamina": "0/10",
-   "pillar": "floor 6 stage 1"
-  },
   "fake5": {
    "mailUnread": 0,
    "paradiseStamina": "2/12",
@@ -14837,6 +14867,11 @@
    "mailUnread": 0,
    "paradiseStamina": "0/12",
    "pillar": "floor 6 stage 4"
+  },
+  "fake4": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/10",
+   "pillar": "floor 6 stage 1"
   }
  },
  "ledger": {
@@ -15329,9 +15364,9 @@
    "issues": [
     {
      "task": "ring_battle",
-     "at": "17:46",
-     "why": "match 1: no result card after 60s",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_174513_ring_battle_nova__KEEP_0002_174624_final.png"
+     "at": "21:22",
+     "why": "ring_battle: unread free match(es) left after the run",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_212212_ring_battle_nova__KEEP_0001_212215_final.png"
     },
     {
      "task": "rift",
@@ -15412,7 +15447,7 @@
     {
      "day": "2026-09-29",
      "done": 20,
-     "failed": 6
+     "failed": 7
     }
    ]
   },
