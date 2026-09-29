@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T13:55:56.718931",
+ "generatedAt": "2026-09-29T13:58:00.377828",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "rank_match",
-  "since": "13:53:07"
+  "mode": "guild_war",
+  "since": "13:57:51"
  },
  "grid": {
   "tasks": [
@@ -45,9 +45,9 @@
      "✗2",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✗2",
      "✓",
      "✓",
      "✓",
@@ -529,9 +529,9 @@
   ]
  },
  "counts": {
-  "done": 190,
-  "todo": 60,
-  "gaveUp": 8,
+  "done": 191,
+  "todo": 58,
+  "gaveUp": 9,
   "unavailable": 16,
   "windowed": 16
  },
@@ -784,6 +784,53 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T13:57:50",
+   "script": "guild_war",
+   "account": "nova",
+   "rc": 1,
+   "secs": 59,
+   "stats": {
+    "refused_challenge": 1,
+    "refused_trial_challenge": 1,
+    "refused_auto_formation": 1,
+    "refused_setform_confirm": 1,
+    "gw_never_entered": 1,
+    "assist_skipped_off_screen": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "guild_war: no attempts landed"
+   ],
+   "values": {
+    "guild_caption": 0.999
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_135650_guild_war_nova"
+  },
+  {
+   "ts": "2026-09-29T13:56:49",
+   "script": "rank_match",
+   "account": "nova",
+   "rc": 0,
+   "secs": 195,
+   "stats": {
+    "skip_tapped": 7,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_reward_claimed": 2,
+    "rank_panel_scroll": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 8,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_135333_rank_match_nova"
+  },
   {
    "ts": "2026-09-29T13:53:06",
    "script": "ultra_wormhole",
@@ -8485,58 +8532,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_131446_mail_fake8"
-  },
-  {
-   "ts": "2026-09-28T13:14:45",
-   "script": "dailyclaim",
-   "account": "fake8",
-   "rc": 0,
-   "secs": 29,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:78 0.275:8 0.345:52 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_131415_dailyclaim_fake8"
-  },
-  {
-   "ts": "2026-09-28T13:13:48",
-   "script": "ultra_wormhole",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 256,
-   "stats": {
-    "hired": 72,
-    "wins": 17,
-    "losses": 1,
-    "rewards_claimed": 5
-   },
-   "incomplete": [],
-   "values": {
-    "rewards_claimed": 5,
-    "wins_today": 17
-   },
-   "values_all": {
-    "rewards_claimed": [
-     0,
-     5
-    ]
-   },
-   "dir": "debug_runs/20260928_130932_ultra_wormhole_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 50157,
+  "now": 50280,
   "segments": [
    {
     "b": 34830,
@@ -11094,13 +11095,46 @@
      50005
     ],
     "handoff": 50013,
-    "rc": null,
-    "e": 50157
+    "rc": 0,
+    "e": 50210,
+    "secs": 195,
+    "why": ""
+   },
+   {
+    "b": 50210,
+    "a": "nova",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 50210,
+    "rc": 1,
+    "e": 50271,
+    "secs": 59,
+    "why": "guild_war: no attempts landed"
+   },
+   {
+    "b": 50271,
+    "a": "nova",
+    "s": "guild_war",
+    "login": null,
+    "handoff": null,
+    "rc": 1,
+    "e": 50280,
+    "secs": 59,
+    "why": "guild_war: no attempts landed"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-29T13:57:50",
+   "account": "nova",
+   "task": "guild_war",
+   "rc": 1,
+   "secs": 59,
+   "why": "guild_war: no attempts landed",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_135650_guild_war_nova__KEEP_0014_135750_final.png"
+  },
   {
    "ts": "2026-09-29T13:34:48",
    "account": "lucifer2",
@@ -11304,7 +11338,7 @@
   "since": "2026-09-29T08:00",
   "switches": 25,
   "relogMinutes": 10.5,
-  "retries": 27,
+  "retries": 28,
   "tasks": {
    "island_challenge": {
     "runs": 5,
@@ -11392,13 +11426,13 @@
     "failed": 1
    },
    "guild_war": {
-    "runs": 8,
-    "minutes": 7.4,
-    "failed": 1
+    "runs": 9,
+    "minutes": 8.4,
+    "failed": 2
    },
    "rank_match": {
-    "runs": 1,
-    "minutes": 1.2,
+    "runs": 2,
+    "minutes": 4.4,
     "failed": 0
    }
   }
@@ -12132,79 +12166,79 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T13:55"
-   },
-   {
-    "account": "nova",
-    "task": "guild_war",
-    "startsIn": 1.2,
-    "eta": "2026-09-29T13:57"
-   },
-   {
     "account": "jeff",
     "task": "rank_match",
-    "startsIn": 2.5,
+    "startsIn": 0.4,
     "eta": "2026-09-29T13:58"
    },
    {
     "account": "jeff",
     "task": "guild_war",
-    "startsIn": 3.7,
-    "eta": "2026-09-29T13:59"
+    "startsIn": 2.6,
+    "eta": "2026-09-29T14:00"
    },
    {
     "account": "chris",
     "task": "rank_match",
-    "startsIn": 5.0,
+    "startsIn": 3.9,
     "eta": "2026-09-29T14:01"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 6.2,
-    "eta": "2026-09-29T14:02"
-   },
-   {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 7.6,
-    "eta": "2026-09-29T14:03"
-   },
-   {
-    "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 8.8,
+    "startsIn": 6.1,
     "eta": "2026-09-29T14:04"
    },
    {
-    "account": "fake1",
+    "account": "smurf",
     "task": "rank_match",
-    "startsIn": 10.1,
-    "eta": "2026-09-29T14:06"
+    "startsIn": 7.5,
+    "eta": "2026-09-29T14:05"
    },
    {
-    "account": "fake1",
+    "account": "smurf",
     "task": "guild_war",
-    "startsIn": 11.3,
+    "startsIn": 9.7,
     "eta": "2026-09-29T14:07"
    },
    {
+    "account": "fake1",
+    "task": "rank_match",
+    "startsIn": 11.0,
+    "eta": "2026-09-29T14:09"
+   },
+   {
+    "account": "fake1",
+    "task": "guild_war",
+    "startsIn": 13.2,
+    "eta": "2026-09-29T14:11"
+   },
+   {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 12.6,
-    "eta": "2026-09-29T14:08"
+    "startsIn": 14.5,
+    "eta": "2026-09-29T14:12"
    },
    {
     "account": "fake2",
     "task": "guild_war",
-    "startsIn": 13.8,
-    "eta": "2026-09-29T14:09"
+    "startsIn": 16.7,
+    "eta": "2026-09-29T14:14"
+   },
+   {
+    "account": "fake3",
+    "task": "rank_match",
+    "startsIn": 18.1,
+    "eta": "2026-09-29T14:16"
+   },
+   {
+    "account": "fake3",
+    "task": "guild_war",
+    "startsIn": 20.3,
+    "eta": "2026-09-29T14:18"
    }
   ],
-  "more": 48,
+  "more": 46,
   "fillers": [
    {
     "account": "smurf",
@@ -12240,12 +12274,6 @@
   }
  },
  "progress": {
-  "lucifer2": {
-   "rank": 217,
-   "mailUnread": 0,
-   "paradiseStamina": "2/12",
-   "pillar": "floor 89 stage 7"
-  },
   "fake8": {
    "mailUnread": 0,
    "paradiseStamina": "20/20",
@@ -12334,6 +12362,12 @@
    "mailUnread": 0,
    "paradiseStamina": "0/12",
    "pillar": "floor 95 stage 1"
+  },
+  "lucifer2": {
+   "rank": 217,
+   "mailUnread": 0,
+   "paradiseStamina": "2/12",
+   "pillar": "floor 89 stage 7"
   },
   "dre": {
    "mailUnread": 0,
@@ -12778,8 +12812,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-29",
-   "summary": "12 of 17 dailies done · gave up on bash · 1 not available today",
-   "done": 12,
+   "summary": "13 of 17 dailies done · gave up on bash, guildBoss · 1 not available today",
+   "done": 13,
    "owed": 17,
    "open": [
     {
@@ -12795,15 +12829,17 @@
      "state": "gave up"
     },
     {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
      "task": "guildBoss",
-     "state": "still to do"
+     "state": "gave up"
     }
    ],
    "issues": [
+    {
+     "task": "guild_war",
+     "at": "13:57",
+     "why": "guild war: no attempts landed",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_135650_guild_war_nova__KEEP_0014_135750_final.png"
+    },
     {
      "task": "weekend_bash",
      "at": "10:05",
@@ -12866,8 +12902,8 @@
     },
     {
      "day": "2026-09-29",
-     "done": 13,
-     "failed": 2
+     "done": 14,
+     "failed": 3
     }
    ]
   },
