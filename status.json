@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T06:29:47.624511",
+ "generatedAt": "2026-09-30T06:31:51.529246",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "rift",
-  "since": "06:27:04"
+  "account": "lucifer1",
+  "mode": "hoopa",
+  "since": "06:30:55"
  },
  "grid": {
   "tasks": [
@@ -785,11 +785,27 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-30T06:27:24.264635",
+  "label": "lucifer1",
+  "at": "2026-09-30T06:31:12.424617",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T06:30:55",
+   "script": "rift",
+   "account": "deno",
+   "rc": 2,
+   "secs": 195,
+   "stats": {
+    "rift_levels": 35,
+    "rift_rerolls": 6,
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_062739_rift_deno"
+  },
   {
    "ts": "2026-09-30T06:13:14",
    "script": "hoopa",
@@ -8428,30 +8444,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_100504_combat_daily_nova"
-  },
-  {
-   "ts": "2026-09-29T10:05:02",
-   "script": "weekend_bash",
-   "account": "nova",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "weekend_bash: tab 2 did not open"
-   ],
-   "values": {
-    "tickets": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_100448_weekend_bash_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 109788,
+  "now": 109911,
   "segments": [
    {
     "b": 34830,
@@ -8675,10 +8673,8 @@
     "s": "weekend_bash",
     "login": null,
     "handoff": 36288,
-    "rc": 1,
-    "e": 36303,
-    "secs": 13,
-    "why": "weekend_bash: tab 2 did not open"
+    "rc": null,
+    "e": 36303
    },
    {
     "b": 36303,
@@ -15806,8 +15802,22 @@
      109644
     ],
     "handoff": 109659,
+    "rc": 2,
+    "e": 109855,
+    "secs": 195,
+    "why": ""
+   },
+   {
+    "b": 109855,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     109856,
+     109872
+    ],
+    "handoff": 109883,
     "rc": null,
-    "e": 109788
+    "e": 109911
    }
   ],
   "idle": [
@@ -16362,21 +16372,12 @@
    "secs": 32,
    "why": "faction: fire tower: lost the battle after 2 win(s) — the team needs adjusting",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_104636_faction_smurf__KEEP_0045_104709_final.png"
-  },
-  {
-   "ts": "2026-09-29T10:05:02",
-   "account": "nova",
-   "task": "weekend_bash",
-   "rc": 1,
-   "secs": 13,
-   "why": "weekend_bash: tab 2 did not open",
-   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_100448_weekend_bash_nova__KEEP_0001_100502_final.png"
   }
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 353,
-  "relogMinutes": 108.0,
+  "switches": 354,
+  "relogMinutes": 108.5,
   "retries": 84,
   "tasks": {
    "island_challenge": {
@@ -16475,8 +16476,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 40,
-    "minutes": 144.5,
+    "runs": 41,
+    "minutes": 147.8,
     "failed": 1
    },
    "ring_battle": {
@@ -16503,6 +16504,12 @@
    "task": "rift",
    "why": "rift_levels, rift_rerolls, rift_finished",
    "at": "2026-09-29T17:04:29"
+  },
+  {
+   "account": "deno",
+   "task": "rift",
+   "why": "rift_levels, rift_rerolls, rift_finished",
+   "at": "2026-09-30T06:30:55"
   },
   {
    "account": "dre",
@@ -17095,12 +17102,6 @@
    "ts": "2026-09-29T12:47:55",
    "area": "pokemon_home",
    "subject": "a craft is a merge, not a creation -- the cap counts merges"
-  },
-  {
-   "sha": "00101a4",
-   "ts": "2026-09-28T18:30:04",
-   "area": "Revert \"switch_account",
-   "subject": "wait out macOS's autocorrect bubble before the password\""
   }
  ],
  "phase": {
@@ -17124,10 +17125,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "deno",
-    "mode": "rift"
-   },
-   {
     "account": "lucifer2",
     "mode": "rift"
    },
@@ -17147,12 +17144,12 @@
   "restarts": 0,
   "downtimeMin": 2.1,
   "switches": {
-   "n": 211,
-   "medianSec": 16,
+   "n": 212,
+   "medianSec": 16.0,
    "picker": {
-    "n": 173,
-    "medianSec": 16,
-    "jumps": 99
+    "n": 174,
+    "medianSec": 16.0,
+    "jumps": 100
    },
    "typed": {
     "n": 1,
@@ -17537,12 +17534,6 @@
      "at": "13:57",
      "why": "guild war: no attempts landed",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_135650_guild_war_nova__KEEP_0014_135750_final.png"
-    },
-    {
-     "task": "weekend_bash",
-     "at": "10:05",
-     "why": "weekend_bash: tab 2 did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260929_100448_weekend_bash_nova__KEEP_0001_100502_final.png"
     }
    ],
    "off": [],
@@ -19049,7 +19040,7 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-29",
-   "summary": "16 of 16 dailies done",
+   "summary": "16 of 16 dailies done · 1 not available today",
    "done": 16,
    "owed": 16,
    "open": [],
@@ -19062,7 +19053,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rift",
+     "why": "rift_levels, rift_rerolls, rift_finished"
+    }
+   ],
    "spent": {},
    "progress": {
     "mailUnread": 0,
