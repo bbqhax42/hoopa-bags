@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T14:39:19.667008",
+ "generatedAt": "2026-09-29T14:41:23.839616",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake8",
-  "mode": "sky_pillar",
-  "since": "14:39:04"
+  "account": "deno",
+  "mode": "dailyclaim",
+  "since": "14:40:22"
  },
  "grid": {
   "tasks": [
@@ -466,8 +466,8 @@
      "✓",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "-",
      "-",
@@ -529,10 +529,10 @@
   ]
  },
  "counts": {
-  "done": 221,
-  "todo": 29,
+  "done": 222,
+  "todo": 27,
   "gaveUp": 9,
-  "unavailable": 16,
+  "unavailable": 17,
   "windowed": 16
  },
  "disabled": [
@@ -779,11 +779,43 @@
   }
  },
  "session": {
-  "label": "fake8",
-  "at": "2026-09-29T14:29:01.697881",
+  "label": "deno",
+  "at": "2026-09-29T14:40:42.098095",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T14:40:21",
+   "script": "faction",
+   "account": "fake8",
+   "rc": 2,
+   "secs": 0,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_144021_faction_fake8"
+  },
+  {
+   "ts": "2026-09-29T14:40:17",
+   "script": "sky_pillar",
+   "account": "fake8",
+   "rc": 0,
+   "secs": 72,
+   "stats": {
+    "stage_lost": 1,
+    "sky_pillar_loss": 1,
+    "sweep_presses": 6,
+    "proofs_banked": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "proofs_spent": 6
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260929_143905_sky_pillar_fake8"
+  },
   {
    "ts": "2026-09-29T14:39:04",
    "script": "collect_hoopa_keys",
@@ -8553,49 +8585,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260928_135801_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-09-28T13:58:00",
-   "script": "rank_match",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 63,
-   "stats": {
-    "skip_tapped": 8,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2,
-    "rank_panel_scroll": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_135656_rank_match_smurf"
-  },
-  {
-   "ts": "2026-09-28T13:56:30",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "off_season": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260928_135625_run_pvp_ranked_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 52760,
+  "now": 52884,
   "segments": [
    {
     "b": 34830,
@@ -11590,8 +11585,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 52745,
+    "rc": 0,
+    "e": 52818,
+    "secs": 72,
+    "why": ""
+   },
+   {
+    "b": 52818,
+    "a": "fake8",
+    "s": "faction",
+    "login": null,
+    "handoff": 52821,
+    "rc": 2,
+    "e": 52822,
+    "secs": 0,
+    "why": ""
+   },
+   {
+    "b": 52822,
+    "a": "deno",
+    "s": "dailyclaim",
+    "login": [
+     52823,
+     52842
+    ],
+    "handoff": 52851,
     "rc": null,
-    "e": 52760
+    "e": 52884
    }
   ],
   "idle": []
@@ -11816,8 +11836,8 @@
  ],
  "day": {
   "since": "2026-09-29T08:00",
-  "switches": 40,
-  "relogMinutes": 16.6,
+  "switches": 41,
+  "relogMinutes": 17.1,
   "retries": 29,
   "tasks": {
    "island_challenge": {
@@ -11881,12 +11901,12 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 16,
-    "minutes": 19.8,
+    "runs": 17,
+    "minutes": 21.0,
     "failed": 0
    },
    "faction": {
-    "runs": 10,
+    "runs": 11,
     "minutes": 14.6,
     "failed": 3
    },
@@ -11983,6 +12003,12 @@
    "task": "teamshop",
    "why": null,
    "at": null
+  },
+  {
+   "account": "fake8",
+   "task": "faction",
+   "why": "reported unavailable",
+   "at": "2026-09-29T14:40:21"
   },
   {
    "account": "fake8",
@@ -12646,79 +12672,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake8",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T14:39"
-   },
-   {
-    "account": "fake8",
-    "task": "faction",
-    "startsIn": 1.2,
-    "eta": "2026-09-29T14:40"
-   },
-   {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 3.1,
-    "eta": "2026-09-29T14:42"
+    "startsIn": 0.0,
+    "eta": "2026-09-29T14:41"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 3.6,
-    "eta": "2026-09-29T14:42"
+    "startsIn": 0.5,
+    "eta": "2026-09-29T14:41"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 3.7,
-    "eta": "2026-09-29T14:42"
+    "startsIn": 0.6,
+    "eta": "2026-09-29T14:41"
    },
    {
     "account": "deno",
     "task": "daily_dungeon",
-    "startsIn": 4.6,
-    "eta": "2026-09-29T14:43"
+    "startsIn": 1.5,
+    "eta": "2026-09-29T14:42"
    },
    {
     "account": "deno",
     "task": "pokemon_home",
-    "startsIn": 4.9,
-    "eta": "2026-09-29T14:44"
+    "startsIn": 1.8,
+    "eta": "2026-09-29T14:43"
    },
    {
     "account": "deno",
     "task": "weekend_bash",
-    "startsIn": 5.6,
-    "eta": "2026-09-29T14:44"
+    "startsIn": 2.5,
+    "eta": "2026-09-29T14:43"
    },
    {
     "account": "deno",
     "task": "combat_daily",
-    "startsIn": 5.8,
-    "eta": "2026-09-29T14:45"
+    "startsIn": 2.7,
+    "eta": "2026-09-29T14:44"
    },
    {
     "account": "deno",
     "task": "victory_road",
-    "startsIn": 7.4,
-    "eta": "2026-09-29T14:46"
+    "startsIn": 4.3,
+    "eta": "2026-09-29T14:45"
    },
    {
     "account": "deno",
     "task": "rank_match",
-    "startsIn": 7.5,
-    "eta": "2026-09-29T14:46"
+    "startsIn": 4.4,
+    "eta": "2026-09-29T14:45"
    },
    {
     "account": "deno",
     "task": "paradise",
-    "startsIn": 8.7,
-    "eta": "2026-09-29T14:48"
+    "startsIn": 5.6,
+    "eta": "2026-09-29T14:47"
+   },
+   {
+    "account": "deno",
+    "task": "collect_hoopa_keys",
+    "startsIn": 9.0,
+    "eta": "2026-09-29T14:50"
+   },
+   {
+    "account": "deno",
+    "task": "sky_pillar",
+    "startsIn": 9.1,
+    "eta": "2026-09-29T14:50"
    }
   ],
-  "more": 17,
+  "more": 15,
   "fillers": [
    {
     "account": "smurf",
@@ -12736,8 +12762,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 39,
-   "medianSec": 18,
+   "n": 40,
+   "medianSec": 18.0,
    "picker": {
     "n": 32,
     "medianSec": 17.0,
@@ -12748,18 +12774,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 7,
-    "medianSec": 20
+    "n": 8,
+    "medianSec": 20.0
    }
   }
  },
  "progress": {
-  "smurf": {
-   "rank": 193,
-   "mailUnread": 0,
-   "pillar": "floor 20 stage 6",
-   "misty": "step 1"
-  },
   "fake1": {
    "mailUnread": 0,
    "paradiseStamina": "2/12",
@@ -12844,6 +12864,12 @@
    "paradiseStamina": "0/10",
    "pillar": "floor 150 stage 4"
   },
+  "smurf": {
+   "rank": 193,
+   "mailUnread": 0,
+   "pillar": "floor 20 stage 6",
+   "misty": "step 1"
+  },
   "fake8": {
    "mailUnread": 0,
    "paradiseStamina": "0/12"
@@ -12856,6 +12882,7 @@
  },
  "ledger": {
   "fake8": {
+   "pillar proofs swept": 6,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
@@ -14786,8 +14813,8 @@
   "fake8": {
    "name": "Asdggfyd",
    "day": "2026-09-29",
-   "summary": "10 of 15 dailies done · 2 switched off · 2 not available today",
-   "done": 10,
+   "summary": "11 of 15 dailies done · 2 switched off · 3 not available today",
+   "done": 11,
    "owed": 15,
    "open": [
     {
@@ -14803,12 +14830,8 @@
      "state": "not available today"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
    "issues": [
@@ -14833,6 +14856,10 @@
    ],
    "unavailable": [
     {
+     "task": "faction",
+     "why": "reported unavailable"
+    },
+    {
      "task": "rank_match",
      "why": null
     },
@@ -14842,6 +14869,7 @@
     }
    ],
    "spent": {
+    "pillar proofs swept": 6,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
@@ -14884,7 +14912,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 11,
+     "done": 12,
      "failed": 1
     }
    ]
