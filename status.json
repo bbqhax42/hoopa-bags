@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-29T10:18:39.568943",
+ "generatedAt": "2026-09-29T10:20:44.182341",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "pokemon_home",
-  "since": "10:18:24"
+  "mode": "combat_daily",
+  "since": "10:20:12"
  },
  "grid": {
   "tasks": [
@@ -67,8 +67,8 @@
      "✓",
      "⏰",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -529,8 +529,8 @@
   ]
  },
  "counts": {
-  "done": 31,
-  "todo": 202,
+  "done": 33,
+  "todo": 200,
   "gaveUp": 1,
   "unavailable": 11,
   "windowed": 52
@@ -784,6 +784,49 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-29T10:20:11",
+   "script": "weekend_bash",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 16,
+   "stats": {
+    "near_miss_nav_explore": 2,
+    "tickets": 25
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 140,
+    "tickets": 25
+   },
+   "values_all": {
+    "diamonds_spent": [
+     735,
+     140
+    ]
+   },
+   "dir": "debug_runs/20260929_101955_weekend_bash_jeff"
+  },
+  {
+   "ts": "2026-09-29T10:19:49",
+   "script": "pokemon_home",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 84,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "grid_shrank_rejected": 1,
+    "merge_moved_instead": 3,
+    "ball_tiles_not_merged": 1,
+    "balls_unsettled_opened": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260929_101825_pokemon_home_jeff"
+  },
   {
    "ts": "2026-09-29T10:18:22",
    "script": "daily_dungeon",
@@ -8045,59 +8088,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260928_094839_championship_smurf"
-  },
-  {
-   "ts": "2026-09-28T09:48:36",
-   "script": "championship",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 22,
-   "stats": {
-    "skip_tapped": 6,
-    "fights": 6,
-    "ladder_stalled": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "championship: the ladder stopped progressing"
-   ],
-   "values": {
-    "fights": 6,
-    "tiers": 1
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260928_094814_championship_smurf"
-  },
-  {
-   "ts": "2026-09-28T09:48:11",
-   "script": "ultra_wormhole",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 267,
-   "stats": {
-    "wins": 15,
-    "hired": 64,
-    "losses": 2,
-    "rewards_claimed": 5
-   },
-   "incomplete": [],
-   "values": {
-    "rewards_claimed": 5,
-    "wins_today": 16
-   },
-   "values_all": {
-    "rewards_claimed": [
-     0,
-     5
-    ]
-   },
-   "dir": "debug_runs/20260928_094344_ultra_wormhole_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-29T00:00",
   "since": 28800.0,
-  "now": 37120,
+  "now": 37244,
   "segments": [
    {
     "b": 34830,
@@ -8502,8 +8498,30 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 37104,
+    "rc": 0,
+    "e": 37190,
+    "secs": 84,
+    "why": ""
+   },
+   {
+    "b": 37190,
+    "a": "jeff",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 37195,
+    "rc": 0,
+    "e": 37212,
+    "secs": 16,
+    "why": ""
+   },
+   {
+    "b": 37212,
+    "a": "jeff",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 37213,
     "rc": null,
-    "e": 37120
+    "e": 37244
    }
   ],
   "idle": []
@@ -8560,13 +8578,13 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 2,
-    "minutes": 2.8,
+    "runs": 3,
+    "minutes": 4.2,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 3,
-    "minutes": 0.7,
+    "runs": 4,
+    "minutes": 1.0,
     "failed": 2
    },
    "combat_daily": {
@@ -9310,78 +9328,78 @@
   "next": [
    {
     "account": "jeff",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-09-29T10:18"
-   },
-   {
-    "account": "jeff",
-    "task": "weekend_bash",
-    "startsIn": 1.4,
-    "eta": "2026-09-29T10:20"
-   },
-   {
-    "account": "jeff",
     "task": "combat_daily",
-    "startsIn": 1.6,
+    "startsIn": 0.0,
     "eta": "2026-09-29T10:20"
    },
    {
     "account": "jeff",
     "task": "victory_road",
-    "startsIn": 3.4,
+    "startsIn": 1.8,
     "eta": "2026-09-29T10:22"
    },
    {
     "account": "jeff",
     "task": "paradise",
-    "startsIn": 3.5,
+    "startsIn": 1.9,
     "eta": "2026-09-29T10:22"
    },
    {
     "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 6.7,
+    "startsIn": 5.1,
     "eta": "2026-09-29T10:25"
    },
    {
     "account": "jeff",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.1,
-    "eta": "2026-09-29T10:26"
+    "startsIn": 6.4,
+    "eta": "2026-09-29T10:27"
    },
    {
     "account": "jeff",
     "task": "sky_pillar",
-    "startsIn": 8.2,
-    "eta": "2026-09-29T10:26"
+    "startsIn": 6.5,
+    "eta": "2026-09-29T10:27"
    },
    {
     "account": "jeff",
     "task": "ultra_wormhole",
-    "startsIn": 8.7,
+    "startsIn": 7.1,
     "eta": "2026-09-29T10:27"
    },
    {
     "account": "jeff",
     "task": "championship",
-    "startsIn": 12.9,
-    "eta": "2026-09-29T10:31"
+    "startsIn": 11.3,
+    "eta": "2026-09-29T10:32"
    },
    {
     "account": "smurf",
     "task": "dailyclaim",
-    "startsIn": 13.4,
+    "startsIn": 11.8,
     "eta": "2026-09-29T10:32"
    },
    {
     "account": "smurf",
     "task": "mail",
-    "startsIn": 14.0,
-    "eta": "2026-09-29T10:32"
+    "startsIn": 12.3,
+    "eta": "2026-09-29T10:33"
+   },
+   {
+    "account": "smurf",
+    "task": "joint_team_daily_quest",
+    "startsIn": 12.4,
+    "eta": "2026-09-29T10:33"
+   },
+   {
+    "account": "smurf",
+    "task": "daily_dungeon",
+    "startsIn": 13.3,
+    "eta": "2026-09-29T10:34"
    }
   ],
-  "more": 190,
+  "more": 188,
   "fillers": [
    {
     "account": "smurf",
@@ -9520,6 +9538,7 @@
  },
  "ledger": {
   "jeff": {
+   "Home creations": 50,
    "daily claims": 3,
    "island fights": 6
   },
@@ -9887,21 +9906,13 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-29",
-   "summary": "4 of 18 dailies done",
-   "done": 4,
+   "summary": "6 of 18 dailies done",
+   "done": 6,
    "owed": 18,
    "open": [
     {
      "task": "JointB",
      "state": "waits for its window"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -9959,6 +9970,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "daily claims": 3,
     "island fights": 6
    },
@@ -10001,7 +10013,7 @@
     },
     {
      "day": "2026-09-29",
-     "done": 5,
+     "done": 7,
      "failed": 0
     }
    ]
