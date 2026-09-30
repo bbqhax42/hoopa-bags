@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T19:59:50.041753",
+ "generatedAt": "2026-09-30T20:01:53.451711",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "dynamax",
-  "since": "19:58:20"
+  "account": "nova",
+  "mode": "worldboss",
+  "since": "20:01:52"
  },
  "grid": {
   "tasks": [
@@ -822,11 +822,43 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-30T19:58:35.441018",
+  "label": "jeff",
+  "at": "2026-09-30T20:01:07.830715",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T20:01:52",
+   "script": "worldboss",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_200053_worldboss_jeff"
+  },
+  {
+   "ts": "2026-09-30T20:00:53",
+   "script": "worldboss",
+   "account": "chris",
+   "rc": 0,
+   "secs": 39,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_200013_worldboss_chris"
+  },
   {
    "ts": "2026-09-30T19:41:43",
    "script": "hoopa",
@@ -8617,36 +8649,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_024236_worldboss_fake7"
-  },
-  {
-   "ts": "2026-09-30T02:42:35",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 1,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_024235_worldboss_fake6"
-  },
-  {
-   "ts": "2026-09-30T02:42:35",
-   "script": "worldboss",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_024234_worldboss_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 71990,
+  "now": 72113,
   "segments": [
    {
     "b": 28937,
@@ -13577,7 +13585,44 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 71990
+    "e": 72013
+   },
+   {
+    "b": 72013,
+    "a": "chris",
+    "s": "worldboss",
+    "login": null,
+    "handoff": null,
+    "rc": 0,
+    "e": 72053,
+    "secs": 39,
+    "why": ""
+   },
+   {
+    "b": 72053,
+    "a": "jeff",
+    "s": "worldboss",
+    "login": [
+     72053,
+     72067
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72112,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 72112,
+    "a": "nova",
+    "s": "worldboss",
+    "login": [
+     72113,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 72113
    }
   ],
   "idle": [
@@ -14110,29 +14155,11 @@
    "secs": 0,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:42:35",
-   "account": "fake6",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 0,
-   "why": "account switch failed",
-   "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:42:35",
-   "account": "fake5",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 0,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 117,
+  "switches": 119,
   "relogMinutes": 48.3,
   "retries": 53,
   "tasks": {
@@ -14245,6 +14272,11 @@
     "runs": 1,
     "minutes": 0.2,
     "failed": 1
+   },
+   "worldboss": {
+    "runs": 2,
+    "minutes": 1.6,
+    "failed": 0
    }
   }
  },
@@ -14501,10 +14533,10 @@
    "needs": 4,
    "cost": 4,
    "observed_at": "2026-09-30T19:59:42.456234",
-   "runs": 663,
+   "runs": 664,
    "cooldown_until": "2026-09-30T03:27:07.662213",
    "kicks": 1,
-   "last_run_actions": 3
+   "last_run_actions": 2
   },
   "smurf": {
    "energy": 1,
@@ -14528,27 +14560,6 @@
   }
  },
  "worldBoss": {
-  "2026-09-28_20:00": [
-   "jeff",
-   "chris",
-   "nova",
-   "smurf",
-   "fake1",
-   "fake2",
-   "fake3",
-   "fake4",
-   "fake5",
-   "fake6",
-   "sprite",
-   "exou",
-   "skosmurf",
-   "lucifer1",
-   "lucifer2",
-   "fake8",
-   "deno",
-   "dre",
-   "fake7"
-  ],
   "2026-09-29_02:00": [
    "lucifer1",
    "chris",
@@ -14611,6 +14622,10 @@
    "fake6",
    "fake7",
    "fake8"
+  ],
+  "2026-09-30_20:00": [
+   "chris",
+   "jeff"
   ]
  },
  "worldBossSkipped": {},
@@ -14812,11 +14827,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 114,
-   "medianSec": 16.0,
+   "n": 115,
+   "medianSec": 16,
    "picker": {
-    "n": 84,
-    "medianSec": 15.0,
+    "n": 85,
+    "medianSec": 15,
     "jumps": 44
    },
    "typed": {
@@ -15610,7 +15625,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 16,
+     "done": 17,
      "failed": 4
     }
    ]
@@ -15712,7 +15727,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 16,
+     "done": 17,
      "failed": 3
     }
    ]
@@ -16193,14 +16208,7 @@
      "state": "not available today"
     }
    ],
-   "issues": [
-    {
-     "task": "worldboss",
-     "at": "02:42",
-     "why": "account switch failed",
-     "frame": null
-    }
-   ],
+   "issues": [],
    "off": [
     {
      "task": "hoopa",
@@ -16282,14 +16290,7 @@
      "state": "not available today"
     }
    ],
-   "issues": [
-    {
-     "task": "worldboss",
-     "at": "02:42",
-     "why": "account switch failed",
-     "frame": null
-    }
-   ],
+   "issues": [],
    "off": [
     {
      "task": "hoopa",
