@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T09:25:36.483081",
+ "generatedAt": "2026-09-30T09:27:40.811754",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "ring_battle",
-  "since": "09:25:32"
+  "account": "smurf",
+  "mode": "dailyclaim",
+  "since": "09:27:24"
  },
  "grid": {
   "tasks": [
@@ -82,8 +82,8 @@
      "-",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "💤",
      "💤"
     ]
    },
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 56,
-  "todo": 209,
+  "done": 57,
+  "todo": 207,
   "gaveUp": 4,
   "unavailable": 12,
   "windowed": 38
@@ -743,6 +743,7 @@
  "snoozed": {
   "chris|championship": "2026-09-30T12:00",
   "chris|island_challenge": "2026-09-30T12:49",
+  "jeff|championship": "2026-09-30T12:00",
   "jeff|island_challenge": "2026-09-30T13:18",
   "skomain|championship": "2026-09-30T12:00"
  },
@@ -814,11 +815,41 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-30T09:24:53.212695",
+  "label": "jeff",
+  "at": "2026-09-30T09:25:48.633811",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T09:27:23",
+   "script": "championship",
+   "account": "jeff",
+   "rc": 5,
+   "secs": 4,
+   "stats": {
+    "no_icon": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_092718_championship_jeff"
+  },
+  {
+   "ts": "2026-09-30T09:26:59",
+   "script": "ring_battle",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "ring_auto_formation": 1,
+    "ring_wins": 6,
+    "ring_chests": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_092600_ring_battle_jeff"
+  },
   {
    "ts": "2026-09-30T09:25:31",
    "script": "island_challenge",
@@ -8281,56 +8312,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_114950_victory_road_fake5"
-  },
-  {
-   "ts": "2026-09-29T11:49:49",
-   "script": "combat_daily",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 118,
-   "stats": {
-    "title_reread_named": 6,
-    "near_miss_afk_rewards": 1,
-    "marginal_battle_victory_confirm": 3,
-    "near_miss_vr_rank": 2,
-    "near_miss_vr_rank_reward": 1,
-    "near_miss_adventure_event": 1,
-    "upgrade_blocked_by_first_topup": 1,
-    "pokemon_upgraded": 1,
-    "gacha_free": 1,
-    "island_shop_bought": 1,
-    "other_task_rows_left": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 + ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free",
-    "left": "craft row still open (for pokemon_home)"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_114751_combat_daily_fake5"
-  },
-  {
-   "ts": "2026-09-29T11:47:45",
-   "script": "pokemon_home",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 10,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_left_by_cap": 49
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_114734_pokemon_home_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 33937,
+  "now": 34061,
   "segments": [
    {
     "b": 28937,
@@ -9166,11 +9153,36 @@
     "s": "ring_battle",
     "login": [
      33932,
+     33948
+    ],
+    "handoff": 33959,
+    "rc": 0,
+    "e": 34020,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 34020,
+    "a": "jeff",
+    "s": "championship",
+    "login": null,
+    "handoff": 34038,
+    "rc": 5,
+    "e": 34044,
+    "secs": 4,
+    "why": ""
+   },
+   {
+    "b": 34044,
+    "a": "smurf",
+    "s": "dailyclaim",
+    "login": [
+     34045,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 33937
+    "e": 34061
    }
   ],
   "idle": []
@@ -9602,9 +9614,9 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 12,
-  "relogMinutes": 4.5,
-  "retries": 16,
+  "switches": 13,
+  "relogMinutes": 5.0,
+  "retries": 17,
   "tasks": {
    "island_challenge": {
     "runs": 6,
@@ -9682,14 +9694,14 @@
     "failed": 0
    },
    "ring_battle": {
-    "runs": 3,
-    "minutes": 2.9,
+    "runs": 4,
+    "minutes": 3.9,
     "failed": 0
    },
    "championship": {
-    "runs": 1,
-    "minutes": 0.1,
-    "failed": 1
+    "runs": 2,
+    "minutes": 0.2,
+    "failed": 2
    }
   }
  },
@@ -10221,79 +10233,79 @@
  "queue": {
   "next": [
    {
-    "account": "jeff",
-    "task": "ring_battle",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T09:25"
-   },
-   {
-    "account": "jeff",
-    "task": "championship",
-    "startsIn": 1.0,
-    "eta": "2026-09-30T09:26"
-   },
-   {
     "account": "smurf",
     "task": "dailyclaim",
-    "startsIn": 1.5,
+    "startsIn": 0.0,
     "eta": "2026-09-30T09:27"
    },
    {
     "account": "smurf",
     "task": "mail",
-    "startsIn": 2.1,
-    "eta": "2026-09-30T09:27"
-   },
-   {
-    "account": "smurf",
-    "task": "joint_team_daily_quest",
-    "startsIn": 2.1,
-    "eta": "2026-09-30T09:27"
-   },
-   {
-    "account": "smurf",
-    "task": "joint_battle",
-    "startsIn": 3.0,
+    "startsIn": 0.6,
     "eta": "2026-09-30T09:28"
    },
    {
     "account": "smurf",
+    "task": "joint_team_daily_quest",
+    "startsIn": 0.7,
+    "eta": "2026-09-30T09:28"
+   },
+   {
+    "account": "smurf",
+    "task": "joint_battle",
+    "startsIn": 1.5,
+    "eta": "2026-09-30T09:29"
+   },
+   {
+    "account": "smurf",
     "task": "daily_dungeon",
-    "startsIn": 5.0,
-    "eta": "2026-09-30T09:30"
+    "startsIn": 3.5,
+    "eta": "2026-09-30T09:31"
    },
    {
     "account": "smurf",
     "task": "pokemon_home",
-    "startsIn": 5.2,
-    "eta": "2026-09-30T09:30"
+    "startsIn": 3.7,
+    "eta": "2026-09-30T09:31"
    },
    {
     "account": "smurf",
     "task": "weekend_bash",
-    "startsIn": 6.7,
+    "startsIn": 5.2,
     "eta": "2026-09-30T09:32"
    },
    {
     "account": "smurf",
     "task": "combat_daily",
-    "startsIn": 6.9,
-    "eta": "2026-09-30T09:32"
+    "startsIn": 5.4,
+    "eta": "2026-09-30T09:33"
    },
    {
     "account": "smurf",
     "task": "victory_road",
-    "startsIn": 8.7,
+    "startsIn": 7.2,
     "eta": "2026-09-30T09:34"
    },
    {
     "account": "smurf",
     "task": "paradise",
-    "startsIn": 8.8,
-    "eta": "2026-09-30T09:34"
+    "startsIn": 7.3,
+    "eta": "2026-09-30T09:35"
+   },
+   {
+    "account": "smurf",
+    "task": "run_pvp_ranked",
+    "startsIn": 10.6,
+    "eta": "2026-09-30T09:38"
+   },
+   {
+    "account": "smurf",
+    "task": "collect_hoopa_keys",
+    "startsIn": 11.8,
+    "eta": "2026-09-30T09:39"
    }
   ],
-  "more": 197,
+  "more": 195,
   "fillers": [
    {
     "account": "skomain",
@@ -10327,11 +10339,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 11,
-   "medianSec": 15,
+   "n": 12,
+   "medianSec": 15.0,
    "picker": {
-    "n": 8,
-    "medianSec": 15.0,
+    "n": 9,
+    "medianSec": 15,
     "jumps": 2
    },
    "typed": {
@@ -10819,8 +10831,8 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-30",
-   "summary": "13 of 19 dailies done · gave up on bash",
-   "done": 13,
+   "summary": "14 of 19 dailies done · gave up on bash",
+   "done": 14,
    "owed": 19,
    "open": [
     {
@@ -10836,12 +10848,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "ring",
-     "state": "still to do"
-    },
-    {
      "task": "champ",
-     "state": "still to do"
+     "state": "asks again later"
     },
     {
      "task": "island",
@@ -10927,7 +10935,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 13,
+     "done": 14,
      "failed": 4
     }
    ]
