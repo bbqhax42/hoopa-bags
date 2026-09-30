@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T13:25:34.903844",
+ "generatedAt": "2026-09-30T13:27:38.682198",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "pokemon_home",
-  "since": "13:24:12"
+  "mode": "combat_daily",
+  "since": "13:26:19"
  },
  "grid": {
   "tasks": [
@@ -555,8 +555,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 247,
-  "todo": 27,
-  "gaveUp": 12,
+  "done": 248,
+  "todo": 25,
+  "gaveUp": 13,
   "unavailable": 18,
   "windowed": 18
  },
@@ -817,6 +817,62 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T13:26:18",
+   "script": "weekend_bash",
+   "account": "dre",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_132605_weekend_bash_dre"
+  },
+  {
+   "ts": "2026-09-30T13:26:04",
+   "script": "weekend_bash",
+   "account": "dre",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_132550_weekend_bash_dre"
+  },
+  {
+   "ts": "2026-09-30T13:25:45",
+   "script": "pokemon_home",
+   "account": "dre",
+   "rc": 0,
+   "secs": 91,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "merge_moved_instead": 2,
+    "merge_refused": 1,
+    "balls_unsettled_opened": 1,
+    "grid_refit_column_slip_rejected": 9,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_132413_pokemon_home_dre"
+  },
   {
    "ts": "2026-09-30T13:24:11",
    "script": "daily_dungeon",
@@ -8248,51 +8304,12 @@
     ]
    },
    "dir": "debug_runs/20260929_173735_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-29T17:36:46",
-   "script": "arena",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 47,
-   "stats": {
-    "arena_wins": 5,
-    "arena_chests": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_173559_arena_jeff"
-  },
-  {
-   "ts": "2026-09-29T17:33:27",
-   "script": "arena",
-   "account": "jeff",
-   "rc": 1,
-   "secs": 66,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_173221_arena_jeff"
-  },
-  {
-   "ts": "2026-09-29T17:31:14",
-   "script": "arena",
-   "account": "chris",
-   "rc": 0,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_173114_arena_chris"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 48335,
+  "now": 48459,
   "segments": [
    {
     "b": 28937,
@@ -11600,13 +11617,64 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 48253,
+    "rc": 0,
+    "e": 48345,
+    "secs": 91,
+    "why": ""
+   },
+   {
+    "b": 48345,
+    "a": "dre",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 48350,
+    "rc": 1,
+    "e": 48364,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 48364,
+    "a": "dre",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 48365,
+    "rc": 1,
+    "e": 48379,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 48379,
+    "a": "dre",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 48379,
     "rc": null,
-    "e": 48335
+    "e": 48459
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T13:26:18",
+   "account": "dre",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_132605_weekend_bash_dre__KEEP_0001_132618_final.png"
+  },
+  {
+   "ts": "2026-09-30T13:26:04",
+   "account": "dre",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_132550_weekend_bash_dre__KEEP_0003_132604_final.png"
+  },
   {
    "ts": "2026-09-30T13:06:17",
    "account": "deno",
@@ -12206,7 +12274,7 @@
   "since": "2026-09-30T08:00",
   "switches": 37,
   "relogMinutes": 16.0,
-  "retries": 40,
+  "retries": 42,
   "tasks": {
    "island_challenge": {
     "runs": 11,
@@ -12234,14 +12302,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 19,
-    "minutes": 16.6,
+    "runs": 20,
+    "minutes": 18.1,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 22,
-    "minutes": 5.1,
-    "failed": 22
+    "runs": 24,
+    "minutes": 5.5,
+    "failed": 24
    },
    "combat_daily": {
     "runs": 20,
@@ -12870,63 +12938,51 @@
   "next": [
    {
     "account": "dre",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T13:25"
-   },
-   {
-    "account": "dre",
-    "task": "weekend_bash",
-    "startsIn": 0.9,
-    "eta": "2026-09-30T13:26"
-   },
-   {
-    "account": "dre",
     "task": "combat_daily",
-    "startsIn": 1.1,
-    "eta": "2026-09-30T13:26"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T13:27"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 2.9,
-    "eta": "2026-09-30T13:28"
+    "startsIn": 1.8,
+    "eta": "2026-09-30T13:29"
    },
    {
     "account": "dre",
     "task": "paradise",
-    "startsIn": 3.0,
-    "eta": "2026-09-30T13:28"
+    "startsIn": 1.9,
+    "eta": "2026-09-30T13:29"
    },
    {
     "account": "dre",
     "task": "guild_war",
-    "startsIn": 6.3,
-    "eta": "2026-09-30T13:31"
+    "startsIn": 5.2,
+    "eta": "2026-09-30T13:32"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.3,
-    "eta": "2026-09-30T13:32"
+    "startsIn": 6.2,
+    "eta": "2026-09-30T13:33"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 7.4,
-    "eta": "2026-09-30T13:32"
+    "startsIn": 6.3,
+    "eta": "2026-09-30T13:33"
    },
    {
     "account": "dre",
     "task": "ultra_wormhole",
-    "startsIn": 8.5,
-    "eta": "2026-09-30T13:34"
+    "startsIn": 7.4,
+    "eta": "2026-09-30T13:35"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 13.1,
-    "eta": "2026-09-30T13:38"
+    "startsIn": 12.0,
+    "eta": "2026-09-30T13:39"
    }
   ],
   "more": 0,
@@ -12957,43 +13013,7 @@
    }
   ],
   "held": {
-   "sprite": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake2": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "exou": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "skomain": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "nova": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "chris": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "fake4": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake1": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake5": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -13001,11 +13021,47 @@
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake6": {
+   "fake3": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake1": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake2": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
    "jeff": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake5": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "chris": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake6": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "skomain": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "exou": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "nova": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -13144,6 +13200,7 @@
  },
  "ledger": {
   "dre": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 5,
    "Privilege Pack claimed": 1
@@ -15488,17 +15545,13 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-30",
-   "summary": "5 of 16 dailies done",
-   "done": 5,
+   "summary": "6 of 16 dailies done · gave up on bash",
+   "done": 6,
    "owed": 16,
    "open": [
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -15539,6 +15592,12 @@
    ],
    "issues": [
     {
+     "task": "weekend_bash",
+     "at": "13:26",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_132605_weekend_bash_dre__KEEP_0001_132618_final.png"
+    },
+    {
      "task": "worldboss",
      "at": "02:42",
      "why": "account switch failed",
@@ -15548,6 +15607,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 5,
     "Privilege Pack claimed": 1
@@ -15588,8 +15648,8 @@
     },
     {
      "day": "2026-09-30",
-     "done": 6,
-     "failed": 2
+     "done": 7,
+     "failed": 4
     }
    ]
   }
