@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T18:31:08.310910",
+ "generatedAt": "2026-09-30T18:33:12.182002",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
   "mode": "hoopa",
-  "since": "18:30:16"
+  "since": "18:32:00"
  },
  "grid": {
   "tasks": [
@@ -749,6 +749,7 @@
  "snoozed": {
   "chris|island_challenge": "2026-09-30T20:49",
   "jeff|island_challenge": "2026-09-30T21:18",
+  "skomain|rift": "2026-09-30T18:47",
   "skomain|story": "2026-09-30T18:45"
  },
  "ownerOnline": [],
@@ -828,6 +829,20 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T18:32:00",
+   "script": "rift",
+   "account": "skomain",
+   "rc": 1,
+   "secs": 49,
+   "stats": {
+    "rift_no_result": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_183111_rift_skomain"
+  },
   {
    "ts": "2026-09-30T18:30:16",
    "script": "story",
@@ -8622,24 +8637,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_022735_worldboss_dre"
-  },
-  {
-   "ts": "2026-09-30T02:27:35",
-   "script": "worldboss",
-   "account": "deno",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_022603_worldboss_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 66668,
+  "now": 66792,
   "segments": [
    {
     "b": 28937,
@@ -13142,14 +13145,45 @@
     "handoff": 66619,
     "rc": null,
     "e": 66668
+   },
+   {
+    "b": 66668,
+    "a": "skomain",
+    "s": "rift",
+    "login": null,
+    "handoff": 66670,
+    "rc": 1,
+    "e": 66720,
+    "secs": 49,
+    "why": ""
+   },
+   {
+    "b": 66720,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 66724,
+    "rc": null,
+    "e": 66792
    }
   ],
   "idle": [
    66574,
-   66616
+   66616,
+   66668,
+   66720
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-30T18:32:00",
+   "account": "skomain",
+   "task": "rift",
+   "rc": 1,
+   "secs": 49,
+   "why": "level 1: no result after 45s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_183111_rift_skomain__KEEP_0001_183200_final.png"
+  },
   {
    "ts": "2026-09-30T18:30:16",
    "account": "skomain",
@@ -13662,22 +13696,13 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:27:35",
-   "account": "deno",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
   "switches": 102,
   "relogMinutes": 42.8,
-  "retries": 52,
+  "retries": 53,
   "tasks": {
    "island_challenge": {
     "runs": 14,
@@ -13780,9 +13805,9 @@
     "failed": 0
    },
    "rift": {
-    "runs": 14,
-    "minutes": 7.0,
-    "failed": 5
+    "runs": 15,
+    "minutes": 7.8,
+    "failed": 6
    },
    "story": {
     "runs": 1,
@@ -14327,10 +14352,6 @@
   "next": [],
   "more": 0,
   "fillers": [
-   {
-    "account": "skomain",
-    "mode": "rift"
-   },
    {
     "account": "chris",
     "mode": "hoopa"
@@ -16309,6 +16330,12 @@
    ],
    "issues": [
     {
+     "task": "rift",
+     "at": "18:32",
+     "why": "level 1: no result after 45s",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_183111_rift_skomain__KEEP_0001_183200_final.png"
+    },
+    {
      "task": "story",
      "at": "18:30",
      "why": "story: nothing opened at stage 1",
@@ -16374,7 +16401,7 @@
     {
      "day": "2026-09-30",
      "done": 26,
-     "failed": 9
+     "failed": 10
     }
    ]
   },
