@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T08:19:14.354556",
+ "generatedAt": "2026-09-30T08:21:18.796103",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
-  "mode": "ultra_wormhole",
-  "since": "08:15:12"
+  "account": "nova",
+  "mode": "dailyclaim",
+  "since": "08:20:50"
  },
  "grid": {
   "tasks": [
@@ -432,8 +432,8 @@
      "✓",
      "⊘",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "💤",
      "⏳"
     ]
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 12,
-  "todo": 257,
+  "done": 14,
+  "todo": 255,
   "gaveUp": 1,
   "unavailable": 12,
   "windowed": 38
@@ -796,11 +796,51 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-09-30T08:02:38.363179",
+  "label": "nova",
+  "at": "2026-09-30T08:21:08.783666",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T08:20:49",
+   "script": "ring_battle",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "ring_wins": 6,
+    "ring_chests": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_081953_ring_battle_skomain"
+  },
+  {
+   "ts": "2026-09-30T08:19:49",
+   "script": "ultra_wormhole",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 258,
+   "stats": {
+    "hired": 71,
+    "wins": 17,
+    "losses": 1,
+    "rewards_claimed": 5
+   },
+   "incomplete": [],
+   "values": {
+    "rewards_claimed": 5,
+    "wins_today": 17
+   },
+   "values_all": {
+    "rewards_claimed": [
+     0,
+     5
+    ]
+   },
+   "dir": "debug_runs/20260930_081531_ultra_wormhole_skomain"
+  },
   {
    "ts": "2026-09-30T08:15:11",
    "script": "faction",
@@ -8275,58 +8315,12 @@
     ]
    },
    "dir": "debug_runs/20260929_105016_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-29T10:49:46",
-   "script": "misty_woods",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 137,
-   "stats": {
-    "runes_claimed": 11,
-    "battles_won": 11,
-    "fountain_taken": 4,
-    "portals": 1,
-    "no_challenge": 1,
-    "incomplete": 1,
-    "wins": 11
-   },
-   "incomplete": [
-    "misty_woods: step 17 did not complete"
-   ],
-   "values": {
-    "stage": 2
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_104729_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-09-29T10:47:09",
-   "script": "faction",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 32,
-   "stats": {
-    "auto_formation": 3,
-    "skip_retry": 1,
-    "incomplete": 1,
-    "lost_fire": 1,
-    "faction_disabled": 1,
-    "floors_fire": 2,
-    "sweeps_used": 2
-   },
-   "incomplete": [
-    "faction: fire tower: lost the battle after 2 win(s) — the team needs adjusting"
-   ],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_104636_faction_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 29955,
+  "now": 30079,
   "segments": [
    {
     "b": 28937,
@@ -8511,8 +8505,33 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 29730,
+    "rc": 0,
+    "e": 29991,
+    "secs": 258,
+    "why": ""
+   },
+   {
+    "b": 29991,
+    "a": "skomain",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 29993,
+    "rc": 0,
+    "e": 30050,
+    "secs": 56,
+    "why": ""
+   },
+   {
+    "b": 30050,
+    "a": "nova",
+    "s": "dailyclaim",
+    "login": [
+     30051,
+     30068
+    ],
+    "handoff": 30077,
     "rc": null,
-    "e": 29955
+    "e": 30079
    }
   ],
   "idle": []
@@ -8863,8 +8882,8 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 1,
-  "relogMinutes": 0.5,
+  "switches": 2,
+  "relogMinutes": 0.9,
   "retries": 3,
   "tasks": {
    "island_challenge": {
@@ -8935,6 +8954,16 @@
    "faction": {
     "runs": 1,
     "minutes": 0.2,
+    "failed": 0
+   },
+   "ultra_wormhole": {
+    "runs": 1,
+    "minutes": 4.3,
+    "failed": 0
+   },
+   "ring_battle": {
+    "runs": 1,
+    "minutes": 0.9,
     "failed": 0
    }
   }
@@ -9467,79 +9496,79 @@
  "queue": {
   "next": [
    {
-    "account": "skomain",
-    "task": "ultra_wormhole",
+    "account": "nova",
+    "task": "dailyclaim",
     "startsIn": 0.0,
-    "eta": "2026-09-30T08:19"
-   },
-   {
-    "account": "skomain",
-    "task": "ring_battle",
-    "startsIn": 2.0,
     "eta": "2026-09-30T08:21"
    },
    {
     "account": "nova",
-    "task": "dailyclaim",
-    "startsIn": 4.4,
-    "eta": "2026-09-30T08:23"
-   },
-   {
-    "account": "nova",
     "task": "mail",
-    "startsIn": 5.0,
-    "eta": "2026-09-30T08:24"
+    "startsIn": 0.6,
+    "eta": "2026-09-30T08:21"
    },
    {
     "account": "nova",
     "task": "joint_team_daily_quest",
-    "startsIn": 5.1,
-    "eta": "2026-09-30T08:24"
+    "startsIn": 0.7,
+    "eta": "2026-09-30T08:22"
    },
    {
     "account": "nova",
     "task": "joint_battle",
-    "startsIn": 6.0,
-    "eta": "2026-09-30T08:25"
+    "startsIn": 1.6,
+    "eta": "2026-09-30T08:22"
    },
    {
     "account": "nova",
     "task": "daily_dungeon",
-    "startsIn": 8.0,
-    "eta": "2026-09-30T08:27"
+    "startsIn": 3.6,
+    "eta": "2026-09-30T08:24"
    },
    {
     "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 8.2,
-    "eta": "2026-09-30T08:27"
+    "startsIn": 3.8,
+    "eta": "2026-09-30T08:25"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 9.7,
-    "eta": "2026-09-30T08:28"
+    "startsIn": 5.3,
+    "eta": "2026-09-30T08:26"
    },
    {
     "account": "nova",
     "task": "combat_daily",
-    "startsIn": 9.9,
-    "eta": "2026-09-30T08:29"
+    "startsIn": 5.6,
+    "eta": "2026-09-30T08:26"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 11.6,
-    "eta": "2026-09-30T08:30"
+    "startsIn": 7.3,
+    "eta": "2026-09-30T08:28"
    },
    {
     "account": "nova",
     "task": "paradise",
-    "startsIn": 11.7,
+    "startsIn": 7.4,
+    "eta": "2026-09-30T08:28"
+   },
+   {
+    "account": "nova",
+    "task": "run_pvp_ranked",
+    "startsIn": 10.5,
     "eta": "2026-09-30T08:31"
+   },
+   {
+    "account": "nova",
+    "task": "collect_hoopa_keys",
+    "startsIn": 11.8,
+    "eta": "2026-09-30T08:33"
    }
   ],
-  "more": 245,
+  "more": 243,
   "fillers": [
    {
     "account": "skomain",
@@ -9573,12 +9602,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 1,
-   "medianSec": 20,
+   "n": 2,
+   "medianSec": 18.5,
    "picker": {
-    "n": 0,
-    "medianSec": null,
-    "jumps": 0
+    "n": 1,
+    "medianSec": 17,
+    "jumps": 1
    },
    "typed": {
     "n": 0,
@@ -11839,8 +11868,8 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-09-30",
-   "summary": "12 of 20 dailies done · gave up on bash · 1 not available today",
-   "done": 12,
+   "summary": "14 of 20 dailies done · gave up on bash · 1 not available today",
+   "done": 14,
    "owed": 20,
    "open": [
     {
@@ -11858,14 +11887,6 @@
     {
      "task": "fctn",
      "state": "not available today"
-    },
-    {
-     "task": "wormhole",
-     "state": "still to do"
-    },
-    {
-     "task": "ring",
-     "state": "still to do"
     },
     {
      "task": "champ",
@@ -11920,7 +11941,7 @@
    "history": [
     {
      "day": "2026-09-30",
-     "done": 22,
+     "done": 24,
      "failed": 5
     }
    ]
