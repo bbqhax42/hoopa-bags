@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T08:02:37.308897",
+ "generatedAt": "2026-09-30T08:04:41.722642",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
-  "mode": "island_challenge",
-  "since": "08:02:17"
+  "mode": "joint_team_daily_quest",
+  "since": "08:04:04"
  },
  "grid": {
   "tasks": [
@@ -414,9 +414,9 @@
    {
     "account": "skomain",
     "cells": [
-     "·",
+     "✓",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 0,
-  "todo": 249,
+  "done": 2,
+  "todo": 247,
   "gaveUp": 0,
   "unavailable": 11,
   "windowed": 60
@@ -796,11 +796,63 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-30T08:00:12.662288",
+  "label": "skomain",
+  "at": "2026-09-30T08:02:38.363179",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T08:04:03",
+   "script": "mail",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 2,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 1,
+    "unread_after": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_080400_mail_skomain"
+  },
+  {
+   "ts": "2026-09-30T08:03:58",
+   "script": "dailyclaim",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "signed_in": 1,
+    "milestone_claimed": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "egg_smashed": 1,
+    "claims": 5
+   },
+   "incomplete": [],
+   "values": {
+    "golden_egg": "smashed",
+    "rail_badges": "0.190:77 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_080321_dailyclaim_skomain"
+  },
+  {
+   "ts": "2026-09-30T08:02:59",
+   "script": "island_challenge",
+   "account": "skomain",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_080246_island_challenge_skomain"
+  },
   {
    "ts": "2026-09-30T07:51:04",
    "script": "rift",
@@ -8309,86 +8361,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_103224_dailyclaim_smurf"
-  },
-  {
-   "ts": "2026-09-29T10:32:00",
-   "script": "championship",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "event_done": 1
-   },
-   "incomplete": [],
-   "values": {
-    "fights": 0,
-    "tiers": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_103155_championship_jeff"
-  },
-  {
-   "ts": "2026-09-29T10:31:53",
-   "script": "ultra_wormhole",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 245,
-   "stats": {
-    "hired": 66,
-    "wins": 16,
-    "losses": 1,
-    "rewards_claimed": 5
-   },
-   "incomplete": [],
-   "values": {
-    "rewards_claimed": 5,
-    "wins_today": 16
-   },
-   "values_all": {
-    "rewards_claimed": [
-     0,
-     5
-    ]
-   },
-   "dir": "debug_runs/20260929_102747_ultra_wormhole_jeff"
-  },
-  {
-   "ts": "2026-09-29T10:27:42",
-   "script": "sky_pillar",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 95,
-   "stats": {
-    "stages_cleared": 4,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 150,
-    "stage": 4,
-    "proofs_spent": 4
-   },
-   "values_all": {
-    "floor": [
-     150,
-     150,
-     150,
-     150
-    ],
-    "stage": [
-     1,
-     2,
-     3,
-     4
-    ]
-   },
-   "dir": "debug_runs/20260929_102607_sky_pillar_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 28958,
+  "now": 29082,
   "segments": [
    {
     "b": 28937,
@@ -8396,16 +8374,58 @@
     "s": "island_challenge",
     "login": [
      28938,
-     null
+     28958
     ],
-    "handoff": null,
+    "handoff": 28966,
+    "rc": 1,
+    "e": 28981,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 28981,
+    "a": "skomain",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 29001,
+    "rc": 0,
+    "e": 29039,
+    "secs": 36,
+    "why": ""
+   },
+   {
+    "b": 29039,
+    "a": "skomain",
+    "s": "mail",
+    "login": null,
+    "handoff": 29040,
+    "rc": 0,
+    "e": 29044,
+    "secs": 2,
+    "why": ""
+   },
+   {
+    "b": 29044,
+    "a": "skomain",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 29045,
     "rc": null,
-    "e": 28958
+    "e": 29082
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T08:02:59",
+   "account": "skomain",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_080246_island_challenge_skomain__KEEP_0004_080259_final.png"
+  },
   {
    "ts": "2026-09-30T07:48:03",
    "account": "skomain",
@@ -8725,9 +8745,25 @@
  "day": {
   "since": "2026-09-30T08:00",
   "switches": 1,
-  "relogMinutes": 0.0,
-  "retries": 0,
-  "tasks": {}
+  "relogMinutes": 0.5,
+  "retries": 1,
+  "tasks": {
+   "island_challenge": {
+    "runs": 1,
+    "minutes": 0.2,
+    "failed": 1
+   },
+   "dailyclaim": {
+    "runs": 1,
+    "minutes": 0.6,
+    "failed": 0
+   },
+   "mail": {
+    "runs": 1,
+    "minutes": 0.1,
+    "failed": 0
+   }
+  }
  },
  "unavailable": [
   {
@@ -9252,78 +9288,78 @@
   "next": [
    {
     "account": "skomain",
-    "task": "dailyclaim",
+    "task": "joint_team_daily_quest",
     "startsIn": 0.0,
-    "eta": "2026-09-30T08:02"
-   },
-   {
-    "account": "skomain",
-    "task": "mail",
-    "startsIn": 2.0,
     "eta": "2026-09-30T08:04"
    },
    {
     "account": "skomain",
-    "task": "joint_team_daily_quest",
-    "startsIn": 4.0,
+    "task": "joint_battle",
+    "startsIn": 2.0,
     "eta": "2026-09-30T08:06"
    },
    {
     "account": "skomain",
-    "task": "joint_battle",
-    "startsIn": 6.0,
+    "task": "daily_dungeon",
+    "startsIn": 4.0,
     "eta": "2026-09-30T08:08"
    },
    {
     "account": "skomain",
-    "task": "daily_dungeon",
-    "startsIn": 8.0,
+    "task": "pokemon_home",
+    "startsIn": 6.0,
     "eta": "2026-09-30T08:10"
    },
    {
     "account": "skomain",
-    "task": "pokemon_home",
-    "startsIn": 10.0,
+    "task": "combat_daily",
+    "startsIn": 8.0,
     "eta": "2026-09-30T08:12"
    },
    {
     "account": "skomain",
-    "task": "combat_daily",
-    "startsIn": 12.0,
+    "task": "victory_road",
+    "startsIn": 10.0,
     "eta": "2026-09-30T08:14"
    },
    {
     "account": "skomain",
-    "task": "victory_road",
-    "startsIn": 14.0,
+    "task": "paradise",
+    "startsIn": 12.0,
     "eta": "2026-09-30T08:16"
    },
    {
     "account": "skomain",
-    "task": "paradise",
-    "startsIn": 16.0,
+    "task": "run_pvp_ranked",
+    "startsIn": 14.0,
     "eta": "2026-09-30T08:18"
    },
    {
     "account": "skomain",
-    "task": "run_pvp_ranked",
-    "startsIn": 18.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 16.0,
     "eta": "2026-09-30T08:20"
    },
    {
     "account": "skomain",
-    "task": "collect_hoopa_keys",
-    "startsIn": 20.0,
+    "task": "sky_pillar",
+    "startsIn": 18.0,
     "eta": "2026-09-30T08:22"
    },
    {
     "account": "skomain",
-    "task": "sky_pillar",
-    "startsIn": 22.0,
+    "task": "faction",
+    "startsIn": 20.0,
     "eta": "2026-09-30T08:24"
+   },
+   {
+    "account": "skomain",
+    "task": "ring_battle",
+    "startsIn": 22.0,
+    "eta": "2026-09-30T08:26"
    }
   ],
-  "more": 237,
+  "more": 235,
   "fillers": [
    {
     "account": "skomain",
@@ -9375,11 +9411,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "pillar": "floor 150 stage 4",
-   "islandFights": 15,
-   "islandStamina": 5
-  },
   "smurf": {
    "mailUnread": 0,
    "rank": 193,
@@ -9410,6 +9441,10 @@
    "mailUnread": 0,
    "paradiseStamina": "2/12",
    "pillar": "floor 7 stage 7"
+  },
+  "jeff": {
+   "islandFights": 15,
+   "islandStamina": 5
   },
   "fake6": {
    "mailUnread": 0,
@@ -9473,9 +9508,11 @@
  },
  "ledger": {
   "skomain": {
+   "mail claimed": 1,
+   "daily claims": 6,
+   "Privilege Pack claimed": 1,
    "ranked attempts": 1,
-   "Home creations": 50,
-   "daily claims": 1
+   "Home creations": 50
   },
   "jeff": {
    "island fights": 6
@@ -9946,7 +9983,6 @@
     "island fights": 6
    },
    "progress": {
-    "pillar": "floor 150 stage 4",
     "islandFights": 15,
     "islandStamina": 5
    },
@@ -11627,18 +11663,10 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-09-30",
-   "summary": "0 of 20 dailies done",
-   "done": 0,
+   "summary": "2 of 20 dailies done",
+   "done": 2,
    "owed": 20,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "still to do"
@@ -11714,24 +11742,26 @@
    ],
    "issues": [
     {
+     "task": "island_challenge",
+     "at": "08:02",
+     "why": "the stage map did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_080246_island_challenge_skomain__KEEP_0004_080259_final.png"
+    },
+    {
      "task": "paradise",
      "at": "07:48",
      "why": "paradise: Dex tab(s) still badged: Traces",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_074446_paradise_skomain__KEEP_0016_074803_final.png"
-    },
-    {
-     "task": "island_challenge",
-     "at": "07:40",
-     "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_074038_island_challenge_skomain__KEEP_0004_074052_final.png"
     }
    ],
    "off": [],
    "unavailable": [],
    "spent": {
+    "mail claimed": 1,
+    "daily claims": 6,
+    "Privilege Pack claimed": 1,
     "ranked attempts": 1,
-    "Home creations": 50,
-    "daily claims": 1
+    "Home creations": 50
    },
    "progress": {
     "mailUnread": 0,
@@ -11741,8 +11771,8 @@
    "history": [
     {
      "day": "2026-09-30",
-     "done": 11,
-     "failed": 2
+     "done": 13,
+     "failed": 3
     }
    ]
   },
