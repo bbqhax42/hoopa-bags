@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T17:41:37.936437",
+ "generatedAt": "2026-09-30T17:43:42.139774",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
   "mode": "hoopa",
-  "since": "17:25:09"
+  "since": "17:42:20"
  },
  "grid": {
   "tasks": [
@@ -813,10 +813,22 @@
  },
  "session": {
   "label": "lucifer1",
-  "at": "2026-09-30T17:25:25.636286",
+  "at": "2026-09-30T17:42:36.286427",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T17:42:19",
+   "script": "rift",
+   "account": "lucifer2",
+   "rc": 2,
+   "secs": 1,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_174218_rift_lucifer2"
+  },
   {
    "ts": "2026-09-30T17:25:09",
    "script": "island_challenge",
@@ -8604,24 +8616,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_022431_worldboss_fake8"
-  },
-  {
-   "ts": "2026-09-30T02:24:31",
-   "script": "worldboss",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_022259_worldboss_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 63698,
+  "now": 63822,
   "segments": [
    {
     "b": 28937,
@@ -13002,7 +13002,33 @@
     ],
     "handoff": 62736,
     "rc": null,
-    "e": 63698
+    "e": 63707
+   },
+   {
+    "b": 63707,
+    "a": "lucifer2",
+    "s": "rift",
+    "login": [
+     63707,
+     63727
+    ],
+    "handoff": 63737,
+    "rc": 2,
+    "e": 63740,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 63740,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     63740,
+     63756
+    ],
+    "handoff": 63765,
+    "rc": null,
+    "e": 63822
    }
   ],
   "idle": []
@@ -13529,21 +13555,12 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:24:31",
-   "account": "lucifer2",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 93,
-  "relogMinutes": 40.5,
+  "switches": 95,
+  "relogMinutes": 41.4,
   "retries": 51,
   "tasks": {
    "island_challenge": {
@@ -13647,7 +13664,7 @@
     "failed": 0
    },
    "rift": {
-    "runs": 13,
+    "runs": 14,
     "minutes": 7.0,
     "failed": 5
    }
@@ -13779,6 +13796,12 @@
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-09-30T14:23:20"
+  },
+  {
+   "account": "lucifer2",
+   "task": "rift",
+   "why": "level 1: neither Launching the Challenge nor Again is up — nothing to do here today",
+   "at": "2026-09-30T17:42:19"
   },
   {
    "account": "nova",
@@ -14015,9 +14038,9 @@
     "last": "2026-09-30T15:17:36"
    },
    "lucifer1": {
-    "runs": 53,
-    "targets": 1,
-    "last": "2026-09-30T17:40:15"
+    "runs": 54,
+    "targets": 2,
+    "last": "2026-09-30T17:41:46"
    },
    "chris": {
     "runs": 55,
@@ -14026,6 +14049,13 @@
    }
   },
   "targets": [
+   {
+    "ts": "2026-09-30T17:41:46",
+    "runner": "lucifer1",
+    "items": [
+     "Soul Dew"
+    ]
+   },
    {
     "ts": "2026-09-30T17:08:50",
     "runner": "chris",
@@ -14101,14 +14131,6 @@
     "runner": "nova",
     "items": [
      "Muscle Band"
-    ]
-   },
-   {
-    "ts": "2026-09-30T06:48:17",
-    "runner": "lucifer1",
-    "items": [
-     "Light Clay",
-     "Grip Claw"
     ]
    }
   ]
@@ -14326,10 +14348,6 @@
     "mode": "rift"
    },
    {
-    "account": "lucifer2",
-    "mode": "rift"
-   },
-   {
     "account": "chris",
     "mode": "hoopa"
    },
@@ -14349,20 +14367,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 90,
+   "n": 92,
    "medianSec": 16.0,
    "picker": {
-    "n": 64,
-    "medianSec": 15.0,
-    "jumps": 35
+    "n": 65,
+    "medianSec": 15,
+    "jumps": 36
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 26,
-    "medianSec": 20.0
+    "n": 27,
+    "medianSec": 20
    }
   }
  },
@@ -16445,7 +16463,7 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-09-30",
-   "summary": "16 of 17 dailies done · gave up on bash · 2 switched off",
+   "summary": "16 of 17 dailies done · gave up on bash · 2 switched off · 1 not available today",
    "done": 16,
    "owed": 17,
    "open": [
@@ -16492,7 +16510,12 @@
      "since": "2026-09-20T02:54:50"
     }
    ],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rift",
+     "why": "level 1: neither Launching the Challenge nor Again is up — nothing to do here today"
+    }
+   ],
    "spent": {
     "pillar/story stages cleared": 5,
     "ranked attempts": 1,
