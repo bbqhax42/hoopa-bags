@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T13:21:27.887968",
+ "generatedAt": "2026-09-30T13:23:31.369202",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "mail",
-  "since": "13:21:25"
+  "mode": "joint_battle",
+  "since": "13:22:56"
  },
  "grid": {
   "tasks": [
@@ -551,8 +551,8 @@
     "cells": [
      "✓",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 243,
-  "todo": 30,
+  "done": 245,
+  "todo": 28,
   "gaveUp": 12,
   "unavailable": 18,
   "windowed": 18
@@ -812,11 +812,45 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-30T13:20:47.463628",
+  "label": "dre",
+  "at": "2026-09-30T13:21:45.334138",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T13:22:55",
+   "script": "joint_team_daily_quest",
+   "account": "dre",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "marginal_joint_team_daily_panel": 4,
+    "panel_swipes": 8,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_132202_joint_team_daily_quest_dre"
+  },
+  {
+   "ts": "2026-09-30T13:22:01",
+   "script": "mail",
+   "account": "dre",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 2,
+    "unread_after": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_132157_mail_dre"
+  },
   {
    "ts": "2026-09-30T13:21:24",
    "script": "island_challenge",
@@ -8256,40 +8290,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_172753_arena_chris"
-  },
-  {
-   "ts": "2026-09-29T17:27:48",
-   "script": "arena",
-   "account": "chris",
-   "rc": 0,
-   "secs": 8,
-   "stats": {
-    "arena_wins": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_172740_arena_chris"
-  },
-  {
-   "ts": "2026-09-29T17:10:30",
-   "script": "rift",
-   "account": "nova",
-   "rc": 1,
-   "secs": 48,
-   "stats": {
-    "rift_no_result": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_170941_rift_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 48088,
+  "now": 48211,
   "segments": [
    {
     "b": 28937,
@@ -11552,11 +11558,33 @@
     "s": "mail",
     "login": [
      48085,
-     null
+     48105
     ],
-    "handoff": null,
+    "handoff": 48117,
+    "rc": 0,
+    "e": 48121,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 48121,
+    "a": "dre",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 48122,
+    "rc": 0,
+    "e": 48176,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 48176,
+    "a": "dre",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 48178,
     "rc": null,
-    "e": 48088
+    "e": 48211
    }
   ],
   "idle": []
@@ -12160,7 +12188,7 @@
  "day": {
   "since": "2026-09-30T08:00",
   "switches": 37,
-  "relogMinutes": 15.4,
+  "relogMinutes": 16.0,
   "retries": 40,
   "tasks": {
    "island_challenge": {
@@ -12174,13 +12202,13 @@
     "failed": 0
    },
    "mail": {
-    "runs": 19,
-    "minutes": 0.9,
+    "runs": 20,
+    "minutes": 1.0,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 16,
-    "minutes": 13.8,
+    "runs": 17,
+    "minutes": 14.6,
     "failed": 0
    },
    "daily_dungeon": {
@@ -12825,78 +12853,72 @@
   "next": [
    {
     "account": "dre",
-    "task": "mail",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T13:21"
-   },
-   {
-    "account": "dre",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T13:21"
-   },
-   {
-    "account": "dre",
     "task": "joint_battle",
-    "startsIn": 0.9,
-    "eta": "2026-09-30T13:22"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T13:23"
    },
    {
     "account": "dre",
     "task": "daily_dungeon",
-    "startsIn": 2.9,
-    "eta": "2026-09-30T13:24"
+    "startsIn": 2.0,
+    "eta": "2026-09-30T13:25"
    },
    {
     "account": "dre",
     "task": "pokemon_home",
-    "startsIn": 3.3,
-    "eta": "2026-09-30T13:24"
+    "startsIn": 2.3,
+    "eta": "2026-09-30T13:25"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 4.1,
-    "eta": "2026-09-30T13:25"
+    "startsIn": 3.2,
+    "eta": "2026-09-30T13:26"
    },
    {
     "account": "dre",
     "task": "combat_daily",
-    "startsIn": 4.4,
-    "eta": "2026-09-30T13:25"
+    "startsIn": 3.5,
+    "eta": "2026-09-30T13:26"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 6.1,
-    "eta": "2026-09-30T13:27"
+    "startsIn": 5.2,
+    "eta": "2026-09-30T13:28"
    },
    {
     "account": "dre",
     "task": "paradise",
-    "startsIn": 6.3,
-    "eta": "2026-09-30T13:27"
+    "startsIn": 5.4,
+    "eta": "2026-09-30T13:28"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 9.6,
-    "eta": "2026-09-30T13:31"
+    "startsIn": 8.6,
+    "eta": "2026-09-30T13:32"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 9.6,
-    "eta": "2026-09-30T13:31"
+    "startsIn": 8.7,
+    "eta": "2026-09-30T13:32"
    },
    {
     "account": "dre",
     "task": "ultra_wormhole",
-    "startsIn": 10.8,
-    "eta": "2026-09-30T13:32"
+    "startsIn": 9.9,
+    "eta": "2026-09-30T13:33"
+   },
+   {
+    "account": "dre",
+    "task": "ring_battle",
+    "startsIn": 14.4,
+    "eta": "2026-09-30T13:37"
    }
   ],
-  "more": 3,
+  "more": 0,
   "fillers": [
    {
     "account": "skomain",
@@ -12928,11 +12950,15 @@
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake5": {
+   "chris": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "jeff": {
+   "sprite": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake2": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12940,23 +12966,7 @@
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "smurf": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "exou": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "sprite": {
+   "jeff": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12968,7 +12978,23 @@
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake2": {
+   "exou": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake3": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "smurf": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake5": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12979,8 +13005,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 36,
-   "medianSec": 17.0,
+   "n": 37,
+   "medianSec": 17,
    "picker": {
     "n": 24,
     "medianSec": 15.5,
@@ -12991,8 +13017,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 12,
-    "medianSec": 20.0
+    "n": 13,
+    "medianSec": 20
    }
   }
  },
@@ -13087,7 +13113,9 @@
    "paradiseStamina": "12/12",
    "pillar": "floor 30 stage 2"
   },
-  "dre": {},
+  "dre": {
+   "mailUnread": 0
+  },
   "jeff": {
    "islandFights": 6,
    "islandStamina": 0,
@@ -13104,6 +13132,11 @@
   }
  },
  "ledger": {
+  "dre": {
+   "mail claimed": 1,
+   "daily claims": 5,
+   "Privilege Pack claimed": 1
+  },
   "chris": {
    "island fights": 15,
    "faction sweeps": 2,
@@ -13123,10 +13156,6 @@
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
-   "daily claims": 5,
-   "Privilege Pack claimed": 1
-  },
-  "dre": {
    "daily claims": 5,
    "Privilege Pack claimed": 1
   },
@@ -15448,18 +15477,10 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-30",
-   "summary": "1 of 16 dailies done",
-   "done": 1,
+   "summary": "3 of 16 dailies done",
+   "done": 3,
    "owed": 16,
    "open": [
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
     {
      "task": "JointB",
      "state": "still to do"
@@ -15524,10 +15545,13 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "mail claimed": 1,
     "daily claims": 5,
     "Privilege Pack claimed": 1
    },
-   "progress": {},
+   "progress": {
+    "mailUnread": 0
+   },
    "history": [
     {
      "day": "2026-09-24",
@@ -15561,7 +15585,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 3,
+     "done": 5,
      "failed": 2
     }
    ]
