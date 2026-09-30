@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T08:33:45.501733",
+ "generatedAt": "2026-09-30T08:35:49.862167",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
-  "mode": "island_challenge",
-  "since": "08:33:15"
+  "account": "nova",
+  "mode": "ultra_wormhole",
+  "since": "08:35:09"
  },
  "grid": {
   "tasks": [
@@ -50,8 +50,8 @@
      "✓",
      "⏰",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 24,
-  "todo": 244,
+  "done": 26,
+  "todo": 242,
   "gaveUp": 2,
   "unavailable": 12,
   "windowed": 38
@@ -796,11 +796,71 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-09-30T08:33:36.042957",
+  "label": "nova",
+  "at": "2026-09-30T08:34:14.805938",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T08:35:08",
+   "script": "sky_pillar",
+   "account": "nova",
+   "rc": 0,
+   "secs": 39,
+   "stats": {
+    "stages_cleared": 3,
+    "floor_reward_claimed": 1,
+    "marginal_sky_pillar": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 102,
+    "stage": 9,
+    "proofs_spent": 3
+   },
+   "values_all": {
+    "floor": [
+     102,
+     102,
+     102
+    ],
+    "stage": [
+     7,
+     8,
+     9
+    ]
+   },
+   "dir": "debug_runs/20260930_083428_sky_pillar_nova"
+  },
+  {
+   "ts": "2026-09-30T08:34:26",
+   "script": "collect_hoopa_keys",
+   "account": "nova",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "near_miss_hoopa_vault": 1,
+    "marginal_hoopa_vault": 1,
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_083422_collect_hoopa_keys_nova"
+  },
+  {
+   "ts": "2026-09-30T08:33:57",
+   "script": "island_challenge",
+   "account": "skomain",
+   "rc": 1,
+   "secs": 13,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_083344_island_challenge_skomain"
+  },
   {
    "ts": "2026-09-30T08:33:14",
    "script": "run_pvp_ranked",
@@ -8232,90 +8292,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_110915_faction_fake1"
-  },
-  {
-   "ts": "2026-09-29T11:09:11",
-   "script": "sky_pillar",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 78,
-   "stats": {
-    "stages_cleared": 3,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 6,
-    "stage": 4,
-    "proofs_spent": 3
-   },
-   "values_all": {
-    "floor": [
-     6,
-     6,
-     6
-    ],
-    "stage": [
-     2,
-     3,
-     4
-    ]
-   },
-   "dir": "debug_runs/20260929_110752_sky_pillar_fake1"
-  },
-  {
-   "ts": "2026-09-29T11:07:50",
-   "script": "collect_hoopa_keys",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 4,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_110745_collect_hoopa_keys_fake1"
-  },
-  {
-   "ts": "2026-09-29T11:07:43",
-   "script": "paradise",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 189,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 76,
-    "pass_claims": 13,
-    "upgraded_energy_drink": 5,
-    "dex_milestones": 4,
-    "dex_activated": 8,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "2/12",
-    "event_end": "2026-10-13",
-    "shop_window": "saved"
-   },
-   "values_all": {
-    "stamina": [
-     "0/10",
-     "2/12"
-    ],
-    "event_end": [
-     "2026-10-13",
-     "2026-10-13",
-     "2026-10-13"
-    ]
-   },
-   "dir": "debug_runs/20260929_110434_paradise_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 30826,
+  "now": 30950,
   "segments": [
    {
     "b": 28937,
@@ -8658,13 +8640,58 @@
      30816
     ],
     "handoff": 30824,
+    "rc": 1,
+    "e": 30839,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 30839,
+    "a": "nova",
+    "s": "collect_hoopa_keys",
+    "login": [
+     30839,
+     30854
+    ],
+    "handoff": 30862,
+    "rc": 0,
+    "e": 30867,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 30867,
+    "a": "nova",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 30868,
+    "rc": 0,
+    "e": 30909,
+    "secs": 39,
+    "why": ""
+   },
+   {
+    "b": 30909,
+    "a": "nova",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 30912,
     "rc": null,
-    "e": 30826
+    "e": 30950
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T08:33:57",
+   "account": "skomain",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 13,
+   "why": "the stage map did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_083344_island_challenge_skomain__KEEP_0004_083357_final.png"
+  },
   {
    "ts": "2026-09-30T08:26:13",
    "account": "nova",
@@ -9028,14 +9055,14 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 3,
-  "relogMinutes": 1.4,
-  "retries": 5,
+  "switches": 4,
+  "relogMinutes": 1.8,
+  "retries": 6,
   "tasks": {
    "island_challenge": {
-    "runs": 1,
-    "minutes": 0.2,
-    "failed": 1
+    "runs": 2,
+    "minutes": 0.4,
+    "failed": 2
    },
    "dailyclaim": {
     "runs": 2,
@@ -9088,13 +9115,13 @@
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 1,
+    "runs": 2,
     "minutes": 0.1,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 1,
-    "minutes": 0.1,
+    "runs": 2,
+    "minutes": 0.7,
     "failed": 0
    },
    "faction": {
@@ -9643,78 +9670,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "collect_hoopa_keys",
-    "startsIn": 0.4,
-    "eta": "2026-09-30T08:34"
-   },
-   {
-    "account": "nova",
-    "task": "sky_pillar",
-    "startsIn": 0.5,
-    "eta": "2026-09-30T08:34"
-   },
-   {
-    "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 0.6,
-    "eta": "2026-09-30T08:34"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T08:35"
    },
    {
     "account": "nova",
     "task": "ring_battle",
-    "startsIn": 4.9,
-    "eta": "2026-09-30T08:38"
+    "startsIn": 4.3,
+    "eta": "2026-09-30T08:40"
    },
    {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 6.2,
-    "eta": "2026-09-30T08:39"
-   },
-   {
-    "account": "jeff",
-    "task": "mail",
-    "startsIn": 6.8,
-    "eta": "2026-09-30T08:40"
-   },
-   {
-    "account": "jeff",
-    "task": "joint_team_daily_quest",
-    "startsIn": 6.8,
-    "eta": "2026-09-30T08:40"
-   },
-   {
-    "account": "jeff",
-    "task": "joint_battle",
-    "startsIn": 7.8,
+    "startsIn": 5.6,
     "eta": "2026-09-30T08:41"
    },
    {
     "account": "jeff",
+    "task": "mail",
+    "startsIn": 6.2,
+    "eta": "2026-09-30T08:42"
+   },
+   {
+    "account": "jeff",
+    "task": "joint_team_daily_quest",
+    "startsIn": 6.2,
+    "eta": "2026-09-30T08:42"
+   },
+   {
+    "account": "jeff",
+    "task": "joint_battle",
+    "startsIn": 7.2,
+    "eta": "2026-09-30T08:42"
+   },
+   {
+    "account": "jeff",
     "task": "daily_dungeon",
-    "startsIn": 9.8,
-    "eta": "2026-09-30T08:43"
+    "startsIn": 9.2,
+    "eta": "2026-09-30T08:44"
    },
    {
     "account": "jeff",
     "task": "pokemon_home",
-    "startsIn": 9.9,
-    "eta": "2026-09-30T08:43"
+    "startsIn": 9.3,
+    "eta": "2026-09-30T08:45"
    },
    {
     "account": "jeff",
     "task": "weekend_bash",
-    "startsIn": 11.4,
-    "eta": "2026-09-30T08:45"
+    "startsIn": 10.8,
+    "eta": "2026-09-30T08:46"
    },
    {
     "account": "jeff",
     "task": "combat_daily",
-    "startsIn": 11.7,
-    "eta": "2026-09-30T08:45"
+    "startsIn": 11.1,
+    "eta": "2026-09-30T08:46"
+   },
+   {
+    "account": "jeff",
+    "task": "victory_road",
+    "startsIn": 12.9,
+    "eta": "2026-09-30T08:48"
+   },
+   {
+    "account": "jeff",
+    "task": "paradise",
+    "startsIn": 13.0,
+    "eta": "2026-09-30T08:48"
    }
   ],
-  "more": 232,
+  "more": 230,
   "fillers": [
    {
     "account": "skomain",
@@ -9748,12 +9775,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 3,
-   "medianSec": 20,
+   "n": 4,
+   "medianSec": 18.5,
    "picker": {
-    "n": 1,
-    "medianSec": 17,
-    "jumps": 1
+    "n": 2,
+    "medianSec": 16.0,
+    "jumps": 2
    },
    "typed": {
     "n": 0,
@@ -9766,10 +9793,6 @@
   }
  },
  "progress": {
-  "fake1": {
-   "paradiseStamina": "2/12",
-   "pillar": "floor 6 stage 4"
-  },
   "fake2": {
    "mailUnread": 0,
    "paradiseStamina": "0/12",
@@ -9836,9 +9859,11 @@
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "1/13",
-   "rank": 2
+   "rank": 2,
+   "pillar": "floor 102 stage 9"
   },
   "smurf": {},
+  "fake1": {},
   "fake8": {
    "mailUnread": 0,
    "paradiseStamina": "0/12"
@@ -9861,6 +9886,7 @@
  },
  "ledger": {
   "nova": {
+   "pillar/story stages cleared": 3,
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
@@ -10116,8 +10142,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-30",
-   "summary": "10 of 18 dailies done · gave up on bash · 1 not available today",
-   "done": 10,
+   "summary": "12 of 18 dailies done · gave up on bash · 1 not available today",
+   "done": 12,
    "owed": 18,
    "open": [
     {
@@ -10135,14 +10161,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "wormhole",
@@ -10175,6 +10193,7 @@
     }
    ],
    "spent": {
+    "pillar/story stages cleared": 3,
     "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -10185,7 +10204,8 @@
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "1/13",
-    "rank": 2
+    "rank": 2,
+    "pillar": "floor 102 stage 9"
    },
    "history": [
     {
@@ -10220,7 +10240,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 10,
+     "done": 12,
      "failed": 3
     }
    ]
@@ -10751,10 +10771,7 @@
     }
    ],
    "spent": {},
-   "progress": {
-    "paradiseStamina": "2/12",
-    "pillar": "floor 6 stage 4"
-   },
+   "progress": {},
    "history": [
     {
      "day": "2026-09-24",
@@ -12028,16 +12045,16 @@
    ],
    "issues": [
     {
+     "task": "island_challenge",
+     "at": "08:33",
+     "why": "the stage map did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_083344_island_challenge_skomain__KEEP_0004_083357_final.png"
+    },
+    {
      "task": "weekend_bash",
      "at": "08:08",
      "why": "weekend_bash: tab 2 did not open",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_080803_weekend_bash_skomain__KEEP_0001_080816_final.png"
-    },
-    {
-     "task": "island_challenge",
-     "at": "08:02",
-     "why": "the stage map did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_080246_island_challenge_skomain__KEEP_0004_080259_final.png"
     },
     {
      "task": "paradise",
@@ -12071,7 +12088,7 @@
     {
      "day": "2026-09-30",
      "done": 24,
-     "failed": 5
+     "failed": 6
     }
    ]
   },
