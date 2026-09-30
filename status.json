@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T02:07:29.549171",
+ "generatedAt": "2026-10-01T02:09:33.312033",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake5",
+  "account": "fake7",
   "mode": "worldboss",
-  "since": "02:07:12"
+  "since": "02:08:59"
  },
  "grid": {
   "tasks": [
@@ -822,11 +822,43 @@
   }
  },
  "session": {
-  "label": "fake4",
-  "at": "2026-10-01T02:06:35.296836",
+  "label": "fake7",
+  "at": "2026-10-01T02:09:18.723246",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T02:08:59",
+   "script": "worldboss",
+   "account": "fake6",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_020805_worldboss_fake6"
+  },
+  {
+   "ts": "2026-10-01T02:08:04",
+   "script": "worldboss",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 52,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_020712_worldboss_fake5"
+  },
   {
    "ts": "2026-10-01T02:07:12",
    "script": "worldboss",
@@ -8668,43 +8700,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_071159_rift_lucifer2"
-  },
-  {
-   "ts": "2026-09-30T06:45:55",
-   "script": "rift",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 52,
-   "stats": {
-    "progress_gift_claimed": 1,
-    "rift_no_result": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_064502_rift_lucifer2"
-  },
-  {
-   "ts": "2026-09-30T06:30:55",
-   "script": "rift",
-   "account": "deno",
-   "rc": 2,
-   "secs": 195,
-   "stats": {
-    "rift_levels": 35,
-    "rift_rerolls": 6,
-    "rift_finished": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_062739_rift_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 94049,
+  "now": 94173,
   "segments": [
    {
     "b": 28937,
@@ -16635,11 +16636,39 @@
     "s": "worldboss",
     "login": [
      94032,
-     null
+     94049
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 94084,
+    "secs": 52,
+    "why": ""
+   },
+   {
+    "b": 94084,
+    "a": "fake6",
+    "s": "worldboss",
+    "login": [
+     94085,
+     94102
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 94139,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 94139,
+    "a": "fake7",
+    "s": "worldboss",
+    "login": [
+     94139,
+     94158
     ],
     "handoff": null,
     "rc": null,
-    "e": 94049
+    "e": 94173
    }
   ],
   "idle": [
@@ -17303,20 +17332,11 @@
    "secs": 49,
    "why": "level 1: no result after 45s",
    "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_071159_rift_lucifer2__KEEP_0001_071249_final.png"
-  },
-  {
-   "ts": "2026-09-30T06:45:55",
-   "account": "lucifer2",
-   "task": "rift",
-   "rc": 1,
-   "secs": 52,
-   "why": "level 1: no result after 45s",
-   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_064502_rift_lucifer2__KEEP_0003_064555_final.png"
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 250,
+  "switches": 252,
   "relogMinutes": 69.4,
   "retries": 60,
   "tasks": {
@@ -17431,8 +17451,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 28,
-    "minutes": 30.1,
+    "runs": 30,
+    "minutes": 31.9,
     "failed": 1
    }
   }
@@ -17795,7 +17815,9 @@
    "fake1",
    "fake2",
    "fake3",
-   "fake4"
+   "fake4",
+   "fake5",
+   "fake6"
   ]
  },
  "worldBossSkipped": {},
@@ -17987,20 +18009,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 248,
+   "n": 250,
    "medianSec": 16.0,
    "picker": {
-    "n": 195,
-    "medianSec": 15,
-    "jumps": 109
+    "n": 196,
+    "medianSec": 15.0,
+    "jumps": 110
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 53,
-    "medianSec": 20
+    "n": 54,
+    "medianSec": 20.0
    }
   }
  },
@@ -19159,6 +19181,11 @@
      "day": "2026-09-30",
      "done": 15,
      "failed": 3
+    },
+    {
+     "day": "2026-10-01",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -19233,6 +19260,11 @@
      "day": "2026-09-30",
      "done": 15,
      "failed": 2
+    },
+    {
+     "day": "2026-10-01",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
