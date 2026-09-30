@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T15:45:55.390049",
+ "generatedAt": "2026-09-30T15:47:59.100097",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
-  "mode": "rift",
-  "since": "15:45:49"
+  "account": "chris",
+  "mode": "hoopa",
+  "since": "15:47:08"
  },
  "grid": {
   "tasks": [
@@ -743,7 +743,8 @@
  "snoozed": {
   "chris|island_challenge": "2026-09-30T16:51",
   "jeff|island_challenge": "2026-09-30T17:20",
-  "lucifer1|hoopa": "2026-09-30T15:58"
+  "lucifer1|hoopa": "2026-09-30T15:58",
+  "lucifer2|rift": "2026-09-30T16:02"
  },
  "ownerOnline": [],
  "keys": {
@@ -752,8 +753,8 @@
    "at": "2026-09-30T15:17:44"
   },
   "chris": {
-   "keys": 0,
-   "at": "2026-09-29T22:34:18"
+   "keys": 5,
+   "at": "2026-09-30T15:47:40"
   },
   "lucifer1": {
    "keys": 312,
@@ -813,11 +814,25 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-09-30T15:45:30.081339",
+  "label": "chris",
+  "at": "2026-09-30T15:47:23.499684",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T15:47:08",
+   "script": "rift",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 49,
+   "stats": {
+    "rift_no_result": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_154618_rift_lucifer2"
+  },
   {
    "ts": "2026-09-30T15:45:48",
    "script": "rift",
@@ -8556,24 +8571,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_021216_worldboss_fake5"
-  },
-  {
-   "ts": "2026-09-30T02:12:16",
-   "script": "worldboss",
-   "account": "fake4",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_021044_worldboss_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 56755,
+  "now": 56879,
   "segments": [
    {
     "b": 28937,
@@ -12676,16 +12679,39 @@
     "s": "rift",
     "login": [
      56749,
-     null
+     56769
     ],
-    "handoff": null,
+    "handoff": 56778,
+    "rc": 1,
+    "e": 56828,
+    "secs": 49,
+    "why": ""
+   },
+   {
+    "b": 56828,
+    "a": "chris",
+    "s": "hoopa",
+    "login": [
+     56829,
+     56843
+    ],
+    "handoff": 56858,
     "rc": null,
-    "e": 56755
+    "e": 56879
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T15:47:08",
+   "account": "lucifer2",
+   "task": "rift",
+   "rc": 1,
+   "secs": 49,
+   "why": "level 1: no result after 45s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_154618_rift_lucifer2__KEEP_0001_154708_final.png"
+  },
   {
    "ts": "2026-09-30T15:23:59",
    "account": "lucifer2",
@@ -13243,22 +13269,13 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:12:16",
-   "account": "fake4",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 73,
-  "relogMinutes": 31.5,
-  "retries": 44,
+  "switches": 74,
+  "relogMinutes": 32.5,
+  "retries": 45,
   "tasks": {
    "island_challenge": {
     "runs": 11,
@@ -13361,9 +13378,9 @@
     "failed": 0
    },
    "rift": {
-    "runs": 8,
-    "minutes": 3.6,
-    "failed": 1
+    "runs": 9,
+    "minutes": 4.5,
+    "failed": 2
    }
   }
  },
@@ -14033,10 +14050,6 @@
     "mode": "rift"
    },
    {
-    "account": "lucifer2",
-    "mode": "rift"
-   },
-   {
     "account": "chris",
     "mode": "hoopa"
    },
@@ -14052,11 +14065,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 69,
+   "n": 71,
    "medianSec": 17,
    "picker": {
-    "n": 47,
-    "medianSec": 16,
+    "n": 48,
+    "medianSec": 16.0,
     "jumps": 29
    },
    "typed": {
@@ -14064,8 +14077,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 22,
-    "medianSec": 20.0
+    "n": 23,
+    "medianSec": 20
    }
   }
  },
@@ -15325,12 +15338,6 @@
    ],
    "issues": [
     {
-     "task": "worldboss",
-     "at": "02:12",
-     "why": "account switch failed",
-     "frame": null
-    },
-    {
      "task": "combat_daily",
      "at": "10:35",
      "why": "finished, but left open: craft row still open (for pokemon_home)",
@@ -16162,9 +16169,9 @@
    "issues": [
     {
      "task": "rift",
-     "at": "15:23",
+     "at": "15:47",
      "why": "level 1: no result after 45s",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_152310_rift_lucifer2__KEEP_0001_152359_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_154618_rift_lucifer2__KEEP_0001_154708_final.png"
     },
     {
      "task": "paradise",
@@ -16248,7 +16255,7 @@
     {
      "day": "2026-09-30",
      "done": 14,
-     "failed": 8
+     "failed": 9
     }
    ]
   },
