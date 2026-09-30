@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T11:19:31.178633",
+ "generatedAt": "2026-09-30T11:21:35.252964",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake7",
-  "mode": "sky_pillar",
-  "since": "11:18:04"
+  "account": "sprite",
+  "mode": "dailyclaim",
+  "since": "11:21:13"
  },
  "grid": {
   "tasks": [
@@ -321,8 +321,8 @@
      "⏰",
      "-",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "⊘",
      "-",
      "-",
      "-",
@@ -576,10 +576,10 @@
   ]
  },
  "counts": {
-  "done": 152,
-  "todo": 107,
+  "done": 153,
+  "todo": 105,
   "gaveUp": 6,
-  "unavailable": 15,
+  "unavailable": 16,
   "windowed": 38
  },
  "disabled": [
@@ -816,11 +816,53 @@
   }
  },
  "session": {
-  "label": "fake7",
-  "at": "2026-09-30T11:09:25.849795",
+  "label": "sprite",
+  "at": "2026-09-30T11:21:27.534053",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T11:21:12",
+   "script": "faction",
+   "account": "fake7",
+   "rc": 2,
+   "secs": 10,
+   "stats": {
+    "tower_locked": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_112101_faction_fake7"
+  },
+  {
+   "ts": "2026-09-30T11:20:57",
+   "script": "sky_pillar",
+   "account": "fake7",
+   "rc": 0,
+   "secs": 171,
+   "stats": {
+    "stages_cleared": 2,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 4,
+    "stage": 8,
+    "proofs_spent": 2
+   },
+   "values_all": {
+    "floor": [
+     4,
+     4
+    ],
+    "stage": [
+     7,
+     8
+    ]
+   },
+   "dir": "debug_runs/20260930_111805_sky_pillar_fake7"
+  },
   {
    "ts": "2026-09-30T11:18:04",
    "script": "collect_hoopa_keys",
@@ -8242,42 +8284,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_133100_pokemon_home_lucifer2"
-  },
-  {
-   "ts": "2026-09-29T13:30:59",
-   "script": "daily_dungeon",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_133045_daily_dungeon_lucifer2"
-  },
-  {
-   "ts": "2026-09-29T13:30:42",
-   "script": "joint_team_daily_quest",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 51,
-   "stats": {
-    "panel_swipes": 8,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_132951_joint_team_daily_quest_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 40771,
+  "now": 40895,
   "segments": [
    {
     "b": 28937,
@@ -10310,8 +10322,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 40685,
+    "rc": 0,
+    "e": 40858,
+    "secs": 171,
+    "why": ""
+   },
+   {
+    "b": 40858,
+    "a": "fake7",
+    "s": "faction",
+    "login": null,
+    "handoff": 40861,
+    "rc": 2,
+    "e": 40873,
+    "secs": 10,
+    "why": ""
+   },
+   {
+    "b": 40873,
+    "a": "sprite",
+    "s": "dailyclaim",
+    "login": [
+     40873,
+     40887
+    ],
+    "handoff": 40893,
     "rc": null,
-    "e": 40771
+    "e": 40895
    }
   ],
   "idle": []
@@ -10797,8 +10834,8 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 23,
-  "relogMinutes": 9.6,
+  "switches": 24,
+  "relogMinutes": 9.9,
   "retries": 24,
   "tasks": {
    "island_challenge": {
@@ -10862,13 +10899,13 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 12,
-    "minutes": 11.7,
+    "runs": 13,
+    "minutes": 14.5,
     "failed": 1
    },
    "faction": {
-    "runs": 9,
-    "minutes": 17.8,
+    "runs": 10,
+    "minutes": 17.9,
     "failed": 0
    },
    "ultra_wormhole": {
@@ -10935,6 +10972,12 @@
    "task": "teamshop",
    "why": null,
    "at": null
+  },
+  {
+   "account": "fake7",
+   "task": "faction",
+   "why": "FCTN Tower is not unlocked on this account — its card opened nothing",
+   "at": "2026-09-30T11:21:12"
   },
   {
    "account": "fake7",
@@ -11439,79 +11482,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake7",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T11:19"
-   },
-   {
-    "account": "fake7",
-    "task": "faction",
-    "startsIn": 1.0,
-    "eta": "2026-09-30T11:20"
-   },
-   {
     "account": "sprite",
     "task": "dailyclaim",
-    "startsIn": 3.4,
-    "eta": "2026-09-30T11:22"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T11:21"
    },
    {
     "account": "sprite",
     "task": "mail",
-    "startsIn": 3.9,
-    "eta": "2026-09-30T11:23"
+    "startsIn": 0.5,
+    "eta": "2026-09-30T11:22"
    },
    {
     "account": "sprite",
     "task": "daily_dungeon",
-    "startsIn": 3.9,
-    "eta": "2026-09-30T11:23"
+    "startsIn": 0.6,
+    "eta": "2026-09-30T11:22"
    },
    {
     "account": "sprite",
     "task": "pokemon_home",
-    "startsIn": 4.4,
-    "eta": "2026-09-30T11:23"
+    "startsIn": 1.0,
+    "eta": "2026-09-30T11:22"
    },
    {
     "account": "sprite",
     "task": "weekend_bash",
-    "startsIn": 5.1,
-    "eta": "2026-09-30T11:24"
+    "startsIn": 1.8,
+    "eta": "2026-09-30T11:23"
    },
    {
     "account": "sprite",
     "task": "combat_daily",
-    "startsIn": 5.3,
-    "eta": "2026-09-30T11:24"
+    "startsIn": 2.0,
+    "eta": "2026-09-30T11:23"
    },
    {
     "account": "sprite",
     "task": "victory_road",
-    "startsIn": 7.1,
-    "eta": "2026-09-30T11:26"
+    "startsIn": 3.7,
+    "eta": "2026-09-30T11:25"
    },
    {
     "account": "sprite",
     "task": "paradise",
-    "startsIn": 7.2,
-    "eta": "2026-09-30T11:26"
+    "startsIn": 3.8,
+    "eta": "2026-09-30T11:25"
    },
    {
     "account": "sprite",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.5,
-    "eta": "2026-09-30T11:30"
+    "startsIn": 7.2,
+    "eta": "2026-09-30T11:28"
    },
    {
     "account": "sprite",
     "task": "sky_pillar",
-    "startsIn": 10.6,
+    "startsIn": 7.3,
+    "eta": "2026-09-30T11:28"
+   },
+   {
+    "account": "exou",
+    "task": "dailyclaim",
+    "startsIn": 8.8,
+    "eta": "2026-09-30T11:30"
+   },
+   {
+    "account": "exou",
+    "task": "mail",
+    "startsIn": 9.3,
     "eta": "2026-09-30T11:30"
    }
   ],
-  "more": 95,
+  "more": 93,
   "fillers": [
    {
     "account": "skomain",
@@ -11545,11 +11588,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 23,
-   "medianSec": 17,
+   "n": 24,
+   "medianSec": 16.5,
    "picker": {
-    "n": 17,
-    "medianSec": 16,
+    "n": 18,
+    "medianSec": 16.0,
     "jumps": 10
    },
    "typed": {
@@ -11644,7 +11687,8 @@
   },
   "fake7": {
    "mailUnread": 0,
-   "paradiseStamina": "39/13"
+   "paradiseStamina": "39/13",
+   "pillar": "floor 4 stage 8"
   },
   "skomain": {
    "mailUnread": 0,
@@ -11655,6 +11699,7 @@
  },
  "ledger": {
   "fake7": {
+   "pillar/story stages cleared": 2,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 3
@@ -13056,8 +13101,8 @@
   "fake7": {
    "name": "1zr0awyyr",
    "day": "2026-09-30",
-   "summary": "9 of 15 dailies done · gave up on dailies · 2 switched off · 2 not available today",
-   "done": 9,
+   "summary": "10 of 15 dailies done · gave up on dailies · 2 switched off · 3 not available today",
+   "done": 10,
    "owed": 15,
    "open": [
     {
@@ -13077,12 +13122,8 @@
      "state": "waits for its window"
     },
     {
-     "task": "pillar",
-     "state": "still to do"
-    },
-    {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     }
    ],
    "issues": [
@@ -13113,6 +13154,10 @@
    ],
    "unavailable": [
     {
+     "task": "faction",
+     "why": "FCTN Tower is not unlocked on this account — its card opened nothing"
+    },
+    {
      "task": "rank_match",
      "why": null
     },
@@ -13122,13 +13167,15 @@
     }
    ],
    "spent": {
+    "pillar/story stages cleared": 2,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 3
    },
    "progress": {
     "mailUnread": 0,
-    "paradiseStamina": "39/13"
+    "paradiseStamina": "39/13",
+    "pillar": "floor 4 stage 8"
    },
    "history": [
     {
@@ -13163,7 +13210,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 8,
+     "done": 9,
      "failed": 4
     }
    ]
