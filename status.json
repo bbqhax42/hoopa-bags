@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T20:01:53.451711",
+ "generatedAt": "2026-09-30T20:03:56.909992",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "fake1",
   "mode": "worldboss",
-  "since": "20:01:52"
+  "since": "20:03:48"
  },
  "grid": {
   "tasks": [
@@ -822,11 +822,43 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-30T20:01:07.830715",
+  "label": "smurf",
+  "at": "2026-09-30T20:03:08.894468",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T20:03:48",
+   "script": "worldboss",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 56,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_200252_worldboss_smurf"
+  },
+  {
+   "ts": "2026-09-30T20:02:51",
+   "script": "worldboss",
+   "account": "nova",
+   "rc": 0,
+   "secs": 58,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_200152_worldboss_nova"
+  },
   {
    "ts": "2026-09-30T20:01:52",
    "script": "worldboss",
@@ -8625,36 +8657,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_024237_worldboss_exou"
-  },
-  {
-   "ts": "2026-09-30T02:42:37",
-   "script": "worldboss",
-   "account": "sprite",
-   "rc": 1,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_024236_worldboss_sprite"
-  },
-  {
-   "ts": "2026-09-30T02:42:36",
-   "script": "worldboss",
-   "account": "fake7",
-   "rc": 1,
-   "secs": 0,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_024236_worldboss_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 72113,
+  "now": 72237,
   "segments": [
    {
     "b": 28937,
@@ -13618,11 +13626,39 @@
     "s": "worldboss",
     "login": [
      72113,
+     72128
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72171,
+    "secs": 58,
+    "why": ""
+   },
+   {
+    "b": 72171,
+    "a": "smurf",
+    "s": "worldboss",
+    "login": [
+     72172,
+     72188
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72228,
+    "secs": 56,
+    "why": ""
+   },
+   {
+    "b": 72228,
+    "a": "fake1",
+    "s": "worldboss",
+    "login": [
+     72228,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 72113
+    "e": 72237
    }
   ],
   "idle": [
@@ -14137,29 +14173,11 @@
    "secs": 0,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:42:37",
-   "account": "sprite",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 0,
-   "why": "account switch failed",
-   "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:42:36",
-   "account": "fake7",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 0,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 119,
+  "switches": 121,
   "relogMinutes": 48.3,
   "retries": 53,
   "tasks": {
@@ -14274,8 +14292,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 2,
-    "minutes": 1.6,
+    "runs": 4,
+    "minutes": 3.5,
     "failed": 0
    }
   }
@@ -14625,7 +14643,9 @@
   ],
   "2026-09-30_20:00": [
    "chris",
-   "jeff"
+   "jeff",
+   "nova",
+   "smurf"
   ]
  },
  "worldBossSkipped": {},
@@ -14827,12 +14847,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 115,
+   "n": 117,
    "medianSec": 16,
    "picker": {
-    "n": 85,
+    "n": 87,
     "medianSec": 15,
-    "jumps": 44
+    "jumps": 46
    },
    "typed": {
     "n": 0,
@@ -15513,7 +15533,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 16,
+     "done": 17,
      "failed": 3
     }
    ]
@@ -15840,7 +15860,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 17,
+     "done": 18,
      "failed": 4
     }
    ]
@@ -16389,12 +16409,6 @@
      "at": "11:14",
      "why": "left: arena challenges",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_111322_combat_daily_fake7__KEEP_0101_111438_final.png"
-    },
-    {
-     "task": "worldboss",
-     "at": "02:42",
-     "why": "account switch failed",
-     "frame": null
     }
    ],
    "off": [
@@ -16491,12 +16505,6 @@
      "at": "11:23",
      "why": "weekend_bash: tab 2 did not open",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_112302_weekend_bash_sprite__KEEP_0001_112315_final.png"
-    },
-    {
-     "task": "worldboss",
-     "at": "02:42",
-     "why": "account switch failed",
-     "frame": null
     }
    ],
    "off": [],
