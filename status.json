@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T13:37:57.235944",
+ "generatedAt": "2026-09-30T13:40:01.177107",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
   "mode": "ultra_wormhole",
-  "since": "13:37:36"
+  "since": "13:39:07"
  },
  "grid": {
   "tasks": [
@@ -567,7 +567,7 @@
      "✓",
      "-",
      "-",
-     "·",
+     "✗2",
      "·",
      "-",
      "-"
@@ -577,8 +577,8 @@
  },
  "counts": {
   "done": 255,
-  "todo": 36,
-  "gaveUp": 13,
+  "todo": 35,
+  "gaveUp": 14,
   "unavailable": 18,
   "windowed": 0
  },
@@ -817,6 +817,29 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T13:39:06",
+   "script": "ultra_wormhole",
+   "account": "dre",
+   "rc": 1,
+   "secs": 86,
+   "stats": {
+    "hired": 11,
+    "wins": 2,
+    "incomplete": 2,
+    "near_miss_buy_items": 1
+   },
+   "incomplete": [
+    "ultra_wormhole: stuck on an unknown screen",
+    "ultra_wormhole: 2/16 wins after 2 battles"
+   ],
+   "values": {
+    "rewards_claimed": 0,
+    "wins_today": 2
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_133739_ultra_wormhole_dre"
+  },
   {
    "ts": "2026-09-30T13:37:35",
    "script": "sky_pillar",
@@ -8348,26 +8371,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_175306_ring_battle_lucifer2"
-  },
-  {
-   "ts": "2026-09-29T17:52:20",
-   "script": "ring_battle",
-   "account": "lucifer1",
-   "rc": 1,
-   "secs": 23,
-   "stats": {
-    "ring_auto_formation": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_175157_ring_battle_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 49077,
+  "now": 49201,
   "segments": [
    {
     "b": 28937,
@@ -11785,13 +11794,35 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 49059,
-    "rc": null,
-    "e": 49077
+    "rc": 1,
+    "e": 49147,
+    "secs": 86,
+    "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 2/16 wins after 2 battles"
+   },
+   {
+    "b": 49147,
+    "a": "dre",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 49147,
+    "rc": 1,
+    "e": 49201,
+    "secs": 86,
+    "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 2/16 wins after 2 battles"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T13:39:06",
+   "account": "dre",
+   "task": "ultra_wormhole",
+   "rc": 1,
+   "secs": 86,
+   "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 2/16 wins after 2 battles",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_133739_ultra_wormhole_dre__KEEP_0003_133906_final.png"
+  },
   {
    "ts": "2026-09-30T13:26:18",
    "account": "dre",
@@ -12409,7 +12440,7 @@
   "since": "2026-09-30T08:00",
   "switches": 37,
   "relogMinutes": 16.0,
-  "retries": 42,
+  "retries": 43,
   "tasks": {
    "island_challenge": {
     "runs": 11,
@@ -12482,9 +12513,9 @@
     "failed": 0
    },
    "ultra_wormhole": {
-    "runs": 9,
-    "minutes": 41.2,
-    "failed": 0
+    "runs": 10,
+    "minutes": 42.6,
+    "failed": 1
    },
    "ring_battle": {
     "runs": 9,
@@ -13078,78 +13109,78 @@
   "next": [
    {
     "account": "dre",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T13:37"
-   },
-   {
-    "account": "dre",
     "task": "ring_battle",
-    "startsIn": 4.6,
-    "eta": "2026-09-30T13:42"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T13:40"
    },
    {
     "account": "nova",
     "task": "rank_match",
-    "startsIn": 6.0,
-    "eta": "2026-09-30T13:43"
+    "startsIn": 1.4,
+    "eta": "2026-09-30T13:41"
    },
    {
     "account": "nova",
     "task": "guild_war",
-    "startsIn": 7.2,
+    "startsIn": 2.6,
+    "eta": "2026-09-30T13:42"
+   },
+   {
+    "account": "jeff",
+    "task": "rank_match",
+    "startsIn": 4.1,
+    "eta": "2026-09-30T13:44"
+   },
+   {
+    "account": "jeff",
+    "task": "guild_war",
+    "startsIn": 5.3,
     "eta": "2026-09-30T13:45"
    },
    {
     "account": "jeff",
-    "task": "rank_match",
-    "startsIn": 8.7,
+    "task": "championship",
+    "startsIn": 6.3,
     "eta": "2026-09-30T13:46"
    },
    {
-    "account": "jeff",
-    "task": "guild_war",
-    "startsIn": 9.9,
-    "eta": "2026-09-30T13:47"
+    "account": "chris",
+    "task": "rank_match",
+    "startsIn": 6.8,
+    "eta": "2026-09-30T13:46"
    },
    {
-    "account": "jeff",
-    "task": "championship",
-    "startsIn": 10.9,
+    "account": "chris",
+    "task": "guild_war",
+    "startsIn": 8.0,
     "eta": "2026-09-30T13:48"
    },
    {
     "account": "chris",
-    "task": "rank_match",
-    "startsIn": 11.4,
+    "task": "championship",
+    "startsIn": 9.0,
     "eta": "2026-09-30T13:49"
    },
    {
-    "account": "chris",
+    "account": "smurf",
+    "task": "rank_match",
+    "startsIn": 9.5,
+    "eta": "2026-09-30T13:49"
+   },
+   {
+    "account": "smurf",
     "task": "guild_war",
-    "startsIn": 12.6,
+    "startsIn": 10.7,
     "eta": "2026-09-30T13:50"
    },
    {
-    "account": "chris",
+    "account": "smurf",
     "task": "championship",
-    "startsIn": 13.6,
+    "startsIn": 11.7,
     "eta": "2026-09-30T13:51"
-   },
-   {
-    "account": "smurf",
-    "task": "rank_match",
-    "startsIn": 14.1,
-    "eta": "2026-09-30T13:52"
-   },
-   {
-    "account": "smurf",
-    "task": "guild_war",
-    "startsIn": 15.3,
-    "eta": "2026-09-30T13:53"
    }
   ],
-  "more": 24,
+  "more": 23,
   "fillers": [
    {
     "account": "skomain",
@@ -15661,7 +15692,7 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-30",
-   "summary": "13 of 16 dailies done · gave up on bash",
+   "summary": "13 of 16 dailies done · gave up on bash, wormhole",
    "done": 13,
    "owed": 16,
    "open": [
@@ -15671,7 +15702,7 @@
     },
     {
      "task": "wormhole",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "ring",
@@ -15679,6 +15710,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "ultra_wormhole",
+     "at": "13:39",
+     "why": "ultra_wormhole: stuck on an unknown screen; ultra_wormhole: 2/16 wins after 2 battles",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_133739_ultra_wormhole_dre__KEEP_0003_133906_final.png"
+    },
     {
      "task": "weekend_bash",
      "at": "13:26",
@@ -15742,7 +15779,7 @@
     {
      "day": "2026-09-30",
      "done": 14,
-     "failed": 4
+     "failed": 5
     }
    ]
   }
