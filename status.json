@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T16:02:26.312185",
+ "generatedAt": "2026-09-30T16:04:30.974691",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "rift",
-  "since": "16:02:13"
+  "account": "chris",
+  "mode": "hoopa",
+  "since": "16:02:41"
  },
  "grid": {
   "tasks": [
@@ -813,10 +813,24 @@
  },
  "session": {
   "label": "chris",
-  "at": "2026-09-30T15:47:23.499684",
+  "at": "2026-09-30T16:02:56.371399",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T16:02:40",
+   "script": "rift",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_160239_rift_jeff"
+  },
   {
    "ts": "2026-09-30T15:47:08",
    "script": "rift",
@@ -8557,24 +8571,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_021348_worldboss_fake6"
-  },
-  {
-   "ts": "2026-09-30T02:13:48",
-   "script": "worldboss",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_021216_worldboss_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 57746,
+  "now": 57871,
   "segments": [
    {
     "b": 28937,
@@ -12703,11 +12705,25 @@
     "s": "rift",
     "login": [
      57734,
-     null
+     57748
     ],
-    "handoff": null,
+    "handoff": 57758,
+    "rc": 2,
+    "e": 57761,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 57761,
+    "a": "chris",
+    "s": "hoopa",
+    "login": [
+     57761,
+     57776
+    ],
+    "handoff": 57787,
     "rc": null,
-    "e": 57746
+    "e": 57871
    }
   ],
   "idle": []
@@ -13270,21 +13286,12 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:13:48",
-   "account": "fake5",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 75,
-  "relogMinutes": 32.5,
+  "switches": 76,
+  "relogMinutes": 33.3,
   "retries": 45,
   "tasks": {
    "island_challenge": {
@@ -13388,7 +13395,7 @@
     "failed": 0
    },
    "rift": {
-    "runs": 9,
+    "runs": 10,
     "minutes": 4.5,
     "failed": 2
    }
@@ -13508,6 +13515,12 @@
    "task": "hoopa",
    "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
    "at": "2026-09-30T15:17:46"
+  },
+  {
+   "account": "jeff",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-09-30T16:02:40"
   },
   {
    "account": "lucifer1",
@@ -13755,9 +13768,9 @@
     "last": "2026-09-30T15:43:20"
    },
    "chris": {
-    "runs": 12,
+    "runs": 13,
     "targets": 0,
-    "last": "2026-09-30T16:02:13"
+    "last": "2026-09-30T16:03:51"
    }
   },
   "targets": [
@@ -14061,10 +14074,6 @@
     "mode": "rift"
    },
    {
-    "account": "jeff",
-    "mode": "rift"
-   },
-   {
     "account": "lucifer2",
     "mode": "rift"
    },
@@ -14075,6 +14084,10 @@
    {
     "account": "lucifer1",
     "mode": "hoopa"
+   },
+   {
+    "account": "skomain",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -14084,10 +14097,10 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 71,
+   "n": 73,
    "medianSec": 17,
    "picker": {
-    "n": 48,
+    "n": 50,
     "medianSec": 16.0,
     "jumps": 29
    },
@@ -14769,7 +14782,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-30",
-   "summary": "16 of 19 dailies done · gave up on bash · 2 not available today",
+   "summary": "16 of 19 dailies done · gave up on bash · 3 not available today",
    "done": 16,
    "owed": 19,
    "open": [
@@ -14815,6 +14828,10 @@
     {
      "task": "hoopa",
      "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
+    {
+     "task": "rift",
+     "why": "rift_finished"
     }
    ],
    "spent": {
