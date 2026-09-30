@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-30T20:49:17.408905",
+ "generatedAt": "2026-09-30T20:51:21.618311",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -111,7 +111,7 @@
      "✓",
      "✓",
      "⊘",
-     "·"
+     "💤"
     ]
    },
    {
@@ -577,7 +577,7 @@
  },
  "counts": {
   "done": 287,
-  "todo": 1,
+  "todo": 0,
   "gaveUp": 13,
   "unavailable": 22,
   "windowed": 0
@@ -731,11 +731,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 12,
-   "stamina": 6,
-   "staminaMax": 6,
-   "staminaAt": "2026-09-30T17:25:04",
-   "nextAt": "2026-09-30T20:49:09"
+   "fights": 14,
+   "stamina": 0,
+   "staminaMax": 37,
+   "staminaAt": "2026-09-30T20:51:10",
+   "nextAt": "2026-09-30T21:09:15"
   },
   {
    "account": "jeff",
@@ -747,6 +747,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-09-30T21:21",
   "jeff|island_challenge": "2026-09-30T21:18"
  },
  "ownerOnline": [],
@@ -822,10 +823,35 @@
  },
  "session": {
   "label": "chris",
-  "at": "2026-09-30T20:47:55.088982",
+  "at": "2026-09-30T20:50:35.314470",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T20:51:15",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 29,
+   "stats": {
+    "fights": 2,
+    "partial_formation": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 0,
+    "fights_today": 14
+   },
+   "values_all": {
+    "stamina": [
+     40,
+     0,
+     0
+    ]
+   },
+   "dir": "debug_runs/20260930_205045_island_challenge_chris"
+  },
   {
    "ts": "2026-09-30T20:32:15",
    "script": "worldboss",
@@ -8650,37 +8676,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_031854_rift_dre"
-  },
-  {
-   "ts": "2026-09-30T03:16:33",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 37,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 20,
-    "fights_today": 12
-   },
-   "values_all": {
-    "stamina": [
-     60,
-     20,
-     20,
-     20
-    ]
-   },
-   "dir": "debug_runs/20260930_031555_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 74957,
+  "now": 75081,
   "segments": [
    {
     "b": 28937,
@@ -14046,11 +14047,11 @@
     "s": "hoopa",
     "login": [
      74938,
-     null
+     74958
     ],
-    "handoff": null,
+    "handoff": 74970,
     "rc": null,
-    "e": 74957
+    "e": 75081
    }
   ],
   "idle": [
@@ -14102,7 +14103,9 @@
    74576,
    74628,
    74695,
-   74937
+   74937,
+   75075,
+   75075
   ]
  },
  "failures": [
@@ -14523,14 +14526,14 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 145,
-  "relogMinutes": 48.8,
-  "retries": 54,
+  "switches": 146,
+  "relogMinutes": 49.8,
+  "retries": 55,
   "tasks": {
    "island_challenge": {
-    "runs": 14,
-    "minutes": 5.9,
-    "failed": 13
+    "runs": 15,
+    "minutes": 6.4,
+    "failed": 14
    },
    "dailyclaim": {
     "runs": 20,
@@ -15035,9 +15038,9 @@
     "last": "2026-09-30T19:41:33"
    },
    "skomain": {
-    "runs": 14,
+    "runs": 15,
     "targets": 0,
-    "last": "2026-09-30T19:52:03"
+    "last": "2026-09-30T20:50:20"
    }
   },
   "targets": [
@@ -15190,14 +15193,7 @@
   "skomain": "SkoMain"
  },
  "queue": {
-  "next": [
-   {
-    "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-09-30T20:49"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [
    {
@@ -15216,11 +15212,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 141,
+   "n": 143,
    "medianSec": 16,
    "picker": {
-    "n": 104,
-    "medianSec": 15.0,
+    "n": 105,
+    "medianSec": 15,
     "jumps": 58
    },
    "typed": {
@@ -15228,12 +15224,20 @@
     "medianSec": null
    },
    "miss": {
-    "n": 37,
-    "medianSec": 20
+    "n": 38,
+    "medianSec": 20.0
    }
   }
  },
  "progress": {
+  "chris": {
+   "islandFights": 14,
+   "islandStamina": 0,
+   "mailUnread": 0,
+   "paradiseStamina": "1/13",
+   "rank": 42,
+   "pillar": "floor 139 stage 8"
+  },
   "jeff": {
    "islandFights": 9,
    "islandStamina": 1,
@@ -15241,14 +15245,6 @@
    "paradiseStamina": "12/12",
    "rank": 25,
    "pillar": "floor 150 stage 6"
-  },
-  "chris": {
-   "islandFights": 12,
-   "islandStamina": 6,
-   "mailUnread": 0,
-   "paradiseStamina": "1/13",
-   "rank": 42,
-   "pillar": "floor 139 stage 8"
   },
   "skomain": {
    "mailUnread": 0,
@@ -15346,7 +15342,7 @@
  },
  "ledger": {
   "chris": {
-   "island fights": 16,
+   "island fights": 18,
    "guild war attempts": 1,
    "faction sweeps": 2,
    "pillar/story stages cleared": 3,
@@ -15359,7 +15355,7 @@
    "Privilege Pack claimed": 1
   },
   "jeff": {
-   "island fights": 15,
+   "island fights": 12,
    "guild war attempts": 1,
    "pillar/story stages cleared": 2,
    "ranked attempts": 1,
@@ -15963,7 +15959,7 @@
     }
    ],
    "spent": {
-    "island fights": 15,
+    "island fights": 12,
     "guild war attempts": 1,
     "pillar/story stages cleared": 2,
     "ranked attempts": 1,
@@ -16036,7 +16032,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -16063,7 +16059,7 @@
     }
    ],
    "spent": {
-    "island fights": 16,
+    "island fights": 18,
     "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar/story stages cleared": 3,
@@ -16076,8 +16072,8 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "islandFights": 12,
-    "islandStamina": 6,
+    "islandFights": 14,
+    "islandStamina": 0,
     "mailUnread": 0,
     "paradiseStamina": "1/13",
     "rank": 42,
