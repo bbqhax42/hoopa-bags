@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T02:05:25.351550",
+ "generatedAt": "2026-10-01T02:07:29.549171",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake3",
+  "account": "fake5",
   "mode": "worldboss",
-  "since": "02:05:23"
+  "since": "02:07:12"
  },
  "grid": {
   "tasks": [
@@ -822,11 +822,43 @@
   }
  },
  "session": {
-  "label": "fake2",
-  "at": "2026-10-01T02:04:47.089978",
+  "label": "fake4",
+  "at": "2026-10-01T02:06:35.296836",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T02:07:12",
+   "script": "worldboss",
+   "account": "fake4",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_020617_worldboss_fake4"
+  },
+  {
+   "ts": "2026-10-01T02:06:17",
+   "script": "worldboss",
+   "account": "fake3",
+   "rc": 0,
+   "secs": 53,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_020524_worldboss_fake3"
+  },
   {
    "ts": "2026-10-01T02:05:23",
    "script": "worldboss",
@@ -8667,42 +8699,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_062739_rift_deno"
-  },
-  {
-   "ts": "2026-09-30T06:13:14",
-   "script": "hoopa",
-   "account": "jeff",
-   "rc": 2,
-   "secs": 500,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
-  },
-  {
-   "ts": "2026-09-30T06:04:27",
-   "script": "rift",
-   "account": "lucifer1",
-   "rc": 2,
-   "secs": 1,
-   "stats": {
-    "rift_finished": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_060425_rift_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 93925,
+  "now": 94049,
   "segments": [
    {
     "b": 28937,
@@ -16605,11 +16607,39 @@
     "s": "worldboss",
     "login": [
      93924,
+     93941
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 93977,
+    "secs": 53,
+    "why": ""
+   },
+   {
+    "b": 93977,
+    "a": "fake4",
+    "s": "worldboss",
+    "login": [
+     93977,
+     93995
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 94032,
+    "secs": 54,
+    "why": ""
+   },
+   {
+    "b": 94032,
+    "a": "fake5",
+    "s": "worldboss",
+    "login": [
+     94032,
      null
     ],
     "handoff": null,
     "rc": null,
-    "e": 93925
+    "e": 94049
    }
   ],
   "idle": [
@@ -17286,7 +17316,7 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 248,
+  "switches": 250,
   "relogMinutes": 69.4,
   "retries": 60,
   "tasks": {
@@ -17401,8 +17431,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 26,
-    "minutes": 28.4,
+    "runs": 28,
+    "minutes": 30.1,
     "failed": 1
    }
   }
@@ -17763,7 +17793,9 @@
    "nova",
    "smurf",
    "fake1",
-   "fake2"
+   "fake2",
+   "fake3",
+   "fake4"
   ]
  },
  "worldBossSkipped": {},
@@ -17955,12 +17987,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 245,
-   "medianSec": 16,
+   "n": 248,
+   "medianSec": 16.0,
    "picker": {
-    "n": 192,
-    "medianSec": 15.0,
-    "jumps": 106
+    "n": 195,
+    "medianSec": 15,
+    "jumps": 109
    },
    "typed": {
     "n": 0,
@@ -18959,6 +18991,11 @@
      "day": "2026-09-30",
      "done": 14,
      "failed": 1
+    },
+    {
+     "day": "2026-10-01",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -19042,6 +19079,11 @@
      "day": "2026-09-30",
      "done": 14,
      "failed": 1
+    },
+    {
+     "day": "2026-10-01",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
