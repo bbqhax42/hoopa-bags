@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T09:31:49.708694",
+ "generatedAt": "2026-09-30T09:33:53.755270",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "weekend_bash",
-  "since": "09:31:32"
+  "mode": "combat_daily",
+  "since": "09:32:07"
  },
  "grid": {
   "tasks": [
@@ -124,7 +124,7 @@
      "⊘",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -435,7 +435,7 @@
      "✓",
      "✓",
      "💤",
-     "⏳"
+     "·"
     ]
    },
    {
@@ -578,7 +578,7 @@
  "counts": {
   "done": 62,
   "todo": 201,
-  "gaveUp": 4,
+  "gaveUp": 5,
   "unavailable": 13,
   "windowed": 38
  },
@@ -820,6 +820,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T09:32:06",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_093152_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-09-30T09:31:50",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_093137_weekend_bash_smurf"
+  },
   {
    "ts": "2026-09-30T09:31:31",
    "script": "pokemon_home",
@@ -8236,50 +8272,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_115852_mail_fake6"
-  },
-  {
-   "ts": "2026-09-29T11:58:50",
-   "script": "dailyclaim",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 29,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:79 0.275:8 0.345:55 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_115820_dailyclaim_fake6"
-  },
-  {
-   "ts": "2026-09-29T11:57:54",
-   "script": "faction",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 126,
-   "stats": {
-    "auto_formation": 20,
-    "skip_retry": 17,
-    "floors_fire": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_115547_faction_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 34310,
+  "now": 34434,
   "segments": [
    {
     "b": 28937,
@@ -9207,13 +9205,53 @@
     "s": "weekend_bash",
     "login": null,
     "handoff": 34296,
+    "rc": 1,
+    "e": 34312,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 34312,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 34312,
+    "rc": 1,
+    "e": 34327,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 34327,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34327,
     "rc": null,
-    "e": 34310
+    "e": 34434
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T09:32:06",
+   "account": "smurf",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_093152_weekend_bash_smurf__KEEP_0001_093206_final.png"
+  },
+  {
+   "ts": "2026-09-30T09:31:50",
+   "account": "smurf",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_093137_weekend_bash_smurf__KEEP_0003_093150_final.png"
+  },
   {
    "ts": "2026-09-30T09:06:11",
    "account": "jeff",
@@ -9642,7 +9680,7 @@
   "since": "2026-09-30T08:00",
   "switches": 13,
   "relogMinutes": 5.5,
-  "retries": 17,
+  "retries": 19,
   "tasks": {
    "island_challenge": {
     "runs": 6,
@@ -9675,9 +9713,9 @@
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 8,
-    "minutes": 1.8,
-    "failed": 8
+    "runs": 10,
+    "minutes": 2.3,
+    "failed": 10
    },
    "combat_daily": {
     "runs": 4,
@@ -10265,76 +10303,76 @@
  "queue": {
   "next": [
    {
-    "account": "smurf",
-    "task": "weekend_bash",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T09:31"
+    "account": "skomain",
+    "task": "island_challenge",
+    "startsIn": 0.4,
+    "eta": "2026-09-30T09:34"
    },
    {
     "account": "smurf",
     "task": "combat_daily",
-    "startsIn": 0.2,
-    "eta": "2026-09-30T09:32"
+    "startsIn": 1.2,
+    "eta": "2026-09-30T09:35"
    },
    {
     "account": "smurf",
     "task": "victory_road",
-    "startsIn": 2.0,
-    "eta": "2026-09-30T09:33"
+    "startsIn": 3.0,
+    "eta": "2026-09-30T09:36"
    },
    {
     "account": "smurf",
     "task": "paradise",
-    "startsIn": 2.1,
-    "eta": "2026-09-30T09:33"
+    "startsIn": 3.1,
+    "eta": "2026-09-30T09:36"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 5.4,
-    "eta": "2026-09-30T09:37"
-   },
-   {
-    "account": "smurf",
-    "task": "collect_hoopa_keys",
-    "startsIn": 6.5,
-    "eta": "2026-09-30T09:38"
-   },
-   {
-    "account": "smurf",
-    "task": "sky_pillar",
-    "startsIn": 6.6,
-    "eta": "2026-09-30T09:38"
-   },
-   {
-    "account": "smurf",
-    "task": "faction",
-    "startsIn": 7.3,
-    "eta": "2026-09-30T09:39"
-   },
-   {
-    "account": "smurf",
-    "task": "misty_woods",
-    "startsIn": 8.5,
+    "startsIn": 6.3,
     "eta": "2026-09-30T09:40"
    },
    {
     "account": "smurf",
-    "task": "ultra_wormhole",
-    "startsIn": 10.5,
+    "task": "collect_hoopa_keys",
+    "startsIn": 7.5,
+    "eta": "2026-09-30T09:41"
+   },
+   {
+    "account": "smurf",
+    "task": "sky_pillar",
+    "startsIn": 7.6,
+    "eta": "2026-09-30T09:41"
+   },
+   {
+    "account": "smurf",
+    "task": "faction",
+    "startsIn": 8.3,
     "eta": "2026-09-30T09:42"
    },
    {
     "account": "smurf",
+    "task": "misty_woods",
+    "startsIn": 9.4,
+    "eta": "2026-09-30T09:43"
+   },
+   {
+    "account": "smurf",
+    "task": "ultra_wormhole",
+    "startsIn": 11.4,
+    "eta": "2026-09-30T09:45"
+   },
+   {
+    "account": "smurf",
     "task": "ring_battle",
-    "startsIn": 15.0,
-    "eta": "2026-09-30T09:46"
+    "startsIn": 15.9,
+    "eta": "2026-09-30T09:49"
    },
    {
     "account": "smurf",
     "task": "championship",
-    "startsIn": 16.0,
-    "eta": "2026-09-30T09:47"
+    "startsIn": 16.9,
+    "eta": "2026-09-30T09:50"
    }
   ],
   "more": 189,
@@ -11081,7 +11119,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-09-30",
-   "summary": "5 of 20 dailies done · 2 switched off · 1 not available today",
+   "summary": "5 of 20 dailies done · gave up on bash · 2 switched off · 1 not available today",
    "done": 5,
    "owed": 20,
    "open": [
@@ -11091,7 +11129,7 @@
     },
     {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -11147,6 +11185,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "09:32",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_093152_weekend_bash_smurf__KEEP_0001_093206_final.png"
+    },
     {
      "task": "worldboss",
      "at": "02:06",
@@ -11214,7 +11258,7 @@
     {
      "day": "2026-09-30",
      "done": 5,
-     "failed": 2
+     "failed": 3
     }
    ]
   },
@@ -12566,7 +12610,7 @@
     },
     {
      "task": "island",
-     "state": "cooling off"
+     "state": "still to do"
     }
    ],
    "issues": [
