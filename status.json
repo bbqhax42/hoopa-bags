@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T11:31:55.650543",
+ "generatedAt": "2026-09-30T11:33:59.963525",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "exou",
-  "mode": "weekend_bash",
-  "since": "11:31:45"
+  "mode": "collect_hoopa_keys",
+  "since": "11:33:55"
  },
  "grid": {
   "tasks": [
@@ -368,8 +368,8 @@
      "✓",
      "✓",
      "✗2",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "⏸",
      "⏰",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 166,
-  "todo": 90,
+  "done": 168,
+  "todo": 88,
   "gaveUp": 8,
   "unavailable": 16,
   "windowed": 38
@@ -821,6 +821,64 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T11:33:54",
+   "script": "victory_road",
+   "account": "exou",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_113348_victory_road_exou"
+  },
+  {
+   "ts": "2026-09-30T11:33:47",
+   "script": "combat_daily",
+   "account": "exou",
+   "rc": 0,
+   "secs": 105,
+   "stats": {
+    "title_reread_named": 6,
+    "marginal_afk_rewards": 3,
+    "refused_quick_bar": 1,
+    "adv_overflow": 1,
+    "marginal_battle_victory_confirm": 2,
+    "near_miss_vr_rank": 3,
+    "gacha_ticket": 1,
+    "island_shop_bought": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 8/8 so a",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "ticket"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_113201_combat_daily_exou"
+  },
+  {
+   "ts": "2026-09-30T11:31:59",
+   "script": "weekend_bash",
+   "account": "exou",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_113146_weekend_bash_exou"
+  },
   {
    "ts": "2026-09-30T11:31:44",
    "script": "weekend_bash",
@@ -8167,75 +8225,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_140424_guild_war_smurf"
-  },
-  {
-   "ts": "2026-09-29T14:04:22",
-   "script": "rank_match",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 61,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2,
-    "rank_panel_scroll": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_140321_rank_match_smurf"
-  },
-  {
-   "ts": "2026-09-29T14:02:58",
-   "script": "rank_match",
-   "account": "chris",
-   "rc": 0,
-   "secs": 11,
-   "stats": {
-    "rank_panel_scroll": 4
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 0,
-    "matches": 0,
-    "gifts": 0,
-    "rank_rewards": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_140247_rank_match_chris"
-  },
-  {
-   "ts": "2026-09-29T14:02:22",
-   "script": "guild_war",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 7,
-   "stats": {
-    "near_miss_tips_header": 17,
-    "refused_auto_formation": 1,
-    "refused_setform_confirm": 1,
-    "gw_attempts_spent": 1,
-    "assist_already_set": 1,
-    "gw_no_attempts": 1
-   },
-   "incomplete": [],
-   "values": {
-    "guild_caption": 0.999
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_140214_guild_war_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 41516,
+  "now": 41640,
   "segments": [
    {
     "b": 28937,
@@ -10473,14 +10468,54 @@
     "login": null,
     "handoff": 41506,
     "rc": 1,
-    "e": 41516,
+    "e": 41520,
     "secs": 14,
     "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 41520,
+    "a": "exou",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 41521,
+    "rc": 0,
+    "e": 41628,
+    "secs": 105,
+    "why": ""
+   },
+   {
+    "b": 41628,
+    "a": "exou",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 41628,
+    "rc": 0,
+    "e": 41635,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 41635,
+    "a": "exou",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 41636,
+    "rc": null,
+    "e": 41640
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T11:31:59",
+   "account": "exou",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_113146_weekend_bash_exou__KEEP_0001_113159_final.png"
+  },
   {
    "ts": "2026-09-30T11:31:44",
    "account": "exou",
@@ -10990,7 +11025,7 @@
   "since": "2026-09-30T08:00",
   "switches": 25,
   "relogMinutes": 10.4,
-  "retries": 27,
+  "retries": 28,
   "tasks": {
    "island_challenge": {
     "runs": 8,
@@ -11023,17 +11058,17 @@
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 13,
-    "minutes": 3.0,
-    "failed": 13
+    "runs": 14,
+    "minutes": 3.2,
+    "failed": 14
    },
    "combat_daily": {
-    "runs": 14,
-    "minutes": 24.4,
+    "runs": 15,
+    "minutes": 26.2,
     "failed": 2
    },
    "victory_road": {
-    "runs": 13,
+    "runs": 14,
     "minutes": 1.6,
     "failed": 0
    },
@@ -11637,78 +11672,78 @@
   "next": [
    {
     "account": "exou",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T11:31"
-   },
-   {
-    "account": "exou",
-    "task": "victory_road",
-    "startsIn": 1.7,
-    "eta": "2026-09-30T11:33"
-   },
-   {
-    "account": "exou",
     "task": "collect_hoopa_keys",
-    "startsIn": 1.9,
-    "eta": "2026-09-30T11:33"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T11:34"
    },
    {
     "account": "exou",
     "task": "sky_pillar",
-    "startsIn": 2.0,
-    "eta": "2026-09-30T11:33"
+    "startsIn": 0.1,
+    "eta": "2026-09-30T11:34"
    },
    {
     "account": "skosmurf",
     "task": "dailyclaim",
-    "startsIn": 3.5,
+    "startsIn": 1.6,
     "eta": "2026-09-30T11:35"
    },
    {
     "account": "skosmurf",
     "task": "mail",
-    "startsIn": 4.0,
-    "eta": "2026-09-30T11:35"
+    "startsIn": 2.1,
+    "eta": "2026-09-30T11:36"
    },
    {
     "account": "skosmurf",
     "task": "daily_dungeon",
-    "startsIn": 4.1,
-    "eta": "2026-09-30T11:35"
+    "startsIn": 2.2,
+    "eta": "2026-09-30T11:36"
    },
    {
     "account": "skosmurf",
     "task": "pokemon_home",
-    "startsIn": 4.5,
+    "startsIn": 2.6,
     "eta": "2026-09-30T11:36"
    },
    {
     "account": "skosmurf",
     "task": "weekend_bash",
-    "startsIn": 5.1,
+    "startsIn": 3.2,
     "eta": "2026-09-30T11:37"
    },
    {
     "account": "skosmurf",
     "task": "combat_daily",
-    "startsIn": 5.3,
+    "startsIn": 3.5,
     "eta": "2026-09-30T11:37"
    },
    {
     "account": "skosmurf",
     "task": "victory_road",
-    "startsIn": 7.1,
+    "startsIn": 5.2,
     "eta": "2026-09-30T11:39"
    },
    {
     "account": "skosmurf",
     "task": "paradise",
-    "startsIn": 7.2,
+    "startsIn": 5.3,
     "eta": "2026-09-30T11:39"
+   },
+   {
+    "account": "skosmurf",
+    "task": "run_pvp_ranked",
+    "startsIn": 8.7,
+    "eta": "2026-09-30T11:42"
+   },
+   {
+    "account": "skosmurf",
+    "task": "collect_hoopa_keys",
+    "startsIn": 9.9,
+    "eta": "2026-09-30T11:43"
    }
   ],
-  "more": 78,
+  "more": 76,
   "fillers": [
    {
     "account": "skomain",
@@ -11760,22 +11795,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 3,
-   "islandStamina": 0,
-   "mailUnread": 0,
-   "paradiseStamina": "12/12",
-   "rank": 25,
-   "pillar": "floor 150 stage 6"
-  },
-  "chris": {
-   "islandFights": 4,
-   "islandStamina": 6,
-   "mailUnread": 0,
-   "paradiseStamina": "1/13",
-   "rank": 42,
-   "pillar": "floor 139 stage 8"
-  },
   "smurf": {
    "mailUnread": 0,
    "rank": 47,
@@ -11834,6 +11853,22 @@
    "paradiseStamina": "4/14",
    "pillar": "floor 88 stage 6"
   },
+  "chris": {
+   "islandFights": 4,
+   "islandStamina": 6,
+   "mailUnread": 0,
+   "paradiseStamina": "1/13",
+   "rank": 42,
+   "pillar": "floor 139 stage 8"
+  },
+  "jeff": {
+   "islandFights": 3,
+   "islandStamina": 0,
+   "mailUnread": 0,
+   "paradiseStamina": "12/12",
+   "rank": 25,
+   "pillar": "floor 150 stage 6"
+  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "1/13",
@@ -11855,6 +11890,7 @@
  },
  "ledger": {
   "exou": {
+   "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 5,
    "Privilege Pack claimed": 1
@@ -13472,21 +13508,13 @@
   "exou": {
    "name": "exou",
    "day": "2026-09-30",
-   "summary": "4 of 12 dailies done · gave up on bash · 1 switched off",
-   "done": 4,
+   "summary": "6 of 12 dailies done · gave up on bash · 1 switched off",
+   "done": 6,
    "owed": 12,
    "open": [
     {
      "task": "bash",
      "state": "gave up"
-    },
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
     },
     {
      "task": "victoryRank",
@@ -13514,7 +13542,7 @@
      "task": "weekend_bash",
      "at": "11:31",
      "why": "weekend_bash: tab 2 did not open",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_113130_weekend_bash_exou__KEEP_0003_113144_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_113146_weekend_bash_exou__KEEP_0001_113159_final.png"
     },
     {
      "task": "worldboss",
@@ -13532,6 +13560,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 5,
     "Privilege Pack claimed": 1
@@ -13572,8 +13601,8 @@
     },
     {
      "day": "2026-09-30",
-     "done": 4,
-     "failed": 3
+     "done": 6,
+     "failed": 4
     }
    ]
   },
