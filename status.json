@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T15:21:10.043538",
+ "generatedAt": "2026-09-30T15:23:14.111290",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "hoopa",
-  "since": "15:18:14"
+  "account": "lucifer2",
+  "mode": "rift",
+  "since": "15:22:37"
  },
  "grid": {
   "tasks": [
@@ -763,8 +763,8 @@
    "at": "2026-09-28T03:58:42"
   },
   "nova": {
-   "keys": 5,
-   "at": "2026-09-30T14:39:00"
+   "keys": 0,
+   "at": "2026-09-30T15:22:35"
   },
   "fake6": {
    "keys": 117,
@@ -812,11 +812,27 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-09-30T15:18:30.907116",
+  "label": "lucifer2",
+  "at": "2026-09-30T15:22:57.489193",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T15:22:37",
+   "script": "hoopa",
+   "account": "nova",
+   "rc": 2,
+   "secs": 234,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-30T15:18:13",
    "script": "rift",
@@ -8543,24 +8559,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_020609_worldboss_fake1"
-  },
-  {
-   "ts": "2026-09-30T02:06:08",
-   "script": "worldboss",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_020437_worldboss_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 55270,
+  "now": 55394,
   "segments": [
    {
     "b": 28937,
@@ -12562,8 +12566,22 @@
      55110
     ],
     "handoff": 55122,
+    "rc": 2,
+    "e": 55357,
+    "secs": 234,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 55357,
+    "a": "lucifer2",
+    "s": "rift",
+    "login": [
+     55358,
+     55377
+    ],
+    "handoff": 55389,
     "rc": null,
-    "e": 55270
+    "e": 55394
    }
   ],
   "idle": []
@@ -13153,21 +13171,12 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:06:08",
-   "account": "smurf",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 65,
-  "relogMinutes": 28.0,
+  "switches": 66,
+  "relogMinutes": 28.5,
   "retries": 43,
   "tasks": {
    "island_challenge": {
@@ -13394,6 +13403,12 @@
   },
   {
    "account": "nova",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-30T15:22:37"
+  },
+  {
+   "account": "nova",
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-09-30T14:22:52"
@@ -13605,9 +13620,9 @@
   "since": "2026-09-30T08:00",
   "runners": {
    "nova": {
-    "runs": 16,
+    "runs": 17,
     "targets": 3,
-    "last": "2026-09-30T15:21:03"
+    "last": "2026-09-30T15:22:27"
    },
    "jeff": {
     "runs": 19,
@@ -13944,8 +13959,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 65,
-   "medianSec": 17,
+   "n": 66,
+   "medianSec": 17.0,
    "picker": {
     "n": 46,
     "medianSec": 16.0,
@@ -13956,8 +13971,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 19,
-    "medianSec": 20
+    "n": 20,
+    "medianSec": 20.0
    }
   }
  },
@@ -14536,7 +14551,7 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-30",
-   "summary": "16 of 18 dailies done · gave up on bash · 2 not available today",
+   "summary": "16 of 18 dailies done · gave up on bash · 3 not available today",
    "done": 16,
    "owed": 18,
    "open": [
@@ -14559,6 +14574,10 @@
    ],
    "off": [],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "rift",
      "why": "rift_finished"
@@ -14860,12 +14879,6 @@
      "at": "09:32",
      "why": "weekend_bash: tab 2 did not open",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_093152_weekend_bash_smurf__KEEP_0001_093206_final.png"
-    },
-    {
-     "task": "worldboss",
-     "at": "02:06",
-     "why": "account switch failed",
-     "frame": null
     }
    ],
    "off": [
