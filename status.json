@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T11:46:25.331976",
+ "generatedAt": "2026-09-30T11:48:29.328455",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skosmurf",
-  "mode": "run_pvp_ranked",
-  "since": "11:45:21"
+  "mode": "faction",
+  "since": "11:48:05"
  },
  "grid": {
   "tasks": [
@@ -400,9 +400,9 @@
      "⏰",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 177,
-  "todo": 78,
+  "done": 180,
+  "todo": 75,
   "gaveUp": 9,
   "unavailable": 16,
   "windowed": 38
@@ -821,6 +821,75 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T11:48:05",
+   "script": "sky_pillar",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 78,
+   "stats": {
+    "stages_cleared": 3,
+    "floor_reward_claimed": 1,
+    "marginal_sky_pillar": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 23,
+    "stage": 7,
+    "proofs_spent": 3
+   },
+   "values_all": {
+    "floor": [
+     23,
+     23,
+     23
+    ],
+    "stage": [
+     5,
+     6,
+     7
+    ]
+   },
+   "dir": "debug_runs/20260930_114647_sky_pillar_skosmurf"
+  },
+  {
+   "ts": "2026-09-30T11:46:45",
+   "script": "collect_hoopa_keys",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_114640_collect_hoopa_keys_skosmurf"
+  },
+  {
+   "ts": "2026-09-30T11:46:39",
+   "script": "run_pvp_ranked",
+   "account": "skosmurf",
+   "rc": 0,
+   "secs": 77,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_won": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 144,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 10,
+    "rank": 41,
+    "daily_goal_claims": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_114522_run_pvp_ranked_skosmurf"
+  },
   {
    "ts": "2026-09-30T11:45:20",
    "script": "paradise",
@@ -8147,81 +8216,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_142558_rank_match_skosmurf"
-  },
-  {
-   "ts": "2026-09-29T14:25:30",
-   "script": "rank_match",
-   "account": "exou",
-   "rc": 0,
-   "secs": 62,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2,
-    "rank_panel_scroll": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_142427_rank_match_exou"
-  },
-  {
-   "ts": "2026-09-29T14:23:57",
-   "script": "rank_match",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 65,
-   "stats": {
-    "skip_tapped": 7,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2,
-    "rank_panel_scroll": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 68,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_142251_rank_match_sprite"
-  },
-  {
-   "ts": "2026-09-29T14:22:30",
-   "script": "rank_match",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 63,
-   "stats": {
-    "skip_tapped": 8,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 2,
-    "rank_panel_scroll": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 2
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_142126_rank_match_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 42385,
+  "now": 42509,
   "segments": [
    {
     "b": 28937,
@@ -10615,8 +10615,41 @@
     "s": "run_pvp_ranked",
     "login": null,
     "handoff": 42321,
+    "rc": 0,
+    "e": 42400,
+    "secs": 77,
+    "why": ""
+   },
+   {
+    "b": 42400,
+    "a": "skosmurf",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 42400,
+    "rc": 0,
+    "e": 42406,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 42406,
+    "a": "skosmurf",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 42406,
+    "rc": 0,
+    "e": 42485,
+    "secs": 78,
+    "why": ""
+   },
+   {
+    "b": 42485,
+    "a": "skosmurf",
+    "s": "faction",
+    "login": null,
+    "handoff": 42488,
     "rc": null,
-    "e": 42385
+    "e": 42509
    }
   ],
   "idle": []
@@ -11211,18 +11244,18 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 6,
-    "minutes": 7.2,
+    "runs": 7,
+    "minutes": 8.4,
     "failed": 1
    },
    "collect_hoopa_keys": {
-    "runs": 14,
-    "minutes": 1.1,
+    "runs": 15,
+    "minutes": 1.2,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 15,
-    "minutes": 17.5,
+    "runs": 16,
+    "minutes": 18.8,
     "failed": 1
    },
    "faction": {
@@ -11805,78 +11838,78 @@
   "next": [
    {
     "account": "skosmurf",
-    "task": "run_pvp_ranked",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T11:46"
-   },
-   {
-    "account": "skosmurf",
-    "task": "collect_hoopa_keys",
-    "startsIn": 1.2,
-    "eta": "2026-09-30T11:47"
-   },
-   {
-    "account": "skosmurf",
-    "task": "sky_pillar",
-    "startsIn": 1.3,
-    "eta": "2026-09-30T11:47"
-   },
-   {
-    "account": "skosmurf",
     "task": "faction",
-    "startsIn": 2.4,
+    "startsIn": 0.0,
     "eta": "2026-09-30T11:48"
    },
    {
     "account": "skosmurf",
     "task": "misty_woods",
-    "startsIn": 4.2,
+    "startsIn": 1.8,
     "eta": "2026-09-30T11:50"
    },
    {
     "account": "skosmurf",
     "task": "ultra_wormhole",
-    "startsIn": 4.3,
+    "startsIn": 1.9,
     "eta": "2026-09-30T11:50"
    },
    {
     "account": "skosmurf",
     "task": "ring_battle",
-    "startsIn": 8.9,
-    "eta": "2026-09-30T11:55"
+    "startsIn": 6.4,
+    "eta": "2026-09-30T11:54"
    },
    {
     "account": "skosmurf",
     "task": "championship",
-    "startsIn": 9.8,
-    "eta": "2026-09-30T11:56"
+    "startsIn": 7.4,
+    "eta": "2026-09-30T11:55"
    },
    {
     "account": "lucifer1",
     "task": "dailyclaim",
-    "startsIn": 10.3,
+    "startsIn": 7.9,
     "eta": "2026-09-30T11:56"
    },
    {
     "account": "lucifer1",
     "task": "mail",
-    "startsIn": 10.8,
-    "eta": "2026-09-30T11:57"
+    "startsIn": 8.4,
+    "eta": "2026-09-30T11:56"
    },
    {
     "account": "lucifer1",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.9,
-    "eta": "2026-09-30T11:57"
+    "startsIn": 8.4,
+    "eta": "2026-09-30T11:56"
    },
    {
     "account": "lucifer1",
     "task": "joint_battle",
+    "startsIn": 9.3,
+    "eta": "2026-09-30T11:57"
+   },
+   {
+    "account": "lucifer1",
+    "task": "daily_dungeon",
+    "startsIn": 11.3,
+    "eta": "2026-09-30T11:59"
+   },
+   {
+    "account": "lucifer1",
+    "task": "pokemon_home",
     "startsIn": 11.7,
-    "eta": "2026-09-30T11:58"
+    "eta": "2026-09-30T12:00"
+   },
+   {
+    "account": "lucifer1",
+    "task": "weekend_bash",
+    "startsIn": 12.4,
+    "eta": "2026-09-30T12:00"
    }
   ],
-  "more": 66,
+  "more": 63,
   "fillers": [
    {
     "account": "skomain",
@@ -11928,22 +11961,11 @@
   }
  },
  "progress": {
-  "fake6": {
-   "mailUnread": 0,
-   "paradiseStamina": "32/12"
-  },
-  "sprite": {
-   "mailUnread": 0,
-   "paradiseStamina": "12/12",
-   "pillar": "floor 52 stage 6"
-  },
-  "exou": {
-   "mailUnread": 0,
-   "pillar": "floor 141 stage 9"
-  },
   "skosmurf": {
    "mailUnread": 0,
-   "paradiseStamina": "5/15"
+   "paradiseStamina": "5/15",
+   "rank": 41,
+   "pillar": "floor 23 stage 7"
   },
   "lucifer1": {},
   "fake8": {
@@ -12012,10 +12034,23 @@
    "paradiseStamina": "12/12",
    "pillar": "floor 8 stage 3"
   },
+  "fake6": {
+   "mailUnread": 0,
+   "paradiseStamina": "32/12"
+  },
   "fake7": {
    "mailUnread": 0,
    "paradiseStamina": "39/13",
    "pillar": "floor 4 stage 8"
+  },
+  "sprite": {
+   "mailUnread": 0,
+   "paradiseStamina": "12/12",
+   "pillar": "floor 52 stage 6"
+  },
+  "exou": {
+   "mailUnread": 0,
+   "pillar": "floor 141 stage 9"
   },
   "lucifer2": {},
   "skomain": {
@@ -12027,6 +12062,8 @@
  },
  "ledger": {
   "skosmurf": {
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
@@ -13748,8 +13785,8 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-30",
-   "summary": "7 of 18 dailies done · gave up on bash · 2 switched off",
-   "done": 7,
+   "summary": "10 of 18 dailies done · gave up on bash · 2 switched off",
+   "done": 10,
    "owed": 18,
    "open": [
     {
@@ -13763,18 +13800,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "fctn",
@@ -13825,6 +13850,8 @@
    ],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 3,
+    "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -13833,7 +13860,9 @@
    },
    "progress": {
     "mailUnread": 0,
-    "paradiseStamina": "5/15"
+    "paradiseStamina": "5/15",
+    "rank": 41,
+    "pillar": "floor 23 stage 7"
    },
    "history": [
     {
@@ -13868,7 +13897,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 7,
+     "done": 10,
      "failed": 4
     }
    ]
