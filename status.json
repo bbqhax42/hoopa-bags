@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T17:18:54.140928",
+ "generatedAt": "2026-09-30T17:20:57.828384",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
+  "account": "chris",
   "mode": "hoopa",
-  "since": "17:16:23"
+  "since": "17:20:31"
  },
  "grid": {
   "tasks": [
@@ -84,7 +84,7 @@
      "✓",
      "✓",
      "⊘",
-     "💤"
+     "·"
     ]
    },
    {
@@ -577,7 +577,7 @@
  },
  "counts": {
   "done": 287,
-  "todo": 0,
+  "todo": 1,
   "gaveUp": 13,
   "unavailable": 22,
   "windowed": 0
@@ -742,7 +742,7 @@
  ],
  "snoozed": {
   "chris|island_challenge": "2026-09-30T17:24",
-  "jeff|island_challenge": "2026-09-30T17:20"
+  "lucifer2|rift": "2026-09-30T17:35"
  },
  "ownerOnline": [],
  "keys": {
@@ -812,11 +812,25 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-30T17:16:39.808751",
+  "label": "chris",
+  "at": "2026-09-30T17:20:46.573197",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T17:20:31",
+   "script": "rift",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 49,
+   "stats": {
+    "rift_no_result": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_171941_rift_lucifer2"
+  },
   {
    "ts": "2026-09-30T16:55:20",
    "script": "rift",
@@ -8576,24 +8590,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_021955_worldboss_skosmurf"
-  },
-  {
-   "ts": "2026-09-30T02:19:55",
-   "script": "worldboss",
-   "account": "exou",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_021823_worldboss_exou"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 62334,
+  "now": 62458,
   "segments": [
    {
     "b": 28937,
@@ -12908,12 +12910,47 @@
     ],
     "handoff": 62210,
     "rc": null,
-    "e": 62334
+    "e": 62349
+   },
+   {
+    "b": 62349,
+    "a": "lucifer2",
+    "s": "rift",
+    "login": [
+     62349,
+     62369
+    ],
+    "handoff": 62381,
+    "rc": 1,
+    "e": 62431,
+    "secs": 49,
+    "why": ""
+   },
+   {
+    "b": 62431,
+    "a": "chris",
+    "s": "hoopa",
+    "login": [
+     62432,
+     62446
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 62458
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T17:20:31",
+   "account": "lucifer2",
+   "task": "rift",
+   "rc": 1,
+   "secs": 49,
+   "why": "level 1: no result after 45s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_171941_rift_lucifer2__KEEP_0001_172031_final.png"
+  },
   {
    "ts": "2026-09-30T16:55:20",
    "account": "lucifer2",
@@ -13453,22 +13490,13 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:19:55",
-   "account": "exou",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 88,
-  "relogMinutes": 38.3,
-  "retries": 48,
+  "switches": 90,
+  "relogMinutes": 38.9,
+  "retries": 49,
   "tasks": {
    "island_challenge": {
     "runs": 12,
@@ -13571,9 +13599,9 @@
     "failed": 0
    },
    "rift": {
-    "runs": 12,
-    "minutes": 6.1,
-    "failed": 4
+    "runs": 13,
+    "minutes": 7.0,
+    "failed": 5
    }
   }
  },
@@ -13939,9 +13967,9 @@
     "last": "2026-09-30T15:17:36"
    },
    "lucifer1": {
-    "runs": 41,
+    "runs": 42,
     "targets": 1,
-    "last": "2026-09-30T17:17:47"
+    "last": "2026-09-30T17:19:08"
    },
    "chris": {
     "runs": 53,
@@ -14238,7 +14266,14 @@
   "skomain": "SkoMain"
  },
  "queue": {
-  "next": [],
+  "next": [
+   {
+    "account": "jeff",
+    "task": "island_challenge",
+    "startsIn": 0.4,
+    "eta": "2026-09-30T17:21"
+   }
+  ],
   "more": 0,
   "fillers": [
    {
@@ -14247,10 +14282,6 @@
    },
    {
     "account": "skomain",
-    "mode": "rift"
-   },
-   {
-    "account": "lucifer2",
     "mode": "rift"
    },
    {
@@ -14273,11 +14304,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 85,
+   "n": 87,
    "medianSec": 16,
    "picker": {
-    "n": 60,
-    "medianSec": 15.0,
+    "n": 61,
+    "medianSec": 15,
     "jumps": 34
    },
    "typed": {
@@ -14285,8 +14316,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 25,
-    "medianSec": 20
+    "n": 26,
+    "medianSec": 20.0
    }
   }
  },
@@ -14972,7 +15003,7 @@
     },
     {
      "task": "island",
-     "state": "asks again later"
+     "state": "still to do"
     }
    ],
    "issues": [
@@ -16381,9 +16412,9 @@
    "issues": [
     {
      "task": "rift",
-     "at": "16:55",
+     "at": "17:20",
      "why": "level 1: no result after 45s",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_165431_rift_lucifer2__KEEP_0001_165520_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_171941_rift_lucifer2__KEEP_0001_172031_final.png"
     },
     {
      "task": "paradise",
@@ -16467,7 +16498,7 @@
     {
      "day": "2026-09-30",
      "done": 14,
-     "failed": 11
+     "failed": 12
     }
    ]
   },
