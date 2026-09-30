@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T19:20:39.089233",
+ "generatedAt": "2026-09-30T19:22:42.687339",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
-  "mode": "rift",
-  "since": "19:20:19"
+  "mode": "hoopa",
+  "since": "19:22:12"
  },
  "grid": {
   "tasks": [
@@ -822,11 +822,25 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-09-30T19:18:53.362623",
+  "label": "skomain",
+  "at": "2026-09-30T19:20:39.444352",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T19:20:50",
+   "script": "rift",
+   "account": "skomain",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_no_hearts": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_192048_rift_skomain"
+  },
   {
    "ts": "2026-09-30T18:32:00",
    "script": "rift",
@@ -8623,24 +8637,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_024117_worldboss_fake5"
-  },
-  {
-   "ts": "2026-09-30T02:29:07",
-   "script": "worldboss",
-   "account": "dre",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_022735_worldboss_dre"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 69639,
+  "now": 69763,
   "segments": [
    {
     "b": 28937,
@@ -13308,11 +13310,40 @@
     "s": "rift",
     "login": [
      69619,
-     null
+     69639
     ],
-    "handoff": null,
+    "handoff": 69648,
+    "rc": 2,
+    "e": 69650,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 69650,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 69658,
     "rc": null,
-    "e": 69639
+    "e": 69680
+   },
+   {
+    "b": 69680,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 69681,
+    "rc": null,
+    "e": 69732
+   },
+   {
+    "b": 69732,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 69732,
+    "rc": null,
+    "e": 69763
    }
   ],
   "idle": [
@@ -13332,7 +13363,10 @@
    69248,
    69346,
    69346,
-   69618
+   69618,
+   69650,
+   69680,
+   69732
   ]
  },
  "failures": [
@@ -13848,21 +13882,12 @@
    "secs": 76,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:29:07",
-   "account": "dre",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
   "switches": 110,
-  "relogMinutes": 44.0,
+  "relogMinutes": 44.5,
   "retries": 53,
   "tasks": {
    "island_challenge": {
@@ -13966,7 +13991,7 @@
     "failed": 0
    },
    "rift": {
-    "runs": 15,
+    "runs": 16,
     "minutes": 7.8,
     "failed": 6
    },
@@ -14145,6 +14170,12 @@
    "task": "island_challenge",
    "why": "the Final Overlord is not available today",
    "at": "2026-09-30T10:04:52"
+  },
+  {
+   "account": "skomain",
+   "task": "rift",
+   "why": "rift_no_hearts",
+   "at": "2026-09-30T19:20:50"
   },
   {
    "account": "skosmurf",
@@ -14355,9 +14386,9 @@
     "last": "2026-09-30T18:49:17"
    },
    "skomain": {
-    "runs": 1,
+    "runs": 3,
     "targets": 0,
-    "last": "2026-09-30T18:31:08"
+    "last": "2026-09-30T19:22:11"
    }
   },
   "targets": [
@@ -14513,10 +14544,6 @@
   "next": [],
   "more": 0,
   "fillers": [
-   {
-    "account": "skomain",
-    "mode": "rift"
-   },
    {
     "account": "chris",
     "mode": "hoopa"
@@ -16472,7 +16499,7 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-09-30",
-   "summary": "16 of 20 dailies done · gave up on bash · 1 switched off · 3 not available today",
+   "summary": "16 of 20 dailies done · gave up on bash · 1 switched off · 4 not available today",
    "done": 16,
    "owed": 20,
    "open": [
@@ -16544,6 +16571,10 @@
     {
      "task": "island_challenge",
      "why": "the Final Overlord is not available today"
+    },
+    {
+     "task": "rift",
+     "why": "rift_no_hearts"
     }
    ],
    "spent": {
