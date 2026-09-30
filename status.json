@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T20:30:44.700212",
+ "generatedAt": "2026-09-30T20:32:48.186307",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "nova",
   "mode": "dynamax",
-  "since": "20:29:22"
+  "since": "20:32:15"
  },
  "grid": {
   "tasks": [
@@ -750,15 +750,7 @@
   "chris|island_challenge": "2026-09-30T20:49",
   "jeff|island_challenge": "2026-09-30T21:18"
  },
- "ownerOnline": [
-  {
-   "account": "lucifer1",
-   "since": "2026-09-30T20:20:53",
-   "held": true,
-   "heldUntil": "2026-09-30T20:30:53",
-   "deferredUntil": "2026-09-30T20:31:05"
-  }
- ],
+ "ownerOnline": [],
  "keys": {
   "jeff": {
    "keys": 0,
@@ -830,11 +822,28 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-30T20:29:38.033269",
+  "label": "nova",
+  "at": "2026-09-30T20:32:31.078146",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T20:32:15",
+   "script": "worldboss",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 35,
+   "stats": {
+    "wb_no_attempts": 1,
+    "ltd_no_badge": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_203139_worldboss_lucifer1"
+  },
   {
    "ts": "2026-09-30T20:26:34",
    "script": "worldboss",
@@ -8667,28 +8676,12 @@
     ]
    },
    "dir": "debug_runs/20260930_031555_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-09-30T02:57:06",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 55,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_025610_worldboss_fake6"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 73845,
+  "now": 73968,
   "segments": [
    {
     "b": 28937,
@@ -13918,7 +13911,33 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 73845
+    "e": 73898
+   },
+   {
+    "b": 73898,
+    "a": "lucifer1",
+    "s": "worldboss",
+    "login": [
+     73899,
+     73915
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 73935,
+    "secs": 35,
+    "why": ""
+   },
+   {
+    "b": 73935,
+    "a": "nova",
+    "s": "dynamax",
+    "login": [
+     73935,
+     73951
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 73968
    }
   ],
   "idle": [
@@ -14383,7 +14402,7 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 138,
+  "switches": 140,
   "relogMinutes": 48.3,
   "retries": 54,
   "tasks": {
@@ -14498,8 +14517,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 19,
-    "minutes": 22.5,
+    "runs": 20,
+    "minutes": 23.1,
     "failed": 1
    }
   }
@@ -14743,14 +14762,14 @@
  "maxHandouts": 2,
  "energy": {
   "jeff": {
-   "energy": 26,
+   "energy": 3,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-30T20:29:52.076709",
-   "runs": 708,
+   "observed_at": "2026-09-30T20:31:37.856820",
+   "runs": 709,
    "cooldown_until": "2026-09-29T22:41:20.596630",
    "kicks": 1,
-   "last_run_actions": 5
+   "last_run_actions": 10
   },
   "chris": {
    "energy": 1,
@@ -14773,10 +14792,10 @@
    "last_run_actions": 9
   },
   "nova": {
-   "energy": 0,
+   "energy": 23,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-09-30T19:58:19.595890",
+   "observed_at": "2026-09-30T20:32:46.081719",
    "runs": 750,
    "cooldown_until": "2026-09-29T20:36:04.596183",
    "kicks": 1,
@@ -14866,7 +14885,8 @@
    "lucifer2",
    "fake8",
    "deno",
-   "dre"
+   "dre",
+   "lucifer1"
   ]
  },
  "worldBossSkipped": {},
@@ -15053,6 +15073,10 @@
   "more": 0,
   "fillers": [
    {
+    "account": "lucifer1",
+    "mode": "hoopa"
+   },
+   {
     "account": "skomain",
     "mode": "hoopa"
    }
@@ -15064,12 +15088,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 135,
+   "n": 137,
    "medianSec": 16,
    "picker": {
-    "n": 98,
+    "n": 100,
     "medianSec": 15.0,
-    "jumps": 54
+    "jumps": 56
    },
    "typed": {
     "n": 0,
@@ -15082,10 +15106,6 @@
   }
  },
  "progress": {
-  "fake6": {
-   "mailUnread": 0,
-   "paradiseStamina": "32/12"
-  },
   "jeff": {
    "islandFights": 9,
    "islandStamina": 1,
@@ -15143,6 +15163,10 @@
    "mailUnread": 0,
    "paradiseStamina": "12/12",
    "pillar": "floor 8 stage 3"
+  },
+  "fake6": {
+   "mailUnread": 0,
+   "paradiseStamina": "32/12"
   },
   "fake7": {
    "mailUnread": 0,
@@ -15462,15 +15486,6 @@
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
-  },
-  {
-   "account": "lucifer1",
-   "task": null,
-   "kind": "online",
-   "since": "2026-09-30T20:20:53",
-   "why": "someone is playing on it",
-   "action": "left alone until 20:30",
-   "enable": false
   },
   {
    "account": "fake3",
@@ -17158,7 +17173,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 15,
+     "done": 16,
      "failed": 5
     }
    ]
