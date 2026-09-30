@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T01:59:13.638382",
+ "generatedAt": "2026-10-01T02:01:17.602051",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "dynamax",
-  "since": "01:57:14"
+  "mode": "worldboss",
+  "since": "02:00:46"
  },
  "grid": {
   "tasks": [
@@ -823,10 +823,26 @@
  },
  "session": {
   "label": "jeff",
-  "at": "2026-10-01T01:57:29.332152",
+  "at": "2026-10-01T02:01:01.250393",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T02:00:46",
+   "script": "worldboss",
+   "account": "chris",
+   "rc": 0,
+   "secs": 37,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_020009_worldboss_chris"
+  },
   {
    "ts": "2026-10-01T01:54:50",
    "script": "hoopa",
@@ -8699,27 +8715,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_045410_rift_deno"
-  },
-  {
-   "ts": "2026-09-30T04:54:06",
-   "script": "rift",
-   "account": "deno",
-   "rc": 0,
-   "secs": 315,
-   "stats": {
-    "rift_levels": 50,
-    "rift_rerolls": 10
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_044850_rift_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 93554,
+  "now": 93678,
   "segments": [
    {
     "b": 28937,
@@ -16521,7 +16522,42 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 93554
+    "e": 93555
+   },
+   {
+    "b": 93555,
+    "a": "chris",
+    "s": "dynamax",
+    "login": [
+     93555,
+     93569
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 93608
+   },
+   {
+    "b": 93608,
+    "a": "chris",
+    "s": "worldboss",
+    "login": null,
+    "handoff": null,
+    "rc": 0,
+    "e": 93646,
+    "secs": 37,
+    "why": ""
+   },
+   {
+    "b": 93646,
+    "a": "jeff",
+    "s": "worldboss",
+    "login": [
+     93647,
+     93661
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 93678
    }
   ],
   "idle": [
@@ -17198,7 +17234,7 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 241,
+  "switches": 243,
   "relogMinutes": 69.4,
   "retries": 60,
   "tasks": {
@@ -17313,8 +17349,8 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 20,
-    "minutes": 23.1,
+    "runs": 21,
+    "minutes": 23.8,
     "failed": 1
    }
   }
@@ -17574,14 +17610,14 @@
    "last_run_actions": 5
   },
   "chris": {
-   "energy": 1,
+   "energy": 13,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-10-01T01:41:40.019362",
-   "runs": 682,
+   "observed_at": "2026-10-01T01:59:42.565076",
+   "runs": 683,
    "cooldown_until": "2026-10-01T00:12:10.668194",
    "kicks": 2,
-   "last_run_actions": 4
+   "last_run_actions": 1
   },
   "smurf": {
    "energy": 1,
@@ -17605,27 +17641,6 @@
   }
  },
  "worldBoss": {
-  "2026-09-29_02:00": [
-   "lucifer1",
-   "chris",
-   "jeff",
-   "nova",
-   "smurf",
-   "fake1",
-   "fake2",
-   "fake3",
-   "fake4",
-   "fake5",
-   "fake6",
-   "fake7",
-   "sprite",
-   "exou",
-   "skosmurf",
-   "lucifer2",
-   "fake8",
-   "deno",
-   "dre"
-  ],
   "2026-09-29_20:00": [
    "chris",
    "nova",
@@ -17689,6 +17704,9 @@
    "deno",
    "dre",
    "lucifer1"
+  ],
+  "2026-10-01_02:00": [
+   "chris"
   ]
  },
  "worldBossSkipped": {},
@@ -17880,10 +17898,10 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 239,
+   "n": 241,
    "medianSec": 16,
    "picker": {
-    "n": 186,
+    "n": 188,
     "medianSec": 15.0,
     "jumps": 102
    },
@@ -18525,6 +18543,11 @@
      "day": "2026-09-30",
      "done": 17,
      "failed": 3
+    },
+    {
+     "day": "2026-10-01",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
