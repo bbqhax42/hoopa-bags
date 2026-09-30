@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T13:54:28.790309",
+ "generatedAt": "2026-09-30T13:56:32.489490",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "fake1",
+  "account": "fake2",
   "mode": "rank_match",
-  "since": "13:53:44"
+  "since": "13:56:10"
  },
  "grid": {
   "tasks": [
@@ -154,9 +154,9 @@
      "-",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "-",
      "✓",
      "✓",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 264,
-  "todo": 25,
+  "done": 266,
+  "todo": 23,
   "gaveUp": 13,
   "unavailable": 20,
   "windowed": 0
@@ -812,11 +812,57 @@
   }
  },
  "session": {
-  "label": "fake1",
-  "at": "2026-09-30T13:54:01.769752",
+  "label": "fake2",
+  "at": "2026-09-30T13:56:27.867514",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T13:56:09",
+   "script": "guild_war",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 59,
+   "stats": {
+    "marginal_battle_victory": 1,
+    "marginal_last_hit": 10,
+    "near_miss_last_hit": 7,
+    "near_miss_vr_rank": 8,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {
+    "guild_caption": 0.965
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_135510_guild_war_fake1"
+  },
+  {
+   "ts": "2026-09-30T13:55:09",
+   "script": "rank_match",
+   "account": "fake1",
+   "rc": 0,
+   "secs": 61,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_panel_scroll": 2,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_135408_rank_match_fake1"
+  },
   {
    "ts": "2026-09-30T13:53:44",
    "script": "championship",
@@ -8399,44 +8445,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_201113_worldboss_fake7"
-  },
-  {
-   "ts": "2026-09-29T20:11:12",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 62,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_201009_worldboss_fake6"
-  },
-  {
-   "ts": "2026-09-29T20:10:09",
-   "script": "worldboss",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 60,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": null
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_200908_worldboss_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 50069,
+  "now": 50192,
   "segments": [
    {
     "b": 28937,
@@ -12001,8 +12015,33 @@
      50041
     ],
     "handoff": 50047,
+    "rc": 0,
+    "e": 50109,
+    "secs": 61,
+    "why": ""
+   },
+   {
+    "b": 50109,
+    "a": "fake1",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 50110,
+    "rc": 0,
+    "e": 50170,
+    "secs": 59,
+    "why": ""
+   },
+   {
+    "b": 50170,
+    "a": "fake2",
+    "s": "rank_match",
+    "login": [
+     50170,
+     50187
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 50069
+    "e": 50192
    }
   ],
   "idle": []
@@ -12632,7 +12671,7 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 42,
+  "switches": 43,
   "relogMinutes": 17.9,
   "retries": 43,
   "tasks": {
@@ -12727,13 +12766,13 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 10,
-    "minutes": 9.4,
+    "runs": 11,
+    "minutes": 10.4,
     "failed": 0
    },
    "rank_match": {
-    "runs": 5,
-    "minutes": 5.5,
+    "runs": 6,
+    "minutes": 6.5,
     "failed": 0
    }
   }
@@ -13314,79 +13353,79 @@
  "queue": {
   "next": [
    {
-    "account": "fake1",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T13:54"
-   },
-   {
-    "account": "fake1",
-    "task": "guild_war",
-    "startsIn": 1.1,
-    "eta": "2026-09-30T13:55"
-   },
-   {
     "account": "fake2",
     "task": "rank_match",
-    "startsIn": 2.4,
+    "startsIn": 0.0,
     "eta": "2026-09-30T13:56"
    },
    {
     "account": "fake2",
     "task": "guild_war",
-    "startsIn": 3.5,
-    "eta": "2026-09-30T13:58"
+    "startsIn": 1.1,
+    "eta": "2026-09-30T13:57"
    },
    {
     "account": "fake3",
     "task": "rank_match",
-    "startsIn": 4.9,
-    "eta": "2026-09-30T13:59"
+    "startsIn": 2.4,
+    "eta": "2026-09-30T13:58"
    },
    {
     "account": "fake3",
     "task": "guild_war",
-    "startsIn": 6.0,
+    "startsIn": 3.5,
     "eta": "2026-09-30T14:00"
    },
    {
     "account": "fake4",
     "task": "rank_match",
-    "startsIn": 7.3,
+    "startsIn": 4.9,
     "eta": "2026-09-30T14:01"
    },
    {
     "account": "fake4",
     "task": "guild_war",
-    "startsIn": 8.4,
+    "startsIn": 5.9,
     "eta": "2026-09-30T14:02"
    },
    {
     "account": "fake5",
     "task": "rank_match",
-    "startsIn": 9.8,
-    "eta": "2026-09-30T14:04"
+    "startsIn": 7.3,
+    "eta": "2026-09-30T14:03"
    },
    {
     "account": "fake5",
     "task": "guild_war",
-    "startsIn": 10.9,
-    "eta": "2026-09-30T14:05"
+    "startsIn": 8.4,
+    "eta": "2026-09-30T14:04"
    },
    {
     "account": "fake6",
     "task": "rank_match",
-    "startsIn": 12.2,
+    "startsIn": 9.7,
     "eta": "2026-09-30T14:06"
    },
    {
     "account": "fake6",
     "task": "guild_war",
-    "startsIn": 13.3,
+    "startsIn": 10.8,
     "eta": "2026-09-30T14:07"
+   },
+   {
+    "account": "sprite",
+    "task": "rank_match",
+    "startsIn": 12.1,
+    "eta": "2026-09-30T14:08"
+   },
+   {
+    "account": "sprite",
+    "task": "guild_war",
+    "startsIn": 13.2,
+    "eta": "2026-09-30T14:09"
    }
   ],
-  "more": 13,
+  "more": 11,
   "fillers": [
    {
     "account": "skomain",
@@ -13420,12 +13459,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 42,
-   "medianSec": 16.5,
+   "n": 43,
+   "medianSec": 17,
    "picker": {
-    "n": 29,
-    "medianSec": 16,
-    "jumps": 16
+    "n": 30,
+    "medianSec": 16.0,
+    "jumps": 17
    },
    "typed": {
     "n": 0,
@@ -13438,15 +13477,6 @@
   }
  },
  "progress": {
-  "fake5": {
-   "mailUnread": 0,
-   "paradiseStamina": "12/12",
-   "pillar": "floor 8 stage 3"
-  },
-  "fake6": {
-   "mailUnread": 0,
-   "paradiseStamina": "32/12"
-  },
   "fake7": {
    "mailUnread": 0,
    "paradiseStamina": "39/13",
@@ -13536,6 +13566,15 @@
    "paradiseStamina": "12/12",
    "pillar": "floor 6 stage 4"
   },
+  "fake5": {
+   "mailUnread": 0,
+   "paradiseStamina": "12/12",
+   "pillar": "floor 8 stage 3"
+  },
+  "fake6": {
+   "mailUnread": 0,
+   "paradiseStamina": "32/12"
+  },
   "skomain": {
    "mailUnread": 0,
    "paradiseStamina": "12/12",
@@ -13549,6 +13588,15 @@
   }
  },
  "ledger": {
+  "fake1": {
+   "guild war attempts": 1,
+   "faction sweeps": 2,
+   "pillar/story stages cleared": 3,
+   "Island Shop buys (200 coins)": 1,
+   "adventure energy": 1,
+   "mail claimed": 1,
+   "daily claims": 3
+  },
   "smurf": {
    "guild war attempts": 1,
    "faction sweeps": 2,
@@ -13705,14 +13753,6 @@
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 4
-  },
-  "fake1": {
-   "faction sweeps": 2,
-   "pillar/story stages cleared": 3,
-   "Island Shop buys (200 coins)": 1,
-   "adventure energy": 1,
-   "mail claimed": 1,
-   "daily claims": 3
   },
   "skomain": {
    "faction sweeps": 2,
@@ -14416,21 +14456,13 @@
   "fake1": {
    "name": "Roflmao123",
    "day": "2026-09-30",
-   "summary": "12 of 15 dailies done · 2 switched off · 1 not available today",
-   "done": 12,
+   "summary": "14 of 15 dailies done · 2 switched off · 1 not available today",
+   "done": 14,
    "owed": 15,
    "open": [
     {
      "task": "tshop",
      "state": "not available today"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -14460,6 +14492,7 @@
     }
    ],
    "spent": {
+    "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar/story stages cleared": 3,
     "Island Shop buys (200 coins)": 1,
@@ -14505,7 +14538,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 12,
+     "done": 14,
      "failed": 1
     }
    ]
