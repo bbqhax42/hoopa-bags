@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T15:29:25.566226",
+ "generatedAt": "2026-09-30T15:31:29.227959",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skosmurf",
-  "mode": "rift",
-  "since": "15:26:23"
+  "account": "lucifer1",
+  "mode": "hoopa",
+  "since": "15:30:40"
  },
  "grid": {
   "tasks": [
@@ -813,11 +813,27 @@
   }
  },
  "session": {
-  "label": "skosmurf",
-  "at": "2026-09-30T15:27:54.972254",
+  "label": "lucifer1",
+  "at": "2026-09-30T15:30:55.950023",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T15:30:39",
+   "script": "rift",
+   "account": "skosmurf",
+   "rc": 2,
+   "secs": 156,
+   "stats": {
+    "rift_levels": 30,
+    "rift_rerolls": 5,
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_152803_rift_skosmurf"
+  },
   {
    "ts": "2026-09-30T15:23:59",
    "script": "rift",
@@ -8550,24 +8566,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_020913_worldboss_fake3"
-  },
-  {
-   "ts": "2026-09-30T02:09:12",
-   "script": "worldboss",
-   "account": "fake2",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_020741_worldboss_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 55765,
+  "now": 55889,
   "segments": [
    {
     "b": 28937,
@@ -12621,8 +12625,22 @@
      55674
     ],
     "handoff": 55683,
+    "rc": 2,
+    "e": 55840,
+    "secs": 156,
+    "why": ""
+   },
+   {
+    "b": 55840,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     55840,
+     55855
+    ],
+    "handoff": 55866,
     "rc": null,
-    "e": 55765
+    "e": 55889
    }
   ],
   "idle": []
@@ -13203,21 +13221,12 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:09:12",
-   "account": "fake2",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 69,
-  "relogMinutes": 30.2,
+  "switches": 70,
+  "relogMinutes": 30.6,
   "retries": 44,
   "tasks": {
    "island_challenge": {
@@ -13321,8 +13330,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 6,
-    "minutes": 1.0,
+    "runs": 7,
+    "minutes": 3.6,
     "failed": 1
    }
   }
@@ -13483,6 +13492,12 @@
    "task": "championship",
    "why": "no World Championship icon on the strip",
    "at": "2026-09-30T12:02:35"
+  },
+  {
+   "account": "skosmurf",
+   "task": "rift",
+   "why": "rift_levels, rift_rerolls, rift_finished",
+   "at": "2026-09-30T15:30:39"
   },
   {
    "account": "smurf",
@@ -13973,10 +13988,6 @@
     "mode": "story"
    },
    {
-    "account": "skosmurf",
-    "mode": "rift"
-   },
-   {
     "account": "skomain",
     "mode": "rift"
    },
@@ -13991,6 +14002,10 @@
    {
     "account": "chris",
     "mode": "hoopa"
+   },
+   {
+    "account": "lucifer1",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -14000,12 +14015,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 67,
-   "medianSec": 17,
+   "n": 68,
+   "medianSec": 17.0,
    "picker": {
-    "n": 46,
-    "medianSec": 16.0,
-    "jumps": 28
+    "n": 47,
+    "medianSec": 16,
+    "jumps": 29
    },
    "typed": {
     "n": 0,
@@ -15096,14 +15111,7 @@
      "state": "not available today"
     }
    ],
-   "issues": [
-    {
-     "task": "worldboss",
-     "at": "02:09",
-     "why": "account switch failed",
-     "frame": null
-    }
-   ],
+   "issues": [],
    "off": [
     {
      "task": "hoopa",
@@ -15832,7 +15840,7 @@
   "skosmurf": {
    "name": "SkoSmurf",
    "day": "2026-09-30",
-   "summary": "16 of 18 dailies done · gave up on bash · 2 switched off · 1 not available today",
+   "summary": "16 of 18 dailies done · gave up on bash · 2 switched off · 2 not available today",
    "done": 16,
    "owed": 18,
    "open": [
@@ -15875,6 +15883,10 @@
     {
      "task": "championship",
      "why": "no World Championship icon on the strip"
+    },
+    {
+     "task": "rift",
+     "why": "rift_levels, rift_rerolls, rift_finished"
     }
    ],
    "spent": {
