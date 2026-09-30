@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T15:17:02.622738",
+ "generatedAt": "2026-09-30T15:19:06.278680",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "15:06:35"
+  "since": "15:18:14"
  },
  "grid": {
   "tasks": [
@@ -747,8 +747,8 @@
  "ownerOnline": [],
  "keys": {
   "jeff": {
-   "keys": 5,
-   "at": "2026-09-30T14:23:48"
+   "keys": 0,
+   "at": "2026-09-30T15:17:44"
   },
   "chris": {
    "keys": 0,
@@ -812,11 +812,41 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-30T15:06:50.718271",
+  "label": "nova",
+  "at": "2026-09-30T15:18:30.907116",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T15:18:13",
+   "script": "rift",
+   "account": "chris",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_151812_rift_chris"
+  },
+  {
+   "ts": "2026-09-30T15:17:46",
+   "script": "hoopa",
+   "account": "jeff",
+   "rc": 2,
+   "secs": 644,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-30T15:06:35",
    "script": "rift",
@@ -8525,36 +8555,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_020437_worldboss_smurf"
-  },
-  {
-   "ts": "2026-09-30T02:04:37",
-   "script": "worldboss",
-   "account": "nova",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_020305_worldboss_nova"
-  },
-  {
-   "ts": "2026-09-30T02:03:05",
-   "script": "worldboss",
-   "account": "jeff",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_020133_worldboss_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 55022,
+  "now": 55146,
   "segments": [
    {
     "b": 28937,
@@ -12528,8 +12534,36 @@
      54410
     ],
     "handoff": 54421,
+    "rc": 2,
+    "e": 55066,
+    "secs": 644,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 55066,
+    "a": "chris",
+    "s": "rift",
+    "login": [
+     55067,
+     55082
+    ],
+    "handoff": 55091,
+    "rc": 2,
+    "e": 55094,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 55094,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     55094,
+     55110
+    ],
+    "handoff": 55122,
     "rc": null,
-    "e": 55022
+    "e": 55146
    }
   ],
   "idle": []
@@ -13128,30 +13162,12 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:04:37",
-   "account": "nova",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:03:05",
-   "account": "jeff",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 63,
-  "relogMinutes": 27.1,
+  "switches": 65,
+  "relogMinutes": 28.0,
   "retries": 43,
   "tasks": {
    "island_challenge": {
@@ -13255,8 +13271,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 4,
-    "minutes": 0.1,
+    "runs": 5,
+    "minutes": 0.2,
     "failed": 0
    }
   }
@@ -13267,6 +13283,12 @@
    "task": "championship",
    "why": "no World Championship icon on the strip",
    "at": "2026-09-30T14:22:22"
+  },
+  {
+   "account": "chris",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-09-30T15:18:13"
   },
   {
    "account": "dre",
@@ -13357,6 +13379,12 @@
    "task": "championship",
    "why": "no World Championship icon on the strip",
    "at": "2026-09-30T13:49:38"
+  },
+  {
+   "account": "jeff",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-30T15:17:46"
   },
   {
    "account": "lucifer1",
@@ -13582,9 +13610,9 @@
     "last": "2026-09-30T14:50:31"
    },
    "jeff": {
-    "runs": 18,
+    "runs": 19,
     "targets": 1,
-    "last": "2026-09-30T15:15:39"
+    "last": "2026-09-30T15:17:36"
    },
    "lucifer1": {
     "runs": 12,
@@ -13897,15 +13925,15 @@
     "mode": "rift"
    },
    {
-    "account": "chris",
-    "mode": "rift"
-   },
-   {
     "account": "jeff",
     "mode": "rift"
    },
    {
     "account": "deno",
+    "mode": "rift"
+   },
+   {
+    "account": "lucifer2",
     "mode": "rift"
    }
   ],
@@ -13916,12 +13944,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 63,
+   "n": 65,
    "medianSec": 17,
    "picker": {
-    "n": 44,
+    "n": 46,
     "medianSec": 16.0,
-    "jumps": 27
+    "jumps": 28
    },
    "typed": {
     "n": 0,
@@ -14527,12 +14555,6 @@
      "at": "08:26",
      "why": "weekend_bash: tab 2 did not open",
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_082559_weekend_bash_nova__KEEP_0001_082613_final.png"
-    },
-    {
-     "task": "worldboss",
-     "at": "02:04",
-     "why": "account switch failed",
-     "frame": null
     }
    ],
    "off": [],
@@ -14603,7 +14625,7 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-09-30",
-   "summary": "16 of 19 dailies done · gave up on bash · 1 not available today",
+   "summary": "16 of 19 dailies done · gave up on bash · 2 not available today",
    "done": 16,
    "owed": 19,
    "open": [
@@ -14634,12 +14656,6 @@
      "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_084647_weekend_bash_jeff__KEEP_0001_084701_final.png"
     },
     {
-     "task": "worldboss",
-     "at": "02:03",
-     "why": "account switch failed",
-     "frame": null
-    },
-    {
      "task": "joint_team_daily_quest",
      "at": "08:43",
      "why": "finished, but left open: upgrade squad skill once: blocked",
@@ -14651,6 +14667,10 @@
     {
      "task": "championship",
      "why": "no World Championship icon on the strip"
+    },
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
     }
    ],
    "spent": {
@@ -14713,7 +14733,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-30",
-   "summary": "17 of 20 dailies done · gave up on bash · 1 not available today",
+   "summary": "17 of 20 dailies done · gave up on bash · 2 not available today",
    "done": 17,
    "owed": 20,
    "open": [
@@ -14743,6 +14763,10 @@
     {
      "task": "championship",
      "why": "no World Championship icon on the strip"
+    },
+    {
+     "task": "rift",
+     "why": "rift_finished"
     }
    ],
    "spent": {
