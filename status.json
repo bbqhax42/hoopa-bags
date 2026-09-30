@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T15:43:51.607594",
+ "generatedAt": "2026-09-30T15:45:55.390049",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "lucifer2",
   "mode": "rift",
-  "since": "15:43:50"
+  "since": "15:45:49"
  },
  "grid": {
   "tasks": [
@@ -813,11 +813,25 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-30T15:30:55.950023",
+  "label": "deno",
+  "at": "2026-09-30T15:45:30.081339",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T15:45:48",
+   "script": "rift",
+   "account": "deno",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_154547_rift_deno"
+  },
   {
    "ts": "2026-09-30T15:30:39",
    "script": "rift",
@@ -8554,24 +8568,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_021044_worldboss_fake4"
-  },
-  {
-   "ts": "2026-09-30T02:10:44",
-   "script": "worldboss",
-   "account": "fake3",
-   "rc": 1,
-   "secs": 91,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_020913_worldboss_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 56631,
+  "now": 56755,
   "segments": [
    {
     "b": 28937,
@@ -12652,7 +12654,33 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 56631
+    "e": 56694
+   },
+   {
+    "b": 56694,
+    "a": "deno",
+    "s": "rift",
+    "login": [
+     56695,
+     56730
+    ],
+    "handoff": 56746,
+    "rc": 2,
+    "e": 56749,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 56749,
+    "a": "lucifer2",
+    "s": "rift",
+    "login": [
+     56749,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 56755
    }
   ],
   "idle": []
@@ -13224,21 +13252,12 @@
    "secs": 91,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:10:44",
-   "account": "fake3",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 91,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 71,
-  "relogMinutes": 30.6,
+  "switches": 73,
+  "relogMinutes": 31.5,
   "retries": 44,
   "tasks": {
    "island_challenge": {
@@ -13342,7 +13361,7 @@
     "failed": 0
    },
    "rift": {
-    "runs": 7,
+    "runs": 8,
     "minutes": 3.6,
     "failed": 1
    }
@@ -13360,6 +13379,12 @@
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-09-30T15:18:13"
+  },
+  {
+   "account": "deno",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-09-30T15:45:48"
   },
   {
    "account": "dre",
@@ -14008,15 +14033,15 @@
     "mode": "rift"
    },
    {
-    "account": "deno",
-    "mode": "rift"
-   },
-   {
     "account": "lucifer2",
     "mode": "rift"
    },
    {
     "account": "chris",
+    "mode": "hoopa"
+   },
+   {
+    "account": "skomain",
     "mode": "hoopa"
    }
   ],
@@ -14027,8 +14052,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 68,
-   "medianSec": 17.0,
+   "n": 69,
+   "medianSec": 17,
    "picker": {
     "n": 47,
     "medianSec": 16,
@@ -14039,8 +14064,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 21,
-    "medianSec": 20
+    "n": 22,
+    "medianSec": 20.0
    }
   }
  },
@@ -15207,12 +15232,6 @@
    ],
    "issues": [
     {
-     "task": "worldboss",
-     "at": "02:10",
-     "why": "account switch failed",
-     "frame": null
-    },
-    {
      "task": "combat_daily",
      "at": "10:23",
      "why": "finished, but left open: dungeon row still open (for daily_dungeon)",
@@ -16340,7 +16359,7 @@
   "deno": {
    "name": "deno",
    "day": "2026-09-30",
-   "summary": "15 of 16 dailies done · gave up on bash",
+   "summary": "15 of 16 dailies done · gave up on bash · 1 not available today",
    "done": 15,
    "owed": 16,
    "open": [
@@ -16364,7 +16383,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rift",
+     "why": "rift_finished"
+    }
+   ],
    "spent": {
     "pillar/story stages cleared": 2,
     "guild war attempts": 1,
