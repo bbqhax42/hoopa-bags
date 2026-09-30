@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T20:20:26.061836",
+ "generatedAt": "2026-09-30T20:22:29.683830",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
+  "account": "fake8",
   "mode": "worldboss",
-  "since": "20:19:25"
+  "since": "20:22:02"
  },
  "grid": {
   "tasks": [
@@ -750,7 +750,15 @@
   "chris|island_challenge": "2026-09-30T20:49",
   "jeff|island_challenge": "2026-09-30T21:18"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "lucifer1",
+   "since": "2026-09-30T20:20:53",
+   "held": true,
+   "heldUntil": "2026-09-30T20:30:53",
+   "deferredUntil": "2026-09-30T20:31:05"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 0,
@@ -822,11 +830,58 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-09-30T20:19:46.063412",
+  "label": "fake8",
+  "at": "2026-09-30T20:22:20.585640",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T20:22:02",
+   "script": "worldboss",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 68,
+   "stats": {
+    "wb_skip_again": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_202054_worldboss_lucifer2"
+  },
+  {
+   "ts": "2026-09-30T20:20:53",
+   "script": "worldboss",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 23,
+   "stats": {
+    "owner_online": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_202030_worldboss_lucifer1"
+  },
+  {
+   "ts": "2026-09-30T20:20:29",
+   "script": "worldboss",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_201925_worldboss_skomain"
+  },
   {
    "ts": "2026-09-30T20:19:25",
    "script": "worldboss",
@@ -8629,60 +8684,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260930_025344_worldboss_fake3"
-  },
-  {
-   "ts": "2026-09-30T02:53:43",
-   "script": "worldboss",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_025250_worldboss_fake2"
-  },
-  {
-   "ts": "2026-09-30T02:52:50",
-   "script": "worldboss",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_025156_worldboss_fake1"
-  },
-  {
-   "ts": "2026-09-30T02:51:56",
-   "script": "worldboss",
-   "account": "nova",
-   "rc": 0,
-   "secs": 59,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_025056_worldboss_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 73226,
+  "now": 73350,
   "segments": [
    {
     "b": 28937,
@@ -13815,8 +13822,50 @@
      73186
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 73229,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 73229,
+    "a": "lucifer1",
+    "s": "worldboss",
+    "login": [
+     73230,
+     73245
+    ],
+    "handoff": null,
+    "rc": 1,
+    "e": 73253,
+    "secs": 23,
+    "why": ""
+   },
+   {
+    "b": 73253,
+    "a": "lucifer2",
+    "s": "worldboss",
+    "login": [
+     73254,
+     73273
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 73322,
+    "secs": 68,
+    "why": ""
+   },
+   {
+    "b": 73322,
+    "a": "fake8",
+    "s": "worldboss",
+    "login": [
+     73322,
+     73340
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 73226
+    "e": 73350
    }
   ],
   "idle": [
@@ -13864,6 +13913,15 @@
   ]
  },
  "failures": [
+  {
+   "ts": "2026-09-30T20:20:53",
+   "account": "lucifer1",
+   "task": "worldboss",
+   "rc": 1,
+   "secs": 23,
+   "why": "could not get past the startup screens",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_202030_worldboss_lucifer1__KEEP_0004_202053_final.png"
+  },
   {
    "ts": "2026-09-30T18:32:00",
    "account": "skomain",
@@ -14272,9 +14330,9 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 131,
+  "switches": 134,
   "relogMinutes": 48.3,
-  "retries": 53,
+  "retries": 54,
   "tasks": {
    "island_challenge": {
     "runs": 14,
@@ -14387,9 +14445,9 @@
     "failed": 1
    },
    "worldboss": {
-    "runs": 13,
-    "minutes": 15.4,
-    "failed": 0
+    "runs": 16,
+    "minutes": 18.0,
+    "failed": 1
    }
   }
  },
@@ -14750,7 +14808,9 @@
    "fake7",
    "sprite",
    "exou",
-   "skosmurf"
+   "skosmurf",
+   "skomain",
+   "lucifer2"
   ]
  },
  "worldBossSkipped": {},
@@ -14937,10 +14997,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "lucifer1",
-    "mode": "hoopa"
-   },
-   {
     "account": "skomain",
     "mode": "hoopa"
    }
@@ -14952,40 +15008,24 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 128,
-   "medianSec": 16.0,
+   "n": 131,
+   "medianSec": 16,
    "picker": {
-    "n": 94,
+    "n": 96,
     "medianSec": 15.0,
-    "jumps": 52
+    "jumps": 54
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 34,
-    "medianSec": 20.0
+    "n": 35,
+    "medianSec": 20
    }
   }
  },
  "progress": {
-  "nova": {
-   "mailUnread": 0,
-   "paradiseStamina": "1/13",
-   "rank": 2,
-   "pillar": "floor 102 stage 9"
-  },
-  "fake1": {
-   "mailUnread": 0,
-   "paradiseStamina": "1/13",
-   "pillar": "floor 6 stage 7"
-  },
-  "fake2": {
-   "mailUnread": 0,
-   "paradiseStamina": "0/13",
-   "pillar": "floor 6 stage 4"
-  },
   "fake3": {
    "mailUnread": 0,
    "paradiseStamina": "1/13",
@@ -15027,10 +15067,26 @@
    "rank": 193,
    "islandFights": 0
   },
+  "nova": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/13",
+   "rank": 2,
+   "pillar": "floor 102 stage 9"
+  },
   "smurf": {
    "mailUnread": 0,
    "rank": 47,
    "pillar": "floor 20 stage 8"
+  },
+  "fake1": {
+   "mailUnread": 0,
+   "paradiseStamina": "1/13",
+   "pillar": "floor 6 stage 7"
+  },
+  "fake2": {
+   "mailUnread": 0,
+   "paradiseStamina": "0/13",
+   "pillar": "floor 6 stage 4"
   },
   "fake7": {
    "mailUnread": 0,
@@ -15350,6 +15406,15 @@
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "lucifer1",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-30T20:20:53",
+   "why": "someone is playing on it",
+   "action": "left alone until 20:30",
+   "enable": false
   },
   {
    "account": "fake3",
@@ -16950,7 +17015,7 @@
    "history": [
     {
      "day": "2026-09-30",
-     "done": 26,
+     "done": 27,
      "failed": 10
     }
    ]
@@ -16968,6 +17033,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "worldboss",
+     "at": "20:20",
+     "why": "could not get past the startup screens",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_202030_worldboss_lucifer1__KEEP_0004_202053_final.png"
+    },
     {
      "task": "weekend_bash",
      "at": "12:09",
@@ -17032,7 +17103,7 @@
     {
      "day": "2026-09-30",
      "done": 15,
-     "failed": 4
+     "failed": 5
     }
    ]
   },
@@ -17135,7 +17206,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 14,
+     "done": 15,
      "failed": 12
     }
    ]
