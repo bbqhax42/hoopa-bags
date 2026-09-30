@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T08:15:05.441917",
+ "generatedAt": "2026-09-30T08:17:10.061512",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
-  "mode": "faction",
-  "since": "08:14:52"
+  "mode": "ultra_wormhole",
+  "since": "08:15:12"
  },
  "grid": {
   "tasks": [
@@ -430,7 +430,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "⊘",
      "-",
      "·",
      "·",
@@ -577,9 +577,9 @@
  },
  "counts": {
   "done": 12,
-  "todo": 258,
+  "todo": 257,
   "gaveUp": 1,
-  "unavailable": 11,
+  "unavailable": 12,
   "windowed": 38
  },
  "disabled": [
@@ -801,6 +801,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T08:15:11",
+   "script": "faction",
+   "account": "skomain",
+   "rc": 2,
+   "secs": 15,
+   "stats": {
+    "complete_grass": 1,
+    "floors_grass": 0,
+    "sweeps_used": 2
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_081455_faction_skomain"
+  },
   {
    "ts": "2026-09-30T08:14:51",
    "script": "sky_pillar",
@@ -8305,53 +8321,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_104636_faction_smurf"
-  },
-  {
-   "ts": "2026-09-29T10:46:32",
-   "script": "sky_pillar",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 135,
-   "stats": {
-    "stages_cleared": 6,
-    "floor_reward_claimed": 2,
-    "marginal_sky_pillar": 1,
-    "proofs_banked": 1,
-    "floor_backlog_floor": 1,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 20,
-    "stage": 6,
-    "proofs_spent": 6,
-    "floor_backlog_claims": 1
-   },
-   "values_all": {
-    "floor": [
-     20,
-     20,
-     20,
-     20,
-     20,
-     20
-    ],
-    "stage": [
-     1,
-     2,
-     3,
-     4,
-     5,
-     6
-    ]
-   },
-   "dir": "debug_runs/20260929_104416_sky_pillar_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 29706,
+  "now": 29830,
   "segments": [
    {
     "b": 28937,
@@ -8525,8 +8500,19 @@
     "s": "faction",
     "login": null,
     "handoff": 29695,
+    "rc": 2,
+    "e": 29712,
+    "secs": 15,
+    "why": ""
+   },
+   {
+    "b": 29712,
+    "a": "skomain",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 29730,
     "rc": null,
-    "e": 29706
+    "e": 29830
    }
   ],
   "idle": []
@@ -8945,6 +8931,11 @@
     "runs": 1,
     "minutes": 0.1,
     "failed": 0
+   },
+   "faction": {
+    "runs": 1,
+    "minutes": 0.2,
+    "failed": 0
    }
   }
  },
@@ -9014,6 +9005,12 @@
    "task": "teamshop",
    "why": null,
    "at": null
+  },
+  {
+   "account": "skomain",
+   "task": "faction",
+   "why": "complete_grass, sweeps_used",
+   "at": "2026-09-30T08:15:11"
   }
  ],
  "windows": {
@@ -9471,78 +9468,78 @@
   "next": [
    {
     "account": "skomain",
-    "task": "faction",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T08:15"
-   },
-   {
-    "account": "skomain",
     "task": "ultra_wormhole",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-09-30T08:17"
    },
    {
     "account": "skomain",
     "task": "ring_battle",
-    "startsIn": 4.0,
+    "startsIn": 2.0,
     "eta": "2026-09-30T08:19"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 6.4,
+    "startsIn": 4.4,
     "eta": "2026-09-30T08:21"
    },
    {
     "account": "nova",
     "task": "mail",
-    "startsIn": 7.0,
+    "startsIn": 5.0,
     "eta": "2026-09-30T08:22"
    },
    {
     "account": "nova",
     "task": "joint_team_daily_quest",
-    "startsIn": 7.1,
+    "startsIn": 5.1,
     "eta": "2026-09-30T08:22"
    },
    {
     "account": "nova",
     "task": "joint_battle",
-    "startsIn": 8.0,
+    "startsIn": 6.0,
     "eta": "2026-09-30T08:23"
    },
    {
     "account": "nova",
     "task": "daily_dungeon",
-    "startsIn": 10.0,
+    "startsIn": 8.0,
     "eta": "2026-09-30T08:25"
    },
    {
     "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 10.2,
+    "startsIn": 8.2,
     "eta": "2026-09-30T08:25"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 11.7,
+    "startsIn": 9.7,
     "eta": "2026-09-30T08:26"
    },
    {
     "account": "nova",
     "task": "combat_daily",
-    "startsIn": 11.9,
+    "startsIn": 9.9,
     "eta": "2026-09-30T08:27"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 13.6,
+    "startsIn": 11.6,
+    "eta": "2026-09-30T08:28"
+   },
+   {
+    "account": "nova",
+    "task": "paradise",
+    "startsIn": 11.7,
     "eta": "2026-09-30T08:28"
    }
   ],
-  "more": 246,
+  "more": 245,
   "fillers": [
    {
     "account": "skomain",
@@ -9595,7 +9592,6 @@
  },
  "progress": {
   "smurf": {
-   "pillar": "floor 20 stage 6",
    "misty": "step 1"
   },
   "fake1": {
@@ -9689,6 +9685,7 @@
  },
  "ledger": {
   "skomain": {
+   "faction sweeps": 2,
    "ranked attempts": 2,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 100,
@@ -10460,7 +10457,6 @@
    "unavailable": [],
    "spent": {},
    "progress": {
-    "pillar": "floor 20 stage 6",
     "misty": "step 1"
    },
    "history": [
@@ -11843,7 +11839,7 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-09-30",
-   "summary": "12 of 20 dailies done · gave up on bash",
+   "summary": "12 of 20 dailies done · gave up on bash · 1 not available today",
    "done": 12,
    "owed": 20,
    "open": [
@@ -11861,7 +11857,7 @@
     },
     {
      "task": "fctn",
-     "state": "still to do"
+     "state": "not available today"
     },
     {
      "task": "wormhole",
@@ -11901,8 +11897,14 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "faction",
+     "why": "complete_grass, sweeps_used"
+    }
+   ],
    "spent": {
+    "faction sweeps": 2,
     "ranked attempts": 2,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 100,
