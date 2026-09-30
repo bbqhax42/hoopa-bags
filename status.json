@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T19:41:16.231952",
+ "generatedAt": "2026-09-30T19:43:20.137300",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
+  "account": "skomain",
   "mode": "hoopa",
-  "since": "19:40:24"
+  "since": "19:43:06"
  },
  "grid": {
   "tasks": [
@@ -757,8 +757,8 @@
    "at": "2026-09-30T15:17:44"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-09-30T15:47:40"
+   "keys": 0,
+   "at": "2026-09-30T19:41:42"
   },
   "lucifer1": {
    "keys": 312,
@@ -822,11 +822,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-09-30T19:36:12.891904",
+  "label": "skomain",
+  "at": "2026-09-30T19:42:04.227290",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T19:41:43",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 9,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-09-30T19:20:50",
    "script": "rift",
@@ -8625,24 +8641,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_024234_worldboss_fake5"
-  },
-  {
-   "ts": "2026-09-30T02:42:33",
-   "script": "worldboss",
-   "account": "fake5",
-   "rc": 1,
-   "secs": 76,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_024117_worldboss_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 70876,
+  "now": 71000,
   "segments": [
    {
     "b": 28937,
@@ -13415,7 +13419,39 @@
     "login": null,
     "handoff": 70824,
     "rc": null,
-    "e": 70876
+    "e": 70894
+   },
+   {
+    "b": 70894,
+    "a": "chris",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 70894,
+    "rc": 2,
+    "e": 70904,
+    "secs": 9,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 70904,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": [
+     70904,
+     70924
+    ],
+    "handoff": 70933,
+    "rc": null,
+    "e": 70986
+   },
+   {
+    "b": 70986,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 70986,
+    "rc": null,
+    "e": 71000
    }
   ],
   "idle": [
@@ -13444,7 +13480,10 @@
    70642,
    70642,
    70752,
-   70824
+   70824,
+   70894,
+   70904,
+   70986
   ]
  },
  "failures": [
@@ -13951,21 +13990,12 @@
    "secs": 0,
    "why": "account switch failed",
    "frame": null
-  },
-  {
-   "ts": "2026-09-30T02:42:33",
-   "account": "fake5",
-   "task": "worldboss",
-   "rc": 1,
-   "secs": 76,
-   "why": "account switch failed",
-   "frame": null
   }
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 113,
-  "relogMinutes": 47.9,
+  "switches": 114,
+  "relogMinutes": 48.3,
   "retries": 53,
   "tasks": {
    "island_challenge": {
@@ -14086,6 +14116,12 @@
    "task": "championship",
    "why": "no World Championship icon on the strip",
    "at": "2026-09-30T14:22:22"
+  },
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-09-30T19:41:43"
   },
   {
    "account": "chris",
@@ -14459,17 +14495,24 @@
     "last": "2026-09-30T17:57:51"
    },
    "chris": {
-    "runs": 62,
-    "targets": 4,
-    "last": "2026-09-30T19:40:24"
+    "runs": 63,
+    "targets": 5,
+    "last": "2026-09-30T19:41:33"
    },
    "skomain": {
-    "runs": 3,
+    "runs": 4,
     "targets": 0,
-    "last": "2026-09-30T19:22:11"
+    "last": "2026-09-30T19:43:05"
    }
   },
   "targets": [
+   {
+    "ts": "2026-09-30T19:41:33",
+    "runner": "chris",
+    "items": [
+     "Kings Rock"
+    ]
+   },
    {
     "ts": "2026-09-30T17:41:46",
     "runner": "lucifer1",
@@ -14546,13 +14589,6 @@
     "items": [
      "Choice Band"
     ]
-   },
-   {
-    "ts": "2026-09-30T07:10:21",
-    "runner": "nova",
-    "items": [
-     "Muscle Band"
-    ]
    }
   ]
  },
@@ -14623,10 +14659,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "chris",
-    "mode": "hoopa"
-   },
-   {
     "account": "lucifer1",
     "mode": "hoopa"
    },
@@ -14642,8 +14674,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 110,
-   "medianSec": 16.0,
+   "n": 111,
+   "medianSec": 16,
    "picker": {
     "n": 81,
     "medianSec": 15,
@@ -14654,8 +14686,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 29,
-    "medianSec": 20
+    "n": 30,
+    "medianSec": 20.0
    }
   }
  },
@@ -15448,7 +15480,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-30",
-   "summary": "17 of 20 dailies done · gave up on bash · 2 not available today",
+   "summary": "17 of 20 dailies done · gave up on bash · 3 not available today",
    "done": 17,
    "owed": 20,
    "open": [
@@ -15478,6 +15510,10 @@
     {
      "task": "championship",
      "why": "no World Championship icon on the strip"
+    },
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
     },
     {
      "task": "rift",
