@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T10:46:22.579362",
+ "generatedAt": "2026-09-30T10:48:26.894102",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake5",
-  "mode": "daily_dungeon",
-  "since": "10:45:50"
+  "mode": "combat_daily",
+  "since": "10:47:05"
  },
  "grid": {
   "tasks": [
@@ -257,8 +257,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 123,
-  "todo": 137,
+  "done": 125,
+  "todo": 135,
   "gaveUp": 5,
   "unavailable": 15,
   "windowed": 38
@@ -821,6 +821,40 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T10:47:04",
+   "script": "pokemon_home",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_left_by_cap": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_104658_pokemon_home_fake5"
+  },
+  {
+   "ts": "2026-09-30T10:46:56",
+   "script": "daily_dungeon",
+   "account": "fake5",
+   "rc": 0,
+   "secs": 61,
+   "stats": {
+    "marginal_dungeon_list": 9,
+    "auto_formation": 1,
+    "near_miss_vr_rank": 1,
+    "sweep_dead_after_clear": 1,
+    "rank_chest_claimed": 4,
+    "dungeon_unrankable": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_104554_daily_dungeon_fake5"
+  },
   {
    "ts": "2026-09-30T10:44:52",
    "script": "joint_team_daily_quest",
@@ -8238,58 +8272,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_130551_pokemon_home_fake5"
-  },
-  {
-   "ts": "2026-09-29T13:05:26",
-   "script": "championship",
-   "account": "skosmurf",
-   "rc": 1,
-   "secs": 130,
-   "stats": {
-    "skip_tapped": 38,
-    "fights": 36,
-    "skip_retapped": 2,
-    "ladder_stalled": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "championship: the ladder stopped progressing"
-   ],
-   "values": {
-    "fights": 36,
-    "tiers": 1
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_130315_championship_skosmurf"
-  },
-  {
-   "ts": "2026-09-29T13:03:13",
-   "script": "championship",
-   "account": "skosmurf",
-   "rc": 1,
-   "secs": 25,
-   "stats": {
-    "skip_tapped": 7,
-    "fights": 6,
-    "skip_retapped": 1,
-    "ladder_stalled": 1,
-    "incomplete": 1
-   },
-   "incomplete": [
-    "championship: the ladder stopped progressing"
-   ],
-   "values": {
-    "fights": 6,
-    "tiers": 1
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_130248_championship_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 38783,
+  "now": 38907,
   "segments": [
    {
     "b": 28937,
@@ -9979,8 +9967,30 @@
     "s": "daily_dungeon",
     "login": null,
     "handoff": 38754,
+    "rc": 0,
+    "e": 38817,
+    "secs": 61,
+    "why": ""
+   },
+   {
+    "b": 38817,
+    "a": "fake5",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 38818,
+    "rc": 0,
+    "e": 38825,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 38825,
+    "a": "fake5",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 38830,
     "rc": null,
-    "e": 38783
+    "e": 38907
    }
   ],
   "idle": []
@@ -10473,13 +10483,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 9,
-    "minutes": 2.8,
+    "runs": 10,
+    "minutes": 3.8,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 9,
-    "minutes": 8.7,
+    "runs": 10,
+    "minutes": 8.8,
     "failed": 0
    },
    "weekend_bash": {
@@ -11091,78 +11101,78 @@
   "next": [
    {
     "account": "fake5",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T10:46"
-   },
-   {
-    "account": "fake5",
-    "task": "pokemon_home",
-    "startsIn": 0.3,
-    "eta": "2026-09-30T10:46"
-   },
-   {
-    "account": "fake5",
     "task": "combat_daily",
-    "startsIn": 1.3,
-    "eta": "2026-09-30T10:47"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T10:48"
    },
    {
     "account": "fake5",
     "task": "victory_road",
-    "startsIn": 3.2,
-    "eta": "2026-09-30T10:49"
+    "startsIn": 1.9,
+    "eta": "2026-09-30T10:50"
    },
    {
     "account": "fake5",
     "task": "paradise",
-    "startsIn": 3.3,
-    "eta": "2026-09-30T10:49"
+    "startsIn": 2.0,
+    "eta": "2026-09-30T10:50"
    },
    {
     "account": "fake5",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.7,
+    "startsIn": 5.4,
     "eta": "2026-09-30T10:53"
    },
    {
     "account": "fake5",
     "task": "sky_pillar",
-    "startsIn": 6.7,
+    "startsIn": 5.5,
     "eta": "2026-09-30T10:53"
    },
    {
     "account": "fake5",
     "task": "faction",
-    "startsIn": 7.7,
+    "startsIn": 6.4,
     "eta": "2026-09-30T10:54"
    },
    {
     "account": "fake6",
     "task": "dailyclaim",
-    "startsIn": 10.0,
-    "eta": "2026-09-30T10:56"
+    "startsIn": 8.7,
+    "eta": "2026-09-30T10:57"
    },
    {
     "account": "fake6",
     "task": "mail",
-    "startsIn": 10.5,
-    "eta": "2026-09-30T10:56"
+    "startsIn": 9.2,
+    "eta": "2026-09-30T10:57"
    },
    {
     "account": "fake6",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.6,
-    "eta": "2026-09-30T10:56"
+    "startsIn": 9.3,
+    "eta": "2026-09-30T10:57"
    },
    {
     "account": "fake6",
     "task": "joint_battle",
-    "startsIn": 11.4,
-    "eta": "2026-09-30T10:57"
+    "startsIn": 10.1,
+    "eta": "2026-09-30T10:58"
+   },
+   {
+    "account": "fake6",
+    "task": "daily_dungeon",
+    "startsIn": 12.1,
+    "eta": "2026-09-30T11:00"
+   },
+   {
+    "account": "fake6",
+    "task": "pokemon_home",
+    "startsIn": 12.5,
+    "eta": "2026-09-30T11:00"
    }
   ],
-  "more": 125,
+  "more": 123,
   "fillers": [
    {
     "account": "skomain",
@@ -11214,7 +11224,6 @@
   }
  },
  "progress": {
-  "skosmurf": {},
   "fake5": {
    "mailUnread": 0
   },
@@ -11282,6 +11291,7 @@
   },
   "fake6": {},
   "sprite": {},
+  "skosmurf": {},
   "fake8": {
    "mailUnread": 0,
    "paradiseStamina": "0/12"
@@ -12500,21 +12510,13 @@
   "fake5": {
    "name": "Random77",
    "day": "2026-09-30",
-   "summary": "4 of 15 dailies done · 2 switched off · 1 not available today",
-   "done": 4,
+   "summary": "6 of 15 dailies done · 2 switched off · 1 not available today",
+   "done": 6,
    "owed": 15,
    "open": [
     {
      "task": "tshop",
      "state": "not available today"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -12614,7 +12616,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 4,
+     "done": 6,
      "failed": 3
     }
    ]
