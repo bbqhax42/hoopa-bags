@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T09:06:57.597038",
+ "generatedAt": "2026-09-30T09:09:02.074627",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "run_pvp_ranked",
-  "since": "09:06:12"
+  "mode": "faction",
+  "since": "09:08:55"
  },
  "grid": {
   "tasks": [
@@ -103,9 +103,9 @@
      "⏰",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "-",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 46,
-  "todo": 214,
+  "done": 49,
+  "todo": 211,
   "gaveUp": 4,
   "unavailable": 12,
   "windowed": 38
@@ -818,6 +818,72 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T09:08:53",
+   "script": "sky_pillar",
+   "account": "chris",
+   "rc": 0,
+   "secs": 51,
+   "stats": {
+    "stages_cleared": 3
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 139,
+    "stage": 8,
+    "proofs_spent": 3
+   },
+   "values_all": {
+    "floor": [
+     139,
+     139,
+     139
+    ],
+    "stage": [
+     6,
+     7,
+     8
+    ]
+   },
+   "dir": "debug_runs/20260930_090801_sky_pillar_chris"
+  },
+  {
+   "ts": "2026-09-30T09:08:00",
+   "script": "collect_hoopa_keys",
+   "account": "chris",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_090755_collect_hoopa_keys_chris"
+  },
+  {
+   "ts": "2026-09-30T09:07:53",
+   "script": "run_pvp_ranked",
+   "account": "chris",
+   "rc": 0,
+   "secs": 76,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_won": 10,
+    "picker_retry": 3,
+    "free_attempts_spent": 1,
+    "rank_places_gained": 145,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 10,
+    "rank": 42,
+    "daily_goal_claims": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_090637_run_pvp_ranked_chris"
+  },
   {
    "ts": "2026-09-30T09:06:11",
    "script": "run_pvp_ranked",
@@ -8251,58 +8317,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_113636_combat_daily_fake4"
-  },
-  {
-   "ts": "2026-09-29T11:36:30",
-   "script": "pokemon_home",
-   "account": "fake4",
-   "rc": 2,
-   "secs": 18,
-   "stats": {
-    "reached_via_trial": 1,
-    "board_stuck": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_113612_pokemon_home_fake4"
-  },
-  {
-   "ts": "2026-09-29T11:36:10",
-   "script": "daily_dungeon",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_113557_daily_dungeon_fake4"
-  },
-  {
-   "ts": "2026-09-29T11:35:54",
-   "script": "joint_team_daily_quest",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 66,
-   "stats": {
-    "near_miss_joint_team_daily_panel": 2,
-    "panel_swipes": 14,
-    "guild_base_by_back": 1,
-    "late_claims": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_113447_joint_team_daily_quest_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 32818,
+  "now": 32942,
   "segments": [
    {
     "b": 28937,
@@ -8989,8 +9009,41 @@
      32787
     ],
     "handoff": 32796,
+    "rc": 0,
+    "e": 32874,
+    "secs": 76,
+    "why": ""
+   },
+   {
+    "b": 32874,
+    "a": "chris",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 32874,
+    "rc": 0,
+    "e": 32881,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 32881,
+    "a": "chris",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 32881,
+    "rc": 0,
+    "e": 32935,
+    "secs": 51,
+    "why": ""
+   },
+   {
+    "b": 32935,
+    "a": "chris",
+    "s": "faction",
+    "login": null,
+    "handoff": 32938,
     "rc": null,
-    "e": 32818
+    "e": 32942
    }
   ],
   "idle": []
@@ -9477,18 +9530,18 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 3,
-    "minutes": 3.8,
+    "runs": 4,
+    "minutes": 5.1,
     "failed": 1
    },
    "collect_hoopa_keys": {
-    "runs": 2,
-    "minutes": 0.1,
+    "runs": 3,
+    "minutes": 0.2,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 2,
-    "minutes": 0.7,
+    "runs": 3,
+    "minutes": 1.6,
     "failed": 0
    },
    "faction": {
@@ -10037,78 +10090,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "run_pvp_ranked",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T09:06"
-   },
-   {
-    "account": "chris",
-    "task": "collect_hoopa_keys",
-    "startsIn": 1.3,
-    "eta": "2026-09-30T09:08"
-   },
-   {
-    "account": "chris",
-    "task": "sky_pillar",
-    "startsIn": 1.3,
-    "eta": "2026-09-30T09:08"
-   },
-   {
-    "account": "chris",
     "task": "faction",
-    "startsIn": 1.7,
-    "eta": "2026-09-30T09:08"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T09:09"
    },
    {
     "account": "chris",
     "task": "ultra_wormhole",
-    "startsIn": 1.9,
-    "eta": "2026-09-30T09:08"
+    "startsIn": 0.2,
+    "eta": "2026-09-30T09:09"
    },
    {
     "account": "chris",
     "task": "ring_battle",
-    "startsIn": 6.8,
-    "eta": "2026-09-30T09:13"
+    "startsIn": 5.1,
+    "eta": "2026-09-30T09:14"
    },
    {
     "account": "chris",
     "task": "championship",
-    "startsIn": 7.8,
-    "eta": "2026-09-30T09:14"
+    "startsIn": 6.1,
+    "eta": "2026-09-30T09:15"
    },
    {
     "account": "smurf",
     "task": "dailyclaim",
-    "startsIn": 10.2,
+    "startsIn": 8.5,
     "eta": "2026-09-30T09:17"
    },
    {
     "account": "smurf",
     "task": "mail",
-    "startsIn": 10.8,
-    "eta": "2026-09-30T09:17"
-   },
-   {
-    "account": "smurf",
-    "task": "joint_team_daily_quest",
-    "startsIn": 10.8,
-    "eta": "2026-09-30T09:17"
-   },
-   {
-    "account": "smurf",
-    "task": "joint_battle",
-    "startsIn": 11.7,
+    "startsIn": 9.1,
     "eta": "2026-09-30T09:18"
    },
    {
     "account": "smurf",
+    "task": "joint_team_daily_quest",
+    "startsIn": 9.2,
+    "eta": "2026-09-30T09:18"
+   },
+   {
+    "account": "smurf",
+    "task": "joint_battle",
+    "startsIn": 10.0,
+    "eta": "2026-09-30T09:19"
+   },
+   {
+    "account": "smurf",
     "task": "daily_dungeon",
+    "startsIn": 12.0,
+    "eta": "2026-09-30T09:21"
+   },
+   {
+    "account": "smurf",
+    "task": "pokemon_home",
+    "startsIn": 12.2,
+    "eta": "2026-09-30T09:21"
+   },
+   {
+    "account": "smurf",
+    "task": "weekend_bash",
     "startsIn": 13.7,
-    "eta": "2026-09-30T09:20"
+    "eta": "2026-09-30T09:22"
+   },
+   {
+    "account": "smurf",
+    "task": "combat_daily",
+    "startsIn": 14.0,
+    "eta": "2026-09-30T09:22"
    }
   ],
-  "more": 202,
+  "more": 199,
   "fillers": [
    {
     "account": "skomain",
@@ -10196,7 +10249,9 @@
    "islandFights": 2,
    "islandStamina": 1,
    "mailUnread": 0,
-   "paradiseStamina": "1/13"
+   "paradiseStamina": "1/13",
+   "rank": 42,
+   "pillar": "floor 139 stage 8"
   },
   "skosmurf": {
    "mailUnread": 0,
@@ -10248,6 +10303,8 @@
  },
  "ledger": {
   "chris": {
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "adventure energy": 1,
    "Home creations": 50,
@@ -10766,8 +10823,8 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-30",
-   "summary": "9 of 20 dailies done · gave up on bash",
-   "done": 9,
+   "summary": "12 of 20 dailies done · gave up on bash",
+   "done": 12,
    "owed": 20,
    "open": [
     {
@@ -10781,18 +10838,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "fctn",
@@ -10832,6 +10877,8 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 3,
+    "ranked attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "adventure energy": 1,
     "Home creations": 50,
@@ -10844,7 +10891,9 @@
     "islandFights": 2,
     "islandStamina": 1,
     "mailUnread": 0,
-    "paradiseStamina": "1/13"
+    "paradiseStamina": "1/13",
+    "rank": 42,
+    "pillar": "floor 139 stage 8"
    },
    "history": [
     {
@@ -10879,7 +10928,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 8,
+     "done": 11,
      "failed": 3
     }
    ]
