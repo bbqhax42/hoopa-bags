@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T12:21:34.716144",
+ "generatedAt": "2026-09-30T12:23:38.661502",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "ultra_wormhole",
-  "since": "12:17:33"
+  "account": "lucifer2",
+  "mode": "dailyclaim",
+  "since": "12:22:57"
  },
  "grid": {
   "tasks": [
@@ -459,8 +459,8 @@
      "✓",
      "-",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-"
     ]
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 199,
-  "todo": 74,
+  "done": 201,
+  "todo": 72,
   "gaveUp": 10,
   "unavailable": 17,
   "windowed": 18
@@ -812,11 +812,51 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-09-30T12:04:17.961255",
+  "label": "lucifer2",
+  "at": "2026-09-30T12:23:17.721101",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T12:22:57",
+   "script": "ring_battle",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "ring_wins": 6,
+    "ring_chests": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_122156_ring_battle_lucifer1"
+  },
+  {
+   "ts": "2026-09-30T12:21:53",
+   "script": "ultra_wormhole",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 255,
+   "stats": {
+    "hired": 68,
+    "wins": 16,
+    "losses": 2,
+    "rewards_claimed": 5
+   },
+   "incomplete": [],
+   "values": {
+    "rewards_claimed": 5,
+    "wins_today": 16
+   },
+   "values_all": {
+    "rewards_claimed": [
+     0,
+     5
+    ]
+   },
+   "dir": "debug_runs/20260930_121737_ultra_wormhole_lucifer1"
+  },
   {
    "ts": "2026-09-30T12:17:33",
    "script": "sky_pillar",
@@ -8190,58 +8230,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_144943_rank_match_deno"
-  },
-  {
-   "ts": "2026-09-29T14:49:41",
-   "script": "victory_road",
-   "account": "deno",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_144935_victory_road_deno"
-  },
-  {
-   "ts": "2026-09-29T14:49:33",
-   "script": "combat_daily",
-   "account": "deno",
-   "rc": 1,
-   "secs": 284,
-   "stats": {
-    "title_reread_named": 4,
-    "near_miss_afk_rewards": 1,
-    "marginal_battle_victory_confirm": 2,
-    "adv_overflow": 1,
-    "near_miss_vr_rank": 4,
-    "near_miss_battle_victory_confirm": 1,
-    "near_miss_pokemon_upgrade": 2,
-    "upgrade_skip_resonating": 1,
-    "upgrade_no_change": 1,
-    "incomplete": 1,
-    "gacha_free": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [
-    "combat_daily: upgrade a Pokemon: Level Up did nothing"
-   ],
-   "values": {
-    "accelerations_left": "accelerations left: 10/10 +)",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_144449_combat_daily_deno"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 44495,
+  "now": 44619,
   "segments": [
    {
     "b": 28937,
@@ -10914,8 +10908,33 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 44257,
+    "rc": 0,
+    "e": 44513,
+    "secs": 255,
+    "why": ""
+   },
+   {
+    "b": 44513,
+    "a": "lucifer1",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 44515,
+    "rc": 0,
+    "e": 44577,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 44577,
+    "a": "lucifer2",
+    "s": "dailyclaim",
+    "login": [
+     44578,
+     44597
+    ],
+    "handoff": 44606,
     "rc": null,
-    "e": 44495
+    "e": 44619
    }
   ],
   "idle": []
@@ -11473,8 +11492,8 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 28,
-  "relogMinutes": 11.7,
+  "switches": 29,
+  "relogMinutes": 12.2,
   "retries": 32,
   "tasks": {
    "island_challenge": {
@@ -11548,13 +11567,13 @@
     "failed": 0
    },
    "ultra_wormhole": {
-    "runs": 6,
-    "minutes": 26.9,
+    "runs": 7,
+    "minutes": 31.2,
     "failed": 0
    },
    "ring_battle": {
-    "runs": 6,
-    "minutes": 5.9,
+    "runs": 7,
+    "minutes": 6.9,
     "failed": 0
    },
    "championship": {
@@ -12132,79 +12151,79 @@
  "queue": {
   "next": [
    {
-    "account": "lucifer1",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T12:21"
-   },
-   {
-    "account": "lucifer1",
-    "task": "ring_battle",
-    "startsIn": 4.5,
-    "eta": "2026-09-30T12:26"
-   },
-   {
     "account": "lucifer2",
     "task": "dailyclaim",
-    "startsIn": 5.9,
-    "eta": "2026-09-30T12:27"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T12:23"
    },
    {
     "account": "lucifer2",
     "task": "mail",
-    "startsIn": 6.4,
-    "eta": "2026-09-30T12:27"
+    "startsIn": 0.5,
+    "eta": "2026-09-30T12:24"
    },
    {
     "account": "lucifer2",
     "task": "joint_team_daily_quest",
-    "startsIn": 6.4,
-    "eta": "2026-09-30T12:28"
+    "startsIn": 0.6,
+    "eta": "2026-09-30T12:24"
    },
    {
     "account": "lucifer2",
     "task": "joint_battle",
-    "startsIn": 7.3,
-    "eta": "2026-09-30T12:28"
+    "startsIn": 1.4,
+    "eta": "2026-09-30T12:25"
    },
    {
     "account": "lucifer2",
     "task": "daily_dungeon",
-    "startsIn": 9.3,
-    "eta": "2026-09-30T12:30"
+    "startsIn": 3.4,
+    "eta": "2026-09-30T12:27"
    },
    {
     "account": "lucifer2",
     "task": "pokemon_home",
-    "startsIn": 9.7,
-    "eta": "2026-09-30T12:31"
+    "startsIn": 3.8,
+    "eta": "2026-09-30T12:27"
    },
    {
     "account": "lucifer2",
     "task": "weekend_bash",
-    "startsIn": 10.5,
-    "eta": "2026-09-30T12:32"
+    "startsIn": 4.6,
+    "eta": "2026-09-30T12:28"
    },
    {
     "account": "lucifer2",
     "task": "combat_daily",
-    "startsIn": 10.7,
-    "eta": "2026-09-30T12:32"
+    "startsIn": 4.9,
+    "eta": "2026-09-30T12:28"
    },
    {
     "account": "lucifer2",
     "task": "victory_road",
-    "startsIn": 12.5,
-    "eta": "2026-09-30T12:34"
+    "startsIn": 6.6,
+    "eta": "2026-09-30T12:30"
    },
    {
     "account": "lucifer2",
     "task": "paradise",
-    "startsIn": 12.6,
+    "startsIn": 6.8,
+    "eta": "2026-09-30T12:30"
+   },
+   {
+    "account": "lucifer2",
+    "task": "run_pvp_ranked",
+    "startsIn": 10.1,
+    "eta": "2026-09-30T12:33"
+   },
+   {
+    "account": "lucifer2",
+    "task": "collect_hoopa_keys",
+    "startsIn": 11.3,
     "eta": "2026-09-30T12:34"
    }
   ],
-  "more": 45,
+  "more": 43,
   "fillers": [
    {
     "account": "skomain",
@@ -12232,31 +12251,7 @@
    }
   ],
   "held": {
-   "smurf": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "jeff": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake5": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "skomain": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake1": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12264,11 +12259,7 @@
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "sprite": {
-    "until": "2026-09-30T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "chris": {
+   "fake4": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12276,11 +12267,39 @@
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "exou": {
+   "chris": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "smurf": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
    "fake2": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake3": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "exou": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "skomain": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake1": {
+    "until": "2026-09-30T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake5": {
     "until": "2026-09-30T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12291,8 +12310,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 28,
-   "medianSec": 17.0,
+   "n": 29,
+   "medianSec": 17,
    "picker": {
     "n": 19,
     "medianSec": 16,
@@ -12303,8 +12322,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 9,
-    "medianSec": 20
+    "n": 10,
+    "medianSec": 20.0
    }
   }
  },
@@ -14341,8 +14360,8 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-09-30",
-   "summary": "13 of 17 dailies done · gave up on bash",
-   "done": 13,
+   "summary": "15 of 17 dailies done · gave up on bash",
+   "done": 15,
    "owed": 17,
    "open": [
     {
@@ -14352,14 +14371,6 @@
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "wormhole",
-     "state": "still to do"
-    },
-    {
-     "task": "ring",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -14427,7 +14438,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 12,
+     "done": 14,
      "failed": 4
     }
    ]
