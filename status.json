@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T09:04:52.710183",
+ "generatedAt": "2026-09-30T09:06:57.597038",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "chris",
   "mode": "run_pvp_ranked",
-  "since": "09:04:34"
+  "since": "09:06:12"
  },
  "grid": {
   "tasks": [
@@ -76,14 +76,14 @@
      "⏰",
      "✓",
      "⏰",
-     "·",
-     "·",
-     "·",
+     "⇢",
+     "⇢",
+     "⇢",
      "-",
      "-",
-     "·",
-     "·",
-     "·",
+     "⇢",
+     "⇢",
+     "⇢",
      "💤"
     ]
    },
@@ -577,7 +577,7 @@
  },
  "counts": {
   "done": 46,
-  "todo": 220,
+  "todo": 214,
   "gaveUp": 4,
   "unavailable": 12,
   "windowed": 38
@@ -737,7 +737,15 @@
   "jeff|island_challenge": "2026-09-30T09:18",
   "skomain|championship": "2026-09-30T12:00"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "jeff",
+   "since": "2026-09-30T09:06:11",
+   "held": true,
+   "heldUntil": "2026-09-30T09:16:11",
+   "deferredUntil": "2026-09-30T09:16:23"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 0,
@@ -805,11 +813,35 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-09-30T09:04:49.409366",
+  "label": "chris",
+  "at": "2026-09-30T09:06:27.885075",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T09:06:11",
+   "script": "run_pvp_ranked",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 73,
+   "stats": {
+    "ranked_fought": 5,
+    "ranked_won": 5,
+    "picker_retry": 1,
+    "no_result": 1,
+    "incomplete": 1,
+    "rank_unreadable": 1,
+    "owner_online": 1
+   },
+   "incomplete": [
+    "run_pvp_ranked: attempt 6 did not complete"
+   ],
+   "values": {
+    "ranked_wins": 5
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_090458_run_pvp_ranked_jeff"
+  },
   {
    "ts": "2026-09-30T09:04:32",
    "script": "island_challenge",
@@ -8265,30 +8297,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_113447_joint_team_daily_quest_fake4"
-  },
-  {
-   "ts": "2026-09-29T11:34:45",
-   "script": "mail",
-   "account": "fake4",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_113442_mail_fake4"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 32693,
+  "now": 32818,
   "segments": [
    {
     "b": 28937,
@@ -8960,14 +8974,37 @@
      32674,
      32689
     ],
-    "handoff": null,
+    "handoff": 32698,
+    "rc": 1,
+    "e": 32772,
+    "secs": 73,
+    "why": "run_pvp_ranked: attempt 6 did not complete"
+   },
+   {
+    "b": 32772,
+    "a": "chris",
+    "s": "run_pvp_ranked",
+    "login": [
+     32773,
+     32787
+    ],
+    "handoff": 32796,
     "rc": null,
-    "e": 32693
+    "e": 32818
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T09:06:11",
+   "account": "jeff",
+   "task": "run_pvp_ranked",
+   "rc": 1,
+   "secs": 73,
+   "why": "run_pvp_ranked: attempt 6 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_090458_run_pvp_ranked_jeff__KEEP_0004_090611_final.png"
+  },
   {
    "ts": "2026-09-30T09:04:32",
    "account": "skomain",
@@ -9385,9 +9422,9 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 8,
-  "relogMinutes": 3.0,
-  "retries": 12,
+  "switches": 9,
+  "relogMinutes": 3.8,
+  "retries": 13,
   "tasks": {
    "island_challenge": {
     "runs": 4,
@@ -9440,9 +9477,9 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 2,
-    "minutes": 2.6,
-    "failed": 0
+    "runs": 3,
+    "minutes": 3.8,
+    "failed": 1
    },
    "collect_hoopa_keys": {
     "runs": 2,
@@ -9999,79 +10036,79 @@
  "queue": {
   "next": [
    {
-    "account": "jeff",
+    "account": "chris",
     "task": "run_pvp_ranked",
     "startsIn": 0.0,
-    "eta": "2026-09-30T09:04"
+    "eta": "2026-09-30T09:06"
    },
    {
-    "account": "jeff",
+    "account": "chris",
     "task": "collect_hoopa_keys",
     "startsIn": 1.3,
-    "eta": "2026-09-30T09:06"
-   },
-   {
-    "account": "jeff",
-    "task": "sky_pillar",
-    "startsIn": 1.4,
-    "eta": "2026-09-30T09:06"
-   },
-   {
-    "account": "jeff",
-    "task": "ultra_wormhole",
-    "startsIn": 1.7,
-    "eta": "2026-09-30T09:06"
-   },
-   {
-    "account": "jeff",
-    "task": "ring_battle",
-    "startsIn": 6.6,
-    "eta": "2026-09-30T09:11"
-   },
-   {
-    "account": "jeff",
-    "task": "championship",
-    "startsIn": 7.6,
-    "eta": "2026-09-30T09:12"
-   },
-   {
-    "account": "chris",
-    "task": "run_pvp_ranked",
-    "startsIn": 10.0,
-    "eta": "2026-09-30T09:14"
-   },
-   {
-    "account": "chris",
-    "task": "collect_hoopa_keys",
-    "startsIn": 11.3,
-    "eta": "2026-09-30T09:16"
+    "eta": "2026-09-30T09:08"
    },
    {
     "account": "chris",
     "task": "sky_pillar",
-    "startsIn": 11.4,
-    "eta": "2026-09-30T09:16"
+    "startsIn": 1.3,
+    "eta": "2026-09-30T09:08"
    },
    {
     "account": "chris",
     "task": "faction",
-    "startsIn": 11.7,
-    "eta": "2026-09-30T09:16"
+    "startsIn": 1.7,
+    "eta": "2026-09-30T09:08"
    },
    {
     "account": "chris",
     "task": "ultra_wormhole",
-    "startsIn": 11.9,
-    "eta": "2026-09-30T09:16"
+    "startsIn": 1.9,
+    "eta": "2026-09-30T09:08"
    },
    {
     "account": "chris",
     "task": "ring_battle",
-    "startsIn": 16.8,
-    "eta": "2026-09-30T09:21"
+    "startsIn": 6.8,
+    "eta": "2026-09-30T09:13"
+   },
+   {
+    "account": "chris",
+    "task": "championship",
+    "startsIn": 7.8,
+    "eta": "2026-09-30T09:14"
+   },
+   {
+    "account": "smurf",
+    "task": "dailyclaim",
+    "startsIn": 10.2,
+    "eta": "2026-09-30T09:17"
+   },
+   {
+    "account": "smurf",
+    "task": "mail",
+    "startsIn": 10.8,
+    "eta": "2026-09-30T09:17"
+   },
+   {
+    "account": "smurf",
+    "task": "joint_team_daily_quest",
+    "startsIn": 10.8,
+    "eta": "2026-09-30T09:17"
+   },
+   {
+    "account": "smurf",
+    "task": "joint_battle",
+    "startsIn": 11.7,
+    "eta": "2026-09-30T09:18"
+   },
+   {
+    "account": "smurf",
+    "task": "daily_dungeon",
+    "startsIn": 13.7,
+    "eta": "2026-09-30T09:20"
    }
   ],
-  "more": 208,
+  "more": 202,
   "fillers": [
    {
     "account": "skomain",
@@ -10094,7 +10131,7 @@
     "mode": "rift"
    },
    {
-    "account": "jeff",
+    "account": "nova",
     "mode": "rift"
    }
   ],
@@ -10105,11 +10142,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 8,
-   "medianSec": 16.0,
+   "n": 9,
+   "medianSec": 15,
    "picker": {
-    "n": 5,
-    "medianSec": 15,
+    "n": 6,
+    "medianSec": 15.0,
     "jumps": 2
    },
    "typed": {
@@ -10124,7 +10161,6 @@
  },
  "progress": {
   "fake4": {
-   "mailUnread": 0,
    "paradiseStamina": "0/10",
    "pillar": "floor 6 stage 1"
   },
@@ -10319,6 +10355,15 @@
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "jeff",
+   "task": null,
+   "kind": "online",
+   "since": "2026-09-30T09:06:11",
+   "why": "someone is playing on it",
+   "action": "left alone until 09:16",
+   "enable": false
   },
   {
    "account": "jeff",
@@ -10611,27 +10656,27 @@
     },
     {
      "task": "pvpRank",
-     "state": "still to do"
+     "state": "waits on another task"
     },
     {
      "task": "hoopa",
-     "state": "still to do"
+     "state": "waits on another task"
     },
     {
      "task": "pillar",
-     "state": "still to do"
+     "state": "waits on another task"
     },
     {
      "task": "wormhole",
-     "state": "still to do"
+     "state": "waits on another task"
     },
     {
      "task": "ring",
-     "state": "still to do"
+     "state": "waits on another task"
     },
     {
      "task": "champ",
-     "state": "still to do"
+     "state": "waits on another task"
     },
     {
      "task": "island",
@@ -10639,6 +10684,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "run_pvp_ranked",
+     "at": "09:06",
+     "why": "run_pvp_ranked: attempt 6 did not complete",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_090458_run_pvp_ranked_jeff__KEEP_0004_090611_final.png"
+    },
     {
      "task": "weekend_bash",
      "at": "08:47",
@@ -10708,7 +10759,7 @@
     {
      "day": "2026-09-30",
      "done": 9,
-     "failed": 3
+     "failed": 4
     }
    ]
   },
@@ -11480,7 +11531,6 @@
    ],
    "spent": {},
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "0/10",
     "pillar": "floor 6 stage 1"
    },
