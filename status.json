@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T08:56:35.134120",
+ "generatedAt": "2026-09-30T08:58:39.479681",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "chris",
-  "mode": "pokemon_home",
-  "since": "08:56:13"
+  "mode": "combat_daily",
+  "since": "08:58:24"
  },
  "grid": {
   "tasks": [
@@ -96,8 +96,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 42,
-  "todo": 225,
-  "gaveUp": 3,
+  "done": 43,
+  "todo": 223,
+  "gaveUp": 4,
   "unavailable": 12,
   "windowed": 38
  },
@@ -810,6 +810,61 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T08:58:23",
+   "script": "weekend_bash",
+   "account": "chris",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_085809_weekend_bash_chris"
+  },
+  {
+   "ts": "2026-09-30T08:58:07",
+   "script": "weekend_bash",
+   "account": "chris",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_085754_weekend_bash_chris"
+  },
+  {
+   "ts": "2026-09-30T08:57:48",
+   "script": "pokemon_home",
+   "account": "chris",
+   "rc": 0,
+   "secs": 93,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "grid_shrank_rejected": 1,
+    "merge_moved_instead": 2,
+    "balls_unsettled_opened": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_085614_pokemon_home_chris"
+  },
   {
    "ts": "2026-09-30T08:56:12",
    "script": "daily_dungeon",
@@ -8229,88 +8284,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_113047_collect_hoopa_keys_fake3"
-  },
-  {
-   "ts": "2026-09-29T11:30:45",
-   "script": "paradise",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 190,
-   "stats": {
-    "marginal_paradise_hub": 2,
-    "explore_clicks": 74,
-    "pass_claims": 13,
-    "upgraded_energy_drink": 5,
-    "dex_milestones": 4,
-    "dex_activated": 10,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "0/12",
-    "event_end": "2026-10-13",
-    "shop_window": "saved"
-   },
-   "values_all": {
-    "stamina": [
-     "0/10",
-     "2/12",
-     "0/12"
-    ],
-    "event_end": [
-     "2026-10-13",
-     "2026-10-13",
-     "2026-10-13"
-    ]
-   },
-   "dir": "debug_runs/20260929_112735_paradise_fake3"
-  },
-  {
-   "ts": "2026-09-29T11:27:33",
-   "script": "victory_road",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_112727_victory_road_fake3"
-  },
-  {
-   "ts": "2026-09-29T11:27:25",
-   "script": "combat_daily",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 104,
-   "stats": {
-    "title_reread_named": 5,
-    "marginal_afk_rewards": 3,
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 5,
-    "near_miss_go_button": 2,
-    "upgrade_skip_maxed": 1,
-    "pokemon_upgraded": 1,
-    "gacha_free": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 2/2 os a",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_112540_combat_daily_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 32195,
+  "now": 32320,
   "segments": [
    {
     "b": 28937,
@@ -8900,13 +8879,64 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 32174,
+    "rc": 0,
+    "e": 32269,
+    "secs": 93,
+    "why": ""
+   },
+   {
+    "b": 32269,
+    "a": "chris",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 32273,
+    "rc": 1,
+    "e": 32289,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 32289,
+    "a": "chris",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 32289,
+    "rc": 1,
+    "e": 32304,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 32304,
+    "a": "chris",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 32304,
     "rc": null,
-    "e": 32195
+    "e": 32320
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T08:58:23",
+   "account": "chris",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_085809_weekend_bash_chris__KEEP_0001_085823_final.png"
+  },
+  {
+   "ts": "2026-09-30T08:58:07",
+   "account": "chris",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_085754_weekend_bash_chris__KEEP_0003_085807_final.png"
+  },
   {
    "ts": "2026-09-30T08:47:01",
    "account": "jeff",
@@ -9299,7 +9329,7 @@
   "since": "2026-09-30T08:00",
   "switches": 6,
   "relogMinutes": 2.5,
-  "retries": 9,
+  "retries": 11,
   "tasks": {
    "island_challenge": {
     "runs": 3,
@@ -9327,14 +9357,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 3,
-    "minutes": 4.5,
+    "runs": 4,
+    "minutes": 6.0,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 6,
-    "minutes": 1.4,
-    "failed": 6
+    "runs": 8,
+    "minutes": 1.8,
+    "failed": 8
    },
    "combat_daily": {
     "runs": 3,
@@ -9912,78 +9942,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T08:56"
-   },
-   {
-    "account": "chris",
-    "task": "weekend_bash",
-    "startsIn": 1.5,
-    "eta": "2026-09-30T08:58"
-   },
-   {
-    "account": "chris",
     "task": "combat_daily",
-    "startsIn": 1.7,
+    "startsIn": 0.0,
     "eta": "2026-09-30T08:58"
    },
    {
     "account": "chris",
     "task": "victory_road",
-    "startsIn": 3.5,
+    "startsIn": 1.8,
     "eta": "2026-09-30T09:00"
    },
    {
     "account": "chris",
     "task": "paradise",
-    "startsIn": 3.6,
+    "startsIn": 1.9,
     "eta": "2026-09-30T09:00"
    },
    {
     "account": "chris",
     "task": "run_pvp_ranked",
-    "startsIn": 6.8,
+    "startsIn": 5.1,
     "eta": "2026-09-30T09:03"
    },
    {
     "account": "chris",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.1,
-    "eta": "2026-09-30T09:04"
+    "startsIn": 6.4,
+    "eta": "2026-09-30T09:05"
    },
    {
     "account": "chris",
     "task": "sky_pillar",
-    "startsIn": 8.2,
-    "eta": "2026-09-30T09:04"
+    "startsIn": 6.4,
+    "eta": "2026-09-30T09:05"
    },
    {
     "account": "chris",
     "task": "faction",
-    "startsIn": 8.5,
+    "startsIn": 6.8,
     "eta": "2026-09-30T09:05"
    },
    {
     "account": "chris",
     "task": "ultra_wormhole",
-    "startsIn": 8.7,
+    "startsIn": 7.0,
     "eta": "2026-09-30T09:05"
    },
    {
     "account": "chris",
     "task": "ring_battle",
-    "startsIn": 13.6,
+    "startsIn": 11.9,
     "eta": "2026-09-30T09:10"
    },
    {
     "account": "chris",
     "task": "championship",
-    "startsIn": 14.6,
+    "startsIn": 12.9,
     "eta": "2026-09-30T09:11"
+   },
+   {
+    "account": "jeff",
+    "task": "run_pvp_ranked",
+    "startsIn": 15.3,
+    "eta": "2026-09-30T09:13"
+   },
+   {
+    "account": "jeff",
+    "task": "collect_hoopa_keys",
+    "startsIn": 16.6,
+    "eta": "2026-09-30T09:15"
    }
   ],
-  "more": 213,
+  "more": 211,
   "fillers": [
    {
     "account": "skomain",
@@ -10036,7 +10066,6 @@
  },
  "progress": {
   "fake3": {
-   "paradiseStamina": "0/12",
    "pillar": "floor 6 stage 4"
   },
   "fake4": {
@@ -10126,6 +10155,7 @@
  },
  "ledger": {
   "chris": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 5,
    "Privilege Pack claimed": 1,
@@ -10626,17 +10656,13 @@
   "chris": {
    "name": "chris",
    "day": "2026-09-30",
-   "summary": "5 of 20 dailies done",
-   "done": 5,
+   "summary": "6 of 20 dailies done · gave up on bash",
+   "done": 6,
    "owed": 20,
    "open": [
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -10693,6 +10719,12 @@
    ],
    "issues": [
     {
+     "task": "weekend_bash",
+     "at": "08:58",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_085809_weekend_bash_chris__KEEP_0001_085823_final.png"
+    },
+    {
      "task": "worldboss",
      "at": "02:01",
      "why": "account switch failed",
@@ -10702,6 +10734,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 5,
     "Privilege Pack claimed": 1,
@@ -10745,8 +10778,8 @@
     },
     {
      "day": "2026-09-30",
-     "done": 4,
-     "failed": 1
+     "done": 5,
+     "failed": 3
     }
    ]
   },
@@ -11263,7 +11296,6 @@
    ],
    "spent": {},
    "progress": {
-    "paradiseStamina": "0/12",
     "pillar": "floor 6 stage 4"
    },
    "history": [
