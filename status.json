@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T08:06:46.854132",
+ "generatedAt": "2026-09-30T08:08:51.445002",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
-  "mode": "pokemon_home",
-  "since": "08:06:11"
+  "mode": "combat_daily",
+  "since": "08:08:18"
  },
  "grid": {
   "tasks": [
@@ -420,8 +420,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 5,
-  "todo": 266,
-  "gaveUp": 0,
+  "done": 6,
+  "todo": 264,
+  "gaveUp": 1,
   "unavailable": 11,
   "windowed": 38
  },
@@ -801,6 +801,59 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T08:08:16",
+   "script": "weekend_bash",
+   "account": "skomain",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_080803_weekend_bash_skomain"
+  },
+  {
+   "ts": "2026-09-30T08:08:01",
+   "script": "weekend_bash",
+   "account": "skomain",
+   "rc": 1,
+   "secs": 14,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_080746_weekend_bash_skomain"
+  },
+  {
+   "ts": "2026-09-30T08:07:40",
+   "script": "pokemon_home",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 87,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_moved_instead": 1,
+    "ball_tiles_not_merged": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_080612_pokemon_home_skomain"
+  },
   {
    "ts": "2026-09-30T08:06:10",
    "script": "daily_dungeon",
@@ -8304,60 +8357,12 @@
     ]
    },
    "dir": "debug_runs/20260929_103617_weekend_bash_smurf"
-  },
-  {
-   "ts": "2026-09-29T10:36:11",
-   "script": "pokemon_home",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 134,
-   "stats": {
-    "reached_via_trial": 1,
-    "grid_phantom_lines": 1,
-    "merge_refused": 4,
-    "grid_refit_column_slip_rejected": 6,
-    "charges_spent": 50
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_103357_pokemon_home_smurf"
-  },
-  {
-   "ts": "2026-09-29T10:33:54",
-   "script": "daily_dungeon",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_103342_daily_dungeon_smurf"
-  },
-  {
-   "ts": "2026-09-29T10:33:38",
-   "script": "joint_team_daily_quest",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 43,
-   "stats": {
-    "panel_swipes": 9,
-    "guild_base_by_back": 1,
-    "near_miss_joint_team_daily_panel": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_103255_joint_team_daily_quest_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 29207,
+  "now": 29332,
   "segments": [
    {
     "b": 28937,
@@ -8432,13 +8437,64 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 29172,
+    "rc": 0,
+    "e": 29261,
+    "secs": 87,
+    "why": ""
+   },
+   {
+    "b": 29261,
+    "a": "skomain",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 29266,
+    "rc": 1,
+    "e": 29282,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 29282,
+    "a": "skomain",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 29282,
+    "rc": 1,
+    "e": 29298,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 29298,
+    "a": "skomain",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 29298,
     "rc": null,
-    "e": 29207
+    "e": 29332
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-09-30T08:08:16",
+   "account": "skomain",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_080803_weekend_bash_skomain__KEEP_0001_080816_final.png"
+  },
+  {
+   "ts": "2026-09-30T08:08:01",
+   "account": "skomain",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 14,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_080746_weekend_bash_skomain__KEEP_0003_080801_final.png"
+  },
   {
    "ts": "2026-09-30T08:02:59",
    "account": "skomain",
@@ -8768,7 +8824,7 @@
   "since": "2026-09-30T08:00",
   "switches": 1,
   "relogMinutes": 0.5,
-  "retries": 1,
+  "retries": 3,
   "tasks": {
    "island_challenge": {
     "runs": 1,
@@ -8794,6 +8850,16 @@
     "runs": 1,
     "minutes": 0.2,
     "failed": 0
+   },
+   "pokemon_home": {
+    "runs": 1,
+    "minutes": 1.5,
+    "failed": 0
+   },
+   "weekend_bash": {
+    "runs": 2,
+    "minutes": 0.5,
+    "failed": 2
    }
   }
  },
@@ -9320,78 +9386,78 @@
   "next": [
    {
     "account": "skomain",
-    "task": "pokemon_home",
+    "task": "combat_daily",
     "startsIn": 0.0,
-    "eta": "2026-09-30T08:06"
-   },
-   {
-    "account": "skomain",
-    "task": "weekend_bash",
-    "startsIn": 2.0,
     "eta": "2026-09-30T08:08"
    },
    {
     "account": "skomain",
-    "task": "combat_daily",
-    "startsIn": 4.0,
+    "task": "victory_road",
+    "startsIn": 2.0,
     "eta": "2026-09-30T08:10"
    },
    {
     "account": "skomain",
-    "task": "victory_road",
-    "startsIn": 6.0,
+    "task": "paradise",
+    "startsIn": 4.0,
     "eta": "2026-09-30T08:12"
    },
    {
     "account": "skomain",
-    "task": "paradise",
-    "startsIn": 8.0,
+    "task": "run_pvp_ranked",
+    "startsIn": 6.0,
     "eta": "2026-09-30T08:14"
    },
    {
     "account": "skomain",
-    "task": "run_pvp_ranked",
-    "startsIn": 10.0,
+    "task": "collect_hoopa_keys",
+    "startsIn": 8.0,
     "eta": "2026-09-30T08:16"
    },
    {
     "account": "skomain",
-    "task": "collect_hoopa_keys",
-    "startsIn": 12.0,
+    "task": "sky_pillar",
+    "startsIn": 10.0,
     "eta": "2026-09-30T08:18"
    },
    {
     "account": "skomain",
-    "task": "sky_pillar",
-    "startsIn": 14.0,
+    "task": "faction",
+    "startsIn": 12.0,
     "eta": "2026-09-30T08:20"
    },
    {
     "account": "skomain",
-    "task": "faction",
-    "startsIn": 16.0,
+    "task": "ultra_wormhole",
+    "startsIn": 14.0,
     "eta": "2026-09-30T08:22"
    },
    {
     "account": "skomain",
-    "task": "ultra_wormhole",
-    "startsIn": 18.0,
-    "eta": "2026-09-30T08:24"
-   },
-   {
-    "account": "skomain",
     "task": "ring_battle",
-    "startsIn": 20.0,
-    "eta": "2026-09-30T08:26"
+    "startsIn": 16.0,
+    "eta": "2026-09-30T08:24"
    },
    {
     "account": "nova",
     "task": "dailyclaim",
-    "startsIn": 22.4,
-    "eta": "2026-09-30T08:29"
+    "startsIn": 18.4,
+    "eta": "2026-09-30T08:27"
+   },
+   {
+    "account": "nova",
+    "task": "mail",
+    "startsIn": 19.0,
+    "eta": "2026-09-30T08:27"
+   },
+   {
+    "account": "nova",
+    "task": "joint_team_daily_quest",
+    "startsIn": 19.1,
+    "eta": "2026-09-30T08:27"
    }
   ],
-  "more": 254,
+  "more": 252,
   "fillers": [
    {
     "account": "skomain",
@@ -9539,11 +9605,11 @@
  },
  "ledger": {
   "skomain": {
+   "Home creations": 100,
    "mail claimed": 1,
    "daily claims": 6,
    "Privilege Pack claimed": 1,
-   "ranked attempts": 1,
-   "Home creations": 50
+   "ranked attempts": 1
   },
   "jeff": {
    "island fights": 6
@@ -11693,17 +11759,13 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-09-30",
-   "summary": "5 of 20 dailies done",
-   "done": 5,
+   "summary": "6 of 20 dailies done · gave up on bash",
+   "done": 6,
    "owed": 20,
    "open": [
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -11760,6 +11822,12 @@
    ],
    "issues": [
     {
+     "task": "weekend_bash",
+     "at": "08:08",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20260930_080803_weekend_bash_skomain__KEEP_0001_080816_final.png"
+    },
+    {
      "task": "island_challenge",
      "at": "08:02",
      "why": "the stage map did not open",
@@ -11775,11 +11843,11 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 100,
     "mail claimed": 1,
     "daily claims": 6,
     "Privilege Pack claimed": 1,
-    "ranked attempts": 1,
-    "Home creations": 50
+    "ranked attempts": 1
    },
    "progress": {
     "mailUnread": 0,
@@ -11789,8 +11857,8 @@
    "history": [
     {
      "day": "2026-09-30",
-     "done": 15,
-     "failed": 3
+     "done": 16,
+     "failed": 5
     }
    ]
   },
