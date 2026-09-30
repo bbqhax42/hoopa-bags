@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T08:39:59.210169",
+ "generatedAt": "2026-09-30T08:42:03.442461",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "ultra_wormhole",
-  "since": "08:35:09"
+  "account": "jeff",
+  "mode": "dailyclaim",
+  "since": "08:41:52"
  },
  "grid": {
   "tasks": [
@@ -54,8 +54,8 @@
      "✓",
      "-",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-"
     ]
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 26,
-  "todo": 242,
+  "done": 28,
+  "todo": 240,
   "gaveUp": 2,
   "unavailable": 12,
   "windowed": 38
@@ -801,6 +801,47 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T08:41:50",
+   "script": "ring_battle",
+   "account": "nova",
+   "rc": 0,
+   "secs": 65,
+   "stats": {
+    "ring_wins": 4,
+    "ring_losses": 2,
+    "ring_chests": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_084044_ring_battle_nova"
+  },
+  {
+   "ts": "2026-09-30T08:40:41",
+   "script": "ultra_wormhole",
+   "account": "nova",
+   "rc": 0,
+   "secs": 328,
+   "stats": {
+    "hired": 74,
+    "wins": 17,
+    "losses": 1,
+    "rewards_claimed": 5
+   },
+   "incomplete": [],
+   "values": {
+    "rewards_claimed": 5,
+    "wins_today": 17
+   },
+   "values_all": {
+    "rewards_claimed": [
+     0,
+     5
+    ]
+   },
+   "dir": "debug_runs/20260930_083512_ultra_wormhole_nova"
+  },
   {
    "ts": "2026-09-30T08:35:08",
    "script": "sky_pillar",
@@ -8254,50 +8295,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260929_111220_mail_fake2"
-  },
-  {
-   "ts": "2026-09-29T11:12:18",
-   "script": "dailyclaim",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 29,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:78 0.275:8 0.345:51 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260929_111149_dailyclaim_fake2"
-  },
-  {
-   "ts": "2026-09-29T11:11:22",
-   "script": "faction",
-   "account": "fake1",
-   "rc": 0,
-   "secs": 126,
-   "stats": {
-    "auto_formation": 20,
-    "skip_retry": 17,
-    "floors_fire": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_110915_faction_fake1"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 31199,
+  "now": 31324,
   "segments": [
    {
     "b": 28937,
@@ -8676,8 +8679,33 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 30912,
+    "rc": 0,
+    "e": 31242,
+    "secs": 328,
+    "why": ""
+   },
+   {
+    "b": 31242,
+    "a": "nova",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 31244,
+    "rc": 0,
+    "e": 31312,
+    "secs": 65,
+    "why": ""
+   },
+   {
+    "b": 31312,
+    "a": "jeff",
+    "s": "dailyclaim",
+    "login": [
+     31312,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 31199
+    "e": 31324
    }
   ],
   "idle": []
@@ -9055,7 +9083,7 @@
  ],
  "day": {
   "since": "2026-09-30T08:00",
-  "switches": 4,
+  "switches": 5,
   "relogMinutes": 1.8,
   "retries": 6,
   "tasks": {
@@ -9130,13 +9158,13 @@
     "failed": 0
    },
    "ultra_wormhole": {
-    "runs": 1,
-    "minutes": 4.3,
+    "runs": 2,
+    "minutes": 9.8,
     "failed": 0
    },
    "ring_battle": {
-    "runs": 1,
-    "minutes": 0.9,
+    "runs": 2,
+    "minutes": 2.0,
     "failed": 0
    }
   }
@@ -9669,79 +9697,79 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-09-30T08:40"
-   },
-   {
-    "account": "nova",
-    "task": "ring_battle",
-    "startsIn": 4.3,
-    "eta": "2026-09-30T08:44"
-   },
-   {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 5.6,
-    "eta": "2026-09-30T08:45"
+    "startsIn": 0.0,
+    "eta": "2026-09-30T08:42"
    },
    {
     "account": "jeff",
     "task": "mail",
-    "startsIn": 6.2,
-    "eta": "2026-09-30T08:46"
+    "startsIn": 0.6,
+    "eta": "2026-09-30T08:42"
    },
    {
     "account": "jeff",
     "task": "joint_team_daily_quest",
-    "startsIn": 6.2,
-    "eta": "2026-09-30T08:46"
+    "startsIn": 0.7,
+    "eta": "2026-09-30T08:42"
    },
    {
     "account": "jeff",
     "task": "joint_battle",
-    "startsIn": 7.2,
-    "eta": "2026-09-30T08:47"
+    "startsIn": 1.6,
+    "eta": "2026-09-30T08:43"
    },
    {
     "account": "jeff",
     "task": "daily_dungeon",
-    "startsIn": 9.2,
-    "eta": "2026-09-30T08:49"
+    "startsIn": 3.5,
+    "eta": "2026-09-30T08:45"
    },
    {
     "account": "jeff",
     "task": "pokemon_home",
-    "startsIn": 9.3,
-    "eta": "2026-09-30T08:49"
+    "startsIn": 3.8,
+    "eta": "2026-09-30T08:45"
    },
    {
     "account": "jeff",
     "task": "weekend_bash",
-    "startsIn": 10.8,
-    "eta": "2026-09-30T08:50"
+    "startsIn": 5.2,
+    "eta": "2026-09-30T08:47"
    },
    {
     "account": "jeff",
     "task": "combat_daily",
-    "startsIn": 11.1,
-    "eta": "2026-09-30T08:51"
+    "startsIn": 5.5,
+    "eta": "2026-09-30T08:47"
    },
    {
     "account": "jeff",
     "task": "victory_road",
-    "startsIn": 12.9,
-    "eta": "2026-09-30T08:52"
+    "startsIn": 7.3,
+    "eta": "2026-09-30T08:49"
    },
    {
     "account": "jeff",
     "task": "paradise",
-    "startsIn": 13.0,
-    "eta": "2026-09-30T08:53"
+    "startsIn": 7.4,
+    "eta": "2026-09-30T08:49"
+   },
+   {
+    "account": "jeff",
+    "task": "run_pvp_ranked",
+    "startsIn": 10.7,
+    "eta": "2026-09-30T08:52"
+   },
+   {
+    "account": "jeff",
+    "task": "collect_hoopa_keys",
+    "startsIn": 12.0,
+    "eta": "2026-09-30T08:54"
    }
   ],
-  "more": 230,
+  "more": 228,
   "fillers": [
    {
     "account": "skomain",
@@ -10142,8 +10170,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-09-30",
-   "summary": "12 of 18 dailies done · gave up on bash · 1 not available today",
-   "done": 12,
+   "summary": "14 of 18 dailies done · gave up on bash · 1 not available today",
+   "done": 14,
    "owed": 18,
    "open": [
     {
@@ -10161,14 +10189,6 @@
     {
      "task": "guildBoss",
      "state": "waits for its window"
-    },
-    {
-     "task": "wormhole",
-     "state": "still to do"
-    },
-    {
-     "task": "ring",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -10240,7 +10260,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 12,
+     "done": 14,
      "failed": 3
     }
    ]
