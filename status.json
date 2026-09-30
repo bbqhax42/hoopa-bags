@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-09-30T13:31:45.968530",
+ "generatedAt": "2026-09-30T13:33:49.643571",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "rank_match",
-  "since": "13:31:04"
+  "mode": "sky_pillar",
+  "since": "13:33:30"
  },
  "grid": {
   "tasks": [
@@ -559,11 +559,11 @@
      "✗2",
      "✓",
      "✓",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
      "-",
-     "·",
+     "✓",
      "·",
      "-",
      "-",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 251,
-  "todo": 40,
+  "done": 254,
+  "todo": 37,
   "gaveUp": 13,
   "unavailable": 18,
   "windowed": 0
@@ -817,6 +817,66 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-09-30T13:33:29",
+   "script": "collect_hoopa_keys",
+   "account": "dre",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20260930_133324_collect_hoopa_keys_dre"
+  },
+  {
+   "ts": "2026-09-30T13:33:20",
+   "script": "guild_war",
+   "account": "dre",
+   "rc": 0,
+   "secs": 63,
+   "stats": {
+    "marginal_set_form_title": 6,
+    "marginal_last_hit": 6,
+    "near_miss_vr_rank": 3,
+    "near_miss_last_hit": 1,
+    "near_miss_tips_header": 20,
+    "refused_setform_confirm": 2,
+    "refused_auto_formation": 1,
+    "gw_attempts_spent": 1
+   },
+   "incomplete": [],
+   "values": {
+    "guild_caption": 0.965
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_133216_guild_war_dre"
+  },
+  {
+   "ts": "2026-09-30T13:32:15",
+   "script": "rank_match",
+   "account": "dre",
+   "rc": 0,
+   "secs": 70,
+   "stats": {
+    "skip_tapped": 6,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_panel_scroll": 2,
+    "rank_reward_claimed": 2
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 2
+   },
+   "values_all": {},
+   "dir": "debug_runs/20260930_133104_rank_match_dre"
+  },
   {
    "ts": "2026-09-30T13:31:03",
    "script": "paradise",
@@ -8274,52 +8334,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260929_175027_ring_battle_skosmurf"
-  },
-  {
-   "ts": "2026-09-29T17:49:56",
-   "script": "ring_battle",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 91,
-   "stats": {
-    "ring_auto_formation": 1,
-    "ring_losses": 2,
-    "ring_wins": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_174824_ring_battle_smurf"
-  },
-  {
-   "ts": "2026-09-29T17:48:03",
-   "script": "ring_battle",
-   "account": "smurf",
-   "rc": 1,
-   "secs": 1,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_174801_ring_battle_smurf"
-  },
-  {
-   "ts": "2026-09-29T17:46:24",
-   "script": "ring_battle",
-   "account": "nova",
-   "rc": 1,
-   "secs": 71,
-   "stats": {},
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260929_174513_ring_battle_nova"
   }
  ],
  "timeline": {
   "day0": "2026-09-30T00:00",
   "since": 28800.0,
-  "now": 48706,
+  "now": 48830,
   "segments": [
    {
     "b": 28937,
@@ -11693,8 +11713,41 @@
     "s": "rank_match",
     "login": null,
     "handoff": 48664,
+    "rc": 0,
+    "e": 48736,
+    "secs": 70,
+    "why": ""
+   },
+   {
+    "b": 48736,
+    "a": "dre",
+    "s": "guild_war",
+    "login": null,
+    "handoff": 48736,
+    "rc": 0,
+    "e": 48801,
+    "secs": 63,
+    "why": ""
+   },
+   {
+    "b": 48801,
+    "a": "dre",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 48804,
+    "rc": 0,
+    "e": 48810,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 48810,
+    "a": "dre",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 48810,
     "rc": null,
-    "e": 48706
+    "e": 48830
    }
   ],
   "idle": []
@@ -12375,7 +12428,7 @@
     "failed": 1
    },
    "collect_hoopa_keys": {
-    "runs": 19,
+    "runs": 20,
     "minutes": 1.6,
     "failed": 0
    },
@@ -12410,8 +12463,13 @@
     "failed": 0
    },
    "guild_war": {
-    "runs": 6,
-    "minutes": 6.1,
+    "runs": 7,
+    "minutes": 7.2,
+    "failed": 0
+   },
+   "rank_match": {
+    "runs": 1,
+    "minutes": 1.2,
     "failed": 0
    }
   }
@@ -12981,78 +13039,78 @@
   "next": [
    {
     "account": "dre",
-    "task": "rank_match",
+    "task": "sky_pillar",
     "startsIn": 0.0,
-    "eta": "2026-09-30T13:31"
-   },
-   {
-    "account": "dre",
-    "task": "guild_war",
-    "startsIn": 2.0,
     "eta": "2026-09-30T13:33"
    },
    {
     "account": "dre",
-    "task": "collect_hoopa_keys",
-    "startsIn": 3.0,
-    "eta": "2026-09-30T13:34"
-   },
-   {
-    "account": "dre",
-    "task": "sky_pillar",
-    "startsIn": 3.1,
-    "eta": "2026-09-30T13:34"
-   },
-   {
-    "account": "dre",
     "task": "ultra_wormhole",
-    "startsIn": 4.2,
-    "eta": "2026-09-30T13:35"
+    "startsIn": 1.1,
+    "eta": "2026-09-30T13:34"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 8.8,
+    "startsIn": 5.7,
+    "eta": "2026-09-30T13:39"
+   },
+   {
+    "account": "nova",
+    "task": "rank_match",
+    "startsIn": 7.1,
     "eta": "2026-09-30T13:40"
    },
    {
     "account": "nova",
-    "task": "rank_match",
-    "startsIn": 10.2,
+    "task": "guild_war",
+    "startsIn": 8.3,
     "eta": "2026-09-30T13:42"
    },
    {
-    "account": "nova",
+    "account": "jeff",
+    "task": "rank_match",
+    "startsIn": 9.8,
+    "eta": "2026-09-30T13:43"
+   },
+   {
+    "account": "jeff",
     "task": "guild_war",
-    "startsIn": 12.2,
+    "startsIn": 11.0,
     "eta": "2026-09-30T13:44"
    },
    {
     "account": "jeff",
-    "task": "rank_match",
-    "startsIn": 13.7,
-    "eta": "2026-09-30T13:45"
-   },
-   {
-    "account": "jeff",
-    "task": "guild_war",
-    "startsIn": 15.7,
-    "eta": "2026-09-30T13:47"
-   },
-   {
-    "account": "jeff",
     "task": "championship",
-    "startsIn": 16.7,
-    "eta": "2026-09-30T13:48"
+    "startsIn": 12.0,
+    "eta": "2026-09-30T13:45"
    },
    {
     "account": "chris",
     "task": "rank_match",
-    "startsIn": 17.2,
+    "startsIn": 12.5,
+    "eta": "2026-09-30T13:46"
+   },
+   {
+    "account": "chris",
+    "task": "guild_war",
+    "startsIn": 13.7,
+    "eta": "2026-09-30T13:47"
+   },
+   {
+    "account": "chris",
+    "task": "championship",
+    "startsIn": 14.7,
     "eta": "2026-09-30T13:48"
+   },
+   {
+    "account": "smurf",
+    "task": "rank_match",
+    "startsIn": 15.2,
+    "eta": "2026-09-30T13:49"
    }
   ],
-  "more": 28,
+  "more": 25,
   "fillers": [
    {
     "account": "skomain",
@@ -13215,6 +13273,7 @@
  },
  "ledger": {
   "dre": {
+   "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
    "mail claimed": 1,
@@ -15561,25 +15620,13 @@
   "dre": {
    "name": "dre",
    "day": "2026-09-30",
-   "summary": "9 of 16 dailies done · gave up on bash",
-   "done": 9,
+   "summary": "12 of 16 dailies done · gave up on bash",
+   "done": 12,
    "owed": 16,
    "open": [
     {
      "task": "bash",
      "state": "gave up"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
-    },
-    {
-     "task": "guildBoss",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
     },
     {
      "task": "pillar",
@@ -15611,6 +15658,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
     "mail claimed": 1,
@@ -15654,7 +15702,7 @@
     },
     {
      "day": "2026-09-30",
-     "done": 10,
+     "done": 13,
      "failed": 4
     }
    ]
