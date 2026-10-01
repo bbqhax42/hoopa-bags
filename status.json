@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T01:20:23.981505",
+ "generatedAt": "2026-10-02T01:22:27.703379",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
+  "account": "chris",
   "mode": "dynamax",
-  "since": "01:15:36"
+  "since": "01:20:41"
  },
  "grid": {
   "tasks": [
@@ -111,7 +111,7 @@
      "✓",
      "✓",
      "⊘",
-     "⏳"
+     "💤"
     ]
    },
    {
@@ -731,11 +731,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 18,
+   "fights": 20,
    "stamina": 5,
-   "staminaMax": 5,
-   "staminaAt": "2026-10-02T01:20:20",
-   "nextAt": null
+   "staminaMax": 9,
+   "staminaAt": "2026-10-02T01:20:36",
+   "nextAt": "2026-10-02T04:26:41"
   },
   {
    "account": "jeff",
@@ -755,6 +755,7 @@
   }
  ],
  "snoozed": {
+  "chris|island_challenge": "2026-10-02T04:26",
   "jeff|island_challenge": "2026-10-02T01:41",
   "skomain|island_challenge": "2026-10-02T03:31"
  },
@@ -835,6 +836,31 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T01:20:41",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 5,
+   "secs": 28,
+   "stats": {
+    "fights": 2,
+    "partial_formation": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 5,
+    "fights_today": 20
+   },
+   "values_all": {
+    "stamina": [
+     5,
+     5,
+     5
+    ]
+   },
+   "dir": "debug_runs/20261002_012012_island_challenge_chris"
+  },
   {
    "ts": "2026-10-02T00:48:59",
    "script": "island_challenge",
@@ -8733,28 +8759,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_020337_worldboss_fake1"
-  },
-  {
-   "ts": "2026-10-01T02:03:37",
-   "script": "worldboss",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_020243_worldboss_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 91224,
+  "now": 91348,
   "segments": [
    {
     "b": 28801,
@@ -16005,7 +16015,16 @@
     ],
     "handoff": 91212,
     "rc": null,
-    "e": 91224
+    "e": 91241
+   },
+   {
+    "b": 91241,
+    "a": "chris",
+    "s": "dynamax",
+    "login": null,
+    "handoff": null,
+    "rc": null,
+    "e": 91348
    }
   ],
   "idle": [
@@ -17101,12 +17120,12 @@
   "since": "2026-10-01T08:00",
   "switches": 222,
   "relogMinutes": 99.4,
-  "retries": 68,
+  "retries": 69,
   "tasks": {
    "island_challenge": {
-    "runs": 29,
-    "minutes": 14.2,
-    "failed": 29
+    "runs": 30,
+    "minutes": 14.7,
+    "failed": 30
    },
    "dailyclaim": {
     "runs": 20,
@@ -17470,10 +17489,10 @@
    "last_run_actions": 3
   },
   "chris": {
-   "energy": 1,
+   "energy": 6,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-10-02T01:02:59.662093",
+   "observed_at": "2026-10-02T01:22:19.030245",
    "runs": 711,
    "cooldown_until": "2026-10-01T00:12:10.668194",
    "kicks": 2,
@@ -17833,13 +17852,6 @@
   }
  },
  "progress": {
-  "smurf": {
-   "mailUnread": 0,
-   "paradiseStamina": "9/19",
-   "rank": 1,
-   "pillar": "floor 21 stage 1",
-   "misty": "step 4"
-  },
   "fake1": {
    "mailUnread": 0,
    "paradiseStamina": "39/13",
@@ -17922,8 +17934,8 @@
    "pillar": "floor 90 stage 1"
   },
   "chris": {
-   "islandFights": 18,
-   "islandStamina": 0,
+   "islandFights": 20,
+   "islandStamina": 5,
    "mailUnread": 0,
    "paradiseStamina": "39/13",
    "rank": 10,
@@ -17942,11 +17954,18 @@
    "paradiseStamina": "19/13",
    "rank": 2,
    "pillar": "floor 103 stage 5"
+  },
+  "smurf": {
+   "mailUnread": 0,
+   "paradiseStamina": "9/19",
+   "rank": 1,
+   "pillar": "floor 21 stage 1",
+   "misty": "step 4"
   }
  },
  "ledger": {
   "chris": {
-   "island fights": 2
+   "island fights": 4
   },
   "skomain": {
    "island fights": 2
@@ -18381,7 +18400,7 @@
     },
     {
      "task": "island",
-     "state": "cooling off"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -18408,11 +18427,11 @@
     }
    ],
    "spent": {
-    "island fights": 2
+    "island fights": 4
    },
    "progress": {
-    "islandFights": 18,
-    "islandStamina": 0,
+    "islandFights": 20,
+    "islandStamina": 5,
     "mailUnread": 0,
     "paradiseStamina": "39/13",
     "rank": 10,
