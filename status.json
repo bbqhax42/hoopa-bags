@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T15:24:36.630240",
+ "generatedAt": "2026-10-01T15:26:40.140949",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "dre",
-  "mode": "rift",
-  "since": "15:24:25"
+  "account": "chris",
+  "mode": "hoopa",
+  "since": "15:24:59"
  },
  "grid": {
   "tasks": [
@@ -766,8 +766,8 @@
    "at": "2026-10-01T14:30:48"
   },
   "chris": {
-   "keys": 0,
-   "at": "2026-09-30T19:41:42"
+   "keys": 5,
+   "at": "2026-10-01T15:25:29"
   },
   "lucifer1": {
    "keys": 291,
@@ -831,11 +831,25 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-10-01T15:24:15.582800",
+  "label": "chris",
+  "at": "2026-10-01T15:25:14.514009",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T15:24:58",
+   "script": "rift",
+   "account": "dre",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_152457_rift_dre"
+  },
   {
    "ts": "2026-10-01T15:24:25",
    "script": "rift",
@@ -8680,26 +8694,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_150633_rift_dre"
-  },
-  {
-   "ts": "2026-09-30T15:06:00",
-   "script": "rift",
-   "account": "smurf",
-   "rc": 2,
-   "secs": 1,
-   "stats": {
-    "rift_finished": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_150558_rift_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 55477,
+  "now": 55600,
   "segments": [
    {
     "b": 28801,
@@ -12731,11 +12731,25 @@
     "s": "rift",
     "login": [
      55466,
-     null
+     55486
     ],
-    "handoff": null,
+    "handoff": 55497,
+    "rc": 2,
+    "e": 55499,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 55499,
+    "a": "chris",
+    "s": "hoopa",
+    "login": [
+     55500,
+     55514
+    ],
+    "handoff": 55527,
     "rc": null,
-    "e": 55477
+    "e": 55600
    }
   ],
   "idle": []
@@ -13005,8 +13019,8 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 67,
-  "relogMinutes": 32.9,
+  "switches": 68,
+  "relogMinutes": 33.8,
   "retries": 45,
   "tasks": {
    "island_challenge": {
@@ -13110,7 +13124,7 @@
     "failed": 0
    },
    "rift": {
-    "runs": 6,
+    "runs": 7,
     "minutes": 1.0,
     "failed": 1
    }
@@ -13134,6 +13148,12 @@
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-10-01T14:29:02"
+  },
+  {
+   "account": "dre",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-10-01T15:24:58"
   },
   {
    "account": "fake1",
@@ -13458,6 +13478,11 @@
     "runs": 4,
     "targets": 0,
     "last": "2026-10-01T15:23:58"
+   },
+   "chris": {
+    "runs": 1,
+    "targets": 0,
+    "last": "2026-10-01T15:26:14"
    }
   },
   "targets": [
@@ -13950,10 +13975,6 @@
     "mode": "rift"
    },
    {
-    "account": "dre",
-    "mode": "rift"
-   },
-   {
     "account": "lucifer1",
     "mode": "rift"
    },
@@ -13964,6 +13985,10 @@
    {
     "account": "chris",
     "mode": "hoopa"
+   },
+   {
+    "account": "jeff",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -13973,11 +13998,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 66,
+   "n": 68,
    "medianSec": 17.5,
    "picker": {
-    "n": 42,
-    "medianSec": 16.0,
+    "n": 43,
+    "medianSec": 16,
     "jumps": 26
    },
    "typed": {
@@ -13985,8 +14010,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 24,
-    "medianSec": 20.0
+    "n": 25,
+    "medianSec": 20
    }
   }
  },
@@ -16228,7 +16253,7 @@
   "dre": {
    "name": "dre",
    "day": "2026-10-01",
-   "summary": "15 of 16 dailies done · gave up on bash",
+   "summary": "15 of 16 dailies done · gave up on bash · 1 not available today",
    "done": 15,
    "owed": 16,
    "open": [
@@ -16246,7 +16271,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rift",
+     "why": "rift_finished"
+    }
+   ],
    "spent": {
     "pillar/story stages cleared": 7,
     "guild war attempts": 1,
