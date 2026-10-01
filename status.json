@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T12:12:51.240578",
+ "generatedAt": "2026-10-01T12:14:55.003607",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "pokemon_home",
-  "since": "12:11:53"
+  "mode": "combat_daily",
+  "since": "12:14:19"
  },
  "grid": {
   "tasks": [
@@ -447,8 +447,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 191,
-  "todo": 82,
-  "gaveUp": 9,
+  "done": 192,
+  "todo": 80,
+  "gaveUp": 10,
   "unavailable": 17,
   "windowed": 18
  },
@@ -836,6 +836,57 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T12:14:19",
+   "script": "weekend_bash",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_121405_weekend_bash_lucifer1"
+  },
+  {
+   "ts": "2026-10-01T12:14:03",
+   "script": "weekend_bash",
+   "account": "lucifer1",
+   "rc": 1,
+   "secs": 14,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_121349_weekend_bash_lucifer1"
+  },
+  {
+   "ts": "2026-10-01T12:13:12",
+   "script": "pokemon_home",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 77,
+   "stats": {
+    "reached_via_trial": 1,
+    "charges_spent": 47
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_121154_pokemon_home_lucifer1"
+  },
   {
    "ts": "2026-10-01T12:11:52",
    "script": "daily_dungeon",
@@ -8662,61 +8713,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_120709_pokemon_home_lucifer1"
-  },
-  {
-   "ts": "2026-09-30T12:07:07",
-   "script": "daily_dungeon",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 12,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_120654_daily_dungeon_lucifer1"
-  },
-  {
-   "ts": "2026-09-30T12:05:56",
-   "script": "joint_team_daily_quest",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 50,
-   "stats": {
-    "panel_swipes": 8,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1,
-    "near_miss_joint_team_daily_panel": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_120506_joint_team_daily_quest_lucifer1"
-  },
-  {
-   "ts": "2026-09-30T12:05:04",
-   "script": "mail",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 2,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 4,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_120501_mail_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 43971,
+  "now": 44095,
   "segments": [
    {
     "b": 28801,
@@ -11287,13 +11289,64 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 43914,
+    "rc": 0,
+    "e": 43993,
+    "secs": 77,
+    "why": ""
+   },
+   {
+    "b": 43993,
+    "a": "lucifer1",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 44029,
+    "rc": 1,
+    "e": 44044,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 44044,
+    "a": "lucifer1",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 44045,
+    "rc": 1,
+    "e": 44059,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 44059,
+    "a": "lucifer1",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 44060,
     "rc": null,
-    "e": 43971
+    "e": 44095
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-10-01T12:14:19",
+   "account": "lucifer1",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_121405_weekend_bash_lucifer1__KEEP_0001_121418_final.png"
+  },
+  {
+   "ts": "2026-10-01T12:14:03",
+   "account": "lucifer1",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 14,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_121349_weekend_bash_lucifer1__KEEP_0003_121403_final.png"
+  },
   {
    "ts": "2026-10-01T11:43:57",
    "account": "skosmurf",
@@ -11479,7 +11532,7 @@
   "since": "2026-10-01T08:00",
   "switches": 27,
   "relogMinutes": 12.2,
-  "retries": 32,
+  "retries": 34,
   "tasks": {
    "island_challenge": {
     "runs": 8,
@@ -11507,14 +11560,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 15,
-    "minutes": 11.3,
+    "runs": 16,
+    "minutes": 12.6,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 16,
-    "minutes": 3.7,
-    "failed": 16
+    "runs": 18,
+    "minutes": 4.2,
+    "failed": 18
    },
    "combat_daily": {
     "runs": 16,
@@ -12297,78 +12350,78 @@
   "next": [
    {
     "account": "lucifer1",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T12:12"
-   },
-   {
-    "account": "lucifer1",
-    "task": "weekend_bash",
-    "startsIn": 0.8,
-    "eta": "2026-10-01T12:13"
-   },
-   {
-    "account": "lucifer1",
     "task": "combat_daily",
-    "startsIn": 1.0,
-    "eta": "2026-10-01T12:13"
+    "startsIn": 0.0,
+    "eta": "2026-10-01T12:14"
    },
    {
     "account": "lucifer1",
     "task": "victory_road",
-    "startsIn": 2.8,
-    "eta": "2026-10-01T12:15"
+    "startsIn": 1.8,
+    "eta": "2026-10-01T12:16"
    },
    {
     "account": "lucifer1",
     "task": "paradise",
-    "startsIn": 2.9,
-    "eta": "2026-10-01T12:15"
+    "startsIn": 1.9,
+    "eta": "2026-10-01T12:16"
    },
    {
     "account": "lucifer1",
     "task": "guild_war",
-    "startsIn": 6.3,
-    "eta": "2026-10-01T12:19"
-   },
-   {
-    "account": "lucifer1",
-    "task": "run_pvp_ranked",
-    "startsIn": 7.3,
+    "startsIn": 5.3,
     "eta": "2026-10-01T12:20"
    },
    {
     "account": "lucifer1",
+    "task": "run_pvp_ranked",
+    "startsIn": 6.3,
+    "eta": "2026-10-01T12:21"
+   },
+   {
+    "account": "lucifer1",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.6,
-    "eta": "2026-10-01T12:21"
-   },
-   {
-    "account": "lucifer1",
-    "task": "sky_pillar",
-    "startsIn": 8.7,
-    "eta": "2026-10-01T12:21"
-   },
-   {
-    "account": "lucifer1",
-    "task": "ultra_wormhole",
-    "startsIn": 9.9,
+    "startsIn": 7.7,
     "eta": "2026-10-01T12:22"
    },
    {
     "account": "lucifer1",
+    "task": "sky_pillar",
+    "startsIn": 7.7,
+    "eta": "2026-10-01T12:22"
+   },
+   {
+    "account": "lucifer1",
+    "task": "ultra_wormhole",
+    "startsIn": 9.0,
+    "eta": "2026-10-01T12:23"
+   },
+   {
+    "account": "lucifer1",
     "task": "ring_battle",
-    "startsIn": 14.4,
-    "eta": "2026-10-01T12:27"
+    "startsIn": 13.5,
+    "eta": "2026-10-01T12:28"
    },
    {
     "account": "lucifer2",
     "task": "dailyclaim",
-    "startsIn": 15.9,
-    "eta": "2026-10-01T12:28"
+    "startsIn": 14.9,
+    "eta": "2026-10-01T12:29"
+   },
+   {
+    "account": "lucifer2",
+    "task": "mail",
+    "startsIn": 15.4,
+    "eta": "2026-10-01T12:30"
+   },
+   {
+    "account": "lucifer2",
+    "task": "joint_team_daily_quest",
+    "startsIn": 15.5,
+    "eta": "2026-10-01T12:30"
    }
   ],
-  "more": 54,
+  "more": 52,
   "fillers": [
    {
     "account": "smurf",
@@ -12396,11 +12449,47 @@
    }
   ],
   "held": {
-   "fake6": {
+   "skosmurf": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
    "fake1": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "chris": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "exou": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake3": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "nova": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "smurf": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "jeff": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake6": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12409,42 +12498,6 @@
     "why": "the rest of its dailies open later — one visit for all of them"
    },
    "fake5": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "smurf": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "skosmurf": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "chris": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "jeff": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "sprite": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "nova": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "exou": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12474,10 +12527,10 @@
  },
  "progress": {
   "lucifer1": {
-   "mailUnread": 0,
    "paradiseStamina": "1/13",
    "rank": 35,
-   "pillar": "floor 95 stage 7"
+   "pillar": "floor 95 stage 7",
+   "mailUnread": 0
   },
   "lucifer2": {
    "mailUnread": 0,
@@ -12586,6 +12639,7 @@
  },
  "ledger": {
   "lucifer1": {
+   "Home creations": 47,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
@@ -14383,17 +14437,13 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-10-01",
-   "summary": "5 of 17 dailies done",
-   "done": 5,
+   "summary": "6 of 17 dailies done · gave up on bash",
+   "done": 6,
    "owed": 17,
    "open": [
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -14436,19 +14486,27 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "12:14",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_121405_weekend_bash_lucifer1__KEEP_0001_121418_final.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 47,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "1/13",
     "rank": 35,
-    "pillar": "floor 95 stage 7"
+    "pillar": "floor 95 stage 7",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -14483,8 +14541,8 @@
     },
     {
      "day": "2026-10-01",
-     "done": 5,
-     "failed": 0
+     "done": 6,
+     "failed": 2
     }
    ]
   },
