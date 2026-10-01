@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T08:00:22.283416",
+ "generatedAt": "2026-10-01T08:02:26.612585",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
-  "mode": "island_challenge",
-  "since": "08:00:01"
+  "mode": "dailyclaim",
+  "since": "08:01:16"
  },
  "grid": {
   "tasks": [
@@ -414,7 +414,7 @@
    {
     "account": "skomain",
     "cells": [
-     "·",
+     "✓",
      "-",
      "·",
      "·",
@@ -435,7 +435,7 @@
      "⏰",
      "·",
      "·",
-     "⏳"
+     "💤"
     ]
    },
    {
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 0,
-  "todo": 250,
+  "done": 1,
+  "todo": 249,
   "gaveUp": 0,
   "unavailable": 11,
   "windowed": 60
@@ -728,10 +728,20 @@
    "why": "lost at stage 11 after 10 clear(s) — the next stage needs a stronger team"
   }
  ],
- "islandChallenge": [],
+ "islandChallenge": [
+  {
+   "account": "skomain",
+   "fights": 3,
+   "stamina": 35,
+   "staminaMax": 35,
+   "staminaAt": "2026-10-01T08:01:10",
+   "nextAt": "2026-10-01T08:31:15"
+  }
+ ],
  "snoozed": {
   "chris|island_challenge": "2026-10-01T08:51",
-  "jeff|island_challenge": "2026-10-01T09:20"
+  "jeff|island_challenge": "2026-10-01T09:20",
+  "skomain|island_challenge": "2026-10-01T08:31"
  },
  "ownerOnline": [],
  "keys": {
@@ -805,11 +815,58 @@
   }
  },
  "session": {
-  "label": "lucifer1",
-  "at": "2026-10-01T06:00:16.289382",
+  "label": "skomain",
+  "at": "2026-10-01T08:00:28.409401",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T08:02:26",
+   "script": "dailyclaim",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 34,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "egg_smashed": 1,
+    "claims": 4
+   },
+   "incomplete": [],
+   "values": {
+    "golden_egg": "smashed",
+    "rail_badges": "0.190:78 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_080152_dailyclaim_skomain"
+  },
+  {
+   "ts": "2026-10-01T08:01:15",
+   "script": "island_challenge",
+   "account": "skomain",
+   "rc": 5,
+   "secs": 38,
+   "stats": {
+    "fights": 3,
+    "partial_formation": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 35,
+    "fights_today": 3
+   },
+   "values_all": {
+    "stamina": [
+     35,
+     35,
+     35,
+     35
+    ]
+   },
+   "dir": "debug_runs/20261001_080036_island_challenge_skomain"
+  },
   {
    "ts": "2026-10-01T05:45:38",
    "script": "island_challenge",
@@ -8662,45 +8719,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_075027_championship_skomain"
-  },
-  {
-   "ts": "2026-09-30T07:50:09",
-   "script": "ring_battle",
-   "account": "skomain",
-   "rc": 0,
-   "secs": 64,
-   "stats": {
-    "ring_auto_formation": 2,
-    "ring_losses": 1,
-    "ring_wins": 5,
-    "ring_chests": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_074904_ring_battle_skomain"
-  },
-  {
-   "ts": "2026-09-30T07:48:45",
-   "script": "faction",
-   "account": "skomain",
-   "rc": 2,
-   "secs": 7,
-   "stats": {
-    "complete_grass": 1,
-    "floors_grass": 0,
-    "sweeps_used": 0
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_074837_faction_skomain"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 28823,
+  "now": 28947,
   "segments": [
    {
     "b": 28801,
@@ -8708,11 +8732,24 @@
     "s": "island_challenge",
     "login": [
      28802,
-     null
+     28828
     ],
-    "handoff": null,
-    "rc": null,
-    "e": 28823
+    "handoff": 28835,
+    "rc": 5,
+    "e": 28876,
+    "secs": 38,
+    "why": ""
+   },
+   {
+    "b": 28876,
+    "a": "skomain",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": 28911,
+    "rc": 0,
+    "e": 28947,
+    "secs": 34,
+    "why": ""
    }
   ],
   "idle": []
@@ -8721,9 +8758,20 @@
  "day": {
   "since": "2026-10-01T08:00",
   "switches": 1,
-  "relogMinutes": 0.0,
-  "retries": 0,
-  "tasks": {}
+  "relogMinutes": 0.6,
+  "retries": 1,
+  "tasks": {
+   "island_challenge": {
+    "runs": 1,
+    "minutes": 0.7,
+    "failed": 1
+   },
+   "dailyclaim": {
+    "runs": 1,
+    "minutes": 0.6,
+    "failed": 0
+   }
+  }
  },
  "unavailable": [
   {
@@ -9414,78 +9462,78 @@
   "next": [
    {
     "account": "skomain",
-    "task": "dailyclaim",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T08:00"
-   },
-   {
-    "account": "skomain",
     "task": "mail",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-10-01T08:02"
    },
    {
     "account": "skomain",
     "task": "joint_team_daily_quest",
-    "startsIn": 4.0,
+    "startsIn": 2.0,
     "eta": "2026-10-01T08:04"
    },
    {
     "account": "skomain",
     "task": "joint_battle",
-    "startsIn": 6.0,
+    "startsIn": 4.0,
     "eta": "2026-10-01T08:06"
    },
    {
     "account": "skomain",
     "task": "daily_dungeon",
-    "startsIn": 8.0,
+    "startsIn": 6.0,
     "eta": "2026-10-01T08:08"
    },
    {
     "account": "skomain",
     "task": "pokemon_home",
-    "startsIn": 10.0,
+    "startsIn": 8.0,
     "eta": "2026-10-01T08:10"
    },
    {
     "account": "skomain",
     "task": "combat_daily",
-    "startsIn": 12.0,
+    "startsIn": 10.0,
     "eta": "2026-10-01T08:12"
    },
    {
     "account": "skomain",
     "task": "victory_road",
-    "startsIn": 14.0,
+    "startsIn": 12.0,
     "eta": "2026-10-01T08:14"
    },
    {
     "account": "skomain",
     "task": "paradise",
-    "startsIn": 16.0,
+    "startsIn": 14.0,
     "eta": "2026-10-01T08:16"
    },
    {
     "account": "skomain",
     "task": "run_pvp_ranked",
-    "startsIn": 18.0,
+    "startsIn": 16.0,
     "eta": "2026-10-01T08:18"
    },
    {
     "account": "skomain",
     "task": "collect_hoopa_keys",
-    "startsIn": 20.0,
+    "startsIn": 18.0,
     "eta": "2026-10-01T08:20"
    },
    {
     "account": "skomain",
     "task": "sky_pillar",
-    "startsIn": 22.0,
+    "startsIn": 20.0,
     "eta": "2026-10-01T08:22"
+   },
+   {
+    "account": "skomain",
+    "task": "faction",
+    "startsIn": 22.0,
+    "eta": "2026-10-01T08:24"
    }
   ],
-  "more": 238,
+  "more": 237,
   "fillers": [
    {
     "account": "smurf",
@@ -9519,8 +9567,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 0,
-   "medianSec": null,
+   "n": 1,
+   "medianSec": 26,
    "picker": {
     "n": 0,
     "medianSec": null,
@@ -9531,8 +9579,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 0,
-    "medianSec": null
+    "n": 1,
+    "medianSec": 26
    }
   }
  },
@@ -9541,7 +9589,8 @@
    "mailUnread": 0,
    "paradiseStamina": "12/12",
    "rank": 193,
-   "islandFights": 0
+   "islandFights": 3,
+   "islandStamina": 35
   },
   "nova": {
    "mailUnread": 0,
@@ -9648,6 +9697,11 @@
   }
  },
  "ledger": {
+  "skomain": {
+   "daily claims": 4,
+   "Privilege Pack claimed": 1,
+   "island fights": 3
+  },
   "chris": {
    "island fights": 7
   },
@@ -11722,14 +11776,10 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-10-01",
-   "summary": "0 of 20 dailies done · 1 switched off",
-   "done": 0,
+   "summary": "1 of 20 dailies done · 1 switched off",
+   "done": 1,
    "owed": 20,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
     {
      "task": "mail",
      "state": "still to do"
@@ -11804,7 +11854,7 @@
     },
     {
      "task": "island",
-     "state": "cooling off"
+     "state": "asks again later"
     }
    ],
    "issues": [],
@@ -11816,12 +11866,17 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "daily claims": 4,
+    "Privilege Pack claimed": 1,
+    "island fights": 3
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "12/12",
     "rank": 193,
-    "islandFights": 0
+    "islandFights": 3,
+    "islandStamina": 35
    },
    "history": [
     {
@@ -11831,7 +11886,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 1,
+     "done": 2,
      "failed": 0
     }
    ]
