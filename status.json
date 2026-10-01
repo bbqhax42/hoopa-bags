@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T20:40:21.038091",
+ "generatedAt": "2026-10-01T20:42:24.621838",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
+  "account": "lucifer1",
   "mode": "hoopa",
-  "since": "20:39:50"
+  "since": "20:40:29"
  },
  "grid": {
   "tasks": [
@@ -778,8 +778,8 @@
    "at": "2026-09-28T03:58:42"
   },
   "nova": {
-   "keys": 9,
-   "at": "2026-10-01T14:44:58"
+   "keys": 0,
+   "at": "2026-10-01T20:40:27"
   },
   "fake6": {
    "keys": 117,
@@ -831,11 +831,27 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-10-01T20:40:05.964387",
+  "label": "lucifer1",
+  "at": "2026-10-01T20:40:44.621537",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T20:40:28",
+   "script": "hoopa",
+   "account": "nova",
+   "rc": 2,
+   "secs": 9,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-10-01T20:21:02",
    "script": "island_challenge",
@@ -8728,28 +8744,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260930_202528_worldboss_dre"
-  },
-  {
-   "ts": "2026-09-30T20:25:27",
-   "script": "worldboss",
-   "account": "deno",
-   "rc": 0,
-   "secs": 145,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_202302_worldboss_deno"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 74421,
+  "now": 74545,
   "segments": [
    {
     "b": 28801,
@@ -14260,8 +14260,22 @@
      74405
     ],
     "handoff": 74419,
+    "rc": 2,
+    "e": 74429,
+    "secs": 9,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 74429,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     74429,
+     74444
+    ],
+    "handoff": 74543,
     "rc": null,
-    "e": 74421
+    "e": 74545
    }
   ],
   "idle": [
@@ -14323,7 +14337,8 @@
    73889,
    73928,
    74070,
-   74389
+   74389,
+   74428
   ]
  },
  "plan": {
@@ -15206,8 +15221,8 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 147,
-  "relogMinutes": 74.0,
+  "switches": 148,
+  "relogMinutes": 75.9,
   "retries": 58,
   "tasks": {
    "island_challenge": {
@@ -15460,6 +15475,12 @@
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-10-01T17:12:46"
+  },
+  {
+   "account": "nova",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-10-01T20:40:28"
   },
   {
    "account": "nova",
@@ -15890,10 +15911,6 @@
     "mode": "rift"
    },
    {
-    "account": "nova",
-    "mode": "hoopa"
-   },
-   {
     "account": "lucifer1",
     "mode": "hoopa"
    },
@@ -15909,12 +15926,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 147,
-   "medianSec": 17,
+   "n": 148,
+   "medianSec": 17.0,
    "picker": {
-    "n": 100,
-    "medianSec": 15.0,
-    "jumps": 61
+    "n": 101,
+    "medianSec": 15,
+    "jumps": 62
    },
    "typed": {
     "n": 0,
@@ -15927,11 +15944,6 @@
   }
  },
  "progress": {
-  "deno": {
-   "mailUnread": 0,
-   "paradiseStamina": "39/13",
-   "pillar": "floor 30 stage 8"
-  },
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "1/16",
@@ -16036,6 +16048,11 @@
   "fake8": {
    "mailUnread": 0,
    "paradiseStamina": "19/13"
+  },
+  "deno": {
+   "mailUnread": 0,
+   "paradiseStamina": "39/13",
+   "pillar": "floor 30 stage 8"
   }
  },
  "ledger": {
@@ -16469,7 +16486,7 @@
   "nova": {
    "name": "nova",
    "day": "2026-10-01",
-   "summary": "16 of 18 dailies done · gave up on bash · 2 not available today",
+   "summary": "16 of 18 dailies done · gave up on bash · 3 not available today",
    "done": 16,
    "owed": 18,
    "open": [
@@ -16492,6 +16509,10 @@
    ],
    "off": [],
    "unavailable": [
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+    },
     {
      "task": "rift",
      "why": "rift_finished"
