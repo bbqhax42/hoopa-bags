@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T15:57:34.575708",
+ "generatedAt": "2026-10-01T15:59:38.315837",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
+  "account": "chris",
   "mode": "hoopa",
-  "since": "15:47:21"
+  "since": "15:58:28"
  },
  "grid": {
   "tasks": [
@@ -757,7 +757,8 @@
  "snoozed": {
   "chris|island_challenge": "2026-10-01T16:51",
   "jeff|island_challenge": "2026-10-01T17:19",
-  "skomain|island_challenge": "2026-10-01T16:34"
+  "skomain|island_challenge": "2026-10-01T16:34",
+  "skomain|rift": "2026-10-01T16:13"
  },
  "ownerOnline": [],
  "keys": {
@@ -831,11 +832,25 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-10-01T15:47:41.747120",
+  "label": "chris",
+  "at": "2026-10-01T15:58:43.568794",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T15:58:28",
+   "script": "rift",
+   "account": "skomain",
+   "rc": 1,
+   "secs": 48,
+   "stats": {
+    "rift_no_result": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_155739_rift_skomain"
+  },
   {
    "ts": "2026-10-01T15:34:18",
    "script": "island_challenge",
@@ -8689,28 +8704,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_151812_rift_chris"
-  },
-  {
-   "ts": "2026-09-30T15:17:46",
-   "script": "hoopa",
-   "account": "jeff",
-   "rc": 2,
-   "secs": 644,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 57454,
+  "now": 57578,
   "segments": [
    {
     "b": 28801,
@@ -12822,12 +12821,44 @@
     ],
     "handoff": 56871,
     "rc": null,
-    "e": 57454
+    "e": 57457
+   },
+   {
+    "b": 57457,
+    "a": "skomain",
+    "s": "rift",
+    "login": null,
+    "handoff": 57459,
+    "rc": 1,
+    "e": 57508,
+    "secs": 48,
+    "why": ""
+   },
+   {
+    "b": 57508,
+    "a": "chris",
+    "s": "hoopa",
+    "login": [
+     57509,
+     57523
+    ],
+    "handoff": 57535,
+    "rc": null,
+    "e": 57578
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-10-01T15:58:28",
+   "account": "skomain",
+   "task": "rift",
+   "rc": 1,
+   "secs": 48,
+   "why": "level 1: no result after 45s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_155739_rift_skomain__KEEP_0001_155828_final.png"
+  },
   {
    "ts": "2026-10-01T14:30:21",
    "account": "lucifer2",
@@ -13092,9 +13123,9 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 73,
-  "relogMinutes": 36.1,
-  "retries": 46,
+  "switches": 74,
+  "relogMinutes": 36.6,
+  "retries": 47,
   "tasks": {
    "island_challenge": {
     "runs": 13,
@@ -13197,9 +13228,9 @@
     "failed": 0
    },
    "rift": {
-    "runs": 7,
-    "minutes": 1.0,
-    "failed": 1
+    "runs": 8,
+    "minutes": 1.8,
+    "failed": 2
    }
   }
  },
@@ -13548,9 +13579,9 @@
     "last": "2026-10-01T15:47:20"
    },
    "skomain": {
-    "runs": 15,
+    "runs": 16,
     "targets": 0,
-    "last": "2026-10-01T15:56:32"
+    "last": "2026-10-01T15:57:36"
    },
    "chris": {
     "runs": 2,
@@ -14040,10 +14071,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "skomain",
-    "mode": "rift"
-   },
-   {
     "account": "jeff",
     "mode": "rift"
    },
@@ -14062,6 +14089,10 @@
    {
     "account": "jeff",
     "mode": "hoopa"
+   },
+   {
+    "account": "nova",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -14071,11 +14102,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 73,
-   "medianSec": 17,
+   "n": 74,
+   "medianSec": 17.0,
    "picker": {
-    "n": 46,
-    "medianSec": 16.0,
+    "n": 47,
+    "medianSec": 16,
     "jumps": 28
    },
    "typed": {
@@ -15929,6 +15960,12 @@
    ],
    "issues": [
     {
+     "task": "rift",
+     "at": "15:58",
+     "why": "level 1: no result after 45s",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_155739_rift_skomain__KEEP_0001_155828_final.png"
+    },
+    {
      "task": "weekend_bash",
      "at": "08:06",
      "why": "weekend_bash: tab 2 did not open",
@@ -15979,7 +16016,7 @@
     {
      "day": "2026-10-01",
      "done": 16,
-     "failed": 2
+     "failed": 3
     }
    ]
   },
