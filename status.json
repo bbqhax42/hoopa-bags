@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T17:12:01.811413",
+ "generatedAt": "2026-10-01T17:14:05.708352",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
-  "mode": "hoopa",
-  "since": "17:07:15"
+  "account": "lucifer2",
+  "mode": "rift",
+  "since": "17:12:47"
  },
  "grid": {
   "tasks": [
@@ -831,11 +831,25 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-10-01T17:07:36.459379",
+  "label": "lucifer2",
+  "at": "2026-10-01T17:13:06.621397",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T17:12:46",
+   "script": "rift",
+   "account": "lucifer1",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_171245_rift_lucifer1"
+  },
   {
    "ts": "2026-10-01T16:54:25",
    "script": "rift",
@@ -8705,26 +8719,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_160239_rift_jeff"
-  },
-  {
-   "ts": "2026-09-30T15:47:08",
-   "script": "rift",
-   "account": "lucifer2",
-   "rc": 1,
-   "secs": 49,
-   "stats": {
-    "rift_no_result": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_154618_rift_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 61922,
+  "now": 62046,
   "segments": [
    {
     "b": 28801,
@@ -13067,7 +13067,33 @@
     ],
     "handoff": 61668,
     "rc": null,
-    "e": 61922
+    "e": 61938
+   },
+   {
+    "b": 61938,
+    "a": "lucifer1",
+    "s": "rift",
+    "login": [
+     61938,
+     61954
+    ],
+    "handoff": 61964,
+    "rc": 2,
+    "e": 61967,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 61967,
+    "a": "lucifer2",
+    "s": "rift",
+    "login": [
+     61967,
+     61986
+    ],
+    "handoff": 61999,
+    "rc": null,
+    "e": 62046
    }
   ],
   "idle": []
@@ -13355,8 +13381,8 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 89,
-  "relogMinutes": 43.9,
+  "switches": 91,
+  "relogMinutes": 44.9,
   "retries": 50,
   "tasks": {
    "island_challenge": {
@@ -13460,8 +13486,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 11,
-    "minutes": 2.7,
+    "runs": 12,
+    "minutes": 2.8,
     "failed": 3
    }
   }
@@ -13586,6 +13612,12 @@
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-10-01T16:54:25"
+  },
+  {
+   "account": "lucifer1",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-10-01T17:12:46"
   },
   {
    "account": "nova",
@@ -13823,9 +13855,9 @@
     "last": "2026-10-01T17:07:15"
    },
    "skomain": {
-    "runs": 30,
+    "runs": 31,
     "targets": 2,
-    "last": "2026-10-01T17:11:30"
+    "last": "2026-10-01T17:12:17"
    },
    "chris": {
     "runs": 14,
@@ -14314,10 +14346,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "lucifer1",
-    "mode": "rift"
-   },
-   {
     "account": "lucifer2",
     "mode": "rift"
    },
@@ -14336,6 +14364,10 @@
    {
     "account": "lucifer1",
     "mode": "hoopa"
+   },
+   {
+    "account": "skomain",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -14345,20 +14377,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 89,
+   "n": 91,
    "medianSec": 17,
    "picker": {
-    "n": 57,
-    "medianSec": 15,
-    "jumps": 34
+    "n": 58,
+    "medianSec": 15.5,
+    "jumps": 35
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 32,
-    "medianSec": 20.0
+    "n": 33,
+    "medianSec": 20
    }
   }
  },
@@ -16274,7 +16306,7 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-10-01",
-   "summary": "16 of 17 dailies done · gave up on bash",
+   "summary": "16 of 17 dailies done · gave up on bash · 1 not available today",
    "done": 16,
    "owed": 17,
    "open": [
@@ -16292,7 +16324,12 @@
     }
    ],
    "off": [],
-   "unavailable": [],
+   "unavailable": [
+    {
+     "task": "rift",
+     "why": "rift_finished"
+    }
+   ],
    "spent": {
     "pillar/story stages cleared": 6,
     "ranked attempts": 1,
