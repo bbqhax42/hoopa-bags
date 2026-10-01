@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T08:43:56.590710",
+ "generatedAt": "2026-10-01T08:46:00.741226",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "jeff",
-  "mode": "daily_dungeon",
-  "since": "08:43:38"
+  "mode": "weekend_bash",
+  "since": "08:45:49"
  },
  "grid": {
   "tasks": [
@@ -69,8 +69,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 33,
-  "todo": 235,
-  "gaveUp": 2,
+  "done": 34,
+  "todo": 233,
+  "gaveUp": 3,
   "unavailable": 12,
   "windowed": 38
  },
@@ -821,6 +821,43 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T08:45:47",
+   "script": "weekend_bash",
+   "account": "jeff",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_084534_weekend_bash_jeff"
+  },
+  {
+   "ts": "2026-10-01T08:45:27",
+   "script": "pokemon_home",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 89,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "grid_shrank_rejected": 1,
+    "balls_unsettled_opened": 2,
+    "merge_moved_instead": 3,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_084358_pokemon_home_jeff"
+  },
   {
    "ts": "2026-10-01T08:43:56",
    "script": "daily_dungeon",
@@ -8687,51 +8724,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_084442_daily_dungeon_jeff"
-  },
-  {
-   "ts": "2026-09-30T08:43:43",
-   "script": "joint_team_daily_quest",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 47,
-   "stats": {
-    "near_miss_joint_team_daily_panel": 2,
-    "panel_swipes": 8,
-    "squad_unaffordable": 1,
-    "guild_base_by_back": 1,
-    "rows_left": 1
-   },
-   "incomplete": [],
-   "values": {
-    "squad_points": "not enough for today's skill",
-    "left": "upgrade squad skill once: blocked"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_084256_joint_team_daily_quest_jeff"
-  },
-  {
-   "ts": "2026-09-30T08:42:54",
-   "script": "mail",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_084251_mail_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 31437,
+  "now": 31561,
   "segments": [
    {
     "b": 28801,
@@ -9192,11 +9190,53 @@
     "e": 31437,
     "secs": 13,
     "why": ""
+   },
+   {
+    "b": 31437,
+    "a": "jeff",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 31438,
+    "rc": 0,
+    "e": 31529,
+    "secs": 89,
+    "why": ""
+   },
+   {
+    "b": 31529,
+    "a": "jeff",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 31533,
+    "rc": 1,
+    "e": 31549,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 31549,
+    "a": "jeff",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 31549,
+    "rc": 1,
+    "e": 31561,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-10-01T08:45:47",
+   "account": "jeff",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_084534_weekend_bash_jeff__KEEP_0003_084547_final.png"
+  },
   {
    "ts": "2026-10-01T08:26:49",
    "account": "nova",
@@ -9238,7 +9278,7 @@
   "since": "2026-10-01T08:00",
   "switches": 5,
   "relogMinutes": 2.2,
-  "retries": 7,
+  "retries": 8,
   "tasks": {
    "island_challenge": {
     "runs": 2,
@@ -9266,14 +9306,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 2,
-    "minutes": 3.3,
+    "runs": 3,
+    "minutes": 4.8,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 4,
-    "minutes": 0.9,
-    "failed": 4
+    "runs": 5,
+    "minutes": 1.2,
+    "failed": 5
    },
    "combat_daily": {
     "runs": 2,
@@ -10022,78 +10062,78 @@
   "next": [
    {
     "account": "jeff",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T08:43"
-   },
-   {
-    "account": "jeff",
-    "task": "weekend_bash",
-    "startsIn": 1.6,
-    "eta": "2026-10-01T08:45"
-   },
-   {
-    "account": "jeff",
     "task": "combat_daily",
-    "startsIn": 1.9,
-    "eta": "2026-10-01T08:45"
+    "startsIn": 0.0,
+    "eta": "2026-10-01T08:46"
    },
    {
     "account": "jeff",
     "task": "victory_road",
-    "startsIn": 3.6,
+    "startsIn": 1.8,
     "eta": "2026-10-01T08:47"
    },
    {
     "account": "jeff",
     "task": "paradise",
-    "startsIn": 3.7,
+    "startsIn": 1.9,
     "eta": "2026-10-01T08:47"
    },
    {
     "account": "jeff",
     "task": "run_pvp_ranked",
-    "startsIn": 7.1,
+    "startsIn": 5.2,
     "eta": "2026-10-01T08:51"
    },
    {
     "account": "jeff",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.4,
+    "startsIn": 6.6,
     "eta": "2026-10-01T08:52"
    },
    {
     "account": "jeff",
     "task": "sky_pillar",
-    "startsIn": 8.5,
+    "startsIn": 6.7,
     "eta": "2026-10-01T08:52"
    },
    {
     "account": "jeff",
     "task": "ultra_wormhole",
-    "startsIn": 8.8,
+    "startsIn": 7.0,
     "eta": "2026-10-01T08:52"
    },
    {
     "account": "jeff",
     "task": "ring_battle",
-    "startsIn": 13.6,
+    "startsIn": 11.7,
     "eta": "2026-10-01T08:57"
    },
    {
     "account": "jeff",
     "task": "championship",
-    "startsIn": 14.6,
+    "startsIn": 12.8,
     "eta": "2026-10-01T08:58"
    },
    {
     "account": "chris",
     "task": "dailyclaim",
-    "startsIn": 15.1,
+    "startsIn": 13.2,
+    "eta": "2026-10-01T08:59"
+   },
+   {
+    "account": "chris",
+    "task": "mail",
+    "startsIn": 13.8,
+    "eta": "2026-10-01T08:59"
+   },
+   {
+    "account": "chris",
+    "task": "joint_team_daily_quest",
+    "startsIn": 13.8,
     "eta": "2026-10-01T08:59"
    }
   ],
-  "more": 223,
+  "more": 221,
   "fillers": [
    {
     "account": "smurf",
@@ -10146,12 +10186,12 @@
  },
  "progress": {
   "jeff": {
-   "mailUnread": 0,
    "paradiseStamina": "12/12",
    "rank": 25,
    "islandFights": 18,
    "islandStamina": 4,
-   "pillar": "floor 150 stage 6"
+   "pillar": "floor 150 stage 6",
+   "mailUnread": 0
   },
   "chris": {
    "islandFights": 23,
@@ -10258,6 +10298,7 @@
  },
  "ledger": {
   "jeff": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1,
@@ -10619,17 +10660,13 @@
   "jeff": {
    "name": "jeff",
    "day": "2026-10-01",
-   "summary": "5 of 19 dailies done",
-   "done": 5,
+   "summary": "6 of 19 dailies done · gave up on bash",
+   "done": 6,
    "owed": 19,
    "open": [
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -10680,22 +10717,30 @@
      "state": "asks again later"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "08:45",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_084534_weekend_bash_jeff__KEEP_0003_084547_final.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1,
     "island fights": 6
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "12/12",
     "rank": 25,
     "islandFights": 18,
     "islandStamina": 4,
-    "pillar": "floor 150 stage 6"
+    "pillar": "floor 150 stage 6",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -10730,8 +10775,8 @@
     },
     {
      "day": "2026-10-01",
-     "done": 5,
-     "failed": 0
+     "done": 6,
+     "failed": 1
     }
    ]
   },
