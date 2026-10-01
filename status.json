@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T23:33:18.565426",
+ "generatedAt": "2026-10-01T23:35:22.289739",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer1",
-  "mode": "hoopa",
-  "since": "23:27:24"
+  "account": "nova",
+  "mode": "dynamax",
+  "since": "23:34:39"
  },
  "grid": {
   "tasks": [
@@ -435,7 +435,7 @@
      "✓",
      "✓",
      "⊘",
-     "·"
+     "💤"
     ]
    },
    {
@@ -577,7 +577,7 @@
  },
  "counts": {
   "done": 286,
-  "todo": 1,
+  "todo": 0,
   "gaveUp": 13,
   "unavailable": 22,
   "windowed": 0
@@ -747,16 +747,17 @@
   },
   {
    "account": "skomain",
-   "fights": 15,
-   "stamina": 5,
-   "staminaMax": 15,
-   "staminaAt": "2026-10-01T21:01:54",
-   "nextAt": "2026-10-01T23:31:58"
+   "fights": 17,
+   "stamina": 30,
+   "staminaMax": 38,
+   "staminaAt": "2026-10-01T23:34:34",
+   "nextAt": "2026-10-01T23:49:39"
   }
  ],
  "snoozed": {
   "chris|island_challenge": "2026-10-02T00:47",
-  "jeff|island_challenge": "2026-10-02T01:41"
+  "jeff|island_challenge": "2026-10-02T01:41",
+  "skomain|island_challenge": "2026-10-02T00:04"
  },
  "ownerOnline": [
   {
@@ -838,11 +839,36 @@
   }
  },
  "session": {
-  "label": null,
-  "at": "2026-10-01T23:27:38.724327",
-  "why": "taken over elsewhere"
+  "label": "nova",
+  "at": "2026-10-01T23:34:55.088518",
+  "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T23:34:39",
+   "script": "island_challenge",
+   "account": "skomain",
+   "rc": 5,
+   "secs": 31,
+   "stats": {
+    "fights": 2,
+    "partial_formation": 1,
+    "autoform_empty": 1
+   },
+   "incomplete": [],
+   "values": {
+    "stamina": 30,
+    "fights_today": 17
+   },
+   "values_all": {
+    "stamina": [
+     30,
+     30,
+     30
+    ]
+   },
+   "dir": "debug_runs/20261001_233408_island_challenge_skomain"
+  },
   {
    "ts": "2026-10-01T23:21:46",
    "script": "rift",
@@ -8707,28 +8733,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_020009_worldboss_chris"
-  },
-  {
-   "ts": "2026-10-01T01:54:50",
-   "script": "hoopa",
-   "account": "skomain",
-   "rc": 2,
-   "secs": 9,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 84798,
+  "now": 84922,
   "segments": [
    {
     "b": 28801,
@@ -15376,10 +15386,25 @@
     "b": 84444,
     "a": "lucifer1",
     "s": "hoopa",
-    "login": null,
+    "login": [
+     84819,
+     84839
+    ],
     "handoff": 84445,
     "rc": null,
-    "e": 84798
+    "e": 84879
+   },
+   {
+    "b": 84879,
+    "a": "nova",
+    "s": "dynamax",
+    "login": [
+     84879,
+     84895
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 84922
    }
   ],
   "idle": [
@@ -16428,14 +16453,14 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 191,
-  "relogMinutes": 94.4,
-  "retries": 64,
+  "switches": 193,
+  "relogMinutes": 94.8,
+  "retries": 65,
   "tasks": {
    "island_challenge": {
-    "runs": 25,
-    "minutes": 12.5,
-    "failed": 25
+    "runs": 26,
+    "minutes": 13.0,
+    "failed": 26
    },
    "dailyclaim": {
     "runs": 20,
@@ -16819,10 +16844,10 @@
    "last_run_actions": 8
   },
   "nova": {
-   "energy": 2,
+   "energy": 13,
    "needs": 4,
    "cost": 4,
-   "observed_at": "2026-10-01T23:17:22.332590",
+   "observed_at": "2026-10-01T23:35:09.918337",
    "runs": 792,
    "cooldown_until": "2026-10-01T22:39:20.148750",
    "kicks": 1,
@@ -17128,14 +17153,7 @@
   "skomain": "SkoMain"
  },
  "queue": {
-  "next": [
-   {
-    "account": "skomain",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-10-01T23:33"
-   }
-  ],
+  "next": [],
   "more": 0,
   "fillers": [],
   "held": {}
@@ -17145,20 +17163,20 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 189,
+   "n": 191,
    "medianSec": 16,
    "picker": {
-    "n": 133,
-    "medianSec": 15,
-    "jumps": 79
+    "n": 134,
+    "medianSec": 15.0,
+    "jumps": 80
    },
    "typed": {
     "n": 0,
     "medianSec": null
    },
    "miss": {
-    "n": 56,
-    "medianSec": 20.0
+    "n": 57,
+    "medianSec": 20
    }
   }
  },
@@ -17241,8 +17259,8 @@
    "pillar": "floor 24 stage 3"
   },
   "skomain": {
-   "islandFights": 15,
-   "islandStamina": 5,
+   "islandFights": 17,
+   "islandStamina": 30,
    "mailUnread": 0,
    "paradiseStamina": "19/13",
    "rank": 42
@@ -17275,6 +17293,17 @@
   }
  },
  "ledger": {
+  "skomain": {
+   "island fights": 17,
+   "guild war attempts": 1,
+   "faction sweeps": 2,
+   "ranked attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 4,
+   "Privilege Pack claimed": 1
+  },
   "jeff": {
    "island fights": 15,
    "guild war attempts": 1,
@@ -17291,17 +17320,6 @@
    "guild war attempts": 1,
    "faction sweeps": 2,
    "pillar/story stages cleared": 3,
-   "ranked attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
-   "daily claims": 4,
-   "Privilege Pack claimed": 1
-  },
-  "skomain": {
-   "island fights": 15,
-   "guild war attempts": 1,
-   "faction sweeps": 2,
    "ranked attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
@@ -19029,7 +19047,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "asks again later"
     }
    ],
    "issues": [
@@ -19072,7 +19090,7 @@
     }
    ],
    "spent": {
-    "island fights": 15,
+    "island fights": 17,
     "guild war attempts": 1,
     "faction sweeps": 2,
     "ranked attempts": 1,
@@ -19083,8 +19101,8 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "islandFights": 15,
-    "islandStamina": 5,
+    "islandFights": 17,
+    "islandStamina": 30,
     "mailUnread": 0,
     "paradiseStamina": "19/13",
     "rank": 42
