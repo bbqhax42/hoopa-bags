@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T01:59:36.472495",
+ "generatedAt": "2026-10-02T02:01:40.353700",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "jeff",
-  "mode": "dynamax",
-  "since": "01:57:19"
+  "account": "nova",
+  "mode": "worldboss",
+  "since": "02:01:37"
  },
  "grid": {
   "tasks": [
@@ -831,11 +831,43 @@
   }
  },
  "session": {
-  "label": "jeff",
-  "at": "2026-10-02T01:57:34.165684",
+  "label": "chris",
+  "at": "2026-10-02T02:00:52.300676",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T02:01:37",
+   "script": "worldboss",
+   "account": "chris",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_020036_worldboss_chris"
+  },
+  {
+   "ts": "2026-10-02T02:00:36",
+   "script": "worldboss",
+   "account": "jeff",
+   "rc": 0,
+   "secs": 36,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_020000_worldboss_jeff"
+  },
   {
    "ts": "2026-10-02T01:42:47",
    "script": "island_challenge",
@@ -8735,44 +8767,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_020617_worldboss_fake4"
-  },
-  {
-   "ts": "2026-10-01T02:06:17",
-   "script": "worldboss",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_020524_worldboss_fake3"
-  },
-  {
-   "ts": "2026-10-01T02:05:23",
-   "script": "worldboss",
-   "account": "fake2",
-   "rc": 0,
-   "secs": 53,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_020430_worldboss_fake2"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 93576,
+  "now": 93700,
   "segments": [
    {
     "b": 28801,
@@ -16269,7 +16269,44 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 93576
+    "e": 93600
+   },
+   {
+    "b": 93600,
+    "a": "jeff",
+    "s": "worldboss",
+    "login": null,
+    "handoff": null,
+    "rc": 0,
+    "e": 93636,
+    "secs": 36,
+    "why": ""
+   },
+   {
+    "b": 93636,
+    "a": "chris",
+    "s": "worldboss",
+    "login": [
+     93637,
+     93652
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 93697,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 93697,
+    "a": "nova",
+    "s": "worldboss",
+    "login": [
+     93697,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 93700
    }
   ],
   "idle": [
@@ -17386,7 +17423,7 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 232,
+  "switches": 234,
   "relogMinutes": 101.8,
   "retries": 70,
   "tasks": {
@@ -17496,8 +17533,8 @@
     "failed": 6
    },
    "worldboss": {
-    "runs": 20,
-    "minutes": 19.4,
+    "runs": 22,
+    "minutes": 21.1,
     "failed": 1
    }
   }
@@ -17788,27 +17825,6 @@
   }
  },
  "worldBoss": {
-  "2026-09-30_02:00": [
-   "sprite",
-   "exou",
-   "skosmurf",
-   "lucifer1",
-   "lucifer2",
-   "deno",
-   "dre",
-   "chris",
-   "smurf",
-   "jeff",
-   "nova",
-   "fake1",
-   "fake2",
-   "fake3",
-   "fake4",
-   "fake5",
-   "fake6",
-   "fake7",
-   "fake8"
-  ],
   "2026-09-30_20:00": [
    "chris",
    "jeff",
@@ -17874,6 +17890,10 @@
    "fake8",
    "deno",
    "dre"
+  ],
+  "2026-10-02_02:00": [
+   "jeff",
+   "chris"
   ]
  },
  "worldBossSkipped": {},
@@ -18102,11 +18122,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 230,
-   "medianSec": 16.0,
+   "n": 231,
+   "medianSec": 16,
    "picker": {
-    "n": 171,
-    "medianSec": 15,
+    "n": 172,
+    "medianSec": 15.0,
     "jumps": 101
    },
    "typed": {
@@ -18120,16 +18140,6 @@
   }
  },
  "progress": {
-  "fake2": {
-   "mailUnread": 0,
-   "paradiseStamina": "19/13",
-   "pillar": "floor 6 stage 7"
-  },
-  "fake3": {
-   "mailUnread": 0,
-   "paradiseStamina": "19/13",
-   "pillar": "floor 6 stage 10"
-  },
   "fake4": {
    "mailUnread": 0,
    "paradiseStamina": "1/14",
@@ -18228,6 +18238,16 @@
   "fake1": {
    "mailUnread": 0,
    "paradiseStamina": "39/13",
+   "pillar": "floor 6 stage 10"
+  },
+  "fake2": {
+   "mailUnread": 0,
+   "paradiseStamina": "19/13",
+   "pillar": "floor 6 stage 7"
+  },
+  "fake3": {
+   "mailUnread": 0,
+   "paradiseStamina": "19/13",
    "pillar": "floor 6 stage 10"
   }
  },
@@ -18653,6 +18673,11 @@
      "day": "2026-10-01",
      "done": 17,
      "failed": 2
+    },
+    {
+     "day": "2026-10-02",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
@@ -18745,6 +18770,11 @@
      "day": "2026-10-01",
      "done": 18,
      "failed": 2
+    },
+    {
+     "day": "2026-10-02",
+     "done": 1,
+     "failed": 0
     }
    ]
   },
