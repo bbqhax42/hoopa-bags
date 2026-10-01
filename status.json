@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T18:22:10.439935",
+ "generatedAt": "2026-10-01T18:24:13.912713",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "chris",
-  "mode": "dynamax",
-  "since": "18:16:13"
+  "account": "nova",
+  "mode": "hoopa",
+  "since": "18:23:29"
  },
  "grid": {
   "tasks": [
@@ -766,8 +766,8 @@
    "at": "2026-10-01T17:30:42"
   },
   "chris": {
-   "keys": 5,
-   "at": "2026-10-01T15:25:29"
+   "keys": 0,
+   "at": "2026-10-01T18:23:28"
   },
   "lucifer1": {
    "keys": 291,
@@ -831,11 +831,27 @@
   }
  },
  "session": {
-  "label": "chris",
-  "at": "2026-10-01T18:16:28.724336",
+  "label": "nova",
+  "at": "2026-10-01T18:23:45.749838",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T18:23:29",
+   "script": "hoopa",
+   "account": "chris",
+   "rc": 2,
+   "secs": 10,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-10-01T17:55:03",
    "script": "island_challenge",
@@ -8700,37 +8716,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_174218_rift_lucifer2"
-  },
-  {
-   "ts": "2026-09-30T17:25:09",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 29,
-   "stats": {
-    "fights": 2,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 6,
-    "fights_today": 12
-   },
-   "values_all": {
-    "stamina": [
-     6,
-     6,
-     6
-    ]
-   },
-   "dir": "debug_runs/20260930_172439_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 66130,
+  "now": 66254,
   "segments": [
    {
     "b": 28801,
@@ -13336,10 +13327,36 @@
     ],
     "handoff": null,
     "rc": null,
-    "e": 66130
+    "e": 66195
+   },
+   {
+    "b": 66195,
+    "a": "chris",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 66199,
+    "rc": 2,
+    "e": 66209,
+    "secs": 10,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
+   },
+   {
+    "b": 66209,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     66210,
+     66225
+    ],
+    "handoff": 66239,
+    "rc": null,
+    "e": 66254
    }
   ],
-  "idle": []
+  "idle": [
+   66195,
+   66209
+  ]
  },
  "failures": [
   {
@@ -13642,8 +13659,8 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 109,
-  "relogMinutes": 51.5,
+  "switches": 110,
+  "relogMinutes": 59.1,
   "retries": 55,
   "tasks": {
    "island_challenge": {
@@ -13759,6 +13776,12 @@
    "task": "championship",
    "why": "no World Championship icon on the strip",
    "at": "2026-10-01T14:27:03"
+  },
+  {
+   "account": "chris",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-10-01T18:23:29"
   },
   {
    "account": "chris",
@@ -13984,14 +14007,14 @@
    "last_run_actions": 35
   },
   "chris": {
-   "energy": 96,
+   "energy": 71,
    "needs": 110,
-   "cost": 2,
-   "observed_at": "2026-10-01T18:21:00.850779",
-   "runs": 693,
+   "cost": 3,
+   "observed_at": "2026-10-01T18:23:13.902496",
+   "runs": 694,
    "cooldown_until": "2026-10-01T00:12:10.668194",
    "kicks": 2,
-   "last_run_actions": 1
+   "last_run_actions": 31
   },
   "smurf": {
    "energy": 14,
@@ -14284,10 +14307,6 @@
     "mode": "rift"
    },
    {
-    "account": "chris",
-    "mode": "hoopa"
-   },
-   {
     "account": "nova",
     "mode": "hoopa"
    },
@@ -14307,12 +14326,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 109,
-   "medianSec": 17,
+   "n": 110,
+   "medianSec": 17.0,
    "picker": {
-    "n": 72,
-    "medianSec": 15.0,
-    "jumps": 42
+    "n": 73,
+    "medianSec": 15,
+    "jumps": 43
    },
    "typed": {
     "n": 0,
@@ -15056,7 +15075,7 @@
   "chris": {
    "name": "chris",
    "day": "2026-10-01",
-   "summary": "17 of 20 dailies done · gave up on bash · 2 not available today",
+   "summary": "17 of 20 dailies done · gave up on bash · 3 not available today",
    "done": 17,
    "owed": 20,
    "open": [
@@ -15086,6 +15105,10 @@
     {
      "task": "championship",
      "why": "no World Championship icon on the strip"
+    },
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
     },
     {
      "task": "rift",
