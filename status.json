@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T15:22:33.194712",
+ "generatedAt": "2026-10-01T15:24:36.630240",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
-  "mode": "hoopa",
-  "since": "15:20:09"
+  "account": "dre",
+  "mode": "rift",
+  "since": "15:24:25"
  },
  "grid": {
   "tasks": [
@@ -831,11 +831,25 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-10-01T15:20:30.842298",
+  "label": "smurf",
+  "at": "2026-10-01T15:24:15.582800",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T15:24:25",
+   "script": "rift",
+   "account": "smurf",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_152423_rift_smurf"
+  },
   {
    "ts": "2026-10-01T14:30:21",
    "script": "rift",
@@ -8680,26 +8694,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_150558_rift_smurf"
-  },
-  {
-   "ts": "2026-09-30T14:23:20",
-   "script": "rift",
-   "account": "lucifer1",
-   "rc": 2,
-   "secs": 1,
-   "stats": {
-    "rift_finished": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_142318_rift_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 55353,
+  "now": 55477,
   "segments": [
    {
     "b": 28801,
@@ -12709,7 +12709,33 @@
     ],
     "handoff": 55240,
     "rc": null,
-    "e": 55353
+    "e": 55438
+   },
+   {
+    "b": 55438,
+    "a": "smurf",
+    "s": "rift",
+    "login": [
+     55438,
+     55455
+    ],
+    "handoff": 55463,
+    "rc": 2,
+    "e": 55465,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 55465,
+    "a": "dre",
+    "s": "rift",
+    "login": [
+     55466,
+     null
+    ],
+    "handoff": null,
+    "rc": null,
+    "e": 55477
    }
   ],
   "idle": []
@@ -12979,8 +13005,8 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 65,
-  "relogMinutes": 32.4,
+  "switches": 67,
+  "relogMinutes": 32.9,
   "retries": 45,
   "tasks": {
    "island_challenge": {
@@ -13084,8 +13110,8 @@
     "failed": 0
    },
    "rift": {
-    "runs": 5,
-    "minutes": 0.9,
+    "runs": 6,
+    "minutes": 1.0,
     "failed": 1
    }
   }
@@ -13246,6 +13272,12 @@
    "task": "joint_battle",
    "why": null,
    "at": null
+  },
+  {
+   "account": "smurf",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-10-01T15:24:25"
   }
  ],
  "windows": {
@@ -13423,9 +13455,9 @@
     "last": "2026-10-01T15:20:09"
    },
    "skomain": {
-    "runs": 2,
+    "runs": 4,
     "targets": 0,
-    "last": "2026-10-01T15:22:23"
+    "last": "2026-10-01T15:23:58"
    }
   },
   "targets": [
@@ -13910,10 +13942,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "smurf",
-    "mode": "rift"
-   },
-   {
     "account": "skomain",
     "mode": "rift"
    },
@@ -13932,6 +13960,10 @@
    {
     "account": "lucifer2",
     "mode": "rift"
+   },
+   {
+    "account": "chris",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -13941,12 +13973,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 65,
-   "medianSec": 18,
+   "n": 66,
+   "medianSec": 17.5,
    "picker": {
-    "n": 41,
-    "medianSec": 16,
-    "jumps": 25
+    "n": 42,
+    "medianSec": 16.0,
+    "jumps": 26
    },
    "typed": {
     "n": 0,
@@ -14779,7 +14811,7 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-10-01",
-   "summary": "17 of 20 dailies done · gave up on bash · 2 switched off · 2 not available today",
+   "summary": "17 of 20 dailies done · gave up on bash · 2 switched off · 3 not available today",
    "done": 17,
    "owed": 20,
    "open": [
@@ -14824,6 +14856,10 @@
     {
      "task": "joint_battle",
      "why": null
+    },
+    {
+     "task": "rift",
+     "why": "rift_finished"
     }
    ],
    "spent": {
