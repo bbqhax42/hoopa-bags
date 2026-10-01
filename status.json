@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T08:25:16.770780",
+ "generatedAt": "2026-10-01T08:27:22.284339",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "pokemon_home",
-  "since": "08:24:28"
+  "mode": "combat_daily",
+  "since": "08:26:50"
  },
  "grid": {
   "tasks": [
@@ -42,8 +42,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 19,
-  "todo": 250,
-  "gaveUp": 1,
+  "done": 20,
+  "todo": 248,
+  "gaveUp": 2,
   "unavailable": 12,
   "windowed": 38
  },
@@ -821,6 +821,58 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T08:26:49",
+   "script": "weekend_bash",
+   "account": "nova",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_082635_weekend_bash_nova"
+  },
+  {
+   "ts": "2026-10-01T08:26:33",
+   "script": "weekend_bash",
+   "account": "nova",
+   "rc": 1,
+   "secs": 14,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_082619_weekend_bash_nova"
+  },
+  {
+   "ts": "2026-10-01T08:26:13",
+   "script": "pokemon_home",
+   "account": "nova",
+   "rc": 0,
+   "secs": 103,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_moved_instead": 12,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_082429_pokemon_home_nova"
+  },
   {
    "ts": "2026-10-01T08:24:27",
    "script": "daily_dungeon",
@@ -8676,60 +8728,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_082405_pokemon_home_nova"
-  },
-  {
-   "ts": "2026-09-30T08:24:02",
-   "script": "daily_dungeon",
-   "account": "nova",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "marginal_dungeon_list": 9
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_082349_daily_dungeon_nova"
-  },
-  {
-   "ts": "2026-09-30T08:22:50",
-   "script": "joint_team_daily_quest",
-   "account": "nova",
-   "rc": 0,
-   "secs": 49,
-   "stats": {
-    "panel_swipes": 8,
-    "marginal_squad_panel": 1,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_082201_joint_team_daily_quest_nova"
-  },
-  {
-   "ts": "2026-09-30T08:21:59",
-   "script": "mail",
-   "account": "nova",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_082156_mail_nova"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 30317,
+  "now": 30442,
   "segments": [
    {
     "b": 28801,
@@ -9003,13 +9007,64 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 30269,
+    "rc": 0,
+    "e": 30374,
+    "secs": 103,
+    "why": ""
+   },
+   {
+    "b": 30374,
+    "a": "nova",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 30379,
+    "rc": 1,
+    "e": 30394,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 30394,
+    "a": "nova",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 30395,
+    "rc": 1,
+    "e": 30410,
+    "secs": 14,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 30410,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 30410,
     "rc": null,
-    "e": 30317
+    "e": 30442
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-10-01T08:26:49",
+   "account": "nova",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_082635_weekend_bash_nova__KEEP_0001_082649_final.png"
+  },
+  {
+   "ts": "2026-10-01T08:26:33",
+   "account": "nova",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 14,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_082619_weekend_bash_nova__KEEP_0003_082633_final.png"
+  },
   {
    "ts": "2026-10-01T08:06:49",
    "account": "skomain",
@@ -9033,7 +9088,7 @@
   "since": "2026-10-01T08:00",
   "switches": 2,
   "relogMinutes": 0.9,
-  "retries": 4,
+  "retries": 6,
   "tasks": {
    "island_challenge": {
     "runs": 1,
@@ -9061,14 +9116,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 1,
-    "minutes": 1.6,
+    "runs": 2,
+    "minutes": 3.3,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 2,
-    "minutes": 0.5,
-    "failed": 2
+    "runs": 4,
+    "minutes": 0.9,
+    "failed": 4
    },
    "combat_daily": {
     "runs": 1,
@@ -9817,78 +9872,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T08:25"
-   },
-   {
-    "account": "nova",
-    "task": "weekend_bash",
-    "startsIn": 1.6,
-    "eta": "2026-10-01T08:26"
-   },
-   {
-    "account": "nova",
     "task": "combat_daily",
-    "startsIn": 1.9,
+    "startsIn": 0.0,
     "eta": "2026-10-01T08:27"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 3.5,
+    "startsIn": 1.6,
     "eta": "2026-10-01T08:28"
    },
    {
     "account": "nova",
     "task": "paradise",
-    "startsIn": 3.6,
-    "eta": "2026-10-01T08:28"
+    "startsIn": 1.7,
+    "eta": "2026-10-01T08:29"
    },
    {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 7.2,
+    "startsIn": 5.4,
     "eta": "2026-10-01T08:32"
    },
    {
     "account": "nova",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.6,
-    "eta": "2026-10-01T08:33"
+    "startsIn": 6.7,
+    "eta": "2026-10-01T08:34"
    },
    {
     "account": "nova",
     "task": "sky_pillar",
-    "startsIn": 8.7,
-    "eta": "2026-10-01T08:33"
+    "startsIn": 6.8,
+    "eta": "2026-10-01T08:34"
    },
    {
     "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 8.8,
+    "startsIn": 6.9,
     "eta": "2026-10-01T08:34"
    },
    {
     "account": "nova",
     "task": "ring_battle",
-    "startsIn": 14.1,
+    "startsIn": 12.2,
     "eta": "2026-10-01T08:39"
    },
    {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 15.5,
+    "startsIn": 13.6,
     "eta": "2026-10-01T08:40"
    },
    {
     "account": "jeff",
     "task": "mail",
-    "startsIn": 16.0,
+    "startsIn": 14.2,
     "eta": "2026-10-01T08:41"
+   },
+   {
+    "account": "jeff",
+    "task": "joint_team_daily_quest",
+    "startsIn": 14.2,
+    "eta": "2026-10-01T08:41"
+   },
+   {
+    "account": "jeff",
+    "task": "joint_battle",
+    "startsIn": 15.1,
+    "eta": "2026-10-01T08:42"
    }
   ],
-  "more": 238,
+  "more": 236,
   "fillers": [
    {
     "account": "smurf",
@@ -9941,10 +9996,10 @@
  },
  "progress": {
   "nova": {
-   "mailUnread": 0,
    "paradiseStamina": "1/13",
    "rank": 2,
-   "pillar": "floor 102 stage 9"
+   "pillar": "floor 102 stage 9",
+   "mailUnread": 0
   },
   "jeff": {
    "mailUnread": 0,
@@ -10053,6 +10108,7 @@
  },
  "ledger": {
   "nova": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
@@ -10315,8 +10371,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-10-01",
-   "summary": "5 of 18 dailies done · 1 not available today",
-   "done": 5,
+   "summary": "6 of 18 dailies done · gave up on bash · 1 not available today",
+   "done": 6,
    "owed": 18,
    "open": [
     {
@@ -10324,12 +10380,8 @@
      "state": "not available today"
     },
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -10372,7 +10424,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "08:26",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_082635_weekend_bash_nova__KEEP_0001_082649_final.png"
+    }
+   ],
    "off": [],
    "unavailable": [
     {
@@ -10381,15 +10440,16 @@
     }
    ],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "1/13",
     "rank": 2,
-    "pillar": "floor 102 stage 9"
+    "pillar": "floor 102 stage 9",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -10424,8 +10484,8 @@
     },
     {
      "day": "2026-10-01",
-     "done": 5,
-     "failed": 0
+     "done": 6,
+     "failed": 2
     }
    ]
   },
