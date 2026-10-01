@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T09:27:29.332538",
+ "generatedAt": "2026-10-01T09:29:33.433987",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "smurf",
-  "mode": "pokemon_home",
-  "since": "09:26:56"
+  "mode": "combat_daily",
+  "since": "09:29:04"
  },
  "grid": {
   "tasks": [
@@ -123,8 +123,8 @@
      "✓",
      "⊘",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✗2",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 61,
-  "todo": 202,
-  "gaveUp": 4,
+  "done": 62,
+  "todo": 200,
+  "gaveUp": 5,
   "unavailable": 13,
   "windowed": 38
  },
@@ -839,6 +839,58 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T09:29:03",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_092850_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-10-01T09:28:48",
+   "script": "weekend_bash",
+   "account": "smurf",
+   "rc": 1,
+   "secs": 13,
+   "stats": {
+    "incomplete": 1
+   },
+   "incomplete": [
+    "weekend_bash: tab 2 did not open"
+   ],
+   "values": {
+    "tickets": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_092834_weekend_bash_smurf"
+  },
+  {
+   "ts": "2026-10-01T09:28:28",
+   "script": "pokemon_home",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 91,
+   "stats": {
+    "reached_via_trial": 1,
+    "merge_moved_instead": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_092657_pokemon_home_smurf"
+  },
   {
    "ts": "2026-10-01T09:26:54",
    "script": "daily_dungeon",
@@ -8673,64 +8725,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_092820_joint_team_daily_quest_smurf"
-  },
-  {
-   "ts": "2026-09-30T09:28:18",
-   "script": "mail",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 5,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_092815_mail_smurf"
-  },
-  {
-   "ts": "2026-09-30T09:28:13",
-   "script": "dailyclaim",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 22,
-   "stats": {
-    "signed_in": 1,
-    "privpack_paid_only": 1,
-    "egg_smashed": 1,
-    "claims": 2
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:78 0.275:8 0.345:55 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_092751_dailyclaim_smurf"
-  },
-  {
-   "ts": "2026-09-30T09:27:23",
-   "script": "championship",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "no_icon": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_092718_championship_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 34049,
+  "now": 34174,
   "segments": [
    {
     "b": 28801,
@@ -9627,13 +9627,64 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 34016,
+    "rc": 0,
+    "e": 34109,
+    "secs": 91,
+    "why": ""
+   },
+   {
+    "b": 34109,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 34114,
+    "rc": 1,
+    "e": 34129,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 34129,
+    "a": "smurf",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 34129,
+    "rc": 1,
+    "e": 34144,
+    "secs": 13,
+    "why": "weekend_bash: tab 2 did not open"
+   },
+   {
+    "b": 34144,
+    "a": "smurf",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 34145,
     "rc": null,
-    "e": 34049
+    "e": 34174
    }
   ],
   "idle": []
  },
  "failures": [
+  {
+   "ts": "2026-10-01T09:29:03",
+   "account": "smurf",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_092850_weekend_bash_smurf__KEEP_0001_092903_final.png"
+  },
+  {
+   "ts": "2026-10-01T09:28:48",
+   "account": "smurf",
+   "task": "weekend_bash",
+   "rc": 1,
+   "secs": 13,
+   "why": "weekend_bash: tab 2 did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_092834_weekend_bash_smurf__KEEP_0003_092848_final.png"
+  },
   {
    "ts": "2026-10-01T08:58:41",
    "account": "chris",
@@ -9711,7 +9762,7 @@
   "since": "2026-10-01T08:00",
   "switches": 10,
   "relogMinutes": 4.1,
-  "retries": 16,
+  "retries": 18,
   "tasks": {
    "island_challenge": {
     "runs": 5,
@@ -9739,14 +9790,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 4,
-    "minutes": 6.3,
+    "runs": 5,
+    "minutes": 7.8,
     "failed": 0
    },
    "weekend_bash": {
-    "runs": 8,
-    "minutes": 1.8,
-    "failed": 8
+    "runs": 10,
+    "minutes": 2.3,
+    "failed": 10
    },
    "combat_daily": {
     "runs": 4,
@@ -10501,78 +10552,78 @@
   "next": [
    {
     "account": "smurf",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T09:27"
-   },
-   {
-    "account": "smurf",
-    "task": "weekend_bash",
-    "startsIn": 1.6,
-    "eta": "2026-10-01T09:29"
-   },
-   {
-    "account": "smurf",
     "task": "combat_daily",
-    "startsIn": 1.8,
+    "startsIn": 0.0,
     "eta": "2026-10-01T09:29"
    },
    {
     "account": "smurf",
     "task": "victory_road",
-    "startsIn": 3.5,
+    "startsIn": 1.8,
     "eta": "2026-10-01T09:31"
    },
    {
     "account": "smurf",
     "task": "paradise",
-    "startsIn": 3.6,
+    "startsIn": 1.9,
     "eta": "2026-10-01T09:31"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 6.7,
+    "startsIn": 4.9,
     "eta": "2026-10-01T09:34"
    },
    {
     "account": "smurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 8.1,
+    "startsIn": 6.3,
     "eta": "2026-10-01T09:35"
    },
    {
     "account": "smurf",
     "task": "sky_pillar",
-    "startsIn": 8.1,
+    "startsIn": 6.4,
     "eta": "2026-10-01T09:35"
    },
    {
     "account": "smurf",
     "task": "faction",
-    "startsIn": 8.9,
+    "startsIn": 7.1,
     "eta": "2026-10-01T09:36"
    },
    {
     "account": "smurf",
     "task": "misty_woods",
-    "startsIn": 10.0,
+    "startsIn": 8.2,
     "eta": "2026-10-01T09:37"
    },
    {
     "account": "smurf",
     "task": "ultra_wormhole",
-    "startsIn": 12.0,
+    "startsIn": 10.2,
     "eta": "2026-10-01T09:39"
    },
    {
     "account": "smurf",
     "task": "ring_battle",
-    "startsIn": 16.6,
+    "startsIn": 14.8,
     "eta": "2026-10-01T09:44"
+   },
+   {
+    "account": "smurf",
+    "task": "championship",
+    "startsIn": 15.8,
+    "eta": "2026-10-01T09:45"
+   },
+   {
+    "account": "fake1",
+    "task": "dailyclaim",
+    "startsIn": 16.2,
+    "eta": "2026-10-01T09:45"
    }
   ],
-  "more": 190,
+  "more": 188,
   "fillers": [
    {
     "account": "smurf",
@@ -10625,9 +10676,9 @@
  },
  "progress": {
   "smurf": {
-   "mailUnread": 0,
    "rank": 47,
-   "pillar": "floor 20 stage 8"
+   "pillar": "floor 20 stage 8",
+   "mailUnread": 0
   },
   "fake1": {
    "mailUnread": 0,
@@ -10737,6 +10788,7 @@
  },
  "ledger": {
   "smurf": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 2
   },
@@ -11303,8 +11355,8 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-10-01",
-   "summary": "4 of 20 dailies done · 2 switched off · 1 not available today",
-   "done": 4,
+   "summary": "5 of 20 dailies done · gave up on bash · 2 switched off · 1 not available today",
+   "done": 5,
    "owed": 20,
    "open": [
     {
@@ -11312,12 +11364,8 @@
      "state": "not available today"
     },
     {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
      "task": "bash",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "dailies",
@@ -11372,7 +11420,14 @@
      "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "weekend_bash",
+     "at": "09:29",
+     "why": "weekend_bash: tab 2 did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_092850_weekend_bash_smurf__KEEP_0001_092903_final.png"
+    }
+   ],
    "off": [
     {
      "task": "hoopa",
@@ -11392,13 +11447,14 @@
     }
    ],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 2
    },
    "progress": {
-    "mailUnread": 0,
     "rank": 47,
-    "pillar": "floor 20 stage 8"
+    "pillar": "floor 20 stage 8",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -11433,8 +11489,8 @@
     },
     {
      "day": "2026-10-01",
-     "done": 5,
-     "failed": 0
+     "done": 6,
+     "failed": 2
     }
    ]
   },
