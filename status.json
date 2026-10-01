@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T21:35:48.717439",
+ "generatedAt": "2026-10-01T21:37:52.476299",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
-  "mode": "rift",
-  "since": "21:35:24"
+  "account": "lucifer1",
+  "mode": "hoopa",
+  "since": "21:36:47"
  },
  "grid": {
   "tasks": [
@@ -757,6 +757,7 @@
  "snoozed": {
   "chris|island_challenge": "2026-10-02T00:47",
   "jeff|island_challenge": "2026-10-01T21:43",
+  "lucifer2|rift": "2026-10-01T21:51",
   "skomain|island_challenge": "2026-10-01T23:31"
  },
  "ownerOnline": [
@@ -839,11 +840,25 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-10-01T21:35:43.810702",
+  "label": "lucifer1",
+  "at": "2026-10-01T21:37:03.510898",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T21:36:47",
+   "script": "rift",
+   "account": "lucifer2",
+   "rc": 1,
+   "secs": 49,
+   "stats": {
+    "rift_no_result": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_213557_rift_lucifer2"
+  },
   {
    "ts": "2026-10-01T21:29:45",
    "script": "island_challenge",
@@ -8742,37 +8757,12 @@
     ]
    },
    "dir": "debug_runs/20260930_212238_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-30T21:19:55",
-   "script": "island_challenge",
-   "account": "jeff",
-   "rc": 5,
-   "secs": 38,
-   "stats": {
-    "fights": 3,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 0,
-    "fights_today": 12
-   },
-   "values_all": {
-    "stamina": [
-     40,
-     0,
-     0,
-     0
-    ]
-   },
-   "dir": "debug_runs/20260930_211916_island_challenge_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 77749,
+  "now": 77872,
   "segments": [
    {
     "b": 28801,
@@ -14557,9 +14547,23 @@
      77724,
      77743
     ],
-    "handoff": null,
+    "handoff": 77757,
+    "rc": 1,
+    "e": 77807,
+    "secs": 49,
+    "why": ""
+   },
+   {
+    "b": 77807,
+    "a": "lucifer1",
+    "s": "hoopa",
+    "login": [
+     77808,
+     77823
+    ],
+    "handoff": 77836,
     "rc": null,
-    "e": 77749
+    "e": 77872
    }
   ],
   "idle": [
@@ -14638,7 +14642,8 @@
    77637,
    77669,
    77708,
-   77724
+   77724,
+   77807
   ]
  },
  "plan": {
@@ -15213,6 +15218,15 @@
  },
  "failures": [
   {
+   "ts": "2026-10-01T21:36:47",
+   "account": "lucifer2",
+   "task": "rift",
+   "rc": 1,
+   "secs": 49,
+   "why": "level 1: no result after 45s",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_213557_rift_lucifer2__KEEP_0001_213647_final.png"
+  },
+  {
    "ts": "2026-10-01T20:12:45",
    "account": "exou",
    "task": "worldboss",
@@ -15521,9 +15535,9 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 165,
-  "relogMinutes": 87.1,
-  "retries": 61,
+  "switches": 166,
+  "relogMinutes": 88.1,
+  "retries": 62,
   "tasks": {
    "island_challenge": {
     "runs": 23,
@@ -15626,9 +15640,9 @@
     "failed": 0
    },
    "rift": {
-    "runs": 14,
-    "minutes": 4.4,
-    "failed": 5
+    "runs": 15,
+    "minutes": 5.3,
+    "failed": 6
    },
    "worldboss": {
     "runs": 20,
@@ -16213,10 +16227,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "lucifer2",
-    "mode": "rift"
-   },
-   {
     "account": "lucifer1",
     "mode": "hoopa"
    }
@@ -16228,12 +16238,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 164,
-   "medianSec": 17.0,
+   "n": 165,
+   "medianSec": 17,
    "picker": {
-    "n": 113,
-    "medianSec": 15,
-    "jumps": 67
+    "n": 114,
+    "medianSec": 15.0,
+    "jumps": 68
    },
    "typed": {
     "n": 0,
@@ -16246,14 +16256,6 @@
   }
  },
  "progress": {
-  "jeff": {
-   "islandFights": 9,
-   "islandStamina": 2,
-   "mailUnread": 0,
-   "paradiseStamina": "39/13",
-   "rank": 1,
-   "pillar": "floor 150 stage 9"
-  },
   "chris": {
    "islandFights": 16,
    "islandStamina": 7,
@@ -16261,6 +16263,14 @@
    "paradiseStamina": "39/13",
    "rank": 10,
    "pillar": "floor 140 stage 1"
+  },
+  "jeff": {
+   "islandFights": 9,
+   "islandStamina": 2,
+   "mailUnread": 0,
+   "paradiseStamina": "39/13",
+   "rank": 1,
+   "pillar": "floor 150 stage 9"
   },
   "nova": {
    "mailUnread": 0,
@@ -18277,9 +18287,9 @@
    "issues": [
     {
      "task": "rift",
-     "at": "17:48",
+     "at": "21:36",
      "why": "level 1: no result after 45s",
-     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_174738_rift_lucifer2__KEEP_0001_174828_final.png"
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_213557_rift_lucifer2__KEEP_0001_213647_final.png"
     },
     {
      "task": "weekend_bash",
@@ -18351,7 +18361,7 @@
     {
      "day": "2026-10-01",
      "done": 17,
-     "failed": 6
+     "failed": 7
     }
    ]
   },
