@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T20:01:08.824319",
+ "generatedAt": "2026-10-01T20:03:12.464871",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "smurf",
+  "account": "jeff",
   "mode": "worldboss",
-  "since": "20:00:38"
+  "since": "20:02:17"
  },
  "grid": {
   "tasks": [
@@ -831,11 +831,43 @@
   }
  },
  "session": {
-  "label": "smurf",
-  "at": "2026-10-01T20:00:11.232730",
+  "label": "jeff",
+  "at": "2026-10-01T20:02:32.214087",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T20:02:17",
+   "script": "worldboss",
+   "account": "chris",
+   "rc": 0,
+   "secs": 62,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_200114_worldboss_chris"
+  },
+  {
+   "ts": "2026-10-01T20:01:14",
+   "script": "worldboss",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 35,
+   "stats": {
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_200038_worldboss_smurf"
+  },
   {
    "ts": "2026-10-01T19:37:45",
    "script": "island_challenge",
@@ -8696,45 +8728,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_192048_rift_skomain"
-  },
-  {
-   "ts": "2026-09-30T18:32:00",
-   "script": "rift",
-   "account": "skomain",
-   "rc": 1,
-   "secs": 49,
-   "stats": {
-    "rift_no_result": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_183111_rift_skomain"
-  },
-  {
-   "ts": "2026-09-30T18:30:16",
-   "script": "story",
-   "account": "skomain",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "popup_never_opened": 1,
-    "incomplete": 1,
-    "story_disabled": 1,
-    "stages_cleared": 0
-   },
-   "incomplete": [
-    "story: nothing opened at stage 1"
-   ],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_183003_story_skomain"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 72069,
+  "now": 72192,
   "segments": [
    {
     "b": 28801,
@@ -13815,8 +13814,36 @@
     "s": "worldboss",
     "login": null,
     "handoff": null,
+    "rc": 0,
+    "e": 72074,
+    "secs": 35,
+    "why": ""
+   },
+   {
+    "b": 72074,
+    "a": "chris",
+    "s": "worldboss",
+    "login": [
+     72074,
+     72089
+    ],
+    "handoff": null,
+    "rc": 0,
+    "e": 72137,
+    "secs": 62,
+    "why": ""
+   },
+   {
+    "b": 72137,
+    "a": "jeff",
+    "s": "worldboss",
+    "login": [
+     72137,
+     72152
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 72069
+    "e": 72192
    }
   ],
   "idle": [
@@ -14744,7 +14771,7 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 118,
+  "switches": 120,
   "relogMinutes": 72.5,
   "retries": 56,
   "tasks": {
@@ -14852,6 +14879,11 @@
     "runs": 14,
     "minutes": 4.4,
     "failed": 5
+   },
+   "worldboss": {
+    "runs": 2,
+    "minutes": 1.6,
+    "failed": 0
    }
   }
  },
@@ -15123,27 +15155,6 @@
   }
  },
  "worldBoss": {
-  "2026-09-29_20:00": [
-   "chris",
-   "nova",
-   "smurf",
-   "fake1",
-   "fake2",
-   "fake3",
-   "fake4",
-   "fake5",
-   "fake6",
-   "fake7",
-   "sprite",
-   "exou",
-   "skosmurf",
-   "lucifer1",
-   "lucifer2",
-   "fake8",
-   "deno",
-   "dre",
-   "jeff"
-  ],
   "2026-09-30_02:00": [
    "sprite",
    "exou",
@@ -15208,6 +15219,10 @@
    "fake8",
    "deno",
    "dre"
+  ],
+  "2026-10-01_20:00": [
+   "smurf",
+   "chris"
   ]
  },
  "worldBossSkipped": {},
@@ -15441,10 +15456,10 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 118,
-   "medianSec": 17.0,
+   "n": 120,
+   "medianSec": 16.5,
    "picker": {
-    "n": 80,
+    "n": 82,
     "medianSec": 15.0,
     "jumps": 47
    },
@@ -16283,7 +16298,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 17,
+     "done": 18,
      "failed": 2
     }
    ]
@@ -16393,7 +16408,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 18,
+     "done": 19,
      "failed": 2
     }
    ]
