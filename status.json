@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T16:30:41.817589",
+ "generatedAt": "2026-10-01T16:32:45.643072",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
+  "account": "nova",
   "mode": "hoopa",
-  "since": "16:29:17"
+  "since": "16:31:27"
  },
  "grid": {
   "tasks": [
@@ -832,11 +832,25 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-10-01T16:29:39.218925",
+  "label": "nova",
+  "at": "2026-10-01T16:31:43.663885",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T16:31:27",
+   "script": "rift",
+   "account": "skomain",
+   "rc": 2,
+   "secs": 1,
+   "stats": {
+    "rift_finished": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_163125_rift_skomain"
+  },
   {
    "ts": "2026-10-01T16:23:50",
    "script": "rift",
@@ -8688,28 +8702,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_152310_rift_lucifer2"
-  },
-  {
-   "ts": "2026-09-30T15:22:37",
-   "script": "hoopa",
-   "account": "nova",
-   "rc": 2,
-   "secs": 234,
-   "stats": {
-    "keys": 0,
-    "bounced": 1
-   },
-   "incomplete": [
-    "out of Vault Secret Keys — Confirm bounced back to the vault"
-   ],
-   "values": {},
-   "dir": ""
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 59442,
+  "now": 59566,
   "segments": [
    {
     "b": 28801,
@@ -12894,7 +12892,30 @@
     ],
     "handoff": 59391,
     "rc": null,
-    "e": 59442
+    "e": 59483
+   },
+   {
+    "b": 59483,
+    "a": "skomain",
+    "s": "rift",
+    "login": null,
+    "handoff": 59485,
+    "rc": 2,
+    "e": 59487,
+    "secs": 1,
+    "why": ""
+   },
+   {
+    "b": 59487,
+    "a": "nova",
+    "s": "hoopa",
+    "login": [
+     59488,
+     59503
+    ],
+    "handoff": 59515,
+    "rc": null,
+    "e": 59566
    }
   ],
   "idle": []
@@ -13182,8 +13203,8 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 78,
-  "relogMinutes": 38.7,
+  "switches": 79,
+  "relogMinutes": 39.1,
   "retries": 48,
   "tasks": {
    "island_challenge": {
@@ -13287,7 +13308,7 @@
     "failed": 0
    },
    "rift": {
-    "runs": 9,
+    "runs": 10,
     "minutes": 2.7,
     "failed": 3
    }
@@ -13431,6 +13452,12 @@
    "task": "faction",
    "why": "complete_water, sweeps_used",
    "at": "2026-10-01T08:14:17"
+  },
+  {
+   "account": "skomain",
+   "task": "rift",
+   "why": "rift_finished",
+   "at": "2026-10-01T16:31:27"
   },
   {
    "account": "skosmurf",
@@ -13638,9 +13665,9 @@
     "last": "2026-10-01T16:29:16"
    },
    "skomain": {
-    "runs": 16,
+    "runs": 18,
     "targets": 0,
-    "last": "2026-10-01T15:57:36"
+    "last": "2026-10-01T16:31:22"
    },
    "chris": {
     "runs": 14,
@@ -14130,10 +14157,6 @@
   "more": 0,
   "fillers": [
    {
-    "account": "skomain",
-    "mode": "rift"
-   },
-   {
     "account": "jeff",
     "mode": "rift"
    },
@@ -14152,6 +14175,10 @@
    {
     "account": "nova",
     "mode": "hoopa"
+   },
+   {
+    "account": "lucifer1",
+    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -14161,12 +14188,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 78,
-   "medianSec": 17.0,
+   "n": 79,
+   "medianSec": 17,
    "picker": {
-    "n": 49,
-    "medianSec": 16,
-    "jumps": 29
+    "n": 50,
+    "medianSec": 16.0,
+    "jumps": 30
    },
    "typed": {
     "n": 0,
@@ -15996,7 +16023,7 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-10-01",
-   "summary": "16 of 20 dailies done · gave up on bash · 1 switched off · 2 not available today",
+   "summary": "16 of 20 dailies done · gave up on bash · 1 switched off · 3 not available today",
    "done": 16,
    "owed": 20,
    "open": [
@@ -16046,6 +16073,10 @@
     {
      "task": "faction",
      "why": "complete_water, sweeps_used"
+    },
+    {
+     "task": "rift",
+     "why": "rift_finished"
     }
    ],
    "spent": {
