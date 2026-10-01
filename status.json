@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T20:11:27.313390",
+ "generatedAt": "2026-10-01T20:13:31.431364",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "sprite",
+  "account": "skosmurf",
   "mode": "worldboss",
-  "since": "20:11:07"
+  "since": "20:12:45"
  },
  "grid": {
   "tasks": [
@@ -758,7 +758,15 @@
   "chris|island_challenge": "2026-10-01T20:48",
   "jeff|island_challenge": "2026-10-01T21:43"
  },
- "ownerOnline": [],
+ "ownerOnline": [
+  {
+   "account": "exou",
+   "since": "2026-10-01T20:12:45",
+   "held": true,
+   "heldUntil": "2026-10-01T20:22:45",
+   "deferredUntil": "2026-10-01T20:22:57"
+  }
+ ],
  "keys": {
   "jeff": {
    "keys": 0,
@@ -830,11 +838,45 @@
   }
  },
  "session": {
-  "label": "sprite",
-  "at": "2026-10-01T20:11:21.519927",
+  "label": "skosmurf",
+  "at": "2026-10-01T20:13:06.369797",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T20:12:45",
+   "script": "worldboss",
+   "account": "exou",
+   "rc": 4,
+   "secs": 39,
+   "stats": {
+    "owner_online": 1,
+    "account_taken": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 2
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_201205_worldboss_exou"
+  },
+  {
+   "ts": "2026-10-01T20:12:05",
+   "script": "worldboss",
+   "account": "sprite",
+   "rc": 0,
+   "secs": 57,
+   "stats": {
+    "wb_skip_again": 1,
+    "ltd_voucher_collected": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_left": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_201107_worldboss_sprite"
+  },
   {
    "ts": "2026-10-01T20:11:07",
    "script": "worldboss",
@@ -8700,45 +8742,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260930_201408_worldboss_fake7"
-  },
-  {
-   "ts": "2026-09-30T20:14:08",
-   "script": "worldboss",
-   "account": "fake6",
-   "rc": 0,
-   "secs": 57,
-   "stats": {
-    "wb_skip_again": 1,
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_201310_worldboss_fake6"
-  },
-  {
-   "ts": "2026-09-30T20:13:10",
-   "script": "worldboss",
-   "account": "fake5",
-   "rc": 0,
-   "secs": 54,
-   "stats": {
-    "ltd_voucher_collected": 1
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_left": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_201215_worldboss_fake5"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 72687,
+  "now": 72811,
   "segments": [
    {
     "b": 28801,
@@ -13973,8 +13982,36 @@
      72681
     ],
     "handoff": null,
+    "rc": 0,
+    "e": 72725,
+    "secs": 57,
+    "why": ""
+   },
+   {
+    "b": 72725,
+    "a": "exou",
+    "s": "worldboss",
+    "login": [
+     72726,
+     72745
+    ],
+    "handoff": null,
+    "rc": 4,
+    "e": 72765,
+    "secs": 39,
+    "why": ""
+   },
+   {
+    "b": 72765,
+    "a": "skosmurf",
+    "s": "worldboss",
+    "login": [
+     72766,
+     72786
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 72687
+    "e": 72811
    }
   ],
   "idle": [
@@ -14603,6 +14640,15 @@
  },
  "failures": [
   {
+   "ts": "2026-10-01T20:12:45",
+   "account": "exou",
+   "task": "worldboss",
+   "rc": 4,
+   "secs": 39,
+   "why": "owner_online, account_taken",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_201205_worldboss_exou__KEEP_0010_201245_final.png"
+  },
+  {
    "ts": "2026-10-01T17:48:28",
    "account": "lucifer2",
    "task": "rift",
@@ -14902,9 +14948,9 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 129,
+  "switches": 131,
   "relogMinutes": 72.5,
-  "retries": 56,
+  "retries": 57,
   "tasks": {
    "island_challenge": {
     "runs": 19,
@@ -15012,9 +15058,9 @@
     "failed": 5
    },
    "worldboss": {
-    "runs": 11,
-    "minutes": 10.4,
-    "failed": 0
+    "runs": 13,
+    "minutes": 12.1,
+    "failed": 1
    }
   }
  },
@@ -15362,7 +15408,9 @@
    "fake4",
    "fake5",
    "fake6",
-   "fake7"
+   "fake7",
+   "sprite",
+   "exou"
   ]
  },
  "worldBossSkipped": {},
@@ -15574,7 +15622,7 @@
     "account": "skomain",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-10-01T20:11"
+    "eta": "2026-10-01T20:13"
    }
   ],
   "more": 0,
@@ -15603,7 +15651,7 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 129,
+   "n": 131,
    "medianSec": 17,
    "picker": {
     "n": 90,
@@ -15615,21 +15663,12 @@
     "medianSec": null
    },
    "miss": {
-    "n": 39,
+    "n": 41,
     "medianSec": 20
    }
   }
  },
  "progress": {
-  "fake5": {
-   "mailUnread": 0,
-   "paradiseStamina": "39/13",
-   "pillar": "floor 8 stage 7"
-  },
-  "fake6": {
-   "mailUnread": 0,
-   "paradiseStamina": "19/13"
-  },
   "fake7": {
    "mailUnread": 0,
    "paradiseStamina": "4/14",
@@ -15730,6 +15769,15 @@
    "mailUnread": 0,
    "paradiseStamina": "1/14",
    "pillar": "floor 6 stage 7"
+  },
+  "fake5": {
+   "mailUnread": 0,
+   "paradiseStamina": "39/13",
+   "pillar": "floor 8 stage 7"
+  },
+  "fake6": {
+   "mailUnread": 0,
+   "paradiseStamina": "19/13"
   }
  },
  "ledger": {
@@ -15978,6 +16026,15 @@
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "exou",
+   "task": null,
+   "kind": "online",
+   "since": "2026-10-01T20:12:45",
+   "why": "someone is playing on it",
+   "action": "left alone until 20:22",
+   "enable": false
   },
   {
    "account": "fake4",
@@ -17247,7 +17304,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 12,
+     "done": 13,
      "failed": 2
     }
    ]
@@ -17273,6 +17330,12 @@
     }
    ],
    "issues": [
+    {
+     "task": "worldboss",
+     "at": "20:12",
+     "why": "owner online, account taken",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261001_201205_worldboss_exou__KEEP_0010_201245_final.png"
+    },
     {
      "task": "sky_pillar",
      "at": "11:39",
