@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T13:25:07.188967",
+ "generatedAt": "2026-10-01T13:27:11.045125",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "deno",
-  "mode": "ultra_wormhole",
-  "since": "13:21:02"
+  "account": "chris",
+  "mode": "island_challenge",
+  "since": "13:26:22"
  },
  "grid": {
   "tasks": [
@@ -111,7 +111,7 @@
      "✓",
      "✓",
      "·",
-     "💤"
+     "⏳"
     ]
    },
    {
@@ -540,7 +540,7 @@
      "✓",
      "-",
      "-",
-     "·",
+     "✓",
      "·",
      "-",
      "-"
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 240,
-  "todo": 31,
+  "done": 241,
+  "todo": 30,
   "gaveUp": 12,
   "unavailable": 19,
   "windowed": 18
@@ -731,11 +731,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 6,
-   "stamina": 1,
-   "staminaMax": 38,
-   "staminaAt": "2026-10-01T12:55:06",
-   "nextAt": "2026-10-01T13:10:11"
+   "fights": 8,
+   "stamina": 6,
+   "staminaMax": 6,
+   "staminaAt": "2026-10-01T13:27:03",
+   "nextAt": null
   },
   {
    "account": "jeff",
@@ -755,7 +755,6 @@
   }
  ],
  "snoozed": {
-  "chris|island_challenge": "2026-10-01T13:25",
   "jeff|island_challenge": "2026-10-01T17:19",
   "skomain|island_challenge": "2026-10-01T15:31"
  },
@@ -831,11 +830,36 @@
   }
  },
  "session": {
-  "label": "deno",
-  "at": "2026-10-01T13:21:26.940136",
+  "label": "chris",
+  "at": "2026-10-01T13:26:37.770314",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T13:26:21",
+   "script": "ultra_wormhole",
+   "account": "deno",
+   "rc": 0,
+   "secs": 286,
+   "stats": {
+    "hired": 70,
+    "wins": 16,
+    "losses": 1,
+    "rewards_claimed": 5
+   },
+   "incomplete": [],
+   "values": {
+    "rewards_claimed": 5,
+    "wins_today": 16
+   },
+   "values_all": {
+    "rewards_claimed": [
+     0,
+     5
+    ]
+   },
+   "dir": "debug_runs/20261001_132135_ultra_wormhole_deno"
+  },
   {
    "ts": "2026-10-01T13:21:02",
    "script": "championship",
@@ -8700,37 +8724,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_131718_ring_battle_deno"
-  },
-  {
-   "ts": "2026-09-30T13:17:15",
-   "script": "ultra_wormhole",
-   "account": "deno",
-   "rc": 0,
-   "secs": 250,
-   "stats": {
-    "hired": 68,
-    "wins": 16,
-    "losses": 1,
-    "rewards_claimed": 5
-   },
-   "incomplete": [],
-   "values": {
-    "rewards_claimed": 5,
-    "wins_today": 16
-   },
-   "values_all": {
-    "rewards_claimed": [
-     0,
-     5
-    ]
-   },
-   "dir": "debug_runs/20260930_131305_ultra_wormhole_deno"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 48307,
+  "now": 48431,
   "segments": [
    {
     "b": 28801,
@@ -11979,8 +11978,22 @@
      48086
     ],
     "handoff": 48094,
+    "rc": 0,
+    "e": 48382,
+    "secs": 286,
+    "why": ""
+   },
+   {
+    "b": 48382,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     48383,
+     48397
+    ],
+    "handoff": 48406,
     "rc": null,
-    "e": 48307
+    "e": 48431
    }
   ],
   "idle": []
@@ -12223,8 +12236,8 @@
  ],
  "day": {
   "since": "2026-10-01T08:00",
-  "switches": 35,
-  "relogMinutes": 19.6,
+  "switches": 36,
+  "relogMinutes": 20.0,
   "retries": 41,
   "tasks": {
    "island_challenge": {
@@ -12298,8 +12311,8 @@
     "failed": 1
    },
    "ultra_wormhole": {
-    "runs": 8,
-    "minutes": 37.2,
+    "runs": 9,
+    "minutes": 42.0,
     "failed": 0
    },
    "ring_battle": {
@@ -13022,6 +13035,12 @@
  },
  "changes": [
   {
+   "sha": "ab5821d",
+   "ts": "2026-10-01T13:26:09",
+   "area": "ultra_wormhole",
+   "subject": "a hire waits for its own card, not a flat 0.7 s"
+  },
+  {
    "sha": "d68db85",
    "ts": "2026-10-01T12:58:53",
    "area": "pokemon_home",
@@ -13066,76 +13085,76 @@
  "queue": {
   "next": [
    {
-    "account": "deno",
-    "task": "ultra_wormhole",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T13:25"
-   },
-   {
-    "account": "deno",
-    "task": "ring_battle",
-    "startsIn": 4.7,
-    "eta": "2026-10-01T13:29"
-   },
-   {
     "account": "dre",
     "task": "dailyclaim",
-    "startsIn": 6.1,
-    "eta": "2026-10-01T13:31"
+    "startsIn": 0.4,
+    "eta": "2026-10-01T13:27"
    },
    {
     "account": "dre",
     "task": "mail",
-    "startsIn": 6.6,
-    "eta": "2026-10-01T13:31"
+    "startsIn": 0.9,
+    "eta": "2026-10-01T13:28"
    },
    {
     "account": "dre",
     "task": "joint_team_daily_quest",
-    "startsIn": 6.6,
-    "eta": "2026-10-01T13:31"
+    "startsIn": 1.0,
+    "eta": "2026-10-01T13:28"
    },
    {
     "account": "dre",
     "task": "joint_battle",
-    "startsIn": 7.5,
-    "eta": "2026-10-01T13:32"
+    "startsIn": 1.9,
+    "eta": "2026-10-01T13:29"
    },
    {
     "account": "dre",
     "task": "daily_dungeon",
-    "startsIn": 9.5,
-    "eta": "2026-10-01T13:34"
+    "startsIn": 3.9,
+    "eta": "2026-10-01T13:31"
    },
    {
     "account": "dre",
     "task": "pokemon_home",
-    "startsIn": 9.9,
-    "eta": "2026-10-01T13:35"
+    "startsIn": 4.3,
+    "eta": "2026-10-01T13:31"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 10.7,
-    "eta": "2026-10-01T13:35"
+    "startsIn": 5.1,
+    "eta": "2026-10-01T13:32"
    },
    {
     "account": "dre",
     "task": "combat_daily",
-    "startsIn": 11.0,
-    "eta": "2026-10-01T13:36"
+    "startsIn": 5.3,
+    "eta": "2026-10-01T13:32"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 12.7,
-    "eta": "2026-10-01T13:37"
+    "startsIn": 7.1,
+    "eta": "2026-10-01T13:34"
    },
    {
     "account": "dre",
     "task": "paradise",
-    "startsIn": 12.9,
-    "eta": "2026-10-01T13:38"
+    "startsIn": 7.2,
+    "eta": "2026-10-01T13:34"
+   },
+   {
+    "account": "dre",
+    "task": "collect_hoopa_keys",
+    "startsIn": 10.5,
+    "eta": "2026-10-01T13:37"
+   },
+   {
+    "account": "dre",
+    "task": "sky_pillar",
+    "startsIn": 10.6,
+    "eta": "2026-10-01T13:37"
    }
   ],
   "more": 4,
@@ -13166,7 +13185,7 @@
    }
   ],
   "held": {
-   "chris": {
+   "skosmurf": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -13174,39 +13193,7 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake6": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake3": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake2": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "fake5": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "exou": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "sprite": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "lucifer2": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "skosmurf": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -13214,7 +13201,39 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
+   "exou": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "lucifer2": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake6": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
    "fake1": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake3": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "deno": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake2": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -13225,11 +13244,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 36,
-   "medianSec": 18.5,
+   "n": 37,
+   "medianSec": 18,
    "picker": {
-    "n": 22,
-    "medianSec": 15.5,
+    "n": 23,
+    "medianSec": 15,
     "jumps": 13
    },
    "typed": {
@@ -13243,11 +13262,6 @@
   }
  },
  "progress": {
-  "deno": {
-   "mailUnread": 0,
-   "paradiseStamina": "39/13",
-   "pillar": "floor 30 stage 8"
-  },
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "5/15",
@@ -13343,6 +13357,11 @@
    "paradiseStamina": "39/13",
    "rank": 138,
    "pillar": "floor 90 stage 8"
+  },
+  "deno": {
+   "mailUnread": 0,
+   "paradiseStamina": "39/13",
+   "pillar": "floor 30 stage 8"
   },
   "fake7": {
    "mailUnread": 0,
@@ -13979,7 +13998,7 @@
     },
     {
      "task": "island",
-     "state": "asks again later"
+     "state": "cooling off"
     }
    ],
    "issues": [
@@ -15454,8 +15473,8 @@
   "deno": {
    "name": "deno",
    "day": "2026-10-01",
-   "summary": "12 of 16 dailies done · gave up on bash",
-   "done": 12,
+   "summary": "13 of 16 dailies done · gave up on bash",
+   "done": 13,
    "owed": 16,
    "open": [
     {
@@ -15465,10 +15484,6 @@
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "wormhole",
-     "state": "still to do"
     },
     {
      "task": "ring",
@@ -15528,7 +15543,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 12,
+     "done": 13,
      "failed": 2
     }
    ]
