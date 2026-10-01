@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T14:22:48.293957",
+ "generatedAt": "2026-10-01T14:24:51.729922",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "rank_match",
-  "since": "14:22:33"
+  "mode": "ring_battle",
+  "since": "14:24:17"
  },
  "grid": {
   "tasks": [
@@ -532,7 +532,7 @@
      "✗2",
      "✓",
      "✓",
-     "·",
+     "✓",
      "✓",
      "✓",
      "-",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 283,
-  "todo": 4,
+  "done": 284,
+  "todo": 3,
   "gaveUp": 13,
   "unavailable": 21,
   "windowed": 0
@@ -831,11 +831,34 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-10-01T14:20:15.420698",
+  "label": "deno",
+  "at": "2026-10-01T14:22:52.708822",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T14:24:17",
+   "script": "rank_match",
+   "account": "deno",
+   "rc": 0,
+   "secs": 74,
+   "stats": {
+    "skip_tapped": 8,
+    "matches": 6,
+    "gift_claimed": 1,
+    "rank_panel_scroll": 2,
+    "rank_reward_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 68,
+    "matches": 6,
+    "gifts": 1,
+    "rank_rewards": 1
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_142302_rank_match_deno"
+  },
   {
    "ts": "2026-10-01T14:22:32",
    "script": "ring_battle",
@@ -8704,35 +8727,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260930_141550_guild_war_skomain"
-  },
-  {
-   "ts": "2026-09-30T14:15:49",
-   "script": "rank_match",
-   "account": "skomain",
-   "rc": 0,
-   "secs": 70,
-   "stats": {
-    "skip_tapped": 6,
-    "matches": 6,
-    "gift_claimed": 1,
-    "rank_reward_claimed": 3,
-    "rank_panel_scroll": 2
-   },
-   "incomplete": [],
-   "values": {
-    "attempts_before": 6,
-    "matches": 6,
-    "gifts": 1,
-    "rank_rewards": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_141439_rank_match_skomain"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 51768,
+  "now": 51892,
   "segments": [
    {
     "b": 28801,
@@ -12573,11 +12573,22 @@
     "s": "rank_match",
     "login": [
      51753,
-     null
+     51772
     ],
-    "handoff": null,
+    "handoff": 51782,
+    "rc": 0,
+    "e": 51857,
+    "secs": 74,
+    "why": ""
+   },
+   {
+    "b": 51857,
+    "a": "deno",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 51859,
     "rc": null,
-    "e": 51768
+    "e": 51892
    }
   ],
   "idle": []
@@ -12839,7 +12850,7 @@
  "day": {
   "since": "2026-10-01T08:00",
   "switches": 55,
-  "relogMinutes": 27.4,
+  "relogMinutes": 27.8,
   "retries": 44,
   "tasks": {
    "island_challenge": {
@@ -12938,8 +12949,8 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 17,
-    "minutes": 18.5,
+    "runs": 18,
+    "minutes": 19.8,
     "failed": 0
    }
   }
@@ -13711,27 +13722,21 @@
   "next": [
    {
     "account": "deno",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T14:22"
-   },
-   {
-    "account": "deno",
     "task": "ring_battle",
-    "startsIn": 1.1,
-    "eta": "2026-10-01T14:23"
+    "startsIn": 0.0,
+    "eta": "2026-10-01T14:24"
    },
    {
     "account": "chris",
     "task": "guild_war",
-    "startsIn": 2.5,
-    "eta": "2026-10-01T14:25"
+    "startsIn": 1.4,
+    "eta": "2026-10-01T14:26"
    },
    {
     "account": "chris",
     "task": "championship",
-    "startsIn": 3.5,
-    "eta": "2026-10-01T14:26"
+    "startsIn": 2.4,
+    "eta": "2026-10-01T14:27"
    }
   ],
   "more": 0,
@@ -13768,8 +13773,8 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 54,
-   "medianSec": 17.5,
+   "n": 55,
+   "medianSec": 18,
    "picker": {
     "n": 35,
     "medianSec": 16,
@@ -13780,8 +13785,8 @@
     "medianSec": null
    },
    "miss": {
-    "n": 19,
-    "medianSec": 20
+    "n": 20,
+    "medianSec": 20.0
    }
   }
  },
@@ -15923,17 +15928,13 @@
   "deno": {
    "name": "deno",
    "day": "2026-10-01",
-   "summary": "13 of 16 dailies done · gave up on bash",
-   "done": 13,
+   "summary": "14 of 16 dailies done · gave up on bash",
+   "done": 14,
    "owed": 16,
    "open": [
     {
      "task": "bash",
      "state": "gave up"
-    },
-    {
-     "task": "victoryRank",
-     "state": "still to do"
     },
     {
      "task": "ring",
@@ -15993,7 +15994,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 13,
+     "done": 14,
      "failed": 2
     }
    ]
