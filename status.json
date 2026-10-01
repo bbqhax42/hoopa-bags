@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T12:58:17.717271",
+ "generatedAt": "2026-10-01T13:00:21.836238",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "fake8",
-  "mode": "joint_battle",
-  "since": "12:57:33"
+  "mode": "combat_daily",
+  "since": "12:58:50"
  },
  "grid": {
   "tasks": [
@@ -500,14 +500,14 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "·",
      "·",
      "⊘",
      "·",
-     "⇢",
+     "·",
      "-",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 219,
-  "todo": 53,
+  "done": 221,
+  "todo": 52,
   "gaveUp": 11,
   "unavailable": 17,
   "windowed": 18
@@ -836,6 +836,39 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T12:58:49",
+   "script": "pokemon_home",
+   "account": "fake8",
+   "rc": 0,
+   "secs": 7,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "burst_second_look_skipped": 1,
+    "charges_left_by_cap": 48
+   },
+   "incomplete": [],
+   "values": {
+    "home_speed": 0.9
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261001_125841_pokemon_home_fake8"
+  },
+  {
+   "ts": "2026-10-01T12:58:39",
+   "script": "daily_dungeon",
+   "account": "fake8",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_125827_daily_dungeon_fake8"
+  },
   {
    "ts": "2026-10-01T12:57:32",
    "script": "joint_team_daily_quest",
@@ -8699,45 +8732,12 @@
     ]
    },
    "dir": "debug_runs/20260930_125000_island_challenge_chris"
-  },
-  {
-   "ts": "2026-09-30T12:49:36",
-   "script": "joint_team_daily_quest",
-   "account": "fake8",
-   "rc": 0,
-   "secs": 49,
-   "stats": {
-    "panel_swipes": 8,
-    "guild_base_by_back": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_124846_joint_team_daily_quest_fake8"
-  },
-  {
-   "ts": "2026-09-30T12:48:45",
-   "script": "mail",
-   "account": "fake8",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 2,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_124842_mail_fake8"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 46698,
+  "now": 46822,
   "segments": [
    {
     "b": 28801,
@@ -11685,7 +11685,38 @@
     "login": null,
     "handoff": 46655,
     "rc": null,
-    "e": 46698
+    "e": 46702
+   },
+   {
+    "b": 46702,
+    "a": "fake8",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 46706,
+    "rc": 0,
+    "e": 46720,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 46720,
+    "a": "fake8",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 46721,
+    "rc": 0,
+    "e": 46730,
+    "secs": 7,
+    "why": ""
+   },
+   {
+    "b": 46730,
+    "a": "fake8",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 46734,
+    "rc": null,
+    "e": 46822
    }
   ],
   "idle": []
@@ -11935,13 +11966,13 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 17,
-    "minutes": 7.0,
+    "runs": 18,
+    "minutes": 7.2,
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 17,
-    "minutes": 14.0,
+    "runs": 18,
+    "minutes": 14.1,
     "failed": 0
    },
    "weekend_bash": {
@@ -12697,6 +12728,12 @@
  },
  "changes": [
   {
+   "sha": "d68db85",
+   "ts": "2026-10-01T12:58:53",
+   "area": "pokemon_home",
+   "subject": "no second look at a burst whose every press opened a ball"
+  },
+  {
    "sha": "51fc28f",
    "ts": "2026-10-01T12:17:41",
    "area": "pokemon_home",
@@ -12736,78 +12773,78 @@
   "next": [
    {
     "account": "fake8",
-    "task": "daily_dungeon",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T12:58"
-   },
-   {
-    "account": "fake8",
-    "task": "pokemon_home",
-    "startsIn": 0.4,
-    "eta": "2026-10-01T12:58"
-   },
-   {
-    "account": "fake8",
     "task": "combat_daily",
-    "startsIn": 1.2,
-    "eta": "2026-10-01T12:59"
+    "startsIn": 0.0,
+    "eta": "2026-10-01T13:00"
    },
    {
     "account": "fake8",
     "task": "victory_road",
-    "startsIn": 3.0,
-    "eta": "2026-10-01T13:01"
+    "startsIn": 1.8,
+    "eta": "2026-10-01T13:02"
    },
    {
     "account": "fake8",
     "task": "paradise",
-    "startsIn": 3.1,
-    "eta": "2026-10-01T13:01"
+    "startsIn": 1.9,
+    "eta": "2026-10-01T13:02"
+   },
+   {
+    "account": "fake8",
+    "task": "guild_war",
+    "startsIn": 5.3,
+    "eta": "2026-10-01T13:05"
    },
    {
     "account": "fake8",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.5,
-    "eta": "2026-10-01T13:04"
+    "startsIn": 6.3,
+    "eta": "2026-10-01T13:06"
    },
    {
     "account": "fake8",
     "task": "sky_pillar",
-    "startsIn": 6.6,
-    "eta": "2026-10-01T13:04"
+    "startsIn": 6.4,
+    "eta": "2026-10-01T13:06"
    },
    {
     "account": "fake8",
     "task": "faction",
-    "startsIn": 7.8,
-    "eta": "2026-10-01T13:06"
+    "startsIn": 7.6,
+    "eta": "2026-10-01T13:07"
    },
    {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 9.9,
-    "eta": "2026-10-01T13:08"
+    "startsIn": 9.7,
+    "eta": "2026-10-01T13:10"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 10.5,
-    "eta": "2026-10-01T13:08"
+    "startsIn": 10.2,
+    "eta": "2026-10-01T13:10"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 10.5,
-    "eta": "2026-10-01T13:08"
+    "startsIn": 10.3,
+    "eta": "2026-10-01T13:10"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 11.4,
-    "eta": "2026-10-01T13:09"
+    "startsIn": 11.2,
+    "eta": "2026-10-01T13:11"
+   },
+   {
+    "account": "deno",
+    "task": "daily_dungeon",
+    "startsIn": 13.2,
+    "eta": "2026-10-01T13:13"
    }
   ],
-  "more": 24,
+  "more": 23,
   "fillers": [
    {
     "account": "smurf",
@@ -12839,11 +12876,15 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake5": {
+   "fake6": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake4": {
+   "skosmurf": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake1": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12859,11 +12900,7 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "sprite": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake1": {
+   "fake5": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12871,19 +12908,19 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
+   "fake4": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
    "fake3": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "skosmurf": {
+   "sprite": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
    "exou": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake6": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12916,10 +12953,6 @@
   }
  },
  "progress": {
-  "fake8": {
-   "mailUnread": 0,
-   "paradiseStamina": "1/13"
-  },
   "chris": {
    "islandFights": 6,
    "islandStamina": 1,
@@ -12927,6 +12960,10 @@
    "paradiseStamina": "39/13",
    "rank": 10,
    "pillar": "floor 140 stage 1"
+  },
+  "fake8": {
+   "paradiseStamina": "1/13",
+   "mailUnread": 0
   },
   "deno": {
    "mailUnread": 0,
@@ -15020,21 +15057,13 @@
   "fake8": {
    "name": "Asdggfyd",
    "day": "2026-10-01",
-   "summary": "4 of 15 dailies done · 2 switched off · 2 not available today",
-   "done": 4,
+   "summary": "6 of 15 dailies done · 2 switched off · 2 not available today",
+   "done": 6,
    "owed": 15,
    "open": [
     {
      "task": "tshop",
      "state": "not available today"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -15054,7 +15083,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -15097,8 +15126,8 @@
     "daily claims": 4
    },
    "progress": {
-    "mailUnread": 0,
-    "paradiseStamina": "1/13"
+    "paradiseStamina": "1/13",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -15133,7 +15162,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 4,
+     "done": 6,
      "failed": 0
     }
    ]
