@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T08:23:12.566159",
+ "generatedAt": "2026-10-01T08:25:16.770780",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "joint_team_daily_quest",
-  "since": "08:22:32"
+  "mode": "pokemon_home",
+  "since": "08:24:28"
  },
  "grid": {
   "tasks": [
@@ -39,9 +39,9 @@
      "✓",
      "⊘",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 16,
-  "todo": 253,
+  "done": 19,
+  "todo": 250,
   "gaveUp": 1,
   "unavailable": 12,
   "windowed": 38
@@ -821,6 +821,36 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T08:24:27",
+   "script": "daily_dungeon",
+   "account": "nova",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_082413_daily_dungeon_nova"
+  },
+  {
+   "ts": "2026-10-01T08:23:22",
+   "script": "joint_team_daily_quest",
+   "account": "nova",
+   "rc": 0,
+   "secs": 49,
+   "stats": {
+    "panel_swipes": 8,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261001_082232_joint_team_daily_quest_nova"
+  },
   {
    "ts": "2026-10-01T08:22:30",
    "script": "mail",
@@ -8694,49 +8724,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20260930_082156_mail_nova"
-  },
-  {
-   "ts": "2026-09-30T08:21:54",
-   "script": "dailyclaim",
-   "account": "nova",
-   "rc": 0,
-   "secs": 36,
-   "stats": {
-    "signed_in": 1,
-    "milestone_claimed": 1,
-    "privpack_claimed": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 5
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:79 0.275:8 0.345:54 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_082118_dailyclaim_nova"
-  },
-  {
-   "ts": "2026-09-30T08:20:49",
-   "script": "ring_battle",
-   "account": "skomain",
-   "rc": 0,
-   "secs": 56,
-   "stats": {
-    "ring_wins": 6,
-    "ring_chests": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20260930_081953_ring_battle_skomain"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 30193,
+  "now": 30317,
   "segments": [
    {
     "b": 28801,
@@ -8979,8 +8972,39 @@
     "s": "joint_team_daily_quest",
     "login": null,
     "handoff": 30152,
+    "rc": 0,
+    "e": 30203,
+    "secs": 49,
+    "why": ""
+   },
+   {
+    "b": 30203,
+    "a": "nova",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 30205,
     "rc": null,
-    "e": 30193
+    "e": 30248
+   },
+   {
+    "b": 30248,
+    "a": "nova",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 30253,
+    "rc": 0,
+    "e": 30268,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 30268,
+    "a": "nova",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 30269,
+    "rc": null,
+    "e": 30317
    }
   ],
   "idle": []
@@ -9027,13 +9051,13 @@
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 1,
-    "minutes": 0.8,
+    "runs": 2,
+    "minutes": 1.7,
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 1,
-    "minutes": 0.2,
+    "runs": 2,
+    "minutes": 0.5,
     "failed": 0
    },
    "pokemon_home": {
@@ -9793,78 +9817,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T08:23"
-   },
-   {
-    "account": "nova",
-    "task": "joint_battle",
-    "startsIn": 0.8,
-    "eta": "2026-10-01T08:24"
-   },
-   {
-    "account": "nova",
-    "task": "daily_dungeon",
-    "startsIn": 2.8,
-    "eta": "2026-10-01T08:26"
-   },
-   {
-    "account": "nova",
     "task": "pokemon_home",
-    "startsIn": 3.0,
-    "eta": "2026-10-01T08:26"
+    "startsIn": 0.0,
+    "eta": "2026-10-01T08:25"
    },
    {
     "account": "nova",
     "task": "weekend_bash",
-    "startsIn": 4.6,
-    "eta": "2026-10-01T08:27"
+    "startsIn": 1.6,
+    "eta": "2026-10-01T08:26"
    },
    {
     "account": "nova",
     "task": "combat_daily",
-    "startsIn": 4.8,
-    "eta": "2026-10-01T08:28"
+    "startsIn": 1.9,
+    "eta": "2026-10-01T08:27"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 6.4,
-    "eta": "2026-10-01T08:29"
+    "startsIn": 3.5,
+    "eta": "2026-10-01T08:28"
    },
    {
     "account": "nova",
     "task": "paradise",
-    "startsIn": 6.5,
-    "eta": "2026-10-01T08:29"
+    "startsIn": 3.6,
+    "eta": "2026-10-01T08:28"
    },
    {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 10.2,
-    "eta": "2026-10-01T08:33"
+    "startsIn": 7.2,
+    "eta": "2026-10-01T08:32"
    },
    {
     "account": "nova",
     "task": "collect_hoopa_keys",
-    "startsIn": 11.6,
-    "eta": "2026-10-01T08:34"
+    "startsIn": 8.6,
+    "eta": "2026-10-01T08:33"
    },
    {
     "account": "nova",
     "task": "sky_pillar",
-    "startsIn": 11.7,
-    "eta": "2026-10-01T08:34"
+    "startsIn": 8.7,
+    "eta": "2026-10-01T08:33"
    },
    {
     "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 11.8,
+    "startsIn": 8.8,
     "eta": "2026-10-01T08:34"
+   },
+   {
+    "account": "nova",
+    "task": "ring_battle",
+    "startsIn": 14.1,
+    "eta": "2026-10-01T08:39"
+   },
+   {
+    "account": "jeff",
+    "task": "dailyclaim",
+    "startsIn": 15.5,
+    "eta": "2026-10-01T08:40"
+   },
+   {
+    "account": "jeff",
+    "task": "mail",
+    "startsIn": 16.0,
+    "eta": "2026-10-01T08:41"
    }
   ],
-  "more": 241,
+  "more": 238,
   "fillers": [
    {
     "account": "smurf",
@@ -10291,25 +10315,13 @@
   "nova": {
    "name": "nova",
    "day": "2026-10-01",
-   "summary": "2 of 18 dailies done · 1 not available today",
-   "done": 2,
+   "summary": "5 of 18 dailies done · 1 not available today",
+   "done": 5,
    "owed": 18,
    "open": [
     {
      "task": "tshop",
      "state": "not available today"
-    },
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
     },
     {
      "task": "home",
@@ -10412,7 +10424,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 3,
+     "done": 5,
      "failed": 0
     }
    ]
