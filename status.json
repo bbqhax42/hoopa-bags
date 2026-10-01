@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T23:12:39.517224",
+ "generatedAt": "2026-10-01T23:14:44.556129",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
   "mode": "hoopa",
-  "since": "23:11:44"
+  "since": "23:14:22"
  },
  "grid": {
   "tasks": [
@@ -826,8 +826,8 @@
    "at": "2026-09-21T14:35:36"
   },
   "skomain": {
-   "keys": 9,
-   "at": "2026-10-01T20:34:38"
+   "keys": 0,
+   "at": "2026-10-01T23:14:31"
   }
  },
  "session": {
@@ -836,6 +836,22 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T23:14:33",
+   "script": "hoopa",
+   "account": "skomain",
+   "rc": 2,
+   "secs": 9,
+   "stats": {
+    "keys": 0,
+    "bounced": 1
+   },
+   "incomplete": [
+    "out of Vault Secret Keys — Confirm bounced back to the vault"
+   ],
+   "values": {},
+   "dir": ""
+  },
   {
    "ts": "2026-10-01T22:17:49",
    "script": "island_challenge",
@@ -8713,37 +8729,12 @@
     ]
    },
    "dir": "debug_runs/20261001_012058_island_challenge_jeff"
-  },
-  {
-   "ts": "2026-10-01T01:20:35",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 29,
-   "stats": {
-    "fights": 2,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 5,
-    "fights_today": 20
-   },
-   "values_all": {
-    "stamina": [
-     5,
-     5,
-     5
-    ]
-   },
-   "dir": "debug_runs/20261001_012006_island_challenge_chris"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 83559,
+  "now": 83684,
   "segments": [
    {
     "b": 28801,
@@ -15279,7 +15270,36 @@
     "login": null,
     "handoff": 83504,
     "rc": null,
-    "e": 83559
+    "e": 83566
+   },
+   {
+    "b": 83566,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 83567,
+    "rc": null,
+    "e": 83606
+   },
+   {
+    "b": 83606,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 83606,
+    "rc": null,
+    "e": 83662
+   },
+   {
+    "b": 83662,
+    "a": "skomain",
+    "s": "hoopa",
+    "login": null,
+    "handoff": 83663,
+    "rc": 2,
+    "e": 83684,
+    "secs": 9,
+    "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
    }
   ],
   "idle": [
@@ -15424,7 +15444,12 @@
    83345,
    83395,
    83439,
-   83504
+   83504,
+   83566,
+   83606,
+   83662,
+   83673,
+   83673
   ]
  },
  "plan": {
@@ -16603,6 +16628,12 @@
   },
   {
    "account": "skomain",
+   "task": "hoopa",
+   "why": "out of Vault Secret Keys — Confirm bounced back to the vault",
+   "at": "2026-10-01T23:14:33"
+  },
+  {
+   "account": "skomain",
    "task": "rift",
    "why": "rift_finished",
    "at": "2026-10-01T16:31:27"
@@ -16814,9 +16845,9 @@
     "last": "2026-10-01T22:40:03"
    },
    "skomain": {
-    "runs": 95,
-    "targets": 6,
-    "last": "2026-10-01T23:11:43"
+    "runs": 98,
+    "targets": 7,
+    "last": "2026-10-01T23:14:22"
    },
    "chris": {
     "runs": 18,
@@ -16825,6 +16856,13 @@
    }
   },
   "targets": [
+   {
+    "ts": "2026-10-01T23:14:22",
+    "runner": "skomain",
+    "items": [
+     "Black Sludge"
+    ]
+   },
    {
     "ts": "2026-10-01T23:11:43",
     "runner": "skomain",
@@ -16900,13 +16938,6 @@
     "runner": "lucifer1",
     "items": [
      "Rocky Helmet"
-    ]
-   },
-   {
-    "ts": "2026-10-01T17:40:49",
-    "runner": "lucifer1",
-    "items": [
-     "Soul Dew"
     ]
    }
   ]
@@ -17014,10 +17045,6 @@
    {
     "account": "lucifer1",
     "mode": "hoopa"
-   },
-   {
-    "account": "skomain",
-    "mode": "hoopa"
    }
   ],
   "held": {}
@@ -17045,14 +17072,6 @@
   }
  },
  "progress": {
-  "chris": {
-   "islandFights": 16,
-   "islandStamina": 7,
-   "mailUnread": 0,
-   "paradiseStamina": "39/13",
-   "rank": 10,
-   "pillar": "floor 140 stage 1"
-  },
   "jeff": {
    "islandFights": 12,
    "islandStamina": 6,
@@ -17060,6 +17079,14 @@
    "paradiseStamina": "39/13",
    "rank": 1,
    "pillar": "floor 150 stage 9"
+  },
+  "chris": {
+   "islandFights": 16,
+   "islandStamina": 7,
+   "mailUnread": 0,
+   "paradiseStamina": "39/13",
+   "rank": 10,
+   "pillar": "floor 140 stage 1"
   },
   "nova": {
    "mailUnread": 0,
@@ -17169,7 +17196,7 @@
    "Privilege Pack claimed": 1
   },
   "chris": {
-   "island fights": 21,
+   "island fights": 19,
    "guild war attempts": 1,
    "faction sweeps": 2,
    "pillar/story stages cleared": 3,
@@ -17821,7 +17848,7 @@
     }
    ],
    "spent": {
-    "island fights": 21,
+    "island fights": 19,
     "guild war attempts": 1,
     "faction sweeps": 2,
     "pillar/story stages cleared": 3,
@@ -18884,7 +18911,7 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-10-01",
-   "summary": "16 of 20 dailies done · gave up on bash · 1 switched off · 3 not available today",
+   "summary": "16 of 20 dailies done · gave up on bash · 1 switched off · 4 not available today",
    "done": 16,
    "owed": 20,
    "open": [
@@ -18934,6 +18961,10 @@
     {
      "task": "faction",
      "why": "complete_water, sweeps_used"
+    },
+    {
+     "task": "hoopa",
+     "why": "out of Vault Secret Keys — Confirm bounced back to the vault"
     },
     {
      "task": "rift",
