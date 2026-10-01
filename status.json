@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-01T12:43:49.641953",
+ "generatedAt": "2026-10-01T12:45:53.339390",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer2",
-  "mode": "collect_hoopa_keys",
-  "since": "12:43:44"
+  "mode": "ultra_wormhole",
+  "since": "12:44:42"
  },
  "grid": {
   "tasks": [
@@ -482,8 +482,8 @@
      "✓",
      "✓",
      "✓",
-     "⇢",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 212,
-  "todo": 59,
+  "done": 214,
+  "todo": 58,
   "gaveUp": 11,
   "unavailable": 17,
   "windowed": 18
@@ -836,6 +836,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-01T12:44:41",
+   "script": "sky_pillar",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 50,
+   "stats": {
+    "floor_reward_claimed": 2,
+    "stages_cleared": 2,
+    "challenge_refused": 1,
+    "marginal_sky_pillar": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 90,
+    "stage": 8,
+    "proofs_spent": 2
+   },
+   "values_all": {
+    "floor": [
+     90,
+     90
+    ],
+    "stage": [
+     7,
+     8
+    ]
+   },
+   "dir": "debug_runs/20261001_124351_sky_pillar_lucifer2"
+  },
   {
    "ts": "2026-10-01T12:43:49",
    "script": "collect_hoopa_keys",
@@ -8709,36 +8740,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20260930_123843_collect_hoopa_keys_lucifer2"
-  },
-  {
-   "ts": "2026-09-30T12:38:42",
-   "script": "run_pvp_ranked",
-   "account": "lucifer2",
-   "rc": 0,
-   "secs": 80,
-   "stats": {
-    "ranked_fought": 10,
-    "ranked_won": 9,
-    "picker_retry": 2,
-    "ranked_lost": 1,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 79,
-    "daily_goal_claimed": 3
-   },
-   "incomplete": [],
-   "values": {
-    "ranked_wins": 9,
-    "rank": 138,
-    "daily_goal_claims": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20260930_123721_run_pvp_ranked_lucifer2"
   }
  ],
  "timeline": {
   "day0": "2026-10-01T00:00",
   "since": 28800.0,
-  "now": 45830,
+  "now": 45953,
   "segments": [
    {
     "b": 28801,
@@ -11606,6 +11613,26 @@
     "e": 45830,
     "secs": 5,
     "why": ""
+   },
+   {
+    "b": 45830,
+    "a": "lucifer2",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 45830,
+    "rc": 0,
+    "e": 45882,
+    "secs": 50,
+    "why": ""
+   },
+   {
+    "b": 45882,
+    "a": "lucifer2",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 45885,
+    "rc": null,
+    "e": 45953
    }
   ],
   "idle": []
@@ -11895,8 +11922,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 17,
-    "minutes": 21.1,
+    "runs": 18,
+    "minutes": 22.0,
     "failed": 2
    },
    "faction": {
@@ -12656,78 +12683,78 @@
   "next": [
    {
     "account": "lucifer2",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-10-01T12:43"
-   },
-   {
-    "account": "lucifer2",
     "task": "ultra_wormhole",
-    "startsIn": 1.2,
+    "startsIn": 0.0,
     "eta": "2026-10-01T12:45"
    },
    {
     "account": "lucifer2",
     "task": "ring_battle",
-    "startsIn": 5.7,
-    "eta": "2026-10-01T12:49"
-   },
-   {
-    "account": "fake8",
-    "task": "dailyclaim",
-    "startsIn": 7.1,
+    "startsIn": 4.5,
     "eta": "2026-10-01T12:50"
    },
    {
     "account": "fake8",
+    "task": "dailyclaim",
+    "startsIn": 5.9,
+    "eta": "2026-10-01T12:51"
+   },
+   {
+    "account": "fake8",
     "task": "mail",
-    "startsIn": 7.7,
-    "eta": "2026-10-01T12:51"
-   },
-   {
-    "account": "fake8",
-    "task": "joint_team_daily_quest",
-    "startsIn": 7.7,
-    "eta": "2026-10-01T12:51"
-   },
-   {
-    "account": "fake8",
-    "task": "joint_battle",
-    "startsIn": 8.6,
+    "startsIn": 6.4,
     "eta": "2026-10-01T12:52"
    },
    {
     "account": "fake8",
+    "task": "joint_team_daily_quest",
+    "startsIn": 6.5,
+    "eta": "2026-10-01T12:52"
+   },
+   {
+    "account": "fake8",
+    "task": "joint_battle",
+    "startsIn": 7.3,
+    "eta": "2026-10-01T12:53"
+   },
+   {
+    "account": "fake8",
     "task": "daily_dungeon",
-    "startsIn": 10.6,
-    "eta": "2026-10-01T12:54"
-   },
-   {
-    "account": "fake8",
-    "task": "pokemon_home",
-    "startsIn": 11.0,
-    "eta": "2026-10-01T12:54"
-   },
-   {
-    "account": "fake8",
-    "task": "combat_daily",
-    "startsIn": 11.8,
+    "startsIn": 9.3,
     "eta": "2026-10-01T12:55"
    },
    {
     "account": "fake8",
+    "task": "pokemon_home",
+    "startsIn": 9.8,
+    "eta": "2026-10-01T12:55"
+   },
+   {
+    "account": "fake8",
+    "task": "combat_daily",
+    "startsIn": 10.6,
+    "eta": "2026-10-01T12:56"
+   },
+   {
+    "account": "fake8",
     "task": "victory_road",
-    "startsIn": 13.6,
-    "eta": "2026-10-01T12:57"
+    "startsIn": 12.4,
+    "eta": "2026-10-01T12:58"
    },
    {
     "account": "fake8",
     "task": "paradise",
-    "startsIn": 13.7,
-    "eta": "2026-10-01T12:57"
+    "startsIn": 12.5,
+    "eta": "2026-10-01T12:58"
+   },
+   {
+    "account": "fake8",
+    "task": "collect_hoopa_keys",
+    "startsIn": 15.9,
+    "eta": "2026-10-01T13:01"
    }
   ],
-  "more": 31,
+  "more": 30,
   "fillers": [
    {
     "account": "smurf",
@@ -12755,23 +12782,7 @@
    }
   ],
   "held": {
-   "exou": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
    "fake1": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "sprite": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake6": {
-    "until": "2026-10-01T13:30",
-    "why": "the rest of its dailies open later — one visit for all of them"
-   },
-   "fake4": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12783,11 +12794,11 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "fake3": {
+   "nova": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "jeff": {
+   "smurf": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12795,7 +12806,15 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "nova": {
+   "exou": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "sprite": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake6": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
@@ -12803,7 +12822,15 @@
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "smurf": {
+   "jeff": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake4": {
+    "until": "2026-10-01T13:30",
+    "why": "the rest of its dailies open later — one visit for all of them"
+   },
+   "fake3": {
     "until": "2026-10-01T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12833,10 +12860,10 @@
  },
  "progress": {
   "lucifer2": {
-   "rank": 138,
-   "pillar": "floor 90 stage 2",
+   "pillar": "floor 90 stage 8",
    "mailUnread": 0,
-   "paradiseStamina": "39/13"
+   "paradiseStamina": "39/13",
+   "rank": 138
   },
   "fake8": {
    "mailUnread": 0,
@@ -12945,6 +12972,7 @@
  },
  "ledger": {
   "lucifer2": {
+   "pillar/story stages cleared": 2,
    "ranked attempts": 1,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -14836,8 +14864,8 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-10-01",
-   "summary": "11 of 17 dailies done · gave up on bash · 2 switched off",
-   "done": 11,
+   "summary": "13 of 17 dailies done · gave up on bash · 2 switched off",
+   "done": 13,
    "owed": 17,
    "open": [
     {
@@ -14847,14 +14875,6 @@
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "hoopa",
-     "state": "waits on another task"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "wormhole",
@@ -14887,6 +14907,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 2,
     "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -14896,10 +14917,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "rank": 138,
-    "pillar": "floor 90 stage 2",
+    "pillar": "floor 90 stage 8",
     "mailUnread": 0,
-    "paradiseStamina": "39/13"
+    "paradiseStamina": "39/13",
+    "rank": 138
    },
    "history": [
     {
@@ -14934,7 +14955,7 @@
     },
     {
      "day": "2026-10-01",
-     "done": 12,
+     "done": 13,
      "failed": 2
     }
    ]
