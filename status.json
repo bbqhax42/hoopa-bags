@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T10:46:54.535865",
+ "generatedAt": "2026-10-02T10:48:58.354339",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "nova",
-  "mode": "ring_battle",
-  "since": "10:46:47"
+  "account": "smurf",
+  "mode": "joint_team_daily_quest",
+  "since": "10:48:51"
  },
  "grid": {
   "tasks": [
@@ -55,7 +55,7 @@
      "-",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-"
     ]
@@ -117,9 +117,9 @@
    {
     "account": "smurf",
     "cells": [
-     "·",
+     "✓",
      "-",
-     "·",
+     "✓",
      "·",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 64,
-  "todo": 112,
+  "done": 67,
+  "todo": 109,
   "gaveUp": 0,
   "unavailable": 12,
   "windowed": 18
@@ -834,11 +834,65 @@
   }
  },
  "session": {
-  "label": "nova",
-  "at": "2026-10-02T10:39:53.447896",
+  "label": "smurf",
+  "at": "2026-10-02T10:48:13.538379",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T10:48:50",
+   "script": "mail",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 5,
+    "unread_after": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_104847_mail_smurf"
+  },
+  {
+   "ts": "2026-10-02T10:48:45",
+   "script": "dailyclaim",
+   "account": "smurf",
+   "rc": 0,
+   "secs": 25,
+   "stats": {
+    "signed_in": 1,
+    "milestone_claimed": 1,
+    "privpack_paid_only": 1,
+    "egg_smashed": 1,
+    "claims": 3
+   },
+   "incomplete": [],
+   "values": {
+    "golden_egg": "smashed",
+    "rail_badges": "0.190:78 0.275:8 0.345:54 0.428:7 0.500:0"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_104820_dailyclaim_smurf"
+  },
+  {
+   "ts": "2026-10-02T10:47:53",
+   "script": "ring_battle",
+   "account": "nova",
+   "rc": 0,
+   "secs": 64,
+   "stats": {
+    "ring_wins": 6,
+    "ring_chests": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_104649_ring_battle_nova"
+  },
   {
    "ts": "2026-10-02T10:46:46",
    "script": "ultra_wormhole",
@@ -8740,76 +8794,12 @@
     ]
    },
    "dir": "debug_runs/20261001_094012_misty_woods_smurf"
-  },
-  {
-   "ts": "2026-10-01T09:39:53",
-   "script": "faction",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 126,
-   "stats": {
-    "auto_formation": 20,
-    "skip_retry": 15,
-    "floors_water": 20,
-    "sweeps_used": 2
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_093747_faction_smurf"
-  },
-  {
-   "ts": "2026-10-01T09:37:42",
-   "script": "sky_pillar",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 81,
-   "stats": {
-    "stages_cleared": 3,
-    "floor_reward_claimed": 1,
-    "floor_backlog_floor": 1,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 21,
-    "stage": 1,
-    "proofs_spent": 3,
-    "floor_backlog_claims": 1
-   },
-   "values_all": {
-    "floor": [
-     20,
-     20,
-     21
-    ],
-    "stage": [
-     9,
-     10,
-     1
-    ]
-   },
-   "dir": "debug_runs/20261001_093621_sky_pillar_smurf"
-  },
-  {
-   "ts": "2026-10-01T09:36:19",
-   "script": "collect_hoopa_keys",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 5,
-   "stats": {
-    "vault_visited": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_093614_collect_hoopa_keys_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 38815,
+  "now": 38939,
   "segments": [
    {
     "b": 33172,
@@ -9664,8 +9654,44 @@
     "s": "ring_battle",
     "login": null,
     "handoff": 38809,
+    "rc": 0,
+    "e": 38875,
+    "secs": 64,
+    "why": ""
+   },
+   {
+    "b": 38875,
+    "a": "smurf",
+    "s": "dailyclaim",
+    "login": [
+     38875,
+     38893
+    ],
+    "handoff": 38900,
+    "rc": 0,
+    "e": 38926,
+    "secs": 25,
+    "why": ""
+   },
+   {
+    "b": 38926,
+    "a": "smurf",
+    "s": "mail",
+    "login": null,
+    "handoff": 38927,
+    "rc": 0,
+    "e": 38931,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 38931,
+    "a": "smurf",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 38932,
     "rc": null,
-    "e": 38815
+    "e": 38939
    }
   ],
   "idle": []
@@ -10298,8 +10324,8 @@
  ],
  "day": {
   "since": "2026-10-02T08:00",
-  "switches": 7,
-  "relogMinutes": 3.0,
+  "switches": 8,
+  "relogMinutes": 3.5,
   "retries": 11,
   "tasks": {
    "island_challenge": {
@@ -10308,12 +10334,12 @@
     "failed": 4
    },
    "dailyclaim": {
-    "runs": 4,
-    "minutes": 2.2,
+    "runs": 5,
+    "minutes": 2.6,
     "failed": 0
    },
    "mail": {
-    "runs": 4,
+    "runs": 5,
     "minutes": 0.2,
     "failed": 0
    },
@@ -10383,8 +10409,8 @@
     "failed": 0
    },
    "ring_battle": {
-    "runs": 3,
-    "minutes": 3.0,
+    "runs": 4,
+    "minutes": 4.0,
     "failed": 0
    },
    "championship": {
@@ -11124,79 +11150,79 @@
  "queue": {
   "next": [
    {
-    "account": "nova",
-    "task": "ring_battle",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T10:46"
-   },
-   {
-    "account": "smurf",
-    "task": "dailyclaim",
-    "startsIn": 1.4,
-    "eta": "2026-10-02T10:48"
-   },
-   {
-    "account": "smurf",
-    "task": "mail",
-    "startsIn": 1.9,
-    "eta": "2026-10-02T10:48"
-   },
-   {
     "account": "smurf",
     "task": "joint_team_daily_quest",
-    "startsIn": 2.0,
+    "startsIn": 0.0,
     "eta": "2026-10-02T10:48"
    },
    {
     "account": "smurf",
     "task": "joint_battle",
-    "startsIn": 2.9,
+    "startsIn": 0.8,
     "eta": "2026-10-02T10:49"
    },
    {
     "account": "smurf",
     "task": "daily_dungeon",
-    "startsIn": 4.8,
+    "startsIn": 2.9,
     "eta": "2026-10-02T10:51"
    },
    {
     "account": "smurf",
     "task": "pokemon_home",
-    "startsIn": 5.1,
-    "eta": "2026-10-02T10:51"
+    "startsIn": 3.1,
+    "eta": "2026-10-02T10:52"
    },
    {
     "account": "smurf",
     "task": "weekend_bash",
-    "startsIn": 6.2,
+    "startsIn": 4.2,
     "eta": "2026-10-02T10:53"
    },
    {
     "account": "smurf",
     "task": "combat_daily",
-    "startsIn": 6.4,
+    "startsIn": 4.4,
     "eta": "2026-10-02T10:53"
    },
    {
     "account": "smurf",
     "task": "victory_road",
-    "startsIn": 8.1,
+    "startsIn": 6.1,
     "eta": "2026-10-02T10:55"
    },
    {
     "account": "smurf",
     "task": "paradise",
-    "startsIn": 8.2,
+    "startsIn": 6.2,
     "eta": "2026-10-02T10:55"
    },
    {
     "account": "smurf",
     "task": "run_pvp_ranked",
-    "startsIn": 11.8,
+    "startsIn": 9.8,
     "eta": "2026-10-02T10:58"
+   },
+   {
+    "account": "smurf",
+    "task": "collect_hoopa_keys",
+    "startsIn": 11.2,
+    "eta": "2026-10-02T11:00"
+   },
+   {
+    "account": "smurf",
+    "task": "sky_pillar",
+    "startsIn": 11.2,
+    "eta": "2026-10-02T11:00"
+   },
+   {
+    "account": "smurf",
+    "task": "faction",
+    "startsIn": 12.0,
+    "eta": "2026-10-02T11:00"
    }
   ],
-  "more": 100,
+  "more": 97,
   "fillers": [
    {
     "account": "smurf",
@@ -11230,12 +11256,12 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 7,
-   "medianSec": 15,
+   "n": 8,
+   "medianSec": 16.0,
    "picker": {
-    "n": 5,
-    "medianSec": 15,
-    "jumps": 2
+    "n": 6,
+    "medianSec": 15.0,
+    "jumps": 3
    },
    "typed": {
     "n": 0,
@@ -11249,8 +11275,8 @@
  },
  "progress": {
   "smurf": {
-   "pillar": "floor 21 stage 1",
-   "misty": "step 4"
+   "misty": "step 4",
+   "mailUnread": 0
   },
   "fake1": {
    "mailUnread": 0,
@@ -11356,6 +11382,10 @@
   }
  },
  "ledger": {
+  "smurf": {
+   "mail claimed": 1,
+   "daily claims": 3
+  },
   "nova": {
    "pillar/story stages cleared": 3,
    "ranked attempts": 1,
@@ -11656,8 +11686,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-10-02",
-   "summary": "15 of 18 dailies done · 1 not available today",
-   "done": 15,
+   "summary": "16 of 18 dailies done · 1 not available today",
+   "done": 16,
    "owed": 18,
    "open": [
     {
@@ -11667,10 +11697,6 @@
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "ring",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -11748,7 +11774,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 13,
+     "done": 14,
      "failed": 2
     }
    ]
@@ -11929,18 +11955,10 @@
   "smurf": {
    "name": "smurf",
    "day": "2026-10-02",
-   "summary": "0 of 20 dailies done · 2 switched off",
-   "done": 0,
+   "summary": "2 of 20 dailies done · 2 switched off",
+   "done": 2,
    "owed": 20,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
     {
      "task": "JointQ",
      "state": "still to do"
@@ -12028,10 +12046,13 @@
     }
    ],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 3
+   },
    "progress": {
-    "pillar": "floor 21 stage 1",
-    "misty": "step 4"
+    "misty": "step 4",
+    "mailUnread": 0
    },
    "history": [
     {
@@ -12066,7 +12087,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 1,
+     "done": 3,
      "failed": 0
     }
    ]
