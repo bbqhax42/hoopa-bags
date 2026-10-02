@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T12:19:53.531719",
+ "generatedAt": "2026-10-02T12:21:57.485555",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "lucifer1",
-  "mode": "sky_pillar",
-  "since": "12:18:37"
+  "mode": "ultra_wormhole",
+  "since": "12:20:24"
  },
  "grid": {
   "tasks": [
@@ -456,7 +456,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 130,
-  "todo": 48,
+  "done": 131,
+  "todo": 47,
   "gaveUp": 0,
   "unavailable": 17,
   "windowed": 18
@@ -761,6 +761,13 @@
  },
  "ownerOnline": [
   {
+   "account": "fake1",
+   "since": "2026-10-02T13:50:00",
+   "held": true,
+   "heldUntil": "2026-10-02T14:00:00",
+   "deferredUntil": "2026-10-02T14:00:12"
+  },
+  {
    "account": "smurf",
    "since": "2026-10-02T13:50:00",
    "held": true,
@@ -844,6 +851,42 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T12:20:23",
+   "script": "sky_pillar",
+   "account": "lucifer1",
+   "rc": 0,
+   "secs": 105,
+   "stats": {
+    "stages_cleared": 5,
+    "floor_reward_claimed": 2,
+    "marginal_sky_pillar": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 96,
+    "stage": 8,
+    "proofs_spent": 5
+   },
+   "values_all": {
+    "floor": [
+     96,
+     96,
+     96,
+     96,
+     96
+    ],
+    "stage": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "dir": "debug_runs/20261002_121837_sky_pillar_lucifer1"
+  },
   {
    "ts": "2026-10-02T12:18:36",
    "script": "collect_hoopa_keys",
@@ -8810,30 +8853,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20261001_111010_joint_team_daily_quest_fake7"
-  },
-  {
-   "ts": "2026-10-01T11:10:08",
-   "script": "mail",
-   "account": "fake7",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 3,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_111005_mail_fake7"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 44394,
+  "now": 44518,
   "segments": [
    {
     "b": 33172,
@@ -10527,8 +10552,19 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 44317,
+    "rc": 0,
+    "e": 44424,
+    "secs": 105,
+    "why": ""
+   },
+   {
+    "b": 44424,
+    "a": "lucifer1",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 44447,
     "rc": null,
-    "e": 44394
+    "e": 44518
    }
   ],
   "idle": []
@@ -11285,8 +11321,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 9,
-    "minutes": 10.8,
+    "runs": 10,
+    "minutes": 12.5,
     "failed": 1
    },
    "faction": {
@@ -12077,78 +12113,78 @@
   "next": [
    {
     "account": "lucifer1",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T12:19"
-   },
-   {
-    "account": "lucifer1",
     "task": "ultra_wormhole",
-    "startsIn": 1.2,
+    "startsIn": 0.0,
     "eta": "2026-10-02T12:21"
    },
    {
     "account": "lucifer1",
     "task": "ring_battle",
-    "startsIn": 5.7,
-    "eta": "2026-10-02T12:25"
+    "startsIn": 4.5,
+    "eta": "2026-10-02T12:26"
    },
    {
     "account": "lucifer2",
     "task": "dailyclaim",
-    "startsIn": 7.1,
+    "startsIn": 5.9,
     "eta": "2026-10-02T12:27"
    },
    {
     "account": "lucifer2",
     "task": "mail",
-    "startsIn": 7.7,
-    "eta": "2026-10-02T12:27"
-   },
-   {
-    "account": "lucifer2",
-    "task": "joint_team_daily_quest",
-    "startsIn": 8.0,
-    "eta": "2026-10-02T12:27"
-   },
-   {
-    "account": "lucifer2",
-    "task": "joint_battle",
-    "startsIn": 8.8,
+    "startsIn": 6.5,
     "eta": "2026-10-02T12:28"
    },
    {
     "account": "lucifer2",
+    "task": "joint_team_daily_quest",
+    "startsIn": 6.8,
+    "eta": "2026-10-02T12:28"
+   },
+   {
+    "account": "lucifer2",
+    "task": "joint_battle",
+    "startsIn": 7.6,
+    "eta": "2026-10-02T12:29"
+   },
+   {
+    "account": "lucifer2",
     "task": "daily_dungeon",
-    "startsIn": 10.8,
-    "eta": "2026-10-02T12:30"
-   },
-   {
-    "account": "lucifer2",
-    "task": "pokemon_home",
-    "startsIn": 11.1,
-    "eta": "2026-10-02T12:30"
-   },
-   {
-    "account": "lucifer2",
-    "task": "weekend_bash",
-    "startsIn": 12.0,
+    "startsIn": 9.6,
     "eta": "2026-10-02T12:31"
    },
    {
     "account": "lucifer2",
-    "task": "combat_daily",
-    "startsIn": 12.2,
+    "task": "pokemon_home",
+    "startsIn": 9.9,
+    "eta": "2026-10-02T12:31"
+   },
+   {
+    "account": "lucifer2",
+    "task": "weekend_bash",
+    "startsIn": 10.8,
     "eta": "2026-10-02T12:32"
    },
    {
     "account": "lucifer2",
-    "task": "victory_road",
-    "startsIn": 14.0,
+    "task": "combat_daily",
+    "startsIn": 11.0,
     "eta": "2026-10-02T12:33"
+   },
+   {
+    "account": "lucifer2",
+    "task": "victory_road",
+    "startsIn": 12.8,
+    "eta": "2026-10-02T12:34"
+   },
+   {
+    "account": "lucifer2",
+    "task": "paradise",
+    "startsIn": 12.9,
+    "eta": "2026-10-02T12:34"
    }
   ],
-  "more": 34,
+  "more": 33,
   "fillers": [
    {
     "account": "skosmurf",
@@ -12210,7 +12246,6 @@
  },
  "progress": {
   "fake7": {
-   "mailUnread": 0,
    "paradiseStamina": "4/14",
    "pillar": "floor 5 stage 1"
   },
@@ -12241,7 +12276,7 @@
    "mailUnread": 0,
    "paradiseStamina": "39/13",
    "rank": 3,
-   "pillar": "floor 96 stage 3"
+   "pillar": "floor 96 stage 8"
   },
   "lucifer2": {
    "mailUnread": 0,
@@ -12299,6 +12334,7 @@
  },
  "ledger": {
   "lucifer1": {
+   "pillar/story stages cleared": 5,
    "ranked attempts": 1,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
@@ -12464,6 +12500,15 @@
    "why": "Unlocked after clearing Victory Road   Sarlotus Gym — clear that by hand, then re-enable",
    "action": "clear that gym by hand, then switch story back on",
    "enable": true
+  },
+  {
+   "account": "fake1",
+   "task": null,
+   "kind": "online",
+   "since": "2026-10-02T13:50:00",
+   "why": "someone is playing on it",
+   "action": "left alone until 14:00",
+   "enable": false
   },
   {
    "account": "smurf",
@@ -13902,7 +13947,6 @@
    ],
    "spent": {},
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "4/14",
     "pillar": "floor 5 stage 1"
    },
@@ -14303,17 +14347,13 @@
   "lucifer1": {
    "name": "lucifer1",
    "day": "2026-10-02",
-   "summary": "13 of 17 dailies done",
-   "done": 13,
+   "summary": "14 of 17 dailies done",
+   "done": 14,
    "owed": 17,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "wormhole",
@@ -14335,6 +14375,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 5,
     "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
@@ -14347,7 +14388,7 @@
     "mailUnread": 0,
     "paradiseStamina": "39/13",
     "rank": 3,
-    "pillar": "floor 96 stage 3"
+    "pillar": "floor 96 stage 8"
    },
    "history": [
     {
@@ -14382,7 +14423,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 13,
+     "done": 14,
      "failed": 0
     }
    ]
