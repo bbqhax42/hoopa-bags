@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T09:19:56.851567",
+ "generatedAt": "2026-10-02T09:22:01.867113",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
-  "mode": "pokemon_home",
-  "since": "09:19:30"
+  "mode": "combat_daily",
+  "since": "09:20:51"
  },
  "grid": {
   "tasks": [
@@ -420,8 +420,8 @@
      "✓",
      "✓",
      "✓",
-     "✗2",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -576,9 +576,9 @@
   ]
  },
  "counts": {
-  "done": 5,
-  "todo": 172,
-  "gaveUp": 1,
+  "done": 7,
+  "todo": 171,
+  "gaveUp": 0,
   "unavailable": 11,
   "windowed": 18
  },
@@ -819,6 +819,44 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T09:20:49",
+   "script": "weekend_bash",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "tickets": 40
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 800,
+    "tickets": 40
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_092036_weekend_bash_skomain"
+  },
+  {
+   "ts": "2026-10-02T09:20:30",
+   "script": "pokemon_home",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 54,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "grid_refit_column_slip_rejected": 6,
+    "merge_moved_instead": 2,
+    "burst_second_look_skipped": 2,
+    "charges_spent": 25
+   },
+   "incomplete": [],
+   "values": {
+    "home_speed": 0.729
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_091935_pokemon_home_skomain"
+  },
   {
    "ts": "2026-10-02T09:19:29",
    "script": "pokemon_home",
@@ -8729,41 +8767,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_082151_dailyclaim_nova"
-  },
-  {
-   "ts": "2026-10-01T08:21:25",
-   "script": "championship",
-   "account": "skomain",
-   "rc": 5,
-   "secs": 4,
-   "stats": {
-    "no_icon": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_082120_championship_skomain"
-  },
-  {
-   "ts": "2026-10-01T08:21:01",
-   "script": "ring_battle",
-   "account": "skomain",
-   "rc": 0,
-   "secs": 62,
-   "stats": {
-    "ring_wins": 6,
-    "ring_chests": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_081958_ring_battle_skomain"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 33597,
+  "now": 33722,
   "segments": [
    {
     "b": 33172,
@@ -8850,9 +8859,29 @@
     "login": null,
     "handoff": 33575,
     "rc": 1,
-    "e": 33597,
+    "e": 33631,
     "secs": 133,
     "why": "pokemon_home: 25 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 33631,
+    "a": "skomain",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 33636,
+    "rc": 0,
+    "e": 33651,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 33651,
+    "a": "skomain",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 33651,
+    "rc": null,
+    "e": 33722
    }
   ],
   "idle": []
@@ -9479,9 +9508,14 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 1,
-    "minutes": 2.2,
+    "runs": 2,
+    "minutes": 3.1,
     "failed": 1
+   },
+   "weekend_bash": {
+    "runs": 1,
+    "minutes": 0.2,
+    "failed": 0
    }
   }
  },
@@ -10200,76 +10234,76 @@
     "account": "chris",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-10-02T09:20"
-   },
-   {
-    "account": "skomain",
-    "task": "weekend_bash",
-    "startsIn": 1.3,
-    "eta": "2026-10-02T09:21"
+    "eta": "2026-10-02T09:22"
    },
    {
     "account": "skomain",
     "task": "combat_daily",
-    "startsIn": 3.3,
+    "startsIn": 1.3,
     "eta": "2026-10-02T09:23"
    },
    {
     "account": "skomain",
     "task": "victory_road",
-    "startsIn": 5.3,
+    "startsIn": 3.3,
     "eta": "2026-10-02T09:25"
    },
    {
     "account": "skomain",
     "task": "paradise",
-    "startsIn": 7.3,
+    "startsIn": 5.3,
     "eta": "2026-10-02T09:27"
    },
    {
     "account": "skomain",
     "task": "guild_war",
-    "startsIn": 9.3,
+    "startsIn": 7.3,
     "eta": "2026-10-02T09:29"
    },
    {
     "account": "skomain",
     "task": "run_pvp_ranked",
-    "startsIn": 11.3,
+    "startsIn": 9.3,
     "eta": "2026-10-02T09:31"
    },
    {
     "account": "skomain",
     "task": "collect_hoopa_keys",
-    "startsIn": 13.3,
+    "startsIn": 11.3,
     "eta": "2026-10-02T09:33"
    },
    {
     "account": "skomain",
     "task": "sky_pillar",
-    "startsIn": 15.3,
+    "startsIn": 13.3,
     "eta": "2026-10-02T09:35"
    },
    {
     "account": "skomain",
     "task": "faction",
-    "startsIn": 17.3,
+    "startsIn": 15.3,
     "eta": "2026-10-02T09:37"
    },
    {
     "account": "skomain",
     "task": "ultra_wormhole",
-    "startsIn": 19.3,
+    "startsIn": 17.3,
     "eta": "2026-10-02T09:39"
    },
    {
     "account": "skomain",
     "task": "ring_battle",
-    "startsIn": 21.3,
+    "startsIn": 19.3,
     "eta": "2026-10-02T09:41"
+   },
+   {
+    "account": "skomain",
+    "task": "championship",
+    "startsIn": 21.3,
+    "eta": "2026-10-02T09:43"
    }
   ],
-  "more": 160,
+  "more": 159,
   "fillers": [
    {
     "account": "smurf",
@@ -10432,6 +10466,7 @@
  },
  "ledger": {
   "skomain": {
+   "Home creations": 25,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1,
@@ -12513,18 +12548,10 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-10-02",
-   "summary": "5 of 20 dailies done · gave up on home · 1 switched off",
-   "done": 5,
+   "summary": "7 of 20 dailies done · 1 switched off",
+   "done": 7,
    "owed": 20,
    "open": [
-    {
-     "task": "home",
-     "state": "gave up"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -12595,6 +12622,7 @@
    ],
    "unavailable": [],
    "spent": {
+    "Home creations": 25,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1,
@@ -12618,7 +12646,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 5,
+     "done": 7,
      "failed": 1
     }
    ]
