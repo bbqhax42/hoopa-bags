@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T09:34:27.005115",
+ "generatedAt": "2026-10-02T09:36:31.012194",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "skomain",
-  "mode": "ring_battle",
-  "since": "09:34:18"
+  "account": "chris",
+  "mode": "dailyclaim",
+  "since": "09:36:02"
  },
  "grid": {
   "tasks": [
@@ -111,7 +111,7 @@
      "·",
      "·",
      "·",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -433,7 +433,7 @@
      "⊘",
      "-",
      "✓",
-     "·",
+     "✓",
      "·",
      "💤"
     ]
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 15,
-  "todo": 162,
+  "done": 16,
+  "todo": 160,
   "gaveUp": 0,
   "unavailable": 12,
   "windowed": 18
@@ -814,11 +814,38 @@
   }
  },
  "session": {
-  "label": "skomain",
-  "at": "2026-10-02T09:13:13.980372",
+  "label": "chris",
+  "at": "2026-10-02T09:35:38.399343",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T09:36:00",
+   "script": "island_challenge",
+   "account": "chris",
+   "rc": 1,
+   "secs": 12,
+   "stats": {},
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_093548_island_challenge_chris"
+  },
+  {
+   "ts": "2026-10-02T09:35:21",
+   "script": "ring_battle",
+   "account": "skomain",
+   "rc": 0,
+   "secs": 60,
+   "stats": {
+    "ring_wins": 6,
+    "ring_chests": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_093420_ring_battle_skomain"
+  },
   {
    "ts": "2026-10-02T09:34:17",
    "script": "ultra_wormhole",
@@ -8737,59 +8764,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20261001_083431_collect_hoopa_keys_nova"
-  },
-  {
-   "ts": "2026-10-01T08:34:29",
-   "script": "run_pvp_ranked",
-   "account": "nova",
-   "rc": 0,
-   "secs": 84,
-   "stats": {
-    "ranked_fought": 10,
-    "ranked_lost": 1,
-    "ranked_won": 9,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 0,
-    "daily_goal_claimed": 3
-   },
-   "incomplete": [],
-   "values": {
-    "ranked_wins": 9,
-    "rank": 2,
-    "daily_goal_claims": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_083305_run_pvp_ranked_nova"
-  },
-  {
-   "ts": "2026-10-01T08:32:38",
-   "script": "island_challenge",
-   "account": "skomain",
-   "rc": 5,
-   "secs": 22,
-   "stats": {
-    "partial_formation": 1,
-    "fights": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 0,
-    "fights_today": 4
-   },
-   "values_all": {
-    "stamina": [
-     10,
-     0
-    ]
-   },
-   "dir": "debug_runs/20261001_083216_island_challenge_skomain"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 34467,
+  "now": 34591,
   "segments": [
    {
     "b": 33172,
@@ -9007,8 +8987,33 @@
     "s": "ring_battle",
     "login": null,
     "handoff": 34460,
+    "rc": 0,
+    "e": 34523,
+    "secs": 60,
+    "why": ""
+   },
+   {
+    "b": 34523,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     34523,
+     34538
+    ],
+    "handoff": 34548,
+    "rc": 1,
+    "e": 34562,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 34562,
+    "a": "chris",
+    "s": "dailyclaim",
+    "login": null,
+    "handoff": null,
     "rc": null,
-    "e": 34467
+    "e": 34591
    }
   ],
   "idle": []
@@ -9585,6 +9590,15 @@
  },
  "failures": [
   {
+   "ts": "2026-10-02T09:36:00",
+   "account": "chris",
+   "task": "island_challenge",
+   "rc": 1,
+   "secs": 12,
+   "why": "the Island Challenge home did not open",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261002_093548_island_challenge_chris__KEEP_0003_093600_final.png"
+  },
+  {
    "ts": "2026-10-02T09:26:40",
    "account": "skomain",
    "task": "paradise",
@@ -9614,14 +9628,14 @@
  ],
  "day": {
   "since": "2026-10-02T08:00",
-  "switches": 1,
-  "relogMinutes": 0.5,
-  "retries": 3,
+  "switches": 2,
+  "relogMinutes": 0.9,
+  "retries": 4,
   "tasks": {
    "island_challenge": {
-    "runs": 1,
-    "minutes": 0.5,
-    "failed": 1
+    "runs": 2,
+    "minutes": 0.7,
+    "failed": 2
    },
    "dailyclaim": {
     "runs": 1,
@@ -9696,6 +9710,11 @@
    "ultra_wormhole": {
     "runs": 1,
     "minutes": 4.0,
+    "failed": 0
+   },
+   "ring_battle": {
+    "runs": 1,
+    "minutes": 1.0,
     "failed": 0
    }
   }
@@ -10425,78 +10444,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-10-02T09:34"
+    "task": "dailyclaim",
+    "startsIn": 0.0,
+    "eta": "2026-10-02T09:36"
    },
    {
-    "account": "skomain",
-    "task": "ring_battle",
-    "startsIn": 1.3,
-    "eta": "2026-10-02T09:35"
-   },
-   {
-    "account": "skomain",
-    "task": "championship",
-    "startsIn": 3.3,
+    "account": "chris",
+    "task": "mail",
+    "startsIn": 0.6,
     "eta": "2026-10-02T09:37"
    },
    {
-    "account": "nova",
-    "task": "dailyclaim",
-    "startsIn": 5.7,
-    "eta": "2026-10-02T09:40"
-   },
-   {
-    "account": "nova",
-    "task": "mail",
-    "startsIn": 6.3,
-    "eta": "2026-10-02T09:40"
-   },
-   {
-    "account": "nova",
+    "account": "chris",
     "task": "joint_team_daily_quest",
-    "startsIn": 6.4,
+    "startsIn": 0.7,
+    "eta": "2026-10-02T09:37"
+   },
+   {
+    "account": "chris",
+    "task": "joint_battle",
+    "startsIn": 1.6,
+    "eta": "2026-10-02T09:38"
+   },
+   {
+    "account": "chris",
+    "task": "daily_dungeon",
+    "startsIn": 3.6,
     "eta": "2026-10-02T09:40"
    },
    {
-    "account": "nova",
-    "task": "joint_battle",
-    "startsIn": 7.3,
+    "account": "chris",
+    "task": "pokemon_home",
+    "startsIn": 3.8,
+    "eta": "2026-10-02T09:40"
+   },
+   {
+    "account": "chris",
+    "task": "weekend_bash",
+    "startsIn": 4.9,
     "eta": "2026-10-02T09:41"
    },
    {
-    "account": "nova",
-    "task": "daily_dungeon",
-    "startsIn": 9.3,
-    "eta": "2026-10-02T09:43"
-   },
-   {
-    "account": "nova",
-    "task": "pokemon_home",
-    "startsIn": 9.5,
-    "eta": "2026-10-02T09:43"
-   },
-   {
-    "account": "nova",
-    "task": "weekend_bash",
-    "startsIn": 10.6,
-    "eta": "2026-10-02T09:45"
-   },
-   {
-    "account": "nova",
+    "account": "chris",
     "task": "combat_daily",
-    "startsIn": 10.8,
-    "eta": "2026-10-02T09:45"
+    "startsIn": 5.1,
+    "eta": "2026-10-02T09:41"
    },
    {
-    "account": "nova",
+    "account": "chris",
     "task": "victory_road",
-    "startsIn": 12.6,
+    "startsIn": 6.9,
+    "eta": "2026-10-02T09:43"
+   },
+   {
+    "account": "chris",
+    "task": "paradise",
+    "startsIn": 7.0,
+    "eta": "2026-10-02T09:43"
+   },
+   {
+    "account": "chris",
+    "task": "run_pvp_ranked",
+    "startsIn": 10.8,
     "eta": "2026-10-02T09:47"
+   },
+   {
+    "account": "chris",
+    "task": "collect_hoopa_keys",
+    "startsIn": 12.1,
+    "eta": "2026-10-02T09:48"
    }
   ],
-  "more": 150,
+  "more": 148,
   "fillers": [
    {
     "account": "smurf",
@@ -10530,11 +10549,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 1,
-   "medianSec": 20,
+   "n": 2,
+   "medianSec": 17.5,
    "picker": {
-    "n": 0,
-    "medianSec": null,
+    "n": 1,
+    "medianSec": 15,
     "jumps": 0
    },
    "typed": {
@@ -10548,15 +10567,7 @@
   }
  },
  "progress": {
-  "skomain": {
-   "islandFights": 1,
-   "islandStamina": 7,
-   "mailUnread": 0,
-   "paradiseStamina": "2/12",
-   "rank": 10
-  },
   "nova": {
-   "rank": 2,
    "pillar": "floor 103 stage 5"
   },
   "jeff": {
@@ -10623,6 +10634,13 @@
   },
   "exou": {
    "mailUnread": 0
+  },
+  "skomain": {
+   "islandFights": 1,
+   "islandStamina": 7,
+   "mailUnread": 0,
+   "paradiseStamina": "2/12",
+   "rank": 10
   },
   "skosmurf": {
    "mailUnread": 0,
@@ -11011,7 +11029,6 @@
    ],
    "spent": {},
    "progress": {
-    "rank": 2,
     "pillar": "floor 103 stage 5"
    },
    "history": [
@@ -11268,10 +11285,17 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "island_challenge",
+     "at": "09:36",
+     "why": "the Island Challenge home did not open",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261002_093548_island_challenge_chris__KEEP_0003_093600_final.png"
+    }
+   ],
    "off": [],
    "unavailable": [],
    "spent": {
@@ -11319,7 +11343,7 @@
     {
      "day": "2026-10-02",
      "done": 1,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
@@ -12743,8 +12767,8 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-10-02",
-   "summary": "15 of 20 dailies done · 1 switched off · 1 not available today",
-   "done": 15,
+   "summary": "16 of 20 dailies done · 1 switched off · 1 not available today",
+   "done": 16,
    "owed": 20,
    "open": [
     {
@@ -12754,10 +12778,6 @@
     {
      "task": "fctn",
      "state": "not available today"
-    },
-    {
-     "task": "ring",
-     "state": "still to do"
     },
     {
      "task": "champ",
@@ -12826,7 +12846,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 15,
+     "done": 16,
      "failed": 2
     }
    ]
