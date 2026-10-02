@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T13:13:35.873748",
+ "generatedAt": "2026-10-02T13:15:39.566172",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "dailyclaim",
-  "since": "13:13:00"
+  "mode": "joint_battle",
+  "since": "13:15:01"
  },
  "grid": {
   "tasks": [
@@ -549,10 +549,10 @@
    {
     "account": "dre",
     "cells": [
-     "·",
+     "✓",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "✓",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 180,
-  "todo": 15,
+  "done": 183,
+  "todo": 12,
   "gaveUp": 0,
   "unavailable": 18,
   "windowed": 18
@@ -851,6 +851,61 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T13:15:00",
+   "script": "joint_team_daily_quest",
+   "account": "dre",
+   "rc": 0,
+   "secs": 50,
+   "stats": {
+    "panel_swipes": 8,
+    "marginal_squad_panel": 1,
+    "guild_base_by_back": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_131410_joint_team_daily_quest_dre"
+  },
+  {
+   "ts": "2026-10-02T13:14:08",
+   "script": "mail",
+   "account": "dre",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "claim_all_tapped": 1,
+    "mail_claimed": 1
+   },
+   "incomplete": [],
+   "values": {
+    "unread_before": 3,
+    "unread_after": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_131405_mail_dre"
+  },
+  {
+   "ts": "2026-10-02T13:14:04",
+   "script": "dailyclaim",
+   "account": "dre",
+   "rc": 0,
+   "secs": 34,
+   "stats": {
+    "signed_in": 1,
+    "privpack_claimed": 1,
+    "logingift_claimed": 1,
+    "egg_smashed": 1,
+    "claims": 4
+   },
+   "incomplete": [],
+   "values": {
+    "golden_egg": "smashed",
+    "rail_badges": "0.190:80 0.275:8 0.345:53 0.428:7 0.500:0"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_131329_dailyclaim_dre"
+  },
   {
    "ts": "2026-10-02T13:12:59",
    "script": "ring_battle",
@@ -8805,73 +8860,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20261001_114549_victory_road_skosmurf"
-  },
-  {
-   "ts": "2026-10-01T11:45:47",
-   "script": "combat_daily",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 108,
-   "stats": {
-    "title_reread_named": 4,
-    "marginal_battle_victory_confirm": 1,
-    "adv_overflow": 1,
-    "near_miss_battle_victory_confirm": 2,
-    "near_miss_vr_rank": 8,
-    "pokemon_upgraded": 1,
-    "gacha_ticket": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 6/6 + ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "ticket"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_114359_combat_daily_skosmurf"
-  },
-  {
-   "ts": "2026-10-01T11:43:57",
-   "script": "weekend_bash",
-   "account": "skosmurf",
-   "rc": 1,
-   "secs": 13,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "weekend_bash: tab 2 did not open"
-   ],
-   "values": {
-    "tickets": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_114344_weekend_bash_skosmurf"
-  },
-  {
-   "ts": "2026-10-01T11:43:42",
-   "script": "weekend_bash",
-   "account": "skosmurf",
-   "rc": 1,
-   "secs": 14,
-   "stats": {
-    "incomplete": 1
-   },
-   "incomplete": [
-    "weekend_bash: tab 2 did not open"
-   ],
-   "values": {
-    "tickets": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_114328_weekend_bash_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 47616,
+  "now": 47740,
   "segments": [
    {
     "b": 33172,
@@ -11027,8 +11021,41 @@
      47600
     ],
     "handoff": 47609,
+    "rc": 0,
+    "e": 47644,
+    "secs": 34,
+    "why": ""
+   },
+   {
+    "b": 47644,
+    "a": "dre",
+    "s": "mail",
+    "login": null,
+    "handoff": 47645,
+    "rc": 0,
+    "e": 47649,
+    "secs": 3,
+    "why": ""
+   },
+   {
+    "b": 47649,
+    "a": "dre",
+    "s": "joint_team_daily_quest",
+    "login": null,
+    "handoff": 47650,
+    "rc": 0,
+    "e": 47701,
+    "secs": 50,
+    "why": ""
+   },
+   {
+    "b": 47701,
+    "a": "dre",
+    "s": "joint_battle",
+    "login": null,
+    "handoff": 47703,
     "rc": null,
-    "e": 47616
+    "e": 47740
    }
   ],
   "idle": []
@@ -11743,18 +11770,18 @@
     "failed": 7
    },
    "dailyclaim": {
-    "runs": 11,
-    "minutes": 7.4,
+    "runs": 12,
+    "minutes": 7.9,
     "failed": 0
    },
    "mail": {
-    "runs": 11,
-    "minutes": 2.5,
+    "runs": 12,
+    "minutes": 2.6,
     "failed": 0
    },
    "joint_team_daily_quest": {
-    "runs": 8,
-    "minutes": 7.1,
+    "runs": 9,
+    "minutes": 8.0,
     "failed": 0
    },
    "daily_dungeon": {
@@ -12631,78 +12658,66 @@
   "next": [
    {
     "account": "dre",
-    "task": "dailyclaim",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T13:13"
-   },
-   {
-    "account": "dre",
-    "task": "mail",
-    "startsIn": 0.7,
-    "eta": "2026-10-02T13:14"
-   },
-   {
-    "account": "dre",
-    "task": "joint_team_daily_quest",
-    "startsIn": 0.9,
-    "eta": "2026-10-02T13:14"
-   },
-   {
-    "account": "dre",
     "task": "joint_battle",
-    "startsIn": 1.8,
+    "startsIn": 0.0,
     "eta": "2026-10-02T13:15"
    },
    {
     "account": "dre",
     "task": "daily_dungeon",
-    "startsIn": 3.8,
+    "startsIn": 2.0,
     "eta": "2026-10-02T13:17"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 4.0,
+    "startsIn": 2.2,
     "eta": "2026-10-02T13:17"
    },
    {
     "account": "dre",
     "task": "combat_daily",
-    "startsIn": 4.2,
-    "eta": "2026-10-02T13:17"
+    "startsIn": 2.4,
+    "eta": "2026-10-02T13:18"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 6.0,
+    "startsIn": 4.2,
     "eta": "2026-10-02T13:19"
    },
    {
     "account": "dre",
     "task": "paradise",
-    "startsIn": 6.1,
-    "eta": "2026-10-02T13:19"
+    "startsIn": 4.3,
+    "eta": "2026-10-02T13:20"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 9.4,
-    "eta": "2026-10-02T13:22"
+    "startsIn": 7.6,
+    "eta": "2026-10-02T13:23"
    },
    {
     "account": "dre",
     "task": "sky_pillar",
-    "startsIn": 9.5,
+    "startsIn": 7.7,
     "eta": "2026-10-02T13:23"
    },
    {
     "account": "dre",
     "task": "ultra_wormhole",
-    "startsIn": 10.6,
+    "startsIn": 8.8,
     "eta": "2026-10-02T13:24"
+   },
+   {
+    "account": "dre",
+    "task": "ring_battle",
+    "startsIn": 13.4,
+    "eta": "2026-10-02T13:29"
    }
   ],
-  "more": 1,
+  "more": 0,
   "fillers": [
    {
     "account": "smurf",
@@ -12730,11 +12745,11 @@
    }
   ],
   "held": {
-   "smurf": {
+   "jeff": {
     "until": "2026-10-02T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "jeff": {
+   "smurf": {
     "until": "2026-10-02T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12847,6 +12862,11 @@
   }
  },
  "ledger": {
+  "dre": {
+   "mail claimed": 1,
+   "daily claims": 4,
+   "Privilege Pack claimed": 1
+  },
   "deno": {
    "pillar/story stages cleared": 2,
    "guild war attempts": 1,
@@ -15211,22 +15231,10 @@
   "dre": {
    "name": "dre",
    "day": "2026-10-02",
-   "summary": "1 of 16 dailies done",
-   "done": 1,
+   "summary": "4 of 16 dailies done",
+   "done": 4,
    "owed": 16,
    "open": [
-    {
-     "task": "claims",
-     "state": "still to do"
-    },
-    {
-     "task": "mail",
-     "state": "still to do"
-    },
-    {
-     "task": "JointQ",
-     "state": "still to do"
-    },
     {
      "task": "JointB",
      "state": "still to do"
@@ -15279,7 +15287,11 @@
    "issues": [],
    "off": [],
    "unavailable": [],
-   "spent": {},
+   "spent": {
+    "mail claimed": 1,
+    "daily claims": 4,
+    "Privilege Pack claimed": 1
+   },
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "1/16",
@@ -15318,7 +15330,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 1,
+     "done": 4,
      "failed": 0
     }
    ]
