@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T10:40:42.526990",
+ "generatedAt": "2026-10-02T10:42:46.678435",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "run_pvp_ranked",
-  "since": "10:39:36"
+  "mode": "ultra_wormhole",
+  "since": "10:42:17"
  },
  "grid": {
   "tasks": [
@@ -49,9 +49,9 @@
      "⏰",
      "✓",
      "✓",
-     "·",
-     "·",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "-",
      "-",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 60,
-  "todo": 116,
+  "done": 63,
+  "todo": 113,
   "gaveUp": 0,
   "unavailable": 12,
   "windowed": 18
@@ -839,6 +839,77 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T10:42:15",
+   "script": "sky_pillar",
+   "account": "nova",
+   "rc": 0,
+   "secs": 43,
+   "stats": {
+    "stages_cleared": 3,
+    "floor_reward_claimed": 1,
+    "marginal_sky_pillar": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 103,
+    "stage": 8,
+    "proofs_spent": 3
+   },
+   "values_all": {
+    "floor": [
+     103,
+     103,
+     103
+    ],
+    "stage": [
+     6,
+     7,
+     8
+    ]
+   },
+   "dir": "debug_runs/20261002_104132_sky_pillar_nova"
+  },
+  {
+   "ts": "2026-10-02T10:41:30",
+   "script": "collect_hoopa_keys",
+   "account": "nova",
+   "rc": 0,
+   "secs": 5,
+   "stats": {
+    "vault_visited": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_104125_collect_hoopa_keys_nova"
+  },
+  {
+   "ts": "2026-10-02T10:41:23",
+   "script": "run_pvp_ranked",
+   "account": "nova",
+   "rc": 0,
+   "secs": 80,
+   "stats": {
+    "ranked_fought": 10,
+    "ranked_lost": 1,
+    "ranked_won": 9,
+    "picker_retry": 1,
+    "free_attempts_spent": 1,
+    "rank_places_gained": -5,
+    "rank_went_backwards": 1,
+    "daily_goal_claimed": 3
+   },
+   "incomplete": [],
+   "values": {
+    "ranked_wins": 9,
+    "rank": 7,
+    "daily_goal_claims": 3
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_104003_run_pvp_ranked_nova"
+  },
   {
    "ts": "2026-10-02T10:39:35",
    "script": "championship",
@@ -8730,84 +8801,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_093458_run_pvp_ranked_smurf"
-  },
-  {
-   "ts": "2026-10-01T09:34:56",
-   "script": "paradise",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 226,
-   "stats": {
-    "marginal_paradise_hub": 1,
-    "explore_clicks": 122,
-    "pass_claims": 8,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 2,
-    "upgraded_energy_drink": 1,
-    "dex_activated": 0,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "9/19",
-    "event_end": "2026-10-06",
-    "shop_window": "saved"
-   },
-   "values_all": {
-    "event_end": [
-     "2026-10-06",
-     "2026-10-06"
-    ]
-   },
-   "dir": "debug_runs/20261001_093109_paradise_smurf"
-  },
-  {
-   "ts": "2026-10-01T09:31:07",
-   "script": "victory_road",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_093101_victory_road_smurf"
-  },
-  {
-   "ts": "2026-10-01T09:30:59",
-   "script": "combat_daily",
-   "account": "smurf",
-   "rc": 0,
-   "secs": 114,
-   "stats": {
-    "title_reread_named": 3,
-    "marginal_afk_rewards": 4,
-    "refused_quick_bar": 1,
-    "adv_overflow": 1,
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 3,
-    "marginal_pokemon_upgrade": 2,
-    "pokemon_upgraded": 1,
-    "gacha_free": 1,
-    "island_shop_bought": 1
-   },
-   "incomplete": [],
-   "values": {
-    "accelerations_left": "accelerations left: 33 +) ac",
-    "quick_combat_cost": "free free",
-    "gacha_one_cost": "free"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_092905_combat_daily_smurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 38443,
+  "now": 38567,
   "segments": [
    {
     "b": 33172,
@@ -9618,8 +9617,41 @@
      38393
     ],
     "handoff": 38402,
+    "rc": 0,
+    "e": 38485,
+    "secs": 80,
+    "why": ""
+   },
+   {
+    "b": 38485,
+    "a": "nova",
+    "s": "collect_hoopa_keys",
+    "login": null,
+    "handoff": 38485,
+    "rc": 0,
+    "e": 38491,
+    "secs": 5,
+    "why": ""
+   },
+   {
+    "b": 38491,
+    "a": "nova",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 38492,
+    "rc": 0,
+    "e": 38537,
+    "secs": 43,
+    "why": ""
+   },
+   {
+    "b": 38537,
+    "a": "nova",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 38540,
     "rc": null,
-    "e": 38443
+    "e": 38567
    }
   ],
   "idle": []
@@ -10312,18 +10344,18 @@
     "failed": 0
    },
    "run_pvp_ranked": {
-    "runs": 3,
-    "minutes": 4.2,
+    "runs": 4,
+    "minutes": 5.6,
     "failed": 0
    },
    "collect_hoopa_keys": {
-    "runs": 3,
-    "minutes": 0.2,
+    "runs": 4,
+    "minutes": 0.3,
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 3,
-    "minutes": 2.3,
+    "runs": 4,
+    "minutes": 3.0,
     "failed": 0
    },
    "faction": {
@@ -11079,78 +11111,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "run_pvp_ranked",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T10:40"
-   },
-   {
-    "account": "nova",
-    "task": "collect_hoopa_keys",
-    "startsIn": 1.4,
-    "eta": "2026-10-02T10:42"
-   },
-   {
-    "account": "nova",
-    "task": "sky_pillar",
-    "startsIn": 1.5,
-    "eta": "2026-10-02T10:42"
-   },
-   {
-    "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 2.2,
+    "startsIn": 0.0,
     "eta": "2026-10-02T10:42"
    },
    {
     "account": "nova",
     "task": "ring_battle",
-    "startsIn": 6.3,
-    "eta": "2026-10-02T10:47"
+    "startsIn": 4.1,
+    "eta": "2026-10-02T10:46"
    },
    {
     "account": "smurf",
     "task": "dailyclaim",
-    "startsIn": 7.7,
+    "startsIn": 5.5,
     "eta": "2026-10-02T10:48"
    },
    {
     "account": "smurf",
     "task": "mail",
-    "startsIn": 8.2,
+    "startsIn": 6.0,
     "eta": "2026-10-02T10:48"
    },
    {
     "account": "smurf",
     "task": "joint_team_daily_quest",
-    "startsIn": 8.3,
-    "eta": "2026-10-02T10:49"
+    "startsIn": 6.1,
+    "eta": "2026-10-02T10:48"
    },
    {
     "account": "smurf",
     "task": "joint_battle",
-    "startsIn": 9.2,
+    "startsIn": 6.9,
     "eta": "2026-10-02T10:49"
    },
    {
     "account": "smurf",
     "task": "daily_dungeon",
-    "startsIn": 11.2,
+    "startsIn": 8.9,
     "eta": "2026-10-02T10:51"
    },
    {
     "account": "smurf",
     "task": "pokemon_home",
-    "startsIn": 11.4,
-    "eta": "2026-10-02T10:52"
+    "startsIn": 9.1,
+    "eta": "2026-10-02T10:51"
    },
    {
     "account": "smurf",
     "task": "weekend_bash",
-    "startsIn": 12.5,
+    "startsIn": 10.3,
     "eta": "2026-10-02T10:53"
+   },
+   {
+    "account": "smurf",
+    "task": "combat_daily",
+    "startsIn": 10.5,
+    "eta": "2026-10-02T10:53"
+   },
+   {
+    "account": "smurf",
+    "task": "victory_road",
+    "startsIn": 12.2,
+    "eta": "2026-10-02T10:54"
+   },
+   {
+    "account": "smurf",
+    "task": "paradise",
+    "startsIn": 12.3,
+    "eta": "2026-10-02T10:55"
    }
   ],
-  "more": 104,
+  "more": 101,
   "fillers": [
    {
     "account": "smurf",
@@ -11203,7 +11235,6 @@
  },
  "progress": {
   "smurf": {
-   "paradiseStamina": "9/19",
    "rank": 1,
    "pillar": "floor 21 stage 1",
    "misty": "step 4"
@@ -11306,10 +11337,22 @@
    "pillar": "floor 90 stage 1"
   },
   "nova": {
-   "mailUnread": 0
+   "mailUnread": 0,
+   "rank": 7,
+   "pillar": "floor 103 stage 8"
   }
  },
  "ledger": {
+  "nova": {
+   "pillar/story stages cleared": 3,
+   "ranked attempts": 1,
+   "guild war attempts": 1,
+   "Island Shop buys (200 coins)": 1,
+   "Home creations": 50,
+   "mail claimed": 1,
+   "daily claims": 4,
+   "Privilege Pack claimed": 1
+  },
   "jeff": {
    "pillar/story stages cleared": 4,
    "ranked attempts": 1,
@@ -11328,14 +11371,6 @@
    "island fights": 10,
    "Island Shop buys (200 coins)": 1,
    "Home creations": 50,
-   "daily claims": 4,
-   "Privilege Pack claimed": 1
-  },
-  "nova": {
-   "guild war attempts": 1,
-   "Island Shop buys (200 coins)": 1,
-   "Home creations": 50,
-   "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
   },
@@ -11608,8 +11643,8 @@
   "nova": {
    "name": "nova",
    "day": "2026-10-02",
-   "summary": "11 of 18 dailies done · 1 not available today",
-   "done": 11,
+   "summary": "14 of 18 dailies done · 1 not available today",
+   "done": 14,
    "owed": 18,
    "open": [
     {
@@ -11619,18 +11654,6 @@
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "pvpRank",
-     "state": "still to do"
-    },
-    {
-     "task": "hoopa",
-     "state": "still to do"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "wormhole",
@@ -11669,6 +11692,8 @@
     }
    ],
    "spent": {
+    "pillar/story stages cleared": 3,
+    "ranked attempts": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "Home creations": 50,
@@ -11677,7 +11702,9 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0
+    "mailUnread": 0,
+    "rank": 7,
+    "pillar": "floor 103 stage 8"
    },
    "history": [
     {
@@ -11712,7 +11739,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 9,
+     "done": 12,
      "failed": 2
     }
    ]
@@ -11994,7 +12021,6 @@
    "unavailable": [],
    "spent": {},
    "progress": {
-    "paradiseStamina": "9/19",
     "rank": 1,
     "pillar": "floor 21 stage 1",
     "misty": "step 4"
