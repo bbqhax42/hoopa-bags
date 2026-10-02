@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T12:54:58.560686",
+ "generatedAt": "2026-10-02T12:57:02.264337",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "lucifer2",
-  "mode": "ultra_wormhole",
-  "since": "12:51:09"
+  "account": "chris",
+  "mode": "island_challenge",
+  "since": "12:56:12"
  },
  "grid": {
   "tasks": [
@@ -111,7 +111,7 @@
      "✓",
      "✓",
      "·",
-     "·"
+     "⏳"
     ]
    },
    {
@@ -200,19 +200,19 @@
     "cells": [
      "⇢",
      "⊘",
-     "⇢",
+     "✓",
      "⇢",
      "⇢",
      "⇢",
      "✓",
      "-",
      "⇢",
-     "⇢",
+     "✓",
      "⏰",
      "⇢",
      "⇢",
      "-",
-     "⇢",
+     "✓",
      "⇢",
      "⇢",
      "-",
@@ -486,8 +486,8 @@
      "✓",
      "-",
      "-",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "-",
      "-"
     ]
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 156,
-  "todo": 32,
+  "done": 161,
+  "todo": 29,
   "gaveUp": 0,
   "unavailable": 17,
   "windowed": 18
@@ -731,11 +731,11 @@
  "islandChallenge": [
   {
    "account": "chris",
-   "fights": 3,
-   "stamina": 13,
-   "staminaMax": 13,
-   "staminaAt": "2026-10-02T10:06:50",
-   "nextAt": "2026-10-02T12:48:55"
+   "fights": 5,
+   "stamina": 1,
+   "staminaMax": 38,
+   "staminaAt": "2026-10-02T12:57:02",
+   "nextAt": null
   },
   {
    "account": "jeff",
@@ -838,11 +838,52 @@
   }
  },
  "session": {
-  "label": "lucifer2",
-  "at": "2026-10-02T12:47:00.869518",
+  "label": "chris",
+  "at": "2026-10-02T12:56:27.113824",
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T12:56:11",
+   "script": "ring_battle",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 61,
+   "stats": {
+    "ring_wins": 6,
+    "ring_chests": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_125509_ring_battle_lucifer2"
+  },
+  {
+   "ts": "2026-10-02T12:55:06",
+   "script": "ultra_wormhole",
+   "account": "lucifer2",
+   "rc": 0,
+   "secs": 233,
+   "stats": {
+    "hired": 65,
+    "wins": 16,
+    "losses": 1,
+    "rewards_claimed": 5,
+    "claims_after_reopen": 1
+   },
+   "incomplete": [],
+   "values": {
+    "rewards_claimed": 5,
+    "wins_today": 16
+   },
+   "values_all": {
+    "rewards_claimed": [
+     0,
+     5
+    ]
+   },
+   "dir": "debug_runs/20261002_125112_ultra_wormhole_lucifer2"
+  },
   {
    "ts": "2026-10-02T12:51:08",
    "script": "sky_pillar",
@@ -8796,65 +8837,12 @@
     ]
    },
    "dir": "debug_runs/20261001_113322_island_challenge_skomain"
-  },
-  {
-   "ts": "2026-10-01T11:32:53",
-   "script": "dailyclaim",
-   "account": "exou",
-   "rc": 0,
-   "secs": 30,
-   "stats": {
-    "signed_in": 1,
-    "privpack_already": 1,
-    "logingift_claimed": 1,
-    "egg_smashed": 1,
-    "claims": 3
-   },
-   "incomplete": [],
-   "values": {
-    "golden_egg": "smashed",
-    "rail_badges": "0.190:78 0.275:0 0.345:52 0.428:7 0.500:0"
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_113222_dailyclaim_exou"
-  },
-  {
-   "ts": "2026-10-01T11:31:52",
-   "script": "sky_pillar",
-   "account": "sprite",
-   "rc": 0,
-   "secs": 43,
-   "stats": {
-    "stages_cleared": 3,
-    "floor_reward_claimed": 1,
-    "marginal_sky_pillar": 1,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 52,
-    "stage": 9,
-    "proofs_spent": 3
-   },
-   "values_all": {
-    "floor": [
-     52,
-     52,
-     52
-    ],
-    "stage": [
-     7,
-     8,
-     9
-    ]
-   },
-   "dir": "debug_runs/20261001_113108_sky_pillar_sprite"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 46499,
+  "now": 46622,
   "segments": [
    {
     "b": 33172,
@@ -10805,8 +10793,33 @@
     "s": "ultra_wormhole",
     "login": null,
     "handoff": 46272,
+    "rc": 0,
+    "e": 46507,
+    "secs": 233,
+    "why": ""
+   },
+   {
+    "b": 46507,
+    "a": "lucifer2",
+    "s": "ring_battle",
+    "login": null,
+    "handoff": 46509,
+    "rc": 0,
+    "e": 46572,
+    "secs": 61,
+    "why": ""
+   },
+   {
+    "b": 46572,
+    "a": "chris",
+    "s": "island_challenge",
+    "login": [
+     46573,
+     46587
+    ],
+    "handoff": 46597,
     "rc": null,
-    "e": 46499
+    "e": 46622
    }
   ],
   "idle": []
@@ -11502,8 +11515,8 @@
  ],
  "day": {
   "since": "2026-10-02T08:00",
-  "switches": 17,
-  "relogMinutes": 8.3,
+  "switches": 18,
+  "relogMinutes": 8.7,
   "retries": 21,
   "tasks": {
    "island_challenge": {
@@ -11582,13 +11595,13 @@
     "failed": 2
    },
    "ultra_wormhole": {
-    "runs": 7,
-    "minutes": 33.9,
+    "runs": 8,
+    "minutes": 37.8,
     "failed": 0
    },
    "ring_battle": {
-    "runs": 7,
-    "minutes": 7.6,
+    "runs": 8,
+    "minutes": 8.7,
     "failed": 0
    },
    "championship": {
@@ -12253,6 +12266,12 @@
  },
  "changes": [
   {
+   "sha": "6e3bb81",
+   "ts": "2026-10-02T12:55:59",
+   "area": "browser requests",
+   "subject": "mail, sign-in, Victory Road commission, Hoopa keys; Home on every account"
+  },
+  {
    "sha": "bd60175",
    "ts": "2026-10-02T12:39:33",
    "area": "browser build",
@@ -12370,78 +12389,78 @@
   "next": [
    {
     "account": "chris",
-    "task": "island_challenge",
-    "startsIn": 0.4,
-    "eta": "2026-10-02T12:55"
-   },
-   {
-    "account": "lucifer2",
-    "task": "ultra_wormhole",
-    "startsIn": 1.3,
-    "eta": "2026-10-02T12:56"
-   },
-   {
-    "account": "lucifer2",
-    "task": "ring_battle",
-    "startsIn": 6.1,
-    "eta": "2026-10-02T13:01"
+    "task": "championship",
+    "startsIn": 0.0,
+    "eta": "2026-10-02T12:57"
    },
    {
     "account": "deno",
     "task": "dailyclaim",
-    "startsIn": 7.6,
-    "eta": "2026-10-02T13:02"
+    "startsIn": 0.5,
+    "eta": "2026-10-02T12:57"
    },
    {
     "account": "deno",
     "task": "mail",
-    "startsIn": 8.3,
-    "eta": "2026-10-02T13:03"
+    "startsIn": 1.2,
+    "eta": "2026-10-02T12:58"
    },
    {
     "account": "deno",
     "task": "joint_team_daily_quest",
-    "startsIn": 8.5,
-    "eta": "2026-10-02T13:03"
+    "startsIn": 1.4,
+    "eta": "2026-10-02T12:58"
    },
    {
     "account": "deno",
     "task": "joint_battle",
-    "startsIn": 9.4,
-    "eta": "2026-10-02T13:04"
+    "startsIn": 2.3,
+    "eta": "2026-10-02T12:59"
    },
    {
     "account": "deno",
     "task": "daily_dungeon",
-    "startsIn": 11.4,
-    "eta": "2026-10-02T13:06"
+    "startsIn": 4.3,
+    "eta": "2026-10-02T13:01"
    },
    {
     "account": "deno",
     "task": "weekend_bash",
-    "startsIn": 11.7,
-    "eta": "2026-10-02T13:06"
+    "startsIn": 4.5,
+    "eta": "2026-10-02T13:01"
    },
    {
     "account": "deno",
     "task": "combat_daily",
-    "startsIn": 11.9,
-    "eta": "2026-10-02T13:06"
+    "startsIn": 4.8,
+    "eta": "2026-10-02T13:01"
    },
    {
     "account": "deno",
     "task": "victory_road",
-    "startsIn": 13.7,
-    "eta": "2026-10-02T13:08"
+    "startsIn": 6.5,
+    "eta": "2026-10-02T13:03"
    },
    {
     "account": "deno",
     "task": "paradise",
-    "startsIn": 13.8,
-    "eta": "2026-10-02T13:08"
+    "startsIn": 6.7,
+    "eta": "2026-10-02T13:03"
+   },
+   {
+    "account": "deno",
+    "task": "collect_hoopa_keys",
+    "startsIn": 9.9,
+    "eta": "2026-10-02T13:06"
+   },
+   {
+    "account": "deno",
+    "task": "sky_pillar",
+    "startsIn": 10.0,
+    "eta": "2026-10-02T13:07"
    }
   ],
-  "more": 18,
+  "more": 15,
   "fillers": [
    {
     "account": "smurf",
@@ -12484,11 +12503,11 @@
   "restarts": 0,
   "downtimeMin": 0.0,
   "switches": {
-   "n": 16,
-   "medianSec": 18.0,
+   "n": 17,
+   "medianSec": 18,
    "picker": {
-    "n": 8,
-    "medianSec": 15.0,
+    "n": 9,
+    "medianSec": 15,
     "jumps": 4
    },
    "typed": {
@@ -12502,20 +12521,16 @@
   }
  },
  "progress": {
-  "sprite": {
-   "pillar": "floor 53 stage 2",
-   "mailUnread": 0
-  },
-  "exou": {
-   "mailUnread": 0,
-   "pillar": "floor 142 stage 2"
-  },
   "skomain": {
    "islandFights": 4,
    "islandStamina": 10,
    "mailUnread": 0,
    "paradiseStamina": "2/12",
    "rank": 10
+  },
+  "exou": {
+   "mailUnread": 0,
+   "pillar": "floor 142 stage 2"
   },
   "skosmurf": {
    "mailUnread": 0,
@@ -12583,7 +12598,11 @@
   "fake3": {},
   "fake4": {},
   "fake5": {},
-  "fake6": {}
+  "fake6": {},
+  "sprite": {
+   "mailUnread": 0,
+   "pillar": "floor 53 stage 2"
+  }
  },
  "ledger": {
   "lucifer2": {
@@ -13177,7 +13196,7 @@
     },
     {
      "task": "island",
-     "state": "still to do"
+     "state": "cooling off"
     }
    ],
    "issues": [
@@ -13610,8 +13629,8 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-10-02",
-   "summary": "1 of 15 dailies done · 2 switched off · 1 not available today",
-   "done": 1,
+   "summary": "4 of 15 dailies done · 2 switched off · 1 not available today",
+   "done": 4,
    "owed": 15,
    "open": [
     {
@@ -13621,10 +13640,6 @@
     {
      "task": "tshop",
      "state": "not available today"
-    },
-    {
-     "task": "mail",
-     "state": "waits on another task"
     },
     {
      "task": "JointQ",
@@ -13643,10 +13658,6 @@
      "state": "waits on another task"
     },
     {
-     "task": "victory",
-     "state": "waits on another task"
-    },
-    {
      "task": "victoryRank",
      "state": "waits for its window"
     },
@@ -13656,10 +13667,6 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
-    },
-    {
-     "task": "hoopa",
      "state": "waits on another task"
     },
     {
@@ -14254,8 +14261,8 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "pillar": "floor 53 stage 2",
-    "mailUnread": 0
+    "mailUnread": 0,
+    "pillar": "floor 53 stage 2"
    },
    "history": [
     {
@@ -14664,21 +14671,13 @@
   "lucifer2": {
    "name": "lucifer2",
    "day": "2026-10-02",
-   "summary": "14 of 17 dailies done · 2 switched off",
-   "done": 14,
+   "summary": "16 of 17 dailies done · 2 switched off",
+   "done": 16,
    "owed": 17,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "wormhole",
-     "state": "still to do"
-    },
-    {
-     "task": "ring",
-     "state": "still to do"
     }
    ],
    "issues": [
@@ -14757,7 +14756,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 14,
+     "done": 16,
      "failed": 1
     }
    ]
