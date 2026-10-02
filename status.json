@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T13:07:24.522927",
+ "generatedAt": "2026-10-02T13:09:28.285290",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "sky_pillar",
-  "since": "13:07:21"
+  "mode": "ultra_wormhole",
+  "since": "13:07:50"
  },
  "grid": {
   "tasks": [
@@ -537,7 +537,7 @@
      "✓",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 173,
-  "todo": 18,
+  "done": 174,
+  "todo": 17,
   "gaveUp": 0,
   "unavailable": 18,
   "windowed": 18
@@ -766,6 +766,13 @@
    "held": true,
    "heldUntil": "2026-10-02T14:30:00",
    "deferredUntil": "2026-10-02T14:30:12"
+  },
+  {
+   "account": "fake4",
+   "since": "2026-10-02T14:20:00",
+   "held": true,
+   "heldUntil": "2026-10-02T14:30:00",
+   "deferredUntil": "2026-10-02T14:30:12"
   }
  ],
  "keys": {
@@ -844,6 +851,34 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T13:07:49",
+   "script": "sky_pillar",
+   "account": "deno",
+   "rc": 0,
+   "secs": 27,
+   "stats": {
+    "stages_cleared": 2,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 30,
+    "stage": 10,
+    "proofs_spent": 2
+   },
+   "values_all": {
+    "floor": [
+     30,
+     30
+    ],
+    "stage": [
+     9,
+     10
+    ]
+   },
+   "dir": "debug_runs/20261002_130721_sky_pillar_deno"
+  },
   {
    "ts": "2026-10-02T13:07:20",
    "script": "collect_hoopa_keys",
@@ -8824,30 +8859,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20261001_114013_daily_dungeon_skosmurf"
-  },
-  {
-   "ts": "2026-10-01T11:40:08",
-   "script": "mail",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 3,
-   "stats": {
-    "claim_all_tapped": 1,
-    "mail_claimed": 1
-   },
-   "incomplete": [],
-   "values": {
-    "unread_before": 1,
-    "unread_after": 0
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_114005_mail_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 47245,
+  "now": 47368,
   "segments": [
    {
     "b": 33172,
@@ -10967,8 +10984,19 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 47241,
+    "rc": 0,
+    "e": 47270,
+    "secs": 27,
+    "why": ""
+   },
+   {
+    "b": 47270,
+    "a": "deno",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 47273,
     "rc": null,
-    "e": 47245
+    "e": 47368
    }
   ],
   "idle": []
@@ -11743,8 +11771,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 11,
-    "minutes": 12.9,
+    "runs": 12,
+    "minutes": 13.3,
     "failed": 1
    },
    "faction": {
@@ -12430,6 +12458,12 @@
  },
  "changes": [
   {
+   "sha": "4b6904c",
+   "ts": "2026-10-02T13:08:50",
+   "area": "browser requests",
+   "subject": "battles (the tower), a request recorder, browser_run.py"
+  },
+  {
    "sha": "f90c86d",
    "ts": "2026-10-02T13:02:12",
    "area": "browser requests",
@@ -12559,78 +12593,78 @@
   "next": [
    {
     "account": "deno",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T13:07"
-   },
-   {
-    "account": "deno",
     "task": "ultra_wormhole",
-    "startsIn": 1.2,
-    "eta": "2026-10-02T13:08"
+    "startsIn": 0.0,
+    "eta": "2026-10-02T13:09"
    },
    {
     "account": "deno",
     "task": "ring_battle",
-    "startsIn": 5.9,
-    "eta": "2026-10-02T13:13"
-   },
-   {
-    "account": "dre",
-    "task": "dailyclaim",
-    "startsIn": 7.4,
+    "startsIn": 4.7,
     "eta": "2026-10-02T13:14"
    },
    {
     "account": "dre",
+    "task": "dailyclaim",
+    "startsIn": 6.2,
+    "eta": "2026-10-02T13:15"
+   },
+   {
+    "account": "dre",
     "task": "mail",
-    "startsIn": 8.1,
-    "eta": "2026-10-02T13:15"
-   },
-   {
-    "account": "dre",
-    "task": "joint_team_daily_quest",
-    "startsIn": 8.3,
-    "eta": "2026-10-02T13:15"
-   },
-   {
-    "account": "dre",
-    "task": "joint_battle",
-    "startsIn": 9.2,
+    "startsIn": 6.9,
     "eta": "2026-10-02T13:16"
    },
    {
     "account": "dre",
+    "task": "joint_team_daily_quest",
+    "startsIn": 7.1,
+    "eta": "2026-10-02T13:16"
+   },
+   {
+    "account": "dre",
+    "task": "joint_battle",
+    "startsIn": 8.0,
+    "eta": "2026-10-02T13:17"
+   },
+   {
+    "account": "dre",
     "task": "daily_dungeon",
-    "startsIn": 11.2,
-    "eta": "2026-10-02T13:18"
+    "startsIn": 10.0,
+    "eta": "2026-10-02T13:19"
    },
    {
     "account": "dre",
     "task": "weekend_bash",
-    "startsIn": 11.4,
-    "eta": "2026-10-02T13:18"
+    "startsIn": 10.2,
+    "eta": "2026-10-02T13:19"
    },
    {
     "account": "dre",
     "task": "combat_daily",
-    "startsIn": 11.6,
+    "startsIn": 10.4,
     "eta": "2026-10-02T13:19"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 13.4,
-    "eta": "2026-10-02T13:20"
+    "startsIn": 12.2,
+    "eta": "2026-10-02T13:21"
    },
    {
     "account": "dre",
     "task": "paradise",
-    "startsIn": 13.5,
-    "eta": "2026-10-02T13:20"
+    "startsIn": 12.3,
+    "eta": "2026-10-02T13:21"
+   },
+   {
+    "account": "dre",
+    "task": "collect_hoopa_keys",
+    "startsIn": 15.6,
+    "eta": "2026-10-02T13:25"
    }
   ],
-  "more": 4,
+  "more": 3,
   "fillers": [
    {
     "account": "smurf",
@@ -12692,10 +12726,10 @@
  },
  "progress": {
   "skosmurf": {
-   "mailUnread": 0,
    "paradiseStamina": "16/16",
    "rank": 1,
    "pillar": "floor 24 stage 8",
+   "mailUnread": 0,
    "misty": "step 4"
   },
   "skomain": {
@@ -12733,7 +12767,7 @@
   "deno": {
    "mailUnread": 0,
    "paradiseStamina": "2/15",
-   "pillar": "floor 30 stage 8"
+   "pillar": "floor 30 stage 10"
   },
   "jeff": {
    "islandFights": 3,
@@ -12776,6 +12810,7 @@
  },
  "ledger": {
   "deno": {
+   "pillar/story stages cleared": 2,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
@@ -12968,6 +13003,15 @@
   },
   {
    "account": "fake3",
+   "task": null,
+   "kind": "online",
+   "since": "2026-10-02T14:20:00",
+   "why": "someone is playing on it",
+   "action": "left alone until 14:30",
+   "enable": false
+  },
+  {
+   "account": "fake4",
    "task": null,
    "kind": "online",
    "since": "2026-10-02T14:20:00",
@@ -14642,10 +14686,10 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0,
     "paradiseStamina": "16/16",
     "rank": 1,
     "pillar": "floor 24 stage 8",
+    "mailUnread": 0,
     "misty": "step 4"
    },
    "history": [
@@ -15079,17 +15123,13 @@
   "deno": {
    "name": "deno",
    "day": "2026-10-02",
-   "summary": "12 of 16 dailies done",
-   "done": 12,
+   "summary": "13 of 16 dailies done",
+   "done": 13,
    "owed": 16,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "wormhole",
@@ -15104,6 +15144,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 2,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
@@ -15113,7 +15154,7 @@
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "2/15",
-    "pillar": "floor 30 stage 8"
+    "pillar": "floor 30 stage 10"
    },
    "history": [
     {
@@ -15148,7 +15189,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 11,
+     "done": 12,
      "failed": 0
     }
    ]
