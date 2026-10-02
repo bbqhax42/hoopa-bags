@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T11:26:11.250638",
+ "generatedAt": "2026-10-02T11:28:14.947587",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
-  "account": "exou",
-  "mode": "sky_pillar",
-  "since": "11:23:56"
+  "account": "skosmurf",
+  "mode": "dailyclaim",
+  "since": "11:27:22"
  },
  "grid": {
   "tasks": [
@@ -375,7 +375,7 @@
      "✓",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "-",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 101,
-  "todo": 75,
+  "done": 102,
+  "todo": 74,
   "gaveUp": 0,
   "unavailable": 14,
   "windowed": 18
@@ -840,6 +840,44 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T11:27:21",
+   "script": "sky_pillar",
+   "account": "exou",
+   "rc": 0,
+   "secs": 3,
+   "stats": {
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "proofs_spent": 0
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_112717_sky_pillar_exou"
+  },
+  {
+   "ts": "2026-10-02T11:27:03",
+   "script": "sky_pillar",
+   "account": "exou",
+   "rc": 1,
+   "secs": 186,
+   "stats": {
+    "stages_cleared": 1,
+    "no_pillar_after_result": 1,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "sky_pillar: stage 2 did not complete"
+   ],
+   "values": {
+    "floor": 142,
+    "stage": 2,
+    "proofs_spent": 1
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_112356_sky_pillar_exou"
+  },
   {
    "ts": "2026-10-02T11:23:55",
    "script": "collect_hoopa_keys",
@@ -8741,66 +8779,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_103153_dailyclaim_fake4"
-  },
-  {
-   "ts": "2026-10-01T10:31:28",
-   "script": "faction",
-   "account": "fake3",
-   "rc": 1,
-   "secs": 82,
-   "stats": {
-    "auto_formation": 12,
-    "skip_retry": 9,
-    "incomplete": 1,
-    "lost_water": 1,
-    "faction_disabled": 1,
-    "floors_water": 11,
-    "sweeps_used": 2
-   },
-   "incomplete": [
-    "faction: water tower: lost the battle after 11 win(s) — the team needs adjusting"
-   ],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_103006_faction_fake3"
-  },
-  {
-   "ts": "2026-10-01T10:30:01",
-   "script": "sky_pillar",
-   "account": "fake3",
-   "rc": 0,
-   "secs": 93,
-   "stats": {
-    "stages_cleared": 3,
-    "floor_reward_claimed": 1,
-    "marginal_sky_pillar": 1,
-    "floor_backlog_clear": 1
-   },
-   "incomplete": [],
-   "values": {
-    "floor": 6,
-    "stage": 10,
-    "proofs_spent": 3
-   },
-   "values_all": {
-    "floor": [
-     6,
-     6,
-     6
-    ],
-    "stage": [
-     8,
-     9,
-     10
-    ]
-   },
-   "dir": "debug_runs/20261001_102828_sky_pillar_fake3"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 41171,
+  "now": 41295,
   "segments": [
    {
     "b": 33172,
@@ -10102,8 +10086,33 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 41036,
+    "rc": 1,
+    "e": 41224,
+    "secs": 186,
+    "why": "sky_pillar: stage 2 did not complete"
+   },
+   {
+    "b": 41224,
+    "a": "exou",
+    "s": "sky_pillar",
+    "login": null,
+    "handoff": 41237,
+    "rc": 1,
+    "e": 41242,
+    "secs": 186,
+    "why": "sky_pillar: stage 2 did not complete"
+   },
+   {
+    "b": 41242,
+    "a": "skosmurf",
+    "s": "dailyclaim",
+    "login": [
+     41243,
+     null
+    ],
+    "handoff": null,
     "rc": null,
-    "e": 41171
+    "e": 41295
    }
   ],
   "idle": []
@@ -10680,6 +10689,15 @@
  },
  "failures": [
   {
+   "ts": "2026-10-02T11:27:03",
+   "account": "exou",
+   "task": "sky_pillar",
+   "rc": 1,
+   "secs": 186,
+   "why": "sky_pillar: stage 2 did not complete",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261002_112356_sky_pillar_exou__KEEP_0005_112703_final.png"
+  },
+  {
    "ts": "2026-10-02T11:04:34",
    "account": "smurf",
    "task": "faction",
@@ -10745,9 +10763,9 @@
  ],
  "day": {
   "since": "2026-10-02T08:00",
-  "switches": 10,
+  "switches": 11,
   "relogMinutes": 4.3,
-  "retries": 13,
+  "retries": 14,
   "tasks": {
    "island_challenge": {
     "runs": 4,
@@ -10815,9 +10833,9 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 6,
-    "minutes": 5.3,
-    "failed": 0
+    "runs": 8,
+    "minutes": 8.4,
+    "failed": 1
    },
    "faction": {
     "runs": 3,
@@ -11588,79 +11606,79 @@
  "queue": {
   "next": [
    {
-    "account": "exou",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T11:26"
-   },
-   {
     "account": "skosmurf",
     "task": "dailyclaim",
-    "startsIn": 1.3,
-    "eta": "2026-10-02T11:27"
+    "startsIn": 0.0,
+    "eta": "2026-10-02T11:28"
    },
    {
     "account": "skosmurf",
     "task": "mail",
-    "startsIn": 1.8,
+    "startsIn": 0.5,
     "eta": "2026-10-02T11:28"
    },
    {
     "account": "skosmurf",
     "task": "daily_dungeon",
-    "startsIn": 1.9,
+    "startsIn": 0.6,
     "eta": "2026-10-02T11:28"
    },
    {
     "account": "skosmurf",
     "task": "pokemon_home",
-    "startsIn": 2.1,
-    "eta": "2026-10-02T11:28"
+    "startsIn": 0.8,
+    "eta": "2026-10-02T11:29"
    },
    {
     "account": "skosmurf",
     "task": "weekend_bash",
-    "startsIn": 3.0,
+    "startsIn": 1.7,
     "eta": "2026-10-02T11:29"
    },
    {
     "account": "skosmurf",
     "task": "combat_daily",
-    "startsIn": 3.2,
-    "eta": "2026-10-02T11:29"
+    "startsIn": 1.9,
+    "eta": "2026-10-02T11:30"
    },
    {
     "account": "skosmurf",
     "task": "victory_road",
-    "startsIn": 5.0,
+    "startsIn": 3.7,
     "eta": "2026-10-02T11:31"
    },
    {
     "account": "skosmurf",
     "task": "paradise",
-    "startsIn": 5.1,
-    "eta": "2026-10-02T11:31"
+    "startsIn": 3.8,
+    "eta": "2026-10-02T11:32"
    },
    {
     "account": "skosmurf",
     "task": "run_pvp_ranked",
-    "startsIn": 8.6,
-    "eta": "2026-10-02T11:34"
+    "startsIn": 7.4,
+    "eta": "2026-10-02T11:35"
    },
    {
     "account": "skosmurf",
     "task": "collect_hoopa_keys",
-    "startsIn": 10.0,
+    "startsIn": 8.7,
     "eta": "2026-10-02T11:36"
    },
    {
     "account": "skosmurf",
     "task": "sky_pillar",
-    "startsIn": 10.1,
-    "eta": "2026-10-02T11:36"
+    "startsIn": 8.8,
+    "eta": "2026-10-02T11:37"
+   },
+   {
+    "account": "skosmurf",
+    "task": "faction",
+    "startsIn": 9.9,
+    "eta": "2026-10-02T11:38"
    }
   ],
-  "more": 63,
+  "more": 62,
   "fillers": [
    {
     "account": "smurf",
@@ -11712,9 +11730,6 @@
   }
  },
  "progress": {
-  "fake3": {
-   "pillar": "floor 6 stage 10"
-  },
   "fake4": {
    "mailUnread": 0,
    "paradiseStamina": "1/14",
@@ -11740,7 +11755,8 @@
    "pillar": "floor 53 stage 2"
   },
   "exou": {
-   "mailUnread": 0
+   "mailUnread": 0,
+   "pillar": "floor 142 stage 2"
   },
   "skomain": {
    "islandFights": 1,
@@ -11809,10 +11825,12 @@
    "pillar": "floor 21 stage 5"
   },
   "fake1": {},
-  "fake2": {}
+  "fake2": {},
+  "fake3": {}
  },
  "ledger": {
   "exou": {
+   "pillar/story stages cleared": 1,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "daily claims": 4,
@@ -12852,9 +12870,7 @@
     }
    ],
    "spent": {},
-   "progress": {
-    "pillar": "floor 6 stage 10"
-   },
+   "progress": {},
    "history": [
     {
      "day": "2026-09-26",
@@ -13489,8 +13505,8 @@
   "exou": {
    "name": "exou",
    "day": "2026-10-02",
-   "summary": "9 of 12 dailies done · 1 switched off",
-   "done": 9,
+   "summary": "10 of 12 dailies done · 1 switched off",
+   "done": 10,
    "owed": 12,
    "open": [
     {
@@ -13500,13 +13516,16 @@
     {
      "task": "paradise",
      "state": "switched off"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "sky_pillar",
+     "at": "11:27",
+     "why": "sky_pillar: stage 2 did not complete",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261002_112356_sky_pillar_exou__KEEP_0005_112703_final.png"
+    }
+   ],
    "off": [
     {
      "task": "paradise",
@@ -13516,13 +13535,15 @@
    ],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 1,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "mailUnread": 0
+    "mailUnread": 0,
+    "pillar": "floor 142 stage 2"
    },
    "history": [
     {
@@ -13557,8 +13578,8 @@
     },
     {
      "day": "2026-10-02",
-     "done": 10,
-     "failed": 0
+     "done": 11,
+     "failed": 1
     }
    ]
   },
