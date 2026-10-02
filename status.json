@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T09:17:52.724688",
+ "generatedAt": "2026-10-02T09:19:56.851567",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "skomain",
   "mode": "pokemon_home",
-  "since": "09:17:15"
+  "since": "09:19:30"
  },
  "grid": {
   "tasks": [
@@ -420,7 +420,7 @@
      "✓",
      "✓",
      "✓",
-     "·",
+     "✗2",
      "·",
      "·",
      "·",
@@ -577,8 +577,8 @@
  },
  "counts": {
   "done": 5,
-  "todo": 173,
-  "gaveUp": 0,
+  "todo": 172,
+  "gaveUp": 1,
   "unavailable": 11,
   "windowed": 18
  },
@@ -819,6 +819,33 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T09:19:29",
+   "script": "pokemon_home",
+   "account": "skomain",
+   "rc": 1,
+   "secs": 133,
+   "stats": {
+    "reached_via_trial": 1,
+    "burst_second_look_skipped": 8,
+    "merge_refused": 9,
+    "merge_no_progress": 2,
+    "balls_unsettled_opened": 4,
+    "phantom_creations": 10,
+    "charges_left_unspent": 25,
+    "incomplete": 1
+   },
+   "incomplete": [
+    "pokemon_home: 25 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated"
+   ],
+   "values": {
+    "home_speed": 0.656,
+    "home_merge_s": 0.748,
+    "home_burst_s": 3.799
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_091716_pokemon_home_skomain"
+  },
   {
    "ts": "2026-10-02T09:17:13",
    "script": "daily_dungeon",
@@ -8731,38 +8758,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20261001_081958_ring_battle_skomain"
-  },
-  {
-   "ts": "2026-10-01T08:19:55",
-   "script": "ultra_wormhole",
-   "account": "skomain",
-   "rc": 0,
-   "secs": 318,
-   "stats": {
-    "hired": 76,
-    "wins": 17,
-    "losses": 2,
-    "rewards_claimed": 5,
-    "claims_after_reopen": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rewards_claimed": 5,
-    "wins_today": 17
-   },
-   "values_all": {
-    "rewards_claimed": [
-     0,
-     5
-    ]
-   },
-   "dir": "debug_runs/20261001_081436_ultra_wormhole_skomain"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 33473,
+  "now": 33597,
   "segments": [
    {
     "b": 33172,
@@ -8837,8 +8838,21 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 33435,
-    "rc": null,
-    "e": 33473
+    "rc": 1,
+    "e": 33570,
+    "secs": 133,
+    "why": "pokemon_home: 25 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated"
+   },
+   {
+    "b": 33570,
+    "a": "skomain",
+    "s": "pokemon_home",
+    "login": null,
+    "handoff": 33575,
+    "rc": 1,
+    "e": 33597,
+    "secs": 133,
+    "why": "pokemon_home: 25 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated"
    }
   ],
   "idle": []
@@ -9415,6 +9429,15 @@
  },
  "failures": [
   {
+   "ts": "2026-10-02T09:19:29",
+   "account": "skomain",
+   "task": "pokemon_home",
+   "rc": 1,
+   "secs": 133,
+   "why": "pokemon_home: 25 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated",
+   "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261002_091716_pokemon_home_skomain__KEEP_0078_091929_final.png"
+  },
+  {
    "ts": "2026-10-02T02:02:15",
    "account": "nova",
    "task": "worldboss",
@@ -9428,7 +9451,7 @@
   "since": "2026-10-02T08:00",
   "switches": 1,
   "relogMinutes": 0.5,
-  "retries": 1,
+  "retries": 2,
   "tasks": {
    "island_challenge": {
     "runs": 1,
@@ -9454,6 +9477,11 @@
     "runs": 1,
     "minutes": 0.2,
     "failed": 0
+   },
+   "pokemon_home": {
+    "runs": 1,
+    "minutes": 2.2,
+    "failed": 1
    }
   }
  },
@@ -10172,76 +10200,76 @@
     "account": "chris",
     "task": "island_challenge",
     "startsIn": 0.4,
-    "eta": "2026-10-02T09:18"
-   },
-   {
-    "account": "skomain",
-    "task": "pokemon_home",
-    "startsIn": 1.3,
-    "eta": "2026-10-02T09:19"
+    "eta": "2026-10-02T09:20"
    },
    {
     "account": "skomain",
     "task": "weekend_bash",
-    "startsIn": 3.3,
+    "startsIn": 1.3,
     "eta": "2026-10-02T09:21"
    },
    {
     "account": "skomain",
     "task": "combat_daily",
-    "startsIn": 5.3,
+    "startsIn": 3.3,
     "eta": "2026-10-02T09:23"
    },
    {
     "account": "skomain",
     "task": "victory_road",
-    "startsIn": 7.3,
+    "startsIn": 5.3,
     "eta": "2026-10-02T09:25"
    },
    {
     "account": "skomain",
     "task": "paradise",
-    "startsIn": 9.3,
+    "startsIn": 7.3,
     "eta": "2026-10-02T09:27"
    },
    {
     "account": "skomain",
     "task": "guild_war",
-    "startsIn": 11.3,
+    "startsIn": 9.3,
     "eta": "2026-10-02T09:29"
    },
    {
     "account": "skomain",
     "task": "run_pvp_ranked",
-    "startsIn": 13.3,
+    "startsIn": 11.3,
     "eta": "2026-10-02T09:31"
    },
    {
     "account": "skomain",
     "task": "collect_hoopa_keys",
-    "startsIn": 15.3,
+    "startsIn": 13.3,
     "eta": "2026-10-02T09:33"
    },
    {
     "account": "skomain",
     "task": "sky_pillar",
-    "startsIn": 17.3,
+    "startsIn": 15.3,
     "eta": "2026-10-02T09:35"
    },
    {
     "account": "skomain",
     "task": "faction",
-    "startsIn": 19.3,
+    "startsIn": 17.3,
     "eta": "2026-10-02T09:37"
    },
    {
     "account": "skomain",
     "task": "ultra_wormhole",
-    "startsIn": 21.3,
+    "startsIn": 19.3,
     "eta": "2026-10-02T09:39"
+   },
+   {
+    "account": "skomain",
+    "task": "ring_battle",
+    "startsIn": 21.3,
+    "eta": "2026-10-02T09:41"
    }
   ],
-  "more": 161,
+  "more": 160,
   "fillers": [
    {
     "account": "smurf",
@@ -10293,16 +10321,16 @@
   }
  },
  "progress": {
-  "skomain": {
-   "islandFights": 1,
-   "islandStamina": 7,
-   "mailUnread": 0
-  },
   "nova": {
    "mailUnread": 0,
    "paradiseStamina": "19/13",
    "rank": 2,
    "pillar": "floor 103 stage 5"
+  },
+  "skomain": {
+   "islandFights": 1,
+   "islandStamina": 7,
+   "mailUnread": 0
   },
   "jeff": {
    "mailUnread": 0,
@@ -12485,13 +12513,13 @@
   "skomain": {
    "name": "SkoMain",
    "day": "2026-10-02",
-   "summary": "5 of 20 dailies done · 1 switched off",
+   "summary": "5 of 20 dailies done · gave up on home · 1 switched off",
    "done": 5,
    "owed": 20,
    "open": [
     {
      "task": "home",
-     "state": "still to do"
+     "state": "gave up"
     },
     {
      "task": "bash",
@@ -12550,7 +12578,14 @@
      "state": "asks again later"
     }
    ],
-   "issues": [],
+   "issues": [
+    {
+     "task": "pokemon_home",
+     "at": "09:19",
+     "why": "pokemon_home: 25 charge(s) unspent after 2 merge(s) that moved nothing — the board was not really saturated",
+     "frame": "https://raw.githubusercontent.com/bbqhax42/hoopa-bags/main/frames/20261002_091716_pokemon_home_skomain__KEEP_0078_091929_final.png"
+    }
+   ],
    "off": [
     {
      "task": "story",
@@ -12584,7 +12619,7 @@
     {
      "day": "2026-10-02",
      "done": 5,
-     "failed": 0
+     "failed": 1
     }
    ]
   },
