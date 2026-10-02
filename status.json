@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T13:15:39.566172",
+ "generatedAt": "2026-10-02T13:17:43.752451",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "joint_battle",
-  "since": "13:15:01"
+  "mode": "combat_daily",
+  "since": "13:16:22"
  },
  "grid": {
   "tasks": [
@@ -553,15 +553,15 @@
      "-",
      "✓",
      "✓",
-     "·",
-     "·",
      "✓",
-     "·",
+     "✓",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
      "·",
-     "⇢",
+     "·",
      "-",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 183,
-  "todo": 12,
+  "done": 186,
+  "todo": 10,
   "gaveUp": 0,
   "unavailable": 18,
   "windowed": 18
@@ -773,6 +773,13 @@
    "held": true,
    "heldUntil": "2026-10-02T14:30:00",
    "deferredUntil": "2026-10-02T14:30:12"
+  },
+  {
+   "account": "fake5",
+   "since": "2026-10-02T14:20:00",
+   "held": true,
+   "heldUntil": "2026-10-02T14:30:00",
+   "deferredUntil": "2026-10-02T14:30:12"
   }
  ],
  "keys": {
@@ -851,6 +858,37 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T13:16:21",
+   "script": "weekend_bash",
+   "account": "dre",
+   "rc": 0,
+   "secs": 12,
+   "stats": {
+    "tickets": 40
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 800,
+    "tickets": 40
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_131609_weekend_bash_dre"
+  },
+  {
+   "ts": "2026-10-02T13:16:07",
+   "script": "daily_dungeon",
+   "account": "dre",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "marginal_dungeon_list": 9
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_131553_daily_dungeon_dre"
+  },
   {
    "ts": "2026-10-02T13:15:00",
    "script": "joint_team_daily_quest",
@@ -8813,59 +8851,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_115026_run_pvp_ranked_skosmurf"
-  },
-  {
-   "ts": "2026-10-01T11:50:25",
-   "script": "paradise",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 260,
-   "stats": {
-    "marginal_paradise_hub": 1,
-    "explore_clicks": 134,
-    "pass_claims": 8,
-    "upgraded_small_radar": 2,
-    "upgraded_sports_gloves": 2,
-    "upgraded_energy_drink": 1,
-    "dex_activated": 1,
-    "shop_saved": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": "16/16",
-    "event_end": "2026-10-09",
-    "shop_window": "saved"
-   },
-   "values_all": {
-    "event_end": [
-     "2026-10-09",
-     "2026-10-09"
-    ]
-   },
-   "dir": "debug_runs/20261001_114605_paradise_skosmurf"
-  },
-  {
-   "ts": "2026-10-01T11:46:03",
-   "script": "victory_road",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 13,
-   "stats": {
-    "claimed": 1,
-    "quest_claimed": 1,
-    "target_claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_114549_victory_road_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 47740,
+  "now": 47864,
   "segments": [
    {
     "b": 33172,
@@ -11055,7 +11046,38 @@
     "login": null,
     "handoff": 47703,
     "rc": null,
-    "e": 47740
+    "e": 47748
+   },
+   {
+    "b": 47748,
+    "a": "dre",
+    "s": "daily_dungeon",
+    "login": null,
+    "handoff": 47753,
+    "rc": 0,
+    "e": 47767,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 47767,
+    "a": "dre",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 47768,
+    "rc": 0,
+    "e": 47782,
+    "secs": 12,
+    "why": ""
+   },
+   {
+    "b": 47782,
+    "a": "dre",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 47782,
+    "rc": null,
+    "e": 47864
    }
   ],
   "idle": []
@@ -11785,8 +11807,8 @@
     "failed": 0
    },
    "daily_dungeon": {
-    "runs": 11,
-    "minutes": 2.5,
+    "runs": 12,
+    "minutes": 2.8,
     "failed": 0
    },
    "pokemon_home": {
@@ -11795,8 +11817,8 @@
     "failed": 1
    },
    "weekend_bash": {
-    "runs": 11,
-    "minutes": 2.4,
+    "runs": 12,
+    "minutes": 2.6,
     "failed": 0
    },
    "combat_daily": {
@@ -12658,63 +12680,51 @@
   "next": [
    {
     "account": "dre",
-    "task": "joint_battle",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T13:15"
-   },
-   {
-    "account": "dre",
-    "task": "daily_dungeon",
-    "startsIn": 2.0,
-    "eta": "2026-10-02T13:17"
-   },
-   {
-    "account": "dre",
-    "task": "weekend_bash",
-    "startsIn": 2.2,
-    "eta": "2026-10-02T13:17"
-   },
-   {
-    "account": "dre",
     "task": "combat_daily",
-    "startsIn": 2.4,
-    "eta": "2026-10-02T13:18"
+    "startsIn": 0.0,
+    "eta": "2026-10-02T13:17"
    },
    {
     "account": "dre",
     "task": "victory_road",
-    "startsIn": 4.2,
+    "startsIn": 1.8,
     "eta": "2026-10-02T13:19"
    },
    {
     "account": "dre",
     "task": "paradise",
-    "startsIn": 4.3,
-    "eta": "2026-10-02T13:20"
+    "startsIn": 1.9,
+    "eta": "2026-10-02T13:19"
+   },
+   {
+    "account": "dre",
+    "task": "guild_war",
+    "startsIn": 5.1,
+    "eta": "2026-10-02T13:22"
    },
    {
     "account": "dre",
     "task": "collect_hoopa_keys",
-    "startsIn": 7.6,
-    "eta": "2026-10-02T13:23"
-   },
-   {
-    "account": "dre",
-    "task": "sky_pillar",
-    "startsIn": 7.7,
-    "eta": "2026-10-02T13:23"
-   },
-   {
-    "account": "dre",
-    "task": "ultra_wormhole",
-    "startsIn": 8.8,
+    "startsIn": 6.5,
     "eta": "2026-10-02T13:24"
    },
    {
     "account": "dre",
+    "task": "sky_pillar",
+    "startsIn": 6.6,
+    "eta": "2026-10-02T13:24"
+   },
+   {
+    "account": "dre",
+    "task": "ultra_wormhole",
+    "startsIn": 7.7,
+    "eta": "2026-10-02T13:25"
+   },
+   {
+    "account": "dre",
     "task": "ring_battle",
-    "startsIn": 13.4,
-    "eta": "2026-10-02T13:29"
+    "startsIn": 12.3,
+    "eta": "2026-10-02T13:30"
    }
   ],
   "more": 0,
@@ -12745,11 +12755,11 @@
    }
   ],
   "held": {
-   "jeff": {
+   "smurf": {
     "until": "2026-10-02T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "smurf": {
+   "jeff": {
     "until": "2026-10-02T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12779,7 +12789,6 @@
  },
  "progress": {
   "skosmurf": {
-   "paradiseStamina": "16/16",
    "rank": 1,
    "pillar": "floor 24 stage 8",
    "mailUnread": 0,
@@ -13070,6 +13079,15 @@
   },
   {
    "account": "fake4",
+   "task": null,
+   "kind": "online",
+   "since": "2026-10-02T14:20:00",
+   "why": "someone is playing on it",
+   "action": "left alone until 14:30",
+   "enable": false
+  },
+  {
+   "account": "fake5",
    "task": null,
    "kind": "online",
    "since": "2026-10-02T14:20:00",
@@ -14728,7 +14746,6 @@
     "Privilege Pack claimed": 1
    },
    "progress": {
-    "paradiseStamina": "16/16",
     "rank": 1,
     "pillar": "floor 24 stage 8",
     "mailUnread": 0,
@@ -15231,22 +15248,10 @@
   "dre": {
    "name": "dre",
    "day": "2026-10-02",
-   "summary": "4 of 16 dailies done",
-   "done": 4,
+   "summary": "7 of 16 dailies done",
+   "done": 7,
    "owed": 16,
    "open": [
-    {
-     "task": "JointB",
-     "state": "still to do"
-    },
-    {
-     "task": "dungeon",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
-    },
     {
      "task": "dailies",
      "state": "still to do"
@@ -15265,7 +15270,7 @@
     },
     {
      "task": "guildBoss",
-     "state": "waits on another task"
+     "state": "still to do"
     },
     {
      "task": "hoopa",
@@ -15330,7 +15335,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 4,
+     "done": 6,
      "failed": 0
     }
    ]
