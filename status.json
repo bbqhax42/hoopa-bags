@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-02T14:03:08.497976",
+ "generatedAt": "2026-10-02T14:05:12.425728",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
@@ -844,6 +844,24 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T14:04:25",
+   "script": "rank_match",
+   "account": "skomain",
+   "rc": 8,
+   "secs": 86,
+   "stats": {
+    "skip_tapped": 3,
+    "matches": 2,
+    "stopped_for_pause": 1
+   },
+   "incomplete": [],
+   "values": {
+    "attempts_before": 6
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_140259_rank_match_skomain"
+  },
   {
    "ts": "2026-10-02T13:54:04",
    "script": "rank_match",
@@ -8841,27 +8859,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_121349_weekend_bash_lucifer1"
-  },
-  {
-   "ts": "2026-10-01T12:13:12",
-   "script": "pokemon_home",
-   "account": "lucifer1",
-   "rc": 0,
-   "secs": 77,
-   "stats": {
-    "reached_via_trial": 1,
-    "charges_spent": 47
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_121154_pokemon_home_lucifer1"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 50588,
+  "now": 50712,
   "segments": [
    {
     "b": 33172,
@@ -11290,8 +11293,10 @@
     "s": "rank_match",
     "login": null,
     "handoff": 50578,
-    "rc": null,
-    "e": 50588
+    "rc": 8,
+    "e": 50712,
+    "secs": 86,
+    "why": ""
    }
   ],
   "idle": []
@@ -11998,7 +12003,7 @@
   "since": "2026-10-02T08:00",
   "switches": 25,
   "relogMinutes": 11.8,
-  "retries": 23,
+  "retries": 24,
   "tasks": {
    "island_challenge": {
     "runs": 8,
@@ -12096,9 +12101,9 @@
     "failed": 0
    },
    "rank_match": {
-    "runs": 5,
-    "minutes": 6.4,
-    "failed": 0
+    "runs": 6,
+    "minutes": 7.9,
+    "failed": 1
    }
   }
  },
@@ -12781,6 +12786,12 @@
  },
  "changes": [
   {
+   "sha": "e478799",
+   "ts": "2026-10-02T14:03:45",
+   "area": "browser requests",
+   "subject": "Pokémon Home unlocks padlocked tiles, a full board loses its cheapest pet"
+  },
+  {
    "sha": "55007c2",
    "ts": "2026-10-02T13:20:28",
    "area": "browser requests",
@@ -12933,46 +12944,40 @@
  "queue": {
   "next": [
    {
-    "account": "skomain",
-    "task": "rank_match",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T14:03"
-   },
-   {
     "account": "nova",
     "task": "rank_match",
-    "startsIn": 1.7,
-    "eta": "2026-10-02T14:04"
+    "startsIn": 0.4,
+    "eta": "2026-10-02T14:05"
    },
    {
     "account": "sprite",
     "task": "rank_match",
-    "startsIn": 3.4,
-    "eta": "2026-10-02T14:06"
+    "startsIn": 2.1,
+    "eta": "2026-10-02T14:07"
    },
    {
     "account": "exou",
     "task": "rank_match",
-    "startsIn": 5.0,
-    "eta": "2026-10-02T14:08"
+    "startsIn": 3.8,
+    "eta": "2026-10-02T14:09"
    },
    {
     "account": "skosmurf",
     "task": "rank_match",
-    "startsIn": 6.7,
-    "eta": "2026-10-02T14:09"
+    "startsIn": 5.6,
+    "eta": "2026-10-02T14:10"
    },
    {
     "account": "lucifer2",
     "task": "rank_match",
-    "startsIn": 8.4,
-    "eta": "2026-10-02T14:11"
+    "startsIn": 7.3,
+    "eta": "2026-10-02T14:12"
    },
    {
     "account": "deno",
     "task": "rank_match",
-    "startsIn": 10.1,
-    "eta": "2026-10-02T14:13"
+    "startsIn": 9.0,
+    "eta": "2026-10-02T14:14"
    }
   ],
   "more": 0,
@@ -12986,10 +12991,6 @@
     "mode": "rift"
    },
    {
-    "account": "skomain",
-    "mode": "rift"
-   },
-   {
     "account": "chris",
     "mode": "rift"
    },
@@ -12999,6 +13000,10 @@
    },
    {
     "account": "nova",
+    "mode": "rift"
+   },
+   {
+    "account": "dre",
     "mode": "rift"
    }
   ],
@@ -13225,7 +13230,11 @@
    "island fights": 9
   }
  },
- "paused": null,
+ "paused": {
+  "since": "2026-10-02T14:03:54",
+  "by": "cli",
+  "why": "owner 10-02 14:0x: browser version only for now"
+ },
  "warnings": [
   {
    "ts": "2026-10-02T12:32:31",
