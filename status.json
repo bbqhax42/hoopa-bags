@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T13:01:09.464992",
+ "generatedAt": "2026-10-02T13:03:12.993180",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "deno",
-  "mode": "combat_daily",
-  "since": "13:01:04"
+  "mode": "paradise",
+  "since": "13:03:09"
  },
  "grid": {
   "tasks": [
@@ -203,7 +203,7 @@
      "✓",
      "⇢",
      "⇢",
-     "⇢",
+     "✓",
      "✓",
      "-",
      "⇢",
@@ -530,8 +530,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "⏰",
      "·",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 167,
-  "todo": 23,
+  "done": 170,
+  "todo": 21,
   "gaveUp": 0,
   "unavailable": 18,
   "windowed": 18
@@ -844,6 +844,49 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T13:03:09",
+   "script": "victory_road",
+   "account": "deno",
+   "rc": 0,
+   "secs": 6,
+   "stats": {
+    "claimed": 1,
+    "kt_gift_claimed": 1
+   },
+   "incomplete": [],
+   "values": {},
+   "values_all": {},
+   "dir": "debug_runs/20261002_130302_victory_road_deno"
+  },
+  {
+   "ts": "2026-10-02T13:03:01",
+   "script": "combat_daily",
+   "account": "deno",
+   "rc": 0,
+   "secs": 116,
+   "stats": {
+    "title_reread_named": 6,
+    "marginal_battle_victory_confirm": 1,
+    "adv_overflow": 1,
+    "near_miss_vr_rank": 2,
+    "adv_list_at_top": 1,
+    "near_miss_adventure_event": 1,
+    "near_miss_pokemon_upgrade": 2,
+    "upgrade_skip_resonating": 1,
+    "pokemon_upgraded": 1,
+    "gacha_free": 1,
+    "island_shop_bought": 1
+   },
+   "incomplete": [],
+   "values": {
+    "accelerations_left": "accelerations left: 10/10 +)",
+    "quick_combat_cost": "free free",
+    "gacha_one_cost": "free"
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_130104_combat_daily_deno"
+  },
   {
    "ts": "2026-10-02T13:01:03",
    "script": "weekend_bash",
@@ -8794,44 +8837,12 @@
    "values": {},
    "values_all": {},
    "dir": "debug_runs/20261001_113818_collect_hoopa_keys_exou"
-  },
-  {
-   "ts": "2026-10-01T11:38:16",
-   "script": "victory_road",
-   "account": "exou",
-   "rc": 0,
-   "secs": 6,
-   "stats": {
-    "claimed": 1,
-    "kt_gift_claimed": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_113810_victory_road_exou"
-  },
-  {
-   "ts": "2026-10-01T11:38:07",
-   "script": "combat_daily",
-   "account": "exou",
-   "rc": 0,
-   "secs": 54,
-   "stats": {
-    "marginal_battle_victory_confirm": 1,
-    "near_miss_vr_rank": 4,
-    "near_miss_battle_victory_confirm": 1,
-    "title_reread_named": 1
-   },
-   "incomplete": [],
-   "values": {},
-   "values_all": {},
-   "dir": "debug_runs/20261001_113713_combat_daily_exou"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 46870,
+  "now": 46993,
   "segments": [
    {
     "b": 33172,
@@ -10896,8 +10907,30 @@
     "s": "combat_daily",
     "login": null,
     "handoff": 46864,
+    "rc": 0,
+    "e": 46982,
+    "secs": 116,
+    "why": ""
+   },
+   {
+    "b": 46982,
+    "a": "deno",
+    "s": "victory_road",
+    "login": null,
+    "handoff": 46982,
+    "rc": 0,
+    "e": 46989,
+    "secs": 6,
+    "why": ""
+   },
+   {
+    "b": 46989,
+    "a": "deno",
+    "s": "paradise",
+    "login": null,
+    "handoff": 46990,
     "rc": null,
-    "e": 46870
+    "e": 46993
    }
   ],
   "idle": []
@@ -11633,12 +11666,12 @@
     "failed": 0
    },
    "combat_daily": {
-    "runs": 13,
-    "minutes": 23.2,
+    "runs": 14,
+    "minutes": 25.1,
     "failed": 3
    },
    "victory_road": {
-    "runs": 10,
+    "runs": 11,
     "minutes": 1.1,
     "failed": 0
    },
@@ -12350,6 +12383,12 @@
  },
  "changes": [
   {
+   "sha": "f90c86d",
+   "ts": "2026-10-02T13:02:12",
+   "area": "browser requests",
+   "subject": "privilege pack, login gifts, AFK claim, free quick combat, quest rewards, daily dungeons"
+  },
+  {
    "sha": "6e3bb81",
    "ts": "2026-10-02T12:55:59",
    "area": "browser requests",
@@ -12473,78 +12512,78 @@
   "next": [
    {
     "account": "deno",
-    "task": "combat_daily",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T13:01"
-   },
-   {
-    "account": "deno",
-    "task": "victory_road",
-    "startsIn": 1.8,
-    "eta": "2026-10-02T13:02"
-   },
-   {
-    "account": "deno",
     "task": "paradise",
-    "startsIn": 1.9,
+    "startsIn": 0.0,
     "eta": "2026-10-02T13:03"
    },
    {
     "account": "deno",
     "task": "guild_war",
-    "startsIn": 5.1,
+    "startsIn": 3.2,
     "eta": "2026-10-02T13:06"
    },
    {
     "account": "deno",
     "task": "collect_hoopa_keys",
-    "startsIn": 6.6,
+    "startsIn": 4.7,
     "eta": "2026-10-02T13:07"
    },
    {
     "account": "deno",
     "task": "sky_pillar",
-    "startsIn": 6.6,
+    "startsIn": 4.8,
     "eta": "2026-10-02T13:07"
    },
    {
     "account": "deno",
     "task": "ultra_wormhole",
-    "startsIn": 7.8,
-    "eta": "2026-10-02T13:08"
+    "startsIn": 5.9,
+    "eta": "2026-10-02T13:09"
    },
    {
     "account": "deno",
     "task": "ring_battle",
-    "startsIn": 12.5,
+    "startsIn": 10.6,
     "eta": "2026-10-02T13:13"
    },
    {
     "account": "dre",
     "task": "dailyclaim",
-    "startsIn": 14.0,
+    "startsIn": 12.1,
     "eta": "2026-10-02T13:15"
    },
    {
     "account": "dre",
     "task": "mail",
-    "startsIn": 14.7,
-    "eta": "2026-10-02T13:15"
+    "startsIn": 12.8,
+    "eta": "2026-10-02T13:16"
    },
    {
     "account": "dre",
     "task": "joint_team_daily_quest",
-    "startsIn": 14.9,
+    "startsIn": 13.0,
     "eta": "2026-10-02T13:16"
    },
    {
     "account": "dre",
     "task": "joint_battle",
-    "startsIn": 15.8,
-    "eta": "2026-10-02T13:16"
+    "startsIn": 13.9,
+    "eta": "2026-10-02T13:17"
+   },
+   {
+    "account": "dre",
+    "task": "daily_dungeon",
+    "startsIn": 15.9,
+    "eta": "2026-10-02T13:19"
+   },
+   {
+    "account": "dre",
+    "task": "weekend_bash",
+    "startsIn": 16.1,
+    "eta": "2026-10-02T13:19"
    }
   ],
-  "more": 9,
+  "more": 7,
   "fillers": [
    {
     "account": "smurf",
@@ -12690,6 +12729,7 @@
  },
  "ledger": {
   "deno": {
+   "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
    "daily claims": 5,
    "Privilege Pack claimed": 1
@@ -13723,8 +13763,8 @@
   "fake3": {
    "name": "Random999",
    "day": "2026-10-02",
-   "summary": "4 of 15 dailies done · 2 switched off · 1 not available today",
-   "done": 4,
+   "summary": "5 of 15 dailies done · 2 switched off · 1 not available today",
+   "done": 5,
    "owed": 15,
    "open": [
     {
@@ -13741,10 +13781,6 @@
     },
     {
      "task": "JointB",
-     "state": "waits on another task"
-    },
-    {
-     "task": "dungeon",
      "state": "waits on another task"
     },
     {
@@ -14988,18 +15024,10 @@
   "deno": {
    "name": "deno",
    "day": "2026-10-02",
-   "summary": "7 of 16 dailies done",
-   "done": 7,
+   "summary": "9 of 16 dailies done",
+   "done": 9,
    "owed": 16,
    "open": [
-    {
-     "task": "dailies",
-     "state": "still to do"
-    },
-    {
-     "task": "victory",
-     "state": "still to do"
-    },
     {
      "task": "victoryRank",
      "state": "waits for its window"
@@ -15033,6 +15061,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
     "daily claims": 5,
     "Privilege Pack claimed": 1
@@ -15075,7 +15104,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 6,
+     "done": 8,
      "failed": 0
     }
    ]
