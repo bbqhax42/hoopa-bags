@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T09:55:08.957207",
+ "generatedAt": "2026-10-02T09:57:13.111823",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "nova",
-  "mode": "pokemon_home",
-  "since": "09:54:11"
+  "mode": "combat_daily",
+  "since": "09:55:40"
  },
  "grid": {
   "tasks": [
@@ -42,8 +42,8 @@
      "✓",
      "✓",
      "✓",
-     "·",
-     "·",
+     "✓",
+     "✓",
      "·",
      "·",
      "⏰",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 31,
-  "todo": 146,
+  "done": 33,
+  "todo": 144,
   "gaveUp": 0,
   "unavailable": 12,
   "windowed": 18
@@ -820,6 +820,46 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T09:55:39",
+   "script": "weekend_bash",
+   "account": "nova",
+   "rc": 0,
+   "secs": 13,
+   "stats": {
+    "tickets": 40
+   },
+   "incomplete": [],
+   "values": {
+    "diamonds_spent": 800,
+    "tickets": 40
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_095526_weekend_bash_nova"
+  },
+  {
+   "ts": "2026-10-02T09:55:20",
+   "script": "pokemon_home",
+   "account": "nova",
+   "rc": 0,
+   "secs": 68,
+   "stats": {
+    "reached_via_trial": 1,
+    "grid_phantom_lines": 1,
+    "burst_second_look_skipped": 5,
+    "merge_moved_instead": 5,
+    "charges_done_by_count": 1,
+    "charges_spent": 50
+   },
+   "incomplete": [],
+   "values": {
+    "home_speed": 0.59,
+    "home_merge_s": 0.75,
+    "home_burst_s": 5.181
+   },
+   "values_all": {},
+   "dir": "debug_runs/20261002_095412_pokemon_home_nova"
+  },
   {
    "ts": "2026-10-02T09:54:09",
    "script": "daily_dungeon",
@@ -8702,60 +8742,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_085330_dailyclaim_chris"
-  },
-  {
-   "ts": "2026-10-01T08:52:53",
-   "script": "island_challenge",
-   "account": "chris",
-   "rc": 5,
-   "secs": 31,
-   "stats": {
-    "fights": 2,
-    "partial_formation": 1,
-    "autoform_empty": 1
-   },
-   "incomplete": [],
-   "values": {
-    "stamina": 1,
-    "fights_today": 2
-   },
-   "values_all": {
-    "stamina": [
-     37,
-     1,
-     1
-    ]
-   },
-   "dir": "debug_runs/20261001_085222_island_challenge_chris"
-  },
-  {
-   "ts": "2026-10-01T08:51:56",
-   "script": "run_pvp_ranked",
-   "account": "jeff",
-   "rc": 0,
-   "secs": 86,
-   "stats": {
-    "ranked_fought": 10,
-    "ranked_won": 10,
-    "picker_retry": 3,
-    "free_attempts_spent": 1,
-    "rank_places_gained": 24,
-    "daily_goal_claimed": 3
-   },
-   "incomplete": [],
-   "values": {
-    "ranked_wins": 10,
-    "rank": 1,
-    "daily_goal_claims": 3
-   },
-   "values_all": {},
-   "dir": "debug_runs/20261001_085030_run_pvp_ranked_jeff"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 35709,
+  "now": 35833,
   "segments": [
    {
     "b": 33172,
@@ -9185,8 +9177,30 @@
     "s": "pokemon_home",
     "login": null,
     "handoff": 35652,
+    "rc": 0,
+    "e": 35721,
+    "secs": 68,
+    "why": ""
+   },
+   {
+    "b": 35721,
+    "a": "nova",
+    "s": "weekend_bash",
+    "login": null,
+    "handoff": 35726,
+    "rc": 0,
+    "e": 35740,
+    "secs": 13,
+    "why": ""
+   },
+   {
+    "b": 35740,
+    "a": "nova",
+    "s": "combat_daily",
+    "login": null,
+    "handoff": 35741,
     "rc": null,
-    "e": 35709
+    "e": 35833
    }
   ],
   "idle": []
@@ -9831,13 +9845,13 @@
     "failed": 0
    },
    "pokemon_home": {
-    "runs": 4,
-    "minutes": 4.5,
+    "runs": 5,
+    "minutes": 5.6,
     "failed": 1
    },
    "weekend_bash": {
-    "runs": 2,
-    "minutes": 0.4,
+    "runs": 3,
+    "minutes": 0.7,
     "failed": 0
    },
    "combat_daily": {
@@ -10628,78 +10642,78 @@
   "next": [
    {
     "account": "nova",
-    "task": "pokemon_home",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T09:55"
-   },
-   {
-    "account": "nova",
-    "task": "weekend_bash",
-    "startsIn": 1.1,
-    "eta": "2026-10-02T09:56"
-   },
-   {
-    "account": "nova",
     "task": "combat_daily",
-    "startsIn": 1.3,
-    "eta": "2026-10-02T09:56"
+    "startsIn": 0.0,
+    "eta": "2026-10-02T09:57"
    },
    {
     "account": "nova",
     "task": "victory_road",
-    "startsIn": 3.4,
-    "eta": "2026-10-02T09:58"
+    "startsIn": 2.1,
+    "eta": "2026-10-02T09:59"
    },
    {
     "account": "nova",
     "task": "paradise",
-    "startsIn": 3.5,
-    "eta": "2026-10-02T09:58"
+    "startsIn": 2.2,
+    "eta": "2026-10-02T09:59"
    },
    {
     "account": "nova",
     "task": "guild_war",
-    "startsIn": 7.1,
+    "startsIn": 5.8,
     "eta": "2026-10-02T10:02"
    },
    {
     "account": "nova",
     "task": "run_pvp_ranked",
-    "startsIn": 8.1,
+    "startsIn": 6.8,
     "eta": "2026-10-02T10:03"
    },
    {
     "account": "nova",
     "task": "collect_hoopa_keys",
-    "startsIn": 9.4,
-    "eta": "2026-10-02T10:04"
+    "startsIn": 8.1,
+    "eta": "2026-10-02T10:05"
    },
    {
     "account": "nova",
     "task": "sky_pillar",
-    "startsIn": 9.5,
-    "eta": "2026-10-02T10:04"
+    "startsIn": 8.2,
+    "eta": "2026-10-02T10:05"
    },
    {
     "account": "nova",
     "task": "ultra_wormhole",
-    "startsIn": 9.6,
-    "eta": "2026-10-02T10:04"
+    "startsIn": 8.2,
+    "eta": "2026-10-02T10:05"
    },
    {
     "account": "nova",
     "task": "ring_battle",
-    "startsIn": 13.6,
-    "eta": "2026-10-02T10:08"
+    "startsIn": 12.2,
+    "eta": "2026-10-02T10:09"
    },
    {
     "account": "jeff",
     "task": "dailyclaim",
-    "startsIn": 15.0,
+    "startsIn": 13.7,
     "eta": "2026-10-02T10:10"
+   },
+   {
+    "account": "jeff",
+    "task": "mail",
+    "startsIn": 14.2,
+    "eta": "2026-10-02T10:11"
+   },
+   {
+    "account": "jeff",
+    "task": "joint_team_daily_quest",
+    "startsIn": 14.2,
+    "eta": "2026-10-02T10:11"
    }
   ],
-  "more": 134,
+  "more": 132,
   "fillers": [
    {
     "account": "smurf",
@@ -10751,19 +10765,18 @@
   }
  },
  "progress": {
-  "jeff": {
-   "rank": 1,
-   "pillar": "floor 150 stage 9",
-   "islandFights": 18,
-   "islandStamina": 1
-  },
   "chris": {
-   "islandFights": 23,
-   "islandStamina": 4,
    "mailUnread": 0,
    "paradiseStamina": "4/14",
    "rank": 10,
-   "pillar": "floor 140 stage 1"
+   "pillar": "floor 140 stage 1",
+   "islandFights": 23,
+   "islandStamina": 4
+  },
+  "jeff": {
+   "pillar": "floor 150 stage 9",
+   "islandFights": 18,
+   "islandStamina": 1
   },
   "smurf": {
    "mailUnread": 0,
@@ -10859,6 +10872,7 @@
  },
  "ledger": {
   "nova": {
+   "Home creations": 50,
    "mail claimed": 1,
    "daily claims": 4,
    "Privilege Pack claimed": 1
@@ -11126,21 +11140,13 @@
   "nova": {
    "name": "nova",
    "day": "2026-10-02",
-   "summary": "5 of 18 dailies done · 1 not available today",
-   "done": 5,
+   "summary": "7 of 18 dailies done · 1 not available today",
+   "done": 7,
    "owed": 18,
    "open": [
     {
      "task": "tshop",
      "state": "not available today"
-    },
-    {
-     "task": "home",
-     "state": "still to do"
-    },
-    {
-     "task": "bash",
-     "state": "still to do"
     },
     {
      "task": "dailies",
@@ -11199,6 +11205,7 @@
     }
    ],
    "spent": {
+    "Home creations": 50,
     "mail claimed": 1,
     "daily claims": 4,
     "Privilege Pack claimed": 1
@@ -11239,7 +11246,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 4,
+     "done": 6,
      "failed": 0
     }
    ]
@@ -11335,7 +11342,6 @@
     "island fights": 6
    },
    "progress": {
-    "rank": 1,
     "pillar": "floor 150 stage 9",
     "islandFights": 18,
     "islandStamina": 1
@@ -11444,12 +11450,12 @@
     "island fights": 7
    },
    "progress": {
-    "islandFights": 23,
-    "islandStamina": 4,
     "mailUnread": 0,
     "paradiseStamina": "4/14",
     "rank": 10,
-    "pillar": "floor 140 stage 1"
+    "pillar": "floor 140 stage 1",
+    "islandFights": 23,
+    "islandStamina": 4
    },
    "history": [
     {
