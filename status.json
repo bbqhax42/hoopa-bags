@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-02T13:23:54.771241",
+ "generatedAt": "2026-10-02T13:25:58.336485",
  "running": true,
  "runningWhy": "told by run.py (--running)",
  "current": {
   "account": "dre",
-  "mode": "sky_pillar",
-  "since": "13:23:36"
+  "mode": "ultra_wormhole",
+  "since": "13:24:22"
  },
  "grid": {
   "tasks": [
@@ -564,7 +564,7 @@
      "✓",
      "-",
      "✓",
-     "·",
+     "✓",
      "-",
      "-",
      "·",
@@ -576,8 +576,8 @@
   ]
  },
  "counts": {
-  "done": 194,
-  "todo": 5,
+  "done": 195,
+  "todo": 4,
   "gaveUp": 0,
   "unavailable": 18,
   "windowed": 18
@@ -836,6 +836,35 @@
   "why": "login accepted"
  },
  "runs": [
+  {
+   "ts": "2026-10-02T13:24:22",
+   "script": "sky_pillar",
+   "account": "dre",
+   "rc": 0,
+   "secs": 44,
+   "stats": {
+    "stages_cleared": 2,
+    "challenge_refused": 1,
+    "floor_backlog_clear": 1
+   },
+   "incomplete": [],
+   "values": {
+    "floor": 90,
+    "stage": 3,
+    "proofs_spent": 2
+   },
+   "values_all": {
+    "floor": [
+     90,
+     90
+    ],
+    "stage": [
+     2,
+     3
+    ]
+   },
+   "dir": "debug_runs/20261002_132337_sky_pillar_dre"
+  },
   {
    "ts": "2026-10-02T13:23:35",
    "script": "collect_hoopa_keys",
@@ -8800,38 +8829,12 @@
    },
    "values_all": {},
    "dir": "debug_runs/20261001_120136_guild_war_skosmurf"
-  },
-  {
-   "ts": "2026-10-01T12:01:34",
-   "script": "ultra_wormhole",
-   "account": "skosmurf",
-   "rc": 0,
-   "secs": 268,
-   "stats": {
-    "hired": 72,
-    "wins": 17,
-    "losses": 1,
-    "rewards_claimed": 5,
-    "claims_after_reopen": 1
-   },
-   "incomplete": [],
-   "values": {
-    "rewards_claimed": 5,
-    "wins_today": 17
-   },
-   "values_all": {
-    "rewards_claimed": [
-     0,
-     5
-    ]
-   },
-   "dir": "debug_runs/20261001_115706_ultra_wormhole_skosmurf"
   }
  ],
  "timeline": {
   "day0": "2026-10-02T00:00",
   "since": 28800.0,
-  "now": 48235,
+  "now": 48358,
   "segments": [
    {
     "b": 33172,
@@ -11106,8 +11109,19 @@
     "s": "sky_pillar",
     "login": null,
     "handoff": 48216,
+    "rc": 0,
+    "e": 48262,
+    "secs": 44,
+    "why": ""
+   },
+   {
+    "b": 48262,
+    "a": "dre",
+    "s": "ultra_wormhole",
+    "login": null,
+    "handoff": 48266,
     "rc": null,
-    "e": 48235
+    "e": 48358
    }
   ],
   "idle": []
@@ -11882,8 +11896,8 @@
     "failed": 0
    },
    "sky_pillar": {
-    "runs": 12,
-    "minutes": 13.3,
+    "runs": 13,
+    "minutes": 14.1,
     "failed": 1
    },
    "faction": {
@@ -12722,21 +12736,15 @@
   "next": [
    {
     "account": "dre",
-    "task": "sky_pillar",
-    "startsIn": 0.0,
-    "eta": "2026-10-02T13:23"
-   },
-   {
-    "account": "dre",
     "task": "ultra_wormhole",
-    "startsIn": 1.1,
+    "startsIn": 0.0,
     "eta": "2026-10-02T13:25"
    },
    {
     "account": "dre",
     "task": "ring_battle",
-    "startsIn": 5.7,
-    "eta": "2026-10-02T13:29"
+    "startsIn": 4.6,
+    "eta": "2026-10-02T13:30"
    }
   ],
   "more": 0,
@@ -12767,11 +12775,11 @@
    }
   ],
   "held": {
-   "jeff": {
+   "smurf": {
     "until": "2026-10-02T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    },
-   "smurf": {
+   "jeff": {
     "until": "2026-10-02T13:30",
     "why": "the rest of its dailies open later — one visit for all of them"
    }
@@ -12854,7 +12862,7 @@
   "dre": {
    "mailUnread": 0,
    "paradiseStamina": "16/16",
-   "pillar": "floor 90 stage 1"
+   "pillar": "floor 90 stage 3"
   },
   "nova": {
    "mailUnread": 0,
@@ -12884,6 +12892,7 @@
  },
  "ledger": {
   "dre": {
+   "pillar/story stages cleared": 2,
    "guild war attempts": 1,
    "Island Shop buys (200 coins)": 1,
    "mail claimed": 1,
@@ -15223,17 +15232,13 @@
   "dre": {
    "name": "dre",
    "day": "2026-10-02",
-   "summary": "12 of 16 dailies done",
-   "done": 12,
+   "summary": "13 of 16 dailies done",
+   "done": 13,
    "owed": 16,
    "open": [
     {
      "task": "victoryRank",
      "state": "waits for its window"
-    },
-    {
-     "task": "pillar",
-     "state": "still to do"
     },
     {
      "task": "wormhole",
@@ -15248,6 +15253,7 @@
    "off": [],
    "unavailable": [],
    "spent": {
+    "pillar/story stages cleared": 2,
     "guild war attempts": 1,
     "Island Shop buys (200 coins)": 1,
     "mail claimed": 1,
@@ -15257,7 +15263,7 @@
    "progress": {
     "mailUnread": 0,
     "paradiseStamina": "16/16",
-    "pillar": "floor 90 stage 1"
+    "pillar": "floor 90 stage 3"
    },
    "history": [
     {
@@ -15292,7 +15298,7 @@
     },
     {
      "day": "2026-10-02",
-     "done": 11,
+     "done": 12,
      "failed": 0
     }
    ]
